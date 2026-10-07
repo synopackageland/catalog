@@ -1,0 +1,10 @@
+schema: 1
+packages:
+  - repo: synopackageland/syno-reclaim
+    release: latest
+    featured: true
+    category: utilities
+    order: 10
+  - repo: synopackageland/syno-pkg-connect
+    release: latest
+    listed: false
