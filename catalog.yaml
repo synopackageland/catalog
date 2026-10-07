@@ -1,7 +1,7 @@
 schema: 1
 packages:
   - repo: synopackageland/syno-reclaim
-    release: latest
+    release: v0.1.0-1521
     featured: true
     category: utilities
     order: 10
