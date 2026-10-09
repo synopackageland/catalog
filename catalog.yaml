@@ -1,10 +1,128 @@
-schema: 1
+schema: 2
 packages:
-  - repo: synopackageland/syno-reclaim
-    release: v0.1.0-1521
-    featured: true
+  - featured: true
     category: utilities
     order: 10
-  - repo: synopackageland/syno-pkg-connect
-    release: latest
-    listed: false
+    publisher: synopackageland
+    trust: official
+    source:
+      kind: github-release
+      repo: synopackageland/syno-reclaim
+      release: v0.1.0-1521
+      access: private
+    metadata:
+      contact_email: synopackageland@gmail.com
+      support_email: synopackageland@gmail.com
+      homepage: https://www.varvis.me
+      long_description:
+        en: Find what really frees space on a Btrfs volume, and free it safely.
+        zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
+    pins:
+      - package: SynoReclaim
+        version: 0.1.0-1521
+        arch:
+          - armv7
+        sha256: 34736dfc20589c281813df9e5ea16cfd77ec05fde20b27b8595bc090614416f2
+        md5: 2e33a5013a9f523add1617b08a8fc5ca
+        size: 9335808
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-09T07:14:04Z
+          source_ref: 46eccd39c5f60be2a9398830d4a76915f0baed0e
+      - package: SynoReclaim
+        version: 0.1.0-1521
+        arch:
+          - armv8
+        sha256: 0010a08f19f89be887fd05f0d59c5fae9323c03146a5528ce9ea7eda1e3c49c0
+        md5: 7c49268d3ef5d8385de6a06fd8e42d1f
+        size: 10118144
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-09T07:14:05Z
+          source_ref: 46eccd39c5f60be2a9398830d4a76915f0baed0e
+      - package: SynoReclaim
+        version: 0.1.0-1521
+        arch:
+          - x86_64
+        sha256: fb7aad4e87894351a979f21e52540bf853001a91d5f9da3bc2dd20b8f869d988
+        md5: ae39a43fca9da10bcfba47532bba68de
+        size: 9646592
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-09T07:14:06Z
+          source_ref: 46eccd39c5f60be2a9398830d4a76915f0baed0e
+  - listed: false
+    publisher: synopackageland
+    trust: official
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-connect
+      release: latest
+      access: private
+    metadata:
+      contact_email: synopackageland@gmail.com
+      support_email: synopackageland@gmail.com
+      homepage: https://www.varvis.me
+      long_description:
+        en: A DSM connectivity package.
+        zh-TW: DSM 連線套件。
+    pins:
+      - package: SynoPkgConnect
+        version: 0.1.0-0028
+        arch:
+          - armada37xx
+          - rtd1296
+          - rtd1619b
+        sha256: dd13cf6ecd839048ae39524cea315f64daaac56aaadbd2a34b90b37b902a0274
+        md5: 117b8a3ee0f9722182502bc204a19962
+        size: 16530944
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-09T07:14:09Z
+          source_ref: 32fe54c711d7995d9fb24b0edd9a46f33f17967f
+      - package: SynoPkgConnect
+        version: 0.1.0-0028
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - v1000
+          - v1000nk
+        sha256: 246918cfd3b13bc95ea0bdcd29181ee903e6a93016318a3056fa381880ee402e
+        md5: 052e48f71b90c6ddfca2a87d6fa5e69e
+        size: 18114560
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-09T07:14:12Z
+          source_ref: 32fe54c711d7995d9fb24b0edd9a46f33f17967f
+publishers:
+  synopackageland:
+    display_name: Syno Package Land
+    contact_email: synopackageland@gmail.com
+    support_email: synopackageland@gmail.com
+    homepage: https://www.varvis.me
+    verified: true
