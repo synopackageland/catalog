@@ -129,8 +129,8 @@ node --import tsx scripts/catalog/pin.mts --catalog /path/catalog.yaml --check
 GITHUB_TOKEN is read from the environment. Never pass credentials as argv. --pin writes candidates locally,
 never publishes or approves automatically; --check reads current SPKs and fails
 if any artifact is unapproved, malformed, overlapping, inconsistent or changed.
-For HTTPS candidate pins supply --source-ref with immutable source commit (or a
-content reference for submitted community). Existing pins are audit history in
+For HTTPS candidate pins the source must send a bounded Content-Length when no prior size pin exists. Supply --source-ref with an immutable source commit (or a
+content reference for submitted community), and --source-repo owner/repo for verified HTTPS artifacts. Existing pins are audit history in
 Git, not a claim that the tool performed security review.
 
 Recommended next submission flow: public catalog PR containing publisher metadata,
