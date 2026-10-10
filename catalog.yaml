@@ -94,21 +94,23 @@ packages:
         zh-TW: DSM 連線套件。
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0028
+        version: 0.1.0-0031
         arch:
           - armada37xx
           - rtd1296
+          - rtd1619
           - rtd1619b
-        sha256: dd13cf6ecd839048ae39524cea315f64daaac56aaadbd2a34b90b37b902a0274
-        md5: 117b8a3ee0f9722182502bc204a19962
-        size: 16530944
+        sha256: 0f65114ce8fa8d4e836614c43dfc44ecc8adf4589cacc54e0e0893f3eec331e5
+        md5: 4a7ae5e2a3fd1249feb063a5b0dd2e9f
+        size: 16556544
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-09T07:14:09Z
-          source_ref: 32fe54c711d7995d9fb24b0edd9a46f33f17967f
+          reviewed_at: 2026-10-10T17:06:00Z
+          source_ref: 7376d40e0dc59de946ab2e582300ac41581eed9f
+          source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0028
+        version: 0.1.0-0031
         arch:
           - apollolake
           - avoton
@@ -116,9 +118,11 @@ packages:
           - broadwell
           - broadwellnk
           - broadwellnkv2
+          - broadwellntb
           - broadwellntbap
           - bromolow
           - cedarview
+          - coffeelake
           - denverton
           - epyc7002
           - epyc7003
@@ -132,16 +136,90 @@ packages:
           - purley
           - r1000
           - r1000nk
+          - skylaked
           - v1000
           - v1000nk
-        sha256: 246918cfd3b13bc95ea0bdcd29181ee903e6a93016318a3056fa381880ee402e
-        md5: 052e48f71b90c6ddfca2a87d6fa5e69e
-        size: 18114560
+        sha256: dfda5eedb4e4af64311c9202dc2ea88ebd4b53a8b65accba55308f245bdbaa30
+        md5: 7804f31f66397cad101d326763884f8a
+        size: 18144256
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-09T07:14:12Z
-          source_ref: 32fe54c711d7995d9fb24b0edd9a46f33f17967f
+          reviewed_at: 2026-10-10T17:06:02Z
+          source_ref: 7376d40e0dc59de946ab2e582300ac41581eed9f
+          source_repo: synopackageland/syno-pkg-connect
+  - listed: false
+    publisher: synopackageland
+    trust: official
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-gopeed
+      release: v0.2.2-0008
+      access: private
+    metadata:
+      contact_email: synopackageland@gmail.com
+      support_email: synopackageland@gmail.com
+      homepage: https://www.varvis.me
+      long_description:
+        en: Per-user Gopeed downloads with DSM Application Privileges and
+          administrator-managed core updates.
+        zh-TW: 每位使用者各自的 Gopeed 下載，透過 DSM 應用程式權限控管，核心更新由管理員管理。
+    pins:
+      - package: SynoPkgGopeed
+        version: 0.2.2-0008
+        arch:
+          - armada37xx
+          - rtd1296
+          - rtd1619
+          - rtd1619b
+        sha256: 0f2b1194441e0d11bf6062d2d250bf3317bb4ad09cca47fbb05afc1196ab763b
+        md5: a4c6b85e74918fb9aa215a4710ec2c8e
+        size: 52825088
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-10T17:06:28Z
+          source_ref: 3aed27a4df263271f6999ad9e4f4aaa4c26d90f9
+          source_repo: synopackageland/syno-pkg-gopeed
+      - package: SynoPkgGopeed
+        version: 0.2.2-0008
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: ccfa45b97a5377d3ec415ca9be0c2dfe7c87871e8e742fb6fa2aa41f1af2d83b
+        md5: 54806042c10c5ffabf231e346b9c41ff
+        size: 55354880
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-10T17:06:33Z
+          source_ref: 3aed27a4df263271f6999ad9e4f4aaa4c26d90f9
+          source_repo: synopackageland/syno-pkg-gopeed
 publishers:
   synopackageland:
     display_name: Syno Package Land
