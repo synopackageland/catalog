@@ -215,7 +215,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0008
+      release: v0.2.2-0009
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -242,6 +242,12 @@ packages:
           以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
       changelog:
         en: |-
+          0.2.2-0009
+          - New Gopeed logo in Package Center, the DSM main menu, desktop and window.
+          - The DSM main menu and window title follow the DSM language; Package Center descriptions are translated into nine languages.
+          - Upgrading from 0.2.2-0008 needs no new administrator approval.
+          - Built with Syno Package Land CLI 0.7.3.
+
           0.2.2-0008
           - Per-user downloads, destinations and history, gated by DSM Application Privileges.
           - Completed downloads are saved with the user's own DSM permissions; interrupted or revoked saves are not replayed.
@@ -249,6 +255,12 @@ packages:
           - DSM 7.1 File Station downloads work without a Content-Disposition header.
           - Built with Syno Package Land CLI 0.7.1.
         zh-TW: |-
+          0.2.2-0009
+          - 套件中心、DSM 主選單、桌面與視窗改用 Gopeed 的 logo。
+          - DSM 主選單與視窗標題依 DSM 語言顯示；套件中心說明提供九種語言。
+          - 從 0.2.2-0008 升級不需管理員重新核准。
+          - 改用 Syno Package Land CLI 0.7.3 建置。
+
           0.2.2-0008
           - 每位使用者各自的下載、目的地與歷史紀錄，由 DSM 應用程式權限控管。
           - 下載完成的檔案以使用者自己的 DSM 權限存檔；中斷或權限被撤銷的存檔不會重播。
@@ -257,23 +269,23 @@ packages:
           - 改用 Syno Package Land CLI 0.7.1 建置。
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0008
+        version: 0.2.2-0009
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 0f2b1194441e0d11bf6062d2d250bf3317bb4ad09cca47fbb05afc1196ab763b
-        md5: a4c6b85e74918fb9aa215a4710ec2c8e
-        size: 52825088
+        sha256: de41248085a165effb662c505e1d3696d80afd3441e3a75a57c3957ca66a38fe
+        md5: c926b38bc1d9a21d55712eba09955ff3
+        size: 52864512
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-10T17:06:28Z
-          source_ref: 3aed27a4df263271f6999ad9e4f4aaa4c26d90f9
+          reviewed_at: 2026-10-11T04:30:59Z
+          source_ref: 83c7c8d5467917985245b93e20be03bfddd38517
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0008
+        version: 0.2.2-0009
         arch:
           - apollolake
           - avoton
@@ -302,14 +314,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ccfa45b97a5377d3ec415ca9be0c2dfe7c87871e8e742fb6fa2aa41f1af2d83b
-        md5: 54806042c10c5ffabf231e346b9c41ff
-        size: 55354880
+        sha256: 03a5b588aa464a99bd5e18de6c8b0b92e99177f82ed3cbe7bdd01f10f9fa90f4
+        md5: 7cd96c91e3561b9d36df41d2b02b3453
+        size: 55394304
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-10T17:06:33Z
-          source_ref: 3aed27a4df263271f6999ad9e4f4aaa4c26d90f9
+          reviewed_at: 2026-10-11T04:30:59Z
+          source_ref: 83c7c8d5467917985245b93e20be03bfddd38517
           source_repo: synopackageland/syno-pkg-gopeed
 publishers:
   synopackageland:
