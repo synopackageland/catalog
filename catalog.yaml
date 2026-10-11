@@ -91,7 +91,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0032
+      release: v0.1.0-0033
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -121,6 +121,10 @@ packages:
           開發預覽版：Connect 不會建立雲端帳號或資源，各連線方式的外部端到端連線尚未在所有網路環境驗證。
       changelog:
         en: |-
+          0.1.0-0033
+          - The DSM main menu, desktop shortcut and window title show "NAS Remote Connect" (or the translated name) instead of a raw text key.
+          - Built with Syno Package Land CLI 0.7.3.
+
           0.1.0-0032
           - New app icon in Package Center, the DSM main menu and the window.
           - English name "NAS Remote Connect"; the DSM menu and window title follow the DSM language.
@@ -133,6 +137,10 @@ packages:
           - Start and stop time limits sized for a busy NAS.
           - Built with Syno Package Land CLI 0.7.1 and UI 0.8.1.
         zh-TW: |-
+          0.1.0-0033
+          - DSM 主選單、桌面捷徑與視窗標題改為顯示「NAS 遠端連線」（或對應語言名稱），不再出現原始字串。
+          - 改用 Syno Package Land CLI 0.7.3 建置。
+
           0.1.0-0032
           - 套件中心、DSM 主選單與視窗改用新的 App 圖示。
           - 英文名稱為「NAS Remote Connect」；DSM 主選單與視窗標題會跟著 DSM 語言切換。
@@ -146,23 +154,23 @@ packages:
           - 改用 Syno Package Land CLI 0.7.1 與 UI 0.8.1 建置。
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0032
+        version: 0.1.0-0033
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: ff92b818aa41ac3389cbb88db82dde094c39205b975b6e995745c4145b6bb4dd
-        md5: 37b86545e2ce38cbf1c4f9a8c2272e9b
+        sha256: 9918a64b595b298ae390738af64ba888996d1195cdd63f0b513dc7fb84923f92
+        md5: 83a8199841d5450d937d0a1c58dc4ae3
         size: 16583168
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-11T02:57:08Z
-          source_ref: 476368845826295e30b40062e65104f6c2ca35d7
+          reviewed_at: 2026-10-11T04:19:42Z
+          source_ref: 575124fad542bf72e0ffae5ff38f079a831c4938
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0032
+        version: 0.1.0-0033
         arch:
           - apollolake
           - avoton
@@ -191,14 +199,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2de3f5e1dadd9da2f728aa66031f01c0907e600650b9903ee81d3fd179f51b29
-        md5: 358ad8348e6c0f873f5188bbcfd0b7ec
+        sha256: 5ab2fa865a3545acd3ffa700782c7f89920aebd3c9e7a6763930cd93cb627feb
+        md5: 48289a688d91da595659e9855c3d8e88
         size: 18172416
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-11T02:57:10Z
-          source_ref: 476368845826295e30b40062e65104f6c2ca35d7
+          reviewed_at: 2026-10-11T04:19:42Z
+          source_ref: 575124fad542bf72e0ffae5ff38f079a831c4938
           source_repo: synopackageland/syno-pkg-connect
   - category: utilities
     order: 30
