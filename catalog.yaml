@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1539
+      release: v0.1.1-1540
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -18,6 +18,15 @@ packages:
         en: Find what really frees space on a Btrfs volume, and free it safely.
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
       changelog: |-
+        0.1.1-1540
+        - Reproducible builds: the same source gives byte-identical packages on all three architectures.
+        - The DSM main menu and window show the app description in the DSM language; the name stays Syno Reclaim.
+        - Built with Syno Package Land CLI 0.7.2.
+
+        - 可重現建置：相同原始碼在三個架構都會產生完全相同的套件。
+        - DSM 主選單與視窗的 App 說明會跟著 DSM 語言切換；名稱維持 Syno Reclaim。
+        - 改用 Syno Package Land CLI 0.7.2 建置。
+
         0.1.1-1539
         - When DSM takes more than 30 seconds to run the approval (for example on a busy NAS), the app shows "Still waiting for DSM" with the time waited until approval finishes.
         - Built with Syno Package Land CLI 0.7.1.
@@ -46,43 +55,43 @@ packages:
         - 升級後需要重新確認 DSM 密碼。
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1539
+        version: 0.1.1-1540
         arch:
           - armv7
-        sha256: 8e2637ffcf9195f19cbccbcbfb166f153f4e0bb194dbc5f83a2e683ae6c7218b
-        md5: ff25c1a7c24e886ce33a6e49c3203301
-        size: 9396224
+        sha256: 70af912f1859e2b9aed70e104d53e8c7c875dc749b034ff10f4d23834d4e8624
+        md5: 011abb0701b25462106a1e23ad9f82a3
+        size: 8839168
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-10T18:05:14Z
-          source_ref: c3f429a10b100db7fcbf045679a73c94a8515151
+          reviewed_at: 2026-10-11T04:44:25Z
+          source_ref: 058fed642aa66709d9232e5321082b5bafa4cb53
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1539
+        version: 0.1.1-1540
         arch:
           - armv8
-        sha256: 8e6fcad0f04a3ecceef77a9edbe319dc56da06f8f8b3132a5c0b0ccc565e2307
-        md5: 423a64b962f7e5df297eda054d6a795c
-        size: 10176000
+        sha256: 75dfc09a58f7e7026c68d46d50d6fac7c97a7051f1a43a021a80f0cfbfe7b31c
+        md5: 7963784793b49f083ee125d6c370fca2
+        size: 10176512
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-10T18:05:15Z
-          source_ref: c3f429a10b100db7fcbf045679a73c94a8515151
+          reviewed_at: 2026-10-11T04:44:26Z
+          source_ref: 058fed642aa66709d9232e5321082b5bafa4cb53
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1539
+        version: 0.1.1-1540
         arch:
           - x86_64
-        sha256: ccc2b03bf9c342d6bab26fa8767397fc05789735057acdaeee5aa2d98e6c75e9
-        md5: bba065fef324600c72b2df39572acf8a
-        size: 9706496
+        sha256: fe3ba4c899f62eda797efce22af35786a0756e6e19884bb938013e73cefa1b9b
+        md5: 64dce466cda36c01d6525dde8e64e3ff
+        size: 9708032
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-10T18:05:16Z
-          source_ref: c3f429a10b100db7fcbf045679a73c94a8515151
+          reviewed_at: 2026-10-11T04:44:28Z
+          source_ref: 058fed642aa66709d9232e5321082b5bafa4cb53
           source_repo: synopackageland/syno-reclaim
   - category: utilities
     order: 20
