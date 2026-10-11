@@ -84,21 +84,54 @@ packages:
           reviewed_at: 2026-10-10T18:05:16Z
           source_ref: c3f429a10b100db7fcbf045679a73c94a8515151
           source_repo: synopackageland/syno-reclaim
-  - listed: false
+  - category: utilities
+    order: 20
     publisher: synopackageland
     trust: official
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: latest
+      release: v0.1.0-0031
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
       support_email: synopackageland@gmail.com
       homepage: https://www.varvis.me
+      license: MIT. Bundled third-party components keep their own licenses (modified
+        cloudflared 2026.9.3 under Apache-2.0, plus Go and npm dependencies); the full
+        notices ship in the package's LICENSES/ folder. Tailscale and NetBird clients
+        are downloaded from their vendors under their own licenses. Source code is not
+        public at this time.
       long_description:
-        en: A DSM connectivity package.
-        zh-TW: DSM 連線套件。
+        en: |-
+          Reach your NAS remotely without opening router ports. Connect lists every connection method on one page; turn Cloudflare Tunnel, Tailscale, NetBird or IPv6 direct access on or off independently, or disable them all.
+
+          Only DSM administrators can open the app or call its API. Everything runs as the package account; no root helper, Node.js or shared service is installed.
+
+          Cloudflare uses your own account, domain and tunnel token, with a bundled cloudflared modified to serve only the exact shared pages you choose. Tailscale and NetBird use their official clients, downloaded from the vendors and verified before use; NetBird access is controlled by your management server's policy.
+
+          Development preview: Connect does not create cloud accounts or resources, and end-to-end external connectivity of each method has not been verified on every network.
+        zh-TW: |-
+          不必在路由器開放連接埠，也能從外部連回 NAS。Connect 在同一頁列出所有連線方式；Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連可以各自啟用或停用，也可以全部停用。
+
+          只有 DSM 管理員能開啟本 App 或呼叫其 API。所有程式都以套件帳號執行，不安裝 root helper、Node.js 或全機共用服務。
+
+          Cloudflare 使用您自己的帳號、網域與 Tunnel token，搭配隨附且經修改的 cloudflared，只開放您指定的分享頁面。Tailscale 與 NetBird 使用官方用戶端，從原廠下載並在使用前驗證；NetBird 的存取範圍由您的管理伺服器政策控制。
+
+          開發預覽版：Connect 不會建立雲端帳號或資源，各連線方式的外部端到端連線尚未在所有網路環境驗證。
+      changelog:
+        en: |-
+          0.1.0-0031
+          - Only DSM administrators (local, AD or LDAP, as resolved by DSM) can open Connect and call its API.
+          - Uninstall now has its own time budget to revoke connections, and offline revocation still completes when the control socket is abandoned.
+          - Start and stop time limits sized for a busy NAS.
+          - Built with Syno Package Land CLI 0.7.1 and UI 0.8.1.
+        zh-TW: |-
+          0.1.0-0031
+          - 只有 DSM 管理員（本機、AD 或 LDAP，由 DSM 判定）能開啟 Connect 與呼叫其 API。
+          - 解除安裝時撤銷連線有獨立的時間上限；控制 socket 失聯時，離線撤銷仍會完成。
+          - 啟動與停止的時間上限依忙碌中的 NAS 調整。
+          - 改用 Syno Package Land CLI 0.7.1 與 UI 0.8.1 建置。
     pins:
       - package: SynoPkgConnect
         version: 0.1.0-0031
