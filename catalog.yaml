@@ -188,7 +188,8 @@ packages:
           reviewed_at: 2026-10-10T17:06:02Z
           source_ref: 7376d40e0dc59de946ab2e582300ac41581eed9f
           source_repo: synopackageland/syno-pkg-connect
-  - listed: false
+  - category: utilities
+    order: 30
     publisher: synopackageland
     trust: official
     source:
@@ -200,10 +201,40 @@ packages:
       contact_email: synopackageland@gmail.com
       support_email: synopackageland@gmail.com
       homepage: https://www.varvis.me
+      source_url: https://packages.varvis.me/src/synopackageland/syno-pkg-gopeed/
+      license: GPL-3.0-or-later
       long_description:
-        en: Per-user Gopeed downloads with DSM Application Privileges and
-          administrator-managed core updates.
-        zh-TW: 每位使用者各自的 Gopeed 下載，透過 DSM 應用程式權限控管，核心更新由管理員管理。
+        en: |-
+          Per-user Gopeed downloads with DSM Application Privileges and administrator-managed core updates.
+
+          Each DSM user has their own downloads, destinations and history; administrators cannot operate other users' tasks. Who can use the app is set in Control Panel > Application Privileges. Completed downloads are saved into the user's chosen shared folder with that user's own DSM permissions.
+
+          Administrators manage download limits, connections, plugins and the official Gopeed core, which is downloaded and verified before use.
+
+          Licensed under GPL-3.0-or-later; the corresponding source code is available at the source link.
+        zh-TW: |-
+          每位使用者各自的 Gopeed 下載，透過 DSM 應用程式權限控管，核心更新由管理員管理。
+
+          每位 DSM 使用者有各自的下載、目的地與歷史紀錄，管理員也不能操作別人的工作。可使用本 App 的人員在「控制台 → 權限 → 應用程式權限」設定。下載完成的檔案以該使用者自己的 DSM 權限存到其選擇的共用資料夾。
+
+          下載上限、連線數、外掛與官方 Gopeed 核心由管理員管理，核心在使用前下載並驗證。
+
+          以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
+      changelog:
+        en: |-
+          0.2.2-0008
+          - Per-user downloads, destinations and history, gated by DSM Application Privileges.
+          - Completed downloads are saved with the user's own DSM permissions; interrupted or revoked saves are not replayed.
+          - The download executor reports a paused state and can be approved again from Settings, showing DSM's reason on failure.
+          - DSM 7.1 File Station downloads work without a Content-Disposition header.
+          - Built with Syno Package Land CLI 0.7.1.
+        zh-TW: |-
+          0.2.2-0008
+          - 每位使用者各自的下載、目的地與歷史紀錄，由 DSM 應用程式權限控管。
+          - 下載完成的檔案以使用者自己的 DSM 權限存檔；中斷或權限被撤銷的存檔不會重播。
+          - 下載執行器會回報暫停狀態，可在設定頁重新核准，失敗時顯示 DSM 的原因。
+          - DSM 7.1 的 File Station 下載不再需要 Content-Disposition 標頭。
+          - 改用 Syno Package Land CLI 0.7.1 建置。
     pins:
       - package: SynoPkgGopeed
         version: 0.2.2-0008
