@@ -1,10 +1,9 @@
-schema: 2
+schema: 3
 packages:
   - featured: true
     category: utilities
     order: 10
     publisher: synopackageland
-    trust: official
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
@@ -96,7 +95,6 @@ packages:
   - category: utilities
     order: 20
     publisher: synopackageland
-    trust: official
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
@@ -220,7 +218,6 @@ packages:
   - category: utilities
     order: 30
     publisher: synopackageland
-    trust: official
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
@@ -338,4 +335,3 @@ publishers:
     contact_email: synopackageland@gmail.com
     support_email: synopackageland@gmail.com
     homepage: https://www.varvis.me
-    verified: true

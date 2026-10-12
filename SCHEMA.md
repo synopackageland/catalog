@@ -40,29 +40,63 @@ for website/editorial data and migration; update a manifest and re-release if
 metadata must also travel in the installed SPK. Catalog overrides can appear in
 the index immediately, without modifying the SPK. Missing fields are not rendered.
 
-## Trust and identity
+## Two sections: checked and community
 
-- official: synopackageland's own releases, pinned and verified during download.
-- verified: third-party artifacts security reviewed after granting GitHub source /
-  build read access to synopackageland. Each approved pin carries reviewer, UTC
-  time, immutable source commit and optional explicit source_repo. For verified
-  HTTPS artifacts source_repo is required. Script checks the reviewed commit is
-  readable; human review is still necessary. Trust is set by catalog maintainers,
-  never derived from a publisher's submitted claim or from hash validation.
-- community: not reviewed by synopackageland. Submitted/first-seen hashes detect
-  changes but do not demonstrate safety. The index description says not reviewed
-  and unsigned. Website/API show all tiers; `?trust=official|verified|community`
-  filters them. Package Center defaults official + verified; community requires
-  an explicit source URL with `trust=community` (can combine comma-separated tiers).
+- catalog.yaml (schema 3) lists only packages this site's maintainer ran the
+  basic security check on: synopackageland's own releases, and third parties'
+  public SPKs. Each pin records reviewer, UTC time and immutable source commit;
+  `review.report_sha256` and `review.checklist: basic-v1` are optional. These
+  are the only packages in the DSM Package Center source; `?trust=` is ignored.
+- community/<publisher>/ holds packages nobody checked. They are on the
+  website only, linked to the author's GitHub Release, with the pinned sha256
+  shown. Source code and license are not required.
 
-Publisher verified is **identity verification**, independent of artifact security
-review and SPK signatures. All these SPKs are unsigned. Third-party publisher
-contact and support emails are required; official defaults are
-synopackageland@gmail.com. Third-party INFO.package must begin `<publisher-id>.` or appear in the maintainer-approved publisher `package_names` reservation;
-identities are globally unique, case-insensitively. Namespace ownership and trust
-are approved by maintainers; duplicate identities are hidden. Native SDK packages can keep
-alphanumeric names through explicit package_names reservations, preserving the
-SDK naming contract. Package ownership conflicts across publishers are refused.
+All these SPKs are unsigned. Schema 3 has no `trust` and no publisher
+`verified`. Third-party publisher contact and support emails are required;
+official defaults are synopackageland@gmail.com. Third-party INFO.package must
+begin `<publisher-id>.` or appear in the maintainer-approved publisher
+`package_names` reservation; identities are globally unique,
+case-insensitively, and catalog.yaml wins over community for the same ID.
+
+## Community packages
+
+```yaml
+# community/alice/publisher.yaml
+schema: 1
+display_name: Alice Chen
+contact_email: alice@example.com
+support_email: help@example.com
+homepage: https://example.com      # optional
+github_owner_id: 1234567
+maintainers: [1234567]
+```
+
+```yaml
+# community/alice/alice.MyApp.yaml   (file name = package ID)
+schema: 1
+package: alice.MyApp               # "<publisher>." prefix; no ".dev" suffix
+version: 1.2.0-3
+displayname: My App
+description: Does one thing.
+os_min_ver: 7.0-40000              # DSM 7 or later
+category: media                    # optional
+icon: assets/icon.png              # optional PNG in the source repo at the tag
+metadata: { license: MIT }         # optional
+source: { repo: alice/app, release: v1.2.0-3 }   # owner = publisher; not "latest"
+assets:
+  - { name: app-x86_64.spk, arch: [x86_64], sha256: <64 hex>, size: 2048 }
+```
+
+Limits: 1–8 assets of at most 64 MiB with disjoint architectures, files of at
+most 64 KiB, 10 packages per publisher, 200 in all. Tier fields (`trust`,
+`review`, `featured`, `order`, `package_names`, `credential_binding`) are
+refused. A broken package file hides that package; a broken or missing
+publisher.yaml hides that publisher.
+
+`moderation.yaml` blocks publishers, package IDs or single SPKs by sha256.
+`reserved-names.yaml` refuses exact package IDs (`names`) and words in a
+package ID or display name (`words`). If either cannot be read, no community
+package is listed; checked packages are unaffected.
 
 ## Sources and integrity
 
@@ -90,23 +124,12 @@ sanitized warning and rejects its download link. Publisher blocked, listed:false
 and blocked_versions revoke all tiers at next cache refresh (up to five minutes).
 Instant revocation needs a future centralized deny store.
 
-Every tier currently **proxies and verifies** the download. Proxy avoids a
-refresh/download TOCTOU: we retain the final chunk until SHA-256/MD5/size match,
-then count and complete. If someone replaces bytes, the client gets a failed /
-incomplete transfer and the changed artifact disappears at refresh. Successful
-completed bytes match the pinned artifact. We do not rely solely on DSM MD5.
-Actual Package Center MD5 refusal/install behavior was not verified on a NAS in
-this task: **unknown**. No NAS was changed.
-
-Redirect could reduce proxy work for community but cannot enforce download-time
-SHA-256 and cannot accurately count completed downloads. It is not enabled.
-50 MiB × 1,000 downloads = about 48.8 GiB transmitted through the proxy, plus cold
-refresh traffic. Workers memory is 128 MB per isolate; Free CPU is 10 ms/request,
-Paid default CPU is 30 s (configurable to 5 min). Streaming bounds payload memory;
-512 MiB accepted SPK size is a parser bound, not a proven production capacity.
-Measure large files and account plan before onboarding at scale; fetch deadline
-remains 60 s. See [Cloudflare limits](https://developers.cloudflare.com/workers/platform/limits/)
-and [pricing](https://developers.cloudflare.com/workers/platform/pricing/).
+synopackageland's own releases are **proxied and verified**: we retain the
+final chunk until SHA-256/MD5/size match, then count and complete. A third
+party's public SPK is linked where it was published and listed only when
+GitHub's asset `digest` (sha256) and size match a pin; DSM checks the feed `md5`
+after download and refuses a mismatch, and those downloads are not counted.
+Community SPKs never pass through the Worker.
 
 ## Counts
 
@@ -140,26 +163,28 @@ separate public submissions issue/PR repo and maintainers transfer approved reco
 No third-party SPK is hosted in synopackageland repos/Releases. Do not enable public
 submission until host, credential, namespace and security-review policies are ready.
 
-## Schema 2 selection example
+## Schema 3 selection example
 
 ```yaml
-schema: 2
+schema: 3
 publishers:
   example:
     display_name: Example Developer
     contact_email: contact@example.com
     support_email: support@example.com
-    verified: false
     package_names: [ExampleApp] # Explicit native name reservation by maintainers
 packages:
   - publisher: example
-    trust: community
     source:
       kind: github-release
       repo: example/app
       release: v1.0.0
-      access: public
-    pins: [] # Hidden until a submitted candidate pin is recorded
+      access: public            # a third party's SPK must be public
+    info:                       # the Worker never reads a third party's SPK
+      displayname: Example App
+      description: Does one thing.
+      os_min_ver: 7.0-40000
+    pins: [] # Hidden until a reviewed pin is recorded
     listed: true
 ```
 
