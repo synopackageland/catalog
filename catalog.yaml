@@ -98,24 +98,23 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0033
+      release: v0.1.0-0047
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
       support_email: synopackageland@gmail.com
       homepage: https://www.varvis.me
-      license: MIT. Bundled third-party components keep their own licenses (modified
-        cloudflared 2026.9.3 under Apache-2.0, plus Go and npm dependencies); the full
-        notices ship in the package's LICENSES/ folder. Tailscale and NetBird clients
-        are downloaded from their vendors under their own licenses. Source code is not
-        public at this time.
+      license: MIT. Bundled Go and npm dependencies keep their own licenses; the full
+        notices ship in the package's LICENSES/ folder. The cloudflared, Tailscale and
+        NetBird clients are downloaded from their vendors under their own licenses.
+        Source code is not public at this time.
       long_description:
         en: |-
           Reach your NAS remotely without opening router ports. Connect lists every connection method on one page; turn Cloudflare Tunnel, Tailscale, NetBird or IPv6 direct access on or off independently, or disable them all.
 
           Only DSM administrators can open the app or call its API. Everything runs as the package account; no root helper, Node.js or shared service is installed.
 
-          Cloudflare uses your own account, domain and tunnel token, with a bundled cloudflared modified to serve only the exact shared pages you choose. Tailscale and NetBird use their official clients, downloaded from the vendors and verified before use; NetBird access is controlled by your management server's policy.
+          Cloudflare Tunnel, Tailscale and NetBird use their official, unmodified clients, downloaded from the vendors and verified before use. Cloudflare publishes only the DSM web page; NetBird access is controlled by your management server's policy.
 
           Development preview: Connect does not create cloud accounts or resources, and end-to-end external connectivity of each method has not been verified on every network.
         zh-TW: |-
@@ -123,61 +122,65 @@ packages:
 
           只有 DSM 管理員能開啟本 App 或呼叫其 API。所有程式都以套件帳號執行，不安裝 root helper、Node.js 或全機共用服務。
 
-          Cloudflare 使用您自己的帳號、網域與 Tunnel token，搭配隨附且經修改的 cloudflared，只開放您指定的分享頁面。Tailscale 與 NetBird 使用官方用戶端，從原廠下載並在使用前驗證；NetBird 的存取範圍由您的管理伺服器政策控制。
+          Cloudflare Tunnel、Tailscale 與 NetBird 使用未經修改的官方用戶端，從原廠下載並在使用前驗證。Cloudflare 只公開 DSM 網頁；NetBird 的存取範圍由您的管理伺服器政策控制。
 
           開發預覽版：Connect 不會建立雲端帳號或資源，各連線方式的外部端到端連線尚未在所有網路環境驗證。
       changelog:
         en: |-
-          0.1.0-0033
-          - The DSM main menu, desktop shortcut and window title show "NAS Remote Connect" (or the translated name) instead of a raw text key.
-          - Built with Syno Package Land CLI 0.7.3.
-
-          0.1.0-0032
-          - New app icon in Package Center, the DSM main menu and the window.
-          - English name "NAS Remote Connect"; the DSM menu and window title follow the DSM language.
-          - Package descriptions in nine languages describe what Connect does; developer shown as Syno Package Land.
-          - Built with Syno Package Land CLI 0.7.2.
-
-          0.1.0-0031
-          - Only DSM administrators (local, AD or LDAP, as resolved by DSM) can open Connect and call its API.
-          - Uninstall now has its own time budget to revoke connections, and offline revocation still completes when the control socket is abandoned.
-          - Start and stop time limits sized for a busy NAS.
-          - Built with Syno Package Land CLI 0.7.1 and UI 0.8.1.
+          0.1.0-0047
+          - One overview page lists every connection method. Turn Cloudflare Tunnel, Tailscale, NetBird or IPv6 direct access on or off independently, or turn them all off.
+          - Cloudflare Tunnel: a temporary URL with no account, your own domain after signing in to Cloudflare (an existing DNS record is never overwritten), or your own tunnel token. Only the DSM web page is published.
+          - Tailscale: reach selected NAS web services from your own computers and phones; Funnel can make selected web services public.
+          - NetBird: sign in with your NetBird account, or use a setup key and your own management server in Advanced. Access to the NAS follows your management server's policy.
+          - IPv6 direct: use the NAS's global IPv6 address with checklists for the DSM firewall, router and DDNS. Connect does not change the firewall or your router.
+          - The cloudflared, Tailscale and NetBird clients are the vendors' official releases, downloaded and verified on the NAS before use.
+          - Only DSM administrators (local, AD or LDAP, as resolved by DSM) can open Connect and call its API. Everything runs as the package account, with no root helper.
+          - Nine languages; DSM 7.1 or later on x86_64, aarch64 and armv7.
         zh-TW: |-
-          0.1.0-0033
-          - DSM 主選單、桌面捷徑與視窗標題改為顯示「NAS 遠端連線」（或對應語言名稱），不再出現原始字串。
-          - 改用 Syno Package Land CLI 0.7.3 建置。
-
-          0.1.0-0032
-          - 套件中心、DSM 主選單與視窗改用新的 App 圖示。
-          - 英文名稱為「NAS Remote Connect」；DSM 主選單與視窗標題會跟著 DSM 語言切換。
-          - 九個語系的套件說明改寫為實際功能；開發者顯示為 Syno Package Land。
-          - 改用 Syno Package Land CLI 0.7.2 建置。
-
-          0.1.0-0031
-          - 只有 DSM 管理員（本機、AD 或 LDAP，由 DSM 判定）能開啟 Connect 與呼叫其 API。
-          - 解除安裝時撤銷連線有獨立的時間上限；控制 socket 失聯時，離線撤銷仍會完成。
-          - 啟動與停止的時間上限依忙碌中的 NAS 調整。
-          - 改用 Syno Package Land CLI 0.7.1 與 UI 0.8.1 建置。
+          0.1.0-0047
+          - 在同一個總覽頁列出所有連線方式。Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連可以各自啟用或停用，也可以全部停用。
+          - Cloudflare Tunnel：不需帳號即可取得臨時網址；登入 Cloudflare 後可使用自己的網域（已有同名 DNS 記錄時不覆寫）；也可以使用自己的 Tunnel token。只公開 DSM 網頁。
+          - Tailscale：從自己的電腦與手機連到選定的 NAS 網頁服務；Funnel 可將選定的網頁服務公開。
+          - NetBird：以 NetBird 帳號登入，或在進階設定中使用 setup key 與自架的管理伺服器。NAS 的存取範圍由管理伺服器政策控制。
+          - IPv6 直連：使用 NAS 的全域 IPv6 位址，並提供 DSM 防火牆、路由器與 DDNS 的檢查清單。Connect 不會修改防火牆或路由器。
+          - cloudflared、Tailscale 與 NetBird 使用原廠官方版本，在 NAS 上下載並驗證後才使用。
+          - 只有 DSM 管理員（本機、AD 或 LDAP，由 DSM 判定）能開啟 Connect 與呼叫其 API。所有程式都以套件帳號執行，不使用 root helper。
+          - 支援九種語言；需要 DSM 7.1 以上，支援 x86_64、aarch64 與 armv7。
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0033
+        version: 0.1.0-0047
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 9918a64b595b298ae390738af64ba888996d1195cdd63f0b513dc7fb84923f92
-        md5: 83a8199841d5450d937d0a1c58dc4ae3
-        size: 16583168
+        sha256: e737fbc8c028788c15f77befe215ed424c3a99361e33955665fc1d8d2cb8b8b2
+        md5: a5ceac8e26a94922e650288d11b73c4f
+        size: 7482368
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-11T04:19:42Z
-          source_ref: 575124fad542bf72e0ffae5ff38f079a831c4938
+          reviewed_at: 2026-10-13T23:25:43Z
+          source_ref: e70f9159277cc692858fa1f83823a2f6da1dd26c
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0033
+        version: 0.1.0-0047
+        arch:
+          - alpine
+          - alpine4k
+          - armada38x
+          - monaco
+        sha256: 6cad4b1097f23da665d695f120e59f8bb7033605e59863cc2c9147a0b2362aef
+        md5: a4823fe14ad91060deb7831406608b07
+        size: 7864320
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-13T23:25:44Z
+          source_ref: e70f9159277cc692858fa1f83823a2f6da1dd26c
+          source_repo: synopackageland/syno-pkg-connect
+      - package: SynoPkgConnect
+        version: 0.1.0-0047
         arch:
           - apollolake
           - avoton
@@ -206,14 +209,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 5ab2fa865a3545acd3ffa700782c7f89920aebd3c9e7a6763930cd93cb627feb
-        md5: 48289a688d91da595659e9855c3d8e88
-        size: 18172416
+        sha256: 4b8b4e17ee495c9204d6a7251fe08b32bc34f9ce17cb656f7ed6dc334a2be4d0
+        md5: ea086582ad544e4bf46dd4bcee9f1d10
+        size: 8199680
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-11T04:19:42Z
-          source_ref: 575124fad542bf72e0ffae5ff38f079a831c4938
+          reviewed_at: 2026-10-13T23:25:45Z
+          source_ref: e70f9159277cc692858fa1f83823a2f6da1dd26c
           source_repo: synopackageland/syno-pkg-connect
   - category: utilities
     order: 30
