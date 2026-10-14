@@ -224,7 +224,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0009
+      release: v0.2.2-0027
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -234,67 +234,57 @@ packages:
       license: GPL-3.0-or-later
       long_description:
         en: |-
-          Per-user Gopeed downloads with DSM Application Privileges and administrator-managed core updates.
+          Download Hub: per-user downloads powered by the official Gopeed engine, with DSM Application Privileges and administrator-managed core updates.
 
           Each DSM user has their own downloads, destinations and history; administrators cannot operate other users' tasks. Who can use the app is set in Control Panel > Application Privileges. Completed downloads are saved into the user's chosen shared folder with that user's own DSM permissions.
 
-          Administrators manage download limits, connections, plugins and the official Gopeed core, which is downloaded and verified before use.
+          Administrators manage download limits, connections, extensions and updates of the official Gopeed core, which are downloaded from the official release and verified before use.
 
           Licensed under GPL-3.0-or-later; the corresponding source code is available at the source link.
         zh-TW: |-
-          每位使用者各自的 Gopeed 下載，透過 DSM 應用程式權限控管，核心更新由管理員管理。
+          下載中心：以官方 Gopeed 引擎為核心、每位使用者各自的下載，透過 DSM 應用程式權限控管，核心更新由管理員管理。
 
           每位 DSM 使用者有各自的下載、目的地與歷史紀錄，管理員也不能操作別人的工作。可使用本 App 的人員在「控制台 → 權限 → 應用程式權限」設定。下載完成的檔案以該使用者自己的 DSM 權限存到其選擇的共用資料夾。
 
-          下載上限、連線數、外掛與官方 Gopeed 核心由管理員管理，核心在使用前下載並驗證。
+          下載上限、連線數、擴充套件與官方 Gopeed 核心的更新由管理員管理；更新從官方 Release 下載，並在使用前驗證。
 
           以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
       changelog:
         en: |-
-          0.2.2-0009
-          - New Gopeed logo in Package Center, the DSM main menu, desktop and window.
-          - The DSM main menu and window title follow the DSM language; Package Center descriptions are translated into nine languages.
-          - Upgrading from 0.2.2-0008 needs no new administrator approval.
-          - Built with Syno Package Land CLI 0.7.3.
-
-          0.2.2-0008
-          - Per-user downloads, destinations and history, gated by DSM Application Privileges.
-          - Completed downloads are saved with the user's own DSM permissions; interrupted or revoked saves are not replayed.
-          - The download executor reports a paused state and can be approved again from Settings, showing DSM's reason on failure.
-          - DSM 7.1 File Station downloads work without a Content-Disposition header.
-          - Built with Syno Package Land CLI 0.7.1.
+          0.2.2-0027
+          - Download almost anything to the NAS from one address box: HTTP/HTTPS links, BitTorrent (magnet links, .torrent links and uploaded .torrent files, with file selection), ED2K links and eMule magnets, media pages through yt-dlp (installed by an administrator on the Core updates page), and addresses that Gopeed extensions add.
+          - Each DSM user has their own downloads, destination and history; who can use the app is set in Control Panel > Application Privileges.
+          - Completed files are saved into the folder the user chose, with that user's own DSM permissions, also after they sign out. An administrator approves background saving once and chooses the shared folders it may use.
+          - Administrators manage concurrent downloads, connections, BT seeding and ports, ED2K ports, Gopeed extensions from the official registry, and updates of the official Gopeed core and of yt-dlp, ffmpeg and deno; each update is downloaded and verified before use and can be rolled back.
+          - Optional full-page entry through the DSM Application Portal; click a saved file to show it in File Station.
+          - Nine languages, DSM 7.1-42661 or later, x86_64 and aarch64.
         zh-TW: |-
-          0.2.2-0009
-          - 套件中心、DSM 主選單、桌面與視窗改用 Gopeed 的 logo。
-          - DSM 主選單與視窗標題依 DSM 語言顯示；套件中心說明提供九種語言。
-          - 從 0.2.2-0008 升級不需管理員重新核准。
-          - 改用 Syno Package Land CLI 0.7.3 建置。
-
-          0.2.2-0008
-          - 每位使用者各自的下載、目的地與歷史紀錄，由 DSM 應用程式權限控管。
-          - 下載完成的檔案以使用者自己的 DSM 權限存檔；中斷或權限被撤銷的存檔不會重播。
-          - 下載執行器會回報暫停狀態，可在設定頁重新核准，失敗時顯示 DSM 的原因。
-          - DSM 7.1 的 File Station 下載不再需要 Content-Disposition 標頭。
-          - 改用 Syno Package Land CLI 0.7.1 建置。
+          0.2.2-0027
+          - 一個輸入框就能把幾乎任何東西下載到 NAS：HTTP／HTTPS 連結、BitTorrent（磁力連結、.torrent 連結與上傳的 .torrent 檔，可選擇檔案）、ED2K 連結與 eMule 磁力連結、yt-dlp 支援的影音網頁（由管理員在「核心更新」頁安裝 yt-dlp），以及 Gopeed 擴充套件新增的位址。
+          - 每位 DSM 使用者有各自的下載、目的地與歷史紀錄；可使用本 App 的人員在「控制台 → 權限 → 應用程式權限」設定。
+          - 下載完成的檔案以使用者自己的 DSM 權限存到其選擇的資料夾，登出後也會繼續。背景存檔需管理員核准一次，並選定可使用的共用資料夾。
+          - 管理員管理同時下載數、連線數、BT 做種與連接埠、ED2K 連接埠、從官方清單安裝的 Gopeed 擴充套件，以及官方 Gopeed 核心與 yt-dlp、ffmpeg、deno 的更新；每次更新都在使用前下載並驗證，並可退回上一版。
+          - 可透過 DSM 應用程式入口以整頁開啟；點已存的檔案可在 File Station 中顯示。
+          - 九種語言，DSM 7.1-42661 以上，x86_64 與 aarch64。
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0009
+        version: 0.2.2-0027
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: de41248085a165effb662c505e1d3696d80afd3441e3a75a57c3957ca66a38fe
-        md5: c926b38bc1d9a21d55712eba09955ff3
-        size: 52864512
+        sha256: 2f59fbe52dcd17e7150688cc61b10643bd5e69db372feb04f95ed5a8c6f02d5b
+        md5: c08288e95debf6e38529ba1dc9c0fef5
+        size: 53607424
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-11T04:30:59Z
-          source_ref: 83c7c8d5467917985245b93e20be03bfddd38517
+          reviewed_at: 2026-10-14T00:15:38Z
+          source_ref: bc4c2c3f10ece639e3a9762691600fa5e4e47a03
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0009
+        version: 0.2.2-0027
         arch:
           - apollolake
           - avoton
@@ -323,14 +313,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 03a5b588aa464a99bd5e18de6c8b0b92e99177f82ed3cbe7bdd01f10f9fa90f4
-        md5: 7cd96c91e3561b9d36df41d2b02b3453
-        size: 55394304
+        sha256: 0ce6f3fbd1e1957d4cbde1a690f5016b33a2164a68f43fc40267144e12514c55
+        md5: 27ffd5642fda17e3892971e4f6974c6d
+        size: 56190976
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-11T04:30:59Z
-          source_ref: 83c7c8d5467917985245b93e20be03bfddd38517
+          reviewed_at: 2026-10-14T00:15:44Z
+          source_ref: bc4c2c3f10ece639e3a9762691600fa5e4e47a03
           source_repo: synopackageland/syno-pkg-gopeed
 publishers:
   synopackageland:
