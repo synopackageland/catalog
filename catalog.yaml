@@ -7,7 +7,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1564
+      release: v0.1.1-1565
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -17,91 +17,51 @@ packages:
         en: Find what really frees space on a Btrfs volume, and free it safely.
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
       changelog: |-
-        0.1.1-1564
-        - Operations that need root now run through the Syno Package Land SDK executor. After upgrading from 1540, an administrator approves Reclaim once with the DSM password the first time the window opens; the old root helper is removed at the next package stop, restart or upgrade after that.
-        - New window layout with a sidebar and page header. Settings has an Application Portal panel, and Reclaim also opens through a Portal alias on port 80 or 443.
-        - Sizes are shown as Storage Manager shows them (KB/MB/GB/TB in 1024s).
-        - While the package is stopped or starting, the window says so and continues once the package runs.
-        - The cleanup review fits an 840 px window, cleanup shows its progress from the start, and checking the selection no longer slows down while other disk activity runs.
-        - Requires DSM 7.1-42661 or later. Built with Syno Package Land CLI 0.10.8 and SDK 0.10.7.
+        0.1.1-1565
+        - The executor handles scheduler checks in the background; a fresh, ready result lets the DSM window open without its own scheduler calls.
+        - App pages preload session, jobs and volumes alongside the executor check. Scan and cleanup dialogs wait until those pages are ready to show.
+        - Scan Btrfs volumes, review reclaimable items and track cleanup progress. Settings includes the DSM Application Portal entry.
+        - Requires DSM 7.1-42661 or later. Built with Syno Package Land CLI and SDK 0.10.9.
 
-        - 需要 root 權限的操作改由 Syno Package Land SDK 執行器執行。從 1540 升級後，第一次開啟視窗時需由管理員以 DSM 密碼核准一次；舊的 root helper 會在之後第一次套件停止、重新啟動或升級時移除。
-        - 新的視窗版面，含側欄與頁首。設定頁新增應用程式入口設定，也可以透過 80 或 443 埠的入口別名開啟。
-        - 容量的顯示方式與儲存空間管理員相同（以 1024 為單位的 KB/MB/GB/TB）。
-        - 套件停止或正在啟動時，視窗會顯示狀態，並在套件執行後自動繼續。
-        - 清理確認視窗可在 840 px 的視窗內完整顯示，清理一開始就顯示進度；有其他磁碟活動時，檢查選取項目不再變慢。
-        - 需要 DSM 7.1-42661 以上。改用 Syno Package Land CLI 0.10.8 與 SDK 0.10.7 建置。
-
-        0.1.1-1540
-        - Reproducible builds: the same source gives byte-identical packages on all three architectures.
-        - The DSM main menu and window show the app description in the DSM language; the name stays Syno Reclaim.
-        - Built with Syno Package Land CLI 0.7.2.
-
-        - 可重現建置：相同原始碼在三個架構都會產生完全相同的套件。
-        - DSM 主選單與視窗的 App 說明會跟著 DSM 語言切換；名稱維持 Syno Reclaim。
-        - 改用 Syno Package Land CLI 0.7.2 建置。
-
-        0.1.1-1539
-        - When DSM takes more than 30 seconds to run the approval (for example on a busy NAS), the app shows "Still waiting for DSM" with the time waited until approval finishes.
-        - Built with Syno Package Land CLI 0.7.1.
-
-        - 核准任務在 DSM 上超過 30 秒仍未完成時（例如 NAS 忙碌），App 會顯示「仍在等待 DSM」與已等待時間，直到核准完成。
-        - 改用 Syno Package Land CLI 0.7.1 建置。
-
-        0.1.1-1529
-        - Fix: requests refused for missing or malformed DSM credentials now return their complete error response; previously the connection could be reset, so browsers reported a network error instead of the refusal.
-        - Request bodies are read with a 10-second limit.
-
-        - 修正：因缺少或格式錯誤的 DSM 憑證而被拒絕的請求，現在會收到完整的錯誤回應；先前連線可能被重設，瀏覽器只會顯示網路錯誤。
-        - 讀取請求內容設有 10 秒上限。
-
-        0.1.1-1528
-        - Live Btrfs scans now complete with clearly marked approximate figures instead of failing when the volume changes during the scan; real I/O and permission errors still fail.
-        - Cleanup refuses a plan when a file was appended in place after planning, and keeps the file.
-        - Security: unauthenticated requests are refused before their body is parsed, JSON size and nesting are bounded, and administrator rights are re-checked with DSM on every request.
-        - DSM window and dialog fixes; app-scoped modals.
-        - Upgrading requires confirming your DSM password again.
-
-        - 即時 Btrfs 掃描在掃描期間磁碟區有變動時，會以標示為近似的結果完成，不再整體失敗；真正的 I/O 與權限錯誤仍會失敗。
-        - 規劃後檔案被原地追加內容時，清理會拒絕該計畫並保留檔案。
-        - 安全性：未認證請求在解析內容前即被拒絕，JSON 大小與巢狀深度設有上限，每次請求都向 DSM 重新確認管理員身分。
-        - DSM 視窗與對話框修正；改用 app 範圍的 modal。
-        - 升級後需要重新確認 DSM 密碼。
+        - 執行器在背景核對排程；核對結果有效且就緒時，DSM 視窗可直接開啟，無須另外呼叫排程 API。
+        - App 頁面在核對執行器時同步預讀 session、工作與磁碟區；掃描與清理對話框在頁面可顯示後才開啟。
+        - 掃描 Btrfs 磁碟區、檢視可回收項目並追蹤清理進度；設定頁提供 DSM 應用程式入口。
+        - 需要 DSM 7.1-42661 以上，使用 Syno Package Land CLI 與 SDK 0.10.9 建置。
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1564
+        version: 0.1.1-1565
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 9afe64ecee82fda2819eadccbb5ed61ad4044a794a0612353c94f0a3482ceefb
-        md5: f8e71e3fcbea52e67101209748e5e83c
-        size: 13347840
+        sha256: b661d26d795f8afb1750fbd731a8cd68d43c317aa526da6aadafb2a15bddebda
+        md5: 735e7b1eba9dc1a79f84320833de6e7b
+        size: 13351424
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T01:07:33Z
-          source_ref: 180d4f6827455b734baa3a84d0c1f4fd75cfd112
+          reviewed_at: 2026-10-15T03:58:22Z
+          source_ref: b57ad6405658f3ce8353727bd03d59daa6f5c6f7
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1564
+        version: 0.1.1-1565
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 2f368394373c912a87c11b0485e6cab17f31cc51846aa14ca535e6c88955efba
-        md5: b985b4a307ad36918cb35455d3d645a1
-        size: 14062592
+        sha256: 3cb50328dab0d6d64141c3e27f31018783474a3c24ac149bade4a6bffcd3eb98
+        md5: d4460ce25ef0f55e04bfd79d8d680285
+        size: 14067712
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T01:07:35Z
-          source_ref: 180d4f6827455b734baa3a84d0c1f4fd75cfd112
+          reviewed_at: 2026-10-15T03:58:32Z
+          source_ref: b57ad6405658f3ce8353727bd03d59daa6f5c6f7
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1564
+        version: 0.1.1-1565
         arch:
           - apollolake
           - avoton
@@ -130,14 +90,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 9a6f8ecbfd290a3522fe77de49339a90bd500973538730c395e280c32f8da38a
-        md5: 9db627a6ce35dc44f4c8c9fdab8a1b55
-        size: 14396928
+        sha256: 5ce671e80a1506bab445c22fe6b760c5ded7a34b4192a3ff922cfef2cb106b8d
+        md5: 767a5833986cd15db6530581c2bdea66
+        size: 14401024
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T01:07:43Z
-          source_ref: 180d4f6827455b734baa3a84d0c1f4fd75cfd112
+          reviewed_at: 2026-10-15T03:58:51Z
+          source_ref: b57ad6405658f3ce8353727bd03d59daa6f5c6f7
           source_repo: synopackageland/syno-reclaim
   - category: utilities
     order: 20
