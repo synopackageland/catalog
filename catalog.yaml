@@ -237,7 +237,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0034
+      release: v0.2.2-0036
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -264,46 +264,34 @@ packages:
           以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
       changelog:
         en: |-
-          0.2.2-0034
-          - Download almost anything to the NAS from one address box: HTTP/HTTPS links, BitTorrent (magnet links, .torrent links and uploaded .torrent files, with file selection), ED2K links and eMule magnets, media pages through yt-dlp (installed by an administrator on the Core updates page), and addresses that Gopeed extensions add.
-          - Each DSM user has their own downloads, destination and history; who can use the app is set in Control Panel > Application Privileges.
-          - Completed files are saved into the folder the user chose, with that user's own DSM permissions, also after they sign out. An administrator approves background saving once and chooses the shared folders it may use.
-          - Administrators manage concurrent downloads, connections, BT seeding and ports, ED2K ports, Gopeed extensions from the official registry, and updates of the official Gopeed core and of yt-dlp, ffmpeg and deno; each update is downloaded and verified before use and can be rolled back.
-          - Optional full-page entry through the DSM Application Portal; click a saved file to show it in File Station.
-          - Nine languages, DSM 7.1-42661 or later, x86_64 and aarch64.
-          - Settings puts background saving first. The downloads list shows state, progress and speed together, and confirmations use DSM styling. Open in File Station selects the saved file.
-          - When the package stops or starts, the page shows its state and continues on its own once it runs. Extensions can update while downloads are paused, and the download engine cleans up temporary copies of links on start and stop.
-          - The executor checks scheduler tasks in the background. A fresh, ready result lets an administrator open the App without separate scheduler calls.
+          0.2.2-0036
+          - First-time administrator approval explains that system privileges let file jobs finish after users sign out.
+          - Settings lets administrators enable or remove the App entry.
+          - A visible DSM portal banner shows the App name without repeating it in the sidebar.
         zh-TW: |-
-          0.2.2-0034
-          - 一個輸入框就能把幾乎任何東西下載到 NAS：HTTP／HTTPS 連結、BitTorrent（磁力連結、.torrent 連結與上傳的 .torrent 檔，可選擇檔案）、ED2K 連結與 eMule 磁力連結、yt-dlp 支援的影音網頁（由管理員在「核心更新」頁安裝 yt-dlp），以及 Gopeed 擴充套件新增的位址。
-          - 每位 DSM 使用者有各自的下載、目的地與歷史紀錄；可使用本 App 的人員在「控制台 → 權限 → 應用程式權限」設定。
-          - 下載完成的檔案以使用者自己的 DSM 權限存到其選擇的資料夾，登出後也會繼續。背景存檔需管理員核准一次，並選定可使用的共用資料夾。
-          - 管理員管理同時下載數、連線數、BT 做種與連接埠、ED2K 連接埠、從官方清單安裝的 Gopeed 擴充套件，以及官方 Gopeed 核心與 yt-dlp、ffmpeg、deno 的更新；每次更新都在使用前下載並驗證，並可退回上一版。
-          - 可透過 DSM 應用程式入口以整頁開啟；點已存的檔案可在 File Station 中顯示。
-          - 九種語言，DSM 7.1-42661 以上，x86_64 與 aarch64。
-          - 設定頁以背景存檔為首；下載清單並列狀態、進度與速度，確認視窗採 DSM 樣式；「在 File Station 中開啟」會選取已存檔案。
-          - 套件停止或啟動時，頁面顯示目前狀態，並在啟動完成後自動繼續；下載暫停時仍可更新擴充套件，下載核心會在啟動與停止時清理讀取連結的暫存副本。
-          - 執行器在背景核對排程任務；核對結果有效且就緒時，管理員可直接開啟 App，無須另外呼叫排程 API。
+          0.2.2-0036
+          - 首次管理員核准畫面說明用途：系統權限讓檔案工作在使用者登出後仍可完成。
+          - 管理員可在設定中啟用或移除 App 入口。
+          - DSM Portal banner 顯示時，側欄不重複顯示 App 名稱。
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0034
+        version: 0.2.2-0036
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: aea41de20d498cb1e59a4727e8403b94b8f1997b3dca001b4c43aba0fc6fbd58
-        md5: ebb0ec9918f6c389faf4db3527f10e83
-        size: 53788160
+        sha256: 82d6798072e8640b5f16ec93670082de0d2f33141e3fcf21798b9860e37ec100
+        md5: f1ec58cd5ca5108f64b96743fcf03f4e
+        size: 53076992
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T03:59:27Z
-          source_ref: 0539ff47ed0234a1a79ab0b0d345e7efdb72e195
+          reviewed_at: 2026-10-15T12:50:16Z
+          source_ref: 2f13f77d526f043e29edf4c3de51509cf384636d
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0034
+        version: 0.2.2-0036
         arch:
           - apollolake
           - avoton
@@ -332,14 +320,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 190fee1e22652398b3bfec4ed0199bc961b391f5a0c267696440bdf11cb52c23
-        md5: 709ed06312c65eeaaabba8b5be1e523e
-        size: 56358912
+        sha256: 9581b34a2c27ff7ec89beb43d2d285c0e495ebda0ee83d5fa448fe48bc119489
+        md5: 1839821324082fdf4779b9e1994e5d82
+        size: 55557120
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T03:59:40Z
-          source_ref: 0539ff47ed0234a1a79ab0b0d345e7efdb72e195
+          reviewed_at: 2026-10-15T12:50:44Z
+          source_ref: 2f13f77d526f043e29edf4c3de51509cf384636d
           source_repo: synopackageland/syno-pkg-gopeed
 publishers:
   synopackageland:
