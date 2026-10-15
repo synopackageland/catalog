@@ -98,7 +98,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0047
+      release: v0.1.0-0052
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -127,7 +127,7 @@ packages:
           開發預覽版：Connect 不會建立雲端帳號或資源，各連線方式的外部端到端連線尚未在所有網路環境驗證。
       changelog:
         en: |-
-          0.1.0-0047
+          0.1.0-0052
           - One overview page lists every connection method. Turn Cloudflare Tunnel, Tailscale, NetBird or IPv6 direct access on or off independently, or turn them all off.
           - Cloudflare Tunnel: a temporary URL with no account, your own domain after signing in to Cloudflare (an existing DNS record is never overwritten), or your own tunnel token. Only the DSM web page is published.
           - Tailscale: reach selected NAS web services from your own computers and phones; Funnel can make selected web services public.
@@ -136,8 +136,10 @@ packages:
           - The cloudflared, Tailscale and NetBird clients are the vendors' official releases, downloaded and verified on the NAS before use.
           - Only DSM administrators (local, AD or LDAP, as resolved by DSM) can open Connect and call its API. Everything runs as the package account, with no root helper.
           - Nine languages; DSM 7.1 or later on x86_64, aarch64 and armv7.
+          - Fixed since 0.1.0-0047: starting and then stopping Tailscale or IPv6 direct no longer clears their saved services; NetBird failures show one clear message, and copying the NetBird IP works over http; Settings names GitHub's rate limit and when to retry, and says it is checking while a check runs; a page DSM gave no sign-in token asks you to sign in to DSM again.
+          - Upgrading from 0.1.0-0047 needs no administrator approval.
         zh-TW: |-
-          0.1.0-0047
+          0.1.0-0052
           - 在同一個總覽頁列出所有連線方式。Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連可以各自啟用或停用，也可以全部停用。
           - Cloudflare Tunnel：不需帳號即可取得臨時網址；登入 Cloudflare 後可使用自己的網域（已有同名 DNS 記錄時不覆寫）；也可以使用自己的 Tunnel token。只公開 DSM 網頁。
           - Tailscale：從自己的電腦與手機連到選定的 NAS 網頁服務；Funnel 可將選定的網頁服務公開。
@@ -146,41 +148,43 @@ packages:
           - cloudflared、Tailscale 與 NetBird 使用原廠官方版本，在 NAS 上下載並驗證後才使用。
           - 只有 DSM 管理員（本機、AD 或 LDAP，由 DSM 判定）能開啟 Connect 與呼叫其 API。所有程式都以套件帳號執行，不使用 root helper。
           - 支援九種語言；需要 DSM 7.1 以上，支援 x86_64、aarch64 與 armv7。
+          - 0.1.0-0047 之後的修正：Tailscale 或 IPv6 直連先啟動再停止，不再清掉已儲存的服務；NetBird 失敗時只顯示一則清楚的訊息，經 http 也能複製 NetBird IP；設定頁會指出 GitHub 的頻率限制與可重試時間，檢查進行中會顯示「檢查中」；DSM 沒有提供登入權杖的頁面會請您重新登入 DSM。
+          - 從 0.1.0-0047 升級不需要管理員核准。
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0047
+        version: 0.1.0-0052
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e737fbc8c028788c15f77befe215ed424c3a99361e33955665fc1d8d2cb8b8b2
-        md5: a5ceac8e26a94922e650288d11b73c4f
-        size: 7482368
+        sha256: 997e14a866d482de650556093f13f36a8502704e1d80a74b89a3352013a66c68
+        md5: f5b6c5a71ce9cce2cbeb5a3e787659f4
+        size: 7527936
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-13T23:25:43Z
-          source_ref: e70f9159277cc692858fa1f83823a2f6da1dd26c
+          reviewed_at: 2026-10-15T01:07:47Z
+          source_ref: a416a0b9c41065a4e88d53a96fc00534812dfe2d
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0047
+        version: 0.1.0-0052
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 6cad4b1097f23da665d695f120e59f8bb7033605e59863cc2c9147a0b2362aef
-        md5: a4823fe14ad91060deb7831406608b07
-        size: 7864320
+        sha256: df775d7b39e6af2585ced6a4d72105f97677e7d627e3262d60176cc13ce4e486
+        md5: 30882082f6d41d281aaeb6c0b23bd43c
+        size: 7908352
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-13T23:25:44Z
-          source_ref: e70f9159277cc692858fa1f83823a2f6da1dd26c
+          reviewed_at: 2026-10-15T01:07:50Z
+          source_ref: a416a0b9c41065a4e88d53a96fc00534812dfe2d
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0047
+        version: 0.1.0-0052
         arch:
           - apollolake
           - avoton
@@ -209,14 +213,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 4b8b4e17ee495c9204d6a7251fe08b32bc34f9ce17cb656f7ed6dc334a2be4d0
-        md5: ea086582ad544e4bf46dd4bcee9f1d10
-        size: 8199680
+        sha256: 456cb5987d12f00483a913433486d917a17f2519c3944e97611df1d52a6a9fbf
+        md5: 99903b16ca8bbc4250a44d68b25838cb
+        size: 8244224
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-13T23:25:45Z
-          source_ref: e70f9159277cc692858fa1f83823a2f6da1dd26c
+          reviewed_at: 2026-10-15T01:07:52Z
+          source_ref: a416a0b9c41065a4e88d53a96fc00534812dfe2d
           source_repo: synopackageland/syno-pkg-connect
   - category: utilities
     order: 30
