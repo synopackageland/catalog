@@ -224,7 +224,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0027
+      release: v0.2.2-0033
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -251,40 +251,46 @@ packages:
           以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
       changelog:
         en: |-
-          0.2.2-0027
+          0.2.2-0033
           - Download almost anything to the NAS from one address box: HTTP/HTTPS links, BitTorrent (magnet links, .torrent links and uploaded .torrent files, with file selection), ED2K links and eMule magnets, media pages through yt-dlp (installed by an administrator on the Core updates page), and addresses that Gopeed extensions add.
           - Each DSM user has their own downloads, destination and history; who can use the app is set in Control Panel > Application Privileges.
           - Completed files are saved into the folder the user chose, with that user's own DSM permissions, also after they sign out. An administrator approves background saving once and chooses the shared folders it may use.
           - Administrators manage concurrent downloads, connections, BT seeding and ports, ED2K ports, Gopeed extensions from the official registry, and updates of the official Gopeed core and of yt-dlp, ffmpeg and deno; each update is downloaded and verified before use and can be rolled back.
           - Optional full-page entry through the DSM Application Portal; click a saved file to show it in File Station.
           - Nine languages, DSM 7.1-42661 or later, x86_64 and aarch64.
+          - New since 0.2.2-0027: one Settings page with background saving first, a downloads list that shows state, progress and speed together, and DSM-style confirmations. The Application Portal address works again, and Open in File Station selects the saved file.
+          - When the package stops or starts, the page says the App is stopped or starting and continues on its own once it runs, instead of "The download engine is not responding". A paused download no longer holds up an extension update, and temporary copies of links being read no longer pile up on the NAS.
+          - Upgrading from 0.2.2-0027 keeps the existing approval; a first install still needs an administrator's approval.
         zh-TW: |-
-          0.2.2-0027
+          0.2.2-0033
           - 一個輸入框就能把幾乎任何東西下載到 NAS：HTTP／HTTPS 連結、BitTorrent（磁力連結、.torrent 連結與上傳的 .torrent 檔，可選擇檔案）、ED2K 連結與 eMule 磁力連結、yt-dlp 支援的影音網頁（由管理員在「核心更新」頁安裝 yt-dlp），以及 Gopeed 擴充套件新增的位址。
           - 每位 DSM 使用者有各自的下載、目的地與歷史紀錄；可使用本 App 的人員在「控制台 → 權限 → 應用程式權限」設定。
           - 下載完成的檔案以使用者自己的 DSM 權限存到其選擇的資料夾，登出後也會繼續。背景存檔需管理員核准一次，並選定可使用的共用資料夾。
           - 管理員管理同時下載數、連線數、BT 做種與連接埠、ED2K 連接埠、從官方清單安裝的 Gopeed 擴充套件，以及官方 Gopeed 核心與 yt-dlp、ffmpeg、deno 的更新；每次更新都在使用前下載並驗證，並可退回上一版。
           - 可透過 DSM 應用程式入口以整頁開啟；點已存的檔案可在 File Station 中顯示。
           - 九種語言，DSM 7.1-42661 以上，x86_64 與 aarch64。
+          - 0.2.2-0027 之後的新變更：設定集中在同一頁，背景存檔排在最前；下載清單把狀態、進度與速度放在一起；確認視窗改用 DSM 樣式。應用程式入口的網址恢復可用，「在 File Station 中開啟」會選取已存的檔案。
+          - 套件停止或啟動時，頁面會說明 App 已停止或正在啟動，並在啟動完成後自動繼續，不再顯示「下載核心沒有回應」。暫停中的下載不再擋住擴充套件更新，讀取連結時產生的暫存檔也不再堆積在 NAS 上。
+          - 從 0.2.2-0027 升級會保留原有的核准；首次安裝仍需管理員核准。
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0027
+        version: 0.2.2-0033
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2f59fbe52dcd17e7150688cc61b10643bd5e69db372feb04f95ed5a8c6f02d5b
-        md5: c08288e95debf6e38529ba1dc9c0fef5
-        size: 53607424
+        sha256: 4a37516a1707cce7fcf9c1547e8c44ed2f1753c01a6c9817f833ec7dafbefc25
+        md5: 4167c7b5b4077c0bdf3fa2b778db0d86
+        size: 53783040
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-14T00:15:38Z
-          source_ref: bc4c2c3f10ece639e3a9762691600fa5e4e47a03
+          reviewed_at: 2026-10-15T01:08:04Z
+          source_ref: 05bad0eed0890ade347ee19661ded0f62c4e1418
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0027
+        version: 0.2.2-0033
         arch:
           - apollolake
           - avoton
@@ -313,14 +319,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 0ce6f3fbd1e1957d4cbde1a690f5016b33a2164a68f43fc40267144e12514c55
-        md5: 27ffd5642fda17e3892971e4f6974c6d
-        size: 56190976
+        sha256: 59db80b82b2dfee067c43cf44d4d956ef321820681915f911d187a3fffdf4fe2
+        md5: e709a745ac1059ab6e0c6bdd4b33c793
+        size: 56356352
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-14T00:15:44Z
-          source_ref: bc4c2c3f10ece639e3a9762691600fa5e4e47a03
+          reviewed_at: 2026-10-15T01:08:26Z
+          source_ref: 05bad0eed0890ade347ee19661ded0f62c4e1418
           source_repo: synopackageland/syno-pkg-gopeed
 publishers:
   synopackageland:
