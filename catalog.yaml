@@ -7,7 +7,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1540
+      release: v0.1.1-1564
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -17,6 +17,21 @@ packages:
         en: Find what really frees space on a Btrfs volume, and free it safely.
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
       changelog: |-
+        0.1.1-1564
+        - Operations that need root now run through the Syno Package Land SDK executor. After upgrading from 1540, an administrator approves Reclaim once with the DSM password the first time the window opens; the old root helper is removed at the next package stop, restart or upgrade after that.
+        - New window layout with a sidebar and page header. Settings has an Application Portal panel, and Reclaim also opens through a Portal alias on port 80 or 443.
+        - Sizes are shown as Storage Manager shows them (KB/MB/GB/TB in 1024s).
+        - While the package is stopped or starting, the window says so and continues once the package runs.
+        - The cleanup review fits an 840 px window, cleanup shows its progress from the start, and checking the selection no longer slows down while other disk activity runs.
+        - Requires DSM 7.1-42661 or later. Built with Syno Package Land CLI 0.10.8 and SDK 0.10.7.
+
+        - 需要 root 權限的操作改由 Syno Package Land SDK 執行器執行。從 1540 升級後，第一次開啟視窗時需由管理員以 DSM 密碼核准一次；舊的 root helper 會在之後第一次套件停止、重新啟動或升級時移除。
+        - 新的視窗版面，含側欄與頁首。設定頁新增應用程式入口設定，也可以透過 80 或 443 埠的入口別名開啟。
+        - 容量的顯示方式與儲存空間管理員相同（以 1024 為單位的 KB/MB/GB/TB）。
+        - 套件停止或正在啟動時，視窗會顯示狀態，並在套件執行後自動繼續。
+        - 清理確認視窗可在 840 px 的視窗內完整顯示，清理一開始就顯示進度；有其他磁碟活動時，檢查選取項目不再變慢。
+        - 需要 DSM 7.1-42661 以上。改用 Syno Package Land CLI 0.10.8 與 SDK 0.10.7 建置。
+
         0.1.1-1540
         - Reproducible builds: the same source gives byte-identical packages on all three architectures.
         - The DSM main menu and window show the app description in the DSM language; the name stays Syno Reclaim.
@@ -54,43 +69,75 @@ packages:
         - 升級後需要重新確認 DSM 密碼。
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1540
+        version: 0.1.1-1564
         arch:
-          - armv7
-        sha256: 70af912f1859e2b9aed70e104d53e8c7c875dc749b034ff10f4d23834d4e8624
-        md5: 011abb0701b25462106a1e23ad9f82a3
-        size: 8839168
+          - armada37xx
+          - rtd1296
+          - rtd1619
+          - rtd1619b
+        sha256: 9afe64ecee82fda2819eadccbb5ed61ad4044a794a0612353c94f0a3482ceefb
+        md5: f8e71e3fcbea52e67101209748e5e83c
+        size: 13347840
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-11T04:44:25Z
-          source_ref: 058fed642aa66709d9232e5321082b5bafa4cb53
+          reviewed_at: 2026-10-15T01:07:33Z
+          source_ref: 180d4f6827455b734baa3a84d0c1f4fd75cfd112
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1540
+        version: 0.1.1-1564
         arch:
-          - armv8
-        sha256: 75dfc09a58f7e7026c68d46d50d6fac7c97a7051f1a43a021a80f0cfbfe7b31c
-        md5: 7963784793b49f083ee125d6c370fca2
-        size: 10176512
+          - alpine
+          - alpine4k
+          - armada38x
+          - monaco
+        sha256: 2f368394373c912a87c11b0485e6cab17f31cc51846aa14ca535e6c88955efba
+        md5: b985b4a307ad36918cb35455d3d645a1
+        size: 14062592
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-11T04:44:26Z
-          source_ref: 058fed642aa66709d9232e5321082b5bafa4cb53
+          reviewed_at: 2026-10-15T01:07:35Z
+          source_ref: 180d4f6827455b734baa3a84d0c1f4fd75cfd112
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1540
+        version: 0.1.1-1564
         arch:
-          - x86_64
-        sha256: fe3ba4c899f62eda797efce22af35786a0756e6e19884bb938013e73cefa1b9b
-        md5: 64dce466cda36c01d6525dde8e64e3ff
-        size: 9708032
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 9a6f8ecbfd290a3522fe77de49339a90bd500973538730c395e280c32f8da38a
+        md5: 9db627a6ce35dc44f4c8c9fdab8a1b55
+        size: 14396928
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-11T04:44:28Z
-          source_ref: 058fed642aa66709d9232e5321082b5bafa4cb53
+          reviewed_at: 2026-10-15T01:07:43Z
+          source_ref: 180d4f6827455b734baa3a84d0c1f4fd75cfd112
           source_repo: synopackageland/syno-reclaim
   - category: utilities
     order: 20
