@@ -80,7 +80,7 @@ the index immediately, without modifying the SPK. Missing fields are not rendere
 
 All these SPKs are unsigned. Schema 3 has no `trust` and no publisher
 `verified`. Third-party publisher contact and support emails are required;
-official defaults are synopackageland@gmail.com. Third-party INFO.package must
+official defaults are support@synopkgland.com. Third-party INFO.package must
 begin `<publisher-id>.` or appear in the maintainer-approved publisher
 `package_names` reservation; identities are globally unique,
 case-insensitively, and catalog.yaml wins over community for the same ID.

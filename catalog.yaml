@@ -10,8 +10,8 @@ packages:
       release: v0.1.1-1570
       access: private
     metadata:
-      contact_email: synopackageland@gmail.com
-      support_email: synopackageland@gmail.com
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
       long_description:
         en: Find what really frees space on a Btrfs volume, and free it safely.
@@ -110,8 +110,8 @@ packages:
       release: v0.1.0-0052
       access: private
     metadata:
-      contact_email: synopackageland@gmail.com
-      support_email: synopackageland@gmail.com
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
       license: MIT. Bundled Go and npm dependencies keep their own licenses; the full
         notices ship in the package's LICENSES/ folder. The cloudflared, Tailscale and
@@ -242,8 +242,8 @@ packages:
       release: v0.2.2-0037
       access: private
     metadata:
-      contact_email: synopackageland@gmail.com
-      support_email: synopackageland@gmail.com
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
       source_url: https://packages.synopkgland.com/src/synopackageland/syno-pkg-gopeed/
       license: GPL-3.0-or-later
@@ -334,6 +334,6 @@ packages:
 publishers:
   synopackageland:
     display_name: Syno Package Land
-    contact_email: synopackageland@gmail.com
-    support_email: synopackageland@gmail.com
+    contact_email: support@synopkgland.com
+    support_email: support@synopkgland.com
     homepage: https://synopkgland.com/
