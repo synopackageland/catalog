@@ -161,6 +161,11 @@ packages:
           - 支援九種語言；需要 DSM 7.1 以上，支援 x86_64、aarch64 與 armv7。
           - 0.1.0-0047 之後的修正：Tailscale 或 IPv6 直連先啟動再停止，不再清掉已儲存的服務；NetBird 失敗時只顯示一則清楚的訊息，經 http 也能複製 NetBird IP；設定頁會指出 GitHub 的頻率限制與可重試時間，檢查進行中會顯示「檢查中」；DSM 沒有提供登入權杖的頁面會請您重新登入 DSM。
           - 從 0.1.0-0047 升級不需要管理員核准。
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-tailscale.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-ipv6.png
     pins:
       - package: SynoPkgConnect
         version: 0.1.0-0052
