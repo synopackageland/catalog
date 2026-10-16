@@ -237,7 +237,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0036
+      release: v0.2.2-0037
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -264,34 +264,32 @@ packages:
           以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
       changelog:
         en: |-
-          0.2.2-0036
-          - First-time administrator approval explains that system privileges let file jobs finish after users sign out.
-          - Settings lets administrators enable or remove the App entry.
-          - A visible DSM portal banner shows the App name without repeating it in the sidebar.
+          0.2.2-0037
+          - Removing the entry from its portal page asks for confirmation and explains how to enable it again from the DSM desktop.
+          - Page headers keep titles and actions readable in narrow windows.
         zh-TW: |-
-          0.2.2-0036
-          - 首次管理員核准畫面說明用途：系統權限讓檔案工作在使用者登出後仍可完成。
-          - 管理員可在設定中啟用或移除 App 入口。
-          - DSM Portal banner 顯示時，側欄不重複顯示 App 名稱。
+          0.2.2-0037
+          - 在入口頁移除入口前先確認，並說明如何從 DSM 桌面重新啟用。
+          - 標題列在窄視窗不再擠壓。
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0036
+        version: 0.2.2-0037
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 82d6798072e8640b5f16ec93670082de0d2f33141e3fcf21798b9860e37ec100
-        md5: f1ec58cd5ca5108f64b96743fcf03f4e
-        size: 53076992
+        sha256: 086676358c8be2112392e4f779ca3a51145a35494c38a9702b6401a425764002
+        md5: b3fc9ef6e375bec24088fcd3af3146ae
+        size: 53079040
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T12:50:16Z
-          source_ref: 2f13f77d526f043e29edf4c3de51509cf384636d
+          reviewed_at: 2026-10-16T04:03:06Z
+          source_ref: 253ee03378e59295c697e03564cc18ba2d4940d8
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0036
+        version: 0.2.2-0037
         arch:
           - apollolake
           - avoton
@@ -320,14 +318,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 9581b34a2c27ff7ec89beb43d2d285c0e495ebda0ee83d5fa448fe48bc119489
-        md5: 1839821324082fdf4779b9e1994e5d82
-        size: 55557120
+        sha256: 629164864f70851ae3f2d7c54b7a8dd8c434485e87f6b0183bee999c79fa010c
+        md5: 81c603b6609919c2a211a3514cd59961
+        size: 55559680
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T12:50:44Z
-          source_ref: 2f13f77d526f043e29edf4c3de51509cf384636d
+          reviewed_at: 2026-10-16T04:03:20Z
+          source_ref: 253ee03378e59295c697e03564cc18ba2d4940d8
           source_repo: synopackageland/syno-pkg-gopeed
 publishers:
   synopackageland:
