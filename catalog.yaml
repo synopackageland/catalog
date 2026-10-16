@@ -268,6 +268,11 @@ packages:
           0.2.2-0037
           - 在入口頁移除入口前先確認，並說明如何從 DSM 桌面重新啟用。
           - 標題列在窄視窗不再擠壓。
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates.png
     pins:
       - package: SynoPkgGopeed
         version: 0.2.2-0037
