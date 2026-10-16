@@ -112,7 +112,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0053
+      release: v0.1.0-0054
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -143,17 +143,17 @@ packages:
           開發預覽版：Connect 不會建立雲端帳號或資源，各連線方式的外部端到端連線尚未在所有網路環境驗證。
       changelog:
         en: |-
-          0.1.0-0053
-          - Buttons, dialogs, scrollbars and corners follow DSM: page and form actions are pill-shaped buttons, toolbar buttons are grey, and dialogs size to their content.
-          - Each page spaces its sections like DSM.
-          - Stopping a connection uses the same button as the actions under it.
-          - Upgrading from 0.1.0-0052 needs no administrator approval.
+          0.1.0-0054
+          - Dialogs take DSM's widths and corners and stay inside the Connect window.
+          - Page titles are followed by the same spacing as DSM's, instead of a double gap.
+          - Opening Connect again from the DSM main menu while it is open rechecks the connections.
+          - Upgrading from 0.1.0-0053 needs no administrator approval.
         zh-TW: |-
-          0.1.0-0053
-          - 按鈕、對話框、捲軸與圓角對齊 DSM：頁面與表單動作改為圓角膠囊按鈕，工具列按鈕為灰色，對話框依內容調整寬度。
-          - 各頁區塊間距與 DSM 一致。
-          - 停用連線的按鈕與下方動作按鈕樣式一致。
-          - 從 0.1.0-0052 升級不需要管理員核准。
+          0.1.0-0054
+          - 對話框的寬度與圓角對齊 DSM，且不會超出 Connect 視窗。
+          - 頁面標題下方的間距與 DSM 一致，不再是雙倍間距。
+          - Connect 已開啟時再從 DSM 主選單開啟，會重新檢查連線。
+          - 從 0.1.0-0053 升級不需要管理員核准。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare.png
@@ -161,39 +161,39 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-ipv6.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0053
+        version: 0.1.0-0054
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2cf3dc6fcbfa10554254df2e4670fed4013cd6e6ba5342501a5158187ce70116
-        md5: db4aed69a763a3fef784c0bdc423d063
-        size: 7548416
+        sha256: 94dada436dd89d3ffff2bb403f4394a2b6bddbf94143bd531af4ebb0a325bb50
+        md5: 98939fb64db1290bd0e4834eba568e17
+        size: 7548928
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T11:49:31Z
-          source_ref: 9497517b459f0085989ce93f4f11870ebb81952c
+          reviewed_at: 2026-10-16T15:42:17Z
+          source_ref: b70e05a53b6496575894642076315618cad1e5d9
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0053
+        version: 0.1.0-0054
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 9bfb1919e978a08da6d66558a946328a814cfd0cab239759ac5d0b667d86e43f
-        md5: f1174a4ba13baaea74164d478085d220
-        size: 7924736
+        sha256: b66aac7e4d750af5183abad5835ad4ad1d9b5578efd0146149f0fa831df64059
+        md5: ba94ed67424acc430383fdfda886c54e
+        size: 7925760
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T11:49:32Z
-          source_ref: 9497517b459f0085989ce93f4f11870ebb81952c
+          reviewed_at: 2026-10-16T15:42:18Z
+          source_ref: b70e05a53b6496575894642076315618cad1e5d9
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0053
+        version: 0.1.0-0054
         arch:
           - apollolake
           - avoton
@@ -222,14 +222,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: d941025afc34dc8eb976994aded35dcc359a6db6b95a50f36068c40b187a6992
-        md5: cc46273dfaab7e7ac03cf6e045acfa4f
-        size: 8265216
+        sha256: 6fe1e753c0fc862dd11e8c4ac02f65321192260b378eabcbb36e9bd884346226
+        md5: 7fff277277c5227fadc3424f9ff64104
+        size: 8265728
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T11:49:33Z
-          source_ref: 9497517b459f0085989ce93f4f11870ebb81952c
+          reviewed_at: 2026-10-16T15:42:19Z
+          source_ref: b70e05a53b6496575894642076315618cad1e5d9
           source_repo: synopackageland/syno-pkg-connect
   - category: utilities
     order: 30
