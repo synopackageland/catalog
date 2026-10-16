@@ -7,7 +7,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1572
+      release: v0.1.1-1573
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -18,17 +18,15 @@ packages:
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
       changelog:
         en: |-
-          0.1.1-1572
-          - System partition cleanup offers Standard and Deep modes; Deep previews each item's effect and asks for an extra confirmation.
-          - The system partition warning starts at 900 MB free, and Settings can turn it off; cleanup stays on the Overview card.
-          - Pages, dialogs and buttons follow the DSM look of UI 0.10.
-          - Built on SDK 0.12.1: an administrator approves Syno Reclaim again after the upgrade.
+          0.1.1-1573
+          - Titled dialogs use DSM's 3px corners and stay within the DSM window.
+          - Two messages that showed as raw keys now have text in every language.
+          - Built on SDK 0.12.2 and UI 0.10.3; no new approval is needed after the upgrade from 0.1.1-1572.
         zh-TW: |-
-          0.1.1-1572
-          - 系統分割區清理提供標準與深度兩種模式；深度模式逐項預覽影響，並需額外確認。
-          - 系統分割區剩餘 900 MB 以下才警告，可在設定中關閉；總覽卡片仍可進入清理。
-          - 頁面、對話框與按鈕依 UI 0.10 對齊 DSM 外觀。
-          - 改用 SDK 0.12.1：升級後需由管理員重新核准 Syno Reclaim。
+          0.1.1-1573
+          - 有標題的對話框改用 DSM 的 3px 圓角，並保持在 DSM 視窗內。
+          - 兩則原本顯示成原始字串鍵的訊息，現在各語言都有文字。
+          - 改用 SDK 0.12.2 與 UI 0.10.3；從 0.1.1-1572 升級後不需重新核准。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore.png
@@ -36,39 +34,39 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1572
+        version: 0.1.1-1573
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 8b5777f11566328637a6f462ee28bbd2a2a3e345cff692b584a2edde806b7cf8
-        md5: cbdb2a6d3b1d0f51bd3cae68b23d95dc
-        size: 12740096
+        sha256: 2453bb5dd18fc2b31ee8bb1ffd889361f3517aabf438a686e536ef95bf70f65b
+        md5: 8674ea86927c2ff7a75755b44d6dcd90
+        size: 12741120
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T13:13:35Z
-          source_ref: 782524a3c0fda762286804ae06efa17e4ff639fc
+          reviewed_at: 2026-10-16T16:18:58Z
+          source_ref: 7b60e1975df874cc0a362652da6e6b14a20e8079
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1572
+        version: 0.1.1-1573
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: e40560f8c6941a5ea9e41186fad13adfd9904f5272afed6978080cdd749f0b3e
-        md5: daa1d55e34113184012b0b744de3e347
-        size: 13427712
+        sha256: f36f02ef33ddaa98e63b6649f87ad9a43f2a3e158ef139c74342d6b514698b9d
+        md5: 05ab50aac642c421d80cd85a12d4d480
+        size: 13428736
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T13:13:36Z
-          source_ref: 782524a3c0fda762286804ae06efa17e4ff639fc
+          reviewed_at: 2026-10-16T16:19:00Z
+          source_ref: 7b60e1975df874cc0a362652da6e6b14a20e8079
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1572
+        version: 0.1.1-1573
         arch:
           - apollolake
           - avoton
@@ -97,14 +95,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 04630c697f09d8d6f1456187c7f8861690e464d8fc2f0e625c9cfe4cd7a63d50
-        md5: af0ce693668cc37965cdb0e0db10a3a1
-        size: 13705728
+        sha256: 86d6e092e7b0c275624fc5320f281fd07dbef4af7344e872c45056c79a4927ce
+        md5: 2d6069dc05bd40a593cb0f5d77073b43
+        size: 13706752
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T13:13:37Z
-          source_ref: 782524a3c0fda762286804ae06efa17e4ff639fc
+          reviewed_at: 2026-10-16T16:19:02Z
+          source_ref: 7b60e1975df874cc0a362652da6e6b14a20e8079
           source_repo: synopackageland/syno-reclaim
   - category: utilities
     order: 20
