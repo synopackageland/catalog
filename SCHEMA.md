@@ -25,7 +25,8 @@ metadata:
     zh-TW: Translated description.
   changelog: |-
     Changes in this version.
-  screenshots: [https://example.com/screenshot.png]
+  screenshots:
+    - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/YourPackage/01-main.png
 ```
 
 All fields are optional. `description` is a short text (up to 1,000 characters),
@@ -35,7 +36,27 @@ app pages, the page description and search, and otherwise falls back to the SPK 
 Additional supported fields: maintainer_url, distributor,
 distributor_url, support_url (HTTP(S) or mailto), helpurl. URLs must be safe schemes;
 emails must have a valid shape. Text is bounded to 16,000 characters, combined
-metadata to 32,000, screenshots to 12. `package-metadata.schema.json` documents it.
+metadata to 32,000. `package-metadata.schema.json` documents it.
+
+### Screenshots
+
+`screenshots` is a list of at most **5** `https://` image URLs, each up to 2,048
+characters. `http://` is rejected. The App page shows them in order as a
+horizontally scrolling gallery (16:10 frames, lazy loaded, no referrer sent);
+a click opens the full image in a new tab. There is no per-image caption: the
+page labels them "App screenshot 1…5" in the visitor's language.
+
+Where to host them:
+
+- **Catalog-hosted (recommended for reviewed packages):** commit the files to
+  `screenshots/<PackageName>/` in this repository and link
+  `https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/<PackageName>/<file>`.
+  See `screenshots/README.md` for file names, size and format. raw.githubusercontent.com
+  serves PNG and JPEG with the right `Content-Type`, `X-Content-Type-Options: nosniff`
+  and `Access-Control-Allow-Origin: *`, with a 5-minute cache, so the URL embeds directly.
+  It serves WebP as `application/octet-stream`, so use PNG or JPEG there.
+- **Your own host:** any `https://` image URL works. You keep it available and
+  unchanged; a broken link only leaves an empty frame.
 
 The CLI writes standard INFO fields and `spk_land_metadata` (escaped single-line
 JSON for full multilingual/plain text). Standard changelog flattens newlines with
