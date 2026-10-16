@@ -7,7 +7,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1567
+      release: v0.1.1-1570
       access: private
     metadata:
       contact_email: synopackageland@gmail.com
@@ -18,52 +18,52 @@ packages:
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
       changelog:
         en: |-
-          0.1.1-1567
-          - Overview, Explore, Snapshots and Packages keep page notes behind the info button beside the title.
-          - Stale reports are indicated only by the status badge at the top right.
-          - Settings lets administrators enable or remove the App entry, including after reinstalling.
-          - A visible DSM portal banner shows the App name without repeating it in the sidebar.
+          0.1.1-1570
+          - Full-volume ext4 scans show progress during aggregation.
+          - Page headers keep titles and actions readable in narrow windows.
+          - One click opens page notes from the info button.
+          - Removing the entry from its portal page asks for confirmation and explains how to enable it again from the DSM desktop.
         zh-TW: |-
-          0.1.1-1567
-          - 總覽、探索、快照與套件頁將附註收進標題旁的資訊入口。
-          - 報告過期僅在右上角狀態標籤提示。
-          - 管理員可在設定中啟用或移除 App 入口，重裝後也可啟用。
-          - DSM Portal banner 顯示時，側欄不重複顯示 App 名稱。
+          0.1.1-1570
+          - ext4 整卷掃描在彙整階段顯示進度。
+          - 標題列在窄視窗不再擠壓。
+          - 頁面附註的 ⓘ 一點就開。
+          - 在入口頁移除入口前先確認，並說明如何從 DSM 桌面重新啟用。
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1567
+        version: 0.1.1-1570
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f5540cc217726f745f34523a28b512db787285ad99e540bd5a027600eafb4680
-        md5: 29d907d6e793a995e084733e56b6535c
-        size: 12639744
+        sha256: 5647f01dfcd4ca7100844a10639422440ac52a8262a4e312bb2ee084df72ee19
+        md5: 8592825f2c48b22a29249bb1d66ca01d
+        size: 12646912
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T12:48:45Z
-          source_ref: 127da63e214143b251301199dbcbd49168c8e64e
+          reviewed_at: 2026-10-16T04:02:38Z
+          source_ref: 76a6b234b4a58671402fec71c380361ceb0529eb
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1567
+        version: 0.1.1-1570
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 39aaa48e50814ddf03f861e1fabb507b381402f186bfc514832d2cdec629671c
-        md5: 58109d0cf64ebd5508cc448991f5b5f3
-        size: 13323264
+        sha256: 7eecd7ab283840caed41e27157355c2f24435ff4036bce47e01435b56a2c49f4
+        md5: 4de7703780bbbbcc4023e871f8c7bf54
+        size: 13336576
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T12:48:50Z
-          source_ref: 127da63e214143b251301199dbcbd49168c8e64e
+          reviewed_at: 2026-10-16T04:02:47Z
+          source_ref: 76a6b234b4a58671402fec71c380361ceb0529eb
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1567
+        version: 0.1.1-1570
         arch:
           - apollolake
           - avoton
@@ -92,14 +92,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 67f748ca62ca8e2ad18bbb57e1c5989b0fa3315204c5a3af949dc0f09527773d
-        md5: be6310e7a9a501501b1cfd575a0d6dca
-        size: 13596160
+        sha256: 1240a534f9bcc22d3738db56b5977777817aa5b8760024263f2fe25407a1a9e7
+        md5: d16bbfa2699c35e325ec1cd7bac4ec91
+        size: 13602304
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-15T12:48:54Z
-          source_ref: 127da63e214143b251301199dbcbd49168c8e64e
+          reviewed_at: 2026-10-16T04:02:56Z
+          source_ref: 76a6b234b4a58671402fec71c380361ceb0529eb
           source_repo: synopackageland/syno-reclaim
   - category: utilities
     order: 20
