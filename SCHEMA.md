@@ -16,6 +16,8 @@ metadata:
   source_url: https://github.com/you/app
   issues_url: https://github.com/you/app/issues
   license: MIT
+  description:
+    ko: 짧은 설명이에요.
   long_description:
     en: |-
       Describe your app in plain text.
@@ -26,7 +28,11 @@ metadata:
   screenshots: [https://example.com/screenshot.png]
 ```
 
-All fields are optional. Additional supported fields: maintainer_url, distributor,
+All fields are optional. `description` is a short text (up to 1,000 characters),
+plain or a map of BCP-47 tags; the website shows a language's exact value on cards,
+app pages, the page description and search, and otherwise falls back to the SPK INFO
+`description_<lang>`, then the English description. A plain text counts as `en`.
+Additional supported fields: maintainer_url, distributor,
 distributor_url, support_url (HTTP(S) or mailto), helpurl. URLs must be safe schemes;
 emails must have a valid shape. Text is bounded to 16,000 characters, combined
 metadata to 32,000, screenshots to 12. `package-metadata.schema.json` documents it.

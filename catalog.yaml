@@ -117,6 +117,8 @@ packages:
         notices ship in the package's LICENSES/ folder. The cloudflared, Tailscale and
         NetBird clients are downloaded from their vendors under their own licenses.
         Source code is not public at this time.
+      description:
+        ko: 라우터 포트를 열지 않고도 외부에서 NAS에 접속해요. Cloudflare Tunnel, Tailscale, NetBird, IPv6 직접 연결을 한 화면에서 켜고 끌 수 있어요.
       long_description:
         en: |-
           Reach your NAS remotely without opening router ports. Connect lists every connection method on one page; turn Cloudflare Tunnel, Tailscale, NetBird or IPv6 direct access on or off independently, or disable them all.
@@ -245,6 +247,8 @@ packages:
       homepage: https://synopkgland.com/
       source_url: https://packages.synopkgland.com/src/synopackageland/syno-pkg-gopeed/
       license: GPL-3.0-or-later
+      description:
+        ko: HTTP/HTTPS 링크, BitTorrent(.torrent 파일 및 마그넷 링크), ED2K, yt-dlp가 지원하는 동영상 사이트, 확장 프로그램이 추가하는 주소까지 거의 모든 것을 NAS로 다운로드해요. DSM 사용자마다 자신의 다운로드를 관리하고, 액세스 권한과 엔진 업데이트는 관리자가 맡아요. Powered by Gopeed.
       long_description:
         en: |-
           Download Hub: per-user downloads powered by the official Gopeed engine, with DSM Application Privileges and administrator-managed core updates.
