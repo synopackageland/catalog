@@ -1,6 +1,6 @@
 # App screenshots
 
-Screenshots for the App page on www.varvis.me. Reference them from
+Screenshots for the App page on synopkgland.com. Reference them from
 `metadata.screenshots` in `catalog.yaml` (at most 5 per package, `https://` only).
 
 ## Layout
