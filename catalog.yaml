@@ -235,7 +235,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0039
+      release: v0.2.2-0040
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -264,17 +264,9 @@ packages:
           以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
       changelog:
         en: |-
-          0.2.2-0039
-          - New download is as wide as DSM's own dialogs with a text box (530 px), so long links wrap less; dialogs with a title have DSM's 3 px corners.
-          - Dialogs stay inside a narrow DSM window and fill the width on a phone.
-          - The buttons on Core updates are DSM's pill-shaped action buttons.
-          - Upgrading from 0.2.2-0038 needs no administrator approval.
+          0.2.2-0040 — Rebuilt on UI 0.10.5 / SDK 0.13.0, with refined checkbox/radio spacing.
         zh-TW: |-
-          0.2.2-0039
-          - 「新增下載」與 DSM 含文字框的對話框同寬（530 px），長連結較少換行；有標題的對話框改用 DSM 的 3 px 圓角。
-          - 對話框不會超出較窄的 DSM 視窗，在手機上則佔滿寬度。
-          - 「核心更新」的按鈕改為 DSM 的膠囊形動作按鈕。
-          - 從 0.2.2-0038 升級不需要管理員核准。
+          0.2.2-0040 — 使用 UI 0.10.5／SDK 0.13.0 重新建置，調整核取方塊與單選按鈕間距。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download.png
@@ -282,23 +274,23 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0039
+        version: 0.2.2-0040
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: d6079b20130fd8c185b3a00ce408335d2b6d42c2e5de4b3654c3915cb99489b0
-        md5: 7c24dfdc2b302701fca8394e561c4c64
-        size: 53085184
+        sha256: 2e6020427e056762235944a81bea754f156f6d0ade601fc1ce40f904bcf1a9b9
+        md5: 77aad8e0888574e120b279d04c9ac794
+        size: 53090304
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T16:09:04Z
-          source_ref: 5d71c19781381518eb52572d559faf2cfe0c4287
+          reviewed_at: 2026-10-17T02:24:39Z
+          source_ref: 7e31a0306746ffb048dac7baf9acd519e436489f
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0039
+        version: 0.2.2-0040
         arch:
           - apollolake
           - avoton
@@ -327,14 +319,14 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7854769185813596b1e04baafd413acf10dd924a97b533ca8f1de32a405e94e7
-        md5: 115220bf9669fe60c9a1dac8a9079246
-        size: 55569920
+        sha256: 8c74332a123735ff2052ff4edf4883520c947e443ead8deadfbd2ef83a0b4d45
+        md5: 3d86979877107fdf8476bc4010fc76a5
+        size: 55577088
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T16:09:10Z
-          source_ref: 5d71c19781381518eb52572d559faf2cfe0c4287
+          reviewed_at: 2026-10-17T02:24:51Z
+          source_ref: 7e31a0306746ffb048dac7baf9acd519e436489f
           source_repo: synopackageland/syno-pkg-gopeed
 publishers:
   synopackageland:
