@@ -307,7 +307,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0040
+      release: v0.2.2-0042
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -341,9 +341,17 @@ packages:
           以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
       changelog:
         en: |-
-          0.2.2-0040 — Rebuilt on UI 0.10.5 / SDK 0.13.0, with refined checkbox/radio spacing.
+          0.2.2-0042
+          - New Search tab with an updatable built-in site list, your own Cardigann, Torznab, RSS, YouTube and Bilibili sources, and one-click download.
+          - Instant add starts downloads directly; every task supports pause and resume.
+          - Redesigned download list with a column chooser and clear all completed.
+          - Phone mode works correctly when opened from a browser.
         zh-TW: |-
-          0.2.2-0040 — 使用 UI 0.10.5／SDK 0.13.0 重新建置，調整核取方塊與單選按鈕間距。
+          0.2.2-0042
+          - 新增「搜尋」頁籤，提供可更新的內建站點清單，並可加入自己的 Cardigann、Torznab、RSS、YouTube 與 Bilibili 來源，一鍵下載搜尋結果。
+          - 快速新增可直接開始下載；所有工作都支援暫停與繼續。
+          - 重新設計下載清單，可選擇顯示欄位，並一次清除所有已完成的工作。
+          - 從瀏覽器開啟時，手機模式可正確顯示。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download.png
@@ -351,15 +359,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0040
+        version: 0.2.2-0042
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2e6020427e056762235944a81bea754f156f6d0ade601fc1ce40f904bcf1a9b9
-        md5: 77aad8e0888574e120b279d04c9ac794
-        size: 53090304
+        sha256: f6961397bf26029a6273aaeb51305766ba448fdf3d57052f9039b25ae59ef9ee
+        md5: 5afd3cb0b51764077a17933ea03e8cf2
+        size: 62517760
         facts:
           built_with: sdk
           sdk_backend: go
@@ -376,11 +384,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-17T02:24:39Z
-          source_ref: 7e31a0306746ffb048dac7baf9acd519e436489f
+          reviewed_at: 2026-10-17T08:22:50Z
+          source_ref: 3609cfd061e9f530638548e8d81300b8cbcca680
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0040
+        version: 0.2.2-0042
         arch:
           - apollolake
           - avoton
@@ -409,9 +417,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8c74332a123735ff2052ff4edf4883520c947e443ead8deadfbd2ef83a0b4d45
-        md5: 3d86979877107fdf8476bc4010fc76a5
-        size: 55577088
+        sha256: fbdb6c64e89cb42a1363bf03d00e31521af85ec1bd995f49c5893efb191aa72d
+        md5: 7751f258a7aadaec4af7f9bd8ab0cad4
+        size: 65811456
         facts:
           built_with: sdk
           sdk_backend: go
@@ -428,8 +436,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-17T02:24:51Z
-          source_ref: 7e31a0306746ffb048dac7baf9acd519e436489f
+          reviewed_at: 2026-10-17T08:23:11Z
+          source_ref: 3609cfd061e9f530638548e8d81300b8cbcca680
           source_repo: synopackageland/syno-pkg-gopeed
 publishers:
   synopackageland:
