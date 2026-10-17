@@ -1,6 +1,7 @@
 schema: 3
 packages:
   - featured: true
+    recommended: true
     category: utilities
     order: 10
     publisher: synopackageland
@@ -13,6 +14,8 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
+      internet: none
+      telemetry: none
       long_description:
         en: Find what really frees space on a Btrfs volume, and free it safely.
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
@@ -37,6 +40,18 @@ packages:
         sha256: a65643f69ff72f9bc3cf23a034e9ea53eba36a4259bec135b09681991c6ff338
         md5: 5d720c83611204461519c7438f359731
         size: 12699648
+        facts:
+          built_with: sdk
+          sdk_backend: rust
+          root_access: approval
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
         review:
           type: reviewed
           reviewer: synopackageland
@@ -53,6 +68,18 @@ packages:
         sha256: ad788be05b4f6a1b7279e22413d48ca0ee33600736cb26dfc6e8c9b2bdabfcec
         md5: c25378c7d39e1fbe544c29262e1c2da3
         size: 13386752
+        facts:
+          built_with: sdk
+          sdk_backend: rust
+          root_access: approval
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
         review:
           type: reviewed
           reviewer: synopackageland
@@ -92,13 +119,26 @@ packages:
         sha256: 46c5bfac672fb868a9ee0e034dfad35d272225d365a86aee5127e5eee9abf4da
         md5: b508ec512676782b5cef81bf1f7f3ab6
         size: 13667328
+        facts:
+          built_with: sdk
+          sdk_backend: rust
+          root_access: approval
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
         review:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-10-17T02:33:58Z
           source_ref: 712219a1b34d8fcd2b9cd0ac91cfd4b7d9c96889
           source_repo: synopackageland/syno-reclaim
-  - category: utilities
+  - recommended: true
+    category: utilities
     order: 20
     publisher: synopackageland
     source:
@@ -110,6 +150,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
+      internet: required
       license: MIT. Bundled Go and npm dependencies keep their own licenses; the full
         notices ship in the package's LICENSES/ folder. The cloudflared, Tailscale and
         NetBird clients are downloaded from their vendors under their own licenses.
@@ -162,6 +203,18 @@ packages:
         sha256: 94dada436dd89d3ffff2bb403f4394a2b6bddbf94143bd531af4ebb0a325bb50
         md5: 98939fb64db1290bd0e4834eba568e17
         size: 7548928
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: none
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
         review:
           type: reviewed
           reviewer: synopackageland
@@ -178,6 +231,18 @@ packages:
         sha256: b66aac7e4d750af5183abad5835ad4ad1d9b5578efd0146149f0fa831df64059
         md5: ba94ed67424acc430383fdfda886c54e
         size: 7925760
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: none
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
         review:
           type: reviewed
           reviewer: synopackageland
@@ -217,13 +282,26 @@ packages:
         sha256: 6fe1e753c0fc862dd11e8c4ac02f65321192260b378eabcbb36e9bd884346226
         md5: 7fff277277c5227fadc3424f9ff64104
         size: 8265728
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: none
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
         review:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-10-16T15:42:19Z
           source_ref: b70e05a53b6496575894642076315618cad1e5d9
           source_repo: synopackageland/syno-pkg-connect
-  - category: utilities
+  - recommended: true
+    category: utilities
     order: 30
     publisher: synopackageland
     source:
@@ -236,6 +314,11 @@ packages:
       support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
       source_url: https://packages.synopkgland.com/src/synopackageland/syno-pkg-gopeed/
+      upstream:
+        name: Gopeed
+        url: https://github.com/GopeedLab/gopeed
+        license: GPL-3.0
+      internet: required
       license: GPL-3.0-or-later
       description:
         ko: HTTP/HTTPS 링크, BitTorrent(.torrent 파일 및 마그넷 링크), ED2K, yt-dlp가 지원하는 동영상 사이트, 확장 프로그램이 추가하는 주소까지 거의 모든 것을 NAS로 다운로드해요. DSM 사용자마다 자신의 다운로드를 관리하고, 액세스 권한과 엔진 업데이트는 관리자가 맡아요. Powered by Gopeed.
@@ -277,6 +360,19 @@ packages:
         sha256: 2e6020427e056762235944a81bea754f156f6d0ade601fc1ce40f904bcf1a9b9
         md5: 77aad8e0888574e120b279d04c9ac794
         size: 53090304
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: approval
+          runs: native
+          access: selected
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
         review:
           type: reviewed
           reviewer: synopackageland
@@ -316,6 +412,19 @@ packages:
         sha256: 8c74332a123735ff2052ff4edf4883520c947e443ead8deadfbd2ef83a0b4d45
         md5: 3d86979877107fdf8476bc4010fc76a5
         size: 55577088
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: approval
+          runs: native
+          access: selected
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
         review:
           type: reviewed
           reviewer: synopackageland

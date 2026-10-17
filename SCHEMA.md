@@ -67,7 +67,79 @@ for website/editorial data and migration; update a manifest and re-release if
 metadata must also travel in the installed SPK. Catalog overrides can appear in
 the index immediately, without modifying the SPK. Missing fields are not rendered.
 
-## Two sections: checked and community
+### App information
+
+The app page shows what a user wants to know before installing. Some values
+are read from the SPK; the rest are optional statements in `metadata`. Every
+value is one word from a fixed list, shown in plain words in the visitor's
+language; a missing or `unknown` value shows "—".
+
+Read from the SPK when the pin is written (`pin.mts --pin`), stored as the
+pin's `facts`, never written by hand:
+
+| Field | Values | Read from |
+| --- | --- | --- |
+| `built_with` | `sdk`, `other` | SDK marker files |
+| `sdk_backend` | `go`, `rust`, `python`, `node`, `binary`, `compose` | `sdk-package.json`, compose layout |
+| `root_access` | `none`, `approval`, `required` | `conf/privilege` run-as; executor, `rootOps`, `delegate` |
+| `runs` | `native`, `container` | `conf/resource` docker resources, Container Manager dependency |
+| `access` | `admins`, `selected`, `everyone` | `sdk-package.json` entry |
+| `account` | `dsm`, `own`, `none` | SDK app with a DSM window |
+| `background` | `yes`, `no` | systemd user unit, container, jobs, delegate |
+| `opens` | `dsm`, `web`, `none` | INFO `dsmuidir`, `adminport`, `adminurl` |
+| `web_port` | 1–65535 | INFO `adminport` |
+| `requires`, `conflicts` | package names | INFO `install_dep_packages`, `install_conflict_packages` |
+| `shared_folders` | folder names | `conf/resource` data-share |
+| `signed` | `true`, `false` | `syno_signature.asc` |
+
+A value the SPK cannot show is left out. `background: no`, and `root_access`
+for a package not built with the SDK, are left out unless the SPK shows
+otherwise.
+
+Optional statements in `metadata`; `unknown` is allowed for every enum:
+
+| Field | Values |
+| --- | --- |
+| `root_access`, `runs`, `access`, `account`, `background`, `opens` | the values above |
+| `internet` | `required`, `optional`, `none` |
+| `telemetry` | `none`, `opt-in`, `on` |
+| `upstream` | `{ name, url, license? }`: the open-source project the app is based on; `name` and `license` one line of at most 80 characters, `url` `https://` |
+| `privacy_url` | `https://` URL |
+| `privacy_note` | one line of at most 280 characters, plain or per language |
+
+What the SPK shows wins: a statement that contradicts it is refused, for
+example `metadata.root_access: none` on an SPK that runs a script as root.
+
+`recommended: true` on a catalog.yaml entry puts it in the website's
+Recommended section. Only the catalog owner sets it, and only on a checked
+entry; community files cannot. `featured` stays a sort key: a featured app
+comes first. "By Package Land" on the website comes from the publisher id
+`synopackageland`, and "Based on X (open source)" from `metadata.upstream`.
+
+### Checks
+
+Run these from a syno-package-land checkout; `<catalog>` is a checkout of
+this catalog repository.
+
+```sh
+node --import tsx scripts/catalog/pin.mts --catalog <catalog>/catalog.yaml --pin     # new pins, with facts
+node --import tsx scripts/catalog/pin.mts --catalog <catalog>/catalog.yaml --facts   # add or refresh facts on existing pins
+node --import tsx scripts/catalog/pin.mts --catalog <catalog>/catalog.yaml --check   # release check
+node --import tsx scripts/catalog/check-community.mts --catalog-dir <catalog> --spk  # community pull request check
+```
+
+`--check` and `check-community.mts` fail with a message naming the field for
+an unknown field, a value outside its list, a URL that is not `https://`, pin
+facts that differ from the SPK, or a statement the SPK contradicts. The
+package source Worker validates the same schema when it loads the catalog and
+keeps serving the last good copy when a file is refused.
+
+## Two sources, three website sections
+
+The website lists Recommended (catalog.yaml entries with `recommended: true`),
+In Package Center (the other catalog.yaml entries) and Community (community/).
+How a developer gets listed, and how every new version is checked again, is on
+the website: https://synopkgland.com/docs/guides/list-your-app/
 
 - catalog.yaml (schema 3) lists only packages this site's maintainer ran the
   basic security check on: synopackageland's own releases, and third parties'
@@ -104,8 +176,8 @@ schema: 1
 package: alice.MyApp               # "<publisher>." prefix; no ".dev" suffix
 version: 1.2.0-3
 displayname: My App
-description: Does one thing.
-os_min_ver: 7.0-40000              # DSM 7 or later
+description: Does one thing.       # optional
+os_min_ver: 7.0-40000              # optional; DSM 7 or later
 category: media                    # optional
 icon: assets/icon.png              # optional PNG in the source repo at the tag
 metadata: { license: MIT }         # optional
@@ -116,7 +188,8 @@ assets:
 
 Limits: 1–8 assets of at most 64 MiB with disjoint architectures, files of at
 most 64 KiB, 10 packages per publisher, 200 in all. Tier fields (`trust`,
-`review`, `featured`, `order`, `package_names`, `credential_binding`) are
+`review`, `featured`, `recommended`, `order`, `package_names`, `credential_binding`,
+`facts`) are
 refused. A broken package file hides that package; a broken or missing
 publisher.yaml hides that publisher.
 
