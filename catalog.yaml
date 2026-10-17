@@ -144,7 +144,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0054
+      release: v0.1.0-0055
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -176,17 +176,15 @@ packages:
           開發預覽版：Connect 不會建立雲端帳號或資源，各連線方式的外部端到端連線尚未在所有網路環境驗證。
       changelog:
         en: |-
-          0.1.0-0054
-          - Dialogs take DSM's widths and corners and stay inside the Connect window.
-          - Page titles are followed by the same spacing as DSM's, instead of a double gap.
-          - Opening Connect again from the DSM main menu while it is open rechecks the connections.
-          - Upgrading from 0.1.0-0053 needs no administrator approval.
+          0.1.0-0055
+          - Rebuilt on SDK 0.13.1 and UI 0.11.4 with refreshed UI components.
+          - Fixed the iPhone Portal/standalone layout through the updated UI.
+          - Upgrading from 0.1.0-0054 needs no administrator approval.
         zh-TW: |-
-          0.1.0-0054
-          - 對話框的寬度與圓角對齊 DSM，且不會超出 Connect 視窗。
-          - 頁面標題下方的間距與 DSM 一致，不再是雙倍間距。
-          - Connect 已開啟時再從 DSM 主選單開啟，會重新檢查連線。
-          - 從 0.1.0-0053 升級不需要管理員核准。
+          0.1.0-0055
+          - 以 SDK 0.13.1 與 UI 0.11.4 重新建置，更新 UI 元件。
+          - 透過新版 UI 修正 iPhone Portal／獨立頁的手機版面。
+          - 從 0.1.0-0054 升級不需要管理員重新核准。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare.png
@@ -194,15 +192,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-ipv6.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0054
+        version: 0.1.0-0055
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 94dada436dd89d3ffff2bb403f4394a2b6bddbf94143bd531af4ebb0a325bb50
-        md5: 98939fb64db1290bd0e4834eba568e17
-        size: 7548928
+        sha256: 29cb9dfb00dd951d38a356b9601d387fee16abb145f1a9538d82bb7af4457c69
+        md5: 1cfe8403c0e19c7d0cd864c174c4b68e
+        size: 7554560
         facts:
           built_with: sdk
           sdk_backend: go
@@ -218,19 +216,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T15:42:17Z
-          source_ref: b70e05a53b6496575894642076315618cad1e5d9
+          reviewed_at: 2026-10-17T08:23:56Z
+          source_ref: a02d0473d818d6276f65bb305f3d80742a11eed7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0054
+        version: 0.1.0-0055
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: b66aac7e4d750af5183abad5835ad4ad1d9b5578efd0146149f0fa831df64059
-        md5: ba94ed67424acc430383fdfda886c54e
-        size: 7925760
+        sha256: cb74b5daeebd7bbe52595844d2c20e57fadc9c72168a680219845f6b4a1a1a11
+        md5: 23ac668ea3e42f207d49f6fb96fa5765
+        size: 7933440
         facts:
           built_with: sdk
           sdk_backend: go
@@ -246,11 +244,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T15:42:18Z
-          source_ref: b70e05a53b6496575894642076315618cad1e5d9
+          reviewed_at: 2026-10-17T08:23:57Z
+          source_ref: a02d0473d818d6276f65bb305f3d80742a11eed7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0054
+        version: 0.1.0-0055
         arch:
           - apollolake
           - avoton
@@ -279,9 +277,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 6fe1e753c0fc862dd11e8c4ac02f65321192260b378eabcbb36e9bd884346226
-        md5: 7fff277277c5227fadc3424f9ff64104
-        size: 8265728
+        sha256: 5daa1859a12720642853523167642777097cbafa5aa6cc945f83c1fca3e5b208
+        md5: 89a2bfdb65de4b5e60ddca56e4a807e5
+        size: 8270848
         facts:
           built_with: sdk
           sdk_backend: go
@@ -297,8 +295,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-16T15:42:19Z
-          source_ref: b70e05a53b6496575894642076315618cad1e5d9
+          reviewed_at: 2026-10-17T08:23:58Z
+          source_ref: a02d0473d818d6276f65bb305f3d80742a11eed7
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
