@@ -1,0 +1,467 @@
+schema: 3
+packages:
+  - featured: true
+    recommended: true
+    category: utilities
+    order: 10
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-reclaim
+      release: v0.1.1-1578
+      access: private
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://synopkgland.com/
+      internet: none
+      telemetry: none
+      long_description:
+        en: Find what really frees space on a Btrfs volume, and free it safely.
+        zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
+      changelog:
+        en: >
+          0.1.1-1578
+
+          - SDK/App/templates 0.15.2, CLI 0.15.4, UI 0.12.0; all three
+          architectures.
+
+          - Custom UI colours and chart palettes use UI tokens.
+
+          - Package builds are verified for reproducibility.
+
+          - Known limitation: a cold rootfs report may exceed the CLI's
+          10-second synchronous request deadline.
+        zh-TW: |
+          0.1.1-1578
+          - SDK／App／templates 0.15.2、CLI 0.15.4、UI 0.12.0，保留三架構。
+          - 自訂樣式與圖表色盤全面改用 UI token。
+          - 套件建置經過重現性驗證。
+          - 已知限制：冷啟動 rootfs report 可能超過 CLI 同步請求的 10 秒期限。
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition.png
+    pins:
+      - package: SynoReclaim
+        version: 0.1.1-1578
+        arch:
+          - armada37xx
+          - rtd1296
+          - rtd1619
+          - rtd1619b
+        sha256: cafa143a42248b6a54a85ed6267593d1244dbadc55a71d3c5e7e69717d5ba9d1
+        md5: 2d877711e09bb854f2cc3ae2c71d0860
+        size: 12774400
+        facts:
+          built_with: sdk
+          sdk_backend: rust
+          root_access: approval
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-18T14:31:38Z
+          source_ref: de7713783da123f64bdf8ca759c2670684ea6c35
+          source_repo: synopackageland/syno-reclaim
+      - package: SynoReclaim
+        version: 0.1.1-1578
+        arch:
+          - alpine
+          - alpine4k
+          - armada38x
+          - monaco
+        sha256: 0acfc0c9d9a00e8984772eea9f31c8b8b92e1946f69a4cc6d8b86df91c3ef864
+        md5: d8c50530212f33ef8c720f2e18f205c4
+        size: 13461504
+        facts:
+          built_with: sdk
+          sdk_backend: rust
+          root_access: approval
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-18T14:31:42Z
+          source_ref: de7713783da123f64bdf8ca759c2670684ea6c35
+          source_repo: synopackageland/syno-reclaim
+      - package: SynoReclaim
+        version: 0.1.1-1578
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 8f5228c37e46eec678d6ee640a513ae96268d6ea69572f2b071c6e6f6bfbccb5
+        md5: 6b328ce1b199aa778a7c9283603031e0
+        size: 13742080
+        facts:
+          built_with: sdk
+          sdk_backend: rust
+          root_access: approval
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-18T14:31:45Z
+          source_ref: de7713783da123f64bdf8ca759c2670684ea6c35
+          source_repo: synopackageland/syno-reclaim
+  - recommended: true
+    category: utilities
+    order: 20
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-connect
+      release: v0.1.0-0058
+      access: private
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://synopkgland.com/
+      internet: required
+      license: MIT. Bundled Go and npm dependencies keep their own licenses; the full
+        notices ship in the package's LICENSES/ folder. The cloudflared, Tailscale and
+        NetBird clients are downloaded from their vendors under their own licenses.
+        Source code is not public at this time.
+      description:
+        ko: 라우터 포트를 열지 않고도 외부에서 NAS에 접속해요. Cloudflare Tunnel, Tailscale, NetBird, IPv6 직접 연결을 한 화면에서 켜고 끌 수 있어요.
+      long_description:
+        en: |-
+          Reach your NAS remotely without opening router ports. Connect lists every connection method on one page; turn Cloudflare Tunnel, Tailscale, NetBird or IPv6 direct access on or off independently, or disable them all.
+
+          Only DSM administrators can open the app or call its API. Everything runs as the package account; no root helper, Node.js or shared service is installed.
+
+          Cloudflare Tunnel, Tailscale and NetBird use their official, unmodified clients, downloaded from the vendors and verified before use. Cloudflare publishes only the DSM web page; NetBird access is controlled by your management server's policy.
+
+          Development preview: Connect does not create cloud accounts or resources, and end-to-end external connectivity of each method has not been verified on every network.
+        zh-TW: |-
+          不必在路由器開放連接埠，也能從外部連回 NAS。Connect 在同一頁列出所有連線方式；Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連可以各自啟用或停用，也可以全部停用。
+
+          只有 DSM 管理員能開啟本 App 或呼叫其 API。所有程式都以套件帳號執行，不安裝 root helper、Node.js 或全機共用服務。
+
+          Cloudflare Tunnel、Tailscale 與 NetBird 使用未經修改的官方用戶端，從原廠下載並在使用前驗證。Cloudflare 只公開 DSM 網頁；NetBird 的存取範圍由您的管理伺服器政策控制。
+
+          開發預覽版：Connect 不會建立雲端帳號或資源，各連線方式的外部端到端連線尚未在所有網路環境驗證。
+      changelog:
+        en: |-
+          0.1.0-0058
+          - SDK/templates 0.15.2, CLI 0.15.4 and UI 0.12.0.
+          - Replace hardcoded waiting-page and QR colors with UI tokens.
+          - Executor/lifecycle digests match 0.15.1; upgrading from 0057 adds no reapproval requirement. Connect has no executor or AboutDialog.
+        zh-TW: |-
+          0.1.0-0058
+          - SDK／templates 0.15.2、CLI 0.15.4、UI 0.12.0。
+          - 登入等待頁與 QR 圖的寫死色碼改用 UI token。
+          - executor／lifecycle digest 與 0.15.1 相同，從 0057 升級不新增重新核准要求；Connect 沒有 executor 或 AboutDialog。
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-tailscale.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-ipv6.png
+    pins:
+      - package: SynoPkgConnect
+        version: 0.1.0-0058
+        arch:
+          - armada37xx
+          - rtd1296
+          - rtd1619
+          - rtd1619b
+        sha256: 926e98e7d5f031904959c57689d07397e011cdcbc045e62bfa883b7513e48f5d
+        md5: adedf152565b8150120679fa17931913
+        size: 8824832
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: none
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-18T14:25:19Z
+          source_ref: 1c3a36c569b31014074fc775fb20ee213e252828
+          source_repo: synopackageland/syno-pkg-connect
+      - package: SynoPkgConnect
+        version: 0.1.0-0058
+        arch:
+          - alpine
+          - alpine4k
+          - armada38x
+          - monaco
+        sha256: 8d0f7dbaa946ad800a8266c288ec10a8de76cfec42cc6dc0f488624ce968549b
+        md5: a6e1a54555b2ffa5985b6de0c1fa9e77
+        size: 9334784
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: none
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-18T14:25:20Z
+          source_ref: 1c3a36c569b31014074fc775fb20ee213e252828
+          source_repo: synopackageland/syno-pkg-connect
+      - package: SynoPkgConnect
+        version: 0.1.0-0058
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 66f9bf196e334f7f68d30ff9aa9111931176118bbf9c808a80185f70a4f3ed24
+        md5: 4dfeb741ea8efe6be402ac3708fc65d8
+        size: 9678336
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: none
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-18T14:25:23Z
+          source_ref: 1c3a36c569b31014074fc775fb20ee213e252828
+          source_repo: synopackageland/syno-pkg-connect
+  - recommended: true
+    category: utilities
+    order: 30
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-gopeed
+      release: v0.2.2-0045
+      access: private
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://synopkgland.com/
+      source_url: https://packages.synopkgland.com/src/synopackageland/syno-pkg-gopeed/
+      upstream:
+        name: Gopeed
+        url: https://github.com/GopeedLab/gopeed
+        license: GPL-3.0
+      internet: required
+      license: GPL-3.0-or-later
+      description:
+        ko: HTTP/HTTPS 링크, BitTorrent(.torrent 파일 및 마그넷 링크), ED2K, yt-dlp가 지원하는 동영상 사이트, 확장 프로그램이 추가하는 주소까지 거의 모든 것을 NAS로 다운로드해요. DSM 사용자마다 자신의 다운로드를 관리하고, 액세스 권한과 엔진 업데이트는 관리자가 맡아요. Powered by Gopeed.
+      long_description:
+        en: |-
+          Download Hub: per-user downloads powered by the official Gopeed engine, with DSM Application Privileges and administrator-managed core updates.
+
+          Each DSM user has their own downloads, destinations and history; administrators cannot operate other users' tasks. Who can use the app is set in Control Panel > Application Privileges. Completed downloads are saved into the user's chosen shared folder with that user's own DSM permissions.
+
+          Administrators manage download limits, connections, extensions and updates of the official Gopeed core, which are downloaded from the official release and verified before use.
+
+          Licensed under GPL-3.0-or-later; the corresponding source code is available at the source link.
+        zh-TW: |-
+          下載中心：以官方 Gopeed 引擎為核心、每位使用者各自的下載，透過 DSM 應用程式權限控管，核心更新由管理員管理。
+
+          每位 DSM 使用者有各自的下載、目的地與歷史紀錄，管理員也不能操作別人的工作。可使用本 App 的人員在「控制台 → 權限 → 應用程式權限」設定。下載完成的檔案以該使用者自己的 DSM 權限存到其選擇的共用資料夾。
+
+          下載上限、連線數、擴充套件與官方 Gopeed 核心的更新由管理員管理；更新從官方 Release 下載，並在使用前驗證。
+
+          以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
+      changelog:
+        en: |-
+          0.2.2-0045
+          - Updated SDK/templates to 0.15.2, CLI to 0.15.4 and UI to 0.12.0; custom interface colours follow UI tokens.
+          - The private engine API token is regenerated on every start.
+          - Executor/lifecycle digests match 0044; upgrading from 0044 needs no new administrator approval. Older builds retain the one-time approval required by 0044.
+          - Refresh the whole DSM page after upgrading.
+        zh-TW: |-
+          0.2.2-0045
+          - 升級至 SDK／templates 0.15.2、CLI 0.15.4 與 UI 0.12.0；介面自訂配色沿用 UI token。
+          - 引擎私有 API token 每次啟動重新產生。
+          - Executor／lifecycle digest 與 0044 相同，從 0044 升級不需重新核准；更舊版本仍須依 0044 要求由管理員核准一次。
+          - 升級後請重新整理整個 DSM 頁面。
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates.png
+    pins:
+      - package: SynoPkgGopeed
+        version: 0.2.2-0045
+        arch:
+          - armada37xx
+          - rtd1296
+          - rtd1619
+          - rtd1619b
+        sha256: 5e25b64097cae60cf797b2a17eece92c67b4f3c3e6651dfef07c3a3be14d47c8
+        md5: 42a4c943f0ba6a4b20c84a0bdc2c1990
+        size: 63764992
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: approval
+          runs: native
+          access: selected
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-18T14:28:39Z
+          source_ref: 8e91a9d084acf610cf91645e0b8fc4ad44b910a4
+          source_repo: synopackageland/syno-pkg-gopeed
+      - package: SynoPkgGopeed
+        version: 0.2.2-0045
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 68d8324e04a989f0af46dbf16f080a4d17c4209383ca30e0f7641e0581eeecd6
+        md5: 711148e4e3310529ff26fe3f082f69a4
+        size: 67187712
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: approval
+          runs: native
+          access: selected
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-18T14:29:03Z
+          source_ref: 8e91a9d084acf610cf91645e0b8fc4ad44b910a4
+          source_repo: synopackageland/syno-pkg-gopeed
+publishers:
+  synopackageland:
+    display_name: Syno Package Land
+    contact_email: support@synopkgland.com
+    support_email: support@synopkgland.com
+    homepage: https://synopkgland.com/

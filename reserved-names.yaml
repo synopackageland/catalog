@@ -1,0 +1,7 @@
+# Community package IDs and words nobody may use. names: exact package IDs;
+# words: substrings refused in a community package ID or display name.
+schema: 1
+names: []
+words:
+  - synology
+  - synopackageland

@@ -1,0 +1,6 @@
+# Community packages the maintainer has blocked. Checked packages in
+# catalog.yaml are never affected. Matching is case-insensitive for names.
+schema: 1
+blocked_publishers: []
+blocked_packages: []
+blocked_sha256: []
