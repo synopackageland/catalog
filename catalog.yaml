@@ -473,7 +473,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.7-0006
+      release: v4.2.7-0013
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -553,21 +553,40 @@ packages:
 
           Le backend et l’intégration sont sous AGPL-3.0-only ; le frontend d’origine est sous MIT. Les archives officielles correspondantes ainsi que les sources d’intégration et des dépendances sont jointes à la Release, puis disponibles via le lien des sources après publication du catalogue.
       changelog:
-        en: |-
-          4.2.7-0006
-          - Official OpenList icon and unmodified v4.2.7 engine; built and inspected with released CLI 0.17.6, SDK 0.17.5, templates 0.17.8 and UI 0.12.4.
-          - DSM-managed HTTPS and explicit administrator-only HTTP 403 denial. DSM 7.2-64570 or later; x86_64 only.
-          - Full lifecycle acceptance belongs to build 0005. Build 0006 adds the official icon, SPK icon readback and a quick 0005→0006 DSM upgrade/display check.
-          - Manual package-account shared-folder Read/Write permission and Local storage setup are required. External WebDAV remains unavailable.
-        zh-TW: |-
-          4.2.7-0006
-          - 改用 OpenList 官方圖示與未修改的 v4.2.7 引擎；正式 CLI 0.17.6 建置與 inspect、SDK 0.17.5、templates 0.17.8、UI 0.12.4。
-          - DSM 管理的 HTTPS 與明確管理員限定 HTTP 403 拒絕頁。需 DSM 7.2-64570 以上，僅 x86_64。
-          - 完整生命週期驗收屬於 0005；0006 補官方圖示、SPK 圖示讀回，以及 0005→0006 真機快速升級與顯示檢查。
-          - 須手動授予套件帳號共用資料夾讀寫權限並新增 Local storage；外部 WebDAV 維持不開放。
+        en: >-
+          4.2.7-0013
+
+          - Native OIDC single sign-on from the DSM main menu; DSM
+          administrators only. One designated administrator owns the OpenList
+          admin account; other administrators receive ordinary OpenList
+          accounts.
+
+          - Adds 49 bounded ctl commands; business commands verify the
+          designated owner and writes require confirmation.
+
+          - Rebuilt with released CLI/templates/SDK/App 0.19.0, executor/v0.19.0
+          and UI 0.12.5. CLI check/build/inspect pass with findings=[].
+
+          - Upgrade from 0012 preserves existing data and settings; OIDC,
+          non-administrator denial and three read-only ctl commands were
+          checked. Manual shared-folder permissions and Local storage setup
+          remain required. External WebDAV is not enabled.
+        zh-TW: >-
+          4.2.7-0013
+
+          - DSM 主選單原生 OIDC 單一登入，僅開放 DSM 管理員；指定管理員沿用 OpenList 管理帳號，其他管理員以一般
+          OpenList 帳號登入。
+
+          - 新增 49 個有界 ctl 指令；業務操作核對指定管理員，寫入須明確確認。
+
+          - 以正式 CLI/templates/SDK/App 0.19.0、executor/v0.19.0、UI 0.12.5
+          重建，check/build/inspect findings=[]。
+
+          - 0012 升級保留既有資料與設定；已複驗 OIDC、非管理員拒絕與三個唯讀 ctl 指令。仍須手動授予共用資料夾權限並新增 Local
+          storage；外部 WebDAV 未開放。
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.7-0006
+        version: 4.2.7-0013
         arch:
           - apollolake
           - avoton
@@ -596,9 +615,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 40be15fbda9f1a6372ff28c9f05e1d16becd08c47d8ca142df8613ce2be48b34
-        md5: cf8fa6e778d3fbed4d81c331347f3f6f
-        size: 69654016
+        sha256: 2f430f1895c60468d293742a1c162ffdd11f712d68aadf8e40a1bf6863e60ccc
+        md5: f770216e323a64e5909b73213422b6e7
+        size: 70439936
         facts:
           built_with: sdk
           sdk_backend: go
@@ -615,8 +634,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-20T07:58:29Z
-          source_ref: d82cbeb42090cab6c7f1d2ecdd826741a1493660
+          reviewed_at: 2026-10-20T15:03:52Z
+          source_ref: 83bd2b7f06b428067271d4cf3e80ee8274c74a64
           source_repo: synopackageland/syno-pkg-land-openlist
   - recommended: false
     featured: false
@@ -735,6 +754,134 @@ packages:
           reviewed_at: 2026-10-20T09:52:58Z
           source_ref: 333f09865e1504abc5e1e192ff9a8f36813a42f7
           source_repo: synopackageland/syno-pkg-land-uptime-kuma
+  - recommended: false
+    featured: false
+    category: utilities
+    order: 60
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-freshrss
+      release: v1.30.1-0015
+      access: private
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-freshrss
+      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.1-0015
+      license: AGPL-3.0; packaging MIT; container dependencies retain their own licenses
+      internet: required
+      telemetry: none
+      upstream:
+        name: FreshRSS
+        url: https://github.com/FreshRSS/FreshRSS
+        license: AGPL-3.0
+      long_description:
+        en: Read and organize RSS feeds with the official FreshRSS 1.30.1 image and
+          native OIDC sign-in from the DSM main menu. Access is limited to DSM
+          administrators, each with a separate FreshRSS identity. Requires an
+          x86_64 NAS, DSM 7.2.1-69057 or later and Container Manager. Existing
+          shared admin data is retained separately and is not reassigned to an
+          OIDC user. Uninstall keeps data by default; selecting delete-data
+          still retains the Compose named volume, whose name appears in the
+          wizard. Administrator-only preview; not recommended. No ctl interface.
+          FreshRSS is AGPL-3.0 and packaging integration is MIT; matching source
+          is attached to the release.
+        zh-TW: 使用官方 FreshRSS 1.30.1 映像閱讀與整理 RSS，從 DSM 主選單以原生 OIDC 登入。僅開放 DSM 管理員，各自使用獨立
+          FreshRSS 身分。需 x86_64 NAS、DSM 7.2.1-69057 以上與 Container Manager。既有共用
+          admin 資料另外保留，不會轉交給 OIDC 使用者。解除安裝預設保留資料；選擇刪除資料仍保留 Compose named
+          volume，精靈會列出名稱。本版為管理員專用預覽，不列為推薦套件，未提供 ctl。FreshRSS 採 AGPL-3.0，套件整合採
+          MIT；對應原始碼附於 Release。
+      changelog:
+        en: >-
+          1.30.1-0015
+
+          - First catalog preview with native OIDC single sign-on and DSM
+          administrator-only access; non-administrators receive HTTP 403.
+
+          - Official FreshRSS 1.30.1 container pinned by immutable digest, a
+          nonroot runtime, private package data and automatic feed refresh.
+
+          - Released CLI/templates/SDK/App 0.19.0, executor/v0.19.0 and UI
+          release-set pin 0.12.5; check/build/inspect findings=[].
+
+          - Rebuilt SPK is byte-identical to the device-verified candidate for
+          upgrade retention, main-menu OIDC and non-administrator denial.
+          Compose volume retention is reported during uninstall.
+        zh-TW: >-
+          1.30.1-0015
+
+          - 首次以預覽版上架，支援原生 OIDC 單一登入，僅開放 DSM 管理員；非管理員 HTTP 403。
+
+          - 官方 FreshRSS 1.30.1 container 以不可變 digest 鎖定，非 root
+          執行，使用私有套件資料並自動更新訂閱。
+
+          - 正式 CLI/templates/SDK/App 0.19.0、executor/v0.19.0、UI release-set pin
+          0.12.5，check/build/inspect findings=[]。
+
+          - 重建 SPK 與已驗證升級保留、主選單 OIDC、非管理員拒絕的候選完全相同；卸載精靈會說明 Compose volume 保留。
+      issues_url: https://github.com/synopackageland/syno-pkg-land-freshrss/issues
+      root_access: none
+      access: admins
+      account: dsm
+      runs: container
+      description:
+        en: Read and organize RSS feeds with FreshRSS and native DSM OIDC sign-in. DSM
+          administrators only. Requires Container Manager.
+        zh-TW: 使用 FreshRSS 閱讀與整理 RSS，透過原生 DSM OIDC 登入。僅開放 DSM 管理員，需 Container Manager。
+    pins:
+      - package: SynoPkgFreshRSS
+        version: 1.30.1-0015
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 2622e60d508fa25e165d88371b094923521bf27222947599ac6ae72226519c5d
+        md5: 04c4bfd09b5e3fb27652bc00c6547a3b
+        size: 19683840
+        facts:
+          built_with: sdk
+          sdk_backend: binary
+          root_access: none
+          runs: container
+          access: admins
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-20T15:03:55Z
+          source_ref: 77621fa3209d99d0d5631018b26eb8f884c04135
+          source_repo: synopackageland/syno-pkg-land-freshrss
 
 publishers:
   synopackageland:
