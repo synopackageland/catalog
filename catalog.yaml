@@ -618,6 +618,124 @@ packages:
           reviewed_at: 2026-10-20T07:58:29Z
           source_ref: d82cbeb42090cab6c7f1d2ecdd826741a1493660
           source_repo: synopackageland/syno-pkg-land-openlist
+  - recommended: false
+    featured: false
+    category: utilities
+    order: 50
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-uptime-kuma
+      release: v2.5.6-0009
+      access: private
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-uptime-kuma
+      source_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/tree/v2.5.6-0009
+      issues_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/issues
+      upstream:
+        name: Uptime Kuma
+        url: https://github.com/louislam/uptime-kuma
+        license: MIT
+      internet: required
+      license: MIT; container dependencies retain their own licenses
+      root_access: none
+      access: admins
+      account: dsm
+      runs: container
+      description:
+        en: Monitor HTTP services on your NAS with Uptime Kuma. DSM administrators sign
+          in through DSM, without a separate App password. Requires Container
+          Manager.
+        zh-TW: 以 Uptime Kuma 在 NAS 上監控 HTTP 服務。DSM 管理員透過 DSM 登入，不需另外設定 App 密碼；需安裝
+          Container Manager。
+      long_description:
+        en: |-
+          Uptime Kuma for DSM runs the official, unmodified Uptime Kuma 2.5.6 container image, locked by its tag and multi-platform digest. Container Manager downloads the image during installation. Requires DSM 7.2.1-69057 or later and an x86_64 NAS.
+
+          DSM administrators open the original dashboard from the main menu without another App password. The HTTPS gateway uses the DSM certificate on port 23443. Anonymous users must sign in to DSM; non-administrators receive HTTP 403. Container port 3001 is not published on the NAS. All monitor and status-page access is administrator-only; public status pages are not provided.
+
+          Monitors, settings and the generated private bootstrap credential use persistent package storage. Uninstall keeps data by default. Even when delete-data is selected, the Compose named volume remains; the wizard reports its exact name. This preview does not automatically remove the retained volume. There is no ctl interface or shared-folder integration.
+
+          Upstream and packaging are MIT-licensed; container dependencies keep their own licenses. Matching source and packaging are available at the source link. Listed as a preview, without a recommendation.
+        zh-TW: |-
+          Uptime Kuma for DSM 使用未修改的官方 Uptime Kuma 2.5.6 container image，以版本 tag 與多架構 digest 鎖定，由 Container Manager 於安裝時下載。需 DSM 7.2.1-69057 以上與 x86_64 NAS。
+
+          DSM 管理員可從主選單開啟原生監控介面，不必再設定 App 密碼。HTTPS gateway 使用 DSM 憑證，連接埠為 23443。未登入者必須先登入 DSM，非管理員會收到 HTTP 403；容器內的 3001 不公開到 NAS。監控項目與狀態頁均僅供管理員存取，不提供公開狀態頁。
+
+          監控項目、設定與自動產生的私有 bootstrap 憑證保存在套件儲存空間。解除安裝預設保留資料；即使選擇刪除資料，Compose named volume 仍會保留，精靈會明列其確切名稱。本預覽版不會自動刪除該 volume，也不提供 ctl 介面或共用資料夾整合。
+
+          上游與打包程式採 MIT 授權，容器相依套件保留各自授權；對應原始碼與打包程式見原始碼連結。以預覽版上架，不列為推薦套件。
+      changelog:
+        en: |-
+          2.5.6-0009
+          - Official upstream icon and digest-locked Uptime Kuma 2.5.6 container.
+          - DSM-managed HTTPS, DSM administrator sign-in, explicit non-admin HTTP 403 and no published container port.
+          - HTTP monitoring, Socket.IO, data-preserving upgrade, restart and uninstall retention checked on DSM.
+          - SDK/App 0.17.5, templates 0.17.8, UI 0.12.4; original build inspected with CLI 0.17.7, findings=[].
+          - Delete-data still retains the Compose named volume; the wizard reports the exact retained name. No ctl interface.
+        zh-TW: |-
+          2.5.6-0009
+          - 官方上游圖示與 digest 鎖定的 Uptime Kuma 2.5.6 container。
+          - DSM 管理的 HTTPS、管理員登入、非管理員 HTTP 403；不公開容器連接埠。
+          - 已在 DSM 驗證 HTTP 監控、Socket.IO、升級資料保留、重新啟動與卸載保留行為。
+          - SDK/App 0.17.5、templates 0.17.8、UI 0.12.4；原始產物經 CLI 0.17.7 inspect，findings=[]。
+          - 選擇刪除資料仍保留 Compose named volume，精靈會列出確切名稱；不提供 ctl 介面。
+    pins:
+      - package: SynoPkgUptimeKuma
+        version: 2.5.6-0009
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 749128bf98d18333a4cd655224ff0db8a6633f5736792dee267a078fae014760
+        md5: 05e2650882e9a845b87d4d0ae57d0727
+        size: 19214336
+        facts:
+          built_with: sdk
+          sdk_backend: binary
+          root_access: none
+          runs: container
+          access: admins
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: false
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-20T09:52:58Z
+          source_ref: 333f09865e1504abc5e1e192ff9a8f36813a42f7
+          source_repo: synopackageland/syno-pkg-land-uptime-kuma
 
 publishers:
   synopackageland:
