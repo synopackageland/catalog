@@ -461,6 +461,160 @@ packages:
           reviewed_at: 2026-10-20T03:01:36Z
           source_ref: fb11a276245d99d240d20ae32c0f262e939b8dab
           source_repo: synopackageland/syno-pkg-gopeed
+  - recommended: false
+    featured: false
+    category: utilities
+    order: 40
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-openlist
+      release: v4.2.7-0006
+      access: private
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-openlist
+      source_url: https://packages.synopkgland.com/src/synopackageland/syno-pkg-land-openlist/
+      issues_url: https://github.com/synopackageland/syno-pkg-land-openlist/issues
+      upstream:
+        name: OpenList
+        url: https://github.com/OpenListTeam/OpenList
+        license: AGPL-3.0-only
+      internet: optional
+      license: "AGPL-3.0-only; frontend MIT; icon CC-BY-NC-SA-4.0"
+      description:
+        en: 'OpenList file aggregation for DSM administrators. Manual shared-folder Read/Write permission and Local storage setup are required after installation. External WebDAV access is not available.'
+        zh-TW: '供 DSM 管理員使用的 OpenList 檔案聚合工具。安裝後須手動授予套件帳號共用資料夾讀寫權限，並新增 Local storage；不開放外部 WebDAV 存取。'
+        zh-CN: '供 DSM 管理员使用的 OpenList 文件聚合工具。安装后须手动授予套件账号共享文件夹读写权限，并新增 Local storage；不开放外部 WebDAV 访问。'
+        ja: 'DSM 管理者向けの OpenList ファイル集約アプリ。インストール後、パッケージアカウントに共有フォルダーの読み書き権限を付与し、Local storage を追加してください。外部からの WebDAV アクセスは利用できません。'
+        ko: 'DSM 관리자용 OpenList 파일 통합 앱입니다. 설치 후 패키지 계정에 공유 폴더 읽기/쓰기 권한을 부여하고 Local storage를 추가해야 합니다. 외부 WebDAV 접속은 제공하지 않습니다.'
+        de: 'OpenList-Dateiaggregation für DSM-Administratoren. Nach der Installation sind Lese-/Schreibrechte für das Paketkonto und ein Local storage manuell einzurichten. Externer WebDAV-Zugriff ist nicht verfügbar.'
+        fr: 'Agrégation de fichiers OpenList pour les administrateurs DSM. Après installation, accordez au compte du paquet les droits de lecture/écriture et ajoutez un Local storage. L’accès WebDAV externe est indisponible.'
+      long_description:
+        en: |-
+          OpenList for DSM runs the official, unmodified OpenList v4.2.7 engine as a native package account. DSM administrators open the original OpenList interface from the main menu without a second App password.
+
+          Required setup after installation: open Control Panel > Shared Folder > Edit > Permissions > System internal user, and grant the SynoPkgOpenList package account Read/Write permission on the selected shared folder. Then open OpenList, go to its management interface and add a Local storage using that shared folder's path. Selecting a folder in the installation wizard does not grant permissions or add storage automatically.
+
+          External WebDAV server access is not enabled. Standard WebDAV clients cannot use this App's DSM browser session; no public passthrough is provided. The package is administrator-only and is listed as a preview, without a recommendation.
+
+          Backend and integration: AGPL-3.0-only; upstream frontend: MIT. Matching official backend/frontend source archives and integration/dependency source assets are attached to the Release and offered through the source link after catalog publication.
+        zh-TW: |-
+          OpenList for DSM 以套件帳號原生執行未修改的官方 OpenList v4.2.7 引擎。DSM 管理員可從主選單開啟原生 OpenList 介面，不必再輸入 App 密碼。
+
+          安裝後必須手動設定：開啟「控制台 → 共用資料夾 → 編輯 → 權限 → 系統內部使用者」，授予 SynoPkgOpenList 套件帳號所選共用資料夾的「讀寫」權限。接著進入 OpenList 管理介面，以該共用資料夾路徑新增 Local storage。安裝精靈選擇資料夾不會自動授權，也不會自動新增 storage。
+
+          不開放外部 WebDAV 伺服器存取。一般 WebDAV 用戶端無法使用本 App 的 DSM 瀏覽器 session，也沒有公開 passthrough。本套件僅供管理員使用，以預覽版上架，不列為推薦套件。
+
+          後端與整合程式採 AGPL-3.0-only，上游前端採 MIT。對應的官方後端／前端原始碼包、整合與相依原始碼附於 Release；catalog 發布後亦可由原始碼連結取得。
+        zh-CN: |-
+          OpenList for DSM 以套件账号原生运行未修改的官方 OpenList v4.2.7 引擎。DSM 管理员可从主菜单打开原生 OpenList 界面，无需再次输入 App 密码。
+
+          安装后必须手动设置：打开“控制面板 → 共享文件夹 → 编辑 → 权限 → 系统内部用户”，授予 SynoPkgOpenList 套件账号所选共享文件夹的“读写”权限。然后进入 OpenList 管理界面，使用该共享文件夹路径新增 Local storage。安装向导选择文件夹不会自动授权，也不会自动新增 storage。
+
+          不开放外部 WebDAV 服务器访问。普通 WebDAV 客户端无法使用本 App 的 DSM 浏览器 session，也没有公开 passthrough。本套件仅供管理员使用，以预览版上架，不列为推荐套件。
+
+          后端与集成程序采用 AGPL-3.0-only，上游前端采用 MIT。对应的官方后端／前端源码包、集成与依赖源码附于 Release；catalog 发布后也可通过源码链接获取。
+        ja: |-
+          OpenList for DSM は、未変更の公式 OpenList v4.2.7 エンジンをパッケージアカウントでネイティブ実行します。DSM 管理者はメインメニューから元の OpenList 画面を開けます。追加のアプリパスワードは不要です。
+
+          インストール後に手動設定が必要です。「コントロール パネル → 共有フォルダー → 編集 → 権限 → システム内部ユーザー」で、SynoPkgOpenList パッケージアカウントに選択した共有フォルダーの読み書き権限を付与してください。次に OpenList の管理画面で、その共有フォルダーのパスを使って Local storage を追加してください。インストール時のフォルダー選択だけでは、権限の付与やストレージの追加は行われません。
+
+          外部からの WebDAV サーバーアクセスは有効になっていません。通常の WebDAV クライアントは DSM のブラウザーセッションを利用できず、公開パススルーもありません。管理者専用のプレビュー版で、推奨対象ではありません。
+
+          バックエンドと統合部分は AGPL-3.0-only、上流フロントエンドは MIT です。対応する公式ソースアーカイブと統合・依存関係のソースは Release に添付され、カタログ公開後はソースリンクからも取得できます。
+        ko: |-
+          OpenList for DSM은 수정하지 않은 공식 OpenList v4.2.7 엔진을 패키지 계정으로 네이티브 실행합니다. DSM 관리자는 메인 메뉴에서 원래 OpenList 화면을 열 수 있으며 별도 앱 비밀번호가 필요하지 않습니다.
+
+          설치 후 수동 설정이 필요합니다. 제어판 > 공유 폴더 > 편집 > 권한 > 시스템 내부 사용자에서 SynoPkgOpenList 패키지 계정에 선택한 공유 폴더의 읽기/쓰기 권한을 부여하세요. 그런 다음 OpenList 관리 화면에서 해당 공유 폴더 경로로 Local storage를 추가하세요. 설치 마법사의 폴더 선택만으로 권한이나 저장소가 자동 설정되지는 않습니다.
+
+          외부 WebDAV 서버 접속은 활성화하지 않습니다. 일반 WebDAV 클라이언트는 DSM 브라우저 세션을 사용할 수 없으며 공개 패스스루도 없습니다. 관리자 전용 미리보기 버전으로, 추천 패키지가 아닙니다.
+
+          백엔드와 통합 코드는 AGPL-3.0-only, 상위 프런트엔드는 MIT입니다. 대응하는 공식 소스 아카이브와 통합·의존성 소스는 Release에 첨부되며 카탈로그 게시 후 소스 링크에서도 받을 수 있습니다.
+        de: |-
+          OpenList für DSM führt die unveränderte offizielle OpenList-Engine v4.2.7 nativ unter dem Paketkonto aus. DSM-Administratoren öffnen die ursprüngliche OpenList-Oberfläche über das Hauptmenü, ohne ein zweites App-Passwort einzugeben.
+
+          Nach der Installation ist eine manuelle Einrichtung erforderlich: Öffnen Sie Systemsteuerung > Gemeinsamer Ordner > Bearbeiten > Berechtigungen > Interner Systembenutzer und geben Sie dem Paketkonto SynoPkgOpenList Lese-/Schreibrechte für den gewählten gemeinsamen Ordner. Fügen Sie anschließend in der OpenList-Verwaltung einen Local storage mit dem Pfad dieses Ordners hinzu. Die Ordnerauswahl im Installationsassistenten erteilt weder Berechtigungen noch legt sie automatisch einen Speicher an.
+
+          Externer WebDAV-Serverzugriff ist nicht aktiviert. Übliche WebDAV-Clients können die DSM-Browsersitzung nicht verwenden; es gibt keinen öffentlichen Passthrough. Das Paket ist nur für Administratoren als Vorschau gelistet und wird nicht empfohlen.
+
+          Backend und Integration stehen unter AGPL-3.0-only, das ursprüngliche Frontend unter MIT. Die passenden offiziellen Quellarchive sowie Integrations- und Abhängigkeitsquellen sind dem Release beigefügt und nach Veröffentlichung des Katalogs über den Quelllink erhältlich.
+        fr: |-
+          OpenList pour DSM exécute nativement le moteur officiel OpenList v4.2.7 non modifié sous le compte du paquet. Les administrateurs DSM ouvrent l’interface d’origine depuis le menu principal, sans second mot de passe d’application.
+
+          Une configuration manuelle est nécessaire après l’installation : dans Panneau de configuration > Dossier partagé > Modifier > Permissions > Utilisateur interne du système, accordez au compte SynoPkgOpenList les droits de lecture/écriture sur le dossier partagé choisi. Ajoutez ensuite un Local storage dans l’interface d’administration OpenList en utilisant le chemin de ce dossier. Le choix du dossier dans l’assistant n’accorde pas les droits et ne crée pas automatiquement le stockage.
+
+          L’accès externe au serveur WebDAV n’est pas activé. Les clients WebDAV ordinaires ne peuvent pas utiliser la session du navigateur DSM ; aucun accès public direct n’est fourni. Ce paquet est réservé aux administrateurs, proposé en aperçu et non recommandé.
+
+          Le backend et l’intégration sont sous AGPL-3.0-only ; le frontend d’origine est sous MIT. Les archives officielles correspondantes ainsi que les sources d’intégration et des dépendances sont jointes à la Release, puis disponibles via le lien des sources après publication du catalogue.
+      changelog:
+        en: |-
+          4.2.7-0006
+          - Official OpenList icon and unmodified v4.2.7 engine; built and inspected with released CLI 0.17.6, SDK 0.17.5, templates 0.17.8 and UI 0.12.4.
+          - DSM-managed HTTPS and explicit administrator-only HTTP 403 denial. DSM 7.2-64570 or later; x86_64 only.
+          - Full lifecycle acceptance belongs to build 0005. Build 0006 adds the official icon, SPK icon readback and a quick 0005→0006 DSM upgrade/display check.
+          - Manual package-account shared-folder Read/Write permission and Local storage setup are required. External WebDAV remains unavailable.
+        zh-TW: |-
+          4.2.7-0006
+          - 改用 OpenList 官方圖示與未修改的 v4.2.7 引擎；正式 CLI 0.17.6 建置與 inspect、SDK 0.17.5、templates 0.17.8、UI 0.12.4。
+          - DSM 管理的 HTTPS 與明確管理員限定 HTTP 403 拒絕頁。需 DSM 7.2-64570 以上，僅 x86_64。
+          - 完整生命週期驗收屬於 0005；0006 補官方圖示、SPK 圖示讀回，以及 0005→0006 真機快速升級與顯示檢查。
+          - 須手動授予套件帳號共用資料夾讀寫權限並新增 Local storage；外部 WebDAV 維持不開放。
+    pins:
+      - package: SynoPkgOpenList
+        version: 4.2.7-0006
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 40be15fbda9f1a6372ff28c9f05e1d16becd08c47d8ca142df8613ce2be48b34
+        md5: cf8fa6e778d3fbed4d81c331347f3f6f
+        size: 69654016
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: none
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-20T07:58:29Z
+          source_ref: d82cbeb42090cab6c7f1d2ecdd826741a1493660
+          source_repo: synopackageland/syno-pkg-land-openlist
+
 publishers:
   synopackageland:
     display_name: Syno Package Land
