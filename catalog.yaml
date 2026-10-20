@@ -729,7 +729,6 @@ packages:
           conflicts: []
           shared_folders: []
           signed: false
-          ctl: false
         review:
           type: reviewed
           reviewer: synopackageland
