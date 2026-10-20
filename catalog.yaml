@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1579
+      release: v0.1.1-1580
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -21,19 +21,21 @@ packages:
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
       changelog:
         en: >-
-          0.1.1-1579
+          0.1.1-1580
 
-          - Rebuilt with CLI 0.17.5, templates 0.17.8, SDK/App 0.17.5 and UI
+          - Rebuilt with SDK/App 0.17.7, CLI 0.17.8, templates 0.17.10 and UI
           0.12.4.
 
-          - Full-page layout uses flush content without an outer page card.
-          Executor/lifecycle payloads changed; existing approvals require
-          administrator reapproval.
+          - Fix administrator authorization for DSM administrators group
+          members, including domain accounts, using the shared native DSM check.
+
+          - Executor payload changed; open Syno Reclaim and approve system
+          access again after upgrading. Existing data and settings are retained.
         zh-TW: |-
-          0.1.1-1579
-          - 以 CLI 0.17.5、templates 0.17.8、SDK／App 0.17.5 與 UI 0.12.4 重建。
-          - 全頁內容貼齊側欄，不再以外層卡片包住整頁。
-          - Executor／lifecycle payload 已變更，既有授權須由管理員重新核准。
+          0.1.1-1580
+          - 以 SDK/App 0.17.7、CLI 0.17.8、templates 0.17.10、UI 0.12.4 重建。
+          - 統一使用原生 DSM administrators 群組判定，修正包含網域帳號的管理員授權問題。
+          - executor payload 已變更，升級後請開啟 App 再次核准系統存取；保留既有資料與設定。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore.png
@@ -41,15 +43,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1579
+        version: 0.1.1-1580
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f76868d6d8cea53485ef53b6df4aaab33392c68f2df56f104e77015961aed73f
-        md5: 6182086f7833ec68a7f4e7dd97f94908
-        size: 12956160
+        sha256: f1596d1829267e8cf84a86e596eb3f992dbdce2ee7348862761d7c05441f94d9
+        md5: 972ae0e66940ab49e7f016b824b8adb1
+        size: 12959232
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -66,19 +68,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-20T03:01:35Z
-          source_ref: 53e10e853382d7c5412643838c8f6af170c034f2
+          reviewed_at: 2026-10-20T09:36:46Z
+          source_ref: f040f2d2a9c0f3ec184f9457a91a7c14eccb1352
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1579
+        version: 0.1.1-1580
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: ed7b252874e19b391d153333b5feda5fdee6d54b8bc6294a940c563348a54d8f
-        md5: 4241f27684b2c88cfd5e99f4b7dcfd93
-        size: 13644800
+        sha256: b035e22ea7c3885143e8fe1c10491c18cb1a9463e2a6b639de61e566e7fc0a10
+        md5: 6c37c467187d02dc745ab67de8375884
+        size: 13650432
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -95,11 +97,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-20T03:01:35Z
-          source_ref: 53e10e853382d7c5412643838c8f6af170c034f2
+          reviewed_at: 2026-10-20T09:36:46Z
+          source_ref: f040f2d2a9c0f3ec184f9457a91a7c14eccb1352
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1579
+        version: 0.1.1-1580
         arch:
           - apollolake
           - avoton
@@ -128,9 +130,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c415a8ada86f41f55eef48a6f6b27a9158a483e26df5232bb7e63ec497dbef1e
-        md5: 99dadb4b60fa6e5bac22d9ad081e1076
-        size: 13945344
+        sha256: 63d10f95e5a87dae3513d60d90ae8aefcc9996df485c13b1bd4082d7e141ae80
+        md5: 719908a8f8d9a2677bba5cd72a203e3d
+        size: 13951488
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -147,8 +149,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-20T03:01:35Z
-          source_ref: 53e10e853382d7c5412643838c8f6af170c034f2
+          reviewed_at: 2026-10-20T09:36:46Z
+          source_ref: f040f2d2a9c0f3ec184f9457a91a7c14eccb1352
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: utilities
@@ -323,7 +325,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0047
+      release: v0.2.2-0048
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -359,19 +361,21 @@ packages:
           以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
       changelog:
         en: >-
-          0.2.2-0047
+          0.2.2-0048
 
-          - Rebuilt with CLI 0.17.5, templates 0.17.8, SDK/App 0.17.5 and UI
+          - Rebuilt with SDK/App 0.17.7, CLI 0.17.8, templates 0.17.10 and UI
           0.12.4.
 
-          - Full-page layout uses flush content without an outer page card.
-          Executor/lifecycle payloads changed; existing approvals require
-          administrator reapproval.
+          - Fix administrator authorization for DSM administrators group
+          members, including domain accounts, using the shared native DSM check.
+
+          - Executor payload changed; open Download Hub and approve system
+          access again after upgrading. Existing data and settings are retained.
         zh-TW: |-
-          0.2.2-0047
-          - 以 CLI 0.17.5、templates 0.17.8、SDK／App 0.17.5 與 UI 0.12.4 重建。
-          - 全頁內容貼齊側欄，不再以外層卡片包住整頁。
-          - Executor／lifecycle payload 已變更，既有授權須由管理員重新核准。
+          0.2.2-0048
+          - 以 SDK/App 0.17.7、CLI 0.17.8、templates 0.17.10、UI 0.12.4 重建。
+          - 統一使用原生 DSM administrators 群組判定，修正包含網域帳號的管理員授權問題。
+          - executor payload 已變更，升級後請開啟 App 再次核准系統存取；保留既有資料與設定。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download.png
@@ -379,15 +383,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0047
+        version: 0.2.2-0048
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: c77d707eb066dc6149be7424f6588131a063f3a48f389884aea1ed9d86341c3d
-        md5: b5dd587cbbbe18788907ccfd9d708298
-        size: 63998464
+        sha256: 1044721fb3fef513f6d929b819b5b5699ce7ea0751902bba1f77094f4cb81900
+        md5: 150b2eea133f9f0cc88c27d04f03574d
+        size: 64008192
         facts:
           built_with: sdk
           sdk_backend: go
@@ -405,11 +409,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-20T03:01:35Z
-          source_ref: fb11a276245d99d240d20ae32c0f262e939b8dab
+          reviewed_at: 2026-10-20T09:28:05Z
+          source_ref: a62121c5ce64467c6c33a6fe367a3def4f5a9816
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0047
+        version: 0.2.2-0048
         arch:
           - apollolake
           - avoton
@@ -438,9 +442,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 79962b1ccf737167a037edbe7841779ca004f4bf51e620144224b48009f14bd3
-        md5: d699f475edbc33a35b4579d465b356a2
-        size: 67465216
+        sha256: 55088103dffa445cd32e98f34076d1e1d139748521e8fd1678a0e18c12c69d5c
+        md5: c4f288cc38c007a7751022494a20956d
+        size: 67471872
         facts:
           built_with: sdk
           sdk_backend: go
@@ -458,8 +462,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-20T03:01:36Z
-          source_ref: fb11a276245d99d240d20ae32c0f262e939b8dab
+          reviewed_at: 2026-10-20T09:28:05Z
+          source_ref: a62121c5ce64467c6c33a6fe367a3def4f5a9816
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
