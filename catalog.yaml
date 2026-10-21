@@ -762,13 +762,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.1-0015
+      release: v1.30.2-0001
       access: private
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-freshrss
-      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.1-0015
+      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.2-0001
       license: AGPL-3.0; packaging MIT; container dependencies retain their own licenses
       internet: required
       telemetry: none
@@ -777,49 +777,32 @@ packages:
         url: https://github.com/FreshRSS/FreshRSS
         license: AGPL-3.0
       long_description:
-        en: Read and organize RSS feeds with the official FreshRSS 1.30.1 image and
-          native OIDC sign-in from the DSM main menu. Access is limited to DSM
-          administrators, each with a separate FreshRSS identity. Requires an
-          x86_64 NAS, DSM 7.2.1-69057 or later and Container Manager. Existing
-          shared admin data is retained separately and is not reassigned to an
-          OIDC user. Uninstall keeps data by default; selecting delete-data
-          still retains the Compose named volume, whose name appears in the
-          wizard. Administrator-only preview; not recommended. No ctl interface.
-          FreshRSS is AGPL-3.0 and packaging integration is MIT; matching source
-          is attached to the release.
-        zh-TW: 使用官方 FreshRSS 1.30.1 映像閱讀與整理 RSS，從 DSM 主選單以原生 OIDC 登入。僅開放 DSM 管理員，各自使用獨立
-          FreshRSS 身分。需 x86_64 NAS、DSM 7.2.1-69057 以上與 Container Manager。既有共用
-          admin 資料另外保留，不會轉交給 OIDC 使用者。解除安裝預設保留資料；選擇刪除資料仍保留 Compose named
-          volume，精靈會列出名稱。本版為管理員專用預覽，不列為推薦套件，未提供 ctl。FreshRSS 採 AGPL-3.0，套件整合採
-          MIT；對應原始碼附於 Release。
+        en: Read and organize RSS feeds with the official FreshRSS 1.30.2 image and
+          native OIDC sign-in from the DSM main menu. Access is limited to DSM administrators,
+          each with a separate FreshRSS identity. Requires an x86_64 NAS, DSM 7.2.1-69057
+          or later and Container Manager. Existing shared admin data is retained separately
+          and is not reassigned to an OIDC user. Uninstall keeps data by default; selecting
+          delete-data still retains the Compose named volume, whose name appears in
+          the wizard. Administrator-only preview; not recommended. No ctl interface.
+          FreshRSS is AGPL-3.0 and packaging integration is MIT; matching source is
+          attached to the release.
+        zh-TW: 使用官方 FreshRSS 1.30.2 映像閱讀與整理 RSS，從 DSM 主選單以原生 OIDC 登入。僅開放 DSM 管理員，各自使用獨立
+          FreshRSS 身分。需 x86_64 NAS、DSM 7.2.1-69057 以上與 Container Manager。既有共用 admin
+          資料另外保留，不會轉交給 OIDC 使用者。解除安裝預設保留資料；選擇刪除資料仍保留 Compose named volume，精靈會列出名稱。本版為管理員專用預覽，不列為推薦套件，未提供
+          ctl。FreshRSS 採 AGPL-3.0，套件整合採 MIT；對應原始碼附於 Release。
       changelog:
-        en: >-
-          1.30.1-0015
-
-          - First catalog preview with native OIDC single sign-on and DSM
-          administrator-only access; non-administrators receive HTTP 403.
-
-          - Official FreshRSS 1.30.1 container pinned by immutable digest, a
-          nonroot runtime, private package data and automatic feed refresh.
-
-          - Released CLI/templates/SDK/App 0.19.0, executor/v0.19.0 and UI
-          release-set pin 0.12.5; check/build/inspect findings=[].
-
-          - Rebuilt SPK is byte-identical to the device-verified candidate for
-          upgrade retention, main-menu OIDC and non-administrator denial.
-          Compose volume retention is reported during uninstall.
-        zh-TW: >-
-          1.30.1-0015
-
-          - 首次以預覽版上架，支援原生 OIDC 單一登入，僅開放 DSM 管理員；非管理員 HTTP 403。
-
-          - 官方 FreshRSS 1.30.1 container 以不可變 digest 鎖定，非 root
-          執行，使用私有套件資料並自動更新訂閱。
-
-          - 正式 CLI/templates/SDK/App 0.19.0、executor/v0.19.0、UI release-set pin
-          0.12.5，check/build/inspect findings=[]。
-
-          - 重建 SPK 與已驗證升級保留、主選單 OIDC、非管理員拒絕的候選完全相同；卸載精靈會說明 Compose volume 保留。
+        en: |-
+          1.30.2-0001
+          - Update the official FreshRSS image to 1.30.2 with an immutable digest; upstream source is unchanged.
+          - Keep released CLI/templates/SDK/App 0.19.0, executor/v0.19.0 and UI 0.12.5. The SPK is the exact verified artifact; check/build/inspect findings=[].
+          - Verified upgrade from 1.30.1-0015 preserves feeds, entries and configuration; DSM main-menu OIDC and non-administrator refusal passed.
+          - Administrator-only preview; uninstall retains the named App data volume even when delete-data is selected.
+        zh-TW: |-
+          1.30.2-0001
+          - 更新官方 FreshRSS 映像至 1.30.2，以不可變 digest 鎖定，未修改上游原始碼。
+          - 沿用正式 CLI/templates/SDK/App 0.19.0、executor/v0.19.0、UI 0.12.5，SPK 與已驗收產物完全相同；check/build/inspect findings=[]。
+          - 已驗證從 1.30.1-0015 升級保留訂閱、文章與設定，以及主選單 OIDC 登入與非管理員拒絕。
+          - 管理員專用預覽版；卸載選擇刪除資料仍保留 App data volume。
       issues_url: https://github.com/synopackageland/syno-pkg-land-freshrss/issues
       root_access: none
       access: admins
@@ -830,58 +813,290 @@ packages:
           administrators only. Requires Container Manager.
         zh-TW: 使用 FreshRSS 閱讀與整理 RSS，透過原生 DSM OIDC 登入。僅開放 DSM 管理員，需 Container Manager。
     pins:
-      - package: SynoPkgFreshRSS
-        version: 1.30.1-0015
-        arch:
-          - apollolake
-          - avoton
-          - braswell
-          - broadwell
-          - broadwellnk
-          - broadwellnkv2
-          - broadwellntb
-          - broadwellntbap
-          - bromolow
-          - cedarview
-          - coffeelake
-          - denverton
-          - epyc7002
-          - epyc7003
-          - epyc7003ntb
-          - geminilake
-          - geminilakenk
-          - grantley
-          - icelaked
-          - kvmcloud
-          - kvmx64
-          - purley
-          - r1000
-          - r1000nk
-          - skylaked
-          - v1000
-          - v1000nk
-        sha256: 2622e60d508fa25e165d88371b094923521bf27222947599ac6ae72226519c5d
-        md5: 04c4bfd09b5e3fb27652bc00c6547a3b
-        size: 19683840
-        facts:
-          built_with: sdk
-          sdk_backend: binary
-          root_access: none
-          runs: container
-          access: admins
-          account: dsm
-          background: yes
-          opens: dsm
-          requires: []
-          conflicts: []
-          shared_folders: []
-          signed: false
-        review:
-          type: reviewed
-          reviewer: synopackageland
-          reviewed_at: 2026-10-20T15:03:55Z
-          source_ref: 77621fa3209d99d0d5631018b26eb8f884c04135
-          source_repo: synopackageland/syno-pkg-land-freshrss
+    - package: SynoPkgFreshRSS
+      version: 1.30.2-0001
+      arch:
+      - apollolake
+      - avoton
+      - braswell
+      - broadwell
+      - broadwellnk
+      - broadwellnkv2
+      - broadwellntb
+      - broadwellntbap
+      - bromolow
+      - cedarview
+      - coffeelake
+      - denverton
+      - epyc7002
+      - epyc7003
+      - epyc7003ntb
+      - geminilake
+      - geminilakenk
+      - grantley
+      - icelaked
+      - kvmcloud
+      - kvmx64
+      - purley
+      - r1000
+      - r1000nk
+      - skylaked
+      - v1000
+      - v1000nk
+      sha256: 17762ba038d1b2468feccab14fea70e059012ebadbfc77c7cda192ee28056778
+      md5: 13852006cd45f4b69156840b2a9149ce
+      size: 19683840
+      facts:
+        built_with: sdk
+        sdk_backend: binary
+        root_access: none
+        runs: container
+        access: admins
+        account: dsm
+        background: 'yes'
+        opens: dsm
+        requires: []
+        conflicts: []
+        shared_folders: []
+        signed: false
+      review:
+        type: reviewed
+        reviewer: synopackageland
+        reviewed_at: '2026-10-21T00:51:30Z'
+        source_ref: 1e120ef1ae3da8a95dda8f4ce65eda5ba833bd69
+        source_repo: synopackageland/syno-pkg-land-freshrss
+  - recommended: false
+    featured: false
+    category: multimedia
+    order: 70
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-audiobookshelf
+      release: v2.37.1-0001
+      access: public
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-audiobookshelf
+      source_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/tree/v2.37.1-0001
+      issues_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/issues
+      license: GPL-3.0; dependencies retain their own licenses
+      internet: required
+      telemetry: none
+      upstream:
+        name: Audiobookshelf
+        url: https://github.com/advplyr/audiobookshelf
+        license: GPL-3.0
+      root_access: none
+      access: admins
+      account: dsm
+      runs: container
+      description:
+        en: Audiobookshelf media library with native DSM OIDC sign-in and an install-selected
+          read-only media share. Requires Container Manager.
+        zh-TW: Audiobookshelf 媒體庫，支援 DSM OIDC 單一登入及安裝時選擇唯讀媒體共用資料夾；需 Container Manager。
+      long_description:
+        en: Audiobooks and podcasts with the official Audiobookshelf 2.37.1 image and
+          automatic native DSM OIDC sign-in. DSM administrators only; each receives
+          an individual upstream administrator account. Configure an App library for
+          the selected media subfolder. Podcast downloads into the read-only mount are
+          unsupported. Mobile/TV clients are not certified. Choose an existing media
+          Shared Folder in the installation wizard, then grant the SynoPkgAudiobookshelf
+          package account Read access in DSM Shared Folder permissions > System internal
+          user. Selection does not grant access. Media is mounted read-only at /media;
+          access uses the package account, not the signed-in user filesystem ACL. Requires
+          x86_64, DSM 7.2.1-69057 or later and Container Manager. Uninstall retains
+          named App data volumes, including when delete-data is selected. Preview; not
+          recommended. No ctl interface.
+        zh-TW: 使用官方 Audiobookshelf 2.37.1 映像播放有聲書與 Podcast，從 DSM 主選單自動以 OIDC 單一登入。僅開放
+          DSM 管理員，各自使用獨立上游管理員帳號。請於 App 以媒體子資料夾建立媒體庫；不支援下載 Podcast 至唯讀掛載，手機／TV 用戶端尚未驗證。安裝時選擇既有媒體共用資料夾後，仍須於
+          DSM「共用資料夾 → 權限 → 系統內部使用者」授予 SynoPkgAudiobookshelf 套件帳號讀取權限；選擇資料夾不等於授權。媒體於
+          /media 唯讀掛載，使用套件帳號 ACL，並非登入者個人檔案 ACL。需 x86_64、DSM 7.2.1-69057 以上與 Container
+          Manager。卸載選擇刪除資料仍保留 App data volumes。本版為預覽版，不列為推薦套件，未提供 ctl。
+      changelog:
+        en: |-
+          2.37.1-0001
+          - Initial catalog preview with DSM main-menu OIDC sign-in and an install-selected read-only media share; grant package-account Read access separately in DSM.
+          - Published CLI/templates/SDK/App 0.20.0, executor/v0.20.0 and UI 0.12.5; npm lock integrity verified and check/build/inspect findings=[].
+          - Fresh installation, administrator sign-in, synthetic media playback, native stop/start and uninstall cleanup verified; broader identity evidence retains its documented scope.
+          - Named App data volumes are retained during uninstall. Native-client support and immediate session revocation are not certified.
+        zh-TW: |-
+          2.37.1-0001
+          - 首次以預覽版上架，支援 DSM 主選單 OIDC 單一登入及安裝時選擇唯讀媒體共用資料夾；仍須在 DSM 另外授予套件帳號讀取權限。
+          - 正式 CLI/templates/SDK/App 0.20.0、executor/v0.20.0、UI 0.12.5；npm lock integrity 讀回一致，check/build/inspect findings=[]。
+          - 已複驗新鮮安裝、管理員登入、合成媒體播放、原生 stop/start、卸載與 fixture 清理；其餘身分證據沿用既有範圍。
+          - 卸載保留 App data volumes；未驗證原生用戶端及立即 session 撤銷。
+    pins:
+    - package: SynoPkgAudiobookshelf
+      version: 2.37.1-0001
+      arch:
+      - apollolake
+      - avoton
+      - braswell
+      - broadwell
+      - broadwellnk
+      - broadwellnkv2
+      - broadwellntb
+      - broadwellntbap
+      - bromolow
+      - cedarview
+      - coffeelake
+      - denverton
+      - epyc7002
+      - epyc7003
+      - epyc7003ntb
+      - geminilake
+      - geminilakenk
+      - grantley
+      - icelaked
+      - kvmcloud
+      - kvmx64
+      - purley
+      - r1000
+      - r1000nk
+      - skylaked
+      - v1000
+      - v1000nk
+      sha256: 313b60af84a39a9694b9b34421eb7501d778265a617d299ae71b26e0614ee632
+      md5: 61b80f6281ff748d7ff5421d51df8e47
+      size: 19770880
+      facts:
+        built_with: sdk
+        sdk_backend: binary
+        root_access: none
+        runs: container
+        access: admins
+        account: dsm
+        background: 'yes'
+        opens: dsm
+        requires: []
+        conflicts: []
+        shared_folders: []
+        signed: false
+      review:
+        type: reviewed
+        reviewer: synopackageland
+        reviewed_at: '2026-10-21T00:51:30Z'
+        source_ref: c7f7b658e750ee8a79aeaa001fb3f8f751f773cb
+        source_repo: synopackageland/syno-pkg-land-audiobookshelf
+  - recommended: false
+    featured: false
+    category: multimedia
+    order: 80
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-jellyfin
+      release: v12.2-0001
+      access: public
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-jellyfin
+      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.2-0001
+      issues_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/issues
+      license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0; dependencies retain
+        their own licenses
+      internet: required
+      telemetry: none
+      upstream:
+        name: Jellyfin
+        url: https://github.com/jellyfin/jellyfin
+        license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0
+      root_access: none
+      access: selected
+      account: dsm
+      runs: container
+      description:
+        en: Jellyfin media library with native DSM OIDC sign-in and an install-selected
+          read-only media share. Requires Container Manager.
+        zh-TW: Jellyfin 媒體庫，支援 DSM OIDC 單一登入及安裝時選擇唯讀媒體共用資料夾；需 Container Manager。
+      long_description:
+        en: Jellyfin 12.2 with the unmodified official image and SSO Authentication
+          4.0.0.4 plugin. Open from the DSM main menu and choose Sign in with DSM once.
+          Users need DSM App privilege; administrators and ordinary users receive separate
+          Jellyfin identities and roles. Hardware transcoding/GPU and DLNA are disabled;
+          TV/mobile native clients cannot use this DSM-only entry. Choose an existing
+          media Shared Folder in the installation wizard, then grant the SynoPkgJellyfin
+          package account Read access in DSM Shared Folder permissions > System internal
+          user. Selection does not grant access. Media is mounted read-only at /media;
+          access uses the package account, not the signed-in user filesystem ACL. Requires
+          x86_64, DSM 7.2.1-69057 or later and Container Manager. Uninstall retains
+          named App data volumes, including when delete-data is selected. Preview; not
+          recommended. No ctl interface.
+        zh-TW: 使用未修改的官方 Jellyfin 12.2 映像與 SSO Authentication 4.0.0.4 plugin。從 DSM 主選單開啟後按一次「Sign
+          in with DSM」登入。使用者須具備 DSM App 使用權限，管理員與一般使用者對應不同 Jellyfin 身分及角色。未開啟硬體轉碼／GPU
+          與 DLNA，TV／手機原生用戶端不支援此 DSM-only 入口。安裝時選擇既有媒體共用資料夾後，仍須於 DSM「共用資料夾 → 權限 → 系統內部使用者」授予
+          SynoPkgJellyfin 套件帳號讀取權限；選擇資料夾不等於授權。媒體於 /media 唯讀掛載，使用套件帳號 ACL，並非登入者個人檔案 ACL。需
+          x86_64、DSM 7.2.1-69057 以上與 Container Manager。卸載選擇刪除資料仍保留 App data volumes。本版為預覽版，不列為推薦套件，未提供
+          ctl。
+      changelog:
+        en: |-
+          12.2-0001
+          - Initial catalog preview with DSM main-menu OIDC sign-in and an install-selected read-only media share; grant package-account Read access separately in DSM.
+          - Published CLI/templates/SDK/App 0.20.0, executor/v0.20.0 and UI 0.12.5; npm lock integrity verified and check/build/inspect findings=[].
+          - Fresh installation, administrator sign-in, synthetic media playback, native stop/start and uninstall cleanup verified; broader identity evidence retains its documented scope.
+          - Named App data volumes are retained during uninstall. Native-client support and immediate session revocation are not certified.
+        zh-TW: |-
+          12.2-0001
+          - 首次以預覽版上架，支援 DSM 主選單 OIDC 單一登入及安裝時選擇唯讀媒體共用資料夾；仍須在 DSM 另外授予套件帳號讀取權限。
+          - 正式 CLI/templates/SDK/App 0.20.0、executor/v0.20.0、UI 0.12.5；npm lock integrity 讀回一致，check/build/inspect findings=[]。
+          - 已複驗新鮮安裝、管理員登入、合成媒體播放、原生 stop/start、卸載與 fixture 清理；其餘身分證據沿用既有範圍。
+          - 卸載保留 App data volumes；未驗證原生用戶端及立即 session 撤銷。
+    pins:
+    - package: SynoPkgJellyfin
+      version: 12.2-0001
+      arch:
+      - apollolake
+      - avoton
+      - braswell
+      - broadwell
+      - broadwellnk
+      - broadwellnkv2
+      - broadwellntb
+      - broadwellntbap
+      - bromolow
+      - cedarview
+      - coffeelake
+      - denverton
+      - epyc7002
+      - epyc7003
+      - epyc7003ntb
+      - geminilake
+      - geminilakenk
+      - grantley
+      - icelaked
+      - kvmcloud
+      - kvmx64
+      - purley
+      - r1000
+      - r1000nk
+      - skylaked
+      - v1000
+      - v1000nk
+      sha256: d2fbc1aefa08db8bfb178f020075e5ececb1025f2762b82b65fbe41aedc44178
+      md5: 7bc15fe94de9af7aae7c98bbb6bd4064
+      size: 20503040
+      facts:
+        built_with: sdk
+        sdk_backend: binary
+        root_access: none
+        runs: container
+        access: selected
+        account: dsm
+        background: 'yes'
+        opens: dsm
+        requires: []
+        conflicts: []
+        shared_folders: []
+        signed: false
+      review:
+        type: reviewed
+        reviewer: synopackageland
+        reviewed_at: '2026-10-21T00:51:30Z'
+        source_ref: e876f4fdd1ddaea78fb6e6cc21c880b55fcb407b
+        source_repo: synopackageland/syno-pkg-land-jellyfin
 
 publishers:
   synopackageland:
