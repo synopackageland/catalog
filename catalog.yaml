@@ -399,7 +399,7 @@ packages:
           runs: native
           access: selected
           account: dsm
-          background: yes
+          background: 'yes'
           opens: dsm
           requires: []
           conflicts: []
@@ -452,7 +452,7 @@ packages:
           runs: native
           access: selected
           account: dsm
-          background: yes
+          background: 'yes'
           opens: dsm
           requires: []
           conflicts: []
@@ -742,7 +742,7 @@ packages:
           runs: container
           access: admins
           account: dsm
-          background: yes
+          background: 'yes'
           opens: dsm
           requires: []
           conflicts: []
@@ -988,16 +988,16 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.2-0001
+      release: v12.2-0002
       access: private
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-jellyfin
-      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.2-0001
+      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.2-0002
       issues_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/issues
-      license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0; dependencies retain
-        their own licenses
+      license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0; dependencies
+        retain their own licenses
       internet: required
       telemetry: none
       upstream:
@@ -1014,39 +1014,43 @@ packages:
         zh-TW: Jellyfin 媒體庫，支援 DSM OIDC 單一登入及安裝時選擇唯讀媒體共用資料夾；需 Container Manager。
       long_description:
         en: Jellyfin 12.2 with the unmodified official image and SSO Authentication
-          4.0.0.4 plugin. Open from the DSM main menu and choose Sign in with DSM once.
-          Users need DSM App privilege; administrators and ordinary users receive separate
-          Jellyfin identities and roles. Hardware transcoding/GPU and DLNA are disabled;
-          TV/mobile native clients cannot use this DSM-only entry. Choose an existing
-          media Shared Folder in the installation wizard, then grant the SynoPkgJellyfin
-          package account Read access in DSM Shared Folder permissions > System internal
-          user. Selection does not grant access. Media is mounted read-only at /media;
-          access uses the package account, not the signed-in user filesystem ACL. Requires
-          x86_64, DSM 7.2.1-69057 or later and Container Manager. Uninstall retains
-          named App data volumes, including when delete-data is selected. Preview; not
+          4.0.0.4 plugin. Open from the DSM main menu and choose Sign in with DSM
+          once. Users need DSM App privilege; administrators and ordinary users
+          receive separate Jellyfin identities and roles. Intel iGPU hardware
+          transcoding uses VAAPI, with QSV available through native settings;
+          models without a usable GPU automatically use software transcoding. DLNA
+          is disabled; TV/mobile native clients cannot use this DSM-only entry.
+          Choose an existing media Shared Folder in the installation wizard, then
+          grant the SynoPkgJellyfin package account Read access in DSM Shared
+          Folder permissions > System internal user. Selection does not grant
+          access. Media is mounted read-only at /media; access uses the package
+          account, not the signed-in user filesystem ACL. Requires x86_64, DSM
+          7.2.1-69057 or later and Container Manager. Uninstall retains named App
+          data volumes, including when delete-data is selected. Preview; not
           recommended. No ctl interface.
-        zh-TW: 使用未修改的官方 Jellyfin 12.2 映像與 SSO Authentication 4.0.0.4 plugin。從 DSM 主選單開啟後按一次「Sign
-          in with DSM」登入。使用者須具備 DSM App 使用權限，管理員與一般使用者對應不同 Jellyfin 身分及角色。未開啟硬體轉碼／GPU
-          與 DLNA，TV／手機原生用戶端不支援此 DSM-only 入口。安裝時選擇既有媒體共用資料夾後，仍須於 DSM「共用資料夾 → 權限 → 系統內部使用者」授予
-          SynoPkgJellyfin 套件帳號讀取權限；選擇資料夾不等於授權。媒體於 /media 唯讀掛載，使用套件帳號 ACL，並非登入者個人檔案 ACL。需
-          x86_64、DSM 7.2.1-69057 以上與 Container Manager。卸載選擇刪除資料仍保留 App data volumes。本版為預覽版，不列為推薦套件，未提供
-          ctl。
+        zh-TW: 使用未修改的官方 Jellyfin 12.2 映像與 SSO Authentication 4.0.0.4 plugin。從 DSM
+          主選單開啟後按一次「Sign in with DSM」登入。使用者須具備 DSM App 使用權限，管理員與一般使用者對應不同 Jellyfin
+          身分及角色。新增 Intel iGPU VAAPI 硬體轉碼，QSV 可於原生設定選用；無可用 GPU 的機型自動使用軟體轉碼。DLNA
+          未啟用，TV／手機原生用戶端不支援此 DSM-only 入口。安裝時選擇既有媒體共用資料夾後，仍須於 DSM「共用資料夾 → 權限 →
+          系統內部使用者」授予 SynoPkgJellyfin 套件帳號讀取權限；選擇資料夾不等於授權。媒體於 /media 唯讀掛載，使用套件帳號
+          ACL，並非登入者個人檔案 ACL。需 x86_64、DSM 7.2.1-69057 以上與 Container
+          Manager。卸載選擇刪除資料仍保留 App data volumes。本版為預覽版，不列為推薦套件，未提供 ctl。
       changelog:
         en: |-
-          12.2-0001
-          - Initial catalog preview with DSM main-menu OIDC sign-in and an install-selected read-only media share; grant package-account Read access separately in DSM.
-          - Published CLI/templates/SDK/App 0.20.0, executor/v0.20.0 and UI 0.12.5; npm lock integrity verified and check/build/inspect findings=[].
-          - Fresh installation, administrator sign-in, synthetic media playback, native stop/start and uninstall cleanup verified; broader identity evidence retains its documented scope.
-          - Named App data volumes are retained during uninstall. Native-client support and immediate session revocation are not certified.
+          12.2-0002
+          - Add Intel iGPU VAAPI hardware transcoding; QSV remains a native setting on supported hardware. Models without a usable GPU automatically use software transcoding.
+          - Use published CLI/templates/SDK/App 0.21.0, executor/v0.20.0 and UI 0.12.5; retain the hash-pinned official image and SSO plugin.
+          - Verified published 0001 upgrade with data/media preservation, DSM administrator sign-in, H.264 VAAPI playback and native stop/start; no-GPU fresh-install libx264 playback passed. Both 30-second 720p outputs decoded completely.
+          - TV/mobile native clients cannot use this DSM-only entry. DLNA, HEVC/AV1 and HDR are outside the verified scope. Uninstall retains named App data volumes.
         zh-TW: |-
-          12.2-0001
-          - 首次以預覽版上架，支援 DSM 主選單 OIDC 單一登入及安裝時選擇唯讀媒體共用資料夾；仍須在 DSM 另外授予套件帳號讀取權限。
-          - 正式 CLI/templates/SDK/App 0.20.0、executor/v0.20.0、UI 0.12.5；npm lock integrity 讀回一致，check/build/inspect findings=[]。
-          - 已複驗新鮮安裝、管理員登入、合成媒體播放、原生 stop/start、卸載與 fixture 清理；其餘身分證據沿用既有範圍。
-          - 卸載保留 App data volumes；未驗證原生用戶端及立即 session 撤銷。
+          12.2-0002
+          - 新增 Intel iGPU VAAPI 硬體轉碼；支援的硬體可於原生設定選用 QSV，無可用 GPU 的機型自動使用軟體轉碼。
+          - 使用正式 CLI/templates/SDK/App 0.21.0、executor/v0.20.0 與 UI 0.12.5；沿用 hash 鎖定且未修改的官方映像與 SSO plugin。
+          - 已驗證公開 0001 升級保留資料與媒體選擇、DSM 管理員登入、H.264 VAAPI 播放及原生 stop/start；無 GPU 新鮮安裝 libx264 播放通過，兩份 30 秒 720p 輸出皆完整解碼。
+          - TV／手機原生用戶端無法使用此 DSM-only 入口；DLNA、HEVC/AV1 與 HDR 不在驗證範圍。卸載保留 App data volumes。
     pins:
     - package: SynoPkgJellyfin
-      version: 12.2-0001
+      version: 12.2-0002
       arch:
       - apollolake
       - avoton
@@ -1075,9 +1079,9 @@ packages:
       - skylaked
       - v1000
       - v1000nk
-      sha256: d2fbc1aefa08db8bfb178f020075e5ececb1025f2762b82b65fbe41aedc44178
-      md5: 7bc15fe94de9af7aae7c98bbb6bd4064
-      size: 20503040
+      sha256: 93468633b0a03d2c556f26b512c21b0143fcc0d0c14b0eacf10685ce0317d6d7
+      md5: 65265a4186294004d4d38de64c8318cc
+      size: 20772352
       facts:
         built_with: sdk
         sdk_backend: binary
@@ -1094,8 +1098,8 @@ packages:
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: '2026-10-21T00:52:27Z'
-        source_ref: 9cbce90e75478ac2d74aac7e19a87cb4327a4a7c
+        reviewed_at: '2026-10-21T06:34:13Z'
+        source_ref: 8a491dd6622df05095691e0226662f1e4ac8e503
         source_repo: synopackageland/syno-pkg-land-jellyfin
 
 publishers:
