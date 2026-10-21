@@ -1,0 +1,53 @@
+name: Hosted fast checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: fast-ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  fast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      SYNOPKGLAND_GATE_BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+      CARGO_BUILD_JOBS: '2'
+      GOMAXPROCS: '2'
+      VITEST_MAX_WORKERS: '2'
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate active workflows
+        run: |
+          curl -fsSL --connect-timeout 20 --max-time 120 -o /tmp/actionlint.tar.gz https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz
+          echo '8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8  /tmp/actionlint.tar.gz' | sha256sum -c -
+          tar -xzf /tmp/actionlint.tar.gz -C /tmp actionlint
+          /tmp/actionlint -shellcheck= -pyflakes= .github/workflows/*.yml
+      - name: Select fast checks
+        id: paths
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then BASE=$(git hash-object -t tree /dev/null); fi
+          git diff --name-only "$BASE" HEAD > /tmp/ci-changed-paths
+          if grep -qvE '^(\.github/|docs/|.*\.md$|$)' /tmp/ci-changed-paths; then
+            echo 'product=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'product=false' >> "$GITHUB_OUTPUT"
+            echo 'Workflow/documentation changes only; product checks are unchanged and not selected.'
+          fi
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        if: steps.paths.outputs.product == 'true'
+        with:
+          node-version: '24'
+      - name: Fast checks
+        if: steps.paths.outputs.product == 'true'
+        run: |
+          python3 -m venv /tmp/ci-yaml
+          /tmp/ci-yaml/bin/pip -q install PyYAML==6.0.3
+          /tmp/ci-yaml/bin/python -c 'import pathlib,yaml; files=list(pathlib.Path(".").rglob("*.yaml"))+list(pathlib.Path(".").rglob("*.yml")); assert files; [list(yaml.safe_load_all(p.read_text())) for p in files]; print(f"Parsed {len(files)} YAML files")'
