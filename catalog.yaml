@@ -862,7 +862,7 @@ packages:
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: '2026-10-21T00:51:30Z'
+        reviewed_at: '2026-10-21T00:52:27Z'
         source_ref: 1e120ef1ae3da8a95dda8f4ce65eda5ba833bd69
         source_repo: synopackageland/syno-pkg-land-freshrss
   - recommended: false
@@ -874,7 +874,7 @@ packages:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
       release: v2.37.1-0001
-      access: public
+      access: private
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
@@ -977,7 +977,7 @@ packages:
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: '2026-10-21T00:51:30Z'
+        reviewed_at: '2026-10-21T00:52:27Z'
         source_ref: c7f7b658e750ee8a79aeaa001fb3f8f751f773cb
         source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - recommended: false
@@ -989,7 +989,7 @@ packages:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
       release: v12.2-0001
-      access: public
+      access: private
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
@@ -1094,7 +1094,7 @@ packages:
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: '2026-10-21T00:51:30Z'
+        reviewed_at: '2026-10-21T00:52:27Z'
         source_ref: e876f4fdd1ddaea78fb6e6cc21c880b55fcb407b
         source_repo: synopackageland/syno-pkg-land-jellyfin
 
