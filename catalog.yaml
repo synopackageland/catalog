@@ -978,7 +978,7 @@ packages:
         type: reviewed
         reviewer: synopackageland
         reviewed_at: '2026-10-21T00:52:27Z'
-        source_ref: c7f7b658e750ee8a79aeaa001fb3f8f751f773cb
+        source_ref: 2aea9ce3bbcd65e82b585e84021a28b6759aa9b9
         source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - recommended: false
     featured: false
@@ -1095,7 +1095,7 @@ packages:
         type: reviewed
         reviewer: synopackageland
         reviewed_at: '2026-10-21T00:52:27Z'
-        source_ref: e876f4fdd1ddaea78fb6e6cc21c880b55fcb407b
+        source_ref: 9cbce90e75478ac2d74aac7e19a87cb4327a4a7c
         source_repo: synopackageland/syno-pkg-land-jellyfin
 
 publishers:
