@@ -1135,7 +1135,7 @@ packages:
           password or shared-folder selection is required.
 
 
-          **Shared workspace:** authorized users can see and download each
+          Shared workspace: authorized users can see and download each
           other's files. This package provides no per-user file isolation.
           Upstream periodically removes jobs older than 24 hours.
 
@@ -1145,7 +1145,7 @@ packages:
           UI 0.12.5; official upstream images and UI remain unchanged.
 
 
-          **Data retention:** Container Manager named volumes survive uninstall
+          Data retention: Container Manager named volumes survive uninstall
           even when delete-data is selected. Back up App data and manage
           retained volumes separately.
 
@@ -1286,7 +1286,7 @@ packages:
           UI 0.12.5; official upstream images and UI remain unchanged.
 
 
-          **Data retention:** Container Manager named volumes survive uninstall
+          Data retention: Container Manager named volumes survive uninstall
           even when delete-data is selected. Back up App data and manage
           retained volumes separately.
 
@@ -1435,7 +1435,7 @@ packages:
           UI 0.12.5; official upstream images and UI remain unchanged.
 
 
-          **Data retention:** Container Manager named volumes survive uninstall
+          Data retention: Container Manager named volumes survive uninstall
           even when delete-data is selected. Back up App data and manage
           retained volumes separately.
 
@@ -1575,7 +1575,7 @@ packages:
           UI 0.12.5; official upstream images and UI remain unchanged.
 
 
-          **Data retention:** Container Manager named volumes survive uninstall
+          Data retention: Container Manager named volumes survive uninstall
           even when delete-data is selected. Back up App data and manage
           retained volumes separately.
 
