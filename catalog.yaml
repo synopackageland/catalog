@@ -1657,6 +1657,167 @@ packages:
           source_ref: 5f6e3f537e9eac57ba1f9892766a22f2b10bd854
           source_repo: synopackageland/syno-pkg-land-navidrome
 
+  - recommended: false
+    featured: false
+    category: utilities
+    order: 130
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-home-assistant
+      release: v2026.10.2-0001
+      access: public
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-home-assistant
+      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.2-0001
+      issues_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/issues
+      license: Apache-2.0; hass-oidc-auth and packaging MIT; dependencies retain their
+        respective licenses
+      internet: required
+      upstream:
+        name: Home Assistant
+        url: https://github.com/home-assistant/core
+        license: Apache-2.0
+      description:
+        en: Home automation with the official Home Assistant UI and DSM administrator
+          OIDC sign-in. Requires Container Manager.
+        zh-TW: 使用官方 Home Assistant 介面及 DSM 管理員 OIDC 登入的家庭自動化服務；需 Container Manager。
+      long_description:
+        en: >-
+          Home Assistant 2026.10.2 for Synology DSM, package version
+          2026.10.2-0001.
+
+
+          - Community package for x86_64, DSM 7.2.1 or later and Container
+          Manager. The official Home Assistant image and upstream source are
+          unchanged; the image is pinned by SHA-256.
+
+          - Open Home Assistant from the DSM main menu. DSM administrators sign in
+          through OIDC and receive separate Home Assistant administrator accounts,
+          without owner privileges. Ordinary DSM users are refused. Existing Home
+          Assistant sessions and API tokens are not immediately revoked by DSM
+          logout or account/role changes.
+
+          - Host networking supports the declared mDNS UDP 5353 listener. SSDP,
+          random-UDP integrations, USB/Bluetooth, Supervisor and add-ons are
+          unsupported. Mobile Companion App sign-in and upgrades are unverified.
+          First-run country and HTTP configuration repair prompts may require
+          attention.
+
+          - Configuration, dashboards and the database survive stop/start. **Both
+          uninstall choices retain Container Manager named data volumes, including
+          delete-data.** Back up first and remove retained volumes explicitly only
+          when their data is no longer needed. No shared-folder mounts or ctl
+          endpoint are enabled.
+
+          - Built with published SDK/App, CLI and templates 0.23.0, reusing
+          executor/v0.20.0; no source overrides. Includes the unmodified
+          hass-oidc-auth 1.2.1 component (MIT); Home Assistant is Apache-2.0. See
+          synology/NOTICE.md and synology/docs/acceptance.md at this tag.
+
+
+          Verified on DSM 7.3.2 x86_64: fresh install; DSM main-menu sign-in
+          through an IP address and a DNS alias; creation of a dashboard card;
+          native stop/start and card retention through both origins; ordinary-user
+          HTTP 403; native uninstall and retained-volume cleanup. Other platforms,
+          trusted TLS, Companion App and upgrades are not certified by these
+          checks.
+
+
+          Preview; not recommended. Source and integration documentation are
+          available from the linked release tag.
+        zh-TW: >-
+          從 DSM 主選單開啟，僅開放 DSM 管理員透過 OIDC 登入，各自取得 Home Assistant 管理員帳號，沒有 owner
+          權限；一般使用者回覆 HTTP 403。DSM 登出、帳號刪除或角色變更不會即時撤銷既有 Home Assistant session 或
+          API token，請在 App 內另行管理。首次國家設定與 HTTP 設定遷移修復提示可能需要手動處理。
+
+
+          使用官方未修改映像與介面，pin SHA-256；host network 支援宣告的 UDP 5353 mDNS。SSDP、隨機 UDP
+          整合、USB／Bluetooth、Supervisor 與 add-ons 不支援。手機 Companion App 登入與升級尚未驗證。需
+          x86_64、DSM 7.2.1 或以上及 Container Manager；實機驗收限 DSM 7.3.2 x86_64，未認證其他版本或
+          TLS 信任。使用正式 SDK/App、CLI/templates 0.23.0，沿用 executor/v0.20.0，無 source
+          override；hass-oidc-auth 1.2.1 為 MIT，Home Assistant 為 Apache-2.0。
+
+
+          資料保留：設定、儀表板與資料庫可保留於 stop/start 之間。兩種卸載選項，包括刪除資料，都會保留 Container Manager
+          named data volumes；請先備份，需要時另行手動刪除。沒有 host 共用資料夾掛載或 ctl 端點。已驗證全新安裝、IP 與
+          DNS 別名登入、建立儀表板卡片、stop/start 後兩個網址讀回、一般使用者拒絕及卸載清理。
+
+
+          社群預覽套件，不列為推薦；非 Home Assistant 或 Synology 官方產品。原始碼與整合文件見 Release tag。
+      changelog:
+        en: >-
+          2026.10.2-0001
+
+          - Initial community package using published framework 0.23.0 and
+          executor/v0.20.0.
+
+          - DSM administrator OIDC sign-in; mDNS UDP 5353; dashboard persistence
+          verified across stop/start.
+
+          - Preview; not recommended. Both uninstall choices retain named data
+          volumes.
+        zh-TW: |-
+          2026.10.2-0001
+          - 首次社群套件發佈，使用正式 framework 0.23.0 與 executor/v0.20.0。
+          - DSM 管理員 OIDC 登入；mDNS UDP 5353；已驗證 stop/start 後儀表板保留。
+          - 預覽版，不列為推薦；兩種卸載選項均保留 named data volumes。
+    pins:
+      - package: SynoPkgHomeAssistant
+        version: 2026.10.2-0001
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 396c674897c435a92c7c1132cbd0405dd633f7e39fc44ea7d0f4ec9f73b056bd
+        md5: 8dfdddfc9ef5a1ba95914d3ddcdcebb1
+        size: 20048896
+        facts:
+          built_with: sdk
+          sdk_backend: binary
+          root_access: none
+          runs: container
+          access: admins
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-21T14:37:43Z
+          source_ref: 283ebca4fc726e4cf2c8d8901af9199184a909a7
+          source_repo: synopackageland/syno-pkg-land-home-assistant
+
 publishers:
   synopackageland:
     display_name: Syno Package Land
