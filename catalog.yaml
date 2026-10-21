@@ -1102,6 +1102,561 @@ packages:
         source_ref: 8a491dd6622df05095691e0226662f1e4ac8e503
         source_repo: synopackageland/syno-pkg-land-jellyfin
 
+  - recommended: false
+    featured: false
+    category: utilities
+    order: 90
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-convertx
+      release: v0.19.0-0001
+      access: public
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-convertx
+      source_url: https://github.com/synopackageland/syno-pkg-land-convertx/tree/v0.19.0-0001
+      issues_url: https://github.com/synopackageland/syno-pkg-land-convertx/issues
+      license: AGPL-3.0; packaging MIT; bundled tools retain their respective licenses
+      internet: required
+      upstream:
+        name: ConvertX
+        url: https://github.com/C4illin/ConvertX
+        license: AGPL-3.0
+      description:
+        en: Convert files with the official ConvertX UI and DSM sign-in. Authorized
+          users share one workspace. Requires Container Manager.
+        zh-TW: 透過官方 ConvertX 介面與 DSM 登入轉換檔案；獲授權的使用者共用同一工作空間。需 Container Manager。
+      long_description:
+        en: >-
+          Open ConvertX from the DSM main menu after an administrator grants the
+          App privilege. DSM login provides access; no separate ConvertX
+          password or shared-folder selection is required.
+
+
+          Shared workspace: authorized users can see and download each
+          other's files. This package provides no per-user file isolation.
+          Upstream periodically removes jobs older than 24 hours.
+
+
+          Requires DSM 7.2.1 or later, x86_64 and Container Manager. Built with
+          published CLI/templates/SDK/App 0.22.0, executor/v0.20.0 and template
+          UI 0.12.5; official upstream images and UI remain unchanged.
+
+
+          Data retention: Container Manager named volumes survive uninstall
+          even when delete-data is selected. Back up App data and manage
+          retained volumes separately.
+
+
+          Preview; not recommended. Corresponding source and integration
+          documentation are available from the linked release tag.
+        zh-TW: >-
+          從 DSM 主選單開啟，須具備 App 使用權限；不需另一組 ConvertX
+          密碼，也不需選擇共用資料夾。獲授權使用者可看見並下載彼此的檔案，沒有個別使用者檔案隔離；上游定期刪除超過 24 小時的工作。
+
+
+          需 x86_64、DSM 7.2.1 或以上與 Container Manager。使用正式 CLI/templates/SDK/App
+          0.22.0、executor/v0.20.0 與 UI 0.12.5，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留
+          Container Manager named
+          volumes；請備份並另行管理保留資料。本版為預覽版，不列為推薦套件；對應原始碼與整合文件見 Release tag。
+      changelog:
+        en: >-
+          0.19.0-0001
+
+          - Initial package release using published framework 0.22.0,
+          executor/v0.20.0 and UI 0.12.5.
+
+          - Verified native installation, DSM main-menu sign-in, the primary App
+          function, native stop/start and uninstall retention behavior.
+
+          - Preview; not recommended. Named data volumes survive both uninstall
+          choices.
+        zh-TW: |-
+          0.19.0-0001
+          - 首次套件發佈，使用正式 framework 0.22.0、executor/v0.20.0 與 UI 0.12.5。
+          - 已驗證原生安裝、DSM 主選單登入、App 主要功能、原生 stop/start 與卸載保留行為。
+          - 預覽版，不列為推薦套件；兩種卸載選項都保留 named data volumes。
+    pins:
+      - package: SynoPkgConvertX
+        version: 0.19.0-0001
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: a8ad02bc89eae33a39097590a709f4cfee9a56d5343ed4e0ce65ff577f74b52e
+        md5: 4955b68049164bb43537ec4a00f6a012
+        size: 19806208
+        facts:
+          built_with: sdk
+          sdk_backend: binary
+          root_access: none
+          runs: container
+          access: selected
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-21T11:08:51Z
+          source_ref: 705dcbc1872dc00e4cb1e0e0a7f9ef74f6fc95ce
+          source_repo: synopackageland/syno-pkg-land-convertx
+  - recommended: false
+    featured: false
+    category: productivity
+    order: 100
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-paperless-ngx
+      release: v3.3.3-0003
+      access: public
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
+      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.3.3-0003
+      issues_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/issues
+      license: GPL-3.0-only; dependencies retain their respective licenses
+      internet: required
+      upstream:
+        name: Paperless-ngx
+        url: https://github.com/paperless-ngx/paperless-ngx
+        license: GPL-3.0
+      description:
+        en: Document management and OCR with native DSM OIDC sign-in and an
+          install-selected consume folder. Requires Container Manager.
+        zh-TW: 文件管理與 OCR，支援 DSM OIDC 登入及安裝時選擇匯入資料夾。需 Container Manager。
+      long_description:
+        en: >-
+          Select a dedicated existing Shared Folder for consume during
+          installation, then grant the package account Read/Write in Control
+          Panel > Shared Folder > Permissions > System internal user. Selection
+          alone does not grant access. Consumed files are removed from the
+          inbox; keep backups. Export stays in the private App volume.
+
+
+          Open Paperless from the DSM main menu using DSM OIDC. Authorized
+          ordinary DSM users receive their own Paperless account; administrators
+          receive the native administrator role on OIDC login. Document
+          ownership and sharing follow Paperless permissions. Native API tokens
+          remain available through My Profile.
+
+
+          DSM logout, account deletion and role changes do not immediately
+          revoke existing Paperless sessions or API tokens. Deleting a DSM
+          account does not automatically delete its Paperless account. First
+          start downloads and verifies the pinned Chinese OCR models over HTTPS.
+          Physical mobile clients, Tika and Gotenberg are outside the verified
+          scope.
+
+
+          Requires DSM 7.2.1 or later, x86_64 and Container Manager. Built with
+          published CLI/templates/SDK/App 0.22.0, executor/v0.20.0 and template
+          UI 0.12.5; official upstream images and UI remain unchanged.
+
+
+          Data retention: Container Manager named volumes survive uninstall
+          even when delete-data is selected. Back up App data and manage
+          retained volumes separately.
+
+
+          Preview; not recommended. Corresponding source and integration
+          documentation are available from the linked release tag.
+        zh-TW: >-
+          安裝時選擇專用的既有 consume 共用資料夾，並在 DSM
+          共用資料夾權限的系統內部使用者頁面，授予套件帳號讀寫權限；選擇資料夾不等於授權。匯入後會移除 inbox 中的檔案，請保留備份；匯出資料留在
+          App 私有 volume。從 DSM 主選單透過 OIDC 登入；一般使用者與管理員取得個別 Paperless
+          帳號及對應角色，文件擁有權與分享依 Paperless 權限。DSM 登出、刪除帳號與角色變更不會即時撤銷既有 App session 或
+          API token；刪除 DSM 帳號不會自動刪除 Paperless 帳號。首次啟動會透過 HTTPS 下載並驗證固定版本的中文 OCR
+          模型；實體行動用戶端、Tika 與 Gotenberg 不在驗證範圍。
+
+
+          需 x86_64、DSM 7.2.1 或以上與 Container Manager。使用正式 CLI/templates/SDK/App
+          0.22.0、executor/v0.20.0 與 UI 0.12.5，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留
+          Container Manager named
+          volumes；請備份並另行管理保留資料。本版為預覽版，不列為推薦套件；對應原始碼與整合文件見 Release tag。
+      changelog:
+        en: >-
+          3.3.3-0003
+
+          - Initial package release using published framework 0.22.0,
+          executor/v0.20.0 and UI 0.12.5.
+
+          - Verified native installation, DSM main-menu sign-in, the primary App
+          function, native stop/start and uninstall retention behavior.
+
+          - Preview; not recommended. Named data volumes survive both uninstall
+          choices.
+        zh-TW: |-
+          3.3.3-0003
+          - 首次套件發佈，使用正式 framework 0.22.0、executor/v0.20.0 與 UI 0.12.5。
+          - 已驗證原生安裝、DSM 主選單登入、App 主要功能、原生 stop/start 與卸載保留行為。
+          - 預覽版，不列為推薦套件；兩種卸載選項都保留 named data volumes。
+    pins:
+      - package: SynoPkgPaperlessNgx
+        version: 3.3.3-0003
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: f653a84333a7098669109ed0aea6a52a69e3f76002a546b2cddc406a00092986
+        md5: 6bad867e2f0f88692fd569ce49ba407c
+        size: 19884544
+        facts:
+          built_with: sdk
+          sdk_backend: binary
+          root_access: none
+          runs: container
+          access: selected
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-21T11:08:52Z
+          source_ref: 8a77288006150a9cc9ad843f462fb1bb467ba2b8
+          source_repo: synopackageland/syno-pkg-land-paperless-ngx
+  - recommended: false
+    featured: false
+    category: security
+    order: 110
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-vaultwarden
+      release: v1.37.4-0002
+      access: public
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-vaultwarden
+      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0002
+      issues_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/issues
+      license: AGPL-3.0-only; packaging MIT; Web Vault and dependencies retain their
+        respective licenses
+      internet: required
+      upstream:
+        name: Vaultwarden
+        url: https://github.com/dani-garcia/vaultwarden
+        license: AGPL-3.0-only
+      description:
+        en: Vaultwarden Web Vault with native DSM administrator OIDC sign-in. A separate
+          master password unlocks encrypted data.
+        zh-TW: Vaultwarden Web Vault，支援 DSM 管理員 OIDC 登入；另以主密碼解鎖加密資料。
+      long_description:
+        en: >-
+          This entry is limited to DSM administrators. Open it from the DSM main
+          menu through native OIDC, then create or enter the Vaultwarden master
+          password. DSM SSO cannot decrypt or unlock a vault and cannot recover
+          a lost master password.
+
+
+          In the installation wizard, enter the required Public HTTPS origin,
+          including port 29443, for the hostname used to open DSM. Use a root
+          HTTPS origin without a path, query or fragment. The hostname, gateway
+          port and Vaultwarden DOMAIN must agree. Retained configuration can be
+          reused on upgrade or keep-data reinstall.
+
+
+          Official Bitwarden clients require a trusted HTTPS certificate
+          matching that hostname. Accepting a browser certificate warning does
+          not establish client trust. The package does not install certificates
+          or change DSM proxy settings.
+
+
+          Vaultwarden owns its App sessions, API keys and offline vaults. DSM
+          logout or access changes do not revoke them immediately; deleting a
+          DSM account does not automatically delete its Vaultwarden account. The
+          upstream /admin interface remains disabled without an ADMIN_TOKEN.
+
+
+          Requires DSM 7.2.1 or later, x86_64 and Container Manager. Built with
+          published CLI/templates/SDK/App 0.22.0, executor/v0.20.0 and template
+          UI 0.12.5; official upstream images and UI remain unchanged.
+
+
+          Data retention: Container Manager named volumes survive uninstall
+          even when delete-data is selected. Back up App data and manage
+          retained volumes separately.
+
+
+          Preview; not recommended. Corresponding source and integration
+          documentation are available from the linked release tag.
+        zh-TW: >-
+          僅限 DSM 管理員。安裝精靈必須填寫用來開啟 DSM 的主機名稱所對應的 Public HTTPS origin，包含 port
+          29443，不含路徑、query 或 fragment；主機名稱、gateway port 與 Vaultwarden DOMAIN
+          必須一致。從 DSM 主選單透過 OIDC 登入後，仍須建立或輸入 Vaultwarden 主密碼；DSM SSO
+          無法解密保險庫，也無法復原遺失的主密碼。升級或保留資料重新安裝可沿用設定。官方 Bitwarden 客戶端需要名稱相符的可信 HTTPS
+          憑證；瀏覽器接受憑證警告不代表客戶端信任，官方客戶端登入尚未驗證。DSM 登出或權限變更不會即時撤銷 App session、API key
+          或離線保險庫；刪除 DSM 帳號不會自動刪除 Vaultwarden 帳號。未設定 ADMIN_TOKEN，所以上游 /admin
+          介面維持關閉。
+
+
+          需 x86_64、DSM 7.2.1 或以上與 Container Manager。使用正式 CLI/templates/SDK/App
+          0.22.0、executor/v0.20.0 與 UI 0.12.5，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留
+          Container Manager named
+          volumes；請備份並另行管理保留資料。本版為預覽版，不列為推薦套件；對應原始碼與整合文件見 Release tag。
+      changelog:
+        en: >-
+          1.37.4-0002
+
+          - Initial package release using published framework 0.22.0,
+          executor/v0.20.0 and UI 0.12.5.
+
+          - Verified native installation, DSM main-menu sign-in, the primary App
+          function, native stop/start and uninstall retention behavior.
+
+          - Preview; not recommended. Named data volumes survive both uninstall
+          choices.
+        zh-TW: |-
+          1.37.4-0002
+          - 首次套件發佈，使用正式 framework 0.22.0、executor/v0.20.0 與 UI 0.12.5。
+          - 已驗證原生安裝、DSM 主選單登入、App 主要功能、原生 stop/start 與卸載保留行為。
+          - 預覽版，不列為推薦套件；兩種卸載選項都保留 named data volumes。
+    pins:
+      - package: SynoPkgVaultwarden
+        version: 1.37.4-0002
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 93dbb523236284ed80ac3b3c83b9b8e69f5b9a7acd1f76032480ae367062b9eb
+        md5: ef7cb98e12d958bfcf74a7c50f8dce46
+        size: 20967936
+        facts:
+          built_with: sdk
+          sdk_backend: binary
+          root_access: none
+          runs: container
+          access: admins
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-21T11:08:56Z
+          source_ref: 7a3c19900fe93363b72f0b3c12e6dada2ffb58e1
+          source_repo: synopackageland/syno-pkg-land-vaultwarden
+  - recommended: false
+    featured: false
+    category: multimedia
+    order: 120
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-navidrome
+      release: v0.64.2-0002
+      access: public
+    metadata:
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-land-navidrome
+      source_url: https://github.com/synopackageland/syno-pkg-land-navidrome/tree/v0.64.2-0002
+      issues_url: https://github.com/synopackageland/syno-pkg-land-navidrome/issues
+      license: GPL-3.0; packaging and identity adapter MIT; dependencies retain their
+        respective licenses
+      internet: required
+      upstream:
+        name: Navidrome
+        url: https://github.com/navidrome/navidrome
+        license: GPL-3.0
+      description:
+        en: Music streaming with the official Navidrome UI, DSM sign-in and an
+          install-selected read-only music folder.
+        zh-TW: 透過官方 Navidrome 介面串流音樂，支援 DSM 登入及安裝時選擇唯讀音樂資料夾。
+      long_description:
+        en: >-
+          Select an existing music Shared Folder during installation and grant
+          the package account Read access through the native permission guide.
+          Grant the App privilege to the intended DSM users, then open Navidrome
+          from the DSM main menu. Each DSM user receives an App identity;
+          administrators receive Navidrome administration, and an ordinary first
+          login does not become administrator.
+
+
+          Set a separate Navidrome password in personal settings before
+          configuring a Subsonic client. Use the displayed Navidrome username
+          and App HTTPS URL; never enter the DSM password in that client. Role
+          changes require signing in again. Public share links are anonymous
+          until removed.
+
+
+          Requires DSM 7.2.1 or later, x86_64 and Container Manager. Built with
+          published CLI/templates/SDK/App 0.22.0, executor/v0.20.0 and template
+          UI 0.12.5; official upstream images and UI remain unchanged.
+
+
+          Data retention: Container Manager named volumes survive uninstall
+          even when delete-data is selected. Back up App data and manage
+          retained volumes separately.
+
+
+          Preview; not recommended. Corresponding source and integration
+          documentation are available from the linked release tag.
+        zh-TW: |-
+          安裝時選擇既有音樂共用資料夾，並依權限指引授予套件帳號讀取權限；選擇資料夾不等於授權。所有獲授權使用者共用該音樂庫，使用套件帳號存取檔案，不是登入者個別的檔案 ACL。授予預定使用者 App 使用權限後，從 DSM 主選單開啟。各 DSM 使用者取得個別 App 身分，管理員取得 Navidrome 管理權；第一個登入的一般使用者不會自動升為管理員。Subsonic 客戶端須先在個人設定設立另一組 Navidrome 密碼，使用顯示的 Navidrome 使用者名稱與 App HTTPS URL，不可填入 DSM 密碼。DSM 角色變更須重新登入或等待 session 到期；公開分享連結在移除前可匿名存取。
+
+          需 x86_64、DSM 7.2.1 或以上與 Container Manager。使用正式 CLI/templates/SDK/App 0.22.0、executor/v0.20.0 與 UI 0.12.5，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留 Container Manager named volumes；請備份並另行管理保留資料。本版為預覽版，不列為推薦套件；對應原始碼與整合文件見 Release tag。
+      changelog:
+        en: >-
+          0.64.2-0002
+
+          - Initial package release using published framework 0.22.0,
+          executor/v0.20.0 and UI 0.12.5.
+
+          - Verified native installation, DSM main-menu sign-in, the primary App
+          function, native stop/start and uninstall retention behavior.
+
+          - Preview; not recommended. Named data volumes survive both uninstall
+          choices.
+        zh-TW: |-
+          0.64.2-0002
+          - 首次套件發佈，使用正式 framework 0.22.0、executor/v0.20.0 與 UI 0.12.5。
+          - 已驗證原生安裝、DSM 主選單登入、App 主要功能、原生 stop/start 與卸載保留行為。
+          - 預覽版，不列為推薦套件；兩種卸載選項都保留 named data volumes。
+    pins:
+      - package: SynoPkgNavidrome
+        version: 0.64.2-0002
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: 48b6e679ec7de012c6fea70f213c70380da9a8911cdf70b82f30cb612f135086
+        md5: 537e5b6ada21e60262432192d93ee581
+        size: 31403520
+        facts:
+          built_with: sdk
+          sdk_backend: binary
+          root_access: none
+          runs: container
+          access: selected
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-10-21T11:09:00Z
+          source_ref: 5f6e3f537e9eac57ba1f9892766a22f2b10bd854
+          source_repo: synopackageland/syno-pkg-land-navidrome
+
 publishers:
   synopackageland:
     display_name: Syno Package Land
