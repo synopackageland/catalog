@@ -173,7 +173,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0062
+      release: v0.1.0-0063
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -214,16 +214,18 @@ packages:
           直連，並個別啟用或停用。Cloudflare 只公開 DSM 網頁，NetBird 的存取範圍依管理伺服器政策而定。開發預覽版，連線結果依網路與服務設定而異；需 DSM
           管理員登入
       changelog:
-        en: >-
-          0.1.0-0062
+        en: |-
+          0.1.0-0063
 
-
-          Rebuild 0.1.0-0062 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land.
+          - Overview: an optional "recommend by use" choice that only reorders the method cards, card tags for reach, cost and what the other side needs, and a comparison table that includes DSM QuickConnect.
+          - Cloudflare own-domain start names its prerequisite and links Cloudflare Registrar; Tailscale offers DSM web pages (HTTP/HTTPS) and explains that its access rules decide who can connect; IPv6 without an address offers Cloudflare or Tailscale instead.
+          - ctl: new read-only `recommend` and `diagnose`; `connection status` keeps the failure code and hands out a pending https sign-in link; `connection connect` without a connector says to run `binaries update` first; every command declares a result schema.
         zh-TW: |-
-          0.1.0-0062
+          0.1.0-0063
 
-          0.1.0-0062 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          - 總覽新增可略過的「依用途推薦」，只重排方案卡；方案卡標示能連到哪裡、費用與對方需要什麼；比較表含 DSM QuickConnect。
+          - Cloudflare 自有網域說明前提並連到 Cloudflare Registrar；Tailscale 提供 DSM 網頁（HTTP/HTTPS），並說明由存取規則決定誰能連；IPv6 沒有位址時提供改用 Cloudflare 或 Tailscale。
+          - ctl 新增唯讀 `recommend`、`diagnose`；`connection status` 保留失敗原因並提供待完成的 https 登入連結；缺少連線程式時 `connection connect` 會提示先執行 `binaries update`；每個指令都宣告結果 schema。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare.png
@@ -231,15 +233,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-ipv6.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0062
+        version: 0.1.0-0063
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: b964a38667f449bc3787a228bede10f564b95faa9f9cdb91bc08df8c3e7a8128
-        md5: c3a411a50e21624424cadb2b6a7b49c7
-        size: 8997376
+        sha256: c972686805d760e0e76c6b2f954c9638aa7984a52b2acf697d7af6ea8c71ca24
+        md5: e4fe1b612a2454cf10a521d0cc424026
+        size: 9040896
         facts:
           built_with: sdk
           sdk_backend: go
@@ -256,19 +258,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:45Z
-          source_ref: a13d3bc9c80ad252b41aa87e895fb1a901f0913e
+          reviewed_at: 2026-10-22T17:14:31Z
+          source_ref: ba6ca61b1905d47e9f0eb27dce6f34bd99e94d11
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0062
+        version: 0.1.0-0063
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 7f68d31a54a428c60951a6b1f01e614eda5e2eebb4f5c1cac9fc51447de807ab
-        md5: 6be00d99c5886f8b9c352bd4a4063490
-        size: 9513984
+        sha256: 8c88c67a10f7d618746eb3add2d578db8dd3b904b2073632d2d8cfa8cc3db860
+        md5: ab2f1ab713153c3686b8aff67920440e
+        size: 9558016
         facts:
           built_with: sdk
           sdk_backend: go
@@ -285,11 +287,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:45Z
-          source_ref: a13d3bc9c80ad252b41aa87e895fb1a901f0913e
+          reviewed_at: 2026-10-22T17:14:35Z
+          source_ref: ba6ca61b1905d47e9f0eb27dce6f34bd99e94d11
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0062
+        version: 0.1.0-0063
         arch:
           - apollolake
           - avoton
@@ -318,9 +320,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 28498bb984f6425aa782eeea40edd0ff0fa87d7adf5b4042326aae1db63b6d37
-        md5: 82cf1a7f5f62bf5f6adade372745152d
-        size: 9866752
+        sha256: 795948b4946d4c1acd0e39ac2684038b9e494753a642fe521b42429aed83950c
+        md5: d7c5a27fbec3d6dd4849f74d8bda9b3f
+        size: 9917440
         facts:
           built_with: sdk
           sdk_backend: go
@@ -337,8 +339,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:45Z
-          source_ref: a13d3bc9c80ad252b41aa87e895fb1a901f0913e
+          reviewed_at: 2026-10-22T17:14:38Z
+          source_ref: ba6ca61b1905d47e9f0eb27dce6f34bd99e94d11
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
