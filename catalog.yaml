@@ -16,9 +16,12 @@ packages:
       homepage: https://synopkgland.com/
       internet: none
       telemetry: none
+      description:
+        en: Find what really frees space on a Btrfs volume, and free it safely
+        zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
       long_description:
-        en: Find what really frees space on a Btrfs volume, and free it safely.
-        zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間。
+        en: Find what really frees space on a Btrfs volume, and free it safely
+        zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
       changelog:
         en: >-
           0.1.1-1583
@@ -184,25 +187,34 @@ packages:
         Tailscale and NetBird clients are downloaded from their vendors under
         their own licenses. Source code is not public at this time.
       description:
-        ko: 라우터 포트를 열지 않고도 외부에서 NAS에 접속해요. Cloudflare Tunnel, Tailscale, NetBird, IPv6
-          직접 연결을 한 화면에서 켜고 끌 수 있어요.
+        en: Reach your NAS remotely without opening router ports. Turn Cloudflare Tunnel,
+          Tailscale, NetBird or IPv6 direct access on or off from one page
+        zh-TW: 不必在路由器開放連接埠，也能從外部連回 NAS。在同一頁啟用或停用 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連
+        zh-CN: 无需在路由器开放端口，也能从外部连回 NAS。在同一页启用或停用 Cloudflare Tunnel、Tailscale、NetBird 与 IPv6 直连
+        ja: ルーターのポートを開放せずに外部から NAS へ接続できます。Cloudflare Tunnel、Tailscale、NetBird、IPv6 直接接続を 1
+          つの画面で有効化・無効化できます
+        ko: 라우터 포트를 열지 않고도 외부에서 NAS에 접속해요. Cloudflare Tunnel, Tailscale, NetBird, IPv6 직접 연결을 한
+          화면에서 켜고 끌 수 있어요
+        de: Greifen Sie aus der Ferne auf Ihr NAS zu, ohne Router-Ports zu öffnen. Cloudflare
+          Tunnel, Tailscale, NetBird und IPv6-Direktzugriff lassen sich auf einer Seite ein- und
+          ausschalten
+        fr: Accédez à votre NAS à distance sans ouvrir de ports sur le routeur. Activez ou
+          désactivez Cloudflare Tunnel, Tailscale, NetBird et l’accès direct IPv6 depuis une
+          seule page
+        es: Acceda a su NAS de forma remota sin abrir puertos en el router. Active o desactive
+          Cloudflare Tunnel, Tailscale, NetBird y el acceso directo por IPv6 desde una sola
+          página
+        it: Raggiungi il NAS da remoto senza aprire porte sul router. Attiva o disattiva
+          Cloudflare Tunnel, Tailscale, NetBird e l’accesso diretto IPv6 da un’unica pagina
       long_description:
-        en: |-
-          Reach your NAS remotely without opening router ports. Connect lists every connection method on one page; turn Cloudflare Tunnel, Tailscale, NetBird or IPv6 direct access on or off independently, or disable them all.
-
-          Only DSM administrators can open the app or call its API. Everything runs as the package account; no root helper, Node.js or shared service is installed.
-
-          Cloudflare Tunnel, Tailscale and NetBird use their official, unmodified clients, downloaded from the vendors and verified before use. Cloudflare publishes only the DSM web page; NetBird access is controlled by your management server's policy.
-
-          Development preview: Connect does not create cloud accounts or resources, and end-to-end external connectivity of each method has not been verified on every network.
-        zh-TW: |-
-          不必在路由器開放連接埠，也能從外部連回 NAS。Connect 在同一頁列出所有連線方式；Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連可以各自啟用或停用，也可以全部停用。
-
-          只有 DSM 管理員能開啟本 App 或呼叫其 API。所有程式都以套件帳號執行，不安裝 root helper、Node.js 或全機共用服務。
-
-          Cloudflare Tunnel、Tailscale 與 NetBird 使用未經修改的官方用戶端，從原廠下載並在使用前驗證。Cloudflare 只公開 DSM 網頁；NetBird 的存取範圍由您的管理伺服器政策控制。
-
-          開發預覽版：Connect 不會建立雲端帳號或資源，各連線方式的外部端到端連線尚未在所有網路環境驗證。
+        en: "Reach your NAS from outside your home network. Manage Cloudflare Tunnel, Tailscale,
+          NetBird and IPv6 direct connections from one page, and turn each method on or off
+          independently. Cloudflare publishes only the DSM web page; NetBird access follows your
+          management server policy. Development preview: connectivity depends on your network
+          and provider setup; DSM administrator sign-in is required"
+        zh-TW: 從外部網路連回 NAS，在同一頁管理 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6
+          直連，並個別啟用或停用。Cloudflare 只公開 DSM 網頁，NetBird 的存取範圍依管理伺服器政策而定。開發預覽版，連線結果依網路與服務設定而異；需 DSM
+          管理員登入
       changelog:
         en: >-
           0.1.0-0061
@@ -360,26 +372,47 @@ packages:
       internet: required
       license: GPL-3.0-or-later
       description:
-        ko: HTTP/HTTPS 링크, BitTorrent(.torrent 파일 및 마그넷 링크), ED2K, yt-dlp가 지원하는 동영상 사이트,
-          확장 프로그램이 추가하는 주소까지 거의 모든 것을 NAS로 다운로드해요. DSM 사용자마다 자신의 다운로드를 관리하고, 액세스
-          권한과 엔진 업데이트는 관리자가 맡아요. Powered by Gopeed.
+        en: "Download almost anything to your NAS: HTTP/HTTPS links, BitTorrent (.torrent files
+          and magnet links), ED2K, and videos from sites supported by yt-dlp, plus addresses
+          that extensions add. Each DSM user keeps their own downloads; administrators manage
+          access and engine updates. Powered by Gopeed"
+        zh-TW: 幾乎什麼都能下載到 NAS：HTTP／HTTPS 連結、BitTorrent（.torrent 檔與磁力連結）、ED2K，以及 yt-dlp
+          支援的影音網站，還有擴充套件新增的位址。每位 DSM 使用者各自管理自己的下載；存取權限與引擎更新由管理員管理。Powered by Gopeed
+        zh-CN: 几乎什么都能下载到 NAS：HTTP/HTTPS 链接、BitTorrent（.torrent 文件与磁力链接）、ED2K，以及 yt-dlp
+          支持的视频网站，还有扩展添加的地址。每位 DSM 用户各自管理自己的下载；访问权限与引擎更新由管理员管理。Powered by Gopeed
+        ja: HTTP/HTTPS リンク、BitTorrent（.torrent ファイルとマグネットリンク）、ED2K、yt-dlp
+          が対応する動画サイト、さらに拡張機能が追加するアドレスまで、ほぼ何でも NAS にダウンロードできます。DSM
+          ユーザーごとに自分のダウンロードを管理し、アクセス権限とエンジンの更新は管理者が管理します。Powered by Gopeed
+        ko: HTTP/HTTPS 링크, BitTorrent(.torrent 파일 및 마그넷 링크), ED2K, yt-dlp가 지원하는 동영상 사이트, 확장 프로그램이
+          추가하는 주소까지 거의 모든 것을 NAS로 다운로드해요. DSM 사용자마다 자신의 다운로드를 관리하고, 액세스 권한과 엔진 업데이트는 관리자가 맡아요.
+          Powered by Gopeed
+        de: "Lädt fast alles auf Ihr NAS: HTTP/HTTPS-Links, BitTorrent (.torrent-Dateien und
+          Magnet-Links), ED2K und Videos von Websites, die yt-dlp unterstützt, dazu Adressen aus
+          Erweiterungen. Jeder DSM-Benutzer verwaltet seine eigenen Downloads; Zugriff und
+          Engine-Updates verwaltet der Administrator. Powered by Gopeed"
+        fr: "Téléchargez presque tout sur votre NAS : liens HTTP/HTTPS, BitTorrent (fichiers
+          .torrent et liens magnet), ED2K et vidéos des sites pris en charge par yt-dlp, ainsi
+          que les adresses ajoutées par des extensions. Chaque utilisateur DSM gère ses propres
+          téléchargements ; l’administrateur gère l’accès et les mises à jour du moteur. Powered
+          by Gopeed"
+        es: "Descargue casi cualquier cosa en su NAS: enlaces HTTP/HTTPS, BitTorrent (archivos
+          .torrent y enlaces magnet), ED2K y vídeos de los sitios compatibles con yt-dlp, además
+          de las direcciones que añaden las extensiones. Cada usuario de DSM gestiona sus
+          propias descargas; el administrador gestiona el acceso y las actualizaciones del
+          motor. Powered by Gopeed"
+        it: "Scarica quasi tutto sul tuo NAS: link HTTP/HTTPS, BitTorrent (file .torrent e link
+          magnet), ED2K e video dai siti supportati da yt-dlp, oltre agli indirizzi aggiunti
+          dalle estensioni. Ogni utente DSM gestisce i propri download; l’amministratore
+          gestisce l’accesso e gli aggiornamenti del motore. Powered by Gopeed"
       long_description:
-        en: |-
-          Download Hub: per-user downloads powered by the official Gopeed engine, with DSM Application Privileges and administrator-managed core updates.
-
-          Each DSM user has their own downloads, destinations and history; administrators cannot operate other users' tasks. Who can use the app is set in Control Panel > Application Privileges. Completed downloads are saved into the user's chosen shared folder with that user's own DSM permissions.
-
-          Administrators manage download limits, connections, extensions and updates of the official Gopeed core, which are downloaded from the official release and verified before use.
-
-          Licensed under GPL-3.0-or-later; the corresponding source code is available at the source link.
-        zh-TW: |-
-          下載中心：以官方 Gopeed 引擎為核心、每位使用者各自的下載，透過 DSM 應用程式權限控管，核心更新由管理員管理。
-
-          每位 DSM 使用者有各自的下載、目的地與歷史紀錄，管理員也不能操作別人的工作。可使用本 App 的人員在「控制台 → 權限 → 應用程式權限」設定。下載完成的檔案以該使用者自己的 DSM 權限存到其選擇的共用資料夾。
-
-          下載上限、連線數、擴充套件與官方 Gopeed 核心的更新由管理員管理；更新從官方 Release 下載，並在使用前驗證。
-
-          以 GPL-3.0-or-later 授權；對應原始碼見「原始碼」連結。
+        en: Download files from HTTP/HTTPS links, torrents, magnet links and ED2K, plus videos
+          from sites supported by yt-dlp and sources added by extensions. Pause, resume and
+          organize downloads, choose where completed files are saved and view your history. Each
+          user has separate downloads; administrators manage access, extensions and engine
+          updates. Powered by Gopeed; DSM sign-in is required
+        zh-TW: 下載 HTTP／HTTPS 連結、種子、磁力連結與 ED2K 檔案，以及 yt-dlp
+          支援網站的影片和擴充套件新增的來源。暫停、繼續與整理下載，選擇完成檔案的儲存位置並查看歷史紀錄。每位使用者各自管理下載，管理員管理存取權限、擴充套件與引擎更新。以
+          Gopeed 為核心；需 DSM 登入
       changelog:
         en: >-
           0.2.2-0050
@@ -522,81 +555,48 @@ packages:
       internet: optional
       license: "AGPL-3.0-only; frontend MIT; icon CC-BY-NC-SA-4.0"
       description:
-        en: 'OpenList file aggregation for DSM administrators. Manual shared-folder
-          Read/Write permission and Local storage setup are required after
-          installation. External WebDAV access is not available.'
-        zh-TW: '供 DSM 管理員使用的 OpenList 檔案聚合工具。安裝後須手動授予套件帳號共用資料夾讀寫權限，並新增 Local
-          storage；不開放外部 WebDAV 存取。'
-        zh-CN: '供 DSM 管理员使用的 OpenList 文件聚合工具。安装后须手动授予套件账号共享文件夹读写权限，并新增 Local
-          storage；不开放外部 WebDAV 访问。'
-        ja: 'DSM 管理者向けの OpenList ファイル集約アプリ。インストール後、パッケージアカウントに共有フォルダーの読み書き権限を付与し、Local
-          storage を追加してください。外部からの WebDAV アクセスは利用できません。'
-        ko: 'DSM 관리자용 OpenList 파일 통합 앱입니다. 설치 후 패키지 계정에 공유 폴더 읽기/쓰기 권한을 부여하고 Local
-          storage를 추가해야 합니다. 외부 WebDAV 접속은 제공하지 않습니다.'
-        de: 'OpenList-Dateiaggregation für DSM-Administratoren. Nach der Installation
-          sind Lese-/Schreibrechte für das Paketkonto und ein Local storage
-          manuell einzurichten. Externer WebDAV-Zugriff ist nicht verfügbar.'
-        fr: 'Agrégation de fichiers OpenList pour les administrateurs DSM. Après
-          installation, accordez au compte du paquet les droits de
-          lecture/écriture et ajoutez un Local storage. L’accès WebDAV externe
-          est indisponible.'
+        en: Browse and manage files from local storage and cloud drives in one place
+        zh-TW: 在同一處瀏覽與管理本機儲存空間和雲端硬碟的檔案
+        zh-CN: 在同一处浏览与管理本地存储和云盘中的文件
+        ja: ローカルストレージとクラウドドライブのファイルを一か所で閲覧・管理
+        ko: 로컬 저장소와 클라우드 드라이브의 파일을 한곳에서 탐색하고 관리해요
+        de: Dateien aus lokalem Speicher und Cloud-Laufwerken an einem Ort durchsuchen und
+          verwalten
+        fr: Parcourez et gérez les fichiers du stockage local et des espaces cloud au même endroit
+        es: Explore y gestione archivos del almacenamiento local y de unidades en la nube en un
+          solo lugar
+        it: Sfoglia e gestisci i file locali e delle unità cloud in un unico posto
       long_description:
-        en: |-
-          OpenList for DSM runs the official, unmodified OpenList v4.2.7 engine as a native package account. DSM administrators open the original OpenList interface from the main menu without a second App password.
-
-          Required setup after installation: open Control Panel > Shared Folder > Edit > Permissions > System internal user, and grant the SynoPkgOpenList package account Read/Write permission on the selected shared folder. Then open OpenList, go to its management interface and add a Local storage using that shared folder's path. Selecting a folder in the installation wizard does not grant permissions or add storage automatically.
-
-          External WebDAV server access is not enabled. Standard WebDAV clients cannot use this App's DSM browser session; no public passthrough is provided. The package is administrator-only and is listed as a preview, without a recommendation.
-
-          Backend and integration: AGPL-3.0-only; upstream frontend: MIT. Matching official backend/frontend source archives and integration/dependency source assets are attached to the Release and offered through the source link after catalog publication.
-        zh-TW: |-
-          OpenList for DSM 以套件帳號原生執行未修改的官方 OpenList v4.2.7 引擎。DSM 管理員可從主選單開啟原生 OpenList 介面，不必再輸入 App 密碼。
-
-          安裝後必須手動設定：開啟「控制台 → 共用資料夾 → 編輯 → 權限 → 系統內部使用者」，授予 SynoPkgOpenList 套件帳號所選共用資料夾的「讀寫」權限。接著進入 OpenList 管理介面，以該共用資料夾路徑新增 Local storage。安裝精靈選擇資料夾不會自動授權，也不會自動新增 storage。
-
-          不開放外部 WebDAV 伺服器存取。一般 WebDAV 用戶端無法使用本 App 的 DSM 瀏覽器 session，也沒有公開 passthrough。本套件僅供管理員使用，以預覽版上架，不列為推薦套件。
-
-          後端與整合程式採 AGPL-3.0-only，上游前端採 MIT。對應的官方後端／前端原始碼包、整合與相依原始碼附於 Release；catalog 發布後亦可由原始碼連結取得。
-        zh-CN: |-
-          OpenList for DSM 以套件账号原生运行未修改的官方 OpenList v4.2.7 引擎。DSM 管理员可从主菜单打开原生 OpenList 界面，无需再次输入 App 密码。
-
-          安装后必须手动设置：打开“控制面板 → 共享文件夹 → 编辑 → 权限 → 系统内部用户”，授予 SynoPkgOpenList 套件账号所选共享文件夹的“读写”权限。然后进入 OpenList 管理界面，使用该共享文件夹路径新增 Local storage。安装向导选择文件夹不会自动授权，也不会自动新增 storage。
-
-          不开放外部 WebDAV 服务器访问。普通 WebDAV 客户端无法使用本 App 的 DSM 浏览器 session，也没有公开 passthrough。本套件仅供管理员使用，以预览版上架，不列为推荐套件。
-
-          后端与集成程序采用 AGPL-3.0-only，上游前端采用 MIT。对应的官方后端／前端源码包、集成与依赖源码附于 Release；catalog 发布后也可通过源码链接获取。
-        ja: |-
-          OpenList for DSM は、未変更の公式 OpenList v4.2.7 エンジンをパッケージアカウントでネイティブ実行します。DSM 管理者はメインメニューから元の OpenList 画面を開けます。追加のアプリパスワードは不要です。
-
-          インストール後に手動設定が必要です。「コントロール パネル → 共有フォルダー → 編集 → 権限 → システム内部ユーザー」で、SynoPkgOpenList パッケージアカウントに選択した共有フォルダーの読み書き権限を付与してください。次に OpenList の管理画面で、その共有フォルダーのパスを使って Local storage を追加してください。インストール時のフォルダー選択だけでは、権限の付与やストレージの追加は行われません。
-
-          外部からの WebDAV サーバーアクセスは有効になっていません。通常の WebDAV クライアントは DSM のブラウザーセッションを利用できず、公開パススルーもありません。管理者専用のプレビュー版で、推奨対象ではありません。
-
-          バックエンドと統合部分は AGPL-3.0-only、上流フロントエンドは MIT です。対応する公式ソースアーカイブと統合・依存関係のソースは Release に添付され、カタログ公開後はソースリンクからも取得できます。
-        ko: |-
-          OpenList for DSM은 수정하지 않은 공식 OpenList v4.2.7 엔진을 패키지 계정으로 네이티브 실행합니다. DSM 관리자는 메인 메뉴에서 원래 OpenList 화면을 열 수 있으며 별도 앱 비밀번호가 필요하지 않습니다.
-
-          설치 후 수동 설정이 필요합니다. 제어판 > 공유 폴더 > 편집 > 권한 > 시스템 내부 사용자에서 SynoPkgOpenList 패키지 계정에 선택한 공유 폴더의 읽기/쓰기 권한을 부여하세요. 그런 다음 OpenList 관리 화면에서 해당 공유 폴더 경로로 Local storage를 추가하세요. 설치 마법사의 폴더 선택만으로 권한이나 저장소가 자동 설정되지는 않습니다.
-
-          외부 WebDAV 서버 접속은 활성화하지 않습니다. 일반 WebDAV 클라이언트는 DSM 브라우저 세션을 사용할 수 없으며 공개 패스스루도 없습니다. 관리자 전용 미리보기 버전으로, 추천 패키지가 아닙니다.
-
-          백엔드와 통합 코드는 AGPL-3.0-only, 상위 프런트엔드는 MIT입니다. 대응하는 공식 소스 아카이브와 통합·의존성 소스는 Release에 첨부되며 카탈로그 게시 후 소스 링크에서도 받을 수 있습니다.
-        de: |-
-          OpenList für DSM führt die unveränderte offizielle OpenList-Engine v4.2.7 nativ unter dem Paketkonto aus. DSM-Administratoren öffnen die ursprüngliche OpenList-Oberfläche über das Hauptmenü, ohne ein zweites App-Passwort einzugeben.
-
-          Nach der Installation ist eine manuelle Einrichtung erforderlich: Öffnen Sie Systemsteuerung > Gemeinsamer Ordner > Bearbeiten > Berechtigungen > Interner Systembenutzer und geben Sie dem Paketkonto SynoPkgOpenList Lese-/Schreibrechte für den gewählten gemeinsamen Ordner. Fügen Sie anschließend in der OpenList-Verwaltung einen Local storage mit dem Pfad dieses Ordners hinzu. Die Ordnerauswahl im Installationsassistenten erteilt weder Berechtigungen noch legt sie automatisch einen Speicher an.
-
-          Externer WebDAV-Serverzugriff ist nicht aktiviert. Übliche WebDAV-Clients können die DSM-Browsersitzung nicht verwenden; es gibt keinen öffentlichen Passthrough. Das Paket ist nur für Administratoren als Vorschau gelistet und wird nicht empfohlen.
-
-          Backend und Integration stehen unter AGPL-3.0-only, das ursprüngliche Frontend unter MIT. Die passenden offiziellen Quellarchive sowie Integrations- und Abhängigkeitsquellen sind dem Release beigefügt und nach Veröffentlichung des Katalogs über den Quelllink erhältlich.
-        fr: |-
-          OpenList pour DSM exécute nativement le moteur officiel OpenList v4.2.7 non modifié sous le compte du paquet. Les administrateurs DSM ouvrent l’interface d’origine depuis le menu principal, sans second mot de passe d’application.
-
-          Une configuration manuelle est nécessaire après l’installation : dans Panneau de configuration > Dossier partagé > Modifier > Permissions > Utilisateur interne du système, accordez au compte SynoPkgOpenList les droits de lecture/écriture sur le dossier partagé choisi. Ajoutez ensuite un Local storage dans l’interface d’administration OpenList en utilisant le chemin de ce dossier. Le choix du dossier dans l’assistant n’accorde pas les droits et ne crée pas automatiquement le stockage.
-
-          L’accès externe au serveur WebDAV n’est pas activé. Les clients WebDAV ordinaires ne peuvent pas utiliser la session du navigateur DSM ; aucun accès public direct n’est fourni. Ce paquet est réservé aux administrateurs, proposé en aperçu et non recommandé.
-
-          Le backend et l’intégration sont sous AGPL-3.0-only ; le frontend d’origine est sous MIT. Les archives officielles correspondantes ainsi que les sources d’intégration et des dépendances sont jointes à la Release, puis disponibles via le lien des sources après publication du catalogue.
+        en: Bring local folders and supported cloud drives into one file browser. Preview files,
+          play audio and video, and upload, download or organize files across your connected
+          storage. After installation, grant the package account Read/Write permission on the
+          selected shared folder and add it as Local storage in OpenList; selecting a folder
+          alone does neither. External WebDAV access is unavailable. Preview package; DSM
+          administrator sign-in is required
+        zh-TW: 在同一個檔案瀏覽器整合本機資料夾與支援的雲端硬碟。預覽檔案、播放影音，並在已連接的儲存空間上傳、下載及整理檔案。安裝後須授予套件帳號所選共用資料夾的讀寫權限，並在
+          OpenList 新增 Local storage；選擇資料夾不會自動完成這兩項設定。不開放外部 WebDAV 存取。本套件為預覽版；需 DSM 管理員登入
+        zh-CN: 在同一个文件浏览器中整合本地文件夹与支持的云盘。预览文件、播放音视频，并在已连接的存储中上传、下载和整理文件。安装后须授予套件账号所选共享文件夹的读写权限，并在
+          OpenList 中新增 Local storage；选择文件夹不会自动完成这两项设置。不开放外部 WebDAV 访问。本套件为预览版；需 DSM 管理员登录
+        ja: ローカルフォルダーと対応するクラウドドライブを一つのファイルブラウザーにまとめます。ファイルのプレビュー、音声・動画の再生、接続したストレージでのアップロード、ダウンロード、整理ができます。インストール後は、選択した共有フォルダーの読み書き権限をパッケージアカウントに付与し、OpenList
+          で Local storage を追加してください。フォルダーの選択だけでは設定されません。外部 WebDAV アクセスは利用できません。プレビュー版で、DSM
+          管理者のサインインが必要です
+        ko: 로컬 폴더와 지원되는 클라우드 드라이브를 하나의 파일 탐색기에 모아요. 파일 미리보기, 오디오·동영상 재생, 연결된 저장소의 파일 업로드, 다운로드와
+          정리를 할 수 있어요. 설치 후 패키지 계정에 선택한 공유 폴더의 읽기/쓰기 권한을 부여하고 OpenList에 Local storage를 추가하세요.
+          폴더를 선택하는 것만으로는 설정되지 않아요. 외부 WebDAV 접속은 제공하지 않아요. 미리보기 버전이며 DSM 관리자 로그인이 필요해요
+        de: Lokale Ordner und unterstützte Cloud-Laufwerke in einem Dateibrowser verbinden.
+          Dateien als Vorschau ansehen, Audio und Video abspielen sowie Dateien in verbundenen
+          Speichern hochladen, herunterladen und organisieren. Nach der Installation dem
+          Paketkonto Lese-/Schreibrechte für den gewählten gemeinsamen Ordner geben und diesen
+          als Local storage in OpenList hinzufügen; die Ordnerauswahl erledigt beides nicht
+          automatisch. Externer WebDAV-Zugriff ist nicht verfügbar. Vorschauversion;
+          DSM-Administratoranmeldung erforderlich
+        fr: Regroupez les dossiers locaux et les espaces cloud compatibles dans un seul navigateur
+          de fichiers. Prévisualisez des fichiers, lisez des contenus audio et vidéo, puis
+          importez, téléchargez et organisez les fichiers de vos stockages connectés. Après
+          installation, accordez au compte du paquet les droits de lecture/écriture sur le
+          dossier partagé choisi et ajoutez-le comme Local storage dans OpenList ; sélectionner
+          le dossier ne suffit pas. L’accès WebDAV externe est indisponible. Version en aperçu ;
+          connexion administrateur DSM requise
       changelog:
         en: >-
           4.2.7-0015
@@ -702,28 +702,16 @@ packages:
       account: dsm
       runs: container
       description:
-        en: Monitor HTTP services on your NAS with Uptime Kuma. DSM administrators sign
-          in through DSM, without a separate App password. Requires Container
-          Manager.
-        zh-TW: 以 Uptime Kuma 在 NAS 上監控 HTTP 服務。DSM 管理員透過 DSM 登入，不需另外設定 App 密碼；需安裝
-          Container Manager。
+        en: Monitor website and service uptime and get alerts when they go down
+        zh-TW: 監控網站與服務的運作狀態，並在中斷時接收通知
       long_description:
-        en: |-
-          Uptime Kuma for DSM runs the official, unmodified Uptime Kuma 2.5.6 container image, locked by its tag and multi-platform digest. Container Manager downloads the image during installation. Requires DSM 7.2.1-69057 or later and an x86_64 NAS.
-
-          DSM administrators open the original dashboard from the main menu without another App password. The HTTPS gateway uses the DSM certificate on port 23443. Anonymous users must sign in to DSM; non-administrators receive HTTP 403. Container port 3001 is not published on the NAS. All monitor and status-page access is administrator-only; public status pages are not provided.
-
-          Monitors, settings and the generated private bootstrap credential use persistent package storage. Uninstall keeps data by default. Even when delete-data is selected, the Compose named volume remains; the wizard reports its exact name. This preview does not automatically remove the retained volume. There is no ctl interface or shared-folder integration.
-
-          Upstream and packaging are MIT-licensed; container dependencies keep their own licenses. Matching source and packaging are available at the source link. Listed as a preview, without a recommendation.
-        zh-TW: |-
-          Uptime Kuma for DSM 使用未修改的官方 Uptime Kuma 2.5.6 container image，以版本 tag 與多架構 digest 鎖定，由 Container Manager 於安裝時下載。需 DSM 7.2.1-69057 以上與 x86_64 NAS。
-
-          DSM 管理員可從主選單開啟原生監控介面，不必再設定 App 密碼。HTTPS gateway 使用 DSM 憑證，連接埠為 23443。未登入者必須先登入 DSM，非管理員會收到 HTTP 403；容器內的 3001 不公開到 NAS。監控項目與狀態頁均僅供管理員存取，不提供公開狀態頁。
-
-          監控項目、設定與自動產生的私有 bootstrap 憑證保存在套件儲存空間。解除安裝預設保留資料；即使選擇刪除資料，Compose named volume 仍會保留，精靈會明列其確切名稱。本預覽版不會自動刪除該 volume，也不提供 ctl 介面或共用資料夾整合。
-
-          上游與打包程式採 MIT 授權，容器相依套件保留各自授權；對應原始碼與打包程式見原始碼連結。以預覽版上架，不列為推薦套件。
+        en: Check whether websites and network services are available, view uptime history and
+          receive outage notifications. Create status pages to summarize service health; status
+          pages are administrator-only and cannot be shared publicly. Available monitor types
+          depend on this package's network permissions. App data remains in Container Manager
+          volumes after uninstall; DSM administrator sign-in and Container Manager are required
+        zh-TW: 檢查網站與網路服務是否正常運作、查看歷史紀錄，並在中斷時接收通知。建立狀態頁面，集中呈現服務狀況；狀態頁面僅供管理員存取，無法公開分享。可用的監控類型受本套件網路權限限制。卸載後
+          App 資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
           2.5.6-0011
@@ -825,21 +813,12 @@ packages:
         url: https://github.com/FreshRSS/FreshRSS
         license: AGPL-3.0
       long_description:
-        en: Read and organize RSS feeds with the official FreshRSS 1.30.2 image and
-          native OIDC sign-in from the DSM main menu. Access is limited to DSM
-          administrators, each with a separate FreshRSS identity. Requires an
-          x86_64 NAS, DSM 7.2.1-69057 or later and Container Manager. Existing
-          shared admin data is retained separately and is not reassigned to an
-          OIDC user. Uninstall keeps data by default; selecting delete-data
-          still retains the Compose named volume, whose name appears in the
-          wizard. Administrator-only preview; not recommended. No ctl interface.
-          FreshRSS is AGPL-3.0 and packaging integration is MIT; matching source
-          is attached to the release.
-        zh-TW: 使用官方 FreshRSS 1.30.2 映像閱讀與整理 RSS，從 DSM 主選單以原生 OIDC 登入。僅開放 DSM 管理員，各自使用獨立
-          FreshRSS 身分。需 x86_64 NAS、DSM 7.2.1-69057 以上與 Container Manager。既有共用
-          admin 資料另外保留，不會轉交給 OIDC 使用者。解除安裝預設保留資料；選擇刪除資料仍保留 Compose named
-          volume，精靈會列出名稱。本版為管理員專用預覽，不列為推薦套件，未提供 ctl。FreshRSS 採 AGPL-3.0，套件整合採
-          MIT；對應原始碼附於 Release。
+        en: Bring news and updates from your favorite websites into one reader. Subscribe to RSS
+          and Atom feeds, organize subscriptions into categories, search articles and save
+          favorites for later. Each reader has separate subscriptions and reading progress; DSM
+          administrator sign-in and Container Manager are required
+        zh-TW: 將喜愛網站的新聞與更新集中到同一個閱讀器。訂閱 RSS 與 Atom、分類整理訂閱項目、搜尋文章，並將喜歡的內容收藏以便稍後閱讀。每位讀者各自保有訂閱與閱讀進度；需
+          DSM 管理員登入及 Container Manager
       changelog:
         en: >-
           1.30.4-0001
@@ -870,9 +849,8 @@ packages:
       account: dsm
       runs: container
       description:
-        en: Read and organize RSS feeds with FreshRSS and native DSM OIDC sign-in. DSM
-          administrators only. Requires Container Manager.
-        zh-TW: 使用 FreshRSS 閱讀與整理 RSS，透過原生 DSM OIDC 登入。僅開放 DSM 管理員，需 Container Manager。
+        en: Follow and read articles from your RSS and Atom subscriptions
+        zh-TW: 訂閱 RSS 與 Atom，在同一處追蹤和閱讀文章
     pins:
       - package: SynoPkgFreshRSS
         version: 1.30.4-0001
@@ -954,29 +932,16 @@ packages:
       account: dsm
       runs: container
       description:
-        en: Audiobookshelf media library with native DSM OIDC sign-in and an
-          install-selected read-only media share. Requires Container Manager.
-        zh-TW: Audiobookshelf 媒體庫，支援 DSM OIDC 單一登入及安裝時選擇唯讀媒體共用資料夾；需 Container Manager。
+        en: Organize and listen to your audiobooks and podcasts
+        zh-TW: 整理與收聽你的有聲書和 Podcast
       long_description:
-        en: Audiobooks and podcasts with the official Audiobookshelf 2.37.1 image and
-          automatic native DSM OIDC sign-in. DSM administrators only; each
-          receives an individual upstream administrator account. Configure an
-          App library for the selected media subfolder. Podcast downloads into
-          the read-only mount are unsupported. Mobile/TV clients are not
-          certified. Choose an existing media Shared Folder in the installation
-          wizard, then grant the SynoPkgAudiobookshelf package account Read
-          access in DSM Shared Folder permissions > System internal user.
-          Selection does not grant access. Media is mounted read-only at /media;
-          access uses the package account, not the signed-in user filesystem
-          ACL. Requires x86_64, DSM 7.2.1-69057 or later and Container Manager.
-          Uninstall retains named App data volumes, including when delete-data
-          is selected. Preview; not recommended. No ctl interface.
-        zh-TW: 使用官方 Audiobookshelf 2.37.1 映像播放有聲書與 Podcast，從 DSM 主選單自動以 OIDC 單一登入。僅開放
-          DSM 管理員，各自使用獨立上游管理員帳號。請於 App 以媒體子資料夾建立媒體庫；不支援下載 Podcast 至唯讀掛載，手機／TV
-          用戶端尚未驗證。安裝時選擇既有媒體共用資料夾後，仍須於 DSM「共用資料夾 → 權限 → 系統內部使用者」授予
-          SynoPkgAudiobookshelf 套件帳號讀取權限；選擇資料夾不等於授權。媒體於 /media 唯讀掛載，使用套件帳號
-          ACL，並非登入者個人檔案 ACL。需 x86_64、DSM 7.2.1-69057 以上與 Container
-          Manager。卸載選擇刪除資料仍保留 App data volumes。本版為預覽版，不列為推薦套件，未提供 ctl。
+        en: Build a personal library of audiobooks and podcasts, browse your collection and listen
+          in your browser while keeping track of your progress. Podcast downloads into the
+          selected read-only media folder are unsupported, and mobile/TV clients are unverified.
+          The folder needs package-account read permission; App data remains after uninstall.
+          DSM administrator sign-in and Container Manager are required
+        zh-TW: 建立個人的有聲書與 Podcast 媒體庫，在瀏覽器中瀏覽收藏、收聽節目並記錄播放進度。不支援下載 Podcast 至所選的唯讀媒體資料夾，手機／TV
+          用戶端尚未驗證。資料夾須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
           2.37.1-0003
@@ -1084,32 +1049,16 @@ packages:
       account: dsm
       runs: container
       description:
-        en: Jellyfin media library with native DSM OIDC sign-in and an install-selected
-          read-only media share. Requires Container Manager.
-        zh-TW: Jellyfin 媒體庫，支援 DSM OIDC 單一登入及安裝時選擇唯讀媒體共用資料夾；需 Container Manager。
+        en: Organize and stream your movies, TV shows and music
+        zh-TW: 整理與串流播放你的電影、影集和音樂
       long_description:
-        en: Jellyfin 12.2 with the unmodified official image and SSO Authentication
-          4.0.0.4 plugin. Open from the DSM main menu and choose Sign in with
-          DSM once. Users need DSM App privilege; administrators and ordinary
-          users receive separate Jellyfin identities and roles. Intel iGPU
-          hardware transcoding uses VAAPI, with QSV available through native
-          settings; models without a usable GPU automatically use software
-          transcoding. DLNA is disabled; TV/mobile native clients cannot use
-          this DSM-only entry. Choose an existing media Shared Folder in the
-          installation wizard, then grant the SynoPkgJellyfin package account
-          Read access in DSM Shared Folder permissions > System internal user.
-          Selection does not grant access. Media is mounted read-only at /media;
-          access uses the package account, not the signed-in user filesystem
-          ACL. Requires x86_64, DSM 7.2.1-69057 or later and Container Manager.
-          Uninstall retains named App data volumes, including when delete-data
-          is selected. Preview; not recommended. No ctl interface.
-        zh-TW: 使用未修改的官方 Jellyfin 12.2 映像與 SSO Authentication 4.0.0.4 plugin。從 DSM
-          主選單開啟後按一次「Sign in with DSM」登入。使用者須具備 DSM App 使用權限，管理員與一般使用者對應不同
-          Jellyfin 身分及角色。新增 Intel iGPU VAAPI 硬體轉碼，QSV 可於原生設定選用；無可用 GPU
-          的機型自動使用軟體轉碼。DLNA 未啟用，TV／手機原生用戶端不支援此 DSM-only 入口。安裝時選擇既有媒體共用資料夾後，仍須於
-          DSM「共用資料夾 → 權限 → 系統內部使用者」授予 SynoPkgJellyfin 套件帳號讀取權限；選擇資料夾不等於授權。媒體於
-          /media 唯讀掛載，使用套件帳號 ACL，並非登入者個人檔案 ACL。需 x86_64、DSM 7.2.1-69057 以上與
-          Container Manager。卸載選擇刪除資料仍保留 App data volumes。本版為預覽版，不列為推薦套件，未提供 ctl。
+        en: Turn your media collection into a personal streaming library. Browse movies and TV
+          shows with artwork, organize music and play your collection in a browser. TV/mobile
+          native clients cannot use this entry, and DLNA is disabled. The selected media folder
+          is read-only and needs package-account read permission; App data remains after
+          uninstall. DSM sign-in and Container Manager are required
+        zh-TW: 將媒體收藏變成個人串流媒體庫。透過封面瀏覽電影與影集、整理音樂，並在瀏覽器播放。TV／手機原生用戶端不支援此入口，DLNA
+          未啟用。所選媒體資料夾為唯讀，須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 登入及 Container Manager
       changelog:
         en: >-
           12.2-0004
@@ -1207,42 +1156,16 @@ packages:
         url: https://github.com/C4illin/ConvertX
         license: AGPL-3.0
       description:
-        en: Convert files with the official ConvertX UI and DSM sign-in. Authorized
-          users share one workspace. Requires Container Manager.
-        zh-TW: 透過官方 ConvertX 介面與 DSM 登入轉換檔案；獲授權的使用者共用同一工作空間。需 Container Manager。
+        en: Convert documents, images, audio and video between file formats
+        zh-TW: 轉換文件、圖片、音訊與影片的檔案格式
       long_description:
-        en: >-
-          Open ConvertX from the DSM main menu after an administrator grants the
-          App privilege. DSM login provides access; no separate ConvertX
-          password or shared-folder selection is required.
-
-
-          Shared workspace: authorized users can see and download each other's
-          files. This package provides no per-user file isolation. Upstream
-          periodically removes jobs older than 24 hours.
-
-
-          Requires DSM 7.2.1 or later, x86_64 and Container Manager. Built with
-          published CLI/templates/SDK/App 0.22.0, executor/v0.20.0 and template
-          UI 0.12.5; official upstream images and UI remain unchanged.
-
-
-          Data retention: Container Manager named volumes survive uninstall even
-          when delete-data is selected. Back up App data and manage retained
-          volumes separately.
-
-
-          Preview; not recommended. Corresponding source and integration
-          documentation are available from the linked release tag.
-        zh-TW: >-
-          從 DSM 主選單開啟，須具備 App 使用權限；不需另一組 ConvertX
-          密碼，也不需選擇共用資料夾。獲授權使用者可看見並下載彼此的檔案，沒有個別使用者檔案隔離；上游定期刪除超過 24 小時的工作。
-
-
-          需 x86_64、DSM 7.2.1 或以上與 Container Manager。使用正式 CLI/templates/SDK/App
-          0.22.0、executor/v0.20.0 與 UI 0.12.5，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留
-          Container Manager named
-          volumes；請備份並另行管理保留資料。本版為預覽版，不列為推薦套件；對應原始碼與整合文件見 Release tag。
+        en: Upload documents, images, audio or video in your browser, choose an output format and
+          download the converted files. All authorized users share one workspace and can see and
+          download each other's files. Jobs older than 24 hours are periodically removed. App
+          data remains in Container Manager volumes after uninstall; DSM sign-in and Container
+          Manager are required
+        zh-TW: 在瀏覽器上傳文件、圖片、音訊或影片，選擇輸出格式後下載轉換完成的檔案。所有獲授權使用者共用同一工作空間，可看見並下載彼此的檔案；超過 24
+          小時的工作會定期移除。卸載後 App 資料仍保留於 Container Manager 儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
           0.19.0-0002
@@ -1344,58 +1267,18 @@ packages:
         url: https://github.com/paperless-ngx/paperless-ngx
         license: GPL-3.0
       description:
-        en: Document management and OCR with native DSM OIDC sign-in and an
-          install-selected consume folder. Requires Container Manager.
-        zh-TW: 文件管理與 OCR，支援 DSM OIDC 登入及安裝時選擇匯入資料夾。需 Container Manager。
+        en: Scan, organize and search your documents with automatic text recognition
+        zh-TW: 透過自動文字辨識掃描、整理與搜尋你的文件
       long_description:
-        en: >-
-          Select a dedicated existing Shared Folder for consume during
-          installation, then grant the package account Read/Write in Control
-          Panel > Shared Folder > Permissions > System internal user. Selection
-          alone does not grant access. Consumed files are removed from the
-          inbox; keep backups. Export stays in the private App volume.
-
-
-          Open Paperless from the DSM main menu using DSM OIDC. Authorized
-          ordinary DSM users receive their own Paperless account; administrators
-          receive the native administrator role on OIDC login. Document
-          ownership and sharing follow Paperless permissions. Native API tokens
-          remain available through My Profile.
-
-
-          DSM logout, account deletion and role changes do not immediately
-          revoke existing Paperless sessions or API tokens. Deleting a DSM
-          account does not automatically delete its Paperless account. First
-          start downloads and verifies the pinned Chinese OCR models over HTTPS.
-          Physical mobile clients, Tika and Gotenberg are outside the verified
-          scope.
-
-
-          Requires DSM 7.2.1 or later, x86_64 and Container Manager. Built with
-          published CLI/templates/SDK/App 0.22.0, executor/v0.20.0 and template
-          UI 0.12.5; official upstream images and UI remain unchanged.
-
-
-          Data retention: Container Manager named volumes survive uninstall even
-          when delete-data is selected. Back up App data and manage retained
-          volumes separately.
-
-
-          Preview; not recommended. Corresponding source and integration
-          documentation are available from the linked release tag.
-        zh-TW: >-
-          安裝時選擇專用的既有 consume 共用資料夾，並在 DSM
-          共用資料夾權限的系統內部使用者頁面，授予套件帳號讀寫權限；選擇資料夾不等於授權。匯入後會移除 inbox 中的檔案，請保留備份；匯出資料留在
-          App 私有 volume。從 DSM 主選單透過 OIDC 登入；一般使用者與管理員取得個別 Paperless
-          帳號及對應角色，文件擁有權與分享依 Paperless 權限。DSM 登出、刪除帳號與角色變更不會即時撤銷既有 App session 或
-          API token；刪除 DSM 帳號不會自動刪除 Paperless 帳號。首次啟動會透過 HTTPS 下載並驗證固定版本的中文 OCR
-          模型；實體行動用戶端、Tika 與 Gotenberg 不在驗證範圍。
-
-
-          需 x86_64、DSM 7.2.1 或以上與 Container Manager。使用正式 CLI/templates/SDK/App
-          0.22.0、executor/v0.20.0 與 UI 0.12.5，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留
-          Container Manager named
-          volumes；請備份並另行管理保留資料。本版為預覽版，不列為推薦套件；對應原始碼與整合文件見 Release tag。
+        en: Turn paper documents into a searchable digital archive. Import scans, recognize their
+          text with OCR, and organize documents with tags, correspondents and document types.
+          Search document contents and control sharing with Paperless permissions. Imported
+          files are removed from the inbox, so keep backups; the selected inbox needs
+          package-account Read/Write permission. App data remains in Container Manager volumes
+          after uninstall; DSM sign-in and Container Manager are required
+        zh-TW: 將紙本文件變成可搜尋的數位檔案庫。匯入掃描檔，以 OCR 辨識文字，並用標籤、往來對象及文件類型整理資料。搜尋文件內容，依 Paperless
+          權限管理分享。匯入後會移除收件資料夾中的檔案，請保留備份；所選收件資料夾須授予套件帳號讀寫權限。卸載後 App 資料仍保留於 Container Manager
+          儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
           3.3.3-0004
@@ -1498,62 +1381,19 @@ packages:
         url: https://github.com/dani-garcia/vaultwarden
         license: AGPL-3.0-only
       description:
-        en: Vaultwarden Web Vault with native DSM administrator OIDC sign-in. A separate
-          master password unlocks encrypted data.
-        zh-TW: Vaultwarden Web Vault，支援 DSM 管理員 OIDC 登入；另以主密碼解鎖加密資料。
+        en: Store and manage passwords and secure notes in an encrypted vault
+        zh-TW: 在加密保險庫中儲存與管理密碼和安全筆記
       long_description:
-        en: >-
-          This entry is limited to DSM administrators. Open it from the DSM main
-          menu through native OIDC, then create or enter the Vaultwarden master
-          password. DSM SSO cannot decrypt or unlock a vault and cannot recover
-          a lost master password.
-
-
-          In the installation wizard, enter the required Public HTTPS origin,
-          including port 29443, for the hostname used to open DSM. Use a root
-          HTTPS origin without a path, query or fragment. The hostname, gateway
-          port and Vaultwarden DOMAIN must agree. Retained configuration can be
-          reused on upgrade or keep-data reinstall.
-
-
-          Official Bitwarden clients require a trusted HTTPS certificate
-          matching that hostname. Accepting a browser certificate warning does
-          not establish client trust. The package does not install certificates
-          or change DSM proxy settings.
-
-
-          Vaultwarden owns its App sessions, API keys and offline vaults. DSM
-          logout or access changes do not revoke them immediately; deleting a
-          DSM account does not automatically delete its Vaultwarden account. The
-          upstream /admin interface remains disabled without an ADMIN_TOKEN.
-
-
-          Requires DSM 7.2.1 or later, x86_64 and Container Manager. Built with
-          published CLI/templates/SDK/App 0.25.0, executor/v0.24.0 and template
-          UI 0.14.0; official upstream images and UI remain unchanged.
-
-
-          Data retention: Container Manager named volumes survive uninstall even
-          when delete-data is selected. Back up App data and manage retained
-          volumes separately.
-
-
-          Preview; not recommended. Corresponding source and integration
-          documentation are available from the linked release tag.
-        zh-TW: >-
-          僅限 DSM 管理員。安裝精靈必須填寫用來開啟 DSM 的主機名稱所對應的 Public HTTPS origin，包含 port
-          29443，不含路徑、query 或 fragment；主機名稱、gateway port 與 Vaultwarden DOMAIN
-          必須一致。從 DSM 主選單透過 OIDC 登入後，仍須建立或輸入 Vaultwarden 主密碼；DSM SSO
-          無法解密保險庫，也無法復原遺失的主密碼。升級或保留資料重新安裝可沿用設定。官方 Bitwarden 客戶端需要名稱相符的可信 HTTPS
-          憑證；瀏覽器接受憑證警告不代表客戶端信任，官方客戶端登入尚未驗證。DSM 登出或權限變更不會即時撤銷 App session、API key
-          或離線保險庫；刪除 DSM 帳號不會自動刪除 Vaultwarden 帳號。未設定 ADMIN_TOKEN，所以上游 /admin
-          介面維持關閉。
-
-
-          需 x86_64、DSM 7.2.1 或以上與 Container Manager。使用正式 CLI/templates/SDK/App
-          0.25.0、executor/v0.24.0 與 UI 0.14.0，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留
-          Container Manager named
-          volumes；請備份並另行管理保留資料。本版為預覽版，不列為推薦套件；對應原始碼與整合文件見 Release tag。
+        en: Keep passwords, login details and secure notes in an encrypted vault hosted on your
+          own server. Vaultwarden is a server compatible with Bitwarden, with a web vault for
+          managing your entries. A separate master password unlocks the vault and cannot be
+          recovered through DSM. Bitwarden clients need a trusted HTTPS certificate; client
+          sign-in is unverified. App sessions are managed separately and data remains in
+          Container Manager volumes after uninstall; DSM administrator sign-in and Container
+          Manager are required
+        zh-TW: 在自己的伺服器上，以加密保險庫保管密碼、登入資料與安全筆記。Vaultwarden 是相容於 Bitwarden
+          的伺服器，可透過網頁保險庫管理項目。須以另一組主密碼解鎖保險庫，DSM 無法復原主密碼。Bitwarden 用戶端需要可信的 HTTPS 憑證，用戶端登入尚未驗證。App
+          登入狀態另行管理，卸載後資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
           1.37.4-0003
@@ -1663,42 +1503,18 @@ packages:
         url: https://github.com/navidrome/navidrome
         license: GPL-3.0
       description:
-        en: Music streaming with the official Navidrome UI, DSM sign-in and an
-          install-selected read-only music folder.
-        zh-TW: 透過官方 Navidrome 介面串流音樂，支援 DSM 登入及安裝時選擇唯讀音樂資料夾。
+        en: Stream your music collection through a web player or compatible apps
+        zh-TW: 透過網頁播放器或相容 App 串流播放你的音樂收藏
       long_description:
-        en: >-
-          Select an existing music Shared Folder during installation and grant
-          the package account Read access through the native permission guide.
-          Grant the App privilege to the intended DSM users, then open Navidrome
-          from the DSM main menu. Each DSM user receives an App identity;
-          administrators receive Navidrome administration, and an ordinary first
-          login does not become administrator.
-
-
-          Set a separate Navidrome password in personal settings before
-          configuring a Subsonic client. Use the displayed Navidrome username
-          and App HTTPS URL; never enter the DSM password in that client. Role
-          changes require signing in again. Public share links are anonymous
-          until removed.
-
-
-          Requires DSM 7.2.1 or later, x86_64 and Container Manager. Built with
-          published CLI/templates/SDK/App 0.22.0, executor/v0.20.0 and template
-          UI 0.12.5; official upstream images and UI remain unchanged.
-
-
-          Data retention: Container Manager named volumes survive uninstall even
-          when delete-data is selected. Back up App data and manage retained
-          volumes separately.
-
-
-          Preview; not recommended. Corresponding source and integration
-          documentation are available from the linked release tag.
-        zh-TW: |-
-          安裝時選擇既有音樂共用資料夾，並依權限指引授予套件帳號讀取權限；選擇資料夾不等於授權。所有獲授權使用者共用該音樂庫，使用套件帳號存取檔案，不是登入者個別的檔案 ACL。授予預定使用者 App 使用權限後，從 DSM 主選單開啟。各 DSM 使用者取得個別 App 身分，管理員取得 Navidrome 管理權；第一個登入的一般使用者不會自動升為管理員。Subsonic 客戶端須先在個人設定設立另一組 Navidrome 密碼，使用顯示的 Navidrome 使用者名稱與 App HTTPS URL，不可填入 DSM 密碼。DSM 角色變更須重新登入或等待 session 到期；公開分享連結在移除前可匿名存取。
-
-          需 x86_64、DSM 7.2.1 或以上與 Container Manager。使用正式 CLI/templates/SDK/App 0.22.0、executor/v0.20.0 與 UI 0.12.5，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留 Container Manager named volumes；請備份並另行管理保留資料。本版為預覽版，不列為推薦套件；對應原始碼與整合文件見 Release tag。
+        en: Browse your music by artist and album, build playlists and listen through the web
+          player or compatible Subsonic apps. Authorized users share the selected read-only
+          music library, which needs package-account read permission. Subsonic clients use a
+          separate Navidrome password; public share links remain accessible until removed. App
+          data remains in Container Manager volumes after uninstall; DSM sign-in and Container
+          Manager are required
+        zh-TW: 依演出者與專輯瀏覽音樂、建立播放清單，並透過網頁播放器或相容的 Subsonic App
+          收聽。獲授權使用者共用所選唯讀音樂庫，須授予套件帳號讀取權限。Subsonic 用戶端使用另一組 Navidrome 密碼；公開分享連結在移除前仍可存取。卸載後 App
+          資料仍保留於 Container Manager 儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
           0.64.2-0003
@@ -1802,73 +1618,17 @@ packages:
         url: https://github.com/home-assistant/core
         license: Apache-2.0
       description:
-        en: Home automation with the official Home Assistant UI and DSM administrator
-          OIDC sign-in. Requires Container Manager.
-        zh-TW: 使用官方 Home Assistant 介面及 DSM 管理員 OIDC 登入的家庭自動化服務；需 Container Manager。
+        en: Connect smart home devices and automate everyday routines
+        zh-TW: 整合智慧家庭裝置，將日常操作自動化
       long_description:
-        en: >-
-          Home Assistant 2026.10.2 for Synology DSM, package version
-          2026.10.2-0001.
-
-
-          - Community package for x86_64, DSM 7.2.1 or later and Container
-          Manager. The official Home Assistant image and upstream source are
-          unchanged; the image is pinned by SHA-256.
-
-          - Open Home Assistant from the DSM main menu. DSM administrators sign
-          in through OIDC and receive separate Home Assistant administrator
-          accounts, without owner privileges. Ordinary DSM users are refused.
-          Existing Home Assistant sessions and API tokens are not immediately
-          revoked by DSM logout or account/role changes.
-
-          - Host networking supports the declared mDNS UDP 5353 listener. SSDP,
-          random-UDP integrations, USB/Bluetooth, Supervisor and add-ons are
-          unsupported. Mobile Companion App sign-in and upgrades are unverified.
-          First-run country and HTTP configuration repair prompts may require
-          attention.
-
-          - Configuration, dashboards and the database survive stop/start.
-          **Both uninstall choices retain Container Manager named data volumes,
-          including delete-data.** Back up first and remove retained volumes
-          explicitly only when their data is no longer needed. No shared-folder
-          mounts or ctl endpoint are enabled.
-
-          - Built with published SDK/App, CLI and templates 0.23.0, reusing
-          executor/v0.20.0; no source overrides. Includes the unmodified
-          hass-oidc-auth 1.2.1 component (MIT); Home Assistant is Apache-2.0.
-          See synology/NOTICE.md and synology/docs/acceptance.md at this tag.
-
-
-          Verified on DSM 7.3.2 x86_64: fresh install; DSM main-menu sign-in
-          through an IP address and a DNS alias; creation of a dashboard card;
-          native stop/start and card retention through both origins;
-          ordinary-user HTTP 403; native uninstall and retained-volume cleanup.
-          Other platforms, trusted TLS, Companion App and upgrades are not
-          certified by these checks.
-
-
-          Preview; not recommended. Source and integration documentation are
-          available from the linked release tag.
-        zh-TW: >-
-          從 DSM 主選單開啟，僅開放 DSM 管理員透過 OIDC 登入，各自取得 Home Assistant 管理員帳號，沒有 owner
-          權限；一般使用者回覆 HTTP 403。DSM 登出、帳號刪除或角色變更不會即時撤銷既有 Home Assistant session 或
-          API token，請在 App 內另行管理。首次國家設定與 HTTP 設定遷移修復提示可能需要手動處理。
-
-
-          使用官方未修改映像與介面，pin SHA-256；host network 支援宣告的 UDP 5353 mDNS。SSDP、隨機 UDP
-          整合、USB／Bluetooth、Supervisor 與 add-ons 不支援。手機 Companion App 登入與升級尚未驗證。需
-          x86_64、DSM 7.2.1 或以上及 Container Manager；實機驗收限 DSM 7.3.2
-          x86_64，未認證其他版本或 TLS 信任。使用正式 SDK/App、CLI/templates 0.23.0，沿用
-          executor/v0.20.0，無 source override；hass-oidc-auth 1.2.1 為 MIT，Home
-          Assistant 為 Apache-2.0。
-
-
-          資料保留：設定、儀表板與資料庫可保留於 stop/start 之間。兩種卸載選項，包括刪除資料，都會保留 Container Manager
-          named data volumes；請先備份，需要時另行手動刪除。沒有 host 共用資料夾掛載或 ctl 端點。已驗證全新安裝、IP 與
-          DNS 別名登入、建立儀表板卡片、stop/start 後兩個網址讀回、一般使用者拒絕及卸載清理。
-
-
-          社群預覽套件，不列為推薦；非 Home Assistant 或 Synology 官方產品。原始碼與整合文件見 Release tag。
+        en: Bring compatible smart home devices together, control them from dashboards and create
+          automations for everyday routines. Keep control of your home on your own server. This
+          package supports mDNS discovery, but not SSDP, USB/Bluetooth, Supervisor or add-ons;
+          mobile app sign-in and upgrades are unverified. Settings remain in Container Manager
+          volumes after uninstall; DSM administrator sign-in and Container Manager are required
+        zh-TW: 整合相容的智慧家庭裝置，透過儀表板集中控制，並建立日常生活的自動化流程，將家庭控制權留在自己的伺服器上。本套件支援 mDNS 探索，不支援
+          SSDP、USB／Bluetooth、Supervisor 與 add-ons；手機 App 登入及升級尚未驗證。卸載後設定仍保留於 Container Manager
+          儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
           2026.10.2-0002
