@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1583
+      release: v0.1.1-1585
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -24,34 +24,32 @@ packages:
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
       changelog:
         en: >-
-          0.1.1-1583
+          0.1.1-1585
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.3; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
+          Rebuild 0.1.1-1585 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land.
 
-          - No NAS tests were performed for this release.
 
-          - Administrator reapproval of system access is required after
-          upgrading.
+          The executor remains v0.24.0, but administrator reapproval is required: root programs
+          cli/lifecycle changed since 0.1.1-1583 (including the fixes already merged on the default branch).
+          Declared permissions and task templates are unchanged.
 
-          - Includes New scan system-partition refresh and loading overlay
-          fixes; build 1582 was unpublished.
+
+          Published builds advance from 0.1.1-1583 directly to 0.1.1-1585. Build 1584 was used for testing
+          and is skipped for the official release.
         zh-TW: >-
-          0.1.1-1583
+          0.1.1-1585
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.3 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
+          0.1.1-1585 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
 
-          - 本輪未執行 NAS 測試。
 
-          - 升級後須由管理員重新核准系統存取。
+          executor 維持 v0.24.0，但 cli／lifecycle root 程式與 0.1.1-1583 不同（包含預設分支已合併修正），升級後須由管理員重新核准系統存取；宣告權限與
+          task template 維持不變。
 
-          - 包含 New scan 系統磁區重新檢查及 Loading 遮罩修正；1582 為未上架開發版。
+
+          正式上架版由 0.1.1-1583 直接升至 0.1.1-1585；1584 已用於測試，正式發版跳過該 build。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore.png
@@ -59,15 +57,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1583
+        version: 0.1.1-1585
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f10c123a633a111a0627a59e3f89529e18d65699454b3e156967e2ec4f1c86c4
-        md5: 2c70596e842c478f349dcd7d2bca2a2f
-        size: 13104640
+        sha256: 041c707f38f5a62c5e2f54d8bfbc729e395cec0cd9902cfa037d19f619c02d0e
+        md5: 7e5ddeeebdfb1396ee9d021c9e884df3
+        size: 13122560
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -84,19 +82,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:21:58Z
-          source_ref: c19d77c4a09def9f3a760c0bd9e1c693e35844b3
+          reviewed_at: 2026-10-22T14:16:21Z
+          source_ref: 7e4a9666c454a231b75338baab7a947ec30c4c09
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1583
+        version: 0.1.1-1585
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: c5af7a3f5fe8d37df8cd2115233a0ce6aa87f6a760f8afce362ef510f1089b51
-        md5: 4a4feb4bd32afac9de0bec742b7e2366
-        size: 13796864
+        sha256: 8d63bc3029edf998ee18f6da0dba0eddc5a2d078cd7f698691e512cfd3061c25
+        md5: 1eaef73908c0a038f5f0ae1b8d64b058
+        size: 13814784
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -113,11 +111,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:21:58Z
-          source_ref: c19d77c4a09def9f3a760c0bd9e1c693e35844b3
+          reviewed_at: 2026-10-22T14:16:21Z
+          source_ref: 7e4a9666c454a231b75338baab7a947ec30c4c09
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1583
+        version: 0.1.1-1585
         arch:
           - apollolake
           - avoton
@@ -146,9 +144,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: bb7fd759412d21a2c2c77de63268a97ae7020937b5c798bc7527b83bd0368329
-        md5: 05ccc46bcbccdc448437716afc44294d
-        size: 14095872
+        sha256: 7e40b6ec2db53183d4ca893d786a47f5131b9f36fc3e0e04aa8abdce1b43c4ed
+        md5: e1af5443f7a6f0cc124c9ab5b9097515
+        size: 14115840
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -165,8 +163,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:21:58Z
-          source_ref: c19d77c4a09def9f3a760c0bd9e1c693e35844b3
+          reviewed_at: 2026-10-22T14:16:21Z
+          source_ref: 7e4a9666c454a231b75338baab7a947ec30c4c09
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: utilities
