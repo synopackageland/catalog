@@ -175,7 +175,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0061
+      release: v0.1.0-0062
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -217,24 +217,15 @@ packages:
           管理員登入
       changelog:
         en: >-
-          0.1.0-0061
+          0.1.0-0062
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
+          Rebuild 0.1.0-0062 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land.
+        zh-TW: |-
+          0.1.0-0062
 
-          - No NAS tests were performed for this release.
-        zh-TW: >-
-          0.1.0-0061
-
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
-
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
-
-          - 本輪未執行 NAS 測試。
+          0.1.0-0062 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare.png
@@ -242,15 +233,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-ipv6.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0061
+        version: 0.1.0-0062
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 489a4616aeaac2158dc65064db0b1ccc1686f0c344fe246048e6d28af2d804a6
-        md5: ab57cae3d85d1f87c3892991ebe493ff
-        size: 8975360
+        sha256: b964a38667f449bc3787a228bede10f564b95faa9f9cdb91bc08df8c3e7a8128
+        md5: c3a411a50e21624424cadb2b6a7b49c7
+        size: 8997376
         facts:
           built_with: sdk
           sdk_backend: go
@@ -267,19 +258,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:21:59Z
-          source_ref: 03ff2f4694030d45c30fcb36cd54fa29cb5496b7
+          reviewed_at: 2026-10-22T13:38:45Z
+          source_ref: a13d3bc9c80ad252b41aa87e895fb1a901f0913e
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0061
+        version: 0.1.0-0062
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 95846264b31579096f54ac2d30423244e50e6fc4e030c42667fc25b746fe71e5
-        md5: 30fd4e1e8c00f97cc378907a03d51155
-        size: 9491456
+        sha256: 7f68d31a54a428c60951a6b1f01e614eda5e2eebb4f5c1cac9fc51447de807ab
+        md5: 6be00d99c5886f8b9c352bd4a4063490
+        size: 9513984
         facts:
           built_with: sdk
           sdk_backend: go
@@ -296,11 +287,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:21:59Z
-          source_ref: 03ff2f4694030d45c30fcb36cd54fa29cb5496b7
+          reviewed_at: 2026-10-22T13:38:45Z
+          source_ref: a13d3bc9c80ad252b41aa87e895fb1a901f0913e
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0061
+        version: 0.1.0-0062
         arch:
           - apollolake
           - avoton
@@ -329,9 +320,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 424d843b61150a6b68e9d205a230093678a9b4684ee616511f476441762b09aa
-        md5: 81966831b853b9b0279c6f72a05fec4f
-        size: 9842176
+        sha256: 28498bb984f6425aa782eeea40edd0ff0fa87d7adf5b4042326aae1db63b6d37
+        md5: 82cf1a7f5f62bf5f6adade372745152d
+        size: 9866752
         facts:
           built_with: sdk
           sdk_backend: go
@@ -348,8 +339,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:21:59Z
-          source_ref: 03ff2f4694030d45c30fcb36cd54fa29cb5496b7
+          reviewed_at: 2026-10-22T13:38:45Z
+          source_ref: a13d3bc9c80ad252b41aa87e895fb1a901f0913e
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
@@ -358,7 +349,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0050
+      release: v0.2.2-0051
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -415,34 +406,25 @@ packages:
           Gopeed 為核心；需 DSM 登入
       changelog:
         en: >-
-          0.2.2-0050
+          0.2.2-0051
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
+          Rebuild 0.2.2-0051 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Search helper remains on Go 1.27.3.
 
-          - No NAS tests were performed for this release.
 
-          - Administrator reapproval of system access is required after
-          upgrading.
-
-          - search-helper requires Go 1.27 and uses patched go1.27.3; the
-          official Gopeed binary remains unchanged.
+          Executor binaries, policy and task templates match the previous release. No new administrator
+          approval is required when the installed protected runtime and exact DSM tasks still match that
+          baseline.
         zh-TW: >-
-          0.2.2-0050
+          0.2.2-0051
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
+          0.2.2-0051 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          search-helper 維持 Go 1.27.3。
 
-          - 本輪未執行 NAS 測試。
 
-          - 升級後須由管理員重新核准系統存取。
-
-          - search-helper 使用已修補 go1.27.3；官方 Gopeed 主程式保持原樣。
+          executor、policy 與 task template 與前次上架版一致；已安裝的受保護 runtime 及 DSM task 仍符合基準時，不新增管理員重新核准要求。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download.png
@@ -450,15 +432,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0050
+        version: 0.2.2-0051
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: aae70415673a40116b51f247028817232f753436d2b919b0c2b072aa1d3f4ce4
-        md5: 79437c1e78c798228bb7feebf3e377d7
-        size: 64974336
+        sha256: c46e6caa8cff5a35cd89fbe54a4c1a9c608210574c345a863dd050a940b83365
+        md5: 9e453483f3e0bea94f193c21b2fb87e5
+        size: 64994816
         facts:
           built_with: sdk
           sdk_backend: go
@@ -476,11 +458,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:00Z
-          source_ref: aae065cbbf292832fbae477a130b5b8ecf3181e0
+          reviewed_at: 2026-10-22T13:38:47Z
+          source_ref: c5c25a1589d323bc9c08a0c7936edde53dbb4a3c
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0050
+        version: 0.2.2-0051
         arch:
           - apollolake
           - avoton
@@ -509,9 +491,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 101a5d0c30af9c4233d058c91643336bb778ae69b659eb6a5ea6845a0f6499af
-        md5: 1a976fd5e3b7f47edb6398fbb96fd551
-        size: 68455936
+        sha256: 972cf86452331b1d147f982ce1ac2dac9960729ea2976d1cb0fad3631dd484ed
+        md5: 26f04ea09da6d8c66d684fed462d863e
+        size: 68479488
         facts:
           built_with: sdk
           sdk_backend: go
@@ -529,8 +511,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:00Z
-          source_ref: aae065cbbf292832fbae477a130b5b8ecf3181e0
+          reviewed_at: 2026-10-22T13:38:47Z
+          source_ref: c5c25a1589d323bc9c08a0c7936edde53dbb4a3c
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
@@ -684,7 +666,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-uptime-kuma
-      release: v2.5.6-0011
+      release: v2.5.6-0012
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -715,32 +697,20 @@ packages:
           App 資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2.5.6-0011
+          2.5.6-0012
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
-
-          - No NAS tests were performed for this release.
-
-          - The official image still includes Node.js v22.22.3 and older Go
-          utilities; an upstream runtime update remains necessary.
+          Rebuild 2.5.6-0012 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Official images and application sources are unchanged.
         zh-TW: >-
-          2.5.6-0011
+          2.5.6-0012
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
-
-          - 本輪未執行 NAS 測試。
-
-          - 官方映像仍含 Node.js v22.22.3 與舊 Go 工具，仍待上游更新 runtime。
+          2.5.6-0012 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          官方映像與上游程式維持原樣。
     pins:
       - package: SynoPkgUptimeKuma
-        version: 2.5.6-0011
+        version: 2.5.6-0012
         arch:
           - apollolake
           - avoton
@@ -769,9 +739,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7f299d23d4ff47594fecd7e0f9a699a68598d3828994b74d2f03cfb705ff8745
-        md5: a54bb9471e19beb5790dcb53dd8f63e0
-        size: 19862016
+        sha256: 76fac97358b5d1521ad7a8a6e54da340f2ea89b29aca4d55a29471274d5314fe
+        md5: 196ddc3fb9e6160f846f442739644122
+        size: 19960832
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -788,8 +758,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:03Z
-          source_ref: 73ade5b413c91142c01adf4a64f1ca0545eef369
+          reviewed_at: 2026-10-22T13:38:48Z
+          source_ref: 48bd3ddea2c4d3a5893994a9ce3318f5c8ff6b77
           source_repo: synopackageland/syno-pkg-land-uptime-kuma
   - recommended: false
     featured: false
@@ -799,7 +769,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0001
+      release: v1.30.4-0002
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -822,28 +792,17 @@ packages:
           DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          1.30.4-0001
+          1.30.4-0002
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
-
-          - No NAS tests were performed for this release.
-
-          - Upgrade to official FreshRSS 1.30.4 with PHP 8.4.27.
+          Rebuild 1.30.4-0002 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Official images and application sources are unchanged.
         zh-TW: >-
-          1.30.4-0001
+          1.30.4-0002
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
-
-          - 本輪未執行 NAS 測試。
-
-          - 升級官方 FreshRSS 1.30.4，固定映像含 PHP 8.4.27。
+          1.30.4-0002 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          官方映像與上游程式維持原樣。
       issues_url: https://github.com/synopackageland/syno-pkg-land-freshrss/issues
       root_access: none
       access: admins
@@ -854,7 +813,7 @@ packages:
         zh-TW: 訂閱 RSS 與 Atom，在同一處追蹤和閱讀文章
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0001
+        version: 1.30.4-0002
         arch:
           - apollolake
           - avoton
@@ -883,9 +842,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e5d5b6237eaf2d327dfea13cb777eb9cd9ef89dd54a733448e7460e36b240870
-        md5: 565d34651064ea86e1a6b47930998413
-        size: 19867648
+        sha256: 55f729b019609ab6707e908af3356a403f073268ae7c56cc90b7daefc9cabf7d
+        md5: 41691884c45cac3b40b1982bc285058e
+        size: 19969024
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -902,8 +861,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:03Z
-          source_ref: dab74696c33d16bf1de46c11314cbd22190cf516
+          reviewed_at: 2026-10-22T13:38:49Z
+          source_ref: c3920a0818371bccc8fa0356a11b9dfe06d771ba
           source_repo: synopackageland/syno-pkg-land-freshrss
   - recommended: false
     featured: false
@@ -913,7 +872,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.1-0003
+      release: v2.37.1-0004
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -945,32 +904,22 @@ packages:
           用戶端尚未驗證。資料夾須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2.37.1-0003
+          2.37.1-0004
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
-
-          - No NAS tests were performed for this release.
-
-          - The official image still includes Node.js v24.21.0; an upstream
-          image update remains necessary.
+          Rebuild 2.37.1-0004 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Official images and application sources are unchanged. Check the
+          selected shared folder permissions before starting; grant the package account the required access
+          in DSM.
         zh-TW: >-
-          2.37.1-0003
+          2.37.1-0004
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
-
-          - 本輪未執行 NAS 測試。
-
-          - 官方映像仍含 Node.js v24.21.0，仍待上游更新映像。
+          2.37.1-0004 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          官方映像與上游程式維持原樣。 啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.1-0003
+        version: 2.37.1-0004
         arch:
           - apollolake
           - avoton
@@ -999,9 +948,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 33a3018f746f9788cf861a80ce28400751eb08f4dcad2b32e04a235f9907cd39
-        md5: 58e41a1a348daab3c35eeb7e73bcd7b3
-        size: 19943424
+        sha256: 367bd33ecd09777213a1ed052fd4ba6757c24ed150b0290fcbe0cc591a21835d
+        md5: b7b050139bd0aaba5f55389bc7d3ff36
+        size: 20048384
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1018,8 +967,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:04Z
-          source_ref: 1856b1fd8aaae655e833d408de3eef7ca5ec8a76
+          reviewed_at: 2026-10-22T13:38:50Z
+          source_ref: 77f1731a186ffd398d8bedea7504f5aa35255166
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - recommended: false
     featured: false
@@ -1029,7 +978,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.2-0004
+      release: v12.2-0005
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -1062,27 +1011,30 @@ packages:
           未啟用。所選媒體資料夾為唯讀，須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          12.2-0004
+          12.2-0005
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
+          Rebuild 12.2-0005 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Official images and application sources are unchanged. Check the
+          selected shared folder permissions before starting; grant the package account the required access
+          in DSM.
 
-          - No NAS tests were performed for this release.
+
+          A disposable DSM upgrade from 12.2-0004 starts normally when the package account can read the
+          selected share (HTTP 200). Removing its share access makes prestart fail before the container
+          starts and produces a native permission-remediation message.
         zh-TW: >-
-          12.2-0004
+          12.2-0005
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
+          12.2-0005 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          官方映像與上游程式維持原樣。 啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。
 
-          - 本輪未執行 NAS 測試。
+
+          以隔離 DSM fixture 從 12.2-0004 升級：套件帳號有讀取權限時正常啟動（HTTP 200）；移除該權限後，prestart 在容器啟動前拒絕，並提供原生權限補救訊息。
     pins:
       - package: SynoPkgJellyfin
-        version: 12.2-0004
+        version: 12.2-0005
         arch:
           - apollolake
           - avoton
@@ -1111,9 +1063,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: b84e7d7800a33fe191c58bec2538b94e17f29023eb236cb81623b446ada3469c
-        md5: 80d0ecd153fb09eae0f848889039be3b
-        size: 20973056
+        sha256: e777a3ec02642d5de1bed359311c677ce5bf2fd711ad7ae62163f746de97e432
+        md5: a664c33e266e3a29ccbcd1cf4846070f
+        size: 21075456
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1130,8 +1082,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:05Z
-          source_ref: e98c30a78392b6ebe897f0ed74312614ce340d2e
+          reviewed_at: 2026-10-22T13:38:51Z
+          source_ref: a8f211bcb6895fb8f93c04af02144c66b9426374
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - recommended: false
@@ -1142,7 +1094,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.19.0-0002
+      release: v0.19.0-0003
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1169,32 +1121,20 @@ packages:
           小時的工作會定期移除。卸載後 App 資料仍保留於 Container Manager 儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          0.19.0-0002
+          0.19.0-0003
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
-
-          - No NAS tests were performed for this release.
-
-          - The official Bun image is unchanged, including upstream dasel/gosu
-          Go binaries.
+          Rebuild 0.19.0-0003 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Official images and application sources are unchanged.
         zh-TW: >-
-          0.19.0-0002
+          0.19.0-0003
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
-
-          - 本輪未執行 NAS 測試。
-
-          - 官方 Bun 映像保持原樣，包含上游 dasel／gosu Go binaries。
+          0.19.0-0003 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          官方映像與上游程式維持原樣。
     pins:
       - package: SynoPkgConvertX
-        version: 0.19.0-0002
+        version: 0.19.0-0003
         arch:
           - apollolake
           - avoton
@@ -1223,9 +1163,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 3c4034f5451671168c7ca816e6109e7b209865587ccc18031dca3280c594d85c
-        md5: 6aa789a13665953233107c4ff59c416e
-        size: 19834368
+        sha256: 94a52534155cf682605de065f66215057bac0c5ade31f7f1bb2d384d78c8a336
+        md5: 92ebbd6270b2b7327a6e1f8fd9c147df
+        size: 19936768
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1242,8 +1182,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:06Z
-          source_ref: 832d6bdd0e3494e42f1c2d62d02eaf67e28f9cae
+          reviewed_at: 2026-10-22T13:38:52Z
+          source_ref: aee0a6917de0415699268a96ba12b035a1619903
           source_repo: synopackageland/syno-pkg-land-convertx
   - recommended: false
     featured: false
@@ -1253,7 +1193,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.3.3-0004
+      release: v3.3.3-0005
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1282,32 +1222,22 @@ packages:
           儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          3.3.3-0004
+          3.3.3-0005
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
-
-          - No NAS tests were performed for this release.
-
-          - Official application and sidecar images are unchanged, including
-          older gosu Go binaries.
+          Rebuild 3.3.3-0005 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Official images and application sources are unchanged. Check the
+          selected shared folder permissions before starting; grant the package account the required access
+          in DSM.
         zh-TW: >-
-          3.3.3-0004
+          3.3.3-0005
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
-
-          - 本輪未執行 NAS 測試。
-
-          - 官方 App 與 sidecar 映像保持原樣，包含較舊 Go toolchain 的 gosu binaries。
+          3.3.3-0005 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          官方映像與上游程式維持原樣。 啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.3.3-0004
+        version: 3.3.3-0005
         arch:
           - apollolake
           - avoton
@@ -1336,9 +1266,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 62df07e8813195b2177806e775a76740f0b1ff34d9f02466d88e303acbdeda43
-        md5: 240315ef260eceaf0e9c6b7f2df9be2e
-        size: 19913728
+        sha256: c44d973575a7fedbe49b27e6bd2a3a09e40a95df7664c331397e8de5a55a5e43
+        md5: 9e2dc68f30bf5e7ab637131f5bf01ce8
+        size: 20013056
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1355,8 +1285,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:07Z
-          source_ref: 638bfcf8b07066b0dd31e14860811ef348832c4c
+          reviewed_at: 2026-10-22T13:38:53Z
+          source_ref: 051f677c48c538e4a210ca120fe944575d1dfa4f
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - recommended: false
     featured: false
@@ -1366,7 +1296,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0003
+      release: v1.37.4-0004
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1397,39 +1327,20 @@ packages:
           登入狀態另行管理，卸載後資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          1.37.4-0003
+          1.37.4-0004
 
-          - Security rebuild with published SDK/App/CLI/templates 0.25.0,
-          executor/v0.24.0 and UI release set 0.14.0.
 
-          - All package-owned Go executables use go1.26.10; official upstream
-          image unchanged.
-
-          - Published CLI inspection fix resolves native
-          diagnostic/settings-hook validation; check/build/inspect pass with
-          findings=[].
-
-          - Use the official Vaultwarden icon with source/license attribution;
-          existing names preserved.
-
-          - Offline verification only; no NAS tests were performed.
+          Rebuild 1.37.4-0004 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Official images and application sources are unchanged.
         zh-TW: >-
-          1.37.4-0003
+          1.37.4-0004
 
-          - 使用正式 SDK/App/CLI/templates 0.25.0、executor/v0.24.0 與 UI release set
-          0.14.0 安全重建。
 
-          - 自有 Go 執行檔使用 go1.26.10；官方上游映像不變。
-
-          - 正式 CLI 修正 native diagnostic／settings hook 檢查；check/build/inspect
-          通過，findings=[]。
-
-          - 使用官方 Vaultwarden 圖示並註記來源與授權，保留既有名稱。
-
-          - 本輪僅離線驗證，未執行 NAS 測試。
+          1.37.4-0004 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          官方映像與上游程式維持原樣。
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0003
+        version: 1.37.4-0004
         arch:
           - apollolake
           - avoton
@@ -1458,9 +1369,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c4e1808628cadebddeb5d4262a92ab5edfb22fe045873b41f20b281f576a1f2a
-        md5: 06daa9bc281ac124f02ebb01bae351b5
-        size: 21005312
+        sha256: ce9f712f3f235a9322a5094aaeb58e08da66ad74c617f8da2c509082cf2c625f
+        md5: d0bdb70013da5c9976a1bc4e8d29412e
+        size: 21105152
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1477,8 +1388,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T06:26:30Z
-          source_ref: f4b46250cbdbe0e48f87aa6231f2f7b01e7be76e
+          reviewed_at: 2026-10-22T13:38:54Z
+          source_ref: 27b229c39559e98ba18ba34c61d531ce64b3dff2
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - recommended: false
     featured: false
@@ -1488,7 +1399,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0003
+      release: v0.64.2-0004
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1518,32 +1429,22 @@ packages:
           資料仍保留於 Container Manager 儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          0.64.2-0003
+          0.64.2-0004
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
-
-          - No NAS tests were performed for this release.
-
-          - The official Navidrome binary remains go1.27.1; an upstream image
-          update remains necessary.
+          Rebuild 0.64.2-0004 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Official images and application sources are unchanged. Check the
+          selected shared folder permissions before starting; grant the package account the required access
+          in DSM.
         zh-TW: >-
-          0.64.2-0003
+          0.64.2-0004
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
-
-          - 本輪未執行 NAS 測試。
-
-          - 官方 Navidrome binary 仍為 go1.27.1，仍待上游更新映像。
+          0.64.2-0004 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          官方映像與上游程式維持原樣。 啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0003
+        version: 0.64.2-0004
         arch:
           - apollolake
           - avoton
@@ -1572,9 +1473,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 12cf3f9477de6635fb24259d44910a5fe6d57b14a8e70d1888340eda6acc2030
-        md5: 65bd05a17cb982c7089e25bbb3d011ae
-        size: 31438848
+        sha256: cae3158ec48335590bd87f3cd76b524a77623c6a8009837116755a61b05194e1
+        md5: 80273bb41f7e74b8be080b87ef196a65
+        size: 31538176
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1591,8 +1492,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:08Z
-          source_ref: 1ff98f49015b695a3fd0aa7a25c0a684acba8cf4
+          reviewed_at: 2026-10-22T13:38:55Z
+          source_ref: fc1e9b24ae6a884ee1b9ee8ecf56962b80bfaab2
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - recommended: false
@@ -1603,7 +1504,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.2-0002
+      release: v2026.10.2-0003
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1632,31 +1533,20 @@ packages:
           儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2026.10.2-0002
+          2026.10.2-0003
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
-
-          - No NAS tests were performed for this release.
-
-          - The official image retains older upstream go2rtc/tempio Go binaries.
+          Rebuild 2026.10.2-0003 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
+          Maintainer: Syno Package Land. Official images and application sources are unchanged.
         zh-TW: >-
-          2026.10.2-0002
+          2026.10.2-0003
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
-
-          - 本輪未執行 NAS 測試。
-
-          - 官方映像仍保留上游舊版 Go toolchain 的 go2rtc／tempio binaries。
+          2026.10.2-0003 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package
+          Land。 官方映像與上游程式維持原樣。
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.2-0002
+        version: 2026.10.2-0003
         arch:
           - apollolake
           - avoton
@@ -1685,9 +1575,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 0b92797f7f43f61eed03d14409c0ac4706e4aa292a0a5d6e62a866aa2925fb54
-        md5: 7494ace26e62567bfede9a3d69db4ca2
-        size: 20064768
+        sha256: 4153289ecac1300a6bfd84bd528ee0256f7618e74de86837e6ffa1a043e8ff78
+        md5: 17ce182a61908098e48e6a632f23a280
+        size: 20166144
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1704,8 +1594,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:09Z
-          source_ref: 841b12dcd3db1d97adae0431f145bd7e40a92435
+          reviewed_at: 2026-10-22T13:38:56Z
+          source_ref: a671694b8ebd650095127c083d2afae511015373
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
 publishers:
