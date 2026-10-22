@@ -1482,13 +1482,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0002
+      release: v1.37.4-0003
       access: public
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-vaultwarden
-      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0002
+      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0003
       issues_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/issues
       license: AGPL-3.0-only; packaging MIT; Web Vault and dependencies retain their
         respective licenses
@@ -1529,8 +1529,8 @@ packages:
 
 
           Requires DSM 7.2.1 or later, x86_64 and Container Manager. Built with
-          published CLI/templates/SDK/App 0.22.0, executor/v0.20.0 and template
-          UI 0.12.5; official upstream images and UI remain unchanged.
+          published CLI/templates/SDK/App 0.25.0, executor/v0.24.0 and template
+          UI 0.14.0; official upstream images and UI remain unchanged.
 
 
           Data retention: Container Manager named volumes survive uninstall even
@@ -1551,29 +1551,44 @@ packages:
 
 
           需 x86_64、DSM 7.2.1 或以上與 Container Manager。使用正式 CLI/templates/SDK/App
-          0.22.0、executor/v0.20.0 與 UI 0.12.5，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留
+          0.25.0、executor/v0.24.0 與 UI 0.14.0，沿用官方映像與介面。卸載即使勾選刪除資料，仍會保留
           Container Manager named
           volumes；請備份並另行管理保留資料。本版為預覽版，不列為推薦套件；對應原始碼與整合文件見 Release tag。
       changelog:
         en: >-
-          1.37.4-0002
+          1.37.4-0003
 
-          - Initial package release using published framework 0.22.0,
-          executor/v0.20.0 and UI 0.12.5.
+          - Security rebuild with published SDK/App/CLI/templates 0.25.0,
+          executor/v0.24.0 and UI release set 0.14.0.
 
-          - Verified native installation, DSM main-menu sign-in, the primary App
-          function, native stop/start and uninstall retention behavior.
+          - All package-owned Go executables use go1.26.10; official upstream
+          image unchanged.
 
-          - Preview; not recommended. Named data volumes survive both uninstall
-          choices.
-        zh-TW: |-
-          1.37.4-0002
-          - 首次套件發佈，使用正式 framework 0.22.0、executor/v0.20.0 與 UI 0.12.5。
-          - 已驗證原生安裝、DSM 主選單登入、App 主要功能、原生 stop/start 與卸載保留行為。
-          - 預覽版，不列為推薦套件；兩種卸載選項都保留 named data volumes。
+          - Published CLI inspection fix resolves native
+          diagnostic/settings-hook validation; check/build/inspect pass with
+          findings=[].
+
+          - Use the official Vaultwarden icon with source/license attribution;
+          existing names preserved.
+
+          - Offline verification only; no NAS tests were performed.
+        zh-TW: >-
+          1.37.4-0003
+
+          - 使用正式 SDK/App/CLI/templates 0.25.0、executor/v0.24.0 與 UI release set
+          0.14.0 安全重建。
+
+          - 自有 Go 執行檔使用 go1.26.10；官方上游映像不變。
+
+          - 正式 CLI 修正 native diagnostic／settings hook 檢查；check/build/inspect
+          通過，findings=[]。
+
+          - 使用官方 Vaultwarden 圖示並註記來源與授權，保留既有名稱。
+
+          - 本輪僅離線驗證，未執行 NAS 測試。
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0002
+        version: 1.37.4-0003
         arch:
           - apollolake
           - avoton
@@ -1602,9 +1617,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 93dbb523236284ed80ac3b3c83b9b8e69f5b9a7acd1f76032480ae367062b9eb
-        md5: ef7cb98e12d958bfcf74a7c50f8dce46
-        size: 20967936
+        sha256: c4e1808628cadebddeb5d4262a92ab5edfb22fe045873b41f20b281f576a1f2a
+        md5: 06daa9bc281ac124f02ebb01bae351b5
+        size: 21005312
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1621,8 +1636,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-21T11:08:56Z
-          source_ref: 7a3c19900fe93363b72f0b3c12e6dada2ffb58e1
+          reviewed_at: 2026-10-22T06:26:30Z
+          source_ref: f4b46250cbdbe0e48f87aa6231f2f7b01e7be76e
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - recommended: false
     featured: false
