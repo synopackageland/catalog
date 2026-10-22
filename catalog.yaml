@@ -540,7 +540,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.7-0015
+      release: v4.2.7-0016
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -599,32 +599,33 @@ packages:
           connexion administrateur DSM requise
       changelog:
         en: >-
-          4.2.7-0015
+          4.2.7-0016
 
-          - Security rebuild with released SDK/App/CLI/templates 0.24.0 and UI
-          0.14.0; package-owned Go binaries use go1.26.10.
+          - One main-menu icon, OpenList, for DSM administrators: it opens the
+          native OpenList UI in a new tab, signed in with DSM. Package Center's
+          Open does the same; the package has no DSM window of its own.
 
-          - Official App icon with source/license attribution; existing display
-          names are preserved.
+          - The OpenList administrator binding stays automatic; show or change it
+          with ctl owner get/set.
 
-          - No NAS tests were performed for this release.
+          - If OpenList exits unexpectedly, the package restarts it, with backoff
+          and at most 5 attempts in 5 minutes.
 
-          - The unmodified official OpenList binary remains go1.27.1; its
-          upstream security update remains pending.
+          - Built with released CLI/templates/SDK/App 0.26.0; the unmodified
+          official OpenList binary is unchanged.
         zh-TW: >-
-          4.2.7-0015
+          4.2.7-0016
 
-          - 使用已發佈 SDK/App/CLI/templates 0.24.0、UI 0.14.0 安全重建；自有 Go binaries 使用
-          go1.26.10。
+          - 主選單只有一個 OpenList 圖示，只給 DSM 管理員：以 DSM 登入、在新分頁開原生 OpenList。套件中心「開啟」也一樣；套件不再有自己的 DSM 視窗。
 
-          - 使用官方圖示並保留來源、授權及既有顯示名稱。
+          - OpenList 管理員綁定維持自動對應；用 ctl owner get/set 查看或變更。
 
-          - 本輪未執行 NAS 測試。
+          - OpenList 異常結束時，套件會自動重啟它（逐步延遲，5 分鐘內最多 5 次）。
 
-          - 未修改的官方 OpenList binary 仍為 go1.27.1，仍待上游安全更新。
+          - 使用已發佈 CLI/templates/SDK/App 0.26.0 建置；未修改的官方 OpenList binary 不變。
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.7-0015
+        version: 4.2.7-0016
         arch:
           - apollolake
           - avoton
@@ -653,9 +654,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 131b172f1488db3bb9d206b6fea55c5ccf1d5401493090a891a1c7df89d26dcb
-        md5: 3cfbb7d2c93b03a4600ebcb53850a95e
-        size: 70610944
+        sha256: d01ccff64c644aa61f94b2bcd7b1c9e4b6e99169c4a29bf4921f6bec9b57182a
+        md5: 90a7b6877a5e74add8f3213e3d9cbe31
+        size: 70364160
         facts:
           built_with: sdk
           sdk_backend: go
@@ -672,8 +673,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T05:22:02Z
-          source_ref: 97aec12de288a01d0908b271988612caf6a4f5f9
+          reviewed_at: 2026-10-22T12:56:22Z
+          source_ref: b0bd67001092812fee7423b1099c7d88343c9a64
           source_repo: synopackageland/syno-pkg-land-openlist
   - recommended: false
     featured: false
