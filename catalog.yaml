@@ -173,7 +173,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0064
+      release: v0.1.0-0066
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -215,33 +215,46 @@ packages:
           管理員登入
       changelog:
         en: |-
-          0.1.0-0064
+          0.1.0-0066
 
-          - DSM External Access: compare the current hostname with a stable, running Cloudflare own-domain or token tunnel address; apply the suggestion only after administrator confirmation and read back the result. Temporary and private addresses are never suggested.
-          - ctl: read-only `external status` and explicit `external set` with dry-run and confirmation; diagnosis includes the same address advice.
-          - The method cards and comparison table explain who provides HTTPS and which direct connections need a DSM certificate.
+          - Fix: opening Connect on a DSM with IP checking enabled signed the user out. The page now calls DSM APIs from the browser on the same origin instead of the backend forwarding the user's sign-in cookie.
+          - Cloudflare in three tiers: a temporary address, an own domain for web pages, and an own domain plus TCP services. The overview cards, comparison table, recommend and diagnose name each tier's scope and what the connecting side installs.
+          - An own domain can publish Synology Drive Client (6690), SMB (445) or any TCP port, each on its own name. The Cloudflare page shows each service's client steps with a copyable cloudflared command; ctl returns the same instructions.
+          - Adding TCP services keeps the running web address until the new names are routed; a failed or timed-out sign-in leaves the address and settings unchanged. A failed own domain can be reconnected from its saved name without signing in again.
+          - Each TCP service links to Cloudflare One with copyable values for an Access application and an email allow list, and says the access limit is not yet confirmed. ctl adds `cloudflare access get/set`.
+          - One primary action per screen: Cloudflare starts by choosing one way, then a single button that shows its own progress. Status details and actions stay in the status section; NetBird's sign-in code stays beside its prompt; Tailscale and overview layouts are tidier. UI strings drop their final period.
+          - Tailscale TCP services: SMB (445), Drive Client (6690) and other TCP ports from the NAS service catalog are served within the tailnet only. Each connecting device needs the Tailscale app, the same tailnet and access-rule permission; Funnel stays web-only. Not yet verified on a NAS.
+          - Buttons follow DSM's button policy (UI 0.14.7): default sizes, tool buttons in sections and cards, capsules only in form and dialog footers with Cancel before the one primary, and at most one primary per section.
+          - UI 0.14.7 (with 0.14.6): narrow windows use a navigation drawer, the comparison table keeps fixed column widths, ordered lists are numbered, disabled option descriptions are muted. Includes 0.1.0-0065's UI 0.14.5 fix for full-page iPhone Safari launches staying in the desktop layout.
         zh-TW: |-
-          0.1.0-0064
+          0.1.0-0066
 
-          - DSM 外部存取：比較目前主機名稱與執行中的 Cloudflare 自有網域或 token 通道穩定網址；由管理員確認後才套用建議，並讀回結果。不建議臨時或私人網路位址。
-          - ctl 新增唯讀 `external status` 與明確的 `external set`，支援 dry-run 與確認；診斷提供相同的網址建議。
-          - 方案卡與比較表說明由誰提供 HTTPS，以及哪些直接連線需要 DSM 憑證。
+          - 修正：在開啟 IP 檢查的 DSM 上開啟 Connect 會被登出。改由前端同源直接呼叫 DSM API，後端不再代轉使用者的登入 cookie。
+          - Cloudflare 分三層：臨時網址、自有網域（網頁）、自有網域＋TCP 服務。總覽方案卡、比較表、recommend 與 diagnose 都標示各層的涵蓋範圍，以及連線端要安裝什麼。
+          - 自有網域可用各自的名稱公開 Synology Drive Client（6690）、SMB（445）或任何 TCP port。Cloudflare 頁顯示每個服務的用戶端步驟與可複製的 cloudflared 指令；ctl 回傳相同說明。
+          - 新增 TCP 服務時保留執行中的網頁網址，直到新名稱完成路由；登入失敗或逾時不會改變網址與設定。自有網域連線失敗時，可用已存的名稱重新連線，不必再登入。
+          - 每個 TCP 服務提供 Cloudflare One 連結與可複製的 Access 應用程式、email 允許清單設定值，並註明存取限制尚未確認。ctl 新增 `cloudflare access get/set`。
+          - 每個畫面只有一個主要動作：Cloudflare 先選一種方式，再由單一按鈕顯示進度。狀態細節與動作都在狀態區；NetBird 登入代碼緊接在提示旁；Tailscale 與總覽版面更整齊。UI 字串不再以句點結尾。
+          - Tailscale TCP 服務：NAS 服務清單中的 SMB（445）、Drive Client（6690）與其他 TCP port 只在 tailnet 內提供。每台連線裝置需安裝 Tailscale、加入同一個 tailnet，並由存取規則允許；Funnel 仍只限網頁。尚未在 NAS 實機驗證。
+          - 按鈕樣式對齊 DSM（UI 0.14.7）：使用預設尺寸；區塊與卡片內用工具按鈕；膠囊按鈕只放在表單與對話框 footer，取消在前、唯一的主要按鈕在後；每個區塊最多一個主要按鈕。
+          - UI 0.14.7（含 0.14.6）：窄視窗改用導覽抽屜、比較表固定欄寬、有序清單顯示編號、停用選項的說明變淡。包含 0.1.0-0065 的 UI 0.14.5 修正：iPhone Safari 整頁開啟不再停留在桌面版面。
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-tailscale.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-ipv6.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0066.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-choose-0066.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-tcp-0066.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-tcp-0066.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0066.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0064
+        version: 0.1.0-0066
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 5434917829d0528eb7c174f03673370f119b0107399af43b97306bce94d80fba
-        md5: af20386597863eaaf8c6c018a5976a73
-        size: 9063424
+        sha256: 65e5539d77ca1369f8612d348b1d2ffd44c4299937ccef4899cb2ae7127a1525
+        md5: 85e13a7df1489449559c4b6b720dd4e6
+        size: 9147904
         facts:
           built_with: sdk
           sdk_backend: go
@@ -258,19 +271,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T02:12:36Z
-          source_ref: 1fb333e72ccd9244214544b6f96520c48f97a31e
+          reviewed_at: 2026-10-23T06:25:33Z
+          source_ref: bf9c1431c9982607fd0804e3cfeb333ae0cea4a0
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0064
+        version: 0.1.0-0066
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: fc26bb30bb95e6721f925871c45f0d9a11d202d7e43270cb818f64323f314eca
-        md5: a3ac9c6a7e107492986996d44d532b20
-        size: 9580032
+        sha256: d35ac6ccca86793c823b66e6018bb47815563c7080056579a8400d9f8174cada
+        md5: 7a67d976ed1927b301e43708306123ba
+        size: 9665536
         facts:
           built_with: sdk
           sdk_backend: go
@@ -287,11 +300,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T02:12:37Z
-          source_ref: 1fb333e72ccd9244214544b6f96520c48f97a31e
+          reviewed_at: 2026-10-23T06:25:34Z
+          source_ref: bf9c1431c9982607fd0804e3cfeb333ae0cea4a0
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0064
+        version: 0.1.0-0066
         arch:
           - apollolake
           - avoton
@@ -320,9 +333,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: db3b40696bacbdce8f6e728f6e881b620f40c04720aa121e09a3ec0ba6ece019
-        md5: 5039ae456e937c73931c227cbf4a50e7
-        size: 9935872
+        sha256: 73aee12c3befacd099f7ed7daa3e181cd29eb253c9df9261dc2b4365ce2af6d2
+        md5: 35f8b88cfd61e0020dccf6f54da969e3
+        size: 10028032
         facts:
           built_with: sdk
           sdk_backend: go
@@ -339,8 +352,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T02:12:39Z
-          source_ref: 1fb333e72ccd9244214544b6f96520c48f97a31e
+          reviewed_at: 2026-10-23T06:25:35Z
+          source_ref: bf9c1431c9982607fd0804e3cfeb333ae0cea4a0
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
