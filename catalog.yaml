@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1585
+      release: v0.1.1-1587
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -24,48 +24,46 @@ packages:
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
       changelog:
         en: >-
-          0.1.1-1585
+          0.1.1-1587
 
 
-          Rebuild 0.1.1-1585 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land.
+          Update UI to 0.14.8 and put Suggested cleanup in a white card matching the Overview space breakdown.
+          Rebuild with SDK/App/CLI/templates 0.27.0 and executor/v0.27.0 to fix idle writes from executor
+          task-inventory and DSM scheduler verification.
 
 
-          The executor remains v0.24.0, but administrator reapproval is required: root programs
-          cli/lifecycle changed since 0.1.1-1583 (including the fixes already merged on the default branch).
-          Declared permissions and task templates are unchanged.
-
-
-          Published builds advance from 0.1.1-1583 directly to 0.1.1-1585. Build 1584 was used for testing
-          and is skipped for the official release.
+          Root programs, declared permissions and task templates are unchanged from 0.1.1-1586.
+          Offline approval retention is eligible for this executor-only update, conditional on the installed
+          protected runtime and exact DSM task readback matching the baseline. Follow the normal
+          administrator approval flow if requested by the app.
         zh-TW: >-
-          0.1.1-1585
+          0.1.1-1587
 
 
-          0.1.1-1585 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
+          UI 更新至 0.14.8，建議清理表格改為與 Overview 空間分布一致的白色卡片。
+          使用 SDK/App/CLI/templates 0.27.0 與 executor/v0.27.0 重建，修正 executor task inventory
+          與 DSM scheduler 驗證在閒置時產生的寫入。
 
 
-          executor 維持 v0.24.0，但 cli／lifecycle root 程式與 0.1.1-1583 不同（包含預設分支已合併修正），升級後須由管理員重新核准系統存取；宣告權限與
-          task template 維持不變。
-
-
-          正式上架版由 0.1.1-1583 直接升至 0.1.1-1585；1584 已用於測試，正式發版跳過該 build。
+          相較 0.1.1-1586，root 程式、宣告權限與 task template 不變。此次 executor-only 更新的
+          離線核准保留判定為 eligible，實際仍依已安裝 protected runtime 與 exact DSM task readback
+          是否吻合；App 若要求，請由管理員依正常流程核准。
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1587.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1587.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1587.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition-1587.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1585
+        version: 0.1.1-1587
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 041c707f38f5a62c5e2f54d8bfbc729e395cec0cd9902cfa037d19f619c02d0e
-        md5: 7e5ddeeebdfb1396ee9d021c9e884df3
-        size: 13122560
+        sha256: c66b81d254a793bb3c33832c0ffb4fa6a917039526d066211881e72c1d998995
+        md5: 46787b1d118fe28fae338ae2d223e90e
+        size: 13120512
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -82,19 +80,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T14:16:21Z
-          source_ref: 7e4a9666c454a231b75338baab7a947ec30c4c09
+          reviewed_at: 2026-10-23T10:13:58Z
+          source_ref: 454d37b5e4fa51b5911f46621e1fab41184ead6c
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1585
+        version: 0.1.1-1587
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 8d63bc3029edf998ee18f6da0dba0eddc5a2d078cd7f698691e512cfd3061c25
-        md5: 1eaef73908c0a038f5f0ae1b8d64b058
-        size: 13814784
+        sha256: f3718a58768bc560153ae1fa9305c3205713854aedc2b25c785484412d76c922
+        md5: 3900b838c4e27420d1d2731a60300ee3
+        size: 13809152
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -111,11 +109,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T14:16:21Z
-          source_ref: 7e4a9666c454a231b75338baab7a947ec30c4c09
+          reviewed_at: 2026-10-23T10:13:58Z
+          source_ref: 454d37b5e4fa51b5911f46621e1fab41184ead6c
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1585
+        version: 0.1.1-1587
         arch:
           - apollolake
           - avoton
@@ -144,9 +142,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7e40b6ec2db53183d4ca893d786a47f5131b9f36fc3e0e04aa8abdce1b43c4ed
-        md5: e1af5443f7a6f0cc124c9ab5b9097515
-        size: 14115840
+        sha256: 526b7745a3406998723c8d9d0f13f23d02b4b723bb336866e8b73b0a884edd64
+        md5: 8693c2265d2f4c2011f156e30dd4f066
+        size: 14109184
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -163,8 +161,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T14:16:21Z
-          source_ref: 7e4a9666c454a231b75338baab7a947ec30c4c09
+          reviewed_at: 2026-10-23T10:13:58Z
+          source_ref: 454d37b5e4fa51b5911f46621e1fab41184ead6c
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: utilities
