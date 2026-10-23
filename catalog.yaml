@@ -540,7 +540,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.7-0017
+      release: v4.2.7-0018
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -598,31 +598,31 @@ packages:
           le dossier ne suffit pas. L’accès WebDAV externe est indisponible. Version en aperçu ;
           connexion administrateur DSM requise
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/01-files-0017.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0017.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/01-files-0018.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
         en: >-
-          4.2.7-0017
+          4.2.7-0018
 
-          - Rebuild with released SDK/App/CLI/templates 0.27.0; keep the official
-          OpenList binary and native UI unchanged.
+          - Use Package Center for service status and the original OpenList UI
+          for file, storage, task, user and settings management.
 
-          - Remove unused integration scaffold and the 45 native business ctl
-          commands. Use OpenList to manage files, storage, tasks, users and settings.
+          - Keep DSM administrator sign-in, the existing administrator binding
+          on upgrades, and daemon restart on failure.
 
-          - Retain DSM administrator sign-in, automatic daemon restart, status
-          and OIDC owner settings. No container runtime is required.
+          - Built with released SDK/App/CLI/templates 0.27.0. The official
+          OpenList binary and native UI are unchanged; Container Manager is not required.
         zh-TW: >-
-          4.2.7-0017
+          4.2.7-0018
 
-          - 使用已發佈 SDK/App/CLI/templates 0.27.0 重建；保留未修改的官方 binary 與原生 UI。
+          - 狀態由套件中心提供；檔案、儲存、工作、使用者與設定使用原生 OpenList UI 管理。
 
-          - 刪除未使用的整合 scaffold 與 45 個原生業務 ctl 指令；檔案、儲存、工作、使用者與設定由 OpenList 管理。
+          - 保留 DSM 管理員登入、升級時的既有管理員綁定，以及 daemon 故障重啟。
 
-          - 保留 DSM 管理員登入、daemon 自動重啟、狀態與 OIDC owner 設定；不需要容器 runtime。
+          - 使用已發佈 SDK/App/CLI/templates 0.27.0 建置；官方 binary 與原生 UI 不變，不需要 Container Manager。
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.7-0017
+        version: 4.2.7-0018
         arch:
           - apollolake
           - avoton
@@ -651,9 +651,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2003ce6976c8d266bc3dcb85e321d613ae5b7104966ba5a523545968a857e0c1
-        md5: a7d8e1d3ae577f45745824c755d751da
-        size: 70136320
+        sha256: ffaa782828c914f48f186855e5ee2fc95ef7d981d91d39f9656dc3f3aed84d7e
+        md5: a367137ac34ad1c94d6f529a908475ca
+        size: 69419520
         facts:
           built_with: sdk
           sdk_backend: go
@@ -666,12 +666,11 @@ packages:
           conflicts: []
           shared_folders: []
           signed: false
-          ctl: true
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T10:15:37Z
-          source_ref: e31f914445912e5842b849a27999475c6da750bc
+          reviewed_at: 2026-10-23T10:34:08Z
+          source_ref: 1c89545a95a9cc5bce444f8f8bca9c291c87bf43
           source_repo: synopackageland/syno-pkg-land-openlist
   - recommended: false
     featured: false
