@@ -171,7 +171,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0066
+      release: v0.1.0-0067
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -183,81 +183,89 @@ packages:
         Tailscale and NetBird clients are downloaded from their vendors under
         their own licenses. Source code is not public at this time.
       description:
-        en: Reach your NAS remotely without opening router ports. Turn Cloudflare Tunnel,
-          Tailscale, NetBird or IPv6 direct access on or off from one page
-        zh-TW: 不必在路由器開放連接埠，也能從外部連回 NAS。在同一頁啟用或停用 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連
-        zh-CN: 无需在路由器开放端口，也能从外部连回 NAS。在同一页启用或停用 Cloudflare Tunnel、Tailscale、NetBird 与 IPv6 直连
-        ja: ルーターのポートを開放せずに外部から NAS へ接続できます。Cloudflare Tunnel、Tailscale、NetBird、IPv6 直接接続を 1
-          つの画面で有効化・無効化できます
-        ko: 라우터 포트를 열지 않고도 외부에서 NAS에 접속해요. Cloudflare Tunnel, Tailscale, NetBird, IPv6 직접 연결을 한
-          화면에서 켜고 끌 수 있어요
-        de: Greifen Sie aus der Ferne auf Ihr NAS zu, ohne Router-Ports zu öffnen. Cloudflare
-          Tunnel, Tailscale, NetBird und IPv6-Direktzugriff lassen sich auf einer Seite ein- und
-          ausschalten
-        fr: Accédez à votre NAS à distance sans ouvrir de ports sur le routeur. Activez ou
-          désactivez Cloudflare Tunnel, Tailscale, NetBird et l’accès direct IPv6 depuis une
-          seule page
-        es: Acceda a su NAS de forma remota sin abrir puertos en el router. Active o desactive
-          Cloudflare Tunnel, Tailscale, NetBird y el acceso directo por IPv6 desde una sola
-          página
+        en: Reach your NAS remotely without opening router ports. Turn Cloudflare
+          Tunnel, Tailscale, NetBird or IPv6 direct access on or off from one
+          page
+        zh-TW: 不必在路由器開放連接埠，也能從外部連回 NAS。在同一頁啟用或停用 Cloudflare Tunnel、Tailscale、NetBird 與
+          IPv6 直連
+        zh-CN: 无需在路由器开放端口，也能从外部连回 NAS。在同一页启用或停用 Cloudflare Tunnel、Tailscale、NetBird 与
+          IPv6 直连
+        ja: ルーターのポートを開放せずに外部から NAS へ接続できます。Cloudflare Tunnel、Tailscale、NetBird、IPv6
+          直接接続を 1 つの画面で有効化・無効化できます
+        ko: 라우터 포트를 열지 않고도 외부에서 NAS에 접속해요. Cloudflare Tunnel, Tailscale, NetBird, IPv6
+          직접 연결을 한 화면에서 켜고 끌 수 있어요
+        de: Greifen Sie aus der Ferne auf Ihr NAS zu, ohne Router-Ports zu öffnen.
+          Cloudflare Tunnel, Tailscale, NetBird und IPv6-Direktzugriff lassen
+          sich auf einer Seite ein- und ausschalten
+        fr: Accédez à votre NAS à distance sans ouvrir de ports sur le routeur. Activez
+          ou désactivez Cloudflare Tunnel, Tailscale, NetBird et l’accès direct
+          IPv6 depuis une seule page
+        es: Acceda a su NAS de forma remota sin abrir puertos en el router. Active o
+          desactive Cloudflare Tunnel, Tailscale, NetBird y el acceso directo
+          por IPv6 desde una sola página
         it: Raggiungi il NAS da remoto senza aprire porte sul router. Attiva o disattiva
-          Cloudflare Tunnel, Tailscale, NetBird e l’accesso diretto IPv6 da un’unica pagina
+          Cloudflare Tunnel, Tailscale, NetBird e l’accesso diretto IPv6 da
+          un’unica pagina
       long_description:
-        en: "Reach your NAS from outside your home network. Manage Cloudflare Tunnel, Tailscale,
-          NetBird and IPv6 direct connections from one page, and turn each method on or off
-          independently. Cloudflare publishes the DSM web page, and with your own domain it can
-          also let computers running cloudflared reach TCP services such as Synology Drive
-          Client or SMB. Tailscale and NetBird let your own devices reach the NAS services you
-          allow, such as Drive Client or SMB; NetBird access also follows your management server
-          policy. Development preview: connectivity depends on your network and provider setup;
+        en: "Reach your NAS remotely without opening router ports.
+
+
+          - Choose Cloudflare Tunnel, Tailscale, NetBird or direct IPv6, and
+          manage each connection independently
+
+          - Use Cloudflare for DSM web pages; an own domain can also provide
+          Drive TCP access to computers running cloudflared
+
+          - Use Tailscale or NetBird for private Drive and SMB access, subject
+          to your access rules or management policy
+
+
           DSM administrator sign-in is required"
-        zh-TW: "從外部網路連回 NAS，在同一頁管理 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6
-          直連，並個別啟用或停用。Cloudflare 會公開 DSM 網頁；使用自有網域時，也能讓安裝 cloudflared
-          的電腦連到 Synology Drive Client、SMB 等 TCP 服務。Tailscale 與 NetBird 讓你自己的裝置連到你允許的
-          NAS 服務，例如 Drive Client 或 SMB；NetBird 的存取範圍也依管理伺服器政策而定。開發預覽版，連線結果依網路與服務設定而異；需
-          DSM 管理員登入"
+        zh-TW: "不必在路由器開放連接埠，也能從外部連回 NAS。
+
+
+          - 個別管理 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連
+
+          - 使用 Cloudflare 存取 DSM 網頁；自有網域也能提供 Drive TCP 存取，連線電腦需執行 cloudflared
+
+          - Drive 與 SMB 的私人存取可使用 Tailscale 或 NetBird，並依存取規則或管理伺服器政策授權
+
+
+          需使用 DSM 管理員帳號登入"
       changelog:
         en: |-
-          0.1.0-0066
+          0.1.0-0067
 
-          - Fix: opening Connect on a DSM with IP checking enabled signed the user out. The page now calls DSM APIs from the browser on the same origin instead of the backend forwarding the user's sign-in cookie.
-          - Cloudflare in three tiers: a temporary address, an own domain for web pages, and an own domain plus TCP services. The overview cards, comparison table, recommend and diagnose name each tier's scope and what the connecting side installs.
-          - An own domain can publish Synology Drive Client (6690), SMB (445) or any TCP port, each on its own name. The Cloudflare page shows each service's client steps with a copyable cloudflared command; ctl returns the same instructions.
-          - Adding TCP services keeps the running web address until the new names are routed; a failed or timed-out sign-in leaves the address and settings unchanged. A failed own domain can be reconnected from its saved name without signing in again.
-          - Each TCP service links to Cloudflare One with copyable values for an Access application and an email allow list, and says the access limit is not yet confirmed. ctl adds `cloudflare access get/set`.
-          - One primary action per screen: Cloudflare starts by choosing one way, then a single button that shows its own progress. Status details and actions stay in the status section; NetBird's sign-in code stays beside its prompt; Tailscale and overview layouts are tidier. UI strings drop their final period.
-          - Tailscale TCP services: SMB (445), Drive Client (6690) and other TCP ports from the NAS service catalog are served within the tailnet only. Each connecting device needs the Tailscale app, the same tailnet and access-rule permission; Funnel stays web-only. Not yet verified on a NAS.
-          - Buttons follow DSM's button policy (UI 0.14.7): default sizes, tool buttons in sections and cards, capsules only in form and dialog footers with Cancel before the one primary, and at most one primary per section.
-          - UI 0.14.7 (with 0.14.6): narrow windows use a navigation drawer, the comparison table keeps fixed column widths, ordered lists are numbered, disabled option descriptions are muted. Includes 0.1.0-0065's UI 0.14.5 fix for full-page iPhone Safari launches staying in the desktop layout.
+          - New guided overview explains connection options and DSM protection settings
+          - Add Drive TCP access to a Cloudflare own domain while keeping its existing web configuration; failed changes show rollback or recovery steps
+          - Keep existing Tailscale forwards when adding services
+          - Avoid unnecessary disk writes while idle
+          - Limits: active Cloudflare TCP services cannot be replaced directly. Use Tailscale or NetBird for SMB/NetBIOS
         zh-TW: |-
-          0.1.0-0066
+          0.1.0-0067
 
-          - 修正：在開啟 IP 檢查的 DSM 上開啟 Connect 會被登出。改由前端同源直接呼叫 DSM API，後端不再代轉使用者的登入 cookie。
-          - Cloudflare 分三層：臨時網址、自有網域（網頁）、自有網域＋TCP 服務。總覽方案卡、比較表、recommend 與 diagnose 都標示各層的涵蓋範圍，以及連線端要安裝什麼。
-          - 自有網域可用各自的名稱公開 Synology Drive Client（6690）、SMB（445）或任何 TCP port。Cloudflare 頁顯示每個服務的用戶端步驟與可複製的 cloudflared 指令；ctl 回傳相同說明。
-          - 新增 TCP 服務時保留執行中的網頁網址，直到新名稱完成路由；登入失敗或逾時不會改變網址與設定。自有網域連線失敗時，可用已存的名稱重新連線，不必再登入。
-          - 每個 TCP 服務提供 Cloudflare One 連結與可複製的 Access 應用程式、email 允許清單設定值，並註明存取限制尚未確認。ctl 新增 `cloudflare access get/set`。
-          - 每個畫面只有一個主要動作：Cloudflare 先選一種方式，再由單一按鈕顯示進度。狀態細節與動作都在狀態區；NetBird 登入代碼緊接在提示旁；Tailscale 與總覽版面更整齊。UI 字串不再以句點結尾。
-          - Tailscale TCP 服務：NAS 服務清單中的 SMB（445）、Drive Client（6690）與其他 TCP port 只在 tailnet 內提供。每台連線裝置需安裝 Tailscale、加入同一個 tailnet，並由存取規則允許；Funnel 仍只限網頁。尚未在 NAS 實機驗證。
-          - 按鈕樣式對齊 DSM（UI 0.14.7）：使用預設尺寸；區塊與卡片內用工具按鈕；膠囊按鈕只放在表單與對話框 footer，取消在前、唯一的主要按鈕在後；每個區塊最多一個主要按鈕。
-          - UI 0.14.7（含 0.14.6）：窄視窗改用導覽抽屜、比較表固定欄寬、有序清單顯示編號、停用選項的說明變淡。包含 0.1.0-0065 的 UI 0.14.5 修正：iPhone Safari 整頁開啟不再停留在桌面版面。
+          - 新增用途指引，說明連線方式與 DSM 保護設定
+          - Cloudflare 自有網域可新增 Drive TCP 存取並保留原網頁設定；變更失敗時顯示回復結果或復原步驟
+          - Tailscale 新增服務時保留原有轉送設定
+          - 減少閒置時不必要的磁碟寫入
+          - 限制：Cloudflare 已有 TCP 服務時，不支援直接替換；SMB／NetBIOS 請使用 Tailscale 或 NetBird
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0066.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-choose-0066.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-tcp-0066.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-tcp-0066.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0066.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0067.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-drive-guide-0067.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-drive-0067.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-0067.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0067.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0066
+        version: 0.1.0-0067
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 65e5539d77ca1369f8612d348b1d2ffd44c4299937ccef4899cb2ae7127a1525
-        md5: 85e13a7df1489449559c4b6b720dd4e6
-        size: 9147904
+        sha256: fe9cf848e67bfee2c8d53d4870eb19bbf702e91aba32b6b473cd418445c8db4d
+        md5: 8a5dbbb450460ef2f4ec941f3ebd0122
+        size: 9297408
         facts:
           built_with: sdk
           sdk_backend: go
@@ -274,19 +282,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T06:25:33Z
-          source_ref: bf9c1431c9982607fd0804e3cfeb333ae0cea4a0
+          reviewed_at: 2026-10-23T10:19:00Z
+          source_ref: a7bc5a5c726af96f3165fd52e3596828b858e9dd
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0066
+        version: 0.1.0-0067
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: d35ac6ccca86793c823b66e6018bb47815563c7080056579a8400d9f8174cada
-        md5: 7a67d976ed1927b301e43708306123ba
-        size: 9665536
+        sha256: 7ce4f4ae9f4d6e15d6c4880339803a4a3950ba67de50303a07f32a1d9ee39036
+        md5: f8500931bf63ccd7a10e4bb5cbfa19ba
+        size: 9810432
         facts:
           built_with: sdk
           sdk_backend: go
@@ -303,11 +311,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T06:25:34Z
-          source_ref: bf9c1431c9982607fd0804e3cfeb333ae0cea4a0
+          reviewed_at: 2026-10-23T10:19:00Z
+          source_ref: a7bc5a5c726af96f3165fd52e3596828b858e9dd
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0066
+        version: 0.1.0-0067
         arch:
           - apollolake
           - avoton
@@ -336,9 +344,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 73aee12c3befacd099f7ed7daa3e181cd29eb253c9df9261dc2b4365ce2af6d2
-        md5: 35f8b88cfd61e0020dccf6f54da969e3
-        size: 10028032
+        sha256: 6edde1f691b790f1c4eae83ff6e787da99569cd32b68a838c9c72efc9931c64e
+        md5: 35cea5731312c5af64c31b5a34776721
+        size: 10183680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -355,8 +363,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T06:25:35Z
-          source_ref: bf9c1431c9982607fd0804e3cfeb333ae0cea4a0
+          reviewed_at: 2026-10-23T10:19:00Z
+          source_ref: a7bc5a5c726af96f3165fd52e3596828b858e9dd
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
