@@ -669,8 +669,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T10:34:08Z
-          source_ref: 1c89545a95a9cc5bce444f8f8bca9c291c87bf43
+          reviewed_at: 2026-10-23T10:44:24Z
+          source_ref: b892c69adf92cf9787e35687c517c56fc5413c70
           source_repo: synopackageland/syno-pkg-land-openlist
   - recommended: false
     featured: false
