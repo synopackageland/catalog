@@ -540,7 +540,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.7-0016
+      release: v4.2.7-0017
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -597,35 +597,32 @@ packages:
           dossier partagé choisi et ajoutez-le comme Local storage dans OpenList ; sélectionner
           le dossier ne suffit pas. L’accès WebDAV externe est indisponible. Version en aperçu ;
           connexion administrateur DSM requise
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/01-files-0017.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0017.png
       changelog:
         en: >-
-          4.2.7-0016
+          4.2.7-0017
 
-          - One main-menu icon, OpenList, for DSM administrators: it opens the
-          native OpenList UI in a new tab, signed in with DSM. Package Center's
-          Open does the same; the package has no DSM window of its own.
+          - Rebuild with released SDK/App/CLI/templates 0.27.0; keep the official
+          OpenList binary and native UI unchanged.
 
-          - The OpenList administrator binding stays automatic; show or change it
-          with ctl owner get/set.
+          - Remove unused integration scaffold and the 45 native business ctl
+          commands. Use OpenList to manage files, storage, tasks, users and settings.
 
-          - If OpenList exits unexpectedly, the package restarts it, with backoff
-          and at most 5 attempts in 5 minutes.
-
-          - Built with released CLI/templates/SDK/App 0.26.0; the unmodified
-          official OpenList binary is unchanged.
+          - Retain DSM administrator sign-in, automatic daemon restart, status
+          and OIDC owner settings. No container runtime is required.
         zh-TW: >-
-          4.2.7-0016
+          4.2.7-0017
 
-          - 主選單只有一個 OpenList 圖示，只給 DSM 管理員：以 DSM 登入、在新分頁開原生 OpenList。套件中心「開啟」也一樣；套件不再有自己的 DSM 視窗。
+          - 使用已發佈 SDK/App/CLI/templates 0.27.0 重建；保留未修改的官方 binary 與原生 UI。
 
-          - OpenList 管理員綁定維持自動對應；用 ctl owner get/set 查看或變更。
+          - 刪除未使用的整合 scaffold 與 45 個原生業務 ctl 指令；檔案、儲存、工作、使用者與設定由 OpenList 管理。
 
-          - OpenList 異常結束時，套件會自動重啟它（逐步延遲，5 分鐘內最多 5 次）。
-
-          - 使用已發佈 CLI/templates/SDK/App 0.26.0 建置；未修改的官方 OpenList binary 不變。
+          - 保留 DSM 管理員登入、daemon 自動重啟、狀態與 OIDC owner 設定；不需要容器 runtime。
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.7-0016
+        version: 4.2.7-0017
         arch:
           - apollolake
           - avoton
@@ -654,9 +651,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: d01ccff64c644aa61f94b2bcd7b1c9e4b6e99169c4a29bf4921f6bec9b57182a
-        md5: 90a7b6877a5e74add8f3213e3d9cbe31
-        size: 70364160
+        sha256: 2003ce6976c8d266bc3dcb85e321d613ae5b7104966ba5a523545968a857e0c1
+        md5: a7d8e1d3ae577f45745824c755d751da
+        size: 70136320
         facts:
           built_with: sdk
           sdk_backend: go
@@ -673,8 +670,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T12:56:22Z
-          source_ref: b0bd67001092812fee7423b1099c7d88343c9a64
+          reviewed_at: 2026-10-23T10:15:37Z
+          source_ref: e31f914445912e5842b849a27999475c6da750bc
           source_repo: synopackageland/syno-pkg-land-openlist
   - recommended: false
     featured: false
