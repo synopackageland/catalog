@@ -171,7 +171,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0067
+      release: v0.1.0-0068
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -234,38 +234,38 @@ packages:
           需使用 DSM 管理員帳號登入"
       changelog:
         en: |-
-          0.1.0-0067
+          0.1.0-0068
 
-          - New guided overview explains connection options and DSM protection settings
-          - Add Drive TCP access to a Cloudflare own domain while keeping its existing web configuration; failed changes show rollback or recovery steps
-          - Keep existing Tailscale forwards when adding services
-          - Avoid unnecessary disk writes while idle
-          - Limits: active Cloudflare TCP services cannot be replaced directly. Use Tailscale or NetBird for SMB/NetBIOS
+          - A three-step guide on the home page picks the way to connect by what you want to do
+          - Every way to connect shows what protects it and whether devices need an app; direct IPv6 is no longer recommended
+          - Cloudflare options have plain names: temporary address, own domain and TCP services
+          - Connection pages show their status first, then tabs; a half-filled form survives a tab switch
+          - Notices have a new, lighter look
         zh-TW: |-
-          0.1.0-0067
+          0.1.0-0068
 
-          - 新增用途指引，說明連線方式與 DSM 保護設定
-          - Cloudflare 自有網域可新增 Drive TCP 存取並保留原網頁設定；變更失敗時顯示回復結果或復原步驟
-          - Tailscale 新增服務時保留原有轉送設定
-          - 減少閒置時不必要的磁碟寫入
-          - 限制：Cloudflare 已有 TCP 服務時，不支援直接替換；SMB／NetBIOS 請使用 Tailscale 或 NetBird
+          - 首頁改成三步驟引導，依你想做的事選連線方式
+          - 每種連線方式都標示保護方式與裝置是否要裝 App；IPv6 直連不再推薦
+          - Cloudflare 選項改用直白名稱：臨時網址、自有網域與 TCP 服務
+          - 連線頁先顯示狀態，再分頁呈現；切換分頁時已填一半的表單會保留
+          - 提示與通知換成更輕巧的新樣式
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0067.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-drive-guide-0067.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-drive-0067.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-0067.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0067.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-address-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-tcp-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0068.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0067
+        version: 0.1.0-0068
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: fe9cf848e67bfee2c8d53d4870eb19bbf702e91aba32b6b473cd418445c8db4d
-        md5: 8a5dbbb450460ef2f4ec941f3ebd0122
-        size: 9297408
+        sha256: 3892191701f18dfd703d82c760c8becaabebd94226bfca15e4f7d7bc7265e748
+        md5: c18bdd017559995cb8612bdf65d2a215
+        size: 9314304
         facts:
           built_with: sdk
           sdk_backend: go
@@ -282,19 +282,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T10:19:00Z
-          source_ref: a7bc5a5c726af96f3165fd52e3596828b858e9dd
+          reviewed_at: 2026-10-23T15:24:00Z
+          source_ref: 83772612969bc6fc98c4c0b0947db6002c398c71
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0067
+        version: 0.1.0-0068
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 7ce4f4ae9f4d6e15d6c4880339803a4a3950ba67de50303a07f32a1d9ee39036
-        md5: f8500931bf63ccd7a10e4bb5cbfa19ba
-        size: 9810432
+        sha256: b1f0ed8eb8294ad4ebe29bad9c145951b8d960e9e783ed8cb521280517c70118
+        md5: 6f0976e91b2a6d2993ec038f4ab6f1ae
+        size: 9832448
         facts:
           built_with: sdk
           sdk_backend: go
@@ -311,11 +311,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T10:19:00Z
-          source_ref: a7bc5a5c726af96f3165fd52e3596828b858e9dd
+          reviewed_at: 2026-10-23T15:24:00Z
+          source_ref: 83772612969bc6fc98c4c0b0947db6002c398c71
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0067
+        version: 0.1.0-0068
         arch:
           - apollolake
           - avoton
@@ -344,9 +344,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 6edde1f691b790f1c4eae83ff6e787da99569cd32b68a838c9c72efc9931c64e
-        md5: 35cea5731312c5af64c31b5a34776721
-        size: 10183680
+        sha256: 7b331894ceec4d53cb1589fd2a80a0ad725d2d702c631ee52863314dad4d8ce7
+        md5: 20fb2ae6fc2cc7807a86e20857bdf2d8
+        size: 10203136
         facts:
           built_with: sdk
           sdk_backend: go
@@ -363,8 +363,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T10:19:00Z
-          source_ref: a7bc5a5c726af96f3165fd52e3596828b858e9dd
+          reviewed_at: 2026-10-23T15:24:00Z
+          source_ref: 83772612969bc6fc98c4c0b0947db6002c398c71
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
