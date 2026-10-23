@@ -159,7 +159,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0068
+      release: v0.1.0-0069
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -221,22 +221,16 @@ packages:
 
           需使用 DSM 管理員帳號登入"
       changelog:
-        en: |-
-          0.1.0-0068
+        en: >-
+          0.1.0-0069
 
-          - A three-step guide on the home page picks the way to connect by what you want to do
-          - Every way to connect shows what protects it and whether devices need an app; direct IPv6 is no longer recommended
-          - Cloudflare options have plain names: temporary address, own domain and TCP services
-          - Connection pages show their status first, then tabs; a half-filled form survives a tab switch
-          - Notices have a new, lighter look
+
+          Fix connection checks incorrectly reporting failure while NetBird is
+          connected.
         zh-TW: |-
-          0.1.0-0068
+          0.1.0-0069
 
-          - 首頁改成三步驟引導，依你想做的事選連線方式
-          - 每種連線方式都標示保護方式與裝置是否要裝 App；IPv6 直連不再推薦
-          - Cloudflare 選項改用直白名稱：臨時網址、自有網域與 TCP 服務
-          - 連線頁先顯示狀態，再分頁呈現；切換分頁時已填一半的表單會保留
-          - 提示與通知換成更輕巧的新樣式
+          修正 NetBird 已連線時連線檢查誤報失敗。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0068.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-address-0068.png
@@ -245,15 +239,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0068.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0068
+        version: 0.1.0-0069
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 3892191701f18dfd703d82c760c8becaabebd94226bfca15e4f7d7bc7265e748
-        md5: c18bdd017559995cb8612bdf65d2a215
-        size: 9314304
+        sha256: 6b4738f5e71a08a93b99471dabb8a0d9e546911c28ebecab4cae529bc27a9ea5
+        md5: c575423bc02b5d790b86821242ceef19
+        size: 9314816
         facts:
           built_with: sdk
           sdk_backend: go
@@ -270,19 +264,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T15:24:00Z
-          source_ref: 83772612969bc6fc98c4c0b0947db6002c398c71
+          reviewed_at: 2026-10-23T16:25:38Z
+          source_ref: 05057ef55c1c7e00a63def13b5a94b7de327ce32
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0068
+        version: 0.1.0-0069
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: b1f0ed8eb8294ad4ebe29bad9c145951b8d960e9e783ed8cb521280517c70118
-        md5: 6f0976e91b2a6d2993ec038f4ab6f1ae
-        size: 9832448
+        sha256: 1473f05d08f2dfc3b7e51bc215c92766382a4b2af22f09ff0a303ab3f2b442f1
+        md5: c6d6a0b064f34e42351a96a921aad3d8
+        size: 9832960
         facts:
           built_with: sdk
           sdk_backend: go
@@ -299,11 +293,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T15:24:00Z
-          source_ref: 83772612969bc6fc98c4c0b0947db6002c398c71
+          reviewed_at: 2026-10-23T16:25:41Z
+          source_ref: 05057ef55c1c7e00a63def13b5a94b7de327ce32
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0068
+        version: 0.1.0-0069
         arch:
           - apollolake
           - avoton
@@ -332,9 +326,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7b331894ceec4d53cb1589fd2a80a0ad725d2d702c631ee52863314dad4d8ce7
-        md5: 20fb2ae6fc2cc7807a86e20857bdf2d8
-        size: 10203136
+        sha256: 889fdbc1b2b849467530153f00d9d36d941c8f7837e6a21358141c2454006b5d
+        md5: bf9ba2fc03116085da036193789ba099
+        size: 10204160
         facts:
           built_with: sdk
           sdk_backend: go
@@ -351,8 +345,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T15:24:00Z
-          source_ref: 83772612969bc6fc98c4c0b0947db6002c398c71
+          reviewed_at: 2026-10-23T16:25:45Z
+          source_ref: 05057ef55c1c7e00a63def13b5a94b7de327ce32
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
