@@ -173,7 +173,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0063
+      release: v0.1.0-0064
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -215,17 +215,17 @@ packages:
           管理員登入
       changelog:
         en: |-
-          0.1.0-0063
+          0.1.0-0064
 
-          - Overview: an optional "recommend by use" choice that only reorders the method cards, card tags for reach, cost and what the other side needs, and a comparison table that includes DSM QuickConnect.
-          - Cloudflare own-domain start names its prerequisite and links Cloudflare Registrar; Tailscale offers DSM web pages (HTTP/HTTPS) and explains that its access rules decide who can connect; IPv6 without an address offers Cloudflare or Tailscale instead.
-          - ctl: new read-only `recommend` and `diagnose`; `connection status` keeps the failure code and hands out a pending https sign-in link; `connection connect` without a connector says to run `binaries update` first; every command declares a result schema.
+          - DSM External Access: compare the current hostname with a stable, running Cloudflare own-domain or token tunnel address; apply the suggestion only after administrator confirmation and read back the result. Temporary and private addresses are never suggested.
+          - ctl: read-only `external status` and explicit `external set` with dry-run and confirmation; diagnosis includes the same address advice.
+          - The method cards and comparison table explain who provides HTTPS and which direct connections need a DSM certificate.
         zh-TW: |-
-          0.1.0-0063
+          0.1.0-0064
 
-          - 總覽新增可略過的「依用途推薦」，只重排方案卡；方案卡標示能連到哪裡、費用與對方需要什麼；比較表含 DSM QuickConnect。
-          - Cloudflare 自有網域說明前提並連到 Cloudflare Registrar；Tailscale 提供 DSM 網頁（HTTP/HTTPS），並說明由存取規則決定誰能連；IPv6 沒有位址時提供改用 Cloudflare 或 Tailscale。
-          - ctl 新增唯讀 `recommend`、`diagnose`；`connection status` 保留失敗原因並提供待完成的 https 登入連結；缺少連線程式時 `connection connect` 會提示先執行 `binaries update`；每個指令都宣告結果 schema。
+          - DSM 外部存取：比較目前主機名稱與執行中的 Cloudflare 自有網域或 token 通道穩定網址；由管理員確認後才套用建議，並讀回結果。不建議臨時或私人網路位址。
+          - ctl 新增唯讀 `external status` 與明確的 `external set`，支援 dry-run 與確認；診斷提供相同的網址建議。
+          - 方案卡與比較表說明由誰提供 HTTPS，以及哪些直接連線需要 DSM 憑證。
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare.png
@@ -233,15 +233,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-ipv6.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0063
+        version: 0.1.0-0064
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: c972686805d760e0e76c6b2f954c9638aa7984a52b2acf697d7af6ea8c71ca24
-        md5: e4fe1b612a2454cf10a521d0cc424026
-        size: 9040896
+        sha256: 5434917829d0528eb7c174f03673370f119b0107399af43b97306bce94d80fba
+        md5: af20386597863eaaf8c6c018a5976a73
+        size: 9063424
         facts:
           built_with: sdk
           sdk_backend: go
@@ -258,19 +258,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T17:14:31Z
-          source_ref: ba6ca61b1905d47e9f0eb27dce6f34bd99e94d11
+          reviewed_at: 2026-10-23T02:12:36Z
+          source_ref: 1fb333e72ccd9244214544b6f96520c48f97a31e
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0063
+        version: 0.1.0-0064
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 8c88c67a10f7d618746eb3add2d578db8dd3b904b2073632d2d8cfa8cc3db860
-        md5: ab2f1ab713153c3686b8aff67920440e
-        size: 9558016
+        sha256: fc26bb30bb95e6721f925871c45f0d9a11d202d7e43270cb818f64323f314eca
+        md5: a3ac9c6a7e107492986996d44d532b20
+        size: 9580032
         facts:
           built_with: sdk
           sdk_backend: go
@@ -287,11 +287,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T17:14:35Z
-          source_ref: ba6ca61b1905d47e9f0eb27dce6f34bd99e94d11
+          reviewed_at: 2026-10-23T02:12:37Z
+          source_ref: 1fb333e72ccd9244214544b6f96520c48f97a31e
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0063
+        version: 0.1.0-0064
         arch:
           - apollolake
           - avoton
@@ -320,9 +320,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 795948b4946d4c1acd0e39ac2684038b9e494753a642fe521b42429aed83950c
-        md5: d7c5a27fbec3d6dd4849f74d8bda9b3f
-        size: 9917440
+        sha256: db3b40696bacbdce8f6e728f6e881b620f40c04720aa121e09a3ec0ba6ece019
+        md5: 5039ae456e937c73931c227cbf4a50e7
+        size: 9935872
         facts:
           built_with: sdk
           sdk_backend: go
@@ -339,8 +339,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T17:14:38Z
-          source_ref: ba6ca61b1905d47e9f0eb27dce6f34bd99e94d11
+          reviewed_at: 2026-10-23T02:12:39Z
+          source_ref: 1fb333e72ccd9244214544b6f96520c48f97a31e
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
