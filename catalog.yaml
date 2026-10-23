@@ -207,12 +207,17 @@ packages:
       long_description:
         en: "Reach your NAS from outside your home network. Manage Cloudflare Tunnel, Tailscale,
           NetBird and IPv6 direct connections from one page, and turn each method on or off
-          independently. Cloudflare publishes only the DSM web page; NetBird access follows your
-          management server policy. Development preview: connectivity depends on your network
-          and provider setup; DSM administrator sign-in is required"
-        zh-TW: 從外部網路連回 NAS，在同一頁管理 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6
-          直連，並個別啟用或停用。Cloudflare 只公開 DSM 網頁，NetBird 的存取範圍依管理伺服器政策而定。開發預覽版，連線結果依網路與服務設定而異；需 DSM
-          管理員登入
+          independently. Cloudflare publishes the DSM web page, and with your own domain it can
+          also let computers running cloudflared reach TCP services such as Synology Drive
+          Client or SMB. Tailscale and NetBird let your own devices reach the NAS services you
+          allow, such as Drive Client or SMB; NetBird access also follows your management server
+          policy. Development preview: connectivity depends on your network and provider setup;
+          DSM administrator sign-in is required"
+        zh-TW: "從外部網路連回 NAS，在同一頁管理 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6
+          直連，並個別啟用或停用。Cloudflare 會公開 DSM 網頁；使用自有網域時，也能讓安裝 cloudflared
+          的電腦連到 Synology Drive Client、SMB 等 TCP 服務。Tailscale 與 NetBird 讓你自己的裝置連到你允許的
+          NAS 服務，例如 Drive Client 或 SMB；NetBird 的存取範圍也依管理伺服器政策而定。開發預覽版，連線結果依網路與服務設定而異；需
+          DSM 管理員登入"
       changelog:
         en: |-
           0.1.0-0066
