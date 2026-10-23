@@ -373,7 +373,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0053
+      release: v0.2.2-0054
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -430,34 +430,32 @@ packages:
           Gopeed 為核心；需 DSM 登入
       changelog:
         en: |-
-          0.2.2-0053
+          0.2.2-0054
 
-          SDK/CLI/templates 0.27.0 and UI 0.14.8. Improves idle background-worker/executor writes and uses same-origin browser File Station access. Save checks preserve the original caller, grant and job. White data/settings pages and grey card backgrounds.
-
-          Only the executor binary changes compared with 0.2.2-0052; policy and task templates are unchanged. Approval retention is conditional on the installed protected runtime and exact DSM tasks matching that baseline.
+          Refreshed hints and notifications with clearer styling and compact actions
+          Temporary results now appear as notifications that fade automatically
         zh-TW: |-
-          0.2.2-0053
+          0.2.2-0054
 
-          升級 SDK/CLI/templates 0.27.0 與 UI 0.14.8，修正背景 worker/executor 的閒置寫入，File Station 改為瀏覽器同源存取。儲存檢查保留原呼叫者、grant 與工作綁定；資料／設定頁保持白色，卡片使用灰底。
-
-          與 0.2.2-0052 相比只有 executor binary 變更，policy 與 task template 不變。核准保留仍以受保護 runtime 與 DSM task 精確符合基準為條件。
+          提示與通知換成新樣式，操作按鈕更集中
+          暫時性結果改用自動消失的通知
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0053.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download-0053.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0053.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0053.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0053.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0054.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0054.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0054.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0054.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0054.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0053
+        version: 0.2.2-0054
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 21fe1c90160fe7de43ededce914479487a1b8ce564c3770422f8e6bdc37ba338
-        md5: 77dc0d2be3ae127f4b64d2a69eacbfa8
-        size: 64971776
+        sha256: 2fa2d73deece98928a244c71ae8b9635fffab9e10ac4f79fdee6cc1660dca606
+        md5: ce2adacd164825e0e63021b46bb93e31
+        size: 64977920
         facts:
           built_with: sdk
           sdk_backend: go
@@ -475,11 +473,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T10:02:42Z
-          source_ref: f195aac4e92feaadfc16657b9d0b51962195cd09
+          reviewed_at: 2026-10-23T15:17:48Z
+          source_ref: e5216864502a6126724d792d01755df66597a723
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0053
+        version: 0.2.2-0054
         arch:
           - apollolake
           - avoton
@@ -508,9 +506,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 6d43274381e4c333b4208f840b1ab4cbad61759de5aa0420afd0b041834ea0e4
-        md5: 8af947306ca8ef595145ef60409cb55a
-        size: 68465152
+        sha256: 6363537867562886cfbf3ec21dbd280fba7a428e1e41b7ebe992c3169adbc4cd
+        md5: 11a6580dde906ff0a4b29b4cadb40de7
+        size: 68470272
         facts:
           built_with: sdk
           sdk_backend: go
@@ -528,8 +526,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T10:02:42Z
-          source_ref: f195aac4e92feaadfc16657b9d0b51962195cd09
+          reviewed_at: 2026-10-23T15:18:01Z
+          source_ref: e5216864502a6126724d792d01755df66597a723
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
