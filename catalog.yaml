@@ -207,28 +207,48 @@ packages:
           Cloudflare Tunnel, Tailscale, NetBird e l’accesso diretto IPv6 da
           un’unica pagina
       long_description:
-        en: "Reach your NAS from outside your home network. Manage Cloudflare Tunnel,
-          Tailscale, NetBird and IPv6 direct connections independently.
-          Cloudflare publishes DSM web pages; an own domain can also forward
-          Drive Client and allowed custom TCP services to computers running
-          cloudflared. SMB/NetBIOS ports are blocked on Cloudflare; use
-          Tailscale or NetBird for private access. The guided overview explains
-          each method and DSM protection checks. Development preview: results
-          depend on your network and provider setup; DSM administrator sign-in
-          is required"
-        zh-TW: "從外部網路連回 NAS，個別管理 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6
-          直連。Cloudflare 公開 DSM 網頁；使用自有網域時，也能將 Drive Client 與允許的自訂 TCP 服務轉送給執行
-          cloudflared 的電腦。Cloudflare 封鎖 SMB／NetBIOS，私人存取請使用 Tailscale 或
-          NetBird。總覽提供用途指引、連線方式說明與 DSM 保護檢查。開發預覽版，結果依網路與服務設定而異；需 DSM 管理員登入"
+        en: "Reach your NAS remotely without opening router ports.
+
+
+          - Choose Cloudflare Tunnel, Tailscale, NetBird or direct IPv6, and
+          manage each connection independently
+
+          - Use Cloudflare for DSM web pages; an own domain can also provide
+          Drive TCP access to computers running cloudflared
+
+          - Use Tailscale or NetBird for private Drive and SMB access, subject
+          to your access rules or management policy
+
+
+          DSM administrator sign-in is required"
+        zh-TW: "不必在路由器開放連接埠，也能從外部連回 NAS。
+
+
+          - 個別管理 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連
+
+          - 使用 Cloudflare 存取 DSM 網頁；自有網域也能提供 Drive TCP 存取，連線電腦需執行 cloudflared
+
+          - Drive 與 SMB 的私人存取可使用 Tailscale 或 NetBird，並依存取規則或管理伺服器政策授權
+
+
+          需使用 DSM 管理員帳號登入"
       changelog:
         en: |-
           0.1.0-0067
 
-          Preserve existing connections during supported provider updates, verify native state and health before commit, and report verified rollback or recovery-required status. Cloudflare offers only Drive as a TCP shortcut and blocks SMB/NetBIOS; Tailscale retains unchanged Serve forwards. Add guided uses and DSM protection checks, avoid persistent writes on successful idle observations, and rebuild with CLI/SDK/templates 0.27.0 and UI 0.14.8. Cloudflare commit/rollback outcomes were checked on a test device; external sampling included six connection failures out of 200, so zero-loss reachability is not certified. Tailscale remains not device-validated because the test network blocks its control plane
+          - New guided overview explains connection options and DSM protection settings
+          - Add Drive TCP access to a Cloudflare own domain while keeping its existing web configuration; failed changes show rollback or recovery steps
+          - Keep existing Tailscale forwards when adding services
+          - Avoid unnecessary disk writes while idle
+          - Limits: active Cloudflare TCP services cannot be replaced directly. Use Tailscale or NetBird for SMB/NetBIOS
         zh-TW: |-
           0.1.0-0067
 
-          支援的連線更新先保留原入口，完成原生與健康檢查後才提交；失敗顯示已驗證回復或需要復原。Cloudflare TCP 捷徑只列 Drive，封鎖 SMB／NetBIOS；Tailscale 保留原有 Serve。新增用途指引與 DSM 保護檢查，成功閒置觀察不重寫持久設定，使用 CLI／SDK／templates 0.27.0 與 UI 0.14.8 重建。Cloudflare 提交／回復已短實機檢查；200 次外部抽樣含 6 次連線失敗，不能認證全程零中斷。Tailscale 因測試網路封鎖 control plane，尚未實機驗證
+          - 新增用途指引，說明連線方式與 DSM 保護設定
+          - Cloudflare 自有網域可新增 Drive TCP 存取並保留原網頁設定；變更失敗時顯示回復結果或復原步驟
+          - Tailscale 新增服務時保留原有轉送設定
+          - 減少閒置時不必要的磁碟寫入
+          - 限制：Cloudflare 已有 TCP 服務時，不支援直接替換；SMB／NetBIOS 請使用 Tailscale 或 NetBird
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0067.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-drive-guide-0067.png
