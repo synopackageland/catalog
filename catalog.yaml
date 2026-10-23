@@ -263,7 +263,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-10-23T10:19:00Z
-          source_ref: d1a92498c1b8d6f264aab9dc9e1d08cfaf2439c0
+          source_ref: a7bc5a5c726af96f3165fd52e3596828b858e9dd
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
         version: 0.1.0-0067
@@ -292,7 +292,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-10-23T10:19:00Z
-          source_ref: d1a92498c1b8d6f264aab9dc9e1d08cfaf2439c0
+          source_ref: a7bc5a5c726af96f3165fd52e3596828b858e9dd
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
         version: 0.1.0-0067
@@ -344,7 +344,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-10-23T10:19:00Z
-          source_ref: d1a92498c1b8d6f264aab9dc9e1d08cfaf2439c0
+          source_ref: a7bc5a5c726af96f3165fd52e3596828b858e9dd
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
