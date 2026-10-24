@@ -159,7 +159,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0069
+      release: v0.1.0-0073
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -195,59 +195,92 @@ packages:
           Cloudflare Tunnel, Tailscale, NetBird e l’accesso diretto IPv6 da
           un’unica pagina
       long_description:
-        en: "Reach your NAS remotely without opening router ports.
+        en: >-
+          Reach your NAS remotely without opening router ports
 
 
-          - Choose Cloudflare Tunnel, Tailscale, NetBird or direct IPv6, and
-          manage each connection independently
+          - Let the setup guide help you choose Cloudflare Tunnel, Tailscale or
+          workers.dev
 
-          - Use Cloudflare for DSM web pages; an own domain can also provide
-          Drive TCP access to computers running cloudflared
+          - Give approved Apps private Tailscale URLs or public Cloudflare URLs,
+          with your own domain or workers.dev
+
+          - Open approved App URLs from the DSM menu, keeping links to pages
+          inside an App
 
           - Use Tailscale or NetBird for private Drive and SMB access, subject
-          to your access rules or management policy
+          to access rules and management-server policy
+
+          - Keep connections waiting through slow NAS responses and restore them
+          in the background; unused connection features stop their background
+          loops
 
 
-          DSM administrator sign-in is required"
-        zh-TW: "不必在路由器開放連接埠，也能從外部連回 NAS。
+          Sign in with a DSM administrator account
+        zh-TW: |-
+          不必在路由器開放連接埠，也能從外部連回 NAS
 
+          - 透過設定指引選擇 Cloudflare Tunnel、Tailscale 或 workers.dev
+          - 為核准的 App 設定 Tailscale 私人網址，或使用自有網域／workers.dev 的 Cloudflare 公開網址
+          - 從 DSM 主選單開啟核准的 App 網址，並保留 App 內頁的深層連結
+          - 使用 Tailscale 或 NetBird 私人存取 Drive 與 SMB，依存取規則與管理伺服器政策授權
+          - NAS 回應緩慢時持續等待並在背景恢復連線；未使用的連線功能會停止背景迴圈
 
-          - 個別管理 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連
-
-          - 使用 Cloudflare 存取 DSM 網頁；自有網域也能提供 Drive TCP 存取，連線電腦需執行 cloudflared
-
-          - Drive 與 SMB 的私人存取可使用 Tailscale 或 NetBird，並依存取規則或管理伺服器政策授權
-
-
-          需使用 DSM 管理員帳號登入"
+          需使用 DSM 管理員帳號登入
       changelog:
         en: >-
-          0.1.0-0069
+          0.1.0-0073
 
 
-          Fix connection checks incorrectly reporting failure while NetBird is
-          connected.
-        zh-TW: |-
-          0.1.0-0069
+          - Choose a connection method with a short setup guide, then continue
+          on its setup page
 
-          修正 NetBird 已連線時連線檢查誤報失敗
+          - Give approved Apps private URLs or public Cloudflare addresses,
+          including workers.dev without a domain of your own
+
+          - Open approved App URLs from the DSM menu and keep deep links; fix
+          opening Connect from the DSM menu over a public address
+
+          - Keep NetBird, Tailscale and cloudflared waiting through slow NAS
+          responses and restore them in the background; unused connection
+          features stop their background loops
+
+          - Keep the App list readable while connections restore, and let
+          administrators reset unreadable App URL records with a backup
+
+          - Explain invalid Cloudflare tokens and request only Workers Scripts
+          Edit when setting up workers.dev
+        zh-TW: >-
+          0.1.0-0073
+
+
+          - 透過簡短指引選擇連線方式，接著直接在對應頁面繼續設定
+
+          - 為核准的 App 設定私人網址或 Cloudflare 公開網址，也能使用 workers.dev，不必自備網域
+
+          - 從 DSM 主選單開啟核准的 App 網址並保留深層連結；修正經公開網址從 DSM 主選單開啟 Connect 的問題
+
+          - NAS 回應緩慢時，NetBird、Tailscale 與 cloudflared
+          會持續等待並在背景恢復；未使用的連線功能會停止背景迴圈
+
+          - 恢復連線時仍可讀取 App 清單；管理員可備份並重設無法讀取的 App 網址紀錄
+
+          - 清楚提示 Cloudflare token 無效，設定 workers.dev 時只要求 Workers Scripts Edit 權限
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-address-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-tcp-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0073.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-guide-0073.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-app-urls-0073.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0069
+        version: 0.1.0-0073
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6b4738f5e71a08a93b99471dabb8a0d9e546911c28ebecab4cae529bc27a9ea5
-        md5: c575423bc02b5d790b86821242ceef19
-        size: 9314816
+        sha256: e205b2c8cc0b87d052c12de1d062c5ba95ff15c81597ed3108f3d7faba463dfa
+        md5: 3bd3bafcf4edcbf8006d7da7b2d53ded
+        size: 9937408
         facts:
           built_with: sdk
           sdk_backend: go
@@ -264,19 +297,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T16:25:38Z
-          source_ref: 05057ef55c1c7e00a63def13b5a94b7de327ce32
+          reviewed_at: 2026-10-24T19:09:17Z
+          source_ref: 71edbffab4e1b7fd5efab66eca06ddf60e4eaece
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0069
+        version: 0.1.0-0073
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 1473f05d08f2dfc3b7e51bc215c92766382a4b2af22f09ff0a303ab3f2b442f1
-        md5: c6d6a0b064f34e42351a96a921aad3d8
-        size: 9832960
+        sha256: 0a03fcd81a3fb449de94a036a81fed2c4c18b32732afd0cb13e61b879841a189
+        md5: cea26c58c30adcc8a7f4519147c03452
+        size: 10440704
         facts:
           built_with: sdk
           sdk_backend: go
@@ -293,11 +326,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T16:25:41Z
-          source_ref: 05057ef55c1c7e00a63def13b5a94b7de327ce32
+          reviewed_at: 2026-10-24T19:09:27Z
+          source_ref: 71edbffab4e1b7fd5efab66eca06ddf60e4eaece
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0069
+        version: 0.1.0-0073
         arch:
           - apollolake
           - avoton
@@ -326,9 +359,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 889fdbc1b2b849467530153f00d9d36d941c8f7837e6a21358141c2454006b5d
-        md5: bf9ba2fc03116085da036193789ba099
-        size: 10204160
+        sha256: 2ff2d7ec32354ebea6541d44c171322fe2a38f15a3fe84f726c67f894c1443ef
+        md5: b8cd6ddc813dd9b0c516c93c70d179b3
+        size: 10850816
         facts:
           built_with: sdk
           sdk_backend: go
@@ -345,8 +378,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T16:25:45Z
-          source_ref: 05057ef55c1c7e00a63def13b5a94b7de327ce32
+          reviewed_at: 2026-10-24T19:09:35Z
+          source_ref: 71edbffab4e1b7fd5efab66eca06ddf60e4eaece
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
@@ -369,44 +402,51 @@ packages:
       internet: required
       license: GPL-3.0-or-later
       description:
-        en: "Download almost anything to your NAS: HTTP/HTTPS links, BitTorrent (.torrent files
-          and magnet links), ED2K, and videos from sites supported by yt-dlp, plus addresses
-          that extensions add. Each DSM user keeps their own downloads; administrators manage
-          access and engine updates. Powered by Gopeed"
+        en: "Download almost anything to your NAS: HTTP/HTTPS links, BitTorrent
+          (.torrent files and magnet links), ED2K, and videos from sites
+          supported by yt-dlp, plus addresses that extensions add. Each DSM user
+          keeps their own downloads; administrators manage access and engine
+          updates. Powered by Gopeed"
         zh-TW: 幾乎什麼都能下載到 NAS：HTTP／HTTPS 連結、BitTorrent（.torrent 檔與磁力連結）、ED2K，以及 yt-dlp
-          支援的影音網站，還有擴充套件新增的位址。每位 DSM 使用者各自管理自己的下載；存取權限與引擎更新由管理員管理。Powered by Gopeed
+          支援的影音網站，還有擴充套件新增的位址。每位 DSM 使用者各自管理自己的下載；存取權限與引擎更新由管理員管理。Powered by
+          Gopeed
         zh-CN: 几乎什么都能下载到 NAS：HTTP/HTTPS 链接、BitTorrent（.torrent 文件与磁力链接）、ED2K，以及 yt-dlp
           支持的视频网站，还有扩展添加的地址。每位 DSM 用户各自管理自己的下载；访问权限与引擎更新由管理员管理。Powered by Gopeed
         ja: HTTP/HTTPS リンク、BitTorrent（.torrent ファイルとマグネットリンク）、ED2K、yt-dlp
           が対応する動画サイト、さらに拡張機能が追加するアドレスまで、ほぼ何でも NAS にダウンロードできます。DSM
           ユーザーごとに自分のダウンロードを管理し、アクセス権限とエンジンの更新は管理者が管理します。Powered by Gopeed
-        ko: HTTP/HTTPS 링크, BitTorrent(.torrent 파일 및 마그넷 링크), ED2K, yt-dlp가 지원하는 동영상 사이트, 확장 프로그램이
-          추가하는 주소까지 거의 모든 것을 NAS로 다운로드해요. DSM 사용자마다 자신의 다운로드를 관리하고, 액세스 권한과 엔진 업데이트는 관리자가 맡아요.
-          Powered by Gopeed
-        de: "Lädt fast alles auf Ihr NAS: HTTP/HTTPS-Links, BitTorrent (.torrent-Dateien und
-          Magnet-Links), ED2K und Videos von Websites, die yt-dlp unterstützt, dazu Adressen aus
-          Erweiterungen. Jeder DSM-Benutzer verwaltet seine eigenen Downloads; Zugriff und
-          Engine-Updates verwaltet der Administrator. Powered by Gopeed"
-        fr: "Téléchargez presque tout sur votre NAS : liens HTTP/HTTPS, BitTorrent (fichiers
-          .torrent et liens magnet), ED2K et vidéos des sites pris en charge par yt-dlp, ainsi
-          que les adresses ajoutées par des extensions. Chaque utilisateur DSM gère ses propres
-          téléchargements ; l’administrateur gère l’accès et les mises à jour du moteur. Powered
+        ko: HTTP/HTTPS 링크, BitTorrent(.torrent 파일 및 마그넷 링크), ED2K, yt-dlp가 지원하는 동영상 사이트,
+          확장 프로그램이 추가하는 주소까지 거의 모든 것을 NAS로 다운로드해요. DSM 사용자마다 자신의 다운로드를 관리하고, 액세스
+          권한과 엔진 업데이트는 관리자가 맡아요. Powered by Gopeed
+        de: "Lädt fast alles auf Ihr NAS: HTTP/HTTPS-Links, BitTorrent (.torrent-Dateien
+          und Magnet-Links), ED2K und Videos von Websites, die yt-dlp
+          unterstützt, dazu Adressen aus Erweiterungen. Jeder DSM-Benutzer
+          verwaltet seine eigenen Downloads; Zugriff und Engine-Updates
+          verwaltet der Administrator. Powered by Gopeed"
+        fr: "Téléchargez presque tout sur votre NAS : liens HTTP/HTTPS, BitTorrent
+          (fichiers .torrent et liens magnet), ED2K et vidéos des sites pris en
+          charge par yt-dlp, ainsi que les adresses ajoutées par des extensions.
+          Chaque utilisateur DSM gère ses propres téléchargements ;
+          l’administrateur gère l’accès et les mises à jour du moteur. Powered
           by Gopeed"
-        es: "Descargue casi cualquier cosa en su NAS: enlaces HTTP/HTTPS, BitTorrent (archivos
-          .torrent y enlaces magnet), ED2K y vídeos de los sitios compatibles con yt-dlp, además
-          de las direcciones que añaden las extensiones. Cada usuario de DSM gestiona sus
-          propias descargas; el administrador gestiona el acceso y las actualizaciones del
-          motor. Powered by Gopeed"
-        it: "Scarica quasi tutto sul tuo NAS: link HTTP/HTTPS, BitTorrent (file .torrent e link
-          magnet), ED2K e video dai siti supportati da yt-dlp, oltre agli indirizzi aggiunti
-          dalle estensioni. Ogni utente DSM gestisce i propri download; l’amministratore
-          gestisce l’accesso e gli aggiornamenti del motore. Powered by Gopeed"
+        es: "Descargue casi cualquier cosa en su NAS: enlaces HTTP/HTTPS, BitTorrent
+          (archivos .torrent y enlaces magnet), ED2K y vídeos de los sitios
+          compatibles con yt-dlp, además de las direcciones que añaden las
+          extensiones. Cada usuario de DSM gestiona sus propias descargas; el
+          administrador gestiona el acceso y las actualizaciones del motor.
+          Powered by Gopeed"
+        it: "Scarica quasi tutto sul tuo NAS: link HTTP/HTTPS, BitTorrent (file .torrent
+          e link magnet), ED2K e video dai siti supportati da yt-dlp, oltre agli
+          indirizzi aggiunti dalle estensioni. Ogni utente DSM gestisce i propri
+          download; l’amministratore gestisce l’accesso e gli aggiornamenti del
+          motore. Powered by Gopeed"
       long_description:
-        en: Download files from HTTP/HTTPS links, torrents, magnet links and ED2K, plus videos
-          from sites supported by yt-dlp and sources added by extensions. Pause, resume and
-          organize downloads, choose where completed files are saved and view your history. Each
-          user has separate downloads; administrators manage access, extensions and engine
-          updates. Powered by Gopeed; DSM sign-in is required
+        en: Download files from HTTP/HTTPS links, torrents, magnet links and ED2K, plus
+          videos from sites supported by yt-dlp and sources added by extensions.
+          Pause, resume and organize downloads, choose where completed files are
+          saved and view your history. Each user has separate downloads;
+          administrators manage access, extensions and engine updates. Powered
+          by Gopeed; DSM sign-in is required
         zh-TW: 下載 HTTP／HTTPS 連結、種子、磁力連結與 ED2K 檔案，以及 yt-dlp
           支援網站的影片和擴充套件新增的來源。暫停、繼續與整理下載，選擇完成檔案的儲存位置並查看歷史紀錄。每位使用者各自管理下載，管理員管理存取權限、擴充套件與引擎更新。以
           Gopeed 為核心；需 DSM 登入
@@ -539,43 +579,50 @@ packages:
         zh-CN: 在同一处浏览与管理本地存储和云盘中的文件
         ja: ローカルストレージとクラウドドライブのファイルを一か所で閲覧・管理
         ko: 로컬 저장소와 클라우드 드라이브의 파일을 한곳에서 탐색하고 관리해요
-        de: Dateien aus lokalem Speicher und Cloud-Laufwerken an einem Ort durchsuchen und
-          verwalten
-        fr: Parcourez et gérez les fichiers du stockage local et des espaces cloud au même endroit
-        es: Explore y gestione archivos del almacenamiento local y de unidades en la nube en un
-          solo lugar
+        de: Dateien aus lokalem Speicher und Cloud-Laufwerken an einem Ort durchsuchen
+          und verwalten
+        fr: Parcourez et gérez les fichiers du stockage local et des espaces cloud au
+          même endroit
+        es: Explore y gestione archivos del almacenamiento local y de unidades en la
+          nube en un solo lugar
         it: Sfoglia e gestisci i file locali e delle unità cloud in un unico posto
       long_description:
-        en: Bring local folders and supported cloud drives into one file browser. Preview files,
-          play audio and video, and upload, download or organize files across your connected
-          storage. After installation, grant the package account Read/Write permission on the
-          selected shared folder and add it as Local storage in OpenList; selecting a folder
-          alone does neither. External WebDAV access is unavailable. Preview package; DSM
+        en: Bring local folders and supported cloud drives into one file browser.
+          Preview files, play audio and video, and upload, download or organize
+          files across your connected storage. After installation, grant the
+          package account Read/Write permission on the selected shared folder
+          and add it as Local storage in OpenList; selecting a folder alone does
+          neither. External WebDAV access is unavailable. Preview package; DSM
           administrator sign-in is required
         zh-TW: 在同一個檔案瀏覽器整合本機資料夾與支援的雲端硬碟。預覽檔案、播放影音，並在已連接的儲存空間上傳、下載及整理檔案。安裝後須授予套件帳號所選共用資料夾的讀寫權限，並在
-          OpenList 新增 Local storage；選擇資料夾不會自動完成這兩項設定。不開放外部 WebDAV 存取。本套件為預覽版；需 DSM 管理員登入
+          OpenList 新增 Local storage；選擇資料夾不會自動完成這兩項設定。不開放外部 WebDAV 存取。本套件為預覽版；需
+          DSM 管理員登入
         zh-CN: 在同一个文件浏览器中整合本地文件夹与支持的云盘。预览文件、播放音视频，并在已连接的存储中上传、下载和整理文件。安装后须授予套件账号所选共享文件夹的读写权限，并在
-          OpenList 中新增 Local storage；选择文件夹不会自动完成这两项设置。不开放外部 WebDAV 访问。本套件为预览版；需 DSM 管理员登录
+          OpenList 中新增 Local storage；选择文件夹不会自动完成这两项设置。不开放外部 WebDAV 访问。本套件为预览版；需
+          DSM 管理员登录
         ja: ローカルフォルダーと対応するクラウドドライブを一つのファイルブラウザーにまとめます。ファイルのプレビュー、音声・動画の再生、接続したストレージでのアップロード、ダウンロード、整理ができます。インストール後は、選択した共有フォルダーの読み書き権限をパッケージアカウントに付与し、OpenList
-          で Local storage を追加してください。フォルダーの選択だけでは設定されません。外部 WebDAV アクセスは利用できません。プレビュー版で、DSM
-          管理者のサインインが必要です
-        ko: 로컬 폴더와 지원되는 클라우드 드라이브를 하나의 파일 탐색기에 모아요. 파일 미리보기, 오디오·동영상 재생, 연결된 저장소의 파일 업로드, 다운로드와
-          정리를 할 수 있어요. 설치 후 패키지 계정에 선택한 공유 폴더의 읽기/쓰기 권한을 부여하고 OpenList에 Local storage를 추가하세요.
-          폴더를 선택하는 것만으로는 설정되지 않아요. 외부 WebDAV 접속은 제공하지 않아요. 미리보기 버전이며 DSM 관리자 로그인이 필요해요
-        de: Lokale Ordner und unterstützte Cloud-Laufwerke in einem Dateibrowser verbinden.
-          Dateien als Vorschau ansehen, Audio und Video abspielen sowie Dateien in verbundenen
-          Speichern hochladen, herunterladen und organisieren. Nach der Installation dem
-          Paketkonto Lese-/Schreibrechte für den gewählten gemeinsamen Ordner geben und diesen
-          als Local storage in OpenList hinzufügen; die Ordnerauswahl erledigt beides nicht
-          automatisch. Externer WebDAV-Zugriff ist nicht verfügbar. Vorschauversion;
-          DSM-Administratoranmeldung erforderlich
-        fr: Regroupez les dossiers locaux et les espaces cloud compatibles dans un seul navigateur
-          de fichiers. Prévisualisez des fichiers, lisez des contenus audio et vidéo, puis
-          importez, téléchargez et organisez les fichiers de vos stockages connectés. Après
-          installation, accordez au compte du paquet les droits de lecture/écriture sur le
-          dossier partagé choisi et ajoutez-le comme Local storage dans OpenList ; sélectionner
-          le dossier ne suffit pas. L’accès WebDAV externe est indisponible. Version en aperçu ;
-          connexion administrateur DSM requise
+          で Local storage を追加してください。フォルダーの選択だけでは設定されません。外部 WebDAV
+          アクセスは利用できません。プレビュー版で、DSM 管理者のサインインが必要です
+        ko: 로컬 폴더와 지원되는 클라우드 드라이브를 하나의 파일 탐색기에 모아요. 파일 미리보기, 오디오·동영상 재생, 연결된 저장소의 파일
+          업로드, 다운로드와 정리를 할 수 있어요. 설치 후 패키지 계정에 선택한 공유 폴더의 읽기/쓰기 권한을 부여하고
+          OpenList에 Local storage를 추가하세요. 폴더를 선택하는 것만으로는 설정되지 않아요. 외부 WebDAV 접속은
+          제공하지 않아요. 미리보기 버전이며 DSM 관리자 로그인이 필요해요
+        de: Lokale Ordner und unterstützte Cloud-Laufwerke in einem Dateibrowser
+          verbinden. Dateien als Vorschau ansehen, Audio und Video abspielen
+          sowie Dateien in verbundenen Speichern hochladen, herunterladen und
+          organisieren. Nach der Installation dem Paketkonto Lese-/Schreibrechte
+          für den gewählten gemeinsamen Ordner geben und diesen als Local
+          storage in OpenList hinzufügen; die Ordnerauswahl erledigt beides
+          nicht automatisch. Externer WebDAV-Zugriff ist nicht verfügbar.
+          Vorschauversion; DSM-Administratoranmeldung erforderlich
+        fr: Regroupez les dossiers locaux et les espaces cloud compatibles dans un seul
+          navigateur de fichiers. Prévisualisez des fichiers, lisez des contenus
+          audio et vidéo, puis importez, téléchargez et organisez les fichiers
+          de vos stockages connectés. Après installation, accordez au compte du
+          paquet les droits de lecture/écriture sur le dossier partagé choisi et
+          ajoutez-le comme Local storage dans OpenList ; sélectionner le dossier
+          ne suffit pas. L’accès WebDAV externe est indisponible. Version en
+          aperçu ; connexion administrateur DSM requise
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/01-files-0018.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
@@ -648,13 +695,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-uptime-kuma
-      release: v2.5.6-0014
+      release: v2.5.6-0015
       access: private
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-uptime-kuma
-      source_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/tree/v2.5.6-0014
+      source_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/tree/v2.5.6-0015
       issues_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/issues
       upstream:
         name: Uptime Kuma
@@ -681,22 +728,18 @@ packages:
           App 資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2.5.6-0014
+          2.5.6-0015
 
 
-          Rebuilt with SDK/App 0.29.1 and CLI/templates 0.29.0, retaining
-          executor/v0.27.0. Includes SDK fixes for public sign-in and saved
-          external origins. Upstream images and App functionality are unchanged.
-          No NAS testing was performed for this rebuild
-        zh-TW: >-
-          2.5.6-0014
+          Improve opening the App from the DSM menu and external access
+          settings.
+        zh-TW: |-
+          2.5.6-0015
 
-
-          使用 SDK/App 0.29.1 與 CLI/templates 0.29.0 重建，保留 executor/v0.27.0，納入 SDK
-          公開網址登入與外部來源設定修正。上游映像與 App 功能不變，本次未進行 NAS 測試
+          改善從 DSM 選單開啟 App 與外網存取設定
     pins:
       - package: SynoPkgUptimeKuma
-        version: 2.5.6-0014
+        version: 2.5.6-0015
         arch:
           - apollolake
           - avoton
@@ -725,9 +768,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 689c1bc7ce27e1fd8a6826896341995617c64fa8b992b0bd6442fb887d8a5dff
-        md5: 0e675c362cf1ef6febb609ac0c21e47a
-        size: 26492416
+        sha256: c4322efe5314d948ce5a423abc05cee785a129883814847464323ba74b9926d4
+        md5: f1ffab3eb9948c532f8254e665f8073e
+        size: 26599936
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -744,8 +787,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T14:11:51Z
-          source_ref: b3b83f5eba891f40b7f37313ed03dc2cad3f132d
+          reviewed_at: 2026-10-24T19:08:42Z
+          source_ref: d5d05ee8f60fd37bb837a61bbde5bd02c331e1dd
           source_repo: synopackageland/syno-pkg-land-uptime-kuma
   - recommended: false
     featured: false
@@ -770,12 +813,14 @@ packages:
         url: https://github.com/FreshRSS/FreshRSS
         license: AGPL-3.0
       long_description:
-        en: Bring news and updates from your favorite websites into one reader. Subscribe to RSS
-          and Atom feeds, organize subscriptions into categories, search articles and save
-          favorites for later. Each reader has separate subscriptions and reading progress; DSM
-          administrator sign-in and Container Manager are required
-        zh-TW: 將喜愛網站的新聞與更新集中到同一個閱讀器。訂閱 RSS 與 Atom、分類整理訂閱項目、搜尋文章，並將喜歡的內容收藏以便稍後閱讀。每位讀者各自保有訂閱與閱讀進度；需
-          DSM 管理員登入及 Container Manager
+        en: Bring news and updates from your favorite websites into one reader.
+          Subscribe to RSS and Atom feeds, organize subscriptions into
+          categories, search articles and save favorites for later. Each reader
+          has separate subscriptions and reading progress; DSM administrator
+          sign-in and Container Manager are required
+        zh-TW: 將喜愛網站的新聞與更新集中到同一個閱讀器。訂閱 RSS 與
+          Atom、分類整理訂閱項目、搜尋文章，並將喜歡的內容收藏以便稍後閱讀。每位讀者各自保有訂閱與閱讀進度；需 DSM 管理員登入及
+          Container Manager
       changelog:
         en: >-
           1.30.4-0003
@@ -854,13 +899,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.1-0006
+      release: v2.37.1-0007
       access: private
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-audiobookshelf
-      source_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/tree/v2.37.1-0006
+      source_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/tree/v2.37.1-0007
       issues_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/issues
       license: GPL-3.0; dependencies retain their own licenses
       internet: required
@@ -888,22 +933,18 @@ packages:
           Container Manager
       changelog:
         en: >-
-          2.37.1-0006
+          2.37.1-0007
 
 
-          Rebuilt with SDK/App 0.29.1 and CLI/templates 0.29.0, retaining
-          executor/v0.27.0. Includes SDK fixes for public sign-in and saved
-          external origins. Upstream images and App functionality are unchanged.
-          No NAS testing was performed for this rebuild
-        zh-TW: >-
-          2.37.1-0006
+          Improve opening the App from the DSM menu and external access
+          settings.
+        zh-TW: |-
+          2.37.1-0007
 
-
-          使用 SDK/App 0.29.1 與 CLI/templates 0.29.0 重建，保留 executor/v0.27.0，納入 SDK
-          公開網址登入與外部來源設定修正。上游映像與 App 功能不變，本次未進行 NAS 測試
+          改善從 DSM 選單開啟 App 與外網存取設定
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.1-0006
+        version: 2.37.1-0007
         arch:
           - apollolake
           - avoton
@@ -932,9 +973,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 267d852962145f559188f62f1f5f63a08c6ff0d06785945118747ba363d79c12
-        md5: f7272f9331667bfd28ad95ad70b5be8f
-        size: 26576384
+        sha256: 3f98d3587748dc74839a4a914f9988d8f165e574ed93276e0596d3352de43c71
+        md5: 9edf55d9b252830a723019ab4d773068
+        size: 26684416
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -951,8 +992,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T14:11:51Z
-          source_ref: 6c48166d2a1e982738cffed6327ee5e6d9106fdc
+          reviewed_at: 2026-10-24T19:08:42Z
+          source_ref: 23d47c5f57852c319e90d7b5bf90d9e370bc32b1
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - recommended: false
     featured: false
@@ -962,13 +1003,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.2-0007
+      release: v12.2-0008
       access: private
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-jellyfin
-      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.2-0007
+      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.2-0008
       issues_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/issues
       license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0; dependencies
         retain their own licenses
@@ -996,22 +1037,18 @@ packages:
           未啟用。所選媒體資料夾為唯讀，須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          12.2-0007
+          12.2-0008
 
 
-          Rebuilt with SDK/App 0.29.1 and CLI/templates 0.29.0, retaining
-          executor/v0.27.0. Includes SDK fixes for public sign-in and saved
-          external origins. Upstream images and App functionality are unchanged.
-          No NAS testing was performed for this rebuild
-        zh-TW: >-
-          12.2-0007
+          Improve opening the App from the DSM menu and external access
+          settings.
+        zh-TW: |-
+          12.2-0008
 
-
-          使用 SDK/App 0.29.1 與 CLI/templates 0.29.0 重建，保留 executor/v0.27.0，納入 SDK
-          公開網址登入與外部來源設定修正。上游映像與 App 功能不變，本次未進行 NAS 測試
+          改善從 DSM 選單開啟 App 與外網存取設定
     pins:
       - package: SynoPkgJellyfin
-        version: 12.2-0007
+        version: 12.2-0008
         arch:
           - apollolake
           - avoton
@@ -1040,9 +1077,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 9b5302a3669740994aa816e64bce7b3f2cb8275e182aae289826d9b75b117791
-        md5: 6b77cd7da87c1c774ffdb879004f2c11
-        size: 27602944
+        sha256: fffe993cc0a214c71fafe6ef00fda6699aa3f8cc8980cc3527d5e93e50fe704b
+        md5: 8ecc1b0f38ebce73a4485d5505f3655e
+        size: 27709952
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1059,8 +1096,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T14:11:51Z
-          source_ref: 5e8447e076956702c665b699f14ea23e6cb666ec
+          reviewed_at: 2026-10-24T19:08:42Z
+          source_ref: 9ee060038f1e4236798d2a409462bc6fd7e81527
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - recommended: false
@@ -1071,13 +1108,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.19.0-0005
+      release: v0.19.0-0006
       access: public
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-convertx
-      source_url: https://github.com/synopackageland/syno-pkg-land-convertx/tree/v0.19.0-0005
+      source_url: https://github.com/synopackageland/syno-pkg-land-convertx/tree/v0.19.0-0006
       issues_url: https://github.com/synopackageland/syno-pkg-land-convertx/issues
       license: AGPL-3.0; packaging MIT; bundled tools retain their respective licenses
       internet: required
@@ -1100,22 +1137,18 @@ packages:
           Manager
       changelog:
         en: >-
-          0.19.0-0005
+          0.19.0-0006
 
 
-          Rebuilt with SDK/App 0.29.1 and CLI/templates 0.29.0, retaining
-          executor/v0.27.0. Includes SDK fixes for public sign-in and saved
-          external origins. Upstream images and App functionality are unchanged.
-          No NAS testing was performed for this rebuild
-        zh-TW: >-
-          0.19.0-0005
+          Improve opening the App from the DSM menu and external access
+          settings.
+        zh-TW: |-
+          0.19.0-0006
 
-
-          使用 SDK/App 0.29.1 與 CLI/templates 0.29.0 重建，保留 executor/v0.27.0，納入 SDK
-          公開網址登入與外部來源設定修正。上游映像與 App 功能不變，本次未進行 NAS 測試
+          改善從 DSM 選單開啟 App 與外網存取設定
     pins:
       - package: SynoPkgConvertX
-        version: 0.19.0-0005
+        version: 0.19.0-0006
         arch:
           - apollolake
           - avoton
@@ -1144,9 +1177,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c9adb848fd49b287958fecddc8183e500aff5e5ff6fa00444226aade25ba2b5f
-        md5: fe8a1408cb0f60cc767b706a506dd0b1
-        size: 26463744
+        sha256: 587e9be6b49cc7a6e4c91992275fcd0b41d6d391dff202155e56da7b184e57b3
+        md5: c749d6c68669eb7f820f456712da2dfe
+        size: 26576896
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1163,8 +1196,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T14:11:51Z
-          source_ref: 46db1e42321594ef5d15b28bf3ac103fef6de8a5
+          reviewed_at: 2026-10-24T19:08:42Z
+          source_ref: d93e00e3d65142f9bf35d8e47c9d78705e21c0a9
           source_repo: synopackageland/syno-pkg-land-convertx
   - recommended: false
     featured: false
@@ -1174,13 +1207,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.3.3-0007
+      release: v3.3.3-0008
       access: public
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
-      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.3.3-0007
+      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.3.3-0008
       issues_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/issues
       license: GPL-3.0-only; dependencies retain their respective licenses
       internet: required
@@ -1205,22 +1238,18 @@ packages:
           Container Manager 儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          3.3.3-0007
+          3.3.3-0008
 
 
-          Rebuilt with SDK/App 0.29.1 and CLI/templates 0.29.0, retaining
-          executor/v0.27.0. Includes SDK fixes for public sign-in and saved
-          external origins. Upstream images and App functionality are unchanged.
-          No NAS testing was performed for this rebuild
-        zh-TW: >-
-          3.3.3-0007
+          Improve opening the App from the DSM menu and external access
+          settings.
+        zh-TW: |-
+          3.3.3-0008
 
-
-          使用 SDK/App 0.29.1 與 CLI/templates 0.29.0 重建，保留 executor/v0.27.0，納入 SDK
-          公開網址登入與外部來源設定修正。上游映像與 App 功能不變，本次未進行 NAS 測試
+          改善從 DSM 選單開啟 App 與外網存取設定
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.3.3-0007
+        version: 3.3.3-0008
         arch:
           - apollolake
           - avoton
@@ -1249,9 +1278,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: dce88f6223e7a9f475261efca8bba71aff6a961e0e1a8ebeac7562a18a92d359
-        md5: 67b6998e11849105257aaaaf3d808b55
-        size: 26540544
+        sha256: 8aa196756a9508ab5f99c1d8a3f30a703a8b954c6dd33ae69eb1e1b0b894f93f
+        md5: ce276340f554b3ed62aca9b0c24973e9
+        size: 26651136
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1268,8 +1297,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T14:11:51Z
-          source_ref: ae1630fe57725e195871e933dd6931c8de0deb1d
+          reviewed_at: 2026-10-24T19:08:42Z
+          source_ref: b692ab352d6e77fd961bc5808e80ae2624dc50f2
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - recommended: false
     featured: false
@@ -1279,13 +1308,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0005
+      release: v1.37.4-0007
       access: public
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-vaultwarden
-      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0003
+      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0007
       issues_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/issues
       license: AGPL-3.0-only; packaging MIT; Web Vault and dependencies retain their
         respective licenses
@@ -1298,40 +1327,33 @@ packages:
         en: Store and manage passwords and secure notes in an encrypted vault
         zh-TW: 在加密保險庫中儲存與管理密碼和安全筆記
       long_description:
-        en: Keep passwords, login details and secure notes in an encrypted vault hosted on your
-          own server. Vaultwarden is a server compatible with Bitwarden, with a web vault for
-          managing your entries. A separate master password unlocks the vault and cannot be
-          recovered through DSM. Bitwarden clients need a trusted HTTPS certificate; client
-          sign-in is unverified. App sessions are managed separately and data remains in
-          Container Manager volumes after uninstall; DSM administrator sign-in and Container
-          Manager are required
+        en: Keep passwords, login details and secure notes in an encrypted vault hosted
+          on your own server. Vaultwarden is a server compatible with Bitwarden,
+          with a web vault for managing your entries. A separate master password
+          unlocks the vault and cannot be recovered through DSM. Bitwarden
+          clients need a trusted HTTPS certificate; client sign-in is
+          unverified. App sessions are managed separately and data remains in
+          Container Manager volumes after uninstall; DSM administrator sign-in
+          and Container Manager are required
         zh-TW: 在自己的伺服器上，以加密保險庫保管密碼、登入資料與安全筆記。Vaultwarden 是相容於 Bitwarden
-          的伺服器，可透過網頁保險庫管理項目。須以另一組主密碼解鎖保險庫，DSM 無法復原主密碼。Bitwarden 用戶端需要可信的 HTTPS 憑證，用戶端登入尚未驗證。App
-          登入狀態另行管理，卸載後資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
+          的伺服器，可透過網頁保險庫管理項目。須以另一組主密碼解鎖保險庫，DSM 無法復原主密碼。Bitwarden 用戶端需要可信的 HTTPS
+          憑證，用戶端登入尚未驗證。App 登入狀態另行管理，卸載後資料仍保留於 Container Manager 儲存空間；需 DSM
+          管理員登入及 Container Manager
       changelog:
         en: >-
-          1.37.4-0005
+          1.37.4-0007
 
 
-          Rebuild 1.37.4-0005 with published SDK/App/CLI/templates 0.28.0 (executor/v0.27.0), UI 0.14.4 and Go
-          1.26.10. User-visible changes come from the SDK: slow NAS devices get a longer startup budget (900
-          s) and more tolerant health checks; while the App starts, the gateway shows a self-refreshing
-          starting page and DSM status stays running instead of stopping the App; registry checks are skipped
-          for images this package already ran, so offline NAS devices no longer show COMPOSE_IMAGE_UNREACHABLE
-          on Start or same-image upgrades; `/_spl/ping` answers for external-access diagnostics. Maintainer:
-          Syno Package Land. Official images and application sources are unchanged. No NAS tests were
-          performed for this release.
-        zh-TW: >-
-          1.37.4-0005
+          Vaultwarden now has one sign-in URL, and opening it from DSM goes to
+          that address. Without an external address, it uses the install-time
+          URL.
+        zh-TW: |-
+          1.37.4-0007
 
-
-          1.37.4-0005 使用已發佈 SDK/App/CLI/templates 0.28.0（executor/v0.27.0）、UI 0.14.4 與 Go 1.26.10
-          重建。使用者可見的變更來自 SDK：慢速 NAS 有較長的啟動時間預算（900 秒）與較寬鬆的健康檢查；App 啟動期間閘道顯示會自動重新整理的啟動中頁面，DSM 狀態維持執行中，不再停止
-          App；本套件曾執行過的映像不再做倉庫檢查，離線 NAS 啟動或同映像升級時不再出現 COMPOSE_IMAGE_UNREACHABLE；新增 `/_spl/ping` 供外部存取診斷。維護者顯示為
-          Syno Package Land。 官方映像與上游程式維持原樣。 本版未執行 NAS 測試。
+          Vaultwarden 現在只保留一個登入網址，從 DSM 開啟也會前往該網址；未設定外網網址時沿用安裝時網址
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0005
+        version: 1.37.4-0007
         arch:
           - apollolake
           - avoton
@@ -1360,9 +1382,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e62a9bcc4cb9d340a6c0e65513be71ec73f773fd8796bad9c2e2a16e30c0cc7b
-        md5: 426a0605f3439f6199e360db99457a8c
-        size: 21122048
+        sha256: 8abd3e9d095d675a9ade4bf04d5e7449a55530b854b5cadc2c9815aedccfb168
+        md5: dd60a02a450a3eadeae1103b47371c5a
+        size: 27747840
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1379,8 +1401,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T11:35:39Z
-          source_ref: 374e3fdddd40deac26506f0e37bb9e4ccc4b1d7f
+          reviewed_at: 2026-10-24T19:08:42Z
+          source_ref: 776a9e5cb3d03ce9c8a09ab033cd6cf88cf1fae5
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - recommended: false
     featured: false
@@ -1390,13 +1412,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0006
+      release: v0.64.2-0007
       access: public
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-navidrome
-      source_url: https://github.com/synopackageland/syno-pkg-land-navidrome/tree/v0.64.2-0006
+      source_url: https://github.com/synopackageland/syno-pkg-land-navidrome/tree/v0.64.2-0007
       issues_url: https://github.com/synopackageland/syno-pkg-land-navidrome/issues
       license: GPL-3.0; packaging and identity adapter MIT; dependencies retain their
         respective licenses
@@ -1422,22 +1444,18 @@ packages:
           Container Manager
       changelog:
         en: >-
-          0.64.2-0006
+          0.64.2-0007
 
 
-          Rebuilt with SDK/App 0.29.1 and CLI/templates 0.29.0, retaining
-          executor/v0.27.0. Includes SDK fixes for public sign-in and saved
-          external origins. Upstream images and App functionality are unchanged.
-          No NAS testing was performed for this rebuild
-        zh-TW: >-
-          0.64.2-0006
+          Improve opening the App from the DSM menu and external access
+          settings.
+        zh-TW: |-
+          0.64.2-0007
 
-
-          使用 SDK/App 0.29.1 與 CLI/templates 0.29.0 重建，保留 executor/v0.27.0，納入 SDK
-          公開網址登入與外部來源設定修正。上游映像與 App 功能不變，本次未進行 NAS 測試
+          改善從 DSM 選單開啟 App 與外網存取設定
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0006
+        version: 0.64.2-0007
         arch:
           - apollolake
           - avoton
@@ -1466,9 +1484,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2c59317d550a8cab206ced12b31470385de9aeea9e2b443c95ad77e37add5a0c
-        md5: eebd7b5a10c0da4d1dd9e1a70df3162a
-        size: 38065152
+        sha256: aaa4ae461d4b0b31441b6e595d6ec2bb4a4823d2424e3e78ba567079a6a0ef46
+        md5: 843757be1d6c2c5288402ce55f6ca04e
+        size: 38173696
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1485,8 +1503,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T14:11:51Z
-          source_ref: d4eccb38840b3e477943e497ef0dfbd92e7e31b7
+          reviewed_at: 2026-10-24T19:08:42Z
+          source_ref: 3d0a9addf74072aaeeaca6702028895a5ec899c5
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - recommended: false
@@ -1497,13 +1515,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.2-0005
+      release: v2026.10.2-0006
       access: public
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-home-assistant
-      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.2-0005
+      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.2-0006
       issues_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/issues
       license: Apache-2.0; hass-oidc-auth and packaging MIT; dependencies retain their
         respective licenses
@@ -1528,22 +1546,18 @@ packages:
           Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2026.10.2-0005
+          2026.10.2-0006
 
 
-          Rebuilt with SDK/App 0.29.1 and CLI/templates 0.29.0, retaining
-          executor/v0.27.0. Includes SDK fixes for public sign-in and saved
-          external origins. Upstream images and App functionality are unchanged.
-          No NAS testing was performed for this rebuild
-        zh-TW: >-
-          2026.10.2-0005
+          Improve opening the App from the DSM menu and external access
+          settings.
+        zh-TW: |-
+          2026.10.2-0006
 
-
-          使用 SDK/App 0.29.1 與 CLI/templates 0.29.0 重建，保留 executor/v0.27.0，納入 SDK
-          公開網址登入與外部來源設定修正。上游映像與 App 功能不變，本次未進行 NAS 測試
+          改善從 DSM 選單開啟 App 與外網存取設定
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.2-0005
+        version: 2026.10.2-0006
         arch:
           - apollolake
           - avoton
@@ -1572,9 +1586,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 32f2257a8b349d6835d7e15af03fe6a823137c0d3abdb0db72d3fe6cd9d13967
-        md5: ddb88856a6c881c2d3094cc5fbd1dbbf
-        size: 26693120
+        sha256: 69887b01eb7bdbe1040569817ca7b04c3486cec1b63498a3c3921455c80b5d12
+        md5: b8b022f8cd5ec36a015759d07fca2626
+        size: 26806784
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1591,8 +1605,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T14:11:51Z
-          source_ref: 3a994148b64f4b5b7cfab66a87b35279ebe59b8d
+          reviewed_at: 2026-10-24T19:08:42Z
+          source_ref: ef8cfb0b1a1dcc32e8814be06c37f24e50b55f2e
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
 publishers:
