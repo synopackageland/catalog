@@ -559,7 +559,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.7-0018
+      release: v4.2.7-0019
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -628,29 +628,16 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
         en: >-
-          4.2.7-0018
+          4.2.7-0019
 
-          - Use Package Center for service status and the original OpenList UI
-          for file, storage, task, user and settings management.
-
-          - Keep DSM administrator sign-in, the existing administrator binding
-          on upgrades, and daemon restart on failure.
-
-          - Built with released SDK/App/CLI/templates 0.27.0. The official
-          OpenList binary and native UI are unchanged; Container Manager is not
-          required.
+          Update DSM menu launch and external access handling with SDK/App 0.30.2 and CLI/templates 0.30.0. The official OpenList binary, interface and stored data are unchanged
         zh-TW: >-
-          4.2.7-0018
+          4.2.7-0019
 
-          - 狀態由套件中心提供；檔案、儲存、工作、使用者與設定使用原生 OpenList UI 管理。
-
-          - 保留 DSM 管理員登入、升級時的既有管理員綁定，以及 daemon 故障重啟。
-
-          - 使用已發佈 SDK/App/CLI/templates 0.27.0 建置；官方 binary 與原生 UI 不變，不需要
-          Container Manager。
+          使用 SDK/App 0.30.2 與 CLI/templates 0.30.0 更新 DSM 選單啟動及外部存取處理。官方 OpenList 執行檔、介面與已儲存資料維持原樣
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.7-0018
+        version: 4.2.7-0019
         arch:
           - apollolake
           - avoton
@@ -679,9 +666,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ffaa782828c914f48f186855e5ee2fc95ef7d981d91d39f9656dc3f3aed84d7e
-        md5: a367137ac34ad1c94d6f529a908475ca
-        size: 69419520
+        sha256: 2ee242a37b4f10114e7d745f45d9f70bd76e3dc421c7bc90f63e0ff56c6744b5
+        md5: a62c46edc8cdd4275b975d4ce9899381
+        size: 75940352
         facts:
           built_with: sdk
           sdk_backend: go
@@ -697,8 +684,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T10:44:24Z
-          source_ref: b892c69adf92cf9787e35687c517c56fc5413c70
+          reviewed_at: 2026-10-24T19:08:31Z
+          source_ref: 8b6c2c45115ac3d0e2d830da42eea27edc9e1a9c
           source_repo: synopackageland/syno-pkg-land-openlist
   - recommended: false
     featured: false
@@ -811,13 +798,13 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0002
+      release: v1.30.4-0003
       access: private
     metadata:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-freshrss
-      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.2-0002
+      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.4-0003
       license: AGPL-3.0; packaging MIT; container dependencies retain their own licenses
       internet: required
       telemetry: none
@@ -836,18 +823,13 @@ packages:
           Container Manager
       changelog:
         en: >-
-          1.30.4-0002
+          1.30.4-0003
 
-
-          Rebuild 1.30.4-0002 with published SDK/App/CLI/templates 0.26.0, UI
-          0.14.4 and Go 1.26.10. Maintainer: Syno Package Land. Official images
-          and application sources are unchanged.
+          Update DSM menu launch, external access handling and container runtime helpers with SDK/App 0.30.2 and CLI/templates 0.30.0. The official image, reader interface and stored data are unchanged
         zh-TW: >-
-          1.30.4-0002
+          1.30.4-0003
 
-
-          1.30.4-0002 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10
-          重建；維護者顯示為 Syno Package Land。 官方映像與上游程式維持原樣。
+          使用 SDK/App 0.30.2 與 CLI/templates 0.30.0 更新 DSM 選單啟動、外部存取處理及容器執行輔助程式。官方映像、閱讀介面與已儲存資料維持原樣
       issues_url: https://github.com/synopackageland/syno-pkg-land-freshrss/issues
       root_access: none
       access: admins
@@ -858,7 +840,7 @@ packages:
         zh-TW: 訂閱 RSS 與 Atom，在同一處追蹤和閱讀文章
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0002
+        version: 1.30.4-0003
         arch:
           - apollolake
           - avoton
@@ -887,9 +869,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 55f729b019609ab6707e908af3356a403f073268ae7c56cc90b7daefc9cabf7d
-        md5: 41691884c45cac3b40b1982bc285058e
-        size: 19969024
+        sha256: 0f279c6148ec51034501c415c979303da43d86297cb94bc0eb7f41869bf4f47a
+        md5: 5ea8e6a12d7a400bbcfe54dcd2758649
+        size: 26609152
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -906,8 +888,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:49Z
-          source_ref: c3920a0818371bccc8fa0356a11b9dfe06d771ba
+          reviewed_at: 2026-10-24T19:08:31Z
+          source_ref: 232fe378e2a8f659a765e379a22ceed4112701d1
           source_repo: synopackageland/syno-pkg-land-freshrss
   - recommended: false
     featured: false
