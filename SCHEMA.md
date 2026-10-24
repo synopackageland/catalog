@@ -255,8 +255,49 @@ Git, not a claim that the tool performed security review.
 
 Submit a pull request to this public catalog with publisher metadata, external
 source and candidate pins. Maintainers review security, namespaces and licenses
-and run --check before accepting a reviewed entry.
+and run --check and the local port admission gate below before accepting a reviewed entry.
 No third-party SPK is hosted in synopackageland repos/Releases.
+
+### Local port admission gate
+
+Run from this catalog checkout with Python 3.11+, PyYAML 6.0.3 and the GitHub CLI
+authenticated for the release repositories:
+
+```sh
+python3 -m venv /tmp/catalog-check-env
+/tmp/catalog-check-env/bin/pip install PyYAML==6.0.3
+/tmp/catalog-check-env/bin/python -m unittest discover -s tests -v
+/tmp/catalog-check-env/bin/python scripts/check_ports.py
+```
+
+This is a required local review check alongside `pin.mts --check`; it does not
+start GitHub Actions, publish anything, or change the CLI or package source Worker.
+Downloads are temporary and removed after the check. For offline review, supply
+`--spk-dir /path/to/spks` containing **every active pinned artifact**, including
+each architecture. Non-GitHub sources use this offline mode.
+
+The gate verifies each artifact's SHA-256, size and INFO identity against its pin,
+then compares `(protocol, port)` across packages. It reads `conf/resource` and the
+following declarations without extracting archives or running package code:
+
+- `web-config.nginx-static-config.enable` and `.disable` port lists, including `both`
+- `port-config.protocol-file` inside `package.tgz`, including `src.ports`,
+  `dst.ports`, comma-separated lists, ranges and default TCP+UDP
+
+These formats follow Synology's [Web Config](https://help.synology.com/developer-guide/resource_acquisition/web_config.html)
+and [Port Config](https://help.synology.com/developer-guide/integrate_dsm/ports.html) specifications.
+Repeated declarations and architecture variants of the same package share one
+owner; a matching port in two different packages fails. All architectures are
+compared conservatively. Unlisted entries, blocked publishers and blocked versions
+are excluded. Missing/changed SPKs, unreadable `conf/resource`, and missing or
+malformed referenced port files fail closed. An empty resource object is allowed
+for a package that declares no ports.
+
+Exit status is **0** for no conflict, **1** for conflicts (JSON names the packages,
+protocol and port), and **2** for an incomplete/unreadable check. Existing catalog
+conflicts must be fixed with new reviewed SPKs/pins before admission passes.
+This gate covers declared ports only; it does not discover runtime/container
+listeners, scan a NAS, reserve DSM system ports or inspect unreviewed community files.
 
 ## Schema 3 selection example
 
