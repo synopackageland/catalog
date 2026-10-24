@@ -61,11 +61,19 @@ def service_ports(text):
     return result
 
 
+def has_member(archive, name):
+    return any(m.name.removeprefix("./") == name for m in archive.getmembers())
+
+
 def inspect_spk(path):
+    """Return INFO, declared ports and whether the SPK has a conf/resource."""
     with tarfile.open(path) as archive:
         info = dict(re.findall(r'^([\w]+)="([^"\n]*)"$', read_member(archive, "INFO"), re.M))
         if not all(info.get(k) for k in ("package", "version", "arch")):
             raise ValueError("missing INFO package/version/arch")
+        # Native packages without conf/resource declare no DSM-managed ports.
+        if not has_member(archive, "conf/resource"):
+            return info, set(), False
         resource = json.loads(read_member(archive, "conf/resource"))
         result = set()
         nginx = resource.get("web-config", {}).get("nginx-static-config", {})
@@ -90,12 +98,12 @@ def inspect_spk(path):
                 raise ValueError("unreadable package.tgz")
             with archive.extractfile(payloads[0]) as stream, tarfile.open(fileobj=stream) as target:
                 result.update(service_ports(read_member(target, name.removeprefix("./"))))
-        return info, result
+        return info, result, True
 
 
 def check_spks(paths, pins):
     wanted = {p["sha256"]: p for p in pins}
-    found, owners, inventory = set(), {}, {}
+    found, owners, inventory, skipped = set(), {}, {}, []
     for path in sorted(paths):
         with open(path, "rb") as stream:
             digest = hashlib.file_digest(stream, "sha256").hexdigest()
@@ -103,7 +111,7 @@ def check_spks(paths, pins):
             continue
         pin = wanted[digest]
         try:
-            info, ports = inspect_spk(path)
+            info, ports, declared = inspect_spk(path)
             if (path.stat().st_size != pin["size"] or info["package"] != pin["package"]
                     or info["version"] != pin["version"] or set(info["arch"].split()) != set(pin["arch"])):
                 raise ValueError("SPK identity/size differs from pin")
@@ -112,6 +120,8 @@ def check_spks(paths, pins):
             raise ValueError(f'{pin["package"]} {pin["version"]}: {error}') from error
         found.add(digest)
         package = info["package"]
+        if not declared:
+            skipped.append((package, info["version"]))
         inventory.setdefault(package, set()).update(ports)
         for port in ports:
             owners.setdefault(port, set()).add(package)
@@ -127,6 +137,8 @@ def check_spks(paths, pins):
                      for name, ports in sorted(inventory.items())},
         "conflicts": [{"protocol": p, "port": n, "packages": sorted(names)}
                       for (p, n), names in sorted(owners.items()) if len(names) > 1],
+        "skipped": [{"package": name, "version": version, "reason": "no conf/resource"}
+                    for name, version in sorted(set(skipped))],
     }
 
 

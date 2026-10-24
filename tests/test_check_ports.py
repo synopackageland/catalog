@@ -88,8 +88,24 @@ class PortCheckTests(unittest.TestCase):
         self.spk("AppTwo", web(33443))
         self.assertFalse(self.check()["ok"])
 
-    def test_missing_and_invalid_resource_fail_closed(self):
-        for resource in (None, [], {"web-config": None},
+    def test_native_spk_without_resource_declares_no_ports(self):
+        self.spk("NativeApp", None)
+        self.spk("NativeApp", None, arch="armv8")
+        self.spk("AppOne", web(29443))
+        result = self.check()
+        self.assertTrue(result["ok"])
+        self.assertEqual(result["artifacts"], 3)
+        self.assertEqual(result["packages"]["NativeApp"], [])
+        self.assertEqual(result["skipped"], [{"package": "NativeApp", "version": "1.0",
+                                              "reason": "no conf/resource"}])
+
+    def test_duplicate_resource_fails_closed(self):
+        self.spk("AppOne", None, files={"./conf/resource": "{}", "conf/resource": "{}"})
+        with self.assertRaisesRegex(ValueError, "AppOne.*duplicate"):
+            self.check()
+
+    def test_invalid_resource_fails_closed(self):
+        for resource in ([], {"web-config": None},
                          {"web-config": {"nginx-static-config": {"enable": {}}}},
                          {"web-config": {"nginx-static-config": {"enable": [{"ports": {}}]}}}):
             with self.subTest(resource=resource):
