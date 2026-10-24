@@ -659,7 +659,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-uptime-kuma
-      release: v2.5.6-0012
+      release: v2.5.6-0013
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -690,20 +690,28 @@ packages:
           App 資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2.5.6-0012
+          2.5.6-0013
 
 
-          Rebuild 2.5.6-0012 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land. Official images and application sources are unchanged.
+          Rebuild 2.5.6-0013 with published SDK/App/CLI/templates 0.28.0 (executor/v0.27.0), UI 0.14.4 and Go
+          1.26.10. User-visible changes come from the SDK: slow NAS devices get a longer startup budget (900
+          s) and more tolerant health checks; while the App starts, the gateway shows a self-refreshing
+          starting page and DSM status stays running instead of stopping the App; registry checks are skipped
+          for images this package already ran, so offline NAS devices no longer show COMPOSE_IMAGE_UNREACHABLE
+          on Start or same-image upgrades; `/_spl/ping` answers for external-access diagnostics. Maintainer:
+          Syno Package Land. Official images and application sources are unchanged. No NAS tests were
+          performed for this release.
         zh-TW: >-
-          2.5.6-0012
+          2.5.6-0013
 
 
-          2.5.6-0012 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
-          官方映像與上游程式維持原樣。
+          2.5.6-0013 使用已發佈 SDK/App/CLI/templates 0.28.0（executor/v0.27.0）、UI 0.14.4 與 Go 1.26.10 重建。使用者可見的變更來自
+          SDK：慢速 NAS 有較長的啟動時間預算（900 秒）與較寬鬆的健康檢查；App 啟動期間閘道顯示會自動重新整理的啟動中頁面，DSM 狀態維持執行中，不再停止
+          App；本套件曾執行過的映像不再做倉庫檢查，離線 NAS 啟動或同映像升級時不再出現 COMPOSE_IMAGE_UNREACHABLE；新增 `/_spl/ping` 供外部存取診斷。維護者顯示為
+          Syno Package Land。 官方映像與上游程式維持原樣。 本版未執行 NAS 測試。
     pins:
       - package: SynoPkgUptimeKuma
-        version: 2.5.6-0012
+        version: 2.5.6-0013
         arch:
           - apollolake
           - avoton
@@ -732,9 +740,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 76fac97358b5d1521ad7a8a6e54da340f2ea89b29aca4d55a29471274d5314fe
-        md5: 196ddc3fb9e6160f846f442739644122
-        size: 19960832
+        sha256: a0ce710de19ff42f807951caa0704cf52c5133f6da1d95d7388bc0063c7929a1
+        md5: f6bb2e29e8dbbf77ecaa68ff520fb618
+        size: 19979776
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -751,8 +759,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:48Z
-          source_ref: 48bd3ddea2c4d3a5893994a9ce3318f5c8ff6b77
+          reviewed_at: 2026-10-24T11:35:39Z
+          source_ref: eee1d8a8d25db5be3247a989d55376fb7c0f706c
           source_repo: synopackageland/syno-pkg-land-uptime-kuma
   - recommended: false
     featured: false
@@ -865,7 +873,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.1-0004
+      release: v2.37.1-0005
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -897,22 +905,29 @@ packages:
           用戶端尚未驗證。資料夾須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2.37.1-0004
+          2.37.1-0005
 
 
-          Rebuild 2.37.1-0004 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land. Official images and application sources are unchanged. Check the
-          selected shared folder permissions before starting; grant the package account the required access
-          in DSM.
+          Rebuild 2.37.1-0005 with published SDK/App/CLI/templates 0.28.0 (executor/v0.27.0), UI 0.14.4 and Go
+          1.26.10. Maintainer: Syno Package Land. Official images and application sources are unchanged.
+          User-visible changes come from the SDK: slow NAS devices get a longer startup budget (900 s) and
+          more tolerant health checks; while the App starts, the gateway shows a self-refreshing starting page
+          and DSM status stays running instead of stopping the App; registry checks are skipped for images
+          this package already ran, so offline NAS devices no longer show `COMPOSE_IMAGE_UNREACHABLE` on Start
+          or same-image upgrades; `/_spl/ping` answers for external-access diagnostics. Check the selected
+          shared folder permissions before starting; grant the package account the required access in DSM. No
+          NAS tests were performed for this release.
         zh-TW: >-
-          2.37.1-0004
+          2.37.1-0005
 
 
-          2.37.1-0004 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
-          官方映像與上游程式維持原樣。 啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。
+          2.37.1-0005 使用已發佈 SDK/App/CLI/templates 0.28.0（executor/v0.27.0）、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為
+          Syno Package Land。 官方映像與上游程式維持原樣。 使用者可見的變更來自 SDK：慢速 NAS 有較長的啟動時間預算（900 秒）與較寬鬆的健康檢查；App
+          啟動期間閘道顯示會自動重新整理的啟動中頁面，DSM 狀態維持執行中，不再停止 App；本套件曾執行過的映像不再做倉庫檢查，離線 NAS 啟動或同映像升級時不再出現
+          `COMPOSE_IMAGE_UNREACHABLE`；新增 `/_spl/ping` 供外部存取診斷。啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。本版未執行 NAS 測試。
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.1-0004
+        version: 2.37.1-0005
         arch:
           - apollolake
           - avoton
@@ -941,9 +956,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 367bd33ecd09777213a1ed052fd4ba6757c24ed150b0290fcbe0cc591a21835d
-        md5: b7b050139bd0aaba5f55389bc7d3ff36
-        size: 20048384
+        sha256: 312519d786af72b9283389a262642da46282ad1ce9d35c8ece65b308dfac4dea
+        md5: f7d0e466f6ad5e00690401e347a35ded
+        size: 20062720
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -960,8 +975,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:50Z
-          source_ref: 77f1731a186ffd398d8bedea7504f5aa35255166
+          reviewed_at: 2026-10-24T11:35:39Z
+          source_ref: dfcb8da27c3fc19fd16a994456295e63ebeb0539
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - recommended: false
     featured: false
@@ -971,7 +986,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.2-0005
+      release: v12.2-0006
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -1004,30 +1019,36 @@ packages:
           未啟用。所選媒體資料夾為唯讀，須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          12.2-0005
+          12.2-0006
 
 
-          Rebuild 12.2-0005 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land. Official images and application sources are unchanged. Check the
-          selected shared folder permissions before starting; grant the package account the required access
-          in DSM.
-
-
-          A disposable DSM upgrade from 12.2-0004 starts normally when the package account can read the
-          selected share (HTTP 200). Removing its share access makes prestart fail before the container
-          starts and produces a native permission-remediation message.
+          Rebuild 12.2-0006 with published SDK/App/CLI/templates 0.28.0 (executor/v0.27.0), UI 0.14.4 and Go
+          1.26.10. Maintainer: Syno Package Land. Official images and application sources are unchanged.
+          User-visible changes come from the SDK: slow NAS devices get a longer startup budget (900 s) and
+          more tolerant health checks; while the App starts, the gateway shows a self-refreshing starting page
+          and DSM status stays running instead of stopping the App; registry checks are skipped for images
+          this package already ran, so offline NAS devices no longer show `COMPOSE_IMAGE_UNREACHABLE` on Start
+          or same-image upgrades; `/_spl/ping` answers for external-access diagnostics. The HTTPS gateway
+          moves from port 29443 to 33443 so Jellyfin can coexist with ConvertX and Vaultwarden; after
+          upgrading, change the server URL saved in your mobile App to `https://<nas-host>:33443` and update
+          browser bookmarks, firewall rules and port forwarding. Jellyfin is no longer pinned to CPU0 (it uses
+          a CPU weight of 256 on any core) and its memory limit is 2 GiB. Check the selected shared folder
+          permissions before starting; grant the package account the required access in DSM. No NAS tests were
+          performed for this release.
         zh-TW: >-
-          12.2-0005
+          12.2-0006
 
 
-          12.2-0005 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
-          官方映像與上游程式維持原樣。 啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。
-
-
-          以隔離 DSM fixture 從 12.2-0004 升級：套件帳號有讀取權限時正常啟動（HTTP 200）；移除該權限後，prestart 在容器啟動前拒絕，並提供原生權限補救訊息。
+          12.2-0006 使用已發佈 SDK/App/CLI/templates 0.28.0（executor/v0.27.0）、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno
+          Package Land。 官方映像與上游程式維持原樣。 使用者可見的變更來自 SDK：慢速 NAS 有較長的啟動時間預算（900 秒）與較寬鬆的健康檢查；App
+          啟動期間閘道顯示會自動重新整理的啟動中頁面，DSM 狀態維持執行中，不再停止 App；本套件曾執行過的映像不再做倉庫檢查，離線 NAS 啟動或同映像升級時不再出現
+          `COMPOSE_IMAGE_UNREACHABLE`；新增 `/_spl/ping` 供外部存取診斷。HTTPS 閘道連接埠由 29443 改為 33443，讓 Jellyfin 可與
+          ConvertX、Vaultwarden 並存；升級後請將手機 App 中儲存的伺服器網址改為
+          `https://<nas-host>:33443`，並更新瀏覽器書籤、防火牆規則與連接埠轉發。Jellyfin 不再固定於 CPU0（改為在任何核心上使用 256 的 CPU 權重），記憶體上限為
+          2 GiB。啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。本版未執行 NAS 測試。
     pins:
       - package: SynoPkgJellyfin
-        version: 12.2-0005
+        version: 12.2-0006
         arch:
           - apollolake
           - avoton
@@ -1056,9 +1077,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e777a3ec02642d5de1bed359311c677ce5bf2fd711ad7ae62163f746de97e432
-        md5: a664c33e266e3a29ccbcd1cf4846070f
-        size: 21075456
+        sha256: 529a1cf8aaf1f35e02dd58bf55859102d887a48a90002dd8c31aec6ef2f04f54
+        md5: 55402fd46f63b0a5932c8b10afbe6f26
+        size: 21089792
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1075,8 +1096,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:51Z
-          source_ref: a8f211bcb6895fb8f93c04af02144c66b9426374
+          reviewed_at: 2026-10-24T11:35:39Z
+          source_ref: 72ba6c2049ebde4f01063eb0f3d02680d3961457
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - recommended: false
@@ -1087,7 +1108,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.19.0-0003
+      release: v0.19.0-0004
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1114,20 +1135,31 @@ packages:
           小時的工作會定期移除。卸載後 App 資料仍保留於 Container Manager 儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          0.19.0-0003
+          0.19.0-0004
 
 
-          Rebuild 0.19.0-0003 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land. Official images and application sources are unchanged.
+          Rebuild 0.19.0-0004 with published SDK/App/CLI/templates 0.28.0 (executor/v0.27.0), UI 0.14.4 and Go
+          1.26.10. Maintainer: Syno Package Land. Official images and application sources are unchanged.
+          User-visible changes come from the SDK: slow NAS devices get a longer startup budget (900 s) and
+          more tolerant health checks; while the App starts, the gateway shows a self-refreshing starting page
+          and DSM status stays running instead of stopping the App; registry checks are skipped for images
+          this package already ran, so offline NAS devices no longer show `COMPOSE_IMAGE_UNREACHABLE` on Start
+          or same-image upgrades; `/_spl/ping` answers for external-access diagnostics. The HTTPS gateway
+          moves from port 29443 to 31443 so ConvertX can coexist with Vaultwarden and Jellyfin; after
+          upgrading, update saved URLs, firewall rules and port forwarding to use `https://<nas-host>:31443`.
+          No NAS tests were performed for this release.
         zh-TW: >-
-          0.19.0-0003
+          0.19.0-0004
 
 
-          0.19.0-0003 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
-          官方映像與上游程式維持原樣。
+          0.19.0-0004 使用已發佈 SDK/App/CLI/templates 0.28.0（executor/v0.27.0）、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為
+          Syno Package Land。 官方映像與上游程式維持原樣。 使用者可見的變更來自 SDK：慢速 NAS 有較長的啟動時間預算（900 秒）與較寬鬆的健康檢查；App
+          啟動期間閘道顯示會自動重新整理的啟動中頁面，DSM 狀態維持執行中，不再停止 App；本套件曾執行過的映像不再做倉庫檢查，離線 NAS 啟動或同映像升級時不再出現
+          `COMPOSE_IMAGE_UNREACHABLE`；新增 `/_spl/ping` 供外部存取診斷。HTTPS 閘道連接埠由 29443 改為 31443，讓 ConvertX 可與
+          Vaultwarden、Jellyfin 並存；升級後請將已儲存的網址、防火牆規則與連接埠轉發改為 `https://<nas-host>:31443`。本版未執行 NAS 測試。
     pins:
       - package: SynoPkgConvertX
-        version: 0.19.0-0003
+        version: 0.19.0-0004
         arch:
           - apollolake
           - avoton
@@ -1156,9 +1188,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 94a52534155cf682605de065f66215057bac0c5ade31f7f1bb2d384d78c8a336
-        md5: 92ebbd6270b2b7327a6e1f8fd9c147df
-        size: 19936768
+        sha256: 186cb3a21ce24f52c3fa3e67640c740a61ec7cc4b69a5d6bdd6217ba13d8f111
+        md5: bd9bb02b8bfeb6c4bb5bc0bfa543bab5
+        size: 19955200
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1175,8 +1207,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:52Z
-          source_ref: aee0a6917de0415699268a96ba12b035a1619903
+          reviewed_at: 2026-10-24T11:35:39Z
+          source_ref: 479fb1975621e5c75a3d799d512fc8b0dc6ec3f8
           source_repo: synopackageland/syno-pkg-land-convertx
   - recommended: false
     featured: false
@@ -1186,7 +1218,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.3.3-0005
+      release: v3.3.3-0006
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1215,22 +1247,29 @@ packages:
           儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          3.3.3-0005
+          3.3.3-0006
 
 
-          Rebuild 3.3.3-0005 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land. Official images and application sources are unchanged. Check the
-          selected shared folder permissions before starting; grant the package account the required access
-          in DSM.
+          Rebuild 3.3.3-0006 with published SDK/App/CLI/templates 0.28.0 (executor/v0.27.0), UI 0.14.4 and Go
+          1.26.10. User-visible changes come from the SDK: slow NAS devices get a longer startup budget (900
+          s) and more tolerant health checks; while the App starts, the gateway shows a self-refreshing
+          starting page and DSM status stays running instead of stopping the App; registry checks are skipped
+          for images this package already ran, so offline NAS devices no longer show COMPOSE_IMAGE_UNREACHABLE
+          on Start or same-image upgrades; `/_spl/ping` answers for external-access diagnostics. Maintainer:
+          Syno Package Land. Official images and application sources are unchanged. Check the selected shared
+          folder permissions before starting; grant the package account the required access in DSM. No NAS
+          tests were performed for this release.
         zh-TW: >-
-          3.3.3-0005
+          3.3.3-0006
 
 
-          3.3.3-0005 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
-          官方映像與上游程式維持原樣。 啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。
+          3.3.3-0006 使用已發佈 SDK/App/CLI/templates 0.28.0（executor/v0.27.0）、UI 0.14.4 與 Go 1.26.10 重建。使用者可見的變更來自
+          SDK：慢速 NAS 有較長的啟動時間預算（900 秒）與較寬鬆的健康檢查；App 啟動期間閘道顯示會自動重新整理的啟動中頁面，DSM 狀態維持執行中，不再停止
+          App；本套件曾執行過的映像不再做倉庫檢查，離線 NAS 啟動或同映像升級時不再出現 COMPOSE_IMAGE_UNREACHABLE；新增 `/_spl/ping` 供外部存取診斷。維護者顯示為
+          Syno Package Land。 官方映像與上游程式維持原樣。 啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。 本版未執行 NAS 測試。
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.3.3-0005
+        version: 3.3.3-0006
         arch:
           - apollolake
           - avoton
@@ -1259,9 +1298,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c44d973575a7fedbe49b27e6bd2a3a09e40a95df7664c331397e8de5a55a5e43
-        md5: 9e2dc68f30bf5e7ab637131f5bf01ce8
-        size: 20013056
+        sha256: 674ab9f35b346029d582a347b9e732f3f2fadcb1d6c8d71eb763abf99f3308eb
+        md5: 0a94ba54dd48c285067732288d2e46e9
+        size: 20032000
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1278,8 +1317,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:53Z
-          source_ref: 051f677c48c538e4a210ca120fe944575d1dfa4f
+          reviewed_at: 2026-10-24T11:35:39Z
+          source_ref: c6020d4ea44a32e8794bdd250df2b85a560b756d
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - recommended: false
     featured: false
@@ -1289,7 +1328,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0004
+      release: v1.37.4-0005
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1320,20 +1359,28 @@ packages:
           登入狀態另行管理，卸載後資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          1.37.4-0004
+          1.37.4-0005
 
 
-          Rebuild 1.37.4-0004 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land. Official images and application sources are unchanged.
+          Rebuild 1.37.4-0005 with published SDK/App/CLI/templates 0.28.0 (executor/v0.27.0), UI 0.14.4 and Go
+          1.26.10. User-visible changes come from the SDK: slow NAS devices get a longer startup budget (900
+          s) and more tolerant health checks; while the App starts, the gateway shows a self-refreshing
+          starting page and DSM status stays running instead of stopping the App; registry checks are skipped
+          for images this package already ran, so offline NAS devices no longer show COMPOSE_IMAGE_UNREACHABLE
+          on Start or same-image upgrades; `/_spl/ping` answers for external-access diagnostics. Maintainer:
+          Syno Package Land. Official images and application sources are unchanged. No NAS tests were
+          performed for this release.
         zh-TW: >-
-          1.37.4-0004
+          1.37.4-0005
 
 
-          1.37.4-0004 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
-          官方映像與上游程式維持原樣。
+          1.37.4-0005 使用已發佈 SDK/App/CLI/templates 0.28.0（executor/v0.27.0）、UI 0.14.4 與 Go 1.26.10
+          重建。使用者可見的變更來自 SDK：慢速 NAS 有較長的啟動時間預算（900 秒）與較寬鬆的健康檢查；App 啟動期間閘道顯示會自動重新整理的啟動中頁面，DSM 狀態維持執行中，不再停止
+          App；本套件曾執行過的映像不再做倉庫檢查，離線 NAS 啟動或同映像升級時不再出現 COMPOSE_IMAGE_UNREACHABLE；新增 `/_spl/ping` 供外部存取診斷。維護者顯示為
+          Syno Package Land。 官方映像與上游程式維持原樣。 本版未執行 NAS 測試。
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0004
+        version: 1.37.4-0005
         arch:
           - apollolake
           - avoton
@@ -1362,9 +1409,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ce9f712f3f235a9322a5094aaeb58e08da66ad74c617f8da2c509082cf2c625f
-        md5: d0bdb70013da5c9976a1bc4e8d29412e
-        size: 21105152
+        sha256: e62a9bcc4cb9d340a6c0e65513be71ec73f773fd8796bad9c2e2a16e30c0cc7b
+        md5: 426a0605f3439f6199e360db99457a8c
+        size: 21122048
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1381,8 +1428,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:54Z
-          source_ref: 27b229c39559e98ba18ba34c61d531ce64b3dff2
+          reviewed_at: 2026-10-24T11:35:39Z
+          source_ref: 374e3fdddd40deac26506f0e37bb9e4ccc4b1d7f
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - recommended: false
     featured: false
@@ -1392,7 +1439,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0004
+      release: v0.64.2-0005
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1422,22 +1469,29 @@ packages:
           資料仍保留於 Container Manager 儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          0.64.2-0004
+          0.64.2-0005
 
 
-          Rebuild 0.64.2-0004 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land. Official images and application sources are unchanged. Check the
-          selected shared folder permissions before starting; grant the package account the required access
-          in DSM.
+          Rebuild 0.64.2-0005 with published SDK/App/CLI/templates 0.28.0 (executor/v0.27.0), UI 0.14.4 and Go
+          1.26.10. Maintainer: Syno Package Land. Official images and application sources are unchanged.
+          User-visible changes come from the SDK: slow NAS devices get a longer startup budget (900 s) and
+          more tolerant health checks; while the App starts, the gateway shows a self-refreshing starting page
+          and DSM status stays running instead of stopping the App; registry checks are skipped for images
+          this package already ran, so offline NAS devices no longer show `COMPOSE_IMAGE_UNREACHABLE` on Start
+          or same-image upgrades; `/_spl/ping` answers for external-access diagnostics. Check the selected
+          shared folder permissions before starting; grant the package account the required access in DSM. No
+          NAS tests were performed for this release.
         zh-TW: >-
-          0.64.2-0004
+          0.64.2-0005
 
 
-          0.64.2-0004 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package Land。
-          官方映像與上游程式維持原樣。 啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。
+          0.64.2-0005 使用已發佈 SDK/App/CLI/templates 0.28.0（executor/v0.27.0）、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為
+          Syno Package Land。 官方映像與上游程式維持原樣。 使用者可見的變更來自 SDK：慢速 NAS 有較長的啟動時間預算（900 秒）與較寬鬆的健康檢查；App
+          啟動期間閘道顯示會自動重新整理的啟動中頁面，DSM 狀態維持執行中，不再停止 App；本套件曾執行過的映像不再做倉庫檢查，離線 NAS 啟動或同映像升級時不再出現
+          `COMPOSE_IMAGE_UNREACHABLE`；新增 `/_spl/ping` 供外部存取診斷。啟動前檢查所選共用資料夾權限；請在 DSM 授予套件帳號所需存取權限。本版未執行 NAS 測試。
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0004
+        version: 0.64.2-0005
         arch:
           - apollolake
           - avoton
@@ -1466,9 +1520,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: cae3158ec48335590bd87f3cd76b524a77623c6a8009837116755a61b05194e1
-        md5: 80273bb41f7e74b8be080b87ef196a65
-        size: 31538176
+        sha256: 79943df5d3813c826dfed1ffc39f8c42ce9ce13eaae7ebd0d9bd973e4de2196e
+        md5: 5ebdf16aa0ba4a9308c3ddd23b4997be
+        size: 31558144
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1485,8 +1539,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:55Z
-          source_ref: fc1e9b24ae6a884ee1b9ee8ecf56962b80bfaab2
+          reviewed_at: 2026-10-24T11:35:39Z
+          source_ref: 208e3d6c8373c3b41485095785c0884c7a2a1386
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - recommended: false
@@ -1497,7 +1551,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.2-0003
+      release: v2026.10.2-0004
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1526,20 +1580,28 @@ packages:
           儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2026.10.2-0003
+          2026.10.2-0004
 
 
-          Rebuild 2026.10.2-0003 with published SDK/App/CLI/templates 0.26.0, UI 0.14.4 and Go 1.26.10.
-          Maintainer: Syno Package Land. Official images and application sources are unchanged.
+          Rebuild 2026.10.2-0004 with published SDK/App/CLI/templates 0.28.0 (executor/v0.27.0), UI 0.14.4 and
+          Go 1.26.10. User-visible changes come from the SDK: slow NAS devices get a longer startup budget
+          (900 s) and more tolerant health checks; while the App starts, the gateway shows a self-refreshing
+          starting page and DSM status stays running instead of stopping the App; registry checks are skipped
+          for images this package already ran, so offline NAS devices no longer show COMPOSE_IMAGE_UNREACHABLE
+          on Start or same-image upgrades; `/_spl/ping` answers for external-access diagnostics. Maintainer:
+          Syno Package Land. Official images and application sources are unchanged. No NAS tests were
+          performed for this release.
         zh-TW: >-
-          2026.10.2-0003
+          2026.10.2-0004
 
 
-          2026.10.2-0003 使用已發佈 SDK/App/CLI/templates 0.26.0、UI 0.14.4 與 Go 1.26.10 重建；維護者顯示為 Syno Package
-          Land。 官方映像與上游程式維持原樣。
+          2026.10.2-0004 使用已發佈 SDK/App/CLI/templates 0.28.0（executor/v0.27.0）、UI 0.14.4 與 Go 1.26.10
+          重建。使用者可見的變更來自 SDK：慢速 NAS 有較長的啟動時間預算（900 秒）與較寬鬆的健康檢查；App 啟動期間閘道顯示會自動重新整理的啟動中頁面，DSM 狀態維持執行中，不再停止
+          App；本套件曾執行過的映像不再做倉庫檢查，離線 NAS 啟動或同映像升級時不再出現 COMPOSE_IMAGE_UNREACHABLE；新增 `/_spl/ping` 供外部存取診斷。維護者顯示為
+          Syno Package Land。 官方映像與上游程式維持原樣。 本版未執行 NAS 測試。
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.2-0003
+        version: 2026.10.2-0004
         arch:
           - apollolake
           - avoton
@@ -1568,9 +1630,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 4153289ecac1300a6bfd84bd528ee0256f7618e74de86837e6ffa1a043e8ff78
-        md5: 17ce182a61908098e48e6a632f23a280
-        size: 20166144
+        sha256: 9dded6cf2e37a6956286bd14e957165e5bb30c7d8bd86944986e06d2db4be0cf
+        md5: 757941d8f45708e7bec0a874f109a705
+        size: 20180992
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1587,8 +1649,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-22T13:38:56Z
-          source_ref: a671694b8ebd650095127c083d2afae511015373
+          reviewed_at: 2026-10-24T11:35:39Z
+          source_ref: 4e4631948e74cda213731a8160b6b9108fa64d65
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
 publishers:
