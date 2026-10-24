@@ -159,7 +159,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0069
+      release: v0.1.0-0073
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -195,59 +195,92 @@ packages:
           Cloudflare Tunnel, Tailscale, NetBird e l’accesso diretto IPv6 da
           un’unica pagina
       long_description:
-        en: "Reach your NAS remotely without opening router ports.
+        en: >-
+          Reach your NAS remotely without opening router ports
 
 
-          - Choose Cloudflare Tunnel, Tailscale, NetBird or direct IPv6, and
-          manage each connection independently
+          - Let the setup guide help you choose Cloudflare Tunnel, Tailscale or
+          workers.dev
 
-          - Use Cloudflare for DSM web pages; an own domain can also provide
-          Drive TCP access to computers running cloudflared
+          - Give approved Apps private Tailscale URLs or public Cloudflare URLs,
+          with your own domain or workers.dev
+
+          - Open approved App URLs from the DSM menu, keeping links to pages
+          inside an App
 
           - Use Tailscale or NetBird for private Drive and SMB access, subject
-          to your access rules or management policy
+          to access rules and management-server policy
+
+          - Keep connections waiting through slow NAS responses and restore them
+          in the background; unused connection features stop their background
+          loops
 
 
-          DSM administrator sign-in is required"
-        zh-TW: "不必在路由器開放連接埠，也能從外部連回 NAS。
+          Sign in with a DSM administrator account
+        zh-TW: |-
+          不必在路由器開放連接埠，也能從外部連回 NAS
 
+          - 透過設定指引選擇 Cloudflare Tunnel、Tailscale 或 workers.dev
+          - 為核准的 App 設定 Tailscale 私人網址，或使用自有網域／workers.dev 的 Cloudflare 公開網址
+          - 從 DSM 主選單開啟核准的 App 網址，並保留 App 內頁的深層連結
+          - 使用 Tailscale 或 NetBird 私人存取 Drive 與 SMB，依存取規則與管理伺服器政策授權
+          - NAS 回應緩慢時持續等待並在背景恢復連線；未使用的連線功能會停止背景迴圈
 
-          - 個別管理 Cloudflare Tunnel、Tailscale、NetBird 與 IPv6 直連
-
-          - 使用 Cloudflare 存取 DSM 網頁；自有網域也能提供 Drive TCP 存取，連線電腦需執行 cloudflared
-
-          - Drive 與 SMB 的私人存取可使用 Tailscale 或 NetBird，並依存取規則或管理伺服器政策授權
-
-
-          需使用 DSM 管理員帳號登入"
+          需使用 DSM 管理員帳號登入
       changelog:
         en: >-
-          0.1.0-0069
+          0.1.0-0073
 
 
-          Fix connection checks incorrectly reporting failure while NetBird is
-          connected.
-        zh-TW: |-
-          0.1.0-0069
+          - Choose a connection method with a short setup guide, then continue
+          on its setup page
 
-          修正 NetBird 已連線時連線檢查誤報失敗
+          - Give approved Apps private URLs or public Cloudflare addresses,
+          including workers.dev without a domain of your own
+
+          - Open approved App URLs from the DSM menu and keep deep links; fix
+          opening Connect from the DSM menu over a public address
+
+          - Keep NetBird, Tailscale and cloudflared waiting through slow NAS
+          responses and restore them in the background; unused connection
+          features stop their background loops
+
+          - Keep the App list readable while connections restore, and let
+          administrators reset unreadable App URL records with a backup
+
+          - Explain invalid Cloudflare tokens and request only Workers Scripts
+          Edit when setting up workers.dev
+        zh-TW: >-
+          0.1.0-0073
+
+
+          - 透過簡短指引選擇連線方式，接著直接在對應頁面繼續設定
+
+          - 為核准的 App 設定私人網址或 Cloudflare 公開網址，也能使用 workers.dev，不必自備網域
+
+          - 從 DSM 主選單開啟核准的 App 網址並保留深層連結；修正經公開網址從 DSM 主選單開啟 Connect 的問題
+
+          - NAS 回應緩慢時，NetBird、Tailscale 與 cloudflared
+          會持續等待並在背景恢復；未使用的連線功能會停止背景迴圈
+
+          - 恢復連線時仍可讀取 App 清單；管理員可備份並重設無法讀取的 App 網址紀錄
+
+          - 清楚提示 Cloudflare token 無效，設定 workers.dev 時只要求 Workers Scripts Edit 權限
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-address-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-tcp-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0073.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-guide-0073.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-app-urls-0073.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0069
+        version: 0.1.0-0073
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6b4738f5e71a08a93b99471dabb8a0d9e546911c28ebecab4cae529bc27a9ea5
-        md5: c575423bc02b5d790b86821242ceef19
-        size: 9314816
+        sha256: e205b2c8cc0b87d052c12de1d062c5ba95ff15c81597ed3108f3d7faba463dfa
+        md5: 3bd3bafcf4edcbf8006d7da7b2d53ded
+        size: 9937408
         facts:
           built_with: sdk
           sdk_backend: go
@@ -264,19 +297,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T16:25:38Z
-          source_ref: 05057ef55c1c7e00a63def13b5a94b7de327ce32
+          reviewed_at: 2026-10-24T19:09:17Z
+          source_ref: 71edbffab4e1b7fd5efab66eca06ddf60e4eaece
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0069
+        version: 0.1.0-0073
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 1473f05d08f2dfc3b7e51bc215c92766382a4b2af22f09ff0a303ab3f2b442f1
-        md5: c6d6a0b064f34e42351a96a921aad3d8
-        size: 9832960
+        sha256: 0a03fcd81a3fb449de94a036a81fed2c4c18b32732afd0cb13e61b879841a189
+        md5: cea26c58c30adcc8a7f4519147c03452
+        size: 10440704
         facts:
           built_with: sdk
           sdk_backend: go
@@ -293,11 +326,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T16:25:41Z
-          source_ref: 05057ef55c1c7e00a63def13b5a94b7de327ce32
+          reviewed_at: 2026-10-24T19:09:27Z
+          source_ref: 71edbffab4e1b7fd5efab66eca06ddf60e4eaece
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0069
+        version: 0.1.0-0073
         arch:
           - apollolake
           - avoton
@@ -326,9 +359,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 889fdbc1b2b849467530153f00d9d36d941c8f7837e6a21358141c2454006b5d
-        md5: bf9ba2fc03116085da036193789ba099
-        size: 10204160
+        sha256: 2ff2d7ec32354ebea6541d44c171322fe2a38f15a3fe84f726c67f894c1443ef
+        md5: b8cd6ddc813dd9b0c516c93c70d179b3
+        size: 10850816
         facts:
           built_with: sdk
           sdk_backend: go
@@ -345,8 +378,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T16:25:45Z
-          source_ref: 05057ef55c1c7e00a63def13b5a94b7de327ce32
+          reviewed_at: 2026-10-24T19:09:35Z
+          source_ref: 71edbffab4e1b7fd5efab66eca06ddf60e4eaece
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
