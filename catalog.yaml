@@ -230,7 +230,7 @@ packages:
         zh-TW: |-
           0.1.0-0069
 
-          修正 NetBird 已連線時連線檢查誤報失敗。
+          修正 NetBird 已連線時連線檢查誤報失敗
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0068.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-address-0068.png
