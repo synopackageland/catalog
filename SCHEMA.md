@@ -289,9 +289,10 @@ and [Port Config](https://help.synology.com/developer-guide/integrate_dsm/ports.
 Repeated declarations and architecture variants of the same package share one
 owner; a matching port in two different packages fails. All architectures are
 compared conservatively. Unlisted entries, blocked publishers and blocked versions
-are excluded. Missing/changed SPKs, unreadable `conf/resource`, and missing or
-malformed referenced port files fail closed. An empty resource object is allowed
-for a package that declares no ports.
+are excluded. Missing/changed SPKs, duplicate or unreadable `conf/resource`, and
+missing or malformed referenced port files fail closed. An empty resource object is
+allowed for a package that declares no ports. A native SPK without `conf/resource`
+declares no DSM-managed ports; it is checked for identity and listed under `skipped`.
 
 Exit status is **0** for no conflict, **1** for conflicts (JSON names the packages,
 protocol and port), and **2** for an incomplete/unreadable check. Existing catalog
