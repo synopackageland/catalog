@@ -159,7 +159,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0073
+      release: v0.1.0-0074
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -229,58 +229,34 @@ packages:
           需使用 DSM 管理員帳號登入
       changelog:
         en: >-
-          0.1.0-0073
+          0.1.0-0074
 
 
-          - Choose a connection method with a short setup guide, then continue
-          on its setup page
-
-          - Give approved Apps private URLs or public Cloudflare addresses,
-          including workers.dev without a domain of your own
-
-          - Open approved App URLs from the DSM menu and keep deep links; fix
-          opening Connect from the DSM menu over a public address
-
-          - Keep NetBird, Tailscale and cloudflared waiting through slow NAS
-          responses and restore them in the background; unused connection
-          features stop their background loops
-
-          - Keep the App list readable while connections restore, and let
-          administrators reset unreadable App URL records with a backup
-
-          - Explain invalid Cloudflare tokens and request only Workers Scripts
-          Edit when setting up workers.dev
+          Use a separate public hostname for each NAS, edit it before publishing
+          and refuse occupied names. Reduce background supervisor memory and
+          improve handling of invalid relay requests and canceled WebSocket
+          connections.
         zh-TW: >-
-          0.1.0-0073
+          0.1.0-0074
 
 
-          - 透過簡短指引選擇連線方式，接著直接在對應頁面繼續設定
-
-          - 為核准的 App 設定私人網址或 Cloudflare 公開網址，也能使用 workers.dev，不必自備網域
-
-          - 從 DSM 主選單開啟核准的 App 網址並保留深層連結；修正經公開網址從 DSM 主選單開啟 Connect 的問題
-
-          - NAS 回應緩慢時，NetBird、Tailscale 與 cloudflared
-          會持續等待並在背景恢復；未使用的連線功能會停止背景迴圈
-
-          - 恢復連線時仍可讀取 App 清單；管理員可備份並重設無法讀取的 App 網址紀錄
-
-          - 清楚提示 Cloudflare token 無效，設定 workers.dev 時只要求 Workers Scripts Edit 權限
+          每台 NAS 使用獨立的公開名稱，發布前可編輯並拒絕同名覆寫。減少背景監督程序記憶體，改善不合法 relay 請求與已取消
+          WebSocket 連線的處理
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0073.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-guide-0073.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-app-urls-0073.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0073
+        version: 0.1.0-0074
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e205b2c8cc0b87d052c12de1d062c5ba95ff15c81597ed3108f3d7faba463dfa
-        md5: 3bd3bafcf4edcbf8006d7da7b2d53ded
-        size: 9937408
+        sha256: 10780d7bee64dca50e4543375c37d62cf33249d2874c6c6491e9486ecedfb7f8
+        md5: 8f38227b37efd6affe616f1b52d1be27
+        size: 10850304
         facts:
           built_with: sdk
           sdk_backend: go
@@ -297,19 +273,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:09:17Z
-          source_ref: 71edbffab4e1b7fd5efab66eca06ddf60e4eaece
+          reviewed_at: 2026-10-25T10:02:05Z
+          source_ref: 8a6117b08ecea7c0a2194aeb2cb4a47bd86f9b72
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0073
+        version: 0.1.0-0074
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 0a03fcd81a3fb449de94a036a81fed2c4c18b32732afd0cb13e61b879841a189
-        md5: cea26c58c30adcc8a7f4519147c03452
-        size: 10440704
+        sha256: 802c7f431ea3c77afa694657fbdc31a99f569b0858307725e0910c75e09eeaa0
+        md5: 053471150b799e6b9b5d3ecc76e2c932
+        size: 11366912
         facts:
           built_with: sdk
           sdk_backend: go
@@ -326,11 +302,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:09:27Z
-          source_ref: 71edbffab4e1b7fd5efab66eca06ddf60e4eaece
+          reviewed_at: 2026-10-25T10:02:06Z
+          source_ref: 8a6117b08ecea7c0a2194aeb2cb4a47bd86f9b72
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0073
+        version: 0.1.0-0074
         arch:
           - apollolake
           - avoton
@@ -359,9 +335,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2ff2d7ec32354ebea6541d44c171322fe2a38f15a3fe84f726c67f894c1443ef
-        md5: b8cd6ddc813dd9b0c516c93c70d179b3
-        size: 10850816
+        sha256: 81ff6a0c0d5ae086bbe2ac6d0a6c2e5b05c125a8a5e16943dcd41cf6f63d5cc7
+        md5: c3c909e7e498e7567572074ef2542f68
+        size: 11848192
         facts:
           built_with: sdk
           sdk_backend: go
@@ -378,8 +354,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:09:35Z
-          source_ref: 71edbffab4e1b7fd5efab66eca06ddf60e4eaece
+          reviewed_at: 2026-10-25T10:02:07Z
+          source_ref: 8a6117b08ecea7c0a2194aeb2cb4a47bd86f9b72
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
@@ -630,11 +606,14 @@ packages:
         en: >-
           4.2.7-0019
 
-          Update DSM menu launch and external access handling with SDK/App 0.30.2 and CLI/templates 0.30.0. The official OpenList binary, interface and stored data are unchanged
+          Update DSM menu launch and external access handling with SDK/App
+          0.30.2 and CLI/templates 0.30.0. The official OpenList binary,
+          interface and stored data are unchanged
         zh-TW: >-
           4.2.7-0019
 
-          使用 SDK/App 0.30.2 與 CLI/templates 0.30.0 更新 DSM 選單啟動及外部存取處理。官方 OpenList 執行檔、介面與已儲存資料維持原樣
+          使用 SDK/App 0.30.2 與 CLI/templates 0.30.0 更新 DSM 選單啟動及外部存取處理。官方
+          OpenList 執行檔、介面與已儲存資料維持原樣
     pins:
       - package: SynoPkgOpenList
         version: 4.2.7-0019
@@ -825,11 +804,14 @@ packages:
         en: >-
           1.30.4-0003
 
-          Update DSM menu launch, external access handling and container runtime helpers with SDK/App 0.30.2 and CLI/templates 0.30.0. The official image, reader interface and stored data are unchanged
+          Update DSM menu launch, external access handling and container runtime
+          helpers with SDK/App 0.30.2 and CLI/templates 0.30.0. The official
+          image, reader interface and stored data are unchanged
         zh-TW: >-
           1.30.4-0003
 
-          使用 SDK/App 0.30.2 與 CLI/templates 0.30.0 更新 DSM 選單啟動、外部存取處理及容器執行輔助程式。官方映像、閱讀介面與已儲存資料維持原樣
+          使用 SDK/App 0.30.2 與 CLI/templates 0.30.0 更新 DSM
+          選單啟動、外部存取處理及容器執行輔助程式。官方映像、閱讀介面與已儲存資料維持原樣
       issues_url: https://github.com/synopackageland/syno-pkg-land-freshrss/issues
       root_access: none
       access: admins
