@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1588
+      release: v0.1.1-1589
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -24,17 +24,15 @@ packages:
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
       changelog:
         en: >-
-          0.1.1-1588
+          0.1.1-1589
 
 
-          Updated prompts and notifications with a softer, clearer style. Prompt
-          actions are easier to find. Cache-clearing and support-bundle download
-          results now appear as brief notifications, and interface punctuation
-          is consistent across supported languages
+          Hardened scan inputs and limited Btrfs traversal depth. Administrator
+          approval is required again after this upgrade
         zh-TW: |-
-          0.1.1-1588
+          0.1.1-1589
 
-          提示與通知換成新樣式，操作按鈕更容易找到。清除快取與下載支援資料改用短暫通知，並統一各語言介面的文字標點
+          強化掃描輸入檢查並限制 Btrfs 遍歷深度，升級後須由管理員重新核准
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1587.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1587.png
@@ -42,15 +40,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition-1588.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1588
+        version: 0.1.1-1589
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: de3f4a45171820aa5d790db1ae114608816786d73a4f192d676d994f57ca1fd8
-        md5: 9db835e0f2805b5fa027cf1dc1710cf6
-        size: 13121024
+        sha256: 3e564e88f737d297c8f1e6eca83fc10fb7ecb073b3743bee2deb6203b27d6504
+        md5: df283a387637eda697e83457d05c8cb1
+        size: 13124096
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -67,19 +65,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T15:26:16Z
-          source_ref: b294ddc520b130d50174fc59a3f85dcd9bae12bc
+          reviewed_at: 2026-10-25T09:25:07Z
+          source_ref: 241a9d36832a2e200082d9b81c0551b06235c3dd
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1588
+        version: 0.1.1-1589
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: aa67802d6d566410e99eb1089063a99893152e8e11d0487c32e781532d06cf80
-        md5: 406e4d3a9c02272e3fd891e408b2289e
-        size: 13810176
+        sha256: 7683f734211db1809c6a840d4ef48a011ebd56c50ce078ae852a5038348850a4
+        md5: 1ddb793ef0b904326840680fe6738e84
+        size: 13811712
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -96,11 +94,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T15:26:18Z
-          source_ref: b294ddc520b130d50174fc59a3f85dcd9bae12bc
+          reviewed_at: 2026-10-25T09:25:07Z
+          source_ref: 241a9d36832a2e200082d9b81c0551b06235c3dd
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1588
+        version: 0.1.1-1589
         arch:
           - apollolake
           - avoton
@@ -129,9 +127,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 01a4a27ac7aac4045ecab8d3cf9635f98b1c9e5c1adda1b80fa05f5da8ed3b26
-        md5: ae32260575458f05869a1a9a07cc4bf6
-        size: 14110208
+        sha256: df4d35f3558b3add7d5d0102ef23bf53a1de96d90586d5068cac01d1e9c385a4
+        md5: 94daf0ce8a0d9e41448a3447d965d8a7
+        size: 14110720
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -148,8 +146,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T15:26:22Z
-          source_ref: b294ddc520b130d50174fc59a3f85dcd9bae12bc
+          reviewed_at: 2026-10-25T09:25:07Z
+          source_ref: 241a9d36832a2e200082d9b81c0551b06235c3dd
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
@@ -364,7 +362,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0054
+      release: v0.2.2-0055
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -428,15 +426,13 @@ packages:
           Gopeed 為核心；需 DSM 登入
       changelog:
         en: |-
-          0.2.2-0054
+          0.2.2-0055
 
-          Refreshed hints and notifications with clearer styling and compact actions
-          Temporary results now appear as notifications that fade automatically
+          Fixed malformed torrent handling, extension installation cleanup, search template limits and request header scoping. Updated the package integration for reliability and security improvements
         zh-TW: |-
-          0.2.2-0054
+          0.2.2-0055
 
-          提示與通知換成新樣式，操作按鈕更集中
-          暫時性結果改用自動消失的通知
+          修正損壞種子處理、擴充套件安裝清理、搜尋模板限制與請求標頭範圍，並更新套件整合以改善穩定性與安全性
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0054.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0054.png
@@ -445,15 +441,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0054.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0054
+        version: 0.2.2-0055
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2fa2d73deece98928a244c71ae8b9635fffab9e10ac4f79fdee6cc1660dca606
-        md5: ce2adacd164825e0e63021b46bb93e31
-        size: 64977920
+        sha256: 59833e2c05ce77526a839ed292a749f893f375042e8f1fdbe8263b4af4cf8ca1
+        md5: d17c960ac5154f056d618a82d00de7db
+        size: 65679360
         facts:
           built_with: sdk
           sdk_backend: go
@@ -471,11 +467,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T15:17:48Z
-          source_ref: e5216864502a6126724d792d01755df66597a723
+          reviewed_at: 2026-10-25T09:25:08Z
+          source_ref: 4d0cd12c911fe84cf7889d458e1090ba4485ef19
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0054
+        version: 0.2.2-0055
         arch:
           - apollolake
           - avoton
@@ -504,9 +500,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 6363537867562886cfbf3ec21dbd280fba7a428e1e41b7ebe992c3169adbc4cd
-        md5: 11a6580dde906ff0a4b29b4cadb40de7
-        size: 68470272
+        sha256: 7c1084fd7a8ea8f9db2946e7178c762bcd6529ce81ba3cbb31c535b0da451b60
+        md5: 9c5319761c722ddbed248441a0d2b9b4
+        size: 69243904
         facts:
           built_with: sdk
           sdk_backend: go
@@ -524,8 +520,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-23T15:18:01Z
-          source_ref: e5216864502a6126724d792d01755df66597a723
+          reviewed_at: 2026-10-25T09:25:08Z
+          source_ref: 4d0cd12c911fe84cf7889d458e1090ba4485ef19
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
@@ -535,7 +531,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.7-0019
+      release: v4.2.7-0020
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -604,19 +600,19 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
         en: >-
-          4.2.7-0019
+          4.2.7-0020
 
-          Update DSM menu launch and external access handling with SDK/App
-          0.30.2 and CLI/templates 0.30.0. The official OpenList binary,
-          interface and stored data are unchanged
+
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: >-
-          4.2.7-0019
+          4.2.7-0020
 
-          使用 SDK/App 0.30.2 與 CLI/templates 0.30.0 更新 DSM 選單啟動及外部存取處理。官方
-          OpenList 執行檔、介面與已儲存資料維持原樣
+
+          套件整合更新，改善穩定性與安全性
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.7-0019
+        version: 4.2.7-0020
         arch:
           - apollolake
           - avoton
@@ -645,9 +641,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2ee242a37b4f10114e7d745f45d9f70bd76e3dc421c7bc90f63e0ff56c6744b5
-        md5: a62c46edc8cdd4275b975d4ce9899381
-        size: 75940352
+        sha256: 18cf9bf8442c5b9752c4d3deb22c5096ee86c7a4ab34809ce16cd5fec4deff7f
+        md5: 3433717897f50f1328f8321d1a3a1ed5
+        size: 75942400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -663,8 +659,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:31Z
-          source_ref: 8b6c2c45115ac3d0e2d830da42eea27edc9e1a9c
+          reviewed_at: 2026-10-25T09:25:08Z
+          source_ref: 76affc9cac63f227b13b5b325d3ac5b0ece6ad36
           source_repo: synopackageland/syno-pkg-land-openlist
   - recommended: false
     featured: false
@@ -674,7 +670,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-uptime-kuma
-      release: v2.5.6-0015
+      release: v2.5.6-0016
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -707,18 +703,18 @@ packages:
           App 資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2.5.6-0015
+          2.5.6-0016
 
 
-          Improve opening the App from the DSM menu and external access
-          settings.
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: |-
-          2.5.6-0015
+          2.5.6-0016
 
-          改善從 DSM 選單開啟 App 與外網存取設定
+          套件整合更新，改善穩定性與安全性
     pins:
       - package: SynoPkgUptimeKuma
-        version: 2.5.6-0015
+        version: 2.5.6-0016
         arch:
           - apollolake
           - avoton
@@ -747,9 +743,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c4322efe5314d948ce5a423abc05cee785a129883814847464323ba74b9926d4
-        md5: f1ffab3eb9948c532f8254e665f8073e
-        size: 26599936
+        sha256: 608a17ef4f8a5d64d6be0efef6b0dcbce1952be638160e5efc1cec55d7fff398
+        md5: a1f7a4e1187f750875abe6dc6c69d926
+        size: 26601984
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -766,8 +762,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:42Z
-          source_ref: d5d05ee8f60fd37bb837a61bbde5bd02c331e1dd
+          reviewed_at: 2026-10-25T09:25:08Z
+          source_ref: ed8956803ea60545ec4e1b172ac4aa661c38e6a5
           source_repo: synopackageland/syno-pkg-land-uptime-kuma
   - recommended: false
     featured: false
@@ -777,7 +773,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0003
+      release: v1.30.4-0004
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -802,16 +798,16 @@ packages:
           Container Manager
       changelog:
         en: >-
-          1.30.4-0003
+          1.30.4-0004
 
-          Update DSM menu launch, external access handling and container runtime
-          helpers with SDK/App 0.30.2 and CLI/templates 0.30.0. The official
-          image, reader interface and stored data are unchanged
+
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: >-
-          1.30.4-0003
+          1.30.4-0004
 
-          使用 SDK/App 0.30.2 與 CLI/templates 0.30.0 更新 DSM
-          選單啟動、外部存取處理及容器執行輔助程式。官方映像、閱讀介面與已儲存資料維持原樣
+
+          套件整合更新，改善穩定性與安全性
       issues_url: https://github.com/synopackageland/syno-pkg-land-freshrss/issues
       root_access: none
       access: admins
@@ -822,7 +818,7 @@ packages:
         zh-TW: 訂閱 RSS 與 Atom，在同一處追蹤和閱讀文章
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0003
+        version: 1.30.4-0004
         arch:
           - apollolake
           - avoton
@@ -851,9 +847,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 0f279c6148ec51034501c415c979303da43d86297cb94bc0eb7f41869bf4f47a
-        md5: 5ea8e6a12d7a400bbcfe54dcd2758649
-        size: 26609152
+        sha256: 718e76ae34beb423351778f049b4d7caedd6bb6254782002d41cb7aa3adf387a
+        md5: e5aeff23da87a848173340cc29d37b3e
+        size: 26612736
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -870,8 +866,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:31Z
-          source_ref: 232fe378e2a8f659a765e379a22ceed4112701d1
+          reviewed_at: 2026-10-25T09:25:08Z
+          source_ref: 187cd531561ed687248721059b7b6da696f9c79f
           source_repo: synopackageland/syno-pkg-land-freshrss
   - recommended: false
     featured: false
@@ -881,7 +877,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.1-0007
+      release: v2.37.1-0008
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -915,18 +911,18 @@ packages:
           Container Manager
       changelog:
         en: >-
-          2.37.1-0007
+          2.37.1-0008
 
 
-          Improve opening the App from the DSM menu and external access
-          settings.
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: |-
-          2.37.1-0007
+          2.37.1-0008
 
-          改善從 DSM 選單開啟 App 與外網存取設定
+          套件整合更新，改善穩定性與安全性
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.1-0007
+        version: 2.37.1-0008
         arch:
           - apollolake
           - avoton
@@ -955,9 +951,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 3f98d3587748dc74839a4a914f9988d8f165e574ed93276e0596d3352de43c71
-        md5: 9edf55d9b252830a723019ab4d773068
-        size: 26684416
+        sha256: 7ed57de7280f9bfdb8c57b2122d4d4cf353e2ce041fcdc14a0da2593237afe8c
+        md5: 50d63ff704976539a919bb3e058537ab
+        size: 26688512
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -974,8 +970,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:42Z
-          source_ref: 23d47c5f57852c319e90d7b5bf90d9e370bc32b1
+          reviewed_at: 2026-10-25T09:25:08Z
+          source_ref: b8f93722af44305a6e7d6880d3e44a569c8308a5
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - recommended: false
     featured: false
@@ -985,7 +981,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.2-0008
+      release: v12.2-0009
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -1019,18 +1015,18 @@ packages:
           未啟用。所選媒體資料夾為唯讀，須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          12.2-0008
+          12.2-0009
 
 
-          Improve opening the App from the DSM menu and external access
-          settings.
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: |-
-          12.2-0008
+          12.2-0009
 
-          改善從 DSM 選單開啟 App 與外網存取設定
+          套件整合更新，改善穩定性與安全性
     pins:
       - package: SynoPkgJellyfin
-        version: 12.2-0008
+        version: 12.2-0009
         arch:
           - apollolake
           - avoton
@@ -1059,9 +1055,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: fffe993cc0a214c71fafe6ef00fda6699aa3f8cc8980cc3527d5e93e50fe704b
-        md5: 8ecc1b0f38ebce73a4485d5505f3655e
-        size: 27709952
+        sha256: 562d9e2bccd4cf8c7a635e8e3bde0a7653f12c344249b0cad2b7799291a5fe23
+        md5: ca209beb82c3417e2d489e372e66f653
+        size: 27718656
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1078,8 +1074,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:42Z
-          source_ref: 9ee060038f1e4236798d2a409462bc6fd7e81527
+          reviewed_at: 2026-10-25T09:25:08Z
+          source_ref: 7c151452689378fd24883c97bf257ee12f791ab8
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - recommended: false
@@ -1090,7 +1086,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.19.0-0006
+      release: v0.19.0-0007
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1119,18 +1115,18 @@ packages:
           Manager
       changelog:
         en: >-
-          0.19.0-0006
+          0.19.0-0007
 
 
-          Improve opening the App from the DSM menu and external access
-          settings.
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: |-
-          0.19.0-0006
+          0.19.0-0007
 
-          改善從 DSM 選單開啟 App 與外網存取設定
+          套件整合更新，改善穩定性與安全性
     pins:
       - package: SynoPkgConvertX
-        version: 0.19.0-0006
+        version: 0.19.0-0007
         arch:
           - apollolake
           - avoton
@@ -1159,9 +1155,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 587e9be6b49cc7a6e4c91992275fcd0b41d6d391dff202155e56da7b184e57b3
-        md5: c749d6c68669eb7f820f456712da2dfe
-        size: 26576896
+        sha256: 9c5a02b9e8114efd57f4ecbdbb80e7bf99f10ff92e7fc0ae001f3df77a46fae5
+        md5: 0b35573e6195ce05d115529e18f3ddf5
+        size: 26578944
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1178,8 +1174,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:42Z
-          source_ref: d93e00e3d65142f9bf35d8e47c9d78705e21c0a9
+          reviewed_at: 2026-10-25T09:25:08Z
+          source_ref: 886fcabbbc227b6b8b560aa6c97e04fcf2f7558e
           source_repo: synopackageland/syno-pkg-land-convertx
   - recommended: false
     featured: false
@@ -1189,7 +1185,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.3.3-0008
+      release: v3.3.3-0009
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1220,18 +1216,18 @@ packages:
           Container Manager 儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          3.3.3-0008
+          3.3.3-0009
 
 
-          Improve opening the App from the DSM menu and external access
-          settings.
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: |-
-          3.3.3-0008
+          3.3.3-0009
 
-          改善從 DSM 選單開啟 App 與外網存取設定
+          套件整合更新，改善穩定性與安全性
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.3.3-0008
+        version: 3.3.3-0009
         arch:
           - apollolake
           - avoton
@@ -1260,9 +1256,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8aa196756a9508ab5f99c1d8a3f30a703a8b954c6dd33ae69eb1e1b0b894f93f
-        md5: ce276340f554b3ed62aca9b0c24973e9
-        size: 26651136
+        sha256: 25a095752f8bf60a50b35cd56c1e6184ebcef09792aee115676e6e4b0ca626c4
+        md5: 5b51cddfe2aef48720bb8c2ac429211a
+        size: 26656256
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1279,8 +1275,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:42Z
-          source_ref: b692ab352d6e77fd961bc5808e80ae2624dc50f2
+          reviewed_at: 2026-10-25T09:25:09Z
+          source_ref: 6c30c05b37ae26309b3f64d2b72db12af18c22ad
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - recommended: false
     featured: false
@@ -1290,7 +1286,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0007
+      release: v1.37.4-0008
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1323,19 +1319,18 @@ packages:
           管理員登入及 Container Manager
       changelog:
         en: >-
-          1.37.4-0007
+          1.37.4-0008
 
 
-          Vaultwarden now has one sign-in URL, and opening it from DSM goes to
-          that address. Without an external address, it uses the install-time
-          URL.
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: |-
-          1.37.4-0007
+          1.37.4-0008
 
-          Vaultwarden 現在只保留一個登入網址，從 DSM 開啟也會前往該網址；未設定外網網址時沿用安裝時網址
+          套件整合更新，改善穩定性與安全性
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0007
+        version: 1.37.4-0008
         arch:
           - apollolake
           - avoton
@@ -1364,9 +1359,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8abd3e9d095d675a9ade4bf04d5e7449a55530b854b5cadc2c9815aedccfb168
-        md5: dd60a02a450a3eadeae1103b47371c5a
-        size: 27747840
+        sha256: 7267ae15cf4875329231c6a8c991e2d0d2d023326808ea8d01dd987f8da46791
+        md5: 0490b2c9f29a5dd0bb01c4de69177b76
+        size: 27751936
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1383,8 +1378,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:42Z
-          source_ref: 776a9e5cb3d03ce9c8a09ab033cd6cf88cf1fae5
+          reviewed_at: 2026-10-25T09:25:09Z
+          source_ref: 27683a54b8b819a4dbf199a6b49b3b167ada9fb5
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - recommended: false
     featured: false
@@ -1394,7 +1389,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0007
+      release: v0.64.2-0008
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1426,18 +1421,18 @@ packages:
           Container Manager
       changelog:
         en: >-
-          0.64.2-0007
+          0.64.2-0008
 
 
-          Improve opening the App from the DSM menu and external access
-          settings.
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: |-
-          0.64.2-0007
+          0.64.2-0008
 
-          改善從 DSM 選單開啟 App 與外網存取設定
+          套件整合更新，改善穩定性與安全性
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0007
+        version: 0.64.2-0008
         arch:
           - apollolake
           - avoton
@@ -1466,9 +1461,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: aaa4ae461d4b0b31441b6e595d6ec2bb4a4823d2424e3e78ba567079a6a0ef46
-        md5: 843757be1d6c2c5288402ce55f6ca04e
-        size: 38173696
+        sha256: 8aff459189f61400b146b9e706d0f185dc10943b838c910cbe82d107b758694b
+        md5: b470cec67897e7e3e64da2e9a15cba43
+        size: 38182400
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1485,8 +1480,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:42Z
-          source_ref: 3d0a9addf74072aaeeaca6702028895a5ec899c5
+          reviewed_at: 2026-10-25T09:25:09Z
+          source_ref: 780906f56debd18cddca82205461ee753b76c412
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - recommended: false
@@ -1497,7 +1492,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.2-0006
+      release: v2026.10.2-0007
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1528,18 +1523,18 @@ packages:
           Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2026.10.2-0006
+          2026.10.2-0007
 
 
-          Improve opening the App from the DSM menu and external access
-          settings.
+          Updated the package integration for reliability and security
+          improvements
         zh-TW: |-
-          2026.10.2-0006
+          2026.10.2-0007
 
-          改善從 DSM 選單開啟 App 與外網存取設定
+          套件整合更新，改善穩定性與安全性
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.2-0006
+        version: 2026.10.2-0007
         arch:
           - apollolake
           - avoton
@@ -1568,9 +1563,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 69887b01eb7bdbe1040569817ca7b04c3486cec1b63498a3c3921455c80b5d12
-        md5: b8b022f8cd5ec36a015759d07fca2626
-        size: 26806784
+        sha256: 746fc2b61968180e6562468c6caa860a41ea4cd14b1b29d7e7e49881f081a251
+        md5: 19142cdc1db844e0ec361408271af7e2
+        size: 26811904
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1587,8 +1582,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-24T19:08:42Z
-          source_ref: ef8cfb0b1a1dcc32e8814be06c37f24e50b55f2e
+          reviewed_at: 2026-10-25T09:25:09Z
+          source_ref: c2bc55b4bf1568187f2b921f4fb971ab22587f7b
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
 publishers:
