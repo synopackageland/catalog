@@ -157,7 +157,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0074
+      release: v0.1.0-0075
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -197,64 +197,55 @@ packages:
           Reach your NAS remotely without opening router ports
 
 
-          - Let the setup guide help you choose Cloudflare Tunnel, Tailscale or
-          workers.dev
+          - Follow a four-step wizard to choose a way, connect it, select Apps
+          and open their links
 
-          - Give approved Apps private Tailscale URLs or public Cloudflare URLs,
-          with your own domain or workers.dev
+          - Use a free workers.dev link, your own Cloudflare domain or a private
+          network
 
-          - Open approved App URLs from the DSM menu, keeping links to pages
-          inside an App
+          - See connections and items needing attention in the home topology
 
-          - Use Tailscale or NetBird for private Drive and SMB access, subject
-          to access rules and management-server policy
-
-          - Keep connections waiting through slow NAS responses and restore them
-          in the background; unused connection features stop their background
-          loops
+          - Manage each App and its links in one dialog
 
 
           Sign in with a DSM administrator account
         zh-TW: |-
           不必在路由器開放連接埠，也能從外部連回 NAS
 
-          - 透過設定指引選擇 Cloudflare Tunnel、Tailscale 或 workers.dev
-          - 為核准的 App 設定 Tailscale 私人網址，或使用自有網域／workers.dev 的 Cloudflare 公開網址
-          - 從 DSM 主選單開啟核准的 App 網址，並保留 App 內頁的深層連結
-          - 使用 Tailscale 或 NetBird 私人存取 Drive 與 SMB，依存取規則與管理伺服器政策授權
-          - NAS 回應緩慢時持續等待並在背景恢復連線；未使用的連線功能會停止背景迴圈
+          - 四步驟精靈引導選擇方式、連線、選擇 App 並開啟連結
+          - 使用免費 workers.dev 連結、自有 Cloudflare 網域或私人網路
+          - 首頁拓樸呈現連線狀態與待處理項目
+          - 在單一對話框管理每個 App 與連結
 
           需使用 DSM 管理員帳號登入
       changelog:
         en: >-
-          0.1.0-0074
+          0.1.0-0075
 
 
-          Use a separate public hostname for each NAS, edit it before publishing
-          and refuse occupied names. Reduce background supervisor memory and
-          improve handling of invalid relay requests and canceled WebSocket
-          connections.
-        zh-TW: >-
-          0.1.0-0074
+          Follow the four-step setup wizard, see connections in the home
+          topology, manage each App in one dialog and find Cloudflare settings
+          in four tabs
+        zh-TW: |-
+          0.1.0-0075
 
-
-          每台 NAS 使用獨立的公開名稱，發布前可編輯並拒絕同名覆寫。減少背景監督程序記憶體，改善不合法 relay 請求與已取消
-          WebSocket 連線的處理
+          四步驟精靈引導設定連線；首頁拓樸呈現連線狀態，單一對話框管理每個 App，Cloudflare 設定整合為四個分頁
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0073.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-guide-0073.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-app-urls-0073.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-first-visit-0075.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-home-0075.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-apps-0075.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-cloudflare-0075.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0074
+        version: 0.1.0-0075
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 10780d7bee64dca50e4543375c37d62cf33249d2874c6c6491e9486ecedfb7f8
-        md5: 8f38227b37efd6affe616f1b52d1be27
-        size: 10850304
+        sha256: 151643e6f3c1cceddc3dc788887b66ecdb6bf286f0f1649b69333065778356f5
+        md5: 70c31347a6099d1f9e7eb76f09d3e22b
+        size: 10881536
         facts:
           built_with: sdk
           sdk_backend: go
@@ -271,19 +262,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T10:02:05Z
-          source_ref: 8a6117b08ecea7c0a2194aeb2cb4a47bd86f9b72
+          reviewed_at: 2026-10-25T11:27:44Z
+          source_ref: b56917d0ce0aba3139d8addc5feae5576b822e33
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0074
+        version: 0.1.0-0075
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 802c7f431ea3c77afa694657fbdc31a99f569b0858307725e0910c75e09eeaa0
-        md5: 053471150b799e6b9b5d3ecc76e2c932
-        size: 11366912
+        sha256: 123eea6d4d95b721e67e7feb765fa9886d93008209e113f750aee3563490740e
+        md5: d2a7ef1bc5145401d5beb6d434a22ef5
+        size: 11400192
         facts:
           built_with: sdk
           sdk_backend: go
@@ -300,11 +291,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T10:02:06Z
-          source_ref: 8a6117b08ecea7c0a2194aeb2cb4a47bd86f9b72
+          reviewed_at: 2026-10-25T11:27:45Z
+          source_ref: b56917d0ce0aba3139d8addc5feae5576b822e33
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0074
+        version: 0.1.0-0075
         arch:
           - apollolake
           - avoton
@@ -333,9 +324,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 81ff6a0c0d5ae086bbe2ac6d0a6c2e5b05c125a8a5e16943dcd41cf6f63d5cc7
-        md5: c3c909e7e498e7567572074ef2542f68
-        size: 11848192
+        sha256: c22b04baffc4b0abdcab758ec6ef1315885bce808522edcff44b6637d4eb0bbc
+        md5: 3e406ff8a03fc373e208922a98b0a245
+        size: 11881984
         facts:
           built_with: sdk
           sdk_backend: go
@@ -352,9 +343,10 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T10:02:07Z
-          source_ref: 8a6117b08ecea7c0a2194aeb2cb4a47bd86f9b72
+          reviewed_at: 2026-10-25T11:27:46Z
+          source_ref: b56917d0ce0aba3139d8addc5feae5576b822e33
           source_repo: synopackageland/syno-pkg-connect
+
   - recommended: true
     category: utilities
     order: 30
