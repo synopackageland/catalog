@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1589
+      release: v0.1.1-1590
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -24,15 +24,16 @@ packages:
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
       changelog:
         en: >-
-          0.1.1-1589
+          0.1.1-1590
 
 
-          Hardened scan inputs and limited Btrfs traversal depth. Administrator
-          approval is required again after this upgrade
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: |-
-          0.1.1-1589
+          0.1.1-1590
 
-          強化掃描輸入檢查並限制 Btrfs 遍歷深度，升級後須由管理員重新核准
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1587.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1587.png
@@ -40,14 +41,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition-1588.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1589
+        version: 0.1.1-1590
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 3e564e88f737d297c8f1e6eca83fc10fb7ecb073b3743bee2deb6203b27d6504
-        md5: df283a387637eda697e83457d05c8cb1
+        sha256: 1f4f90e5bf0d478b5dfac27e15f08a131ba1df780745d894276679ad3469e6b1
+        md5: 921edc2818fecd0086bb2b358dd895e8
         size: 13124096
         facts:
           built_with: sdk
@@ -65,18 +66,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:07Z
-          source_ref: 241a9d36832a2e200082d9b81c0551b06235c3dd
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: f5287e00dd5f3d427d48feea2051812cdf72232e
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1589
+        version: 0.1.1-1590
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 7683f734211db1809c6a840d4ef48a011ebd56c50ce078ae852a5038348850a4
-        md5: 1ddb793ef0b904326840680fe6738e84
+        sha256: dc3ad62394c4e394dcab7b44a210d3dcff86177bfda0f6a552e23a780a87f68e
+        md5: 827766b6af08dede182e7702adf30e94
         size: 13811712
         facts:
           built_with: sdk
@@ -94,11 +95,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:07Z
-          source_ref: 241a9d36832a2e200082d9b81c0551b06235c3dd
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: f5287e00dd5f3d427d48feea2051812cdf72232e
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1589
+        version: 0.1.1-1590
         arch:
           - apollolake
           - avoton
@@ -127,8 +128,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: df4d35f3558b3add7d5d0102ef23bf53a1de96d90586d5068cac01d1e9c385a4
-        md5: 94daf0ce8a0d9e41448a3447d965d8a7
+        sha256: d5c9d811388e93bf6f7f5a4168f304efaccfe2039294f9fc82636c68c95f309b
+        md5: 481a04336e25dc5bf01019cabd7e1089
         size: 14110720
         facts:
           built_with: sdk
@@ -146,8 +147,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:07Z
-          source_ref: 241a9d36832a2e200082d9b81c0551b06235c3dd
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: f5287e00dd5f3d427d48feea2051812cdf72232e
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
@@ -354,7 +355,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0055
+      release: v0.2.2-0056
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -418,13 +419,13 @@ packages:
           Gopeed 為核心；需 DSM 登入
       changelog:
         en: |-
-          0.2.2-0055
+          0.2.2-0056
 
-          Fixed malformed torrent handling, extension installation cleanup, search template limits and request header scoping. Updated the package integration for reliability and security improvements
+          The page shown when an App can't be opened from the DSM menu is redesigned and now explains when the App's port isn't reachable from outside
         zh-TW: |-
-          0.2.2-0055
+          0.2.2-0056
 
-          修正損壞種子處理、擴充套件安裝清理、搜尋模板限制與請求標頭範圍，並更新套件整合以改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0054.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0054.png
@@ -433,15 +434,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0054.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0055
+        version: 0.2.2-0056
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 59833e2c05ce77526a839ed292a749f893f375042e8f1fdbe8263b4af4cf8ca1
-        md5: d17c960ac5154f056d618a82d00de7db
-        size: 65679360
+        sha256: 8571dc761d108e078d7f4365ac92d0cca29cdc2b0a486fefa635419228d896ac
+        md5: 65f708eb9a6661133450c4576c209fb0
+        size: 64993792
         facts:
           built_with: sdk
           sdk_backend: go
@@ -459,11 +460,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:08Z
-          source_ref: 4d0cd12c911fe84cf7889d458e1090ba4485ef19
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: 8831f2a91a3656daf5bcd2f04cee125fd1cf3b64
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0055
+        version: 0.2.2-0056
         arch:
           - apollolake
           - avoton
@@ -492,9 +493,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7c1084fd7a8ea8f9db2946e7178c762bcd6529ce81ba3cbb31c535b0da451b60
-        md5: 9c5319761c722ddbed248441a0d2b9b4
-        size: 69243904
+        sha256: 5357a58ab50528ad2e1fad7e963a3b8f58dab5199c445f0304ca9698fc87d530
+        md5: c2cc8ede1fabffebd66aa9e5b9f80886
+        size: 68466176
         facts:
           built_with: sdk
           sdk_backend: go
@@ -512,8 +513,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:08Z
-          source_ref: 4d0cd12c911fe84cf7889d458e1090ba4485ef19
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: 8831f2a91a3656daf5bcd2f04cee125fd1cf3b64
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
@@ -523,7 +524,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.7-0020
+      release: v4.2.7-0021
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -592,19 +593,20 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
         en: >-
-          4.2.7-0020
+          4.2.7-0021
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: >-
-          4.2.7-0020
+          4.2.7-0021
 
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.7-0020
+        version: 4.2.7-0021
         arch:
           - apollolake
           - avoton
@@ -633,9 +635,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 18cf9bf8442c5b9752c4d3deb22c5096ee86c7a4ab34809ce16cd5fec4deff7f
-        md5: 3433717897f50f1328f8321d1a3a1ed5
-        size: 75942400
+        sha256: 9ec1e34bce1370b3ed058742d081f134923a02594ec337ff5776d128f5cb11b0
+        md5: 329b7c7ee0fd9ca3ba185bd64596af10
+        size: 75995136
         facts:
           built_with: sdk
           sdk_backend: go
@@ -651,8 +653,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:08Z
-          source_ref: 76affc9cac63f227b13b5b325d3ac5b0ece6ad36
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: e3690cc269546990715fc6aff4cf413f00f822d7
           source_repo: synopackageland/syno-pkg-land-openlist
   - recommended: false
     featured: false
@@ -662,7 +664,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-uptime-kuma
-      release: v2.5.6-0016
+      release: v2.5.6-0017
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -695,18 +697,19 @@ packages:
           App 資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2.5.6-0016
+          2.5.6-0017
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: |-
-          2.5.6-0016
+          2.5.6-0017
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
     pins:
       - package: SynoPkgUptimeKuma
-        version: 2.5.6-0016
+        version: 2.5.6-0017
         arch:
           - apollolake
           - avoton
@@ -735,9 +738,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 608a17ef4f8a5d64d6be0efef6b0dcbce1952be638160e5efc1cec55d7fff398
-        md5: a1f7a4e1187f750875abe6dc6c69d926
-        size: 26601984
+        sha256: ce459455368e44733ba4f98d1c1363d7ec883cc633d43ee44e01b1bb879a0159
+        md5: d24294e345dc7b99080fd6584a3f4169
+        size: 26646528
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -754,8 +757,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:08Z
-          source_ref: ed8956803ea60545ec4e1b172ac4aa661c38e6a5
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: 38f5dcf939cea032eab815f7da920fae6c3eb061
           source_repo: synopackageland/syno-pkg-land-uptime-kuma
   - recommended: false
     featured: false
@@ -765,7 +768,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0004
+      release: v1.30.4-0005
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -790,16 +793,17 @@ packages:
           Container Manager
       changelog:
         en: >-
-          1.30.4-0004
+          1.30.4-0005
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: >-
-          1.30.4-0004
+          1.30.4-0005
 
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
       issues_url: https://github.com/synopackageland/syno-pkg-land-freshrss/issues
       root_access: none
       access: admins
@@ -810,7 +814,7 @@ packages:
         zh-TW: 訂閱 RSS 與 Atom，在同一處追蹤和閱讀文章
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0004
+        version: 1.30.4-0005
         arch:
           - apollolake
           - avoton
@@ -839,9 +843,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 718e76ae34beb423351778f049b4d7caedd6bb6254782002d41cb7aa3adf387a
-        md5: e5aeff23da87a848173340cc29d37b3e
-        size: 26612736
+        sha256: 48a00e15f8f39339ec477e510e466326fb5295e1ad18c8ab59c406216e3d418f
+        md5: faf19d1e8d1043a108d65a3e4760535a
+        size: 26650112
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -858,8 +862,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:08Z
-          source_ref: 187cd531561ed687248721059b7b6da696f9c79f
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: 161225ccb02a32616dd6b30447c117212af7cf0b
           source_repo: synopackageland/syno-pkg-land-freshrss
   - recommended: false
     featured: false
@@ -869,7 +873,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.1-0008
+      release: v2.37.1-0009
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -903,18 +907,19 @@ packages:
           Container Manager
       changelog:
         en: >-
-          2.37.1-0008
+          2.37.1-0009
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: |-
-          2.37.1-0008
+          2.37.1-0009
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.1-0008
+        version: 2.37.1-0009
         arch:
           - apollolake
           - avoton
@@ -943,9 +948,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7ed57de7280f9bfdb8c57b2122d4d4cf353e2ce041fcdc14a0da2593237afe8c
-        md5: 50d63ff704976539a919bb3e058537ab
-        size: 26688512
+        sha256: 945b523b3e9be8601a2443a3c5417e3c7111cd21771e886f9fea01f6d5482138
+        md5: 241f435e061aa1a0b4fcd33ea65444c2
+        size: 26725888
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -962,8 +967,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:08Z
-          source_ref: b8f93722af44305a6e7d6880d3e44a569c8308a5
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: 920d8ff91e8e7232a43afc2121f97d2c7875e0a7
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - recommended: false
     featured: false
@@ -973,7 +978,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.2-0009
+      release: v12.2-0010
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -1007,18 +1012,19 @@ packages:
           未啟用。所選媒體資料夾為唯讀，須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          12.2-0009
+          12.2-0010
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: |-
-          12.2-0009
+          12.2-0010
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
     pins:
       - package: SynoPkgJellyfin
-        version: 12.2-0009
+        version: 12.2-0010
         arch:
           - apollolake
           - avoton
@@ -1047,9 +1053,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 562d9e2bccd4cf8c7a635e8e3bde0a7653f12c344249b0cad2b7799291a5fe23
-        md5: ca209beb82c3417e2d489e372e66f653
-        size: 27718656
+        sha256: d0dacb714711ea79f816f0e743b8e5f144641ed272ff536f7cc509cc79fb5dd0
+        md5: 9e9752e5c6aba3dc924e61492bed0a99
+        size: 27756544
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1066,8 +1072,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:08Z
-          source_ref: 7c151452689378fd24883c97bf257ee12f791ab8
+          reviewed_at: 2026-10-25T14:47:21Z
+          source_ref: 40a5661308d269861a814d1a6a3b848e4e4d03e9
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - recommended: false
@@ -1078,7 +1084,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.19.0-0007
+      release: v0.19.0-0008
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1107,18 +1113,19 @@ packages:
           Manager
       changelog:
         en: >-
-          0.19.0-0007
+          0.19.0-0008
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: |-
-          0.19.0-0007
+          0.19.0-0008
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
     pins:
       - package: SynoPkgConvertX
-        version: 0.19.0-0007
+        version: 0.19.0-0008
         arch:
           - apollolake
           - avoton
@@ -1147,9 +1154,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 9c5a02b9e8114efd57f4ecbdbb80e7bf99f10ff92e7fc0ae001f3df77a46fae5
-        md5: 0b35573e6195ce05d115529e18f3ddf5
-        size: 26578944
+        sha256: 2cae2fed2ca053308ec5bf5036d99fb80fbd8dffc8f7711d4d06e99a2bd3e813
+        md5: 3fc8f9130747a1eb9bf7ff3086c34762
+        size: 26613248
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1166,8 +1173,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:08Z
-          source_ref: 886fcabbbc227b6b8b560aa6c97e04fcf2f7558e
+          reviewed_at: 2026-10-25T14:47:22Z
+          source_ref: bb585a72d14d6ae15520d9b0277b3be2f9ab2b40
           source_repo: synopackageland/syno-pkg-land-convertx
   - recommended: false
     featured: false
@@ -1177,7 +1184,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.3.3-0009
+      release: v3.3.3-0010
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1208,18 +1215,19 @@ packages:
           Container Manager 儲存空間；需 DSM 登入及 Container Manager
       changelog:
         en: >-
-          3.3.3-0009
+          3.3.3-0010
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: |-
-          3.3.3-0009
+          3.3.3-0010
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.3.3-0009
+        version: 3.3.3-0010
         arch:
           - apollolake
           - avoton
@@ -1248,9 +1256,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 25a095752f8bf60a50b35cd56c1e6184ebcef09792aee115676e6e4b0ca626c4
-        md5: 5b51cddfe2aef48720bb8c2ac429211a
-        size: 26656256
+        sha256: e2c56f6c1e5c1343050b485d27fa649d88bbd1e0aa6b563a9d909210df29e47a
+        md5: 6c447cfe555d079dfd3d15ad2fea5f58
+        size: 26696704
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1267,8 +1275,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:09Z
-          source_ref: 6c30c05b37ae26309b3f64d2b72db12af18c22ad
+          reviewed_at: 2026-10-25T14:47:22Z
+          source_ref: e561e652676a110d8be3e2c597a42dff8e4ba2a3
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - recommended: false
     featured: false
@@ -1278,7 +1286,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0008
+      release: v1.37.4-0009
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1311,18 +1319,19 @@ packages:
           管理員登入及 Container Manager
       changelog:
         en: >-
-          1.37.4-0008
+          1.37.4-0009
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: |-
-          1.37.4-0008
+          1.37.4-0009
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0008
+        version: 1.37.4-0009
         arch:
           - apollolake
           - avoton
@@ -1351,9 +1360,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7267ae15cf4875329231c6a8c991e2d0d2d023326808ea8d01dd987f8da46791
-        md5: 0490b2c9f29a5dd0bb01c4de69177b76
-        size: 27751936
+        sha256: 80af1d9f128a49900d1a56fffb114ab6c8492b0469b48f607f473cfa8835c43b
+        md5: e8431fc80e56111c7b3ca4690412cec5
+        size: 27786752
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1370,8 +1379,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:09Z
-          source_ref: 27683a54b8b819a4dbf199a6b49b3b167ada9fb5
+          reviewed_at: 2026-10-25T14:47:22Z
+          source_ref: eda706064d63628ca421ea89a62265fef0b9dafb
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - recommended: false
     featured: false
@@ -1381,7 +1390,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0008
+      release: v0.64.2-0009
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1413,18 +1422,19 @@ packages:
           Container Manager
       changelog:
         en: >-
-          0.64.2-0008
+          0.64.2-0009
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: |-
-          0.64.2-0008
+          0.64.2-0009
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0008
+        version: 0.64.2-0009
         arch:
           - apollolake
           - avoton
@@ -1453,9 +1463,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8aff459189f61400b146b9e706d0f185dc10943b838c910cbe82d107b758694b
-        md5: b470cec67897e7e3e64da2e9a15cba43
-        size: 38182400
+        sha256: 286d56aba84239b636281a17d67677aca096bd6cdcede5d1a16b6134e279bba5
+        md5: cbcc9e0019b47186dc410c60ba497dbc
+        size: 38218752
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1472,8 +1482,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:09Z
-          source_ref: 780906f56debd18cddca82205461ee753b76c412
+          reviewed_at: 2026-10-25T14:47:22Z
+          source_ref: 6d37d6ddf6bcc09029fc56e8189216f44bb32049
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - recommended: false
@@ -1484,7 +1494,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.2-0007
+      release: v2026.10.2-0008
       access: public
     metadata:
       contact_email: support@synopkgland.com
@@ -1515,18 +1525,19 @@ packages:
           Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
       changelog:
         en: >-
-          2026.10.2-0007
+          2026.10.2-0008
 
 
-          Updated the package integration for reliability and security
-          improvements
+          The page shown when an App can't be opened from the DSM menu is
+          redesigned and now explains when the App's port isn't reachable from
+          outside
         zh-TW: |-
-          2026.10.2-0007
+          2026.10.2-0008
 
-          套件整合更新，改善穩定性與安全性
+          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.2-0007
+        version: 2026.10.2-0008
         arch:
           - apollolake
           - avoton
@@ -1555,9 +1566,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 746fc2b61968180e6562468c6caa860a41ea4cd14b1b29d7e7e49881f081a251
-        md5: 19142cdc1db844e0ec361408271af7e2
-        size: 26811904
+        sha256: 761f7328a9b6f383d1556edcd0e40b21c646887753442f89b62be27371cacf84
+        md5: a3f235ac64d17bda6c437aa92b5dc157
+        size: 26844672
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1574,8 +1585,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T09:25:09Z
-          source_ref: c2bc55b4bf1568187f2b921f4fb971ab22587f7b
+          reviewed_at: 2026-10-25T14:47:22Z
+          source_ref: ec48d927bc81f984ceea78ca19426a6ed24310d6
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
 publishers:
