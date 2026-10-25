@@ -158,7 +158,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0075
+      release: v0.1.0-0076
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -221,32 +221,32 @@ packages:
           需使用 DSM 管理員帳號登入
       changelog:
         en: >-
-          0.1.0-0075
+          0.1.0-0076
 
 
-          Follow the four-step setup wizard, see connections in the home
-          topology, manage each App in one dialog and find Cloudflare settings
-          in four tabs
+          Choose a connection without scrolling, read complete topology
+          captions, get readable address names and automatically remove an
+          uninstalled App’s Worker and matching DNS record
         zh-TW: |-
-          0.1.0-0075
+          0.1.0-0076
 
-          四步驟精靈引導設定連線；首頁拓樸呈現連線狀態，單一對話框管理每個 App，Cloudflare 設定整合為四個分頁
+          不必捲動即可選擇連線方式，拓樸標籤完整換行、預設網址名稱更易讀，並在 App 卸載後自動清除其 Worker 與相符的 DNS 記錄
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-first-visit-0075.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-home-0075.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-apps-0075.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-cloudflare-0075.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-first-visit-0076.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-home-0076.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-apps-0076.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-cloudflare-0076.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0075
+        version: 0.1.0-0076
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 151643e6f3c1cceddc3dc788887b66ecdb6bf286f0f1649b69333065778356f5
-        md5: 70c31347a6099d1f9e7eb76f09d3e22b
-        size: 10881536
+        sha256: 05a71580d17b7449ff5fa6e6743c490fa0798f0c445ec7e8f247835bb709674c
+        md5: 7c80d4e10b9c99cbad9dafb4c6f130ab
+        size: 10887680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -263,19 +263,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T11:27:44Z
-          source_ref: b56917d0ce0aba3139d8addc5feae5576b822e33
+          reviewed_at: 2026-10-25T15:34:18Z
+          source_ref: 984b6d6222b33cdb18e828a9cf9fa9db4358d20d
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0075
+        version: 0.1.0-0076
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 123eea6d4d95b721e67e7feb765fa9886d93008209e113f750aee3563490740e
-        md5: d2a7ef1bc5145401d5beb6d434a22ef5
-        size: 11400192
+        sha256: 1a030e61422a1081984df539fd0fb8f6a10f98a81f4df206e85383a977dfb664
+        md5: da44a59358df8c5de5a2a6b1e65bf326
+        size: 11409408
         facts:
           built_with: sdk
           sdk_backend: go
@@ -292,11 +292,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T11:27:45Z
-          source_ref: b56917d0ce0aba3139d8addc5feae5576b822e33
+          reviewed_at: 2026-10-25T15:34:21Z
+          source_ref: 984b6d6222b33cdb18e828a9cf9fa9db4358d20d
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0075
+        version: 0.1.0-0076
         arch:
           - apollolake
           - avoton
@@ -325,9 +325,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c22b04baffc4b0abdcab758ec6ef1315885bce808522edcff44b6637d4eb0bbc
-        md5: 3e406ff8a03fc373e208922a98b0a245
-        size: 11881984
+        sha256: 63043aa5f4d45a3ba6413691e1403e7b3c6fea4ff8e275dff0e2cca824cb8ebd
+        md5: 1224f2a9749206691841c3c60b10d232
+        size: 11895808
         facts:
           built_with: sdk
           sdk_backend: go
@@ -344,8 +344,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T11:27:46Z
-          source_ref: b56917d0ce0aba3139d8addc5feae5576b822e33
+          reviewed_at: 2026-10-25T15:34:25Z
+          source_ref: 984b6d6222b33cdb18e828a9cf9fa9db4358d20d
           source_repo: synopackageland/syno-pkg-connect
 
   - recommended: true
