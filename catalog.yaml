@@ -485,7 +485,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-10-27T11:58:40Z
-          source_ref: 7f803c6f77598f7b0d91602cb0c2d9651db0b00c
+          source_ref: f902bc04259e90221ff925816ec39a9936280518
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
         version: 0.2.2-0060
@@ -538,7 +538,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-10-27T11:58:40Z
-          source_ref: 7f803c6f77598f7b0d91602cb0c2d9651db0b00c
+          source_ref: f902bc04259e90221ff925816ec39a9936280518
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
