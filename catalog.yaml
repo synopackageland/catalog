@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1593
+      release: v0.1.1-1594
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -26,38 +26,40 @@ packages:
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
       changelog:
         en: |-
-          0.1.1-1593
+          0.1.1-1594
 
-          - List unanalysed snapshots by shared folder, with DSM names and dates
-          - Analyse all snapshots using a saved full-volume scan without walking live folders again
-          - Keep the default 512 MiB memory budget and resume completed shared-folder checkpoints
-          - Show the extra analysis time and correct the unanalysed snapshot count
+          - Scale metadata read allowances to used space, extent count and snapshot sharing, independently of the 512 MiB memory limit
+          - Record the selected allowance and its inputs in scan results
+          - Refine remaining space from a saved volume scan, prioritising larger extents without walking live folders again
+          - Pause and resume the extra reads from durable checkpoints with low I/O priority
+          - Keep changed references and unreadable metadata explicitly unknown, and show the extra analysis time
           - Administrator approval is required again after this upgrade
         zh-TW: |-
-          0.1.1-1593
+          0.1.1-1594
 
-          - 依共用資料夾列出未分析快照的 DSM 名稱與日期
-          - 可沿用完整磁碟區掃描分析全部快照，不必重新走訪目前的資料夾
-          - 維持預設 512 MiB 記憶體預算，從已完成的共用資料夾檢查點繼續
-          - 顯示追加耗時，並修正未分析快照數量
+          - 依使用容量、extent 數與快照共用情形調整中繼資料讀取預算，維持 512 MiB 記憶體上限
+          - 掃描結果記錄選定的讀取預算與依據
+          - 沿用磁碟區掃描追加分析剩餘空間，優先處理較大的 extent，不重新走訪目前的資料夾
+          - 以低 I/O 優先權追加讀取，支援耐久檢查點與暫停後繼續
+          - 已變動的參照與無法讀取的中繼資料仍明列為未知，並顯示追加耗時
           - 升級後須由管理員重新核准
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1592.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1594.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1592.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1592.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition-1592.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1593.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1593
+        version: 0.1.1-1594
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 18688e806862aef31958869e21feed7bdf235e1e6b97b23aa9c69453737d0d32
-        md5: e017fe2883941e56f9e4d5b71dc828de
-        size: 13432832
+        sha256: cbb9d7fccd9250ab964fbe447379f29ec70d4ee1edf2c36497704c0d63130a96
+        md5: 543e82bde766fee392d485ba9d9ac1fa
+        size: 13633024
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -74,19 +76,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T15:40:01Z
-          source_ref: c03e43209e566617c24585c4e900ba700e60d5fb
+          reviewed_at: 2026-10-27T17:45:24Z
+          source_ref: 6b8a4ba72a12b0ba088f668656a3020b290ada8b
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1593
+        version: 0.1.1-1594
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 65f7eb995390a6ef16002712d4a86705fde6272f96894e3ae00df877f2259696
-        md5: 0894ba87dcb7fa15ba698018204278af
-        size: 14135808
+        sha256: 13fae6f21eff66013a7d2b96f0319834acc03a7f5bb2b0e65ce790a4a2a30178
+        md5: 8a06e9759c2ee21b66143d0baaa7e0a8
+        size: 14359040
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -103,11 +105,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T15:40:04Z
-          source_ref: c03e43209e566617c24585c4e900ba700e60d5fb
+          reviewed_at: 2026-10-27T17:45:26Z
+          source_ref: 6b8a4ba72a12b0ba088f668656a3020b290ada8b
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1593
+        version: 0.1.1-1594
         arch:
           - apollolake
           - avoton
@@ -136,9 +138,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 83f83c49f86a78d745d70685c41451024908a423e287662279d2ec58b5dc254a
-        md5: fa5cd44e9874942f5f4bbcb597324105
-        size: 14445056
+        sha256: 9256ab6be4ac923056ba622e4261940cfbba945b95ded610ca050d9117e9ca64
+        md5: dd1d3e13f2e3e552f0973257dbc7f9da
+        size: 14663168
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -155,8 +157,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T15:40:08Z
-          source_ref: c03e43209e566617c24585c4e900ba700e60d5fb
+          reviewed_at: 2026-10-27T17:45:30Z
+          source_ref: 6b8a4ba72a12b0ba088f668656a3020b290ada8b
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
