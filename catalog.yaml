@@ -377,7 +377,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0058
+      release: v0.2.2-0060
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -443,30 +443,30 @@ packages:
           Gopeed 為核心；需 DSM 登入
       changelog:
         en: |-
-          0.2.2-0058
+          0.2.2-0060
 
-          Search and source tests work over HTTP DSM, with precise error reasons and cached definition updates
+          Search configured sources with Remote Tab Opener, merge browser and server results, and use imported Cardigann definitions without copying cookies
         zh-TW: |-
-          0.2.2-0058
+          0.2.2-0060
 
-          修復 HTTP DSM 的搜尋與來源測試，提供明確錯誤原因並快取搜尋定義更新
+          透過 Remote Tab Opener 搜尋已設定的來源，合併瀏覽器與伺服器結果，匯入 Cardigann 定義即可使用，無需複製 Cookie
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0054.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0054.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0060.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-rto-guide-0060.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0054.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0054.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0054.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0058
+        version: 0.2.2-0060
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: dde14642abf65a789ecaea3ad464526779cf53bf23912168c2a0040ab0d4ce6a
-        md5: 7039ca8c7c0e8f3b096e260a4121674e
-        size: 65687040
+        sha256: eb6ec660aba3d4f2d97a02c09531cfda409cdabd24e754f502c505b6010b183e
+        md5: 6687df0dfcbf6df1b7391e946a4debe7
+        size: 65696768
         facts:
           built_with: sdk
           sdk_backend: go
@@ -484,11 +484,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T09:33:21Z
-          source_ref: 06f6e0cbd14e3f566b7ccaea200af920531789c5
+          reviewed_at: 2026-10-27T11:41:33Z
+          source_ref: 60d5fcd7780f6add0232d6a8d72cb23f8fa15757
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0058
+        version: 0.2.2-0060
         arch:
           - apollolake
           - avoton
@@ -517,9 +517,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 453d1f5e118eb80dbc24041572631f956a4db26cfe012cce75aa8793335f9ddf
-        md5: 7ccde04cb1de604cc68d59895d784f13
-        size: 69250048
+        sha256: ba17a1f9eb318b39ff4ea7c7a0155f8143cd1cfdd9ba3f958b4af49df8b67c9c
+        md5: 90087e570cf9cade0f177c62fb19e10e
+        size: 69258752
         facts:
           built_with: sdk
           sdk_backend: go
@@ -537,8 +537,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T09:33:21Z
-          source_ref: 06f6e0cbd14e3f566b7ccaea200af920531789c5
+          reviewed_at: 2026-10-27T11:41:33Z
+          source_ref: 60d5fcd7780f6add0232d6a8d72cb23f8fa15757
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
