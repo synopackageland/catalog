@@ -158,7 +158,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0084
+      release: v0.1.0-0086
       access: private
     metadata:
       contact_email: support@synopkgland.com
@@ -227,37 +227,27 @@ packages:
           需使用 DSM 管理員帳號登入
       changelog:
         en: >-
-          0.1.0-0084
+          0.1.0-0086
 
 
-          - Pick web services from this NAS when adding an App, with service
-          names and ports
+          - Self-hosted NetBird trusts login pages on the management URL's HTTPS
+          origin automatically
 
-          - Follow services now supports more DSM service definitions
+          - Confirm an external login page with one click instead of typing its
+          origin
 
-          - Free link opens DSM directly and follows changes to your workers.dev
-          address
+          - Overview hides turned-off ways and shares connection checks with
+          provider pages
 
-          - Own domain and Free link share the same layout, with clearer setup
-          status
-
-          - Own domain setup uses browser sign-in; existing token connections
-          keep working
-
-          - Public connection diagrams show Any browser, matching the Overview
-
-          - IPv6 direct guides you through DSM and router settings without a
-          misleading connect action
+          - Free link uses the Cloudflare Worker node, with the NAS name and
+          public address shown separately
         zh-TW: |-
-          0.1.0-0084
+          0.1.0-0086
 
-          - 新增 App 時可從 NAS 服務清單選擇名稱與連接埠
-          - Follow services 支援更多 DSM 服務定義
-          - 免費連結預設公開 DSM 登入頁，並跟隨 workers.dev 位址變更
-          - 自有網域與免費連結採相同版面，設定狀態更清楚
-          - 自有網域使用瀏覽器登入，既有 token 連線仍可運作
-          - 公開連線圖示統一使用「任何瀏覽器」
-          - IPv6 直連改為設定指引，可開啟網路與防火牆設定再重新檢查
+          - 自架 NetBird 自動信任管理端同源的 HTTPS 登入頁面
+          - 外部登入頁面可在確認後一鍵信任，不必手動輸入來源
+          - 首頁隱藏已停用的方式，並與連線頁面共用檢查結果
+          - 免費連結統一使用 Cloudflare Worker 節點，NAS 名稱與公開地址分開顯示
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0084.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0084.png
@@ -266,15 +256,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-guide-0084.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0084
+        version: 0.1.0-0086
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 402761fa876f0c1ac59cb9c15831b73c9bdd960ae04772f8c3a5c488b98102a1
-        md5: ec6eea11371ad247c92d6af1e0bbefd9
-        size: 12861440
+        sha256: bac9caa432f9f20cc154b1f452339aed5cdc29318562c808a297661c9da50f25
+        md5: c46a343e349ae54474276d2b25391084
+        size: 12881920
         facts:
           built_with: sdk
           sdk_backend: go
@@ -291,19 +281,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-26T15:46:27Z
-          source_ref: c4ea0674527b506c2f39b85edb63c7f4de6b584e
+          reviewed_at: 2026-10-27T02:43:11Z
+          source_ref: 410f59283296e82549ecb052b99a53562978330c
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0084
+        version: 0.1.0-0086
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: a2199c5041fcc1c97fe1284db6fb655a070b6fbeff94e58b9c4aa5414dc40ff2
-        md5: 0bc1d954a0f840ec9a2a342633189be3
-        size: 13424640
+        sha256: 5e51530fc58dbfadac5024c35237fd89509964d35919424c44cec3c20e101996
+        md5: a0556effec4fd9026749abb1a3d39147
+        size: 13445120
         facts:
           built_with: sdk
           sdk_backend: go
@@ -320,11 +310,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-26T15:46:27Z
-          source_ref: c4ea0674527b506c2f39b85edb63c7f4de6b584e
+          reviewed_at: 2026-10-27T02:43:30Z
+          source_ref: 410f59283296e82549ecb052b99a53562978330c
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0084
+        version: 0.1.0-0086
         arch:
           - apollolake
           - avoton
@@ -353,9 +343,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 58faa6697ece4bb8d1365dcde414746192671758e4f6af847bca81c17230cc4a
-        md5: 3f1b377dee5d1172fcc98d7f792e5042
-        size: 14059520
+        sha256: 61b414b455f3a20228e66ead92d279fb4acca2772db5bdfa09a383068a16100d
+        md5: 83b7b3e6ce610121e527a3ca67f31bed
+        size: 14080000
         facts:
           built_with: sdk
           sdk_backend: go
@@ -372,8 +362,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-26T15:46:27Z
-          source_ref: c4ea0674527b506c2f39b85edb63c7f4de6b584e
+          reviewed_at: 2026-10-27T02:43:47Z
+          source_ref: 410f59283296e82549ecb052b99a53562978330c
           source_repo: synopackageland/syno-pkg-connect
 
   - recommended: true
