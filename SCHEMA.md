@@ -38,6 +38,35 @@ distributor_url, support_url (HTTP(S) or mailto), helpurl. URLs must be safe sch
 emails must have a valid shape. Text is bounded to 16,000 characters, combined
 metadata to 32,000. `package-metadata.schema.json` documents it.
 
+### Maintainer and distributor
+
+Set explicit attribution in each catalog entry's `metadata`:
+
+```yaml
+metadata:
+  maintainer: OpenList Team
+  maintainer_url: https://github.com/OpenListTeam/OpenList
+  distributor: Syno Package Land
+  distributor_url: https://synopkgland.com/
+```
+
+For upstream-based Apps published by Syno Package Land, `maintainer` is the
+upstream GitHub owner's display name (or login if none is set), and
+`maintainer_url` is exactly `metadata.upstream.url`. The distributor is
+Syno Package Land. Names must be nonempty single lines of at most 80 characters.
+The schema rejects missing attribution or Syno Package Land as upstream
+maintainer. The three product exceptions are SynoReclaim, SynoPkgConnect and
+SynoPkgGopeed: set maintainer to Syno Package Land, maintainer_url to
+https://synopkgland.com/, and omit a separate distributor.
+
+The catalog overrides feed and website attribution without changing pinned SPK
+bytes, hashes or INFO consistency checks. Set the same maintainer at the App
+manifest's top level, with the other three fields in manifest `metadata`, so the
+next rebuild carries the correct installed INFO too. Existing SPKs remain
+installable; installed Package Center details change after a rebuild/upgrade.
+Run `python3 scripts/check_attribution.py` and
+`python3 -m unittest discover -s tests` locally before submitting.
+
 ### Screenshots
 
 `screenshots` is a list of at most **5** `https://` image URLs, each up to 2,048
