@@ -464,8 +464,8 @@ packages:
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: eb6ec660aba3d4f2d97a02c09531cfda409cdabd24e754f502c505b6010b183e
-        md5: 6687df0dfcbf6df1b7391e946a4debe7
+        sha256: 6c602362cf6ccd1bb5c4e9465cc57059e0b2684cfd133f18538ebb060bed277e
+        md5: 5d635ba4ef6a30b4d42b3317dba00850
         size: 65696768
         facts:
           built_with: sdk
@@ -484,8 +484,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T11:41:33Z
-          source_ref: 60d5fcd7780f6add0232d6a8d72cb23f8fa15757
+          reviewed_at: 2026-10-27T11:58:40Z
+          source_ref: 7f803c6f77598f7b0d91602cb0c2d9651db0b00c
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
         version: 0.2.2-0060
@@ -517,8 +517,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ba17a1f9eb318b39ff4ea7c7a0155f8143cd1cfdd9ba3f958b4af49df8b67c9c
-        md5: 90087e570cf9cade0f177c62fb19e10e
+        sha256: 260a2765243386099489594ce0638353e916b262c32f1a2334a874dc1b58e858
+        md5: 2a06c38623b9006f83fcba65abb26d16
         size: 69258752
         facts:
           built_with: sdk
@@ -537,8 +537,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T11:41:33Z
-          source_ref: 60d5fcd7780f6add0232d6a8d72cb23f8fa15757
+          reviewed_at: 2026-10-27T11:58:40Z
+          source_ref: 7f803c6f77598f7b0d91602cb0c2d9651db0b00c
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
