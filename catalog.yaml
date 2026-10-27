@@ -370,7 +370,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0056
+      release: v0.2.2-0058
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -436,13 +436,13 @@ packages:
           Gopeed 為核心；需 DSM 登入
       changelog:
         en: |-
-          0.2.2-0056
+          0.2.2-0058
 
-          The page shown when an App can't be opened from the DSM menu is redesigned and now explains when the App's port isn't reachable from outside
+          Search and source tests work over HTTP DSM, with precise error reasons and cached definition updates
         zh-TW: |-
-          0.2.2-0056
+          0.2.2-0058
 
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          修復 HTTP DSM 的搜尋與來源測試，提供明確錯誤原因並快取搜尋定義更新
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0054.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0054.png
@@ -451,15 +451,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0054.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0056
+        version: 0.2.2-0058
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 8571dc761d108e078d7f4365ac92d0cca29cdc2b0a486fefa635419228d896ac
-        md5: 65f708eb9a6661133450c4576c209fb0
-        size: 64993792
+        sha256: dde14642abf65a789ecaea3ad464526779cf53bf23912168c2a0040ab0d4ce6a
+        md5: 7039ca8c7c0e8f3b096e260a4121674e
+        size: 65687040
         facts:
           built_with: sdk
           sdk_backend: go
@@ -477,11 +477,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:21Z
-          source_ref: 8831f2a91a3656daf5bcd2f04cee125fd1cf3b64
+          reviewed_at: 2026-10-27T09:33:21Z
+          source_ref: 06f6e0cbd14e3f566b7ccaea200af920531789c5
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0056
+        version: 0.2.2-0058
         arch:
           - apollolake
           - avoton
@@ -510,9 +510,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 5357a58ab50528ad2e1fad7e963a3b8f58dab5199c445f0304ca9698fc87d530
-        md5: c2cc8ede1fabffebd66aa9e5b9f80886
-        size: 68466176
+        sha256: 453d1f5e118eb80dbc24041572631f956a4db26cfe012cce75aa8793335f9ddf
+        md5: 7ccde04cb1de604cc68d59895d784f13
+        size: 69250048
         facts:
           built_with: sdk
           sdk_backend: go
@@ -530,8 +530,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:21Z
-          source_ref: 8831f2a91a3656daf5bcd2f04cee125fd1cf3b64
+          reviewed_at: 2026-10-27T09:33:21Z
+          source_ref: 06f6e0cbd14e3f566b7ccaea200af920531789c5
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
