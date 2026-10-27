@@ -11,6 +11,8 @@ packages:
       release: v0.1.1-1590
       access: private
     metadata:
+      maintainer: Syno Package Land
+      maintainer_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
@@ -161,6 +163,8 @@ packages:
       release: v0.1.0-0086
       access: private
     metadata:
+      maintainer: Syno Package Land
+      maintainer_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
@@ -376,6 +380,8 @@ packages:
       release: v0.2.2-0056
       access: private
     metadata:
+      maintainer: Syno Package Land
+      maintainer_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
@@ -545,6 +551,10 @@ packages:
       release: v4.2.7-0021
       access: private
     metadata:
+      maintainer: OpenList Team
+      maintainer_url: https://github.com/OpenListTeam/OpenList
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-openlist
@@ -685,6 +695,10 @@ packages:
       release: v2.5.6-0017
       access: private
     metadata:
+      maintainer: Louis Lam
+      maintainer_url: https://github.com/louislam/uptime-kuma
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-uptime-kuma
@@ -789,6 +803,10 @@ packages:
       release: v1.30.4-0005
       access: private
     metadata:
+      maintainer: FreshRSS
+      maintainer_url: https://github.com/FreshRSS/FreshRSS
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-freshrss
@@ -894,6 +912,10 @@ packages:
       release: v2.37.1-0009
       access: private
     metadata:
+      maintainer: advplyr
+      maintainer_url: https://github.com/advplyr/audiobookshelf
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-audiobookshelf
@@ -999,6 +1021,10 @@ packages:
       release: v12.2-0010
       access: private
     metadata:
+      maintainer: Jellyfin
+      maintainer_url: https://github.com/jellyfin/jellyfin
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-jellyfin
@@ -1105,6 +1131,10 @@ packages:
       release: v0.19.0-0008
       access: public
     metadata:
+      maintainer: Emrik Östling
+      maintainer_url: https://github.com/C4illin/ConvertX
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-convertx
@@ -1205,6 +1235,10 @@ packages:
       release: v3.3.3-0010
       access: public
     metadata:
+      maintainer: Paperless-ngx
+      maintainer_url: https://github.com/paperless-ngx/paperless-ngx
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
@@ -1307,6 +1341,10 @@ packages:
       release: v1.37.4-0009
       access: public
     metadata:
+      maintainer: Daniel García
+      maintainer_url: https://github.com/dani-garcia/vaultwarden
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-vaultwarden
@@ -1411,6 +1449,10 @@ packages:
       release: v0.64.2-0009
       access: public
     metadata:
+      maintainer: Navidrome
+      maintainer_url: https://github.com/navidrome/navidrome
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-navidrome
@@ -1515,6 +1557,10 @@ packages:
       release: v2026.10.2-0008
       access: public
     metadata:
+      maintainer: Home Assistant
+      maintainer_url: https://github.com/home-assistant/core
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-home-assistant
