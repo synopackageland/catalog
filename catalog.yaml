@@ -377,7 +377,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0065
+      release: v0.2.2-0066
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -443,13 +443,13 @@ packages:
           Gopeed 為核心；需 DSM 登入
       changelog:
         en: |-
-          0.2.2-0065
+          0.2.2-0066
 
-          Open every source in a tab of its own and close it by tab ID with one retry, show one line for tabs left open, and load the new version when Download Hub reopens after an upgrade
+          Search by category and keep up to five searches as tabs, search RSS feeds without a keyword, open a .txt list of links, see a download's details and a Paused tab, choose which files of a torrent to download, and let administrators add extra BT trackers
         zh-TW: |-
-          0.2.2-0065
+          0.2.2-0066
 
-          每個來源都開自己的分頁並依分頁 ID 關閉、重試一次，未關閉的分頁以一行提示；升級後重新開啟下載中心即載入新版
+          依類別搜尋並以最多五個分頁保留搜尋、RSS 可不輸入關鍵字、開啟 .txt 網址清單、查看下載詳細資訊與「已暫停」分頁、選擇 torrent 要下載的檔案，管理員可加入額外 BT tracker
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0054.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0064.png
@@ -458,15 +458,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0054.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0065
+        version: 0.2.2-0066
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f6105f5c2bad2298d8ef7bed86e57558391e05ed8b6f495f504581dddac98cec
-        md5: a453ff4392c019a48a2b7387a0497010
-        size: 65699840
+        sha256: c24f15a5d13e67b86f7c29c23dae2039d53f7f55bc430ee7e107576da8d34ffc
+        md5: 0e1177c698d57ad509d873e791b9d4ca
+        size: 65729536
         facts:
           built_with: sdk
           sdk_backend: go
@@ -484,11 +484,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-28T07:13:30Z
-          source_ref: 3935e0f35666e3566d4c4050adbce5dbf84e0cfa
+          reviewed_at: 2026-10-28T07:31:44Z
+          source_ref: 5c7bb66dcd07e49277051e425c0dfd1e9d98bcaf
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0065
+        version: 0.2.2-0066
         arch:
           - apollolake
           - avoton
@@ -517,9 +517,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 226613981a4acb8a96af5aca8195530adf89c3e1ccf9f14e799d4a0d15611a30
-        md5: f63bc1c58925f145a911e5f701bec891
-        size: 69272576
+        sha256: 5b8de95902bad0ff1f56ca357dc041a2505b3443a8950fa1157969cb4f21b9f1
+        md5: ff291494bbed559e0470262b6ad7d390
+        size: 69300736
         facts:
           built_with: sdk
           sdk_backend: go
@@ -537,8 +537,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-28T07:13:30Z
-          source_ref: 3935e0f35666e3566d4c4050adbce5dbf84e0cfa
+          reviewed_at: 2026-10-28T07:31:44Z
+          source_ref: 5c7bb66dcd07e49277051e425c0dfd1e9d98bcaf
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
