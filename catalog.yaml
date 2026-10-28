@@ -452,7 +452,7 @@ packages:
           同時搜尋最多四個來源並自動關閉 App 建立的分頁，支援大型 Kickass Torrents 網頁、修復 LinuxTracker 結果，空結果以中性狀態顯示
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0054.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0063.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0064.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-rto-guide-0060.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0054.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0054.png
@@ -464,9 +464,9 @@ packages:
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 8d351db67eff54ecc18d62ae6f28922048c5c50a90914167ebfd84195f53eb52
-        md5: 829f190460ba1bb6ce22efd49c8540c3
-        size: 64609792
+        sha256: 33ad43799536145595830ceb70d677c945cd95a36d2c18c8061092edc2c71469
+        md5: df811a5bd65eab8901788b3081eb0ca2
+        size: 64611328
         facts:
           built_with: sdk
           sdk_backend: go
@@ -484,8 +484,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-28T03:06:49Z
-          source_ref: 705eabb0de8c1f44fb2b96f69364a419e7e74f8e
+          reviewed_at: 2026-10-28T04:25:43Z
+          source_ref: 9e88bcf42c075400ebe1d68b33e55b1741c29dff
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
         version: 0.2.2-0064
@@ -517,9 +517,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 22376adeb0f93e4d9a871a125ed0122e16626d3111c151d081efd88b4cc7ebf3
-        md5: 2dc8bd19811fc1779146d6c14ac88907
-        size: 68405248
+        sha256: d2aedb6608c332d652214efbc09f3e522a3ccbc9308b2ae73fcfc7890a6112ca
+        md5: c2eda7e171096c1a9832de31d6214db6
+        size: 68411392
         facts:
           built_with: sdk
           sdk_backend: go
@@ -537,8 +537,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-28T03:06:50Z
-          source_ref: 705eabb0de8c1f44fb2b96f69364a419e7e74f8e
+          reviewed_at: 2026-10-28T04:25:43Z
+          source_ref: 9e88bcf42c075400ebe1d68b33e55b1741c29dff
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
