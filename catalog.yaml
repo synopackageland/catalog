@@ -377,7 +377,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0063
+      release: v0.2.2-0064
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -443,30 +443,30 @@ packages:
           Gopeed 為核心；需 DSM 登入
       changelog:
         en: |-
-          0.2.2-0063
+          0.2.2-0064
 
-          Search source sites in background tabs without switching away from Download Hub, reuse tabs on repeated searches, and show clear source states with one retry action
+          Search up to four source sites at once and close App-created tabs automatically, handle large Kickass Torrents pages, restore LinuxTracker results, and show neutral empty states
         zh-TW: |-
-          0.2.2-0063
+          0.2.2-0064
 
-          來源網站改在背景分頁搜尋，下載中心保持前景，重複搜尋重用分頁，各來源以簡短狀態與單一重試操作顯示結果
+          同時搜尋最多四個來源並自動關閉 App 建立的分頁，支援大型 Kickass Torrents 網頁、修復 LinuxTracker 結果，空結果以中性狀態顯示
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0054.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0063.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0064.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-rto-guide-0060.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0054.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0054.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0063
+        version: 0.2.2-0064
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: a611854f108e025c2069fb67be43cca384102ba5263c567c8ab8e871f1b79003
-        md5: c8de8e51a79a8cdf126c37b662159f70
-        size: 65698304
+        sha256: 33ad43799536145595830ceb70d677c945cd95a36d2c18c8061092edc2c71469
+        md5: df811a5bd65eab8901788b3081eb0ca2
+        size: 64611328
         facts:
           built_with: sdk
           sdk_backend: go
@@ -484,11 +484,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T15:54:31Z
-          source_ref: a6e48855d5f4686460d99330292f3fc154f276a7
+          reviewed_at: 2026-10-28T04:25:43Z
+          source_ref: 9e88bcf42c075400ebe1d68b33e55b1741c29dff
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0063
+        version: 0.2.2-0064
         arch:
           - apollolake
           - avoton
@@ -517,9 +517,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e25cb5880f460c8fc8f1461a0b8e26352e453bd813be24f8fdb29a6e911ab608
-        md5: 687b8dbf6953b2266c588ea23a9591fe
-        size: 69262336
+        sha256: d2aedb6608c332d652214efbc09f3e522a3ccbc9308b2ae73fcfc7890a6112ca
+        md5: c2eda7e171096c1a9832de31d6214db6
+        size: 68411392
         facts:
           built_with: sdk
           sdk_backend: go
@@ -537,8 +537,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T15:54:31Z
-          source_ref: a6e48855d5f4686460d99330292f3fc154f276a7
+          reviewed_at: 2026-10-28T04:25:43Z
+          source_ref: 9e88bcf42c075400ebe1d68b33e55b1741c29dff
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
