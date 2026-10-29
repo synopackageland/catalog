@@ -168,7 +168,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0088
+      release: v0.1.0-0089
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -239,36 +239,36 @@ packages:
           需使用 DSM 管理員帳號登入
       changelog:
         en: |-
-          0.1.0-0088
+          0.1.0-0089
 
-          - Self-host a NetBird server on the NAS with one click, reached through Cloudflare on your own domain
-          - NetBird's Signal stream runs through a Cloudflare Worker, so devices connect through the tunnel
-          - One Cloudflare API token for the Free link and the NetBird server, with a missing permission named before setup
-          - The NetBird server renews its owner token, disconnects this NAS on turn off and updates in Settings
+          - SDK 0.36 Unix connections for private connector control, app proxies and supervisor communication
+          - Provider children stop before package shutdown is acknowledged
+          - Add, replace or remove a GitHub token in Settings to raise update and download limits
+          - Grey page actions and red destructive confirmations follow DSM button styling
         zh-TW: |-
-          0.1.0-0088
+          0.1.0-0089
 
-          - 一鍵在 NAS 上自架 NetBird 伺服器，透過 Cloudflare 以自有網域連線
-          - NetBird 的 Signal 連線經由 Cloudflare Worker 轉送，裝置可透過通道連線
-          - 免費連結與 NetBird 伺服器共用同一組 Cloudflare API token，缺少權限時於設定前說明
-          - NetBird 伺服器自動更新擁有者 token，關閉時中斷本機連線，並可在設定中更新
+          - 使用 SDK 0.36 Unix 連線處理私有控制、App 代理與 supervisor 通訊
+          - 確認 provider 子程序停止後才回覆套件關閉完成
+          - 在設定新增、更換或移除 GitHub token，提高更新與下載額度
+          - 頁面動作維持灰色，刪除確認採用紅色 DSM 按鈕
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0084.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0084.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-free-link-0084.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-add-app-0084.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-guide-0084.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0089-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0089-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-free-link-0089-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-app-urls-0089-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0089-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0088
+        version: 0.1.0-0089
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 1d599b7abb5a45de2571f79413d25b233c7b6370e45efe4a8ef46e038f39eff1
-        md5: 7a558ff47765a93e0813df48b13c511c
-        size: 13045760
+        sha256: d00a45235a11e7f038b0f422a549e77f2b5590def993f9c7444c21e98c347e01
+        md5: def195f57de9c5d77538809efea4f9ef
+        size: 14305280
         facts:
           built_with: sdk
           sdk_backend: go
@@ -285,19 +285,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-28T09:04:31Z
-          source_ref: fb0999e01588f07fd413e4590c7d605fa9f64298
+          reviewed_at: 2026-10-29T06:15:47Z
+          source_ref: 3d9d2d1262b9fe3ddb0317843ca93676d9e67a03
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0088
+        version: 0.1.0-0089
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: ef299752699052ad3df759794ceb0257bab93f83981a39e3eacd658ee7b4451d
-        md5: 42e4ba3fbfca41b1ec5a55378b56834d
-        size: 13598720
+        sha256: 6a530c2d9dbe95a74d07f91963e1f4c8104494e902509ec59adfc8c5d468c498
+        md5: 252b7eafe19e4de37f8d1bb79988dfad
+        size: 14899200
         facts:
           built_with: sdk
           sdk_backend: go
@@ -314,11 +314,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-28T09:04:39Z
-          source_ref: fb0999e01588f07fd413e4590c7d605fa9f64298
+          reviewed_at: 2026-10-29T06:15:49Z
+          source_ref: 3d9d2d1262b9fe3ddb0317843ca93676d9e67a03
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0088
+        version: 0.1.0-0089
         arch:
           - apollolake
           - avoton
@@ -347,9 +347,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 60245b12a1c4d43513083a9bbc2bbfc35327d21af458572b6c02d936dec8136a
-        md5: 09d222a78ce5f7606b986804588359a0
-        size: 14243840
+        sha256: 4189aece8a05ec1848636ad24c063cb8990176ba3a9a180b2c54b7be3bad0762
+        md5: 206b687c67bc41e5198d98ac5077430e
+        size: 15626240
         facts:
           built_with: sdk
           sdk_backend: go
@@ -366,8 +366,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-28T09:04:46Z
-          source_ref: fb0999e01588f07fd413e4590c7d605fa9f64298
+          reviewed_at: 2026-10-29T06:15:55Z
+          source_ref: 3d9d2d1262b9fe3ddb0317843ca93676d9e67a03
           source_repo: synopackageland/syno-pkg-connect
 
   - recommended: true
