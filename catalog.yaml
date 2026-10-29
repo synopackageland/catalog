@@ -377,7 +377,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0066
+      release: v0.2.2-0068
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -442,31 +442,36 @@ packages:
           支援網站的影片和擴充套件新增的來源。暫停、繼續與整理下載，選擇完成檔案的儲存位置並查看歷史紀錄。每位使用者各自管理下載，管理員管理存取權限、擴充套件與引擎更新。以
           Gopeed 為核心；需 DSM 登入
       changelog:
-        en: |-
-          0.2.2-0066
+        en: >-
+          0.2.2-0068
 
-          Search by category and keep up to five searches as tabs, search RSS feeds without a keyword, open a .txt list of links, see a download's details and a Paused tab, choose which files of a torrent to download, and let administrators add extra BT trackers
-        zh-TW: |-
-          0.2.2-0066
 
-          依類別搜尋並以最多五個分頁保留搜尋、RSS 可不輸入關鍵字、開啟 .txt 網址清單、查看下載詳細資訊與「已暫停」分頁、選擇 torrent 要下載的檔案，管理員可加入額外 BT tracker
+          Built with SDK/App 0.35.0, CLI 0.37.0 and templates 0.33.0. Download
+          Hub appears in Hyper Backup's application list with offline
+          application backup. Saved Shared Folders must be selected separately
+        zh-TW: >-
+          0.2.2-0068
+
+
+          使用 SDK/App 0.35.0、CLI 0.37.0 與 templates 0.33.0 建置。下載中心會出現在 Hyper
+          Backup 的應用程式清單，預設使用離線應用程式備份。已儲存的共享資料夾需另外選取
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0054.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0064.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-rto-guide-0060.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0054.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0054.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0068.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0066
+        version: 0.2.2-0068
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: c24f15a5d13e67b86f7c29c23dae2039d53f7f55bc430ee7e107576da8d34ffc
-        md5: 0e1177c698d57ad509d873e791b9d4ca
-        size: 65729536
+        sha256: 39f14354b48deb6a8f3a78165ddd22849d1c1eb4c975e1493c65d28b6ff43280
+        md5: 6bcefadf3b89d38825c7c6503b2c6b18
+        size: 66332672
         facts:
           built_with: sdk
           sdk_backend: go
@@ -484,11 +489,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-28T07:31:44Z
-          source_ref: 5c7bb66dcd07e49277051e425c0dfd1e9d98bcaf
+          reviewed_at: 2026-10-29T03:14:44Z
+          source_ref: b1306f9acb735d22f42b71c5b025ca13b1f77791
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0066
+        version: 0.2.2-0068
         arch:
           - apollolake
           - avoton
@@ -517,9 +522,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 5b8de95902bad0ff1f56ca357dc041a2505b3443a8950fa1157969cb4f21b9f1
-        md5: ff291494bbed559e0470262b6ad7d390
-        size: 69300736
+        sha256: a9affd511b1cbc48f34d190fad26fd5bc4125202564b02fb447ccee81da8d666
+        md5: 17696e90f9e6a483cb336c8ccee00112
+        size: 69942784
         facts:
           built_with: sdk
           sdk_backend: go
@@ -537,8 +542,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-28T07:31:44Z
-          source_ref: 5c7bb66dcd07e49277051e425c0dfd1e9d98bcaf
+          reviewed_at: 2026-10-29T03:15:42Z
+          source_ref: b1306f9acb735d22f42b71c5b025ca13b1f77791
           source_repo: synopackageland/syno-pkg-gopeed
   - recommended: false
     featured: false
