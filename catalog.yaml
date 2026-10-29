@@ -21,9 +21,19 @@ packages:
       description:
         en: Find what really frees space on a Btrfs volume, and free it safely
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
+        zh-CN: 找出 Btrfs 存储空间的可回收项目，并安全释放空间
+        de: Finde, was auf einem Btrfs-Volume wirklich Platz freigibt, und gib ihn sicher frei
+        fr: Trouvez ce qui libère vraiment de l'espace sur un volume Btrfs, et libérez-le en toute sécurité
+        ja: Btrfs ボリュームで本当に空き容量を増やせるものを見つけ、安全に解放
+        ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       long_description:
         en: Find what really frees space on a Btrfs volume, and free it safely
         zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
+        zh-CN: 找出 Btrfs 存储空间的可回收项目，并安全释放空间
+        de: Finde, was auf einem Btrfs-Volume wirklich Platz freigibt, und gib ihn sicher frei
+        fr: Trouvez ce qui libère vraiment de l'espace sur un volume Btrfs, et libérez-le en toute sécurité
+        ja: Btrfs ボリュームで本当に空き容量を増やせるものを見つけ、安全に解放
+        ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
           0.1.1-1594
@@ -43,6 +53,51 @@ packages:
           - 以低 I/O 優先權追加讀取，支援耐久檢查點與暫停後繼續
           - 已變動的參照與無法讀取的中繼資料仍明列為未知，並顯示追加耗時
           - 升級後須由管理員重新核准
+        zh-CN: |-
+          0.1.1-1594
+
+          - 依使用容量、extent 数与快照共用情形调整元数据读取预算，维持 512 MiB 内存上限
+          - 扫描结果记录选定的读取预算与依据
+          - 沿用存储空间扫描追加分析剩余空间，优先处理较大的 extent，不重新遍历目前的文件夹
+          - 以低 I/O 优先级追加读取，支持持久检查点与暂停后继续
+          - 已变动的参照与无法读取的元数据仍明列为未知，并显示追加耗时
+          - 升级后须由管理员重新核准
+        de: |-
+          0.1.1-1594
+
+          - Das Budget für Metadaten-Lesezugriffe richtet sich nach belegtem Speicher, Anzahl der Extents und Snapshot-Teilung, unabhängig von der Speichergrenze von 512 MiB
+          - Das gewählte Budget und seine Grundlagen stehen in den Scan-Ergebnissen
+          - Restlichen Speicher aus einem gespeicherten Volume-Scan genauer zuordnen, größere Extents zuerst, ohne aktuelle Ordner erneut zu durchlaufen
+          - Die zusätzlichen Lesezugriffe mit niedriger I/O-Priorität anhalten und an dauerhaften Prüfpunkten fortsetzen
+          - Geänderte Verweise und unlesbare Metadaten bleiben ausdrücklich unbekannt, und die zusätzliche Analysezeit wird angezeigt
+          - Nach diesem Upgrade ist erneut eine Freigabe durch einen Administrator nötig
+        fr: |-
+          0.1.1-1594
+
+          - Le budget de lecture des métadonnées s'adapte à l'espace utilisé, au nombre d'extents et au partage entre instantanés, indépendamment de la limite mémoire de 512 Mio
+          - Les résultats d'analyse indiquent le budget choisi et ce qui l'a déterminé
+          - L'espace restant est affiné à partir d'une analyse de volume enregistrée, en traitant d'abord les plus gros extents, sans reparcourir les dossiers actuels
+          - Les lectures supplémentaires se mettent en pause et reprennent depuis des points de contrôle durables, avec une faible priorité d'E/S
+          - Les références modifiées et les métadonnées illisibles restent explicitement inconnues, et le temps d'analyse supplémentaire est affiché
+          - Une nouvelle approbation d'un administrateur est requise après cette mise à niveau
+        ja: |-
+          0.1.1-1594
+
+          - メタデータ読み取りの上限を、使用容量、エクステント数、スナップショットの共有状況に合わせて調整（512 MiB のメモリ上限とは別）
+          - 選んだ上限とその根拠をスキャン結果に記録
+          - 保存済みのボリューム スキャンから残りの容量を詳しく分析し、大きなエクステントを優先、現在のフォルダーは再走査しません
+          - 追加の読み取りは低い I/O 優先度で行い、永続的なチェックポイントから一時停止・再開できます
+          - 変更された参照や読み取れないメタデータは不明として明示し、追加の分析時間を表示
+          - このアップグレード後は管理者の再承認が必要です
+        ko: |-
+          0.1.1-1594
+
+          - 메타데이터 읽기 한도를 사용 용량, extent 수, 스냅샷 공유 정도에 맞춰 조정해요(512 MiB 메모리 한도와는 별개)
+          - 선택한 한도와 그 근거를 스캔 결과에 기록해요
+          - 저장된 볼륨 스캔으로 남은 공간을 더 자세히 분석하고, 큰 extent부터 처리하며 현재 폴더를 다시 훑지 않아요
+          - 추가 읽기는 낮은 I/O 우선순위로 하고, 영구 체크포인트에서 일시 정지하고 이어서 할 수 있어요
+          - 바뀐 참조와 읽을 수 없는 메타데이터는 알 수 없음으로 명확히 남기고, 추가 분석 시간을 보여 줘요
+          - 이번 업그레이드 후에는 관리자의 재승인이 필요해요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1594.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1592.png
@@ -237,6 +292,61 @@ packages:
           - 以 URL 或 NAS 偵測清單新增自訂網頁 App，預設先要求 DSM 登入
 
           需使用 DSM 管理員帳號登入
+        zh-CN: |-
+          不必在路由器开放连接端口，也能从外部连回 NAS
+
+          - 四步骤向导引导选择方式、连接、选择 App 并打开链接
+          - 使用免费 workers.dev 链接、自有 Cloudflare 域名或私人网络
+          - 首页拓朴呈现连接状态与待处理项目
+          - 在单一对话框管理每个 App 与链接
+
+          - 以 URL 或 NAS 检测清单添加自订网页 App，默认先要求 DSM 登录
+
+          需使用 DSM 管理员帐号登录
+        de: |-
+          Erreiche dein NAS von unterwegs, ohne Ports am Router zu öffnen
+
+          - Ein Assistent in vier Schritten: Weg wählen, verbinden, Apps auswählen und ihre Links öffnen
+          - Nutze einen kostenlosen workers.dev-Link, deine eigene Cloudflare-Domain oder ein privates Netzwerk
+          - Sieh Verbindungen und offene Punkte in der Übersichtstopologie
+          - Verwalte jede App und ihre Links in einem Dialog
+
+          - Füge eigene Web-Apps per URL oder aus erkannten NAS-Diensten hinzu, mit DSM-Anmeldung standardmäßig an
+
+          Melde dich mit einem DSM-Administratorkonto an
+        fr: |-
+          Accédez à votre NAS à distance sans ouvrir de ports sur le routeur
+
+          - Un assistant en quatre étapes : choisir une méthode, la connecter, sélectionner les Apps et ouvrir leurs liens
+          - Utilisez un lien workers.dev gratuit, votre propre domaine Cloudflare ou un réseau privé
+          - Voyez les connexions et les points à traiter dans la topologie d'accueil
+          - Gérez chaque App et ses liens dans une seule fenêtre
+
+          - Ajoutez des Apps web par URL ou depuis les services NAS détectés, avec la connexion DSM activée par défaut
+
+          Connectez-vous avec un compte administrateur DSM
+        ja: |-
+          ルーターのポートを開けずに、外出先から NAS に接続できます
+
+          - 4 ステップのウィザードで、方法を選んで接続し、アプリを選んでリンクを開けます
+          - 無料の workers.dev リンク、独自の Cloudflare ドメイン、プライベート ネットワークに対応
+          - ホームのトポロジーで接続状況と対応が必要な項目を確認できます
+          - アプリごとのリンクをひとつのダイアログで管理できます
+
+          - URL や検出された NAS サービスからカスタム Web アプリを追加できます。DSM サインインは既定でオンです
+
+          DSM 管理者アカウントでサインインしてください
+        ko: |-
+          공유기 포트를 열지 않고 밖에서 NAS에 접속해요
+
+          - 4단계 마법사로 방식을 고르고, 연결하고, 앱을 선택해 링크를 열어요
+          - 무료 workers.dev 링크, 내 Cloudflare 도메인, 사설 네트워크 중에서 골라요
+          - 홈 토폴로지에서 연결 상태와 확인이 필요한 항목을 봐요
+          - 앱마다 링크를 대화 상자 하나에서 관리해요
+
+          - URL이나 감지된 NAS 서비스로 사용자 지정 웹 앱을 추가해요. DSM 로그인은 기본으로 켜져 있어요
+
+          DSM 관리자 계정으로 로그인하세요
       changelog:
         en: |-
           0.1.0-0089
@@ -252,6 +362,41 @@ packages:
           - 確認 provider 子程序停止後才回覆套件關閉完成
           - 在設定新增、更換或移除 GitHub token，提高更新與下載額度
           - 頁面動作維持灰色，刪除確認採用紅色 DSM 按鈕
+        zh-CN: |-
+          0.1.0-0089
+
+          - 使用 SDK 0.36 Unix 连接处理私有控制、App 代理与 supervisor 通信
+          - 确认 provider 子进程停止后才回复套件关闭完成
+          - 在设置添加、更换或移除 GitHub token，提高更新与下载额度
+          - 页面动作维持灰色，删除确认采用红色 DSM 按钮
+        de: |-
+          0.1.0-0089
+
+          - Unix-Verbindungen aus SDK 0.36 für die private Connector-Steuerung, App-Proxys und die Kommunikation mit dem Supervisor
+          - Provider-Prozesse beenden sich, bevor das Herunterfahren des Pakets bestätigt wird
+          - In den Einstellungen ein GitHub-Token hinzufügen, ersetzen oder entfernen, um die Grenzen für Updates und Downloads anzuheben
+          - Graue Seitenaktionen und rote Bestätigungen für Löschvorgänge folgen dem DSM-Schaltflächenstil
+        fr: |-
+          0.1.0-0089
+
+          - Connexions Unix du SDK 0.36 pour le contrôle privé du connecteur, les proxys d'Apps et la communication avec le superviseur
+          - Les processus des fournisseurs s'arrêtent avant que l'arrêt du paquet soit confirmé
+          - Ajoutez, remplacez ou supprimez un jeton GitHub dans Paramètres pour relever les limites de mises à jour et de téléchargements
+          - Les actions de page en gris et les confirmations destructives en rouge suivent le style des boutons de DSM
+        ja: |-
+          0.1.0-0089
+
+          - SDK 0.36 の Unix 接続を、非公開のコネクター制御、アプリのプロキシ、スーパーバイザーとの通信に使用
+          - パッケージの停止を応答する前にプロバイダーの子プロセスを停止
+          - 設定で GitHub トークンを追加・置換・削除でき、更新とダウンロードの上限を引き上げられます
+          - ページ操作のグレーと、削除確認の赤のボタンが DSM のスタイルに合わせました
+        ko: |-
+          0.1.0-0089
+
+          - 비공개 커넥터 제어, 앱 프록시, 슈퍼바이저 통신에 SDK 0.36 Unix 연결을 사용해요
+          - 패키지 종료를 확인하기 전에 제공자 하위 프로세스를 먼저 멈춰요
+          - 설정에서 GitHub 토큰을 추가, 교체, 제거해 업데이트와 다운로드 한도를 높일 수 있어요
+          - 회색 페이지 동작 버튼과 빨간 삭제 확인 버튼이 DSM 버튼 스타일을 따라요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0089-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0089-en.png
@@ -441,6 +586,11 @@ packages:
         zh-TW: 下載 HTTP／HTTPS 連結、種子、磁力連結與 ED2K 檔案，以及 yt-dlp
           支援網站的影片和擴充套件新增的來源。暫停、繼續與整理下載，選擇完成檔案的儲存位置並查看歷史紀錄。每位使用者各自管理下載，管理員管理存取權限、擴充套件與引擎更新。以
           Gopeed 為核心；需 DSM 登入
+        zh-CN: 下载 HTTP／HTTPS 链接、种子、磁力链接与 ED2K 文件，以及 yt-dlp 支持网站的视频和扩展添加的来源。暂停、继续与整理下载，选择完成文件的保存位置并查看历史记录。每位用户各自管理下载，管理员管理访问权限、扩展与引擎更新。以 Gopeed 为内核；需 DSM 登录
+        de: Lade Dateien über HTTP/HTTPS-Links, Torrents, Magnet-Links und ED2K herunter, dazu Videos von Seiten, die yt-dlp unterstützt, und aus Quellen von Erweiterungen. Pausiere, setze fort und ordne Downloads, wähle, wo fertige Dateien gespeichert werden, und sieh dir deinen Verlauf an. Jeder Nutzer hat eigene Downloads; Administratoren verwalten Zugriff, Erweiterungen und Engine-Updates. Basiert auf Gopeed; DSM-Anmeldung ist erforderlich
+        fr: Téléchargez des fichiers depuis des liens HTTP/HTTPS, des torrents, des liens magnet et ED2K, ainsi que des vidéos des sites pris en charge par yt-dlp et des sources ajoutées par des extensions. Mettez en pause, reprenez et organisez vos téléchargements, choisissez où enregistrer les fichiers terminés et consultez votre historique. Chaque utilisateur a ses propres téléchargements ; les administrateurs gèrent l'accès, les extensions et les mises à jour du moteur. Basé sur Gopeed ; connexion DSM requise
+        ja: HTTP/HTTPS リンク、Torrent、マグネット リンク、ED2K のファイルに加え、yt-dlp 対応サイトの動画や拡張機能で追加したソースからダウンロードできます。ダウンロードの一時停止・再開・整理、完了したファイルの保存先の選択、履歴の確認ができます。ダウンロードはユーザーごとに分かれ、アクセス、拡張機能、エンジンの更新は管理者が管理します。Gopeed を利用しています。DSM サインインが必要です
+        ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
         en: >-
           0.2.2-0068
@@ -455,6 +605,26 @@ packages:
 
           使用 SDK/App 0.35.0、CLI 0.37.0 與 templates 0.33.0 建置。下載中心會出現在 Hyper
           Backup 的應用程式清單，預設使用離線應用程式備份。已儲存的共享資料夾需另外選取
+        zh-CN: |-
+          0.2.2-0068
+
+          使用 SDK/App 0.35.0、CLI 0.37.0 与 templates 0.33.0 构建。下载中心会出现在 Hyper Backup 的应用程序清单，默认使用脱机应用程序备份。已保存的共享文件夹需另外选择
+        de: |-
+          0.2.2-0068
+
+          Gebaut mit SDK/App 0.35.0, CLI 0.37.0 und templates 0.33.0. Download Hub erscheint in der Anwendungsliste von Hyper Backup, mit Offline-Sicherung der Anwendung. Gespeicherte gemeinsame Ordner müssen separat ausgewählt werden
+        fr: |-
+          0.2.2-0068
+
+          Compilé avec SDK/App 0.35.0, CLI 0.37.0 et templates 0.33.0. Download Hub apparaît dans la liste des applications d'Hyper Backup, avec une sauvegarde hors ligne de l'application. Les dossiers partagés enregistrés doivent être sélectionnés séparément
+        ja: |-
+          0.2.2-0068
+
+          SDK/App 0.35.0、CLI 0.37.0、templates 0.33.0 でビルドしました。Download Hub が Hyper Backup のアプリケーション一覧に表示され、アプリケーションのオフライン バックアップができます。保存先の共有フォルダーは別途選択する必要があります
+        ko: |-
+          0.2.2-0068
+
+          SDK/App 0.35.0, CLI 0.37.0, templates 0.33.0으로 빌드했어요. Download Hub가 Hyper Backup의 애플리케이션 목록에 나타나고, 애플리케이션을 오프라인으로 백업할 수 있어요. 저장 위치인 공유 폴더는 따로 선택해야 해요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0068.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0068.png
@@ -637,6 +807,26 @@ packages:
 
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          4.2.7-0021
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          4.2.7-0021
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          4.2.7-0021
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          4.2.7-0021
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          4.2.7-0021
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
     pins:
       - package: SynoPkgOpenList
         version: 4.2.7-0021
@@ -722,6 +912,11 @@ packages:
       description:
         en: Monitor website and service uptime and get alerts when they go down
         zh-TW: 監控網站與服務的運作狀態，並在中斷時接收通知
+        zh-CN: 监控网站与服务的运作状态，并在中断时接收通知
+        de: Erreichbarkeit von Websites und Diensten überwachen und bei Ausfällen benachrichtigt werden
+        fr: Surveillez la disponibilité de vos sites et services et soyez alerté en cas de panne
+        ja: Web サイトやサービスの稼働を監視し、停止したら通知
+        ko: 웹사이트와 서비스 가동 상태를 모니터링하고 중단되면 알림 받기
       long_description:
         en: Check whether websites and network services are available, view uptime
           history and receive outage notifications. Create status pages to
@@ -732,6 +927,11 @@ packages:
           Manager are required
         zh-TW: 檢查網站與網路服務是否正常運作、查看歷史紀錄，並在中斷時接收通知。建立狀態頁面，集中呈現服務狀況；狀態頁面僅供管理員存取，無法公開分享。可用的監控類型受本套件網路權限限制。卸載後
           App 資料仍保留於 Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
+        zh-CN: 检查网站与网络服务是否正常运作、查看历史记录，并在中断时接收通知。创建状态页面，集中呈现服务状况；状态页面仅供管理员访问，无法公开分享。可用的监控类型受本套件网络权限限制。卸载后 App 数据仍保留于 Container Manager 存储空间；需 DSM 管理员登录及 Container Manager
+        de: Prüfe, ob Websites und Netzwerkdienste erreichbar sind, sieh dir den Verlauf der Verfügbarkeit an und erhalte Benachrichtigungen bei Ausfällen. Erstelle Statusseiten, die den Zustand deiner Dienste zusammenfassen; Statusseiten sind nur für Administratoren und lassen sich nicht öffentlich teilen. Welche Monitortypen verfügbar sind, hängt von den Netzwerkberechtigungen dieses Pakets ab. App-Daten bleiben nach der Deinstallation in Volumes von Container Manager; DSM-Anmeldung als Administrator und Container Manager sind erforderlich
+        fr: Vérifiez que vos sites web et services réseau sont disponibles, consultez l'historique de disponibilité et recevez des notifications en cas de panne. Créez des pages d'état qui résument la santé de vos services ; elles sont réservées aux administrateurs et ne peuvent pas être partagées publiquement. Les types de sondes disponibles dépendent des autorisations réseau de ce paquet. Les données de l'App restent dans les volumes de Container Manager après la désinstallation ; connexion DSM en tant qu'administrateur et Container Manager requis
+        ja: Web サイトやネットワーク サービスが利用できるかを確認し、稼働履歴を見て、停止時に通知を受け取れます。サービスの状態をまとめたステータス ページを作成できますが、ステータス ページは管理者専用で、一般公開はできません。使える監視の種類は、このパッケージのネットワーク権限によって変わります。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
+        ko: 웹사이트와 네트워크 서비스가 살아 있는지 확인하고, 가동 기록을 보고, 장애가 나면 알림을 받아요. 서비스 상태를 요약한 상태 페이지를 만들 수 있지만, 상태 페이지는 관리자 전용이라 공개로 공유할 수 없어요. 쓸 수 있는 모니터 종류는 이 패키지의 네트워크 권한에 따라 달라요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
           2.5.6-0017
@@ -744,6 +944,26 @@ packages:
           2.5.6-0017
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          2.5.6-0017
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          2.5.6-0017
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          2.5.6-0017
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          2.5.6-0017
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          2.5.6-0017
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
     pins:
       - package: SynoPkgUptimeKuma
         version: 2.5.6-0017
@@ -832,6 +1052,11 @@ packages:
         zh-TW: 將喜愛網站的新聞與更新集中到同一個閱讀器。訂閱 RSS 與
           Atom、分類整理訂閱項目、搜尋文章，並將喜歡的內容收藏以便稍後閱讀。每位讀者各自保有訂閱與閱讀進度；需 DSM 管理員登入及
           Container Manager
+        zh-CN: 将喜爱网站的新闻与更新集中到同一个阅读器。订阅 RSS 与 Atom、分类整理订阅项目、搜索文章，并将喜欢的内容收藏以便稍后阅读。每位读者各自保有订阅与阅读进度；需 DSM 管理员登录及 Container Manager
+        de: Hol dir Neuigkeiten und Updates deiner Lieblingsseiten in einen Reader. Abonniere RSS- und Atom-Feeds, ordne Abos in Kategorien, durchsuche Artikel und merke dir Favoriten für später. Jeder Leser hat eigene Abos und einen eigenen Lesestand; DSM-Anmeldung als Administrator und Container Manager sind erforderlich
+        fr: Rassemblez les actualités de vos sites préférés dans un seul lecteur. Abonnez-vous à des flux RSS et Atom, rangez vos abonnements par catégories, recherchez des articles et gardez vos favoris pour plus tard. Chaque lecteur a ses propres abonnements et sa progression de lecture ; connexion DSM en tant qu'administrateur et Container Manager requis
+        ja: お気に入りのサイトのニュースや更新をひとつのリーダーにまとめます。RSS や Atom フィードを購読し、カテゴリーで整理し、記事を検索し、お気に入りを保存できます。購読と既読状況は読者ごとに分かれます。DSM の管理者サインインと Container Manager が必要です
+        ko: 좋아하는 사이트의 소식과 업데이트를 리더 하나로 모아요. RSS와 Atom 피드를 구독하고, 카테고리로 정리하고, 글을 검색하고, 즐겨찾기로 저장해 둘 수 있어요. 구독과 읽은 상태는 사용자마다 따로예요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
           1.30.4-0005
@@ -845,6 +1070,26 @@ packages:
 
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          1.30.4-0005
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          1.30.4-0005
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          1.30.4-0005
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          1.30.4-0005
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          1.30.4-0005
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
       issues_url: https://github.com/synopackageland/syno-pkg-land-freshrss/issues
       root_access: none
       access: admins
@@ -853,6 +1098,11 @@ packages:
       description:
         en: Follow and read articles from your RSS and Atom subscriptions
         zh-TW: 訂閱 RSS 與 Atom，在同一處追蹤和閱讀文章
+        zh-CN: 订阅 RSS 与 Atom，在同一处追踪和阅读文章
+        de: Artikel aus deinen RSS- und Atom-Abos verfolgen und lesen
+        fr: Suivez et lisez les articles de vos abonnements RSS et Atom
+        ja: RSS や Atom の購読記事をチェックして読む
+        ko: RSS와 Atom 구독 글을 모아 읽기
     pins:
       - package: SynoPkgFreshRSS
         version: 1.30.4-0005
@@ -940,6 +1190,11 @@ packages:
       description:
         en: Organize and listen to your audiobooks and podcasts
         zh-TW: 整理與收聽你的有聲書和 Podcast
+        zh-CN: 整理与收听你的有声书和 Podcast
+        de: Hörbücher und Podcasts ordnen und anhören
+        fr: Organisez et écoutez vos livres audio et podcasts
+        ja: オーディオブックとポッドキャストを整理して聴く
+        ko: 오디오북과 팟캐스트를 정리하고 듣기
       long_description:
         en: Build a personal library of audiobooks and podcasts, browse your collection
           and listen in your browser while keeping track of your progress.
@@ -950,6 +1205,11 @@ packages:
         zh-TW: 建立個人的有聲書與 Podcast 媒體庫，在瀏覽器中瀏覽收藏、收聽節目並記錄播放進度。不支援下載 Podcast
           至所選的唯讀媒體資料夾，手機／TV 用戶端尚未驗證。資料夾須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 管理員登入及
           Container Manager
+        zh-CN: 创建个人的有声书与 Podcast 媒体库，在浏览器中浏览收藏、收听节目并记录播放进度。不支持下载 Podcast 至所选的唯读媒体文件夹，手机／TV 用户端尚未验证。文件夹须授予套件帐号读取权限，卸载后 App 数据仍会保留。需 DSM 管理员登录及 Container Manager
+        de: Baue eine eigene Bibliothek aus Hörbüchern und Podcasts auf, stöbere in deiner Sammlung und hör im Browser, während dein Fortschritt gespeichert wird. Podcast-Downloads in den gewählten schreibgeschützten Medienordner werden nicht unterstützt, mobile und TV-Clients sind ungeprüft. Der Ordner braucht Lesezugriff für das Paketkonto; App-Daten bleiben nach der Deinstallation erhalten. DSM-Anmeldung als Administrator und Container Manager sind erforderlich
+        fr: Constituez votre bibliothèque de livres audio et de podcasts, parcourez votre collection et écoutez-la dans votre navigateur en gardant votre progression. Le téléchargement de podcasts dans le dossier multimédia choisi, en lecture seule, n'est pas pris en charge, et les clients mobiles et TV ne sont pas vérifiés. Le dossier doit accorder la lecture au compte du paquet ; les données de l'App restent après la désinstallation. Connexion DSM en tant qu'administrateur et Container Manager requis
+        ja: オーディオブックとポッドキャストの自分だけのライブラリを作り、コレクションを見ながらブラウザーで聴けます。再生位置も記録されます。選択した読み取り専用のメディア フォルダーへのポッドキャストのダウンロードには対応しておらず、モバイルや TV のクライアントは未検証です。フォルダーにはパッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM の管理者サインインと Container Manager が必要です
+        ko: 오디오북과 팟캐스트로 나만의 서재를 만들고, 컬렉션을 둘러보며 브라우저에서 들을 수 있어요. 듣던 위치도 기억해요. 선택한 읽기 전용 미디어 폴더로 팟캐스트를 내려받는 기능은 지원하지 않고, 모바일·TV 클라이언트는 검증되지 않았어요. 폴더에는 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
           2.37.1-0009
@@ -962,6 +1222,26 @@ packages:
           2.37.1-0009
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          2.37.1-0009
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          2.37.1-0009
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          2.37.1-0009
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          2.37.1-0009
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          2.37.1-0009
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
     pins:
       - package: SynoPkgAudiobookshelf
         version: 2.37.1-0009
@@ -1050,6 +1330,11 @@ packages:
       description:
         en: Organize and stream your movies, TV shows and music
         zh-TW: 整理與串流播放你的電影、影集和音樂
+        zh-CN: 整理与串流播放你的电影、影集和音乐
+        de: Filme, Serien und Musik ordnen und streamen
+        fr: Organisez et diffusez vos films, séries et musique
+        ja: 映画、テレビ番組、音楽を整理してストリーミング
+        ko: 영화, TV 프로그램, 음악을 정리하고 스트리밍
       long_description:
         en: Turn your media collection into a personal streaming library. Browse movies
           and TV shows with artwork, organize music and play your collection in
@@ -1059,6 +1344,11 @@ packages:
           sign-in and Container Manager are required
         zh-TW: 將媒體收藏變成個人串流媒體庫。透過封面瀏覽電影與影集、整理音樂，並在瀏覽器播放。TV／手機原生用戶端不支援此入口，DLNA
           未啟用。所選媒體資料夾為唯讀，須授予套件帳號讀取權限，卸載後 App 資料仍會保留。需 DSM 登入及 Container Manager
+        zh-CN: 将媒体收藏变成个人串流媒体库。通过封面浏览电影与影集、整理音乐，并在浏览器播放。TV／手机原生用户端不支持此入口，DLNA 未激活。所选媒体文件夹为唯读，须授予套件帐号读取权限，卸载后 App 数据仍会保留。需 DSM 登录及 Container Manager
+        de: Mach aus deiner Mediensammlung eine eigene Streaming-Bibliothek. Stöbere in Filmen und Serien mit Covern, ordne Musik und spiel deine Sammlung im Browser ab. Native TV- und Mobil-Clients können diesen Zugang nicht nutzen, DLNA ist deaktiviert. Der gewählte Medienordner ist schreibgeschützt und braucht Lesezugriff für das Paketkonto; App-Daten bleiben nach der Deinstallation erhalten. DSM-Anmeldung und Container Manager sind erforderlich
+        fr: Transformez votre collection multimédia en bibliothèque de streaming personnelle. Parcourez films et séries avec leurs visuels, organisez votre musique et lisez votre collection dans un navigateur. Les clients natifs TV et mobiles ne peuvent pas utiliser cet accès, et le DLNA est désactivé. Le dossier multimédia choisi est en lecture seule et doit accorder la lecture au compte du paquet ; les données de l'App restent après la désinstallation. Connexion DSM et Container Manager requis
+        ja: メディア コレクションを自分専用のストリーミング ライブラリにします。アートワーク付きで映画やテレビ番組を見て回り、音楽を整理し、ブラウザーで再生できます。TV やモバイルのネイティブ クライアントはこの入口を使えず、DLNA は無効です。選択したメディア フォルダーは読み取り専用で、パッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM サインインと Container Manager が必要です
+        ko: 미디어 컬렉션을 나만의 스트리밍 서재로 만들어요. 아트워크와 함께 영화와 TV 프로그램을 둘러보고, 음악을 정리하고, 브라우저에서 재생해요. TV·모바일 네이티브 클라이언트는 이 입구를 쓸 수 없고 DLNA는 꺼져 있어요. 선택한 미디어 폴더는 읽기 전용이며 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
           12.2-0010
@@ -1071,6 +1361,26 @@ packages:
           12.2-0010
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          12.2-0010
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          12.2-0010
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          12.2-0010
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          12.2-0010
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          12.2-0010
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
     pins:
       - package: SynoPkgJellyfin
         version: 12.2-0010
@@ -1154,6 +1464,11 @@ packages:
       description:
         en: Convert documents, images, audio and video between file formats
         zh-TW: 轉換文件、圖片、音訊與影片的檔案格式
+        zh-CN: 转换文档、图片、音频与视频的文件格式
+        de: Dokumente, Bilder, Audio und Video zwischen Dateiformaten umwandeln
+        fr: Convertissez documents, images, audio et vidéo d'un format à l'autre
+        ja: 文書、画像、音声、動画のファイル形式を変換
+        ko: 문서, 이미지, 오디오, 동영상의 파일 형식 변환
       long_description:
         en: Upload documents, images, audio or video in your browser, choose an output
           format and download the converted files. All authorized users share
@@ -1164,6 +1479,11 @@ packages:
         zh-TW: 在瀏覽器上傳文件、圖片、音訊或影片，選擇輸出格式後下載轉換完成的檔案。所有獲授權使用者共用同一工作空間，可看見並下載彼此的檔案；超過 24
           小時的工作會定期移除。卸載後 App 資料仍保留於 Container Manager 儲存空間；需 DSM 登入及 Container
           Manager
+        zh-CN: 在浏览器上传文档、图片、音频或视频，选择输出格式后下载转换完成的文件。所有获授权用户共用同一工作空间，可看见并下载彼此的文件；超过 24 小时的工作会定期移除。卸载后 App 数据仍保留于 Container Manager 存储空间；需 DSM 登录及 Container Manager
+        de: Lade Dokumente, Bilder, Audio oder Video im Browser hoch, wähle ein Zielformat und lade die umgewandelten Dateien herunter. Alle berechtigten Nutzer teilen sich einen Arbeitsbereich und können die Dateien der anderen sehen und herunterladen. Aufträge, die älter als 24 Stunden sind, werden regelmäßig entfernt. App-Daten bleiben nach der Deinstallation in Volumes von Container Manager; DSM-Anmeldung und Container Manager sind erforderlich
+        fr: Envoyez des documents, images, fichiers audio ou vidéo dans votre navigateur, choisissez un format de sortie et téléchargez les fichiers convertis. Tous les utilisateurs autorisés partagent un même espace de travail et peuvent voir et télécharger les fichiers des autres. Les tâches de plus de 24 heures sont supprimées régulièrement. Les données de l'App restent dans les volumes de Container Manager après la désinstallation ; connexion DSM et Container Manager requis
+        ja: ブラウザーで文書、画像、音声、動画をアップロードし、出力形式を選んで変換後のファイルをダウンロードできます。許可されたユーザー全員が同じ作業スペースを共有し、互いのファイルを表示・ダウンロードできます。24 時間を過ぎたジョブは定期的に削除されます。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
+        ko: 브라우저에서 문서, 이미지, 오디오, 동영상을 올리고 출력 형식을 골라 변환된 파일을 내려받아요. 권한이 있는 사용자 모두가 작업 공간 하나를 함께 쓰고, 서로의 파일을 보고 내려받을 수 있어요. 24시간이 지난 작업은 주기적으로 지워져요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
           0.19.0-0008
@@ -1176,6 +1496,26 @@ packages:
           0.19.0-0008
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          0.19.0-0008
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          0.19.0-0008
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          0.19.0-0008
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          0.19.0-0008
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          0.19.0-0008
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
     pins:
       - package: SynoPkgConvertX
         version: 0.19.0-0008
@@ -1258,6 +1598,11 @@ packages:
       description:
         en: Scan, organize and search your documents with automatic text recognition
         zh-TW: 透過自動文字辨識掃描、整理與搜尋你的文件
+        zh-CN: 通过自动文字辨识扫描、整理与搜索你的文档
+        de: Dokumente scannen, ordnen und mit automatischer Texterkennung durchsuchen
+        fr: Numérisez, classez et recherchez vos documents grâce à la reconnaissance de texte
+        ja: 文書をスキャンし、自動文字認識で整理・検索
+        ko: 문서를 스캔하고 자동 문자 인식으로 정리하고 검색
       long_description:
         en: Turn paper documents into a searchable digital archive. Import scans,
           recognize their text with OCR, and organize documents with tags,
@@ -1270,6 +1615,11 @@ packages:
         zh-TW: 將紙本文件變成可搜尋的數位檔案庫。匯入掃描檔，以 OCR 辨識文字，並用標籤、往來對象及文件類型整理資料。搜尋文件內容，依 Paperless
           權限管理分享。匯入後會移除收件資料夾中的檔案，請保留備份；所選收件資料夾須授予套件帳號讀寫權限。卸載後 App 資料仍保留於
           Container Manager 儲存空間；需 DSM 登入及 Container Manager
+        zh-CN: 将纸本文档变成可搜索的数字文件库。导入扫描档，以 OCR 辨识文字，并用标签、往来对象及文档类型整理数据。搜索文档内容，依 Paperless 权限管理分享。导入后会移除收件文件夹中的文件，请保留备份；所选收件文件夹须授予套件帐号读写权限。卸载后 App 数据仍保留于 Container Manager 存储空间；需 DSM 登录及 Container Manager
+        de: Mach aus Papierdokumenten ein durchsuchbares digitales Archiv. Importiere Scans, erkenne ihren Text per OCR und ordne Dokumente mit Tags, Korrespondenten und Dokumenttypen. Durchsuche Dokumentinhalte und steuere das Teilen mit den Berechtigungen von Paperless. Importierte Dateien werden aus dem Eingang entfernt, also behalte Sicherungen; der gewählte Eingangsordner braucht Lese- und Schreibzugriff für das Paketkonto. App-Daten bleiben nach der Deinstallation in Volumes von Container Manager; DSM-Anmeldung und Container Manager sind erforderlich
+        fr: Transformez vos documents papier en archive numérique consultable. Importez des numérisations, reconnaissez leur texte par OCR et classez les documents par étiquettes, correspondants et types de documents. Recherchez dans leur contenu et contrôlez le partage avec les autorisations de Paperless. Les fichiers importés sont retirés de la boîte de réception, gardez donc des sauvegardes ; la boîte de réception choisie doit accorder la lecture et l'écriture au compte du paquet. Les données de l'App restent dans les volumes de Container Manager après la désinstallation ; connexion DSM et Container Manager requis
+        ja: 紙の文書を検索できるデジタル アーカイブにします。スキャンを取り込み、OCR で文字を認識し、タグ、差出人、文書タイプで整理できます。文書の内容を検索し、共有は Paperless の権限で管理します。取り込んだファイルは受信フォルダーから削除されるので、バックアップを残してください。選択した受信フォルダーにはパッケージ アカウントの読み取り/書き込み権限が必要です。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
+        ko: 종이 문서를 검색할 수 있는 디지털 보관함으로 바꿔요. 스캔을 가져오고, OCR로 글자를 인식하고, 태그, 거래처, 문서 유형으로 정리해요. 문서 내용을 검색하고 공유는 Paperless 권한으로 관리해요. 가져온 파일은 받은 편지함 폴더에서 지워지니 백업을 꼭 남겨 두세요. 선택한 받은 편지함 폴더에는 패키지 계정의 읽기/쓰기 권한이 필요해요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
           3.3.3-0010
@@ -1282,6 +1632,26 @@ packages:
           3.3.3-0010
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          3.3.3-0010
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          3.3.3-0010
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          3.3.3-0010
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          3.3.3-0010
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          3.3.3-0010
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
     pins:
       - package: SynoPkgPaperlessNgx
         version: 3.3.3-0010
@@ -1365,6 +1735,11 @@ packages:
       description:
         en: Store and manage passwords and secure notes in an encrypted vault
         zh-TW: 在加密保險庫中儲存與管理密碼和安全筆記
+        zh-CN: 在加密保险库中保存与管理密码和安全笔记
+        de: Passwörter und sichere Notizen in einem verschlüsselten Tresor speichern und verwalten
+        fr: Stockez et gérez mots de passe et notes sécurisées dans un coffre chiffré
+        ja: パスワードとセキュア メモを暗号化された保管庫で管理
+        ko: 비밀번호와 보안 메모를 암호화된 보관함에 저장하고 관리
       long_description:
         en: Keep passwords, login details and secure notes in an encrypted vault hosted
           on your own server. Vaultwarden is a server compatible with Bitwarden,
@@ -1378,6 +1753,11 @@ packages:
           的伺服器，可透過網頁保險庫管理項目。須以另一組主密碼解鎖保險庫，DSM 無法復原主密碼。Bitwarden 用戶端需要可信的 HTTPS
           憑證，用戶端登入尚未驗證。App 登入狀態另行管理，卸載後資料仍保留於 Container Manager 儲存空間；需 DSM
           管理員登入及 Container Manager
+        zh-CN: 在自己的服务器上，以加密保险库保管密码、登录数据与安全笔记。Vaultwarden 是兼容于 Bitwarden 的服务器，可通过网页保险库管理项目。须以另一组主密码解锁保险库，DSM 无法复原主密码。Bitwarden 用户端需要可信的 HTTPS 凭证，用户端登录尚未验证。App 登录状态另行管理，卸载后数据仍保留于 Container Manager 存储空间；需 DSM 管理员登录及 Container Manager
+        de: Bewahre Passwörter, Anmeldedaten und sichere Notizen in einem verschlüsselten Tresor auf deinem eigenen Server auf. Vaultwarden ist ein mit Bitwarden kompatibler Server mit einem Web-Tresor zum Verwalten deiner Einträge. Ein eigenes Master-Passwort entsperrt den Tresor und lässt sich nicht über DSM wiederherstellen. Bitwarden-Clients brauchen ein vertrauenswürdiges HTTPS-Zertifikat; die Anmeldung in Clients ist ungeprüft. App-Sitzungen werden separat verwaltet, und Daten bleiben nach der Deinstallation in Volumes von Container Manager; DSM-Anmeldung als Administrator und Container Manager sind erforderlich
+        fr: Conservez mots de passe, identifiants et notes sécurisées dans un coffre chiffré hébergé sur votre propre serveur. Vaultwarden est un serveur compatible avec Bitwarden, avec un coffre web pour gérer vos entrées. Un mot de passe maître distinct déverrouille le coffre et ne peut pas être récupéré via DSM. Les clients Bitwarden ont besoin d'un certificat HTTPS de confiance ; la connexion des clients n'est pas vérifiée. Les sessions de l'App sont gérées séparément et les données restent dans les volumes de Container Manager après la désinstallation ; connexion DSM en tant qu'administrateur et Container Manager requis
+        ja: パスワード、ログイン情報、セキュア メモを、自分のサーバー上の暗号化された保管庫に保存できます。Vaultwarden は Bitwarden 互換のサーバーで、項目を管理する Web 保管庫を備えています。保管庫は別のマスター パスワードで解除し、DSM からは復元できません。Bitwarden クライアントには信頼された HTTPS 証明書が必要で、クライアントからのサインインは未検証です。アプリのセッションは別に管理され、データはアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
+        ko: 비밀번호, 로그인 정보, 보안 메모를 내 서버의 암호화된 보관함에 보관해요. Vaultwarden은 Bitwarden과 호환되는 서버로, 항목을 관리하는 웹 보관함이 있어요. 보관함은 별도의 마스터 비밀번호로 열고, DSM으로는 복구할 수 없어요. Bitwarden 클라이언트에는 신뢰할 수 있는 HTTPS 인증서가 필요하고, 클라이언트 로그인은 검증되지 않았어요. 앱 세션은 따로 관리되고, 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
           1.37.4-0009
@@ -1390,6 +1770,26 @@ packages:
           1.37.4-0009
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          1.37.4-0009
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          1.37.4-0009
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          1.37.4-0009
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          1.37.4-0009
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          1.37.4-0009
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
     pins:
       - package: SynoPkgVaultwarden
         version: 1.37.4-0009
@@ -1473,6 +1873,11 @@ packages:
       description:
         en: Stream your music collection through a web player or compatible apps
         zh-TW: 透過網頁播放器或相容 App 串流播放你的音樂收藏
+        zh-CN: 通过网页播放器或兼容 App 串流播放你的音乐收藏
+        de: Deine Musiksammlung im Web-Player oder in kompatiblen Apps streamen
+        fr: Écoutez votre musique dans un lecteur web ou des Apps compatibles
+        ja: 音楽コレクションを Web プレーヤーや対応アプリでストリーミング
+        ko: 음악 컬렉션을 웹 플레이어나 호환 앱으로 스트리밍
       long_description:
         en: Browse your music by artist and album, build playlists and listen through
           the web player or compatible Subsonic apps. Authorized users share the
@@ -1485,6 +1890,11 @@ packages:
           收聽。獲授權使用者共用所選唯讀音樂庫，須授予套件帳號讀取權限。Subsonic 用戶端使用另一組 Navidrome
           密碼；公開分享連結在移除前仍可存取。卸載後 App 資料仍保留於 Container Manager 儲存空間；需 DSM 登入及
           Container Manager
+        zh-CN: 依演出者与专辑浏览音乐、创建播放清单，并通过网页播放器或兼容的 Subsonic App 收听。获授权用户共用所选唯读音乐库，须授予套件帐号读取权限。Subsonic 用户端使用另一组 Navidrome 密码；公开分享链接在移除前仍可访问。卸载后 App 数据仍保留于 Container Manager 存储空间；需 DSM 登录及 Container Manager
+        de: Stöbere in deiner Musik nach Künstler und Album, stell Playlists zusammen und hör über den Web-Player oder kompatible Subsonic-Apps. Berechtigte Nutzer teilen sich die gewählte schreibgeschützte Musikbibliothek, die Lesezugriff für das Paketkonto braucht. Subsonic-Clients nutzen ein eigenes Navidrome-Passwort; öffentliche Freigabelinks bleiben erreichbar, bis sie entfernt werden. App-Daten bleiben nach der Deinstallation in Volumes von Container Manager; DSM-Anmeldung und Container Manager sind erforderlich
+        fr: Parcourez votre musique par artiste et par album, créez des playlists et écoutez-la avec le lecteur web ou des Apps Subsonic compatibles. Les utilisateurs autorisés partagent la bibliothèque musicale choisie, en lecture seule, qui doit accorder la lecture au compte du paquet. Les clients Subsonic utilisent un mot de passe Navidrome distinct ; les liens de partage publics restent accessibles jusqu'à leur suppression. Les données de l'App restent dans les volumes de Container Manager après la désinstallation ; connexion DSM et Container Manager requis
+        ja: アーティストやアルバムで音楽を探し、プレイリストを作り、Web プレーヤーや対応する Subsonic アプリで聴けます。許可されたユーザーは選択した読み取り専用の音楽ライブラリを共有し、そのライブラリにはパッケージ アカウントの読み取り権限が必要です。Subsonic クライアントは別の Navidrome パスワードを使います。公開共有リンクは削除するまでアクセスできます。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
+        ko: 아티스트와 앨범별로 음악을 둘러보고, 재생 목록을 만들고, 웹 플레이어나 호환되는 Subsonic 앱으로 들어요. 권한이 있는 사용자는 선택한 읽기 전용 음악 라이브러리를 함께 쓰고, 이 라이브러리에는 패키지 계정의 읽기 권한이 필요해요. Subsonic 클라이언트는 별도의 Navidrome 비밀번호를 쓰고, 공개 공유 링크는 지울 때까지 열려 있어요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
           0.64.2-0009
@@ -1497,6 +1907,26 @@ packages:
           0.64.2-0009
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          0.64.2-0009
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          0.64.2-0009
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          0.64.2-0009
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          0.64.2-0009
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          0.64.2-0009
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
     pins:
       - package: SynoPkgNavidrome
         version: 0.64.2-0009
@@ -1581,6 +2011,11 @@ packages:
       description:
         en: Connect smart home devices and automate everyday routines
         zh-TW: 整合智慧家庭裝置，將日常操作自動化
+        zh-CN: 集成智能家庭设备，将日常操作自动化
+        de: Smart-Home-Geräte verbinden und Alltagsabläufe automatisieren
+        fr: Connectez vos appareils domotiques et automatisez le quotidien
+        ja: スマートホーム機器をつなぎ、毎日の操作を自動化
+        ko: 스마트홈 기기를 연결하고 일상을 자동화
       long_description:
         en: Bring compatible smart home devices together, control them from dashboards
           and create automations for everyday routines. Keep control of your
@@ -1592,6 +2027,11 @@ packages:
         zh-TW: 整合相容的智慧家庭裝置，透過儀表板集中控制，並建立日常生活的自動化流程，將家庭控制權留在自己的伺服器上。本套件支援 mDNS 探索，不支援
           SSDP、USB／Bluetooth、Supervisor 與 add-ons；手機 App 登入及升級尚未驗證。卸載後設定仍保留於
           Container Manager 儲存空間；需 DSM 管理員登入及 Container Manager
+        zh-CN: 集成兼容的智能家庭设备，通过仪表板集中控制，并创建日常生活的自动化流程，将家庭控制权留在自己的服务器上。本套件支持 mDNS 探索，不支持 SSDP、USB／Bluetooth、Supervisor 与 add-ons；手机 App 登录及升级尚未验证。卸载后设置仍保留于 Container Manager 存储空间；需 DSM 管理员登录及 Container Manager
+        de: Bring kompatible Smart-Home-Geräte zusammen, steuere sie über Dashboards und erstelle Automationen für den Alltag. Dein Zuhause bleibt unter deiner Kontrolle auf deinem eigenen Server. Dieses Paket unterstützt mDNS-Erkennung, aber weder SSDP, USB/Bluetooth, Supervisor noch Add-ons; Anmeldung in der Mobil-App und Upgrades sind ungeprüft. Einstellungen bleiben nach der Deinstallation in Volumes von Container Manager; DSM-Anmeldung als Administrator und Container Manager sind erforderlich
+        fr: Réunissez vos appareils domotiques compatibles, pilotez-les depuis des tableaux de bord et créez des automatisations pour le quotidien. Gardez le contrôle de votre maison sur votre propre serveur. Ce paquet prend en charge la découverte mDNS, mais pas SSDP, USB/Bluetooth, Supervisor ni les modules complémentaires ; la connexion depuis l'application mobile et les mises à niveau ne sont pas vérifiées. Les paramètres restent dans les volumes de Container Manager après la désinstallation ; connexion DSM en tant qu'administrateur et Container Manager requis
+        ja: 対応するスマートホーム機器をまとめ、ダッシュボードから操作し、毎日の自動化を作れます。家のコントロールを自分のサーバーに置いておけます。このパッケージは mDNS による検出に対応していますが、SSDP、USB/Bluetooth、Supervisor、アドオンには対応していません。モバイル アプリからのサインインとアップグレードは未検証です。設定はアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
+        ko: 호환되는 스마트홈 기기를 한데 모아 대시보드로 제어하고, 일상을 위한 자동화를 만들어요. 집의 제어권을 내 서버에 둘 수 있어요. 이 패키지는 mDNS 검색을 지원하지만 SSDP, USB/Bluetooth, Supervisor, 애드온은 지원하지 않고, 모바일 앱 로그인과 업그레이드는 검증되지 않았어요. 설정은 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
           2026.10.2-0008
@@ -1604,6 +2044,26 @@ packages:
           2026.10.2-0008
 
           重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+        zh-CN: |-
+          2026.10.2-0008
+
+          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+        de: |-
+          2026.10.2-0008
+
+          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+        fr: |-
+          2026.10.2-0008
+
+          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+        ja: |-
+          2026.10.2-0008
+
+          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+        ko: |-
+          2026.10.2-0008
+
+          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
     pins:
       - package: SynoPkgHomeAssistant
         version: 2026.10.2-0008

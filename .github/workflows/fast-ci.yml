@@ -51,3 +51,5 @@ jobs:
           python3 -m venv /tmp/ci-yaml
           /tmp/ci-yaml/bin/pip -q install PyYAML==6.0.3
           /tmp/ci-yaml/bin/python -c 'import pathlib,yaml; files=list(pathlib.Path(".").rglob("*.yaml"))+list(pathlib.Path(".").rglob("*.yml")); assert files; [list(yaml.safe_load_all(p.read_text())) for p in files]; print(f"Parsed {len(files)} YAML files")'
+          /tmp/ci-yaml/bin/python scripts/check_locales.py
+          /tmp/ci-yaml/bin/python -m unittest tests/test_check_locales.py
