@@ -188,7 +188,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0089
+      release: v0.1.0-0097
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -314,71 +314,71 @@ packages:
           DSM 관리자 계정으로 로그인하세요
       changelog:
         en: |-
-          0.1.0-0089
+          0.1.0-0097
 
-          - SDK 0.36 Unix connections for private connector control, app proxies and supervisor communication
-          - Provider children stop before package shutdown is acknowledged
-          - Add, replace or remove a GitHub token in Settings to raise update and download limits
-          - Grey page actions and red destructive confirmations follow DSM button styling
+          - Settings pages lay out as DSM's Control Panel: tabs on top, a Connection tab first, Reset and Apply at the bottom right
+          - Drafts survive a tab switch
+          - NetBird signs in before starting its network, so a slow connection is no longer reported as "No login address was obtained"
+          - Informational notices can be closed
         zh-TW: |-
-          0.1.0-0089
+          0.1.0-0097
 
-          - 使用 SDK 0.36 Unix 連線處理私有控制、App 代理與 supervisor 通訊
-          - 確認 provider 子程序停止後才回覆套件關閉完成
-          - 在設定新增、更換或移除 GitHub token，提高更新與下載額度
-          - 頁面動作維持灰色，刪除確認採用紅色 DSM 按鈕
+          - 設定頁面採用 DSM 控制台版面：分頁在上方，連線分頁在最前，重設與套用固定在右下角
+          - 切換分頁時保留尚未套用的輸入
+          - NetBird 先登入再啟動網路，連線較慢時不再誤報「未取得登入網址」
+          - 資訊提示可以關閉
         zh-CN: |-
-          0.1.0-0089
+          0.1.0-0097
 
-          - 使用 SDK 0.36 Unix 连接处理私有控制、App 代理与 supervisor 通信
-          - 确认 provider 子进程停止后才回复套件关闭完成
-          - 在设置添加、更换或移除 GitHub token，提高更新与下载额度
-          - 页面动作维持灰色，删除确认采用红色 DSM 按钮
+          - 设置页面采用 DSM 控制面板布局：标签页在上方，连接标签页在最前，重置与应用固定在右下角
+          - 切换标签页时保留尚未应用的输入
+          - NetBird 先登录再启动网络，连接较慢时不再误报“未获取登录网址”
+          - 信息提示可以关闭
         de: |-
-          0.1.0-0089
+          0.1.0-0097
 
-          - Unix-Verbindungen aus SDK 0.36 für die private Connector-Steuerung, App-Proxys und die Kommunikation mit dem Supervisor
-          - Provider-Prozesse beenden sich, bevor das Herunterfahren des Pakets bestätigt wird
-          - In den Einstellungen ein GitHub-Token hinzufügen, ersetzen oder entfernen, um die Grenzen für Updates und Downloads anzuheben
-          - Graue Seitenaktionen und rote Bestätigungen für Löschvorgänge folgen dem DSM-Schaltflächenstil
+          - Einstellungsseiten folgen dem Layout der DSM-Systemsteuerung: Registerkarten oben, zuerst Verbindung, Zurücksetzen und Übernehmen unten rechts
+          - Nicht übernommene Eingaben bleiben beim Wechsel der Registerkarte erhalten
+          - NetBird meldet sich an, bevor das Netzwerk startet; eine langsame Verbindung wird nicht mehr als "Keine Anmeldeadresse erhalten" gemeldet
+          - Hinweise lassen sich schließen
         fr: |-
-          0.1.0-0089
+          0.1.0-0097
 
-          - Connexions Unix du SDK 0.36 pour le contrôle privé du connecteur, les proxys d'Apps et la communication avec le superviseur
-          - Les processus des fournisseurs s'arrêtent avant que l'arrêt du paquet soit confirmé
-          - Ajoutez, remplacez ou supprimez un jeton GitHub dans Paramètres pour relever les limites de mises à jour et de téléchargements
-          - Les actions de page en gris et les confirmations destructives en rouge suivent le style des boutons de DSM
+          - Les pages de paramètres reprennent la disposition du Panneau de configuration de DSM : onglets en haut, Connexion en premier, Réinitialiser et Appliquer en bas à droite
+          - Les saisies non appliquées sont conservées lors d'un changement d'onglet
+          - NetBird se connecte avant de démarrer son réseau : une connexion lente n'est plus signalée comme « Aucune adresse de connexion obtenue »
+          - Les notices d'information peuvent être fermées
         ja: |-
-          0.1.0-0089
+          0.1.0-0097
 
-          - SDK 0.36 の Unix 接続を、非公開のコネクター制御、アプリのプロキシ、スーパーバイザーとの通信に使用
-          - パッケージの停止を応答する前にプロバイダーの子プロセスを停止
-          - 設定で GitHub トークンを追加・置換・削除でき、更新とダウンロードの上限を引き上げられます
-          - ページ操作のグレーと、削除確認の赤のボタンが DSM のスタイルに合わせました
+          - 設定ページを DSM のコントロールパネルと同じレイアウトに：タブは上部、接続タブが先頭、リセットと適用は右下
+          - タブを切り替えても未適用の入力を保持
+          - NetBird はネットワーク開始前にサインインし、接続が遅いときに「ログインアドレスを取得できませんでした」と誤って表示しなくなりました
+          - 情報の通知を閉じられます
         ko: |-
-          0.1.0-0089
+          0.1.0-0097
 
-          - 비공개 커넥터 제어, 앱 프록시, 슈퍼바이저 통신에 SDK 0.36 Unix 연결을 사용해요
-          - 패키지 종료를 확인하기 전에 제공자 하위 프로세스를 먼저 멈춰요
-          - 설정에서 GitHub 토큰을 추가, 교체, 제거해 업데이트와 다운로드 한도를 높일 수 있어요
-          - 회색 페이지 동작 버튼과 빨간 삭제 확인 버튼이 DSM 버튼 스타일을 따라요
+          - 설정 페이지가 DSM 제어판 레이아웃을 따라요: 탭은 위쪽, 연결 탭이 맨 앞, 재설정과 적용은 오른쪽 아래
+          - 탭을 바꿔도 적용하지 않은 입력이 남아요
+          - NetBird가 네트워크를 시작하기 전에 로그인해서, 연결이 느릴 때 "로그인 주소를 받지 못했습니다"라고 잘못 알리지 않아요
+          - 안내 알림을 닫을 수 있어요
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0089-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0089-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-free-link-0089-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-app-urls-0089-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0089-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0097-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0097-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-tailscale-0097-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-netbird-0097-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0097-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0089
+        version: 0.1.0-0097
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: d00a45235a11e7f038b0f422a549e77f2b5590def993f9c7444c21e98c347e01
-        md5: def195f57de9c5d77538809efea4f9ef
-        size: 14305280
+        sha256: 44b8bacc7956480268d6eb768ad359670a3ff059e07b358aa90996f89207aaaa
+        md5: fc0db667743b7c63ced77575162ca8f0
+        size: 14458880
         facts:
           built_with: sdk
           sdk_backend: go
@@ -395,19 +395,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-29T06:15:47Z
-          source_ref: 3d9d2d1262b9fe3ddb0317843ca93676d9e67a03
+          reviewed_at: 2026-10-30T11:07:04Z
+          source_ref: d0719bb8cc71de851f7e1260f073f061ccb1a33a
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0089
+        version: 0.1.0-0097
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 6a530c2d9dbe95a74d07f91963e1f4c8104494e902509ec59adfc8c5d468c498
-        md5: 252b7eafe19e4de37f8d1bb79988dfad
-        size: 14899200
+        sha256: f38241cfc3d353389bc36f970a4c64f85814f94f5891a2d20a8664a30054e729
+        md5: 4bab103bf32beb8fbe94b4a4a10f0cfa
+        size: 15052800
         facts:
           built_with: sdk
           sdk_backend: go
@@ -424,11 +424,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-29T06:15:49Z
-          source_ref: 3d9d2d1262b9fe3ddb0317843ca93676d9e67a03
+          reviewed_at: 2026-10-30T11:07:07Z
+          source_ref: d0719bb8cc71de851f7e1260f073f061ccb1a33a
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0089
+        version: 0.1.0-0097
         arch:
           - apollolake
           - avoton
@@ -457,9 +457,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 4189aece8a05ec1848636ad24c063cb8990176ba3a9a180b2c54b7be3bad0762
-        md5: 206b687c67bc41e5198d98ac5077430e
-        size: 15626240
+        sha256: 2b5444e33aa1c1c2a4163911e03685feb95f2f0aee46076b4047149775a60432
+        md5: 09334b4b4b8ac731763a0d38a90259bc
+        size: 15790080
         facts:
           built_with: sdk
           sdk_backend: go
@@ -476,8 +476,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-29T06:15:55Z
-          source_ref: 3d9d2d1262b9fe3ddb0317843ca93676d9e67a03
+          reviewed_at: 2026-10-30T11:07:18Z
+          source_ref: d0719bb8cc71de851f7e1260f073f061ccb1a33a
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
