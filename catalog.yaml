@@ -486,7 +486,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0070
+      release: v0.2.2-0071
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -557,33 +557,33 @@ packages:
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
         en: |-
-          0.2.2-0070
+          0.2.2-0071
 
-          Built with UI 0.17.14 and CLI 0.41.11. Settings is a strip of tabs laid out as DSM's Control Panel, with Reset and Apply at the bottom right; text typed in one tab stays when you switch tabs. The download and search lists fill the window
+          Use the verified official downloader for yt-dlp updates, avoiding the old updater’s anonymous GitHub API limit; keep the previous version on failure. Show precise tool errors. Fix Kickass “just now” dates and distinguish connection resets/TLS errors from browser challenges. Extend large Release asset uploads to 20 minutes
         zh-TW: |-
-          0.2.2-0070
+          0.2.2-0071
 
-          使用 UI 0.17.14 與 CLI 0.41.11 建置。設定頁改為 DSM 控制台風格的分頁，重設與套用固定在右下角；在一個分頁輸入的內容切換分頁後仍會保留。下載與搜尋清單填滿視窗
+          yt-dlp 更新改用官方下載與驗證流程，避免舊版更新器的匿名 GitHub API 限流，失敗時保留原版並顯示具體錯誤。修正 Kickass「just now」日期解析；連線重設與 TLS 錯誤不再誤報需要瀏覽器，只有真正的挑戰頁才提供輔助。大型 Release 檔案上傳逾時延長至 20 分鐘
         zh-CN: |-
-          0.2.2-0070
+          0.2.2-0071
 
-          使用 UI 0.17.14 与 CLI 0.41.11 构建。设置页改为 DSM 控制面板风格的标签页，重置与应用固定在右下角；在一个标签页输入的内容切换标签页后仍会保留。下载与搜索列表填满窗口
+          yt-dlp 更新使用官方验证下载，避免旧版更新器的匿名 GitHub API 限流，失败时保留原版并显示具体错误。修复 Kickass「just now」日期解析；连接重置与 TLS 错误不再误报需要浏览器，仅真正的挑战页提供辅助。大型 Release 文件上传超时延长至 20 分钟
         de: |-
-          0.2.2-0070
+          0.2.2-0071
 
-          Gebaut mit UI 0.17.14 und CLI 0.41.11. Die Einstellungen sind Registerkarten im Stil der DSM-Systemsteuerung, Zurücksetzen und Übernehmen stehen unten rechts; Eingaben in einer Registerkarte bleiben beim Wechseln erhalten. Download- und Suchlisten füllen das Fenster
+          yt-dlp nutzt den geprüften offiziellen Download statt des alten anonymen Updaters; bei Fehlern bleibt die vorherige Version erhalten. Präzise Werkzeugfehler und Kickass-Zeitangaben „just now“. Verbindungsresets und TLS-Fehler werden von Browser-Challenges getrennt. Upload-Zeitlimit für große Release-Dateien: 20 Minuten
         fr: |-
-          0.2.2-0070
+          0.2.2-0071
 
-          Compilé avec UI 0.17.14 et CLI 0.41.11. Les paramètres sont des onglets dans le style du Panneau de configuration DSM, avec Réinitialiser et Appliquer en bas à droite ; le texte saisi dans un onglet est conservé quand vous changez d'onglet. Les listes de téléchargements et de recherche remplissent la fenêtre
+          yt-dlp utilise le téléchargement officiel vérifié au lieu de l’ancien programme de mise à jour anonyme ; la version précédente est conservée en cas d’échec. Erreurs précises et dates Kickass « just now » corrigées. Les réinitialisations et erreurs TLS sont distinguées des pages de vérification. Délai des gros fichiers Release : 20 minutes
         ja: |-
-          0.2.2-0070
+          0.2.2-0071
 
-          UI 0.17.14 と CLI 0.41.11 でビルドしました。設定は DSM のコントロール パネルと同じタブ形式になり、リセットと適用は右下に固定されます。タブを切り替えても入力中の内容は保持されます。ダウンロードと検索の一覧はウィンドウいっぱいに表示されます
+          yt-dlp の更新を公式の検証済みダウンロードに変更し、旧版の匿名 GitHub API 制限を回避。失敗時は旧版を保持し、具体的なエラーを表示します。Kickass の「just now」を解析し、接続リセットや TLS エラーをブラウザー認証と区別します。大きな Release ファイルのアップロード制限を20分に延長
         ko: |-
-          0.2.2-0070
+          0.2.2-0071
 
-          UI 0.17.14와 CLI 0.41.11로 빌드했어요. 설정은 DSM 제어판과 같은 탭 형식이고, 재설정과 적용은 오른쪽 아래에 고정돼요. 탭을 바꿔도 입력 중인 내용은 유지돼요. 다운로드와 검색 목록이 창을 가득 채워요
+          yt-dlp 업데이트에 공식 검증 다운로드를 사용해 이전 프로그램의 익명 GitHub API 제한을 피해요. 실패하면 이전 버전을 유지하고 구체적인 오류를 보여 줘요. Kickass의 “just now” 날짜를 처리하고 연결 재설정과 TLS 오류를 브라우저 인증과 구분해요. 큰 Release 파일 업로드 제한을 20분으로 늘렸어요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0070-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0070-en.png
@@ -592,15 +592,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0070-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0070
+        version: 0.2.2-0071
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: eb2e939e332b4a3ce2b13059240fa16247a282c6fbf2d0cae7700aed7b8f3676
-        md5: bddf2c698e32c172a9dd666cd8ab7a53
-        size: 66387456
+        sha256: b1357d3fef215c9f6427fd258579f09817969210f7c4f486574fb099744660f7
+        md5: 139ec72c7cd2f7c6e9525fcd56d3c731
+        size: 66388992
         facts:
           built_with: sdk
           sdk_backend: go
@@ -618,11 +618,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T10:49:23Z
-          source_ref: fc06f89e6d36e8b1f24845bd03fd29d5c2671396
+          reviewed_at: 2026-10-30T11:47:16Z
+          source_ref: 9adfb2a322e1a3fa3422af07279a9f25548f1bc1
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0070
+        version: 0.2.2-0071
         arch:
           - apollolake
           - avoton
@@ -651,9 +651,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 56b2fd22d51a092f8536a2499e843221fbc719fadd82d3b6c7bb14208adf0a43
-        md5: 525e4e27b3ab27f5fda681124d811598
-        size: 70002688
+        sha256: 640592f69e1c220614907e9ef615dbe2a5a2307b7fe9135ccf123376a9ad967e
+        md5: 929b3600fb4cf14bbb8c82d382d4a285
+        size: 70004736
         facts:
           built_with: sdk
           sdk_backend: go
@@ -671,8 +671,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T10:49:23Z
-          source_ref: fc06f89e6d36e8b1f24845bd03fd29d5c2671396
+          reviewed_at: 2026-10-30T11:47:16Z
+          source_ref: 9adfb2a322e1a3fa3422af07279a9f25548f1bc1
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: false
     recommended: false
