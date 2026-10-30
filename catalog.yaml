@@ -515,8 +515,7 @@ packages:
           source_ref: 3d9d2d1262b9fe3ddb0317843ca93676d9e67a03
           source_repo: synopackageland/syno-pkg-connect
 
-  - recommended: true
-    category: utilities
+  - category: utilities
     order: 30
     publisher: synopackageland
     source:
