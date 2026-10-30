@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1597
+      release: v0.1.1-1598
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -36,50 +36,57 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - Update the UI kit to 0.17.14 and use shared Settings spacing and table overflow fixes
-          - Fix administrator-policy compatibility to prevent CGI startup errors
-          - Reuse build 1596 native binaries unchanged on all three architectures
+          - Hover, focus or tap a chart part or legend row to read its name, size, share of used space and share of the volume
+          - Legend rows show percentages; tiny parts stay visible, and the Packages tab is a donut too
+          - Suggested cleanup rows have a type icon, one short line and one height, with the package explanation shown once
+          - Reuse build 1597 native binaries unchanged on all three architectures
         zh-TW: |-
-          - 升級至 UI kit 0.17.14，採用共用設定間距與表格溢位修正
-          - 修正管理員 policy 相容性，避免 CGI 啟動錯誤
-          - 三架構原生 binaries 沿用 1596，掃描與清理行為不變
+          - 移到、聚焦或點按圖表區段或圖例列，即可看到名稱、大小、占已使用空間與占儲存空間的比例
+          - 圖例顯示百分比；極小項目保持可見，「套件」分頁也改為甜甜圈圖
+          - 「建議處理」每列有類型圖示、一行簡短說明且高度一致，套件說明只出現一次
+          - 三架構原生 binaries 沿用 1597，掃描與清理行為不變
         zh-CN: |-
-          - 升级至 UI kit 0.17.14，采用共用设置间距与表格溢出修复
-          - 修复管理员 policy 兼容性，避免 CGI 启动错误
-          - 三架构原生 binaries 沿用 1596，扫描与清理行为不变
+          - 移到、聚焦或点按图表区段或图例行，即可看到名称、大小、占已用空间与占存储空间的比例
+          - 图例显示百分比；极小项目保持可见，“套件”标签页也改为环形图
+          - “建议处理”每行有类型图标、一行简短说明且高度一致，套件说明只出现一次
+          - 三架构原生 binaries 沿用 1597，扫描与清理行为不变
         de: |-
-          - UI-Kit auf 0.17.14 aktualisiert: gemeinsame Einstellungsabstände und korrigierter Tabellenüberlauf
-          - Kompatibilität der Administratorrichtlinie korrigiert, um CGI-Startfehler zu vermeiden
-          - Unveränderte native Binärdateien aus Build 1596 für alle drei Architekturen
+          - Diagrammteil oder Legendenzeile zeigen, fokussieren oder antippen, um Name, Größe, Anteil am belegten Speicher und am Volume zu sehen
+          - Die Legende zeigt Prozentwerte; sehr kleine Teile bleiben sichtbar, und auch der Tab Pakete ist ein Ringdiagramm
+          - Bereinigungsvorschläge haben ein Typsymbol, eine kurze Zeile und eine einheitliche Höhe; der Pakethinweis steht nur einmal
+          - Unveränderte native Binärdateien aus Build 1597 für alle drei Architekturen
         fr: |-
-          - Mise à jour du kit UI vers 0.17.14 avec espacement partagé des réglages et correction du débordement des tableaux
-          - Correction de la compatibilité de la politique administrateur pour éviter les erreurs de démarrage CGI
-          - Réutilisation des binaires natifs inchangés de la version 1596 pour les trois architectures
+          - Survolez, sélectionnez ou touchez une partie du graphique ou une ligne de légende pour voir son nom, sa taille, sa part de l’espace utilisé et du volume
+          - La légende affiche les pourcentages ; les très petites parts restent visibles et l’onglet Paquets est aussi un graphique en anneau
+          - Les suggestions de nettoyage ont une icône de type, une seule ligne courte et une hauteur uniforme ; l’explication des paquets n’apparaît qu’une fois
+          - Réutilisation des binaires natifs inchangés de la version 1597 pour les trois architectures
         ja: |-
-          - UI kit を 0.17.14 に更新し、共通の設定間隔とテーブルのはみ出し修正を適用
-          - 管理者ポリシーの互換性を修正し、CGI 起動エラーを防止
-          - 3 アーキテクチャすべてでビルド 1596 のネイティブバイナリを変更せず再利用
+          - グラフの区分や凡例の行にポインター、フォーカス、タップで、名前、サイズ、使用済み容量とボリュームに占める割合を表示
+          - 凡例に割合を表示し、ごく小さい項目も見えるように。パッケージタブもドーナツグラフに
+          - 推奨クリーンアップの各行に種類アイコンと短い 1 行を表示して高さを統一し、パッケージの説明は 1 回だけ表示
+          - 3 アーキテクチャすべてでビルド 1597 のネイティブバイナリを変更せず再利用
         ko: |-
-          - UI kit를 0.17.14로 업데이트하고 공통 설정 간격과 표 넘침 수정을 적용
-          - 관리자 정책 호환성을 수정하여 CGI 시작 오류를 방지
-          - 세 아키텍처 모두 빌드 1596의 네이티브 바이너리를 변경 없이 재사용
+          - 차트 구간이나 범례 행을 가리키거나 포커스하거나 탭하면 이름, 크기, 사용 중인 공간과 볼륨에서 차지하는 비율이 표시돼요
+          - 범례에 비율을 표시하고 아주 작은 항목도 보이게 했으며, 패키지 탭도 도넛 차트로 바꿨어요
+          - 정리 제안의 각 행에 유형 아이콘과 짧은 한 줄을 표시해 높이를 맞추고, 패키지 설명은 한 번만 보여 줘요
+          - 세 아키텍처 모두 빌드 1597의 네이티브 바이너리를 변경 없이 재사용
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1597.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1597.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1597.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1597.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1597.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1597
+        version: 0.1.1-1598
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 5c6ae35bd0cbbd78312f4f57ff50d469d1533588533639f8ebb63abe57b19ffa
-        md5: fb02e596293773e32083d4da2efd6804
-        size: 13714944
+        sha256: 9e97d25263208ee791fdf078e3c7f0608ffba01f5a0c0a0707f133e5df95b48d
+        md5: a455771836a5172fe02ce389c79a5938
+        size: 13716480
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -96,19 +103,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T10:43:31Z
-          source_ref: 061ab9c29255f2a3f4d6810fab940c138ebd4b16
+          reviewed_at: 2026-10-30T11:56:26Z
+          source_ref: 1e173cf5f04ab68cf63897f9178a648d470bb1ef
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1597
+        version: 0.1.1-1598
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 1349c81df1dcf86121063e89c9f763eb44741ab5563bcce2bc1ad43244e71a36
-        md5: 2ab15452d0ebe40e2a60fdbaa3304540
-        size: 14440960
+        sha256: dd7f6761314ccd920dfc2af9a74ae307993dee8c1b23022468fbe5a654d4e2e7
+        md5: 396dd1438b61ae9e047f274acc2101a3
+        size: 14442496
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -125,11 +132,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T10:43:31Z
-          source_ref: 061ab9c29255f2a3f4d6810fab940c138ebd4b16
+          reviewed_at: 2026-10-30T11:56:26Z
+          source_ref: 1e173cf5f04ab68cf63897f9178a648d470bb1ef
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1597
+        version: 0.1.1-1598
         arch:
           - apollolake
           - avoton
@@ -158,9 +165,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: a41e3ceae20c07754d6c3b43feb67db849e11d3d1af264d557c2babb359ff1d9
-        md5: 7b66d7ebd612968e91138ec3976a9190
-        size: 14746112
+        sha256: 2a30f5d2539f138eda1346914987ab00d722b4ec474e11621e37c211553482d6
+        md5: 9a5a45223075e21a3ada92177a0f6f82
+        size: 14747136
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -177,8 +184,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T10:43:31Z
-          source_ref: 061ab9c29255f2a3f4d6810fab940c138ebd4b16
+          reviewed_at: 2026-10-30T11:56:26Z
+          source_ref: 1e173cf5f04ab68cf63897f9178a648d470bb1ef
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
