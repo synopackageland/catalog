@@ -521,7 +521,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0068
+      release: v0.2.2-0070
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -591,56 +591,51 @@ packages:
         ja: HTTP/HTTPS リンク、Torrent、マグネット リンク、ED2K のファイルに加え、yt-dlp 対応サイトの動画や拡張機能で追加したソースからダウンロードできます。ダウンロードの一時停止・再開・整理、完了したファイルの保存先の選択、履歴の確認ができます。ダウンロードはユーザーごとに分かれ、アクセス、拡張機能、エンジンの更新は管理者が管理します。Gopeed を利用しています。DSM サインインが必要です
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
-        en: >-
-          0.2.2-0068
+        en: |-
+          0.2.2-0070
 
+          Built with UI 0.17.14 and CLI 0.41.11. Settings is a strip of tabs laid out as DSM's Control Panel, with Reset and Apply at the bottom right; text typed in one tab stays when you switch tabs. The download and search lists fill the window
+        zh-TW: |-
+          0.2.2-0070
 
-          Built with SDK/App 0.35.0, CLI 0.37.0 and templates 0.33.0. Download
-          Hub appears in Hyper Backup's application list with offline
-          application backup. Saved Shared Folders must be selected separately
-        zh-TW: >-
-          0.2.2-0068
-
-
-          使用 SDK/App 0.35.0、CLI 0.37.0 與 templates 0.33.0 建置。下載中心會出現在 Hyper
-          Backup 的應用程式清單，預設使用離線應用程式備份。已儲存的共享資料夾需另外選取
+          使用 UI 0.17.14 與 CLI 0.41.11 建置。設定頁改為 DSM 控制台風格的分頁，重設與套用固定在右下角；在一個分頁輸入的內容切換分頁後仍會保留。下載與搜尋清單填滿視窗
         zh-CN: |-
-          0.2.2-0068
+          0.2.2-0070
 
-          使用 SDK/App 0.35.0、CLI 0.37.0 与 templates 0.33.0 构建。下载中心会出现在 Hyper Backup 的应用程序清单，默认使用脱机应用程序备份。已保存的共享文件夹需另外选择
+          使用 UI 0.17.14 与 CLI 0.41.11 构建。设置页改为 DSM 控制面板风格的标签页，重置与应用固定在右下角；在一个标签页输入的内容切换标签页后仍会保留。下载与搜索列表填满窗口
         de: |-
-          0.2.2-0068
+          0.2.2-0070
 
-          Gebaut mit SDK/App 0.35.0, CLI 0.37.0 und templates 0.33.0. Download Hub erscheint in der Anwendungsliste von Hyper Backup, mit Offline-Sicherung der Anwendung. Gespeicherte gemeinsame Ordner müssen separat ausgewählt werden
+          Gebaut mit UI 0.17.14 und CLI 0.41.11. Die Einstellungen sind Registerkarten im Stil der DSM-Systemsteuerung, Zurücksetzen und Übernehmen stehen unten rechts; Eingaben in einer Registerkarte bleiben beim Wechseln erhalten. Download- und Suchlisten füllen das Fenster
         fr: |-
-          0.2.2-0068
+          0.2.2-0070
 
-          Compilé avec SDK/App 0.35.0, CLI 0.37.0 et templates 0.33.0. Download Hub apparaît dans la liste des applications d'Hyper Backup, avec une sauvegarde hors ligne de l'application. Les dossiers partagés enregistrés doivent être sélectionnés séparément
+          Compilé avec UI 0.17.14 et CLI 0.41.11. Les paramètres sont des onglets dans le style du Panneau de configuration DSM, avec Réinitialiser et Appliquer en bas à droite ; le texte saisi dans un onglet est conservé quand vous changez d'onglet. Les listes de téléchargements et de recherche remplissent la fenêtre
         ja: |-
-          0.2.2-0068
+          0.2.2-0070
 
-          SDK/App 0.35.0、CLI 0.37.0、templates 0.33.0 でビルドしました。Download Hub が Hyper Backup のアプリケーション一覧に表示され、アプリケーションのオフライン バックアップができます。保存先の共有フォルダーは別途選択する必要があります
+          UI 0.17.14 と CLI 0.41.11 でビルドしました。設定は DSM のコントロール パネルと同じタブ形式になり、リセットと適用は右下に固定されます。タブを切り替えても入力中の内容は保持されます。ダウンロードと検索の一覧はウィンドウいっぱいに表示されます
         ko: |-
-          0.2.2-0068
+          0.2.2-0070
 
-          SDK/App 0.35.0, CLI 0.37.0, templates 0.33.0으로 빌드했어요. Download Hub가 Hyper Backup의 애플리케이션 목록에 나타나고, 애플리케이션을 오프라인으로 백업할 수 있어요. 저장 위치인 공유 폴더는 따로 선택해야 해요
+          UI 0.17.14와 CLI 0.41.11로 빌드했어요. 설정은 DSM 제어판과 같은 탭 형식이고, 재설정과 적용은 오른쪽 아래에 고정돼요. 탭을 바꿔도 입력 중인 내용은 유지돼요. 다운로드와 검색 목록이 창을 가득 채워요
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0068.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0068.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0070-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0070-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0070-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0070-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0070-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0068
+        version: 0.2.2-0070
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 39f14354b48deb6a8f3a78165ddd22849d1c1eb4c975e1493c65d28b6ff43280
-        md5: 6bcefadf3b89d38825c7c6503b2c6b18
-        size: 66332672
+        sha256: eb2e939e332b4a3ce2b13059240fa16247a282c6fbf2d0cae7700aed7b8f3676
+        md5: bddf2c698e32c172a9dd666cd8ab7a53
+        size: 66387456
         facts:
           built_with: sdk
           sdk_backend: go
@@ -658,11 +653,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-29T03:14:44Z
-          source_ref: b1306f9acb735d22f42b71c5b025ca13b1f77791
+          reviewed_at: 2026-10-30T10:49:23Z
+          source_ref: fc06f89e6d36e8b1f24845bd03fd29d5c2671396
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0068
+        version: 0.2.2-0070
         arch:
           - apollolake
           - avoton
@@ -691,9 +686,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: a9affd511b1cbc48f34d190fad26fd5bc4125202564b02fb447ccee81da8d666
-        md5: 17696e90f9e6a483cb336c8ccee00112
-        size: 69942784
+        sha256: 56b2fd22d51a092f8536a2499e843221fbc719fadd82d3b6c7bb14208adf0a43
+        md5: 525e4e27b3ab27f5fda681124d811598
+        size: 70002688
         facts:
           built_with: sdk
           sdk_backend: go
@@ -711,8 +706,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-29T03:15:42Z
-          source_ref: b1306f9acb735d22f42b71c5b025ca13b1f77791
+          reviewed_at: 2026-10-30T10:49:23Z
+          source_ref: fc06f89e6d36e8b1f24845bd03fd29d5c2671396
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: false
     recommended: false
