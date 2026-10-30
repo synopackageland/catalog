@@ -195,7 +195,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0099
+      release: v0.1.0-0100
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -321,71 +321,57 @@ packages:
           DSM 관리자 계정으로 로그인하세요
       changelog:
         en: |-
-          0.1.0-0099
+          0.1.0-0100
 
-          - NetBird keeps its saved sign-in after a restart instead of asking for a new SSO sign-in
-          - NetBird: a restore no longer stalls on "daemon_start_timeout" while the daemon is reconnecting
-          - NetBird: a daemon that cannot reach its management or Signal server is reported as a connection problem instead of an endless "health check incomplete"
-          - "Recovering…" and "Recovery could not be verified" clear once the connection passes its checks again
+          - Self-hosted NetBird server: turning the Free link off is refused while the server is on, because it removed the bridge every device needs to connect
+          - A running server without its Cloudflare token says devices cannot connect and takes a token on the spot; saving it restores device connections at once
         zh-TW: |-
-          0.1.0-0099
+          0.1.0-0100
 
-          - NetBird 重新啟動後沿用已儲存的登入，不再要求重新 SSO 登入
-          - NetBird：常駐程式重新連線時，還原不再卡在「daemon_start_timeout」
-          - NetBird：常駐程式連不上管理或 Signal 伺服器時，回報為連線問題，不再一直記錄「健康檢查未完成」
-          - 連線重新通過檢查後，「正在復原…」與「無法確認復原結果」會自動清除
+          - 自架 NetBird 伺服器：伺服器開啟時無法關閉免費連結，因為這會移除所有裝置連線所需的橋接
+          - 運作中的伺服器缺少 Cloudflare 權杖時，會提示裝置無法連線並可直接輸入權杖；儲存後立即恢復裝置連線
         zh-CN: |-
-          0.1.0-0099
+          0.1.0-0100
 
-          - NetBird 重新启动后沿用已保存的登录，不再要求重新 SSO 登录
-          - NetBird：守护进程重新连接时，恢复不再卡在“daemon_start_timeout”
-          - NetBird：守护进程连不上管理或 Signal 服务器时，报告为连接问题，不再一直记录“健康检查未完成”
-          - 连接重新通过检查后，“正在恢复…”与“无法确认恢复结果”会自动清除
+          - 自托管 NetBird 服务器：服务器开启时无法关闭免费链接，因为这会移除所有设备连接所需的桥接
+          - 运行中的服务器缺少 Cloudflare 令牌时，会提示设备无法连接并可直接输入令牌；保存后立即恢复设备连接
         de: |-
-          0.1.0-0099
+          0.1.0-0100
 
-          - NetBird behält nach einem Neustart die gespeicherte Anmeldung, statt eine neue SSO-Anmeldung zu verlangen
-          - NetBird: Eine Wiederherstellung bleibt nicht mehr bei "daemon_start_timeout" hängen, während der Dienst neu verbindet
-          - NetBird: Erreicht der Dienst seinen Management- oder Signal-Server nicht, wird das als Verbindungsproblem gemeldet statt endlos als "Zustandsprüfung unvollständig"
-          - "Wird wiederhergestellt…" und "Wiederherstellung konnte nicht bestätigt werden" verschwinden, sobald die Verbindung ihre Prüfungen wieder besteht
+          - Selbst gehosteter NetBird-Server: Der kostenlose Link lässt sich nicht ausschalten, solange der Server läuft, weil dabei die Brücke entfernt wurde, die jedes Gerät zum Verbinden braucht
+          - Fehlt einem laufenden Server sein Cloudflare-Token, meldet er, dass Geräte keine Verbindung herstellen können, und nimmt direkt ein Token an; nach dem Speichern verbinden sich Geräte sofort wieder
         fr: |-
-          0.1.0-0099
+          0.1.0-0100
 
-          - NetBird conserve sa connexion enregistrée après un redémarrage au lieu de demander une nouvelle connexion SSO
-          - NetBird : une restauration ne reste plus bloquée sur « daemon_start_timeout » pendant que le service se reconnecte
-          - NetBird : un service qui n'atteint pas son serveur de gestion ou Signal est signalé comme un problème de connexion au lieu d'un « contrôle d'état incomplet » sans fin
-          - « Récupération… » et « La récupération n'a pas pu être vérifiée » disparaissent dès que la connexion réussit à nouveau ses contrôles
+          - Serveur NetBird auto-hébergé : le lien gratuit ne peut plus être désactivé tant que le serveur est actif, car cela supprimait le pont dont chaque appareil a besoin pour se connecter
+          - Un serveur actif sans son jeton Cloudflare indique que les appareils ne peuvent pas se connecter et accepte un jeton sur place ; l'enregistrer rétablit aussitôt les connexions
         ja: |-
-          0.1.0-0099
+          0.1.0-0100
 
-          - NetBird は再起動後も保存済みのサインインを使い、SSO での再サインインを求めなくなりました
-          - NetBird：デーモンの再接続中に、復元が「daemon_start_timeout」で止まらなくなりました
-          - NetBird：デーモンが管理サーバーや Signal サーバーに届かないときは接続の問題として表示し、「ヘルスチェック未完了」を繰り返し記録しなくなりました
-          - 接続がチェックに再び合格すると、「復旧中…」と「復旧を確認できませんでした」が消えます
+          - セルフホストの NetBird サーバー：サーバーがオンの間は無料リンクをオフにできなくなりました。すべてのデバイスの接続に必要なブリッジが削除されていたためです
+          - 動作中のサーバーに Cloudflare トークンがないときは、デバイスが接続できないことを表示し、その場でトークンを入力できます。保存するとすぐにデバイスの接続が戻ります
         ko: |-
-          0.1.0-0099
+          0.1.0-0100
 
-          - NetBird가 다시 시작해도 저장된 로그인을 그대로 써서 SSO로 다시 로그인하라고 하지 않아요
-          - NetBird: 데몬이 다시 연결하는 동안 복원이 "daemon_start_timeout"에서 멈추지 않아요
-          - NetBird: 데몬이 관리 서버나 Signal 서버에 닿지 못하면 "상태 확인 미완료"를 계속 남기지 않고 연결 문제로 알려요
-          - 연결이 다시 확인을 통과하면 "복구 중…"과 "복구를 확인하지 못했어요"가 사라져요
+          - 자체 호스팅 NetBird 서버: 서버가 켜져 있는 동안에는 무료 링크를 끌 수 없어요. 모든 기기 연결에 필요한 브리지가 삭제됐기 때문이에요
+          - 실행 중인 서버에 Cloudflare 토큰이 없으면 기기가 연결할 수 없다고 알리고 바로 토큰을 입력받아요. 저장하면 기기 연결이 바로 돌아와요
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0099-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0099-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-tailscale-0099-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-netbird-0099-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0099-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0100-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0100-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-tailscale-0100-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-netbird-0100-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0100-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0099
+        version: 0.1.0-0100
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6aef3e5b0d92801d5a3e5749e7dea9539cc2ff0ba530016a66d36d2ea754d675
-        md5: fef1165e3f2f0164be5f2c00afad69cf
-        size: 14639616
+        sha256: e419783e65a12645cbf2e357fb241f8fc671511c8c0827bc42b592e6e6bac333
+        md5: 800c601546090632e9bcd529e8d51863
+        size: 14641152
         facts:
           built_with: sdk
           sdk_backend: go
@@ -402,19 +388,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T12:10:16Z
-          source_ref: 32668a003739bd87520713b4e394f6b32af0acd4
+          reviewed_at: 2026-10-30T12:37:02Z
+          source_ref: f3176ae9a6c90884861280fb8dd518048bcbe0d7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0099
+        version: 0.1.0-0100
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 4e43b7c1194e69806777cfe6c4a2742555ce31a47ca37196046dd12371c27f2a
-        md5: ca2f34cf6fe4b1078a6acfa5df784398
-        size: 15279616
+        sha256: f2d3a3397f40f381d1639282fbf8918848d2a677271b9954531b9d1eb5ad5382
+        md5: 1c6ac3d7cca417582acfb838585b0259
+        size: 15280640
         facts:
           built_with: sdk
           sdk_backend: go
@@ -431,11 +417,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T12:10:35Z
-          source_ref: 32668a003739bd87520713b4e394f6b32af0acd4
+          reviewed_at: 2026-10-30T12:38:42Z
+          source_ref: f3176ae9a6c90884861280fb8dd518048bcbe0d7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0099
+        version: 0.1.0-0100
         arch:
           - apollolake
           - avoton
@@ -464,9 +450,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 15f1dafdc60d9ff4719fbd4904d6f88520232ddc3c195d91fb71f0d98865a45c
-        md5: 0321bcc32fcc844e448fd4af5836959c
-        size: 16002560
+        sha256: 74314024f130e46f4cac4879fb507a928a04331f0eb68549ffcfb963f0d4f9e1
+        md5: 6e77391e060964b3f8a157c017e1d928
+        size: 16003072
         facts:
           built_with: sdk
           sdk_backend: go
@@ -483,8 +469,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T12:10:42Z
-          source_ref: 32668a003739bd87520713b4e394f6b32af0acd4
+          reviewed_at: 2026-10-30T12:40:39Z
+          source_ref: f3176ae9a6c90884861280fb8dd518048bcbe0d7
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
