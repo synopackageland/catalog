@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1594
+      release: v0.1.1-1597
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -36,85 +36,50 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          0.1.1-1594
-
-          - Scale metadata read allowances to used space, extent count and snapshot sharing, independently of the 512 MiB memory limit
-          - Record the selected allowance and its inputs in scan results
-          - Refine remaining space from a saved volume scan, prioritising larger extents without walking live folders again
-          - Pause and resume the extra reads from durable checkpoints with low I/O priority
-          - Keep changed references and unreadable metadata explicitly unknown, and show the extra analysis time
-          - Administrator approval is required again after this upgrade
+          - Update the UI kit to 0.17.14 and use shared Settings spacing and table overflow fixes
+          - Fix administrator-policy compatibility to prevent CGI startup errors
+          - Reuse build 1596 native binaries unchanged on all three architectures
         zh-TW: |-
-          0.1.1-1594
-
-          - 依使用容量、extent 數與快照共用情形調整中繼資料讀取預算，維持 512 MiB 記憶體上限
-          - 掃描結果記錄選定的讀取預算與依據
-          - 沿用磁碟區掃描追加分析剩餘空間，優先處理較大的 extent，不重新走訪目前的資料夾
-          - 以低 I/O 優先權追加讀取，支援耐久檢查點與暫停後繼續
-          - 已變動的參照與無法讀取的中繼資料仍明列為未知，並顯示追加耗時
-          - 升級後須由管理員重新核准
+          - 升級至 UI kit 0.17.14，採用共用設定間距與表格溢位修正
+          - 修正管理員 policy 相容性，避免 CGI 啟動錯誤
+          - 三架構原生 binaries 沿用 1596，掃描與清理行為不變
         zh-CN: |-
-          0.1.1-1594
-
-          - 依使用容量、extent 数与快照共用情形调整元数据读取预算，维持 512 MiB 内存上限
-          - 扫描结果记录选定的读取预算与依据
-          - 沿用存储空间扫描追加分析剩余空间，优先处理较大的 extent，不重新遍历目前的文件夹
-          - 以低 I/O 优先级追加读取，支持持久检查点与暂停后继续
-          - 已变动的参照与无法读取的元数据仍明列为未知，并显示追加耗时
-          - 升级后须由管理员重新核准
+          - 升级至 UI kit 0.17.14，采用共用设置间距与表格溢出修复
+          - 修复管理员 policy 兼容性，避免 CGI 启动错误
+          - 三架构原生 binaries 沿用 1596，扫描与清理行为不变
         de: |-
-          0.1.1-1594
-
-          - Das Budget für Metadaten-Lesezugriffe richtet sich nach belegtem Speicher, Anzahl der Extents und Snapshot-Teilung, unabhängig von der Speichergrenze von 512 MiB
-          - Das gewählte Budget und seine Grundlagen stehen in den Scan-Ergebnissen
-          - Restlichen Speicher aus einem gespeicherten Volume-Scan genauer zuordnen, größere Extents zuerst, ohne aktuelle Ordner erneut zu durchlaufen
-          - Die zusätzlichen Lesezugriffe mit niedriger I/O-Priorität anhalten und an dauerhaften Prüfpunkten fortsetzen
-          - Geänderte Verweise und unlesbare Metadaten bleiben ausdrücklich unbekannt, und die zusätzliche Analysezeit wird angezeigt
-          - Nach diesem Upgrade ist erneut eine Freigabe durch einen Administrator nötig
+          - UI-Kit auf 0.17.14 aktualisiert: gemeinsame Einstellungsabstände und korrigierter Tabellenüberlauf
+          - Kompatibilität der Administratorrichtlinie korrigiert, um CGI-Startfehler zu vermeiden
+          - Unveränderte native Binärdateien aus Build 1596 für alle drei Architekturen
         fr: |-
-          0.1.1-1594
-
-          - Le budget de lecture des métadonnées s'adapte à l'espace utilisé, au nombre d'extents et au partage entre instantanés, indépendamment de la limite mémoire de 512 Mio
-          - Les résultats d'analyse indiquent le budget choisi et ce qui l'a déterminé
-          - L'espace restant est affiné à partir d'une analyse de volume enregistrée, en traitant d'abord les plus gros extents, sans reparcourir les dossiers actuels
-          - Les lectures supplémentaires se mettent en pause et reprennent depuis des points de contrôle durables, avec une faible priorité d'E/S
-          - Les références modifiées et les métadonnées illisibles restent explicitement inconnues, et le temps d'analyse supplémentaire est affiché
-          - Une nouvelle approbation d'un administrateur est requise après cette mise à niveau
+          - Mise à jour du kit UI vers 0.17.14 avec espacement partagé des réglages et correction du débordement des tableaux
+          - Correction de la compatibilité de la politique administrateur pour éviter les erreurs de démarrage CGI
+          - Réutilisation des binaires natifs inchangés de la version 1596 pour les trois architectures
         ja: |-
-          0.1.1-1594
-
-          - メタデータ読み取りの上限を、使用容量、エクステント数、スナップショットの共有状況に合わせて調整（512 MiB のメモリ上限とは別）
-          - 選んだ上限とその根拠をスキャン結果に記録
-          - 保存済みのボリューム スキャンから残りの容量を詳しく分析し、大きなエクステントを優先、現在のフォルダーは再走査しません
-          - 追加の読み取りは低い I/O 優先度で行い、永続的なチェックポイントから一時停止・再開できます
-          - 変更された参照や読み取れないメタデータは不明として明示し、追加の分析時間を表示
-          - このアップグレード後は管理者の再承認が必要です
+          - UI kit を 0.17.14 に更新し、共通の設定間隔とテーブルのはみ出し修正を適用
+          - 管理者ポリシーの互換性を修正し、CGI 起動エラーを防止
+          - 3 アーキテクチャすべてでビルド 1596 のネイティブバイナリを変更せず再利用
         ko: |-
-          0.1.1-1594
-
-          - 메타데이터 읽기 한도를 사용 용량, extent 수, 스냅샷 공유 정도에 맞춰 조정해요(512 MiB 메모리 한도와는 별개)
-          - 선택한 한도와 그 근거를 스캔 결과에 기록해요
-          - 저장된 볼륨 스캔으로 남은 공간을 더 자세히 분석하고, 큰 extent부터 처리하며 현재 폴더를 다시 훑지 않아요
-          - 추가 읽기는 낮은 I/O 우선순위로 하고, 영구 체크포인트에서 일시 정지하고 이어서 할 수 있어요
-          - 바뀐 참조와 읽을 수 없는 메타데이터는 알 수 없음으로 명확히 남기고, 추가 분석 시간을 보여 줘요
-          - 이번 업그레이드 후에는 관리자의 재승인이 필요해요
+          - UI kit를 0.17.14로 업데이트하고 공통 설정 간격과 표 넘침 수정을 적용
+          - 관리자 정책 호환성을 수정하여 CGI 시작 오류를 방지
+          - 세 아키텍처 모두 빌드 1596의 네이티브 바이너리를 변경 없이 재사용
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1594.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1592.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1592.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-system-partition-1592.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1593.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1597.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1597.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1597.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1597.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1597.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1594
+        version: 0.1.1-1597
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: cbb9d7fccd9250ab964fbe447379f29ec70d4ee1edf2c36497704c0d63130a96
-        md5: 543e82bde766fee392d485ba9d9ac1fa
-        size: 13633024
+        sha256: 5c6ae35bd0cbbd78312f4f57ff50d469d1533588533639f8ebb63abe57b19ffa
+        md5: fb02e596293773e32083d4da2efd6804
+        size: 13714944
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -131,19 +96,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T17:45:24Z
-          source_ref: 6b8a4ba72a12b0ba088f668656a3020b290ada8b
+          reviewed_at: 2026-10-30T10:43:31Z
+          source_ref: 061ab9c29255f2a3f4d6810fab940c138ebd4b16
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1594
+        version: 0.1.1-1597
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 13fae6f21eff66013a7d2b96f0319834acc03a7f5bb2b0e65ce790a4a2a30178
-        md5: 8a06e9759c2ee21b66143d0baaa7e0a8
-        size: 14359040
+        sha256: 1349c81df1dcf86121063e89c9f763eb44741ab5563bcce2bc1ad43244e71a36
+        md5: 2ab15452d0ebe40e2a60fdbaa3304540
+        size: 14440960
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -160,11 +125,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T17:45:26Z
-          source_ref: 6b8a4ba72a12b0ba088f668656a3020b290ada8b
+          reviewed_at: 2026-10-30T10:43:31Z
+          source_ref: 061ab9c29255f2a3f4d6810fab940c138ebd4b16
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1594
+        version: 0.1.1-1597
         arch:
           - apollolake
           - avoton
@@ -193,9 +158,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 9256ab6be4ac923056ba622e4261940cfbba945b95ded610ca050d9117e9ca64
-        md5: dd1d3e13f2e3e552f0973257dbc7f9da
-        size: 14663168
+        sha256: a41e3ceae20c07754d6c3b43feb67db849e11d3d1af264d557c2babb359ff1d9
+        md5: 7b66d7ebd612968e91138ec3976a9190
+        size: 14746112
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -212,8 +177,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-27T17:45:30Z
-          source_ref: 6b8a4ba72a12b0ba088f668656a3020b290ada8b
+          reviewed_at: 2026-10-30T10:43:31Z
+          source_ref: 061ab9c29255f2a3f4d6810fab940c138ebd4b16
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
