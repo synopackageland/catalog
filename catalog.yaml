@@ -195,7 +195,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0097
+      release: v0.1.0-0099
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -321,71 +321,71 @@ packages:
           DSM 관리자 계정으로 로그인하세요
       changelog:
         en: |-
-          0.1.0-0097
+          0.1.0-0099
 
-          - Settings pages lay out as DSM's Control Panel: tabs on top, a Connection tab first, Reset and Apply at the bottom right
-          - Drafts survive a tab switch
-          - NetBird signs in before starting its network, so a slow connection is no longer reported as "No login address was obtained"
-          - Informational notices can be closed
+          - NetBird keeps its saved sign-in after a restart instead of asking for a new SSO sign-in
+          - NetBird: a restore no longer stalls on "daemon_start_timeout" while the daemon is reconnecting
+          - NetBird: a daemon that cannot reach its management or Signal server is reported as a connection problem instead of an endless "health check incomplete"
+          - "Recovering…" and "Recovery could not be verified" clear once the connection passes its checks again
         zh-TW: |-
-          0.1.0-0097
+          0.1.0-0099
 
-          - 設定頁面採用 DSM 控制台版面：分頁在上方，連線分頁在最前，重設與套用固定在右下角
-          - 切換分頁時保留尚未套用的輸入
-          - NetBird 先登入再啟動網路，連線較慢時不再誤報「未取得登入網址」
-          - 資訊提示可以關閉
+          - NetBird 重新啟動後沿用已儲存的登入，不再要求重新 SSO 登入
+          - NetBird：常駐程式重新連線時，還原不再卡在「daemon_start_timeout」
+          - NetBird：常駐程式連不上管理或 Signal 伺服器時，回報為連線問題，不再一直記錄「健康檢查未完成」
+          - 連線重新通過檢查後，「正在復原…」與「無法確認復原結果」會自動清除
         zh-CN: |-
-          0.1.0-0097
+          0.1.0-0099
 
-          - 设置页面采用 DSM 控制面板布局：标签页在上方，连接标签页在最前，重置与应用固定在右下角
-          - 切换标签页时保留尚未应用的输入
-          - NetBird 先登录再启动网络，连接较慢时不再误报“未获取登录网址”
-          - 信息提示可以关闭
+          - NetBird 重新启动后沿用已保存的登录，不再要求重新 SSO 登录
+          - NetBird：守护进程重新连接时，恢复不再卡在“daemon_start_timeout”
+          - NetBird：守护进程连不上管理或 Signal 服务器时，报告为连接问题，不再一直记录“健康检查未完成”
+          - 连接重新通过检查后，“正在恢复…”与“无法确认恢复结果”会自动清除
         de: |-
-          0.1.0-0097
+          0.1.0-0099
 
-          - Einstellungsseiten folgen dem Layout der DSM-Systemsteuerung: Registerkarten oben, zuerst Verbindung, Zurücksetzen und Übernehmen unten rechts
-          - Nicht übernommene Eingaben bleiben beim Wechsel der Registerkarte erhalten
-          - NetBird meldet sich an, bevor das Netzwerk startet; eine langsame Verbindung wird nicht mehr als "Keine Anmeldeadresse erhalten" gemeldet
-          - Hinweise lassen sich schließen
+          - NetBird behält nach einem Neustart die gespeicherte Anmeldung, statt eine neue SSO-Anmeldung zu verlangen
+          - NetBird: Eine Wiederherstellung bleibt nicht mehr bei "daemon_start_timeout" hängen, während der Dienst neu verbindet
+          - NetBird: Erreicht der Dienst seinen Management- oder Signal-Server nicht, wird das als Verbindungsproblem gemeldet statt endlos als "Zustandsprüfung unvollständig"
+          - "Wird wiederhergestellt…" und "Wiederherstellung konnte nicht bestätigt werden" verschwinden, sobald die Verbindung ihre Prüfungen wieder besteht
         fr: |-
-          0.1.0-0097
+          0.1.0-0099
 
-          - Les pages de paramètres reprennent la disposition du Panneau de configuration de DSM : onglets en haut, Connexion en premier, Réinitialiser et Appliquer en bas à droite
-          - Les saisies non appliquées sont conservées lors d'un changement d'onglet
-          - NetBird se connecte avant de démarrer son réseau : une connexion lente n'est plus signalée comme « Aucune adresse de connexion obtenue »
-          - Les notices d'information peuvent être fermées
+          - NetBird conserve sa connexion enregistrée après un redémarrage au lieu de demander une nouvelle connexion SSO
+          - NetBird : une restauration ne reste plus bloquée sur « daemon_start_timeout » pendant que le service se reconnecte
+          - NetBird : un service qui n'atteint pas son serveur de gestion ou Signal est signalé comme un problème de connexion au lieu d'un « contrôle d'état incomplet » sans fin
+          - « Récupération… » et « La récupération n'a pas pu être vérifiée » disparaissent dès que la connexion réussit à nouveau ses contrôles
         ja: |-
-          0.1.0-0097
+          0.1.0-0099
 
-          - 設定ページを DSM のコントロールパネルと同じレイアウトに：タブは上部、接続タブが先頭、リセットと適用は右下
-          - タブを切り替えても未適用の入力を保持
-          - NetBird はネットワーク開始前にサインインし、接続が遅いときに「ログインアドレスを取得できませんでした」と誤って表示しなくなりました
-          - 情報の通知を閉じられます
+          - NetBird は再起動後も保存済みのサインインを使い、SSO での再サインインを求めなくなりました
+          - NetBird：デーモンの再接続中に、復元が「daemon_start_timeout」で止まらなくなりました
+          - NetBird：デーモンが管理サーバーや Signal サーバーに届かないときは接続の問題として表示し、「ヘルスチェック未完了」を繰り返し記録しなくなりました
+          - 接続がチェックに再び合格すると、「復旧中…」と「復旧を確認できませんでした」が消えます
         ko: |-
-          0.1.0-0097
+          0.1.0-0099
 
-          - 설정 페이지가 DSM 제어판 레이아웃을 따라요: 탭은 위쪽, 연결 탭이 맨 앞, 재설정과 적용은 오른쪽 아래
-          - 탭을 바꿔도 적용하지 않은 입력이 남아요
-          - NetBird가 네트워크를 시작하기 전에 로그인해서, 연결이 느릴 때 "로그인 주소를 받지 못했습니다"라고 잘못 알리지 않아요
-          - 안내 알림을 닫을 수 있어요
+          - NetBird가 다시 시작해도 저장된 로그인을 그대로 써서 SSO로 다시 로그인하라고 하지 않아요
+          - NetBird: 데몬이 다시 연결하는 동안 복원이 "daemon_start_timeout"에서 멈추지 않아요
+          - NetBird: 데몬이 관리 서버나 Signal 서버에 닿지 못하면 "상태 확인 미완료"를 계속 남기지 않고 연결 문제로 알려요
+          - 연결이 다시 확인을 통과하면 "복구 중…"과 "복구를 확인하지 못했어요"가 사라져요
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0097-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0097-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-tailscale-0097-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-netbird-0097-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0097-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0099-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0099-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-tailscale-0099-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-netbird-0099-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-ipv6-0099-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0097
+        version: 0.1.0-0099
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 44b8bacc7956480268d6eb768ad359670a3ff059e07b358aa90996f89207aaaa
-        md5: fc0db667743b7c63ced77575162ca8f0
-        size: 14458880
+        sha256: 6aef3e5b0d92801d5a3e5749e7dea9539cc2ff0ba530016a66d36d2ea754d675
+        md5: fef1165e3f2f0164be5f2c00afad69cf
+        size: 14639616
         facts:
           built_with: sdk
           sdk_backend: go
@@ -402,19 +402,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T11:07:04Z
-          source_ref: d0719bb8cc71de851f7e1260f073f061ccb1a33a
+          reviewed_at: 2026-10-30T12:10:16Z
+          source_ref: 32668a003739bd87520713b4e394f6b32af0acd4
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0097
+        version: 0.1.0-0099
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: f38241cfc3d353389bc36f970a4c64f85814f94f5891a2d20a8664a30054e729
-        md5: 4bab103bf32beb8fbe94b4a4a10f0cfa
-        size: 15052800
+        sha256: 4e43b7c1194e69806777cfe6c4a2742555ce31a47ca37196046dd12371c27f2a
+        md5: ca2f34cf6fe4b1078a6acfa5df784398
+        size: 15279616
         facts:
           built_with: sdk
           sdk_backend: go
@@ -431,11 +431,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T11:07:07Z
-          source_ref: d0719bb8cc71de851f7e1260f073f061ccb1a33a
+          reviewed_at: 2026-10-30T12:10:35Z
+          source_ref: 32668a003739bd87520713b4e394f6b32af0acd4
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0097
+        version: 0.1.0-0099
         arch:
           - apollolake
           - avoton
@@ -464,9 +464,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2b5444e33aa1c1c2a4163911e03685feb95f2f0aee46076b4047149775a60432
-        md5: 09334b4b4b8ac731763a0d38a90259bc
-        size: 15790080
+        sha256: 15f1dafdc60d9ff4719fbd4904d6f88520232ddc3c195d91fb71f0d98865a45c
+        md5: 0321bcc32fcc844e448fd4af5836959c
+        size: 16002560
         facts:
           built_with: sdk
           sdk_backend: go
@@ -483,8 +483,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T11:07:18Z
-          source_ref: d0719bb8cc71de851f7e1260f073f061ccb1a33a
+          reviewed_at: 2026-10-30T12:10:42Z
+          source_ref: 32668a003739bd87520713b4e394f6b32af0acd4
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
