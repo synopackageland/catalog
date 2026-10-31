@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1601
+      release: v0.1.1-1602
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,64 +40,67 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: >-
-          - Every running scan shows the scan field; with an estimate from the
-          previous scan, a thin arc around it shows the percentage
+          - While scanning, three large soft glows drift behind the count instead
+          of a field of small cells; gentle and fast differ in pace and brightness
 
-          - The scan field stands still while a scan is paused
+          - With an estimate, a thin arc with no grey track shows the percentage
 
-          - Reuses the native programs of 0.1.1-1600; scanning and cleanup are
+          - Reuses the native programs of 0.1.1-1601; scanning and cleanup are
           unchanged
         zh-TW: |-
-          - 每次掃描都顯示掃描圖；有上次掃描的估計時，外圈細弧顯示百分比
-          - 掃描暫停時，掃描圖靜止不動
-          - 沿用 0.1.1-1600 的原生程式；掃描與清理行為不變
+          - 掃描時，數字後方改為三團緩緩漂移的柔和光暈，取代密集的小方格；溫和與快速模式的速度與亮度不同
+          - 有估計時，以沒有灰色底軌的細弧顯示百分比
+          - 沿用 0.1.1-1601 的原生程式；掃描與清理行為不變
         zh-CN: |-
-          - 每次扫描都显示扫描图；有上次扫描的估计时，外圈细弧显示百分比
-          - 扫描暂停时，扫描图静止不动
-          - 沿用 0.1.1-1600 的原生程序；扫描与清理行为不变
+          - 扫描时，数字后方改为三团缓缓漂移的柔和光晕，取代密集的小方格；温和与快速模式的速度与亮度不同
+          - 有估计时，以没有灰色底轨的细弧显示百分比
+          - 沿用 0.1.1-1601 的原生程序；扫描与清理行为不变
         de: >-
-          - Jeder laufende Scan zeigt das Scanfeld; mit einer Schätzung aus dem
-          letzten Scan zeigt ein dünner Bogen darum den Prozentwert
+          - Beim Scannen ziehen drei große, weiche Lichtflächen hinter der Zahl
+          statt eines Felds kleiner Zellen; schonend und schnell unterscheiden
+          sich in Tempo und Helligkeit
 
-          - Das Scanfeld steht still, während ein Scan pausiert
+          - Mit einer Schätzung zeigt ein dünner Bogen ohne grauen Hintergrundring
+          den Prozentwert
 
-          - Nutzt die nativen Programme von 0.1.1-1600; Scannen und Bereinigen
+          - Nutzt die nativen Programme von 0.1.1-1601; Scannen und Bereinigen
           bleiben unverändert
         fr: >-
-          - Chaque analyse en cours affiche le champ d’analyse ; avec une
-          estimation issue de l’analyse précédente, un arc fin autour indique le
+          - Pendant l’analyse, trois grands halos doux dérivent derrière le
+          nombre au lieu d’un champ de petites cellules ; les modes doux et
+          rapide diffèrent par le rythme et la luminosité
+
+          - Avec une estimation, un arc fin sans anneau gris indique le
           pourcentage
 
-          - Le champ d’analyse reste immobile pendant qu’une analyse est en pause
-
-          - Reprend les programmes natifs de 0.1.1-1600 ; l’analyse et le
+          - Reprend les programmes natifs de 0.1.1-1601 ; l’analyse et le
           nettoyage sont inchangés
         ja: |-
-          - すべてのスキャン中にスキャン表示を表示。前回のスキャンによる見積もりがある場合は、周囲の細い円弧で割合を表示
-          - スキャンの一時停止中はスキャン表示が静止
-          - 0.1.1-1600 のネイティブプログラムを再利用。スキャンとクリーンアップの動作は変更なし
+          - スキャン中は、小さなセルの代わりに 3 つの大きく柔らかな光が数値の後ろをゆっくり漂います。「穏やか」と「高速」で速さと明るさが異なります
+          - 見積もりがある場合は、灰色の下地リングのない細い円弧で割合を表示
+          - 0.1.1-1601 のネイティブプログラムを再利用。スキャンとクリーンアップの動作は変更なし
         ko: |-
-          - 모든 스캔 중에 스캔 표시를 보여 줘요. 이전 스캔의 예상치가 있으면 바깥의 얇은 원호가 진행률을 보여 줘요
-          - 스캔을 일시 중지하면 스캔 표시가 멈춰요
-          - 0.1.1-1600의 네이티브 프로그램을 그대로 사용해요. 스캔과 정리 동작은 바뀌지 않아요
+          - 스캔 중에는 작은 셀 대신 세 개의 크고 부드러운 빛이 숫자 뒤에서 천천히 움직여요. '부드럽게'와 '빠름' 모드는 속도와 밝기가 달라요
+          - 예상치가 있으면 회색 바탕 링 없이 얇은 원호로 진행률을 보여 줘요
+          - 0.1.1-1601의 네이티브 프로그램을 그대로 사용해요. 스캔과 정리 동작은 바뀌지 않아요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-scanning-1601.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-scanning-1602.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1597.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1597.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1597.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1601
+        version: 0.1.1-1602
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: da7ece701c535ec3c1961111fb3bc14c04422a475340bbd15951e89515009f19
-        md5: ccf02ea003e748e4f8ecb94681309a0d
-        size: 13756416
+        sha256: c709a2a6e33cc9644c9e7f3957fad63ea89f687a1fa752c2de1a9fc68e7bae81
+        md5: c1e238a4091e4b91f06325e08e6a559e
+        size: 13754880
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -114,19 +117,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T06:43:12Z
-          source_ref: 90536cd275924552366549e32043d05e2a57f603
+          reviewed_at: 2026-10-31T07:53:59Z
+          source_ref: a5e8c623921013d4c409c81da11275e8a30196fa
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1601
+        version: 0.1.1-1602
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 799dd67ec35434e4e4819a0ee530129373630f27d63377556d473d97d16a6521
-        md5: 0526d47048da966867f18d5ee69ab7d0
-        size: 14486528
+        sha256: 15e104634a3d116203873f1a0308d2493a41ce05c9d88bb7e02c4239947b06fb
+        md5: 2b314b696dd55b75789753a951f4117f
+        size: 14485504
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -143,11 +146,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T06:43:12Z
-          source_ref: 90536cd275924552366549e32043d05e2a57f603
+          reviewed_at: 2026-10-31T07:53:59Z
+          source_ref: a5e8c623921013d4c409c81da11275e8a30196fa
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1601
+        version: 0.1.1-1602
         arch:
           - apollolake
           - avoton
@@ -176,9 +179,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2becc22a29234edfdddc1d85ad08193154f5870db096d8b08cc7d8e88816461c
-        md5: a934028132789e6cc9d2eb0b25716e4c
-        size: 14788608
+        sha256: 24a40807b5b182a68dad0931fc57f86dfcd70c1e5b7af789fd5a2fe57e945273
+        md5: 1ab2c1cabf56df3c84f6db57aee30b32
+        size: 14787072
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -195,8 +198,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T06:43:12Z
-          source_ref: 90536cd275924552366549e32043d05e2a57f603
+          reviewed_at: 2026-10-31T07:53:59Z
+          source_ref: a5e8c623921013d4c409c81da11275e8a30196fa
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
