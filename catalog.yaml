@@ -209,7 +209,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0105
+      release: v0.1.0-0106
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -335,63 +335,60 @@ packages:
           DSM 관리자 계정으로 로그인하세요
       changelog:
         en: |-
-          0.1.0-0105
+          0.1.0-0106
 
-          - Use SDK 0.40.0 for bounded provider recovery after early exits
-          - Wait for network, DNS and DSM readiness; show waiting/backoff/failed with attempts and last exit
-          - Retry with saved identity and settings; clean process groups and keep disabled providers idle
+          - Use SDK 0.40.1 to restart enabled resident children after clean exits
+          - Apply bounded backoff to exit zero, nonzero and signal exits
+          - Keep requested stop and disable stopped; Retry preserves saved identity and settings
         zh-TW: |-
-          0.1.0-0105
+          0.1.0-0106
 
-          - 使用 SDK 0.40.0，為過早退出的連線程序提供有界恢復
-          - 等待網路、DNS 與 DSM 就緒；顯示等待、退避與失敗狀態、嘗試次數及最後退出資訊
-          - 重試保留身分與設定；清理程序群組，停用的連線方式維持閒置
+          - 使用 SDK 0.40.1，啟用中的常駐子行程正常退出後也會重啟
+          - 退出碼為零、非零或由訊號終止，均套用有界退避
+          - 主動停止與停用不會重啟；重試保留已儲存的身分與設定
         zh-CN: |-
-          0.1.0-0105
+          0.1.0-0106
 
-          - 使用 SDK 0.40.0，为过早退出的连接进程提供有界恢复
-          - 等待网络、DNS 与 DSM 就绪；显示等待、退避与失败状态、尝试次数及最后退出信息
-          - 重试保留身份与设置；清理进程组，已停用的连接方式保持空闲
+          - 使用 SDK 0.40.1，已启用的常驻子进程正常退出后也会重启
+          - 退出码为零、非零或由信号终止，均应用有限退避
+          - 主动停止与停用不会重启；重试保留已保存的身份与设置
         de: |-
-          0.1.0-0105
+          0.1.0-0106
 
-          - SDK 0.40.0 begrenzt die Wiederherstellungsversuche nach frühen Prozessabbrüchen
-          - Wartet auf Netzwerk, DNS und DSM; zeigt Wartezeit, Wiederholungsverzögerung, Fehler, Versuche und letzten Exit
-          - Erneut versuchen behält Identität und Einstellungen; Prozessgruppen werden bereinigt und deaktivierte Anbieter bleiben inaktiv
+          - SDK 0.40.1 startet aktivierte dauerhafte Prozesse auch nach regulärem Ende neu
+          - Begrenzte Wiederholungen gelten für Exit 0, Fehlercodes und Signale
+          - Bewusst gestoppte oder deaktivierte Prozesse bleiben aus; Identität und Einstellungen bleiben beim Wiederholen erhalten
         fr: |-
-          0.1.0-0105
+          0.1.0-0106
 
-          - Le SDK 0.40.0 limite les tentatives de reprise après un arrêt prématuré
-          - Attend le réseau, le DNS et DSM ; affiche attente, temporisation, échec, tentatives et dernier arrêt
-          - Réessayer conserve l’identité et les réglages ; nettoyage des groupes de processus et inactivité des fournisseurs désactivés
+          - Le SDK 0.40.1 relance les processus résidents activés après un arrêt normal
+          - La temporisation limitée couvre les codes de sortie zéro, les erreurs et les signaux
+          - Un arrêt demandé ou une désactivation reste effectif ; Réessayer conserve l’identité et les réglages
         ja: |-
-          0.1.0-0105
+          0.1.0-0106
 
-          - SDK 0.40.0 で、早期終了した接続プロセスの復旧回数を制限
-          - ネットワーク、DNS、DSM の準備を待機し、待機・再試行待ち・失敗、試行回数、最後の終了情報を表示
-          - 再試行でも保存済みの ID と設定を維持し、プロセスグループを後始末して無効な接続は休止
+          - SDK 0.40.1 により、有効な常駐子プロセスが正常終了しても再起動
+          - 終了コード 0、異常終了、シグナル終了に共通の回数制限付き再試行待ちを適用
+          - 明示的な停止や無効化では再起動せず、再試行時も保存済み ID と設定を維持
         ko: |-
-          0.1.0-0105
+          0.1.0-0106
 
-          - SDK 0.40.0으로 조기 종료된 연결 프로세스의 복구 시도 횟수를 제한
-          - 네트워크, DNS 및 DSM 준비를 기다리고 대기·재시도 대기·실패 상태, 시도 횟수와 마지막 종료 정보를 표시
-          - 재시도 시 저장된 ID와 설정을 유지하고 프로세스 그룹을 정리하며 비활성 연결은 유휴 상태로 유지
+          - SDK 0.40.1로 활성화된 상주 자식 프로세스가 정상 종료되어도 다시 시작
+          - 종료 코드 0, 오류 코드 및 시그널 종료에 제한된 재시도 대기 적용
+          - 요청한 중지와 비활성화는 유지하며, 재시도 시 저장된 ID와 설정 유지
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0105-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-provider-recovery-0105-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-netbird-server-0105-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-free-link-0105-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0105-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0106-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-0106-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0105
+        version: 0.1.0-0106
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: c12efc75a5c4b152cb29d8ad90c7901d63594876c7139f925f9f28132d2269cf
-        md5: 0a182aef075cb530b00dbd56e8ea6a84
+        sha256: f40fe51e91e44ad8f161fbf64418f80c61a792e90d496ad505d2f30f7ab6d4a4
+        md5: 6deb0de29964025868826bc860e7449f
         size: 14295040
         facts:
           built_with: sdk
@@ -409,18 +406,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T19:24:03Z
-          source_ref: 72ba7246b36d13aae45b16612003dbfcb85518fd
+          reviewed_at: 2026-10-31T20:20:36Z
+          source_ref: cb8a8e75641028e82db74e93ae69ee89cf52ed64
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0105
+        version: 0.1.0-0106
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: f3979af3302860e89fd448a38cc59fd9712fab2e490a6bc5a96bef245a24c8fa
-        md5: a69de026ee13346ddd993e270e956be8
+        sha256: c7a569a59a344a45818702d475b0df0dd9ce951ec9ee1924b3c9667e43695bb7
+        md5: e85ba2503ed548c946bd12df74613ed1
         size: 14919680
         facts:
           built_with: sdk
@@ -438,11 +435,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T19:24:03Z
-          source_ref: 72ba7246b36d13aae45b16612003dbfcb85518fd
+          reviewed_at: 2026-10-31T20:20:36Z
+          source_ref: cb8a8e75641028e82db74e93ae69ee89cf52ed64
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0105
+        version: 0.1.0-0106
         arch:
           - apollolake
           - avoton
@@ -471,8 +468,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: f4c86aa3646b5a7ffdde0c4cbb8f39b24051eb57fc2ae9bbc4f14cc057e5af6a
-        md5: 86fb9bdf422e07fdd5818532b86268f4
+        sha256: ede49525a6cdde0f9aba9946033a19d51b389531b91e444b1e0ea932d86bf863
+        md5: c4ac55592f90653dd4d5d96832d5ba96
         size: 15718400
         facts:
           built_with: sdk
@@ -490,8 +487,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T19:24:03Z
-          source_ref: 72ba7246b36d13aae45b16612003dbfcb85518fd
+          reviewed_at: 2026-10-31T20:20:36Z
+          source_ref: cb8a8e75641028e82db74e93ae69ee89cf52ed64
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
