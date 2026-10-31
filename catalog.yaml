@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1600
+      release: v0.1.1-1601
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,78 +40,63 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: >-
-          - The system partition list groups into packages, cleanable items, DSM
-          system and Other; DSM system and Other unfold into their parts
+          - Every running scan shows the scan field; with an estimate from the
+          previous scan, a thin arc around it shows the percentage
 
-          - Packages show their Package Center name with a link there
+          - The scan field stands still while a scan is paused
 
-          - The list opens at once from the last scan, updates in the background
-          and has a Rescan button
-
-          - Scans read less of /proc, and a calmer scan field replaces the
-          spinning arc
+          - Reuses the native programs of 0.1.1-1600; scanning and cleanup are
+          unchanged
         zh-TW: |-
-          - 系統分割區清單分為套件、可清理項目、DSM 系統與其他；DSM 系統與其他可展開查看組成
-          - 套件顯示套件中心的名稱，並可直接前往套件中心
-          - 清單立即顯示上次掃描結果，於背景更新，並提供「重新掃描」按鈕
-          - 掃描讀取更少 /proc 內容，並以較沉穩的掃描圖取代旋轉圓弧
+          - 每次掃描都顯示掃描圖；有上次掃描的估計時，外圈細弧顯示百分比
+          - 掃描暫停時，掃描圖靜止不動
+          - 沿用 0.1.1-1600 的原生程式；掃描與清理行為不變
         zh-CN: |-
-          - 系统分区列表分为套件、可清理项目、DSM 系统与其他；DSM 系统与其他可展开查看组成
-          - 套件显示套件中心的名称，并可直接前往套件中心
-          - 列表立即显示上次扫描结果，在后台更新，并提供“重新扫描”按钮
-          - 扫描读取更少 /proc 内容，并以更沉稳的扫描图取代旋转圆弧
+          - 每次扫描都显示扫描图；有上次扫描的估计时，外圈细弧显示百分比
+          - 扫描暂停时，扫描图静止不动
+          - 沿用 0.1.1-1600 的原生程序；扫描与清理行为不变
         de: >-
-          - Die Liste der Systempartition gliedert sich in Pakete, bereinigbare
-          Einträge, DSM-System und Sonstiges; DSM-System und Sonstiges lassen
-          sich aufklappen
+          - Jeder laufende Scan zeigt das Scanfeld; mit einer Schätzung aus dem
+          letzten Scan zeigt ein dünner Bogen darum den Prozentwert
 
-          - Pakete zeigen ihren Namen aus dem Paket-Zentrum mit einem Link
-          dorthin
+          - Das Scanfeld steht still, während ein Scan pausiert
 
-          - Die Liste öffnet sofort mit dem letzten Scan, aktualisiert im
-          Hintergrund und bietet „Erneut scannen“
-
-          - Scans lesen weniger aus /proc, und ein ruhiges Scanfeld ersetzt den
-          drehenden Bogen
+          - Nutzt die nativen Programme von 0.1.1-1600; Scannen und Bereinigen
+          bleiben unverändert
         fr: >-
-          - La liste de la partition système se répartit en paquets, éléments
-          nettoyables, système DSM et Autres ; système DSM et Autres se déplient
-          pour montrer leurs parties
+          - Chaque analyse en cours affiche le champ d’analyse ; avec une
+          estimation issue de l’analyse précédente, un arc fin autour indique le
+          pourcentage
 
-          - Les paquets affichent leur nom du Centre de paquets avec un lien
-          vers celui-ci
+          - Le champ d’analyse reste immobile pendant qu’une analyse est en pause
 
-          - La liste s’ouvre aussitôt avec la dernière analyse, se met à jour en
-          arrière-plan et propose « Analyser à nouveau »
-
-          - Les analyses lisent moins de /proc, et un champ d’analyse plus calme
-          remplace l’arc qui tourne
+          - Reprend les programmes natifs de 0.1.1-1600 ; l’analyse et le
+          nettoyage sont inchangés
         ja: |-
-          - システムパーティションの一覧をパッケージ、クリーンアップ可能な項目、DSM システム、その他に整理。DSM システムとその他は展開して内訳を表示
-          - パッケージはパッケージセンターの名前で表示し、パッケージセンターへのリンクを表示
-          - 一覧は前回のスキャン結果ですぐに開き、バックグラウンドで更新。「再スキャン」ボタンを追加
-          - スキャンで読む /proc を削減し、回転する円弧を落ち着いたスキャン表示に置き換え
+          - すべてのスキャン中にスキャン表示を表示。前回のスキャンによる見積もりがある場合は、周囲の細い円弧で割合を表示
+          - スキャンの一時停止中はスキャン表示が静止
+          - 0.1.1-1600 のネイティブプログラムを再利用。スキャンとクリーンアップの動作は変更なし
         ko: |-
-          - 시스템 파티션 목록을 패키지, 정리 가능한 항목, DSM 시스템, 기타로 묶어요. DSM 시스템과 기타는 펼쳐서 구성을 볼 수 있어요
-          - 패키지는 패키지 센터의 이름으로 표시하고 패키지 센터로 연결해요
-          - 목록은 마지막 스캔 결과로 바로 열리고 백그라운드에서 업데이트하며 '다시 스캔' 버튼이 있어요
-          - 스캔이 /proc을 덜 읽고, 회전하는 원호 대신 차분한 스캔 표시를 보여 줘요
+          - 모든 스캔 중에 스캔 표시를 보여 줘요. 이전 스캔의 예상치가 있으면 바깥의 얇은 원호가 진행률을 보여 줘요
+          - 스캔을 일시 중지하면 스캔 표시가 멈춰요
+          - 0.1.1-1600의 네이티브 프로그램을 그대로 사용해요. 스캔과 정리 동작은 바뀌지 않아요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-scanning-1601.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1597.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1597.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1597.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1600
+        version: 0.1.1-1601
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6da995ce208633a4acad517b4419ebd226ea367e964f035af46e110edcdd8014
-        md5: 0f692ee71d0deb042d4537f4d5359a66
+        sha256: da7ece701c535ec3c1961111fb3bc14c04422a475340bbd15951e89515009f19
+        md5: ccf02ea003e748e4f8ecb94681309a0d
         size: 13756416
         facts:
           built_with: sdk
@@ -129,18 +114,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T05:48:44Z
-          source_ref: f16af1f02ad256145881ba7a5952bc63912b1779
+          reviewed_at: 2026-10-31T06:43:12Z
+          source_ref: 90536cd275924552366549e32043d05e2a57f603
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1600
+        version: 0.1.1-1601
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 3c28d443832278e0d32ce95007af94912ed5d9d400c3ed309b45d4eed5758d53
-        md5: c32056bcb84eb4b9c1cc09cb21b0c1ec
+        sha256: 799dd67ec35434e4e4819a0ee530129373630f27d63377556d473d97d16a6521
+        md5: 0526d47048da966867f18d5ee69ab7d0
         size: 14486528
         facts:
           built_with: sdk
@@ -158,11 +143,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T05:48:46Z
-          source_ref: f16af1f02ad256145881ba7a5952bc63912b1779
+          reviewed_at: 2026-10-31T06:43:12Z
+          source_ref: 90536cd275924552366549e32043d05e2a57f603
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1600
+        version: 0.1.1-1601
         arch:
           - apollolake
           - avoton
@@ -191,8 +176,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e7de205d06c0be16d82ab42834f087934bbcbaaad6d18b19ebda3715e90ac766
-        md5: 9027da865132b176ddf43d64eab828f1
+        sha256: 2becc22a29234edfdddc1d85ad08193154f5870db096d8b08cc7d8e88816461c
+        md5: a934028132789e6cc9d2eb0b25716e4c
         size: 14788608
         facts:
           built_with: sdk
@@ -210,8 +195,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T05:48:47Z
-          source_ref: f16af1f02ad256145881ba7a5952bc63912b1779
+          reviewed_at: 2026-10-31T06:43:12Z
+          source_ref: 90536cd275924552366549e32043d05e2a57f603
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
