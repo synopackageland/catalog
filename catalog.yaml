@@ -209,7 +209,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0104
+      release: v0.1.0-0106
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -335,57 +335,61 @@ packages:
           DSM 관리자 계정으로 로그인하세요
       changelog:
         en: |-
-          0.1.0-0104
+          0.1.0-0106
 
-          - Rebuild with frontend and Go SDK 0.38.5; keep UI 0.17.14
-          - Use shared AppShell fixes for the account row, icon sign-out, main clipping and empty-slot fill
+          - Use SDK 0.40.1 to restart enabled resident children after clean exits
+          - Apply bounded backoff to exit zero, nonzero and signal exits
+          - Keep requested stop and disable stopped; Retry preserves saved identity and settings
         zh-TW: |-
-          0.1.0-0104
+          0.1.0-0106
 
-          - 以前端與 Go SDK 0.38.5 重建，UI 維持 0.17.14
-          - 使用共用 AppShell 的單列帳號、圖示登出、主區裁切與空插槽填滿修正
+          - 使用 SDK 0.40.1，啟用中的常駐子行程正常退出後也會重啟
+          - 退出碼為零、非零或由訊號終止，均套用有界退避
+          - 主動停止與停用不會重啟；重試保留已儲存的身分與設定
         zh-CN: |-
-          0.1.0-0104
+          0.1.0-0106
 
-          - 以前端与 Go SDK 0.38.5 重建，UI 保持 0.17.14
-          - 使用共享 AppShell 的单行账号、图标登出、主区裁切与空插槽填满修复
+          - 使用 SDK 0.40.1，已启用的常驻子进程正常退出后也会重启
+          - 退出码为零、非零或由信号终止，均应用有限退避
+          - 主动停止与停用不会重启；重试保留已保存的身份与设置
         de: |-
-          0.1.0-0104
+          0.1.0-0106
 
-          - Mit Frontend- und Go-SDK 0.38.5 neu erstellt; UI bleibt bei 0.17.14
-          - Gemeinsame AppShell-Korrekturen für Kontozeile, Abmeldesymbol, Zuschnitt des Hauptbereichs und leere Slots
+          - SDK 0.40.1 startet aktivierte dauerhafte Prozesse auch nach regulärem Ende neu
+          - Begrenzte Wiederholungen gelten für Exit 0, Fehlercodes und Signale
+          - Bewusst gestoppte oder deaktivierte Prozesse bleiben aus; Identität und Einstellungen bleiben beim Wiederholen erhalten
         fr: |-
-          0.1.0-0104
+          0.1.0-0106
 
-          - Reconstruit avec les SDK frontend et Go 0.38.5 ; UI reste en 0.17.14
-          - Corrections AppShell partagées pour la ligne du compte, la déconnexion par icône, le découpage du contenu principal et les slots vides
+          - Le SDK 0.40.1 relance les processus résidents activés après un arrêt normal
+          - La temporisation limitée couvre les codes de sortie zéro, les erreurs et les signaux
+          - Un arrêt demandé ou une désactivation reste effectif ; Réessayer conserve l’identité et les réglages
         ja: |-
-          0.1.0-0104
+          0.1.0-0106
 
-          - フロントエンドと Go SDK 0.38.5 で再ビルド、UI は 0.17.14 を維持
-          - アカウント行、アイコンでのログアウト、メイン領域のクリッピング、空スロットの共通 AppShell 修正を適用
+          - SDK 0.40.1 により、有効な常駐子プロセスが正常終了しても再起動
+          - 終了コード 0、異常終了、シグナル終了に共通の回数制限付き再試行待ちを適用
+          - 明示的な停止や無効化では再起動せず、再試行時も保存済み ID と設定を維持
         ko: |-
-          0.1.0-0104
+          0.1.0-0106
 
-          - 프런트엔드 및 Go SDK 0.38.5로 다시 빌드하고 UI 0.17.14는 유지
-          - 계정 행, 아이콘 로그아웃, 메인 영역 잘라내기, 빈 슬롯의 공통 AppShell 수정 적용
+          - SDK 0.40.1로 활성화된 상주 자식 프로세스가 정상 종료되어도 다시 시작
+          - 종료 코드 0, 오류 코드 및 시그널 종료에 제한된 재시도 대기 적용
+          - 요청한 중지와 비활성화는 유지하며, 재시도 시 저장된 ID와 설정 유지
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0104-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0104-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-netbird-server-0104-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-free-link-0104-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0104-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0106-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-0106-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0104
+        version: 0.1.0-0106
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 3627ed8ca9bef47a70657968b183e024eb3ea7e67259a758dcde0dd99d589f59
-        md5: c0ca1c44e6c8698422e9345bca3afa62
-        size: 14438400
+        sha256: f40fe51e91e44ad8f161fbf64418f80c61a792e90d496ad505d2f30f7ab6d4a4
+        md5: 6deb0de29964025868826bc860e7449f
+        size: 14295040
         facts:
           built_with: sdk
           sdk_backend: go
@@ -402,19 +406,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:38:43Z
-          source_ref: ea2616131d2502f42fc0a9d672c911ba41dbb22e
+          reviewed_at: 2026-10-31T20:20:36Z
+          source_ref: cb8a8e75641028e82db74e93ae69ee89cf52ed64
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0104
+        version: 0.1.0-0106
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 03c5699edd5fc42fdaab8cc68c4105b5dc668369e51210fe441b91efdd8822f0
-        md5: 14a00a18c578225b6384895dd3dcbf60
-        size: 15032320
+        sha256: c7a569a59a344a45818702d475b0df0dd9ce951ec9ee1924b3c9667e43695bb7
+        md5: e85ba2503ed548c946bd12df74613ed1
+        size: 14919680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -431,11 +435,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:38:43Z
-          source_ref: ea2616131d2502f42fc0a9d672c911ba41dbb22e
+          reviewed_at: 2026-10-31T20:20:36Z
+          source_ref: cb8a8e75641028e82db74e93ae69ee89cf52ed64
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0104
+        version: 0.1.0-0106
         arch:
           - apollolake
           - avoton
@@ -464,9 +468,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 56351f335e7047251e8bf854521bd0520635082b83080f09442f2c1ccef4b5eb
-        md5: dab1a1a17877e05986e75a5d5432f509
-        size: 15769600
+        sha256: ede49525a6cdde0f9aba9946033a19d51b389531b91e444b1e0ea932d86bf863
+        md5: c4ac55592f90653dd4d5d96832d5ba96
+        size: 15718400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -483,8 +487,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:38:43Z
-          source_ref: ea2616131d2502f42fc0a9d672c911ba41dbb22e
+          reviewed_at: 2026-10-31T20:20:36Z
+          source_ref: cb8a8e75641028e82db74e93ae69ee89cf52ed64
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
