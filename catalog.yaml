@@ -195,7 +195,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0103
+      release: v0.1.0-0104
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -321,63 +321,56 @@ packages:
           DSM 관리자 계정으로 로그인하세요
       changelog:
         en: |-
-          0.1.0-0103
+          0.1.0-0104
 
-          - Turn Free link off without interrupting the self-hosted NetBird Signal bridge
-          - Explain Cloudflare prerequisites and the shutdown order on both pages
-          - Retain domain authorization when reconnecting the same own domain
+          - Rebuild with frontend and Go SDK 0.38.5; keep UI 0.17.14
+          - Use shared AppShell fixes for the account row, icon sign-out, main clipping and empty-slot fill
         zh-TW: |-
-          0.1.0-0103
+          0.1.0-0104
 
-          - 關閉免費連結時保留自架 NetBird 的 Signal 橋接
-          - 兩頁明確說明 Cloudflare 相依條件、故障原因與關閉順序
-          - 重新連線同一個自有網域時保留授權
+          - 以前端與 Go SDK 0.38.5 重建，UI 維持 0.17.14
+          - 使用共用 AppShell 的單列帳號、圖示登出、主區裁切與空插槽填滿修正
         zh-CN: |-
-          0.1.0-0103
+          0.1.0-0104
 
-          - 关闭免费链接时保留自托管 NetBird 的 Signal 桥接
-          - 两个页面明确说明 Cloudflare 依赖条件、故障原因与关闭顺序
-          - 重新连接同一个自有域名时保留授权
+          - 以前端与 Go SDK 0.38.5 重建，UI 保持 0.17.14
+          - 使用共享 AppShell 的单行账号、图标登出、主区裁切与空插槽填满修复
         de: |-
-          0.1.0-0103
+          0.1.0-0104
 
-          - Den kostenlosen Link ausschalten, ohne die Signal-Brücke des eigenen NetBird-Servers zu unterbrechen
-          - Cloudflare-Voraussetzungen und die Reihenfolge beim Ausschalten auf beiden Seiten erklären
-          - Die Domain-Autorisierung beim erneuten Verbinden derselben eigenen Domain behalten
+          - Mit Frontend- und Go-SDK 0.38.5 neu erstellt; UI bleibt bei 0.17.14
+          - Gemeinsame AppShell-Korrekturen für Kontozeile, Abmeldesymbol, Zuschnitt des Hauptbereichs und leere Slots
         fr: |-
-          0.1.0-0103
+          0.1.0-0104
 
-          - Désactiver le lien gratuit sans interrompre le pont Signal du serveur NetBird auto-hébergé
-          - Expliquer les prérequis Cloudflare et l’ordre de désactivation sur les deux pages
-          - Conserver l’autorisation lors de la reconnexion au même domaine personnel
+          - Reconstruit avec les SDK frontend et Go 0.38.5 ; UI reste en 0.17.14
+          - Corrections AppShell partagées pour la ligne du compte, la déconnexion par icône, le découpage du contenu principal et les slots vides
         ja: |-
-          0.1.0-0103
+          0.1.0-0104
 
-          - 無料リンクをオフにしてもセルフホスト NetBird の Signal ブリッジを維持
-          - 両ページで Cloudflare の前提条件と停止順序を明示
-          - 同じ独自ドメインに再接続するときに認証を保持
+          - フロントエンドと Go SDK 0.38.5 で再ビルド、UI は 0.17.14 を維持
+          - アカウント行、アイコンでのログアウト、メイン領域のクリッピング、空スロットの共通 AppShell 修正を適用
         ko: |-
-          0.1.0-0103
+          0.1.0-0104
 
-          - 무료 링크를 꺼도 자체 호스팅 NetBird의 Signal 브리지를 유지
-          - 두 페이지에서 Cloudflare 필수 조건과 종료 순서를 안내
-          - 같은 개인 도메인에 다시 연결할 때 인증을 유지
+          - 프런트엔드 및 Go SDK 0.38.5로 다시 빌드하고 UI 0.17.14는 유지
+          - 계정 행, 아이콘 로그아웃, 메인 영역 잘라내기, 빈 슬롯의 공통 AppShell 수정 적용
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0103-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0103-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-netbird-server-0103-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-free-link-0103-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0103-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0104-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-own-domain-0104-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-netbird-server-0104-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-free-link-0104-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0104-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0103
+        version: 0.1.0-0104
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 0fd6a780f94500229b4b22d06d71e7e8a33d8a3edee9612a19ce9e2cfab3426c
-        md5: 45a8488c0034913e4fc0e33ebecc52cc
+        sha256: 3627ed8ca9bef47a70657968b183e024eb3ea7e67259a758dcde0dd99d589f59
+        md5: c0ca1c44e6c8698422e9345bca3afa62
         size: 14438400
         facts:
           built_with: sdk
@@ -395,18 +388,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:29:30Z
-          source_ref: 0e2eed50a6a3e7ba70e79d62952647941844d5e4
+          reviewed_at: 2026-10-31T02:38:43Z
+          source_ref: ea2616131d2502f42fc0a9d672c911ba41dbb22e
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0103
+        version: 0.1.0-0104
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 7fa62b65a1b5becbc2e2b7adc13e9e45efd70970814f61727e9f071cdd8e6edc
-        md5: c3183848020f37522d3ca41fd90efbc1
+        sha256: 03c5699edd5fc42fdaab8cc68c4105b5dc668369e51210fe441b91efdd8822f0
+        md5: 14a00a18c578225b6384895dd3dcbf60
         size: 15032320
         facts:
           built_with: sdk
@@ -424,11 +417,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:29:30Z
-          source_ref: 0e2eed50a6a3e7ba70e79d62952647941844d5e4
+          reviewed_at: 2026-10-31T02:38:43Z
+          source_ref: ea2616131d2502f42fc0a9d672c911ba41dbb22e
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0103
+        version: 0.1.0-0104
         arch:
           - apollolake
           - avoton
@@ -457,8 +450,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e277d31f598ebf7559893ba30f2313ca5bb900caefc9484f388195cd50ec96a5
-        md5: 73d14d99d423b6b89043fb9400312a8a
+        sha256: 56351f335e7047251e8bf854521bd0520635082b83080f09442f2c1ccef4b5eb
+        md5: dab1a1a17877e05986e75a5d5432f509
         size: 15769600
         facts:
           built_with: sdk
@@ -476,8 +469,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:29:30Z
-          source_ref: 0e2eed50a6a3e7ba70e79d62952647941844d5e4
+          reviewed_at: 2026-10-31T02:38:43Z
+          source_ref: ea2616131d2502f42fc0a9d672c911ba41dbb22e
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
