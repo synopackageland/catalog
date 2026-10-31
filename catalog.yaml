@@ -479,7 +479,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0071
+      release: v0.2.2-0072
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -550,33 +550,33 @@ packages:
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
         en: |-
-          0.2.2-0071
+          0.2.2-0072
 
-          Use the verified official downloader for yt-dlp updates, avoiding the old updater’s anonymous GitHub API limit; keep the previous version on failure. Show precise tool errors. Fix Kickass “just now” dates and distinguish connection resets/TLS errors from browser challenges. Extend large Release asset uploads to 20 minutes
+          SDK/App 0.38.5 fixes the sidebar account row and icon sign-out, limits clipping to the main layout area, and ignores empty or hidden nodes when filling pages. UI remains at 0.17.14
         zh-TW: |-
-          0.2.2-0071
+          0.2.2-0072
 
-          yt-dlp 更新改用官方下載與驗證流程，避免舊版更新器的匿名 GitHub API 限流，失敗時保留原版並顯示具體錯誤。修正 Kickass「just now」日期解析；連線重設與 TLS 錯誤不再誤報需要瀏覽器，只有真正的挑戰頁才提供輔助。大型 Release 檔案上傳逾時延長至 20 分鐘
+          SDK/App 0.38.5 修正側邊欄帳號單列與圖示登出、主內容裁切及空白或隱藏節點造成的填滿版面問題。UI 保留 0.17.14
         zh-CN: |-
-          0.2.2-0071
+          0.2.2-0072
 
-          yt-dlp 更新使用官方验证下载，避免旧版更新器的匿名 GitHub API 限流，失败时保留原版并显示具体错误。修复 Kickass「just now」日期解析；连接重置与 TLS 错误不再误报需要浏览器，仅真正的挑战页提供辅助。大型 Release 文件上传超时延长至 20 分钟
+          SDK/App 0.38.5 修复侧边栏账号单行与图标退出、主内容裁剪及空白或隐藏节点导致的填充布局问题。UI 保留 0.17.14
         de: |-
-          0.2.2-0071
+          0.2.2-0072
 
-          yt-dlp nutzt den geprüften offiziellen Download statt des alten anonymen Updaters; bei Fehlern bleibt die vorherige Version erhalten. Präzise Werkzeugfehler und Kickass-Zeitangaben „just now“. Verbindungsresets und TLS-Fehler werden von Browser-Challenges getrennt. Upload-Zeitlimit für große Release-Dateien: 20 Minuten
+          SDK/App 0.38.5 korrigiert die Kontozeile mit Abmeldesymbol, begrenzt das Abschneiden auf den Hauptbereich und ignoriert leere oder ausgeblendete Knoten beim Füllen der Seiten. UI bleibt bei 0.17.14
         fr: |-
-          0.2.2-0071
+          0.2.2-0072
 
-          yt-dlp utilise le téléchargement officiel vérifié au lieu de l’ancien programme de mise à jour anonyme ; la version précédente est conservée en cas d’échec. Erreurs précises et dates Kickass « just now » corrigées. Les réinitialisations et erreurs TLS sont distinguées des pages de vérification. Délai des gros fichiers Release : 20 minutes
+          SDK/App 0.38.5 corrige la ligne du compte avec une icône de déconnexion, limite le découpage à la zone principale et ignore les nœuds vides ou masqués dans les pages étendues. UI reste en 0.17.14
         ja: |-
-          0.2.2-0071
+          0.2.2-0072
 
-          yt-dlp の更新を公式の検証済みダウンロードに変更し、旧版の匿名 GitHub API 制限を回避。失敗時は旧版を保持し、具体的なエラーを表示します。Kickass の「just now」を解析し、接続リセットや TLS エラーをブラウザー認証と区別します。大きな Release ファイルのアップロード制限を20分に延長
+          SDK/App 0.38.5 でサイドバーのアカウントを1行表示とログアウトアイコンに修正。切り抜きをメイン領域に限定し、ページを埋める際に空または非表示のノードを除外します。UI は 0.17.14 を維持
         ko: |-
-          0.2.2-0071
+          0.2.2-0072
 
-          yt-dlp 업데이트에 공식 검증 다운로드를 사용해 이전 프로그램의 익명 GitHub API 제한을 피해요. 실패하면 이전 버전을 유지하고 구체적인 오류를 보여 줘요. Kickass의 “just now” 날짜를 처리하고 연결 재설정과 TLS 오류를 브라우저 인증과 구분해요. 큰 Release 파일 업로드 제한을 20분으로 늘렸어요
+          SDK/App 0.38.5에서 사이드바 계정을 한 줄과 로그아웃 아이콘으로 표시하고, 잘림을 기본 영역으로 제한하며, 페이지를 채울 때 빈 노드와 숨겨진 노드를 제외해요. UI는 0.17.14를 유지해요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0070-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0070-en.png
@@ -585,15 +585,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0070-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0071
+        version: 0.2.2-0072
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: b1357d3fef215c9f6427fd258579f09817969210f7c4f486574fb099744660f7
-        md5: 139ec72c7cd2f7c6e9525fcd56d3c731
-        size: 66388992
+        sha256: 0bdbcca5f4901d10a64d169bd0028eecaafaa5d1cb07ab5f8ecb64418cd133b9
+        md5: 9f6a51e793de1278f99ca2d722fe53d4
+        size: 66363904
         facts:
           built_with: sdk
           sdk_backend: go
@@ -611,11 +611,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T11:47:16Z
-          source_ref: 9adfb2a322e1a3fa3422af07279a9f25548f1bc1
+          reviewed_at: 2026-10-31T02:38:53Z
+          source_ref: 703a913cf759b3176d540cd145ba3a1eb3d3b923
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0071
+        version: 0.2.2-0072
         arch:
           - apollolake
           - avoton
@@ -644,9 +644,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 640592f69e1c220614907e9ef615dbe2a5a2307b7fe9135ccf123376a9ad967e
-        md5: 929b3600fb4cf14bbb8c82d382d4a285
-        size: 70004736
+        sha256: 16d2bfd1610560d8236487627169cead9d4bcbb57125837a05ab29ef9f0b1e84
+        md5: 46355599d39afdfc49b7f784ea0b6e96
+        size: 69981696
         facts:
           built_with: sdk
           sdk_backend: go
@@ -664,8 +664,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-30T11:47:16Z
-          source_ref: 9adfb2a322e1a3fa3422af07279a9f25548f1bc1
+          reviewed_at: 2026-10-31T02:38:53Z
+          source_ref: 703a913cf759b3176d540cd145ba3a1eb3d3b923
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: false
     recommended: false
