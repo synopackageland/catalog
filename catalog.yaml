@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1599
+      release: v0.1.1-1600
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,63 +40,79 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: >-
-          - Update the frontend and Rust App SDK to 0.38.5
+          - The system partition list groups into packages, cleanable items, DSM
+          system and Other; DSM system and Other unfold into their parts
 
-          - Fix the sidebar account row, AppShell clipping and empty or hidden
-          fill-page slots
+          - Packages show their Package Center name with a link there
 
-          - Rebuild the App and SDK runtime for all three architectures; keep
-          the existing root policy and programs
+          - The list opens at once from the last scan, updates in the background
+          and has a Rescan button
+
+          - Scans read less of /proc, and a calmer scan field replaces the
+          spinning arc
         zh-TW: |-
-          - 前端與 Rust App SDK 升級至 0.38.5
-          - 修正側邊欄帳號列、AppShell 裁切，以及填滿頁面的空白或隱藏插槽
-          - 重建三架構 App 與 SDK runtime；保留既有 root 政策與程式
+          - 系統分割區清單分為套件、可清理項目、DSM 系統與其他；DSM 系統與其他可展開查看組成
+          - 套件顯示套件中心的名稱，並可直接前往套件中心
+          - 清單立即顯示上次掃描結果，於背景更新，並提供「重新掃描」按鈕
+          - 掃描讀取更少 /proc 內容，並以較沉穩的掃描圖取代旋轉圓弧
         zh-CN: |-
-          - 前端与 Rust App SDK 升级至 0.38.5
-          - 修复侧边栏账号行、AppShell 裁切，以及填满页面的空白或隐藏插槽
-          - 重建三架构 App 与 SDK runtime；保留现有 root 策略与程序
+          - 系统分区列表分为套件、可清理项目、DSM 系统与其他；DSM 系统与其他可展开查看组成
+          - 套件显示套件中心的名称，并可直接前往套件中心
+          - 列表立即显示上次扫描结果，在后台更新，并提供“重新扫描”按钮
+          - 扫描读取更少 /proc 内容，并以更沉稳的扫描图取代旋转圆弧
         de: >-
-          - Frontend- und Rust-App-SDK auf 0.38.5 aktualisiert
+          - Die Liste der Systempartition gliedert sich in Pakete, bereinigbare
+          Einträge, DSM-System und Sonstiges; DSM-System und Sonstiges lassen
+          sich aufklappen
 
-          - Kontenzeile, AppShell-Zuschnitt und leere oder ausgeblendete Slots
-          auf ausgefüllten Seiten korrigiert
+          - Pakete zeigen ihren Namen aus dem Paket-Zentrum mit einem Link
+          dorthin
 
-          - App und SDK-Laufzeit für alle drei Architekturen neu gebaut;
-          bestehende Root-Richtlinie und Programme bleiben erhalten
+          - Die Liste öffnet sofort mit dem letzten Scan, aktualisiert im
+          Hintergrund und bietet „Erneut scannen“
+
+          - Scans lesen weniger aus /proc, und ein ruhiges Scanfeld ersetzt den
+          drehenden Bogen
         fr: >-
-          - Mise à jour des SDK du frontend et de l’App Rust vers 0.38.5
+          - La liste de la partition système se répartit en paquets, éléments
+          nettoyables, système DSM et Autres ; système DSM et Autres se déplient
+          pour montrer leurs parties
 
-          - Correction de la ligne du compte, du découpage AppShell et des
-          emplacements vides ou masqués des pages pleine hauteur
+          - Les paquets affichent leur nom du Centre de paquets avec un lien
+          vers celui-ci
 
-          - Reconstruction de l’App et du runtime SDK pour les trois
-          architectures ; la politique root et les programmes existants sont
-          conservés
+          - La liste s’ouvre aussitôt avec la dernière analyse, se met à jour en
+          arrière-plan et propose « Analyser à nouveau »
+
+          - Les analyses lisent moins de /proc, et un champ d’analyse plus calme
+          remplace l’arc qui tourne
         ja: |-
-          - フロントエンドと Rust App の SDK を 0.38.5 に更新
-          - サイドバーのアカウント行、AppShell のクリッピング、全高ページの空または非表示スロットを修正
-          - 3 アーキテクチャの App と SDK ランタイムを再ビルド。既存の root ポリシーとプログラムを維持
+          - システムパーティションの一覧をパッケージ、クリーンアップ可能な項目、DSM システム、その他に整理。DSM システムとその他は展開して内訳を表示
+          - パッケージはパッケージセンターの名前で表示し、パッケージセンターへのリンクを表示
+          - 一覧は前回のスキャン結果ですぐに開き、バックグラウンドで更新。「再スキャン」ボタンを追加
+          - スキャンで読む /proc を削減し、回転する円弧を落ち着いたスキャン表示に置き換え
         ko: |-
-          - 프런트엔드와 Rust App SDK를 0.38.5로 업데이트해요
-          - 사이드바 계정 행, AppShell 잘림, 전체 높이 페이지의 비어 있거나 숨겨진 슬롯을 수정해요
-          - 세 아키텍처의 App과 SDK 런타임을 다시 빌드해요. 기존 root 정책과 프로그램을 유지해요
+          - 시스템 파티션 목록을 패키지, 정리 가능한 항목, DSM 시스템, 기타로 묶어요. DSM 시스템과 기타는 펼쳐서 구성을 볼 수 있어요
+          - 패키지는 패키지 센터의 이름으로 표시하고 패키지 센터로 연결해요
+          - 목록은 마지막 스캔 결과로 바로 열리고 백그라운드에서 업데이트하며 '다시 스캔' 버튼이 있어요
+          - 스캔이 /proc을 덜 읽고, 회전하는 원호 대신 차분한 스캔 표시를 보여 줘요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1597.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1597.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1597.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1597.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1599
+        version: 0.1.1-1600
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 04d644f61e757180b941fc789dca27bc40cbcedf14f6109906f08a77dc8b57f8
-        md5: 48174aad4ac9d8fde54ccd621fb5c7e6
-        size: 13742080
+        sha256: 6da995ce208633a4acad517b4419ebd226ea367e964f035af46e110edcdd8014
+        md5: 0f692ee71d0deb042d4537f4d5359a66
+        size: 13756416
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -113,19 +129,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:48:36Z
-          source_ref: cb5f6b305a1de7d7c372b0d6baaed4fc694385be
+          reviewed_at: 2026-10-31T05:48:44Z
+          source_ref: f16af1f02ad256145881ba7a5952bc63912b1779
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1599
+        version: 0.1.1-1600
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: a453b3930dcacbd1fc6a56fc6a77e6c404cc5c1f4d3156f6222f1cbf0f961a77
-        md5: 97e163c671028ca8fa3087e07a2515c7
-        size: 14476288
+        sha256: 3c28d443832278e0d32ce95007af94912ed5d9d400c3ed309b45d4eed5758d53
+        md5: c32056bcb84eb4b9c1cc09cb21b0c1ec
+        size: 14486528
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -142,11 +158,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:49:16Z
-          source_ref: cb5f6b305a1de7d7c372b0d6baaed4fc694385be
+          reviewed_at: 2026-10-31T05:48:46Z
+          source_ref: f16af1f02ad256145881ba7a5952bc63912b1779
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1599
+        version: 0.1.1-1600
         arch:
           - apollolake
           - avoton
@@ -175,9 +191,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e180d10abe6ec10cfa9e035ea4cba290ac8c18ccbc0cfada9f57ac1dfc946979
-        md5: a9e0540cdea7e9600341e73d69e0951c
-        size: 14773248
+        sha256: e7de205d06c0be16d82ab42834f087934bbcbaaad6d18b19ebda3715e90ac766
+        md5: 9027da865132b176ddf43d64eab828f1
+        size: 14788608
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -194,8 +210,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:49:48Z
-          source_ref: cb5f6b305a1de7d7c372b0d6baaed4fc694385be
+          reviewed_at: 2026-10-31T05:48:47Z
+          source_ref: f16af1f02ad256145881ba7a5952bc63912b1779
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
