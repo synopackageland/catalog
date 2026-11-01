@@ -692,7 +692,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.7-0021
+      release: v4.2.9-0003
       access: private
     metadata:
       maintainer: OpenList Team
@@ -765,40 +765,38 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
         en: >-
-          4.2.7-0021
+          4.2.9-0003
 
 
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
+          Update OpenList to 4.2.9 and rebuild with CLI 0.42.2 / SDK 0.42.0
         zh-TW: >-
-          4.2.7-0021
+          4.2.9-0003
 
 
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          更新 OpenList 至 4.2.9，並以 CLI 0.42.2／SDK 0.42.0 重建
         zh-CN: |-
-          4.2.7-0021
+          4.2.9-0003
 
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+          将 OpenList 更新至 4.2.9，并使用 CLI 0.42.2／SDK 0.42.0 重新构建
         de: |-
-          4.2.7-0021
+          4.2.9-0003
 
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+          OpenList auf 4.2.9 aktualisiert und mit CLI 0.42.2 / SDK 0.42.0 neu gebaut
         fr: |-
-          4.2.7-0021
+          4.2.9-0003
 
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+          Mise à jour d’OpenList vers 4.2.9 et recompilation avec CLI 0.42.2 / SDK 0.42.0
         ja: |-
-          4.2.7-0021
+          4.2.9-0003
 
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+          OpenList を 4.2.9 に更新し、CLI 0.42.2／SDK 0.42.0 で再ビルド
         ko: |-
-          4.2.7-0021
+          4.2.9-0003
 
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
+          OpenList를 4.2.9로 업데이트하고 CLI 0.42.2 / SDK 0.42.0으로 다시 빌드했어요
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.7-0021
+        version: 4.2.9-0003
         arch:
           - apollolake
           - avoton
@@ -827,9 +825,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 9ec1e34bce1370b3ed058742d081f134923a02594ec337ff5776d128f5cb11b0
-        md5: 329b7c7ee0fd9ca3ba185bd64596af10
-        size: 75995136
+        sha256: 40eefd2b53e013b1d8c3ef228710b531efa871d79d19805ae8a6839328be4a43
+        md5: 208f7781b205dd79d43847e9b0a51ae8
+        size: 82375168
         facts:
           built_with: sdk
           sdk_backend: go
@@ -840,13 +838,14 @@ packages:
           opens: dsm
           requires: []
           conflicts: []
-          shared_folders: []
+          shared_folders:
+            - OpenList
           signed: false
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:21Z
-          source_ref: e3690cc269546990715fc6aff4cf413f00f822d7
+          reviewed_at: 2026-11-01T15:50:42Z
+          source_ref: f44c3353b053ee2657549c3b6b930bf9a465e2fb
           source_repo: synopackageland/syno-pkg-land-openlist
   - listed: false
     recommended: false
