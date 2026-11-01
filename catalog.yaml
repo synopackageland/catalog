@@ -502,7 +502,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0072
+      release: v0.2.2-0073
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -573,33 +573,54 @@ packages:
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
         en: |-
-          0.2.2-0072
+          0.2.2-0073
 
-          SDK/App 0.38.5 fixes the sidebar account row and icon sign-out, limits clipping to the main layout area, and ignores empty or hidden nodes when filling pages. UI remains at 0.17.14
+          - Rebuilt with SDK 0.41.0, UI 0.18.3 and CLI 0.41.13
+          - Includes SDK security and process supervision updates
+          - Download links, trackers and web seeds that point to private or local addresses are refused
+          - Queued downloads take turns across users; no feature changes
         zh-TW: |-
-          0.2.2-0072
+          0.2.2-0073
 
-          SDK/App 0.38.5 修正側邊欄帳號單列與圖示登出、主內容裁切及空白或隱藏節點造成的填滿版面問題。UI 保留 0.17.14
+          - 使用 SDK 0.41.0、UI 0.18.3 與 CLI 0.41.13 重新建置
+          - 包含 SDK 的安全性與程序監督更新
+          - 拒絕指向私有或本機位址的下載連結、tracker 與 web seed
+          - 排隊中的下載依使用者輪流進行；無功能變更
         zh-CN: |-
-          0.2.2-0072
+          0.2.2-0073
 
-          SDK/App 0.38.5 修复侧边栏账号单行与图标退出、主内容裁剪及空白或隐藏节点导致的填充布局问题。UI 保留 0.17.14
+          - 使用 SDK 0.41.0、UI 0.18.3 和 CLI 0.41.13 重新构建
+          - 包含 SDK 的安全性与进程监督更新
+          - 拒绝指向私有或本地地址的下载链接、tracker 和 web seed
+          - 排队中的下载按用户轮流进行；无功能变更
         de: |-
-          0.2.2-0072
+          0.2.2-0073
 
-          SDK/App 0.38.5 korrigiert die Kontozeile mit Abmeldesymbol, begrenzt das Abschneiden auf den Hauptbereich und ignoriert leere oder ausgeblendete Knoten beim Füllen der Seiten. UI bleibt bei 0.17.14
+          - Neu erstellt mit SDK 0.41.0, UI 0.18.3 und CLI 0.41.13
+          - Enthält Sicherheits- und Prozessüberwachungs-Updates des SDK
+          - Download-Links, Tracker und Web-Seeds mit privaten oder lokalen Adressen werden abgelehnt
+          - Downloads in der Warteschlange wechseln sich zwischen Benutzern ab; keine Funktionsänderungen
         fr: |-
-          0.2.2-0072
+          0.2.2-0073
 
-          SDK/App 0.38.5 corrige la ligne du compte avec une icône de déconnexion, limite le découpage à la zone principale et ignore les nœuds vides ou masqués dans les pages étendues. UI reste en 0.17.14
+          - Recompilé avec SDK 0.41.0, UI 0.18.3 et CLI 0.41.13
+          - Inclut les mises à jour de sécurité et de supervision des processus du SDK
+          - Les liens de téléchargement, trackers et web seeds vers des adresses privées ou locales sont refusés
+          - Les téléchargements en attente alternent entre les utilisateurs ; aucune nouvelle fonctionnalité
         ja: |-
-          0.2.2-0072
+          0.2.2-0073
 
-          SDK/App 0.38.5 でサイドバーのアカウントを1行表示とログアウトアイコンに修正。切り抜きをメイン領域に限定し、ページを埋める際に空または非表示のノードを除外します。UI は 0.17.14 を維持
+          - SDK 0.41.0、UI 0.18.3、CLI 0.41.13 で再ビルド
+          - SDK のセキュリティとプロセス監視の更新を含みます
+          - プライベートまたはローカルアドレスを指すダウンロードリンク、トラッカー、Web シードを拒否します
+          - 待機中のダウンロードはユーザー間で順番に処理されます。機能の変更はありません
         ko: |-
-          0.2.2-0072
+          0.2.2-0073
 
-          SDK/App 0.38.5에서 사이드바 계정을 한 줄과 로그아웃 아이콘으로 표시하고, 잘림을 기본 영역으로 제한하며, 페이지를 채울 때 빈 노드와 숨겨진 노드를 제외해요. UI는 0.17.14를 유지해요
+          - SDK 0.41.0, UI 0.18.3, CLI 0.41.13으로 다시 빌드했어요
+          - SDK의 보안 및 프로세스 감독 업데이트가 포함돼요
+          - 사설 또는 로컬 주소를 가리키는 다운로드 링크, 트래커, 웹 시드를 거부해요
+          - 대기 중인 다운로드는 사용자 간에 차례로 진행돼요. 기능 변경은 없어요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0070-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0070-en.png
@@ -608,15 +629,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0070-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0072
+        version: 0.2.2-0073
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 0bdbcca5f4901d10a64d169bd0028eecaafaa5d1cb07ab5f8ecb64418cd133b9
-        md5: 9f6a51e793de1278f99ca2d722fe53d4
-        size: 66363904
+        sha256: 0ea717b5c0bb93bc3a71f10af3fc37283a711a08ea2bd3bf1770acb3291d4684
+        md5: d0e79ab23b7fd96125e07679bf18c279
+        size: 66428416
         facts:
           built_with: sdk
           sdk_backend: go
@@ -634,11 +655,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:38:53Z
-          source_ref: 703a913cf759b3176d540cd145ba3a1eb3d3b923
+          reviewed_at: 2026-11-01T04:12:51Z
+          source_ref: e7bd9faee72d891169050c11c1aec337e0212fb5
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0072
+        version: 0.2.2-0073
         arch:
           - apollolake
           - avoton
@@ -667,9 +688,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 16d2bfd1610560d8236487627169cead9d4bcbb57125837a05ab29ef9f0b1e84
-        md5: 46355599d39afdfc49b7f784ea0b6e96
-        size: 69981696
+        sha256: 46dffa3632a9ae558385e2764b3e67a52604c992d4e78cb7e72caa1e6e9505d6
+        md5: e598f1b0004fc5b4948211f5849ba917
+        size: 70047744
         facts:
           built_with: sdk
           sdk_backend: go
@@ -687,8 +708,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T02:38:53Z
-          source_ref: 703a913cf759b3176d540cd145ba3a1eb3d3b923
+          reviewed_at: 2026-11-01T04:12:55Z
+          source_ref: e7bd9faee72d891169050c11c1aec337e0212fb5
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: false
     recommended: false
