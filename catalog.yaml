@@ -488,7 +488,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0074
+      release: v0.2.2-0075
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -559,33 +559,33 @@ packages:
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
         en: |-
-          0.2.2-0074
+          0.2.2-0075
 
-          - Smoother transitions for dialogs, menus, panels and notifications (UI 0.19.0)
+          - Updated the interface components
         zh-TW: |-
-          0.2.2-0074
+          0.2.2-0075
 
-          - 對話框、選單、面板與通知的轉場效果更流暢（UI 0.19.0）
+          - 更新介面元件
         zh-CN: |-
-          0.2.2-0074
+          0.2.2-0075
 
-          - 对话框、菜单、面板和通知的过渡效果更流畅（UI 0.19.0）
+          - 更新界面组件
         de: |-
-          0.2.2-0074
+          0.2.2-0075
 
-          - Flüssigere Übergänge für Dialoge, Menüs, Bereiche und Benachrichtigungen (UI 0.19.0)
+          - Oberflächenkomponenten aktualisiert
         fr: |-
-          0.2.2-0074
+          0.2.2-0075
 
-          - Transitions plus fluides pour les boîtes de dialogue, menus, panneaux et notifications (UI 0.19.0)
+          - Composants d’interface mis à jour
         ja: |-
-          0.2.2-0074
+          0.2.2-0075
 
-          - ダイアログ、メニュー、パネル、通知の切り替えがより滑らかに（UI 0.19.0）
+          - インターフェースコンポーネントを更新
         ko: |-
-          0.2.2-0074
+          0.2.2-0075
 
-          - 대화 상자, 메뉴, 패널 및 알림의 전환 효과가 더 부드러워짐 (UI 0.19.0)
+          - 인터페이스 구성 요소 업데이트
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0070-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0070-en.png
@@ -594,14 +594,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0070-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0074
+        version: 0.2.2-0075
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f2f19839d1bcebd812dfe973f1f64ea14dcd7aa1e7d5332a7e181a505fee24c0
-        md5: de6826a8ddd53baf09f0cb109aaad161
+        sha256: c12aad6bc4f7233fff7035910e6de824a65497cfb81a4ec2fafd4f3f1cea4005
+        md5: 1fba3f6f4fc0fd9575d2e30dfc3d8b83
         size: 66433024
         facts:
           built_with: sdk
@@ -620,11 +620,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T05:39:15Z
-          source_ref: 1e689edb9a65b466d29d4f7e4094c0af7cb7e74e
+          reviewed_at: 2026-11-01T08:23:18Z
+          source_ref: 36e793e1b530168997f71d449015669cff5c71fb
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0074
+        version: 0.2.2-0075
         arch:
           - apollolake
           - avoton
@@ -653,8 +653,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2cd2ee557ab9a6b080cf3e67515b979e274d3ba71c3e1be0478c2a6f6ddaa424
-        md5: 8b26d4cd207ed41eeeb6131702a8345b
+        sha256: 7797da92b3e62a7985879174514abe503f6ae8c332288a55f79a6cbcc9aa897f
+        md5: 2cdd1d5f61faf3cbc4f2d1c257dbc0ef
         size: 70053376
         facts:
           built_with: sdk
@@ -673,8 +673,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T05:39:15Z
-          source_ref: 1e689edb9a65b466d29d4f7e4094c0af7cb7e74e
+          reviewed_at: 2026-11-01T08:23:18Z
+          source_ref: 36e793e1b530168997f71d449015669cff5c71fb
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: false
     recommended: false
