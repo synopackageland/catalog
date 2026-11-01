@@ -223,116 +223,145 @@ packages:
         Tailscale and NetBird clients are downloaded from their vendors under
         their own licenses. Source code is not public at this time.
       description:
-        en: Reach your NAS remotely without opening router ports. Turn Cloudflare
-          Tunnel, Tailscale, NetBird or IPv6 direct access on or off from one
-          page
-        zh-TW: 不必在路由器開放連接埠，也能從外部連回 NAS。在同一頁啟用或停用 Cloudflare Tunnel、Tailscale、NetBird 與
-          IPv6 直連
-        zh-CN: 无需在路由器开放端口，也能从外部连回 NAS。在同一页启用或停用 Cloudflare Tunnel、Tailscale、NetBird 与
-          IPv6 直连
-        ja: ルーターのポートを開放せずに外部から NAS へ接続できます。Cloudflare Tunnel、Tailscale、NetBird、IPv6
-          直接接続を 1 つの画面で有効化・無効化できます
-        ko: 라우터 포트를 열지 않고도 외부에서 NAS에 접속해요. Cloudflare Tunnel, Tailscale, NetBird, IPv6
-          직접 연결을 한 화면에서 켜고 끌 수 있어요
-        de: Greifen Sie aus der Ferne auf Ihr NAS zu, ohne Router-Ports zu öffnen.
-          Cloudflare Tunnel, Tailscale, NetBird und IPv6-Direktzugriff lassen
-          sich auf einer Seite ein- und ausschalten
-        fr: Accédez à votre NAS à distance sans ouvrir de ports sur le routeur. Activez
-          ou désactivez Cloudflare Tunnel, Tailscale, NetBird et l’accès direct
-          IPv6 depuis une seule page
-        es: Acceda a su NAS de forma remota sin abrir puertos en el router. Active o
-          desactive Cloudflare Tunnel, Tailscale, NetBird y el acceso directo
-          por IPv6 desde una sola página
-        it: Raggiungi il NAS da remoto senza aprire porte sul router. Attiva o disattiva
-          Cloudflare Tunnel, Tailscale, NetBird e l’accesso diretto IPv6 da
-          un’unica pagina
+        en: Reach the NAS and its Apps from anywhere without opening router ports, with
+          DSM sign-in on by default. Connect through a free workers.dev link, your own
+          Cloudflare domain, a private network or IPv6 direct access, and choose which
+          Apps are reachable
+        zh-TW: 不必在路由器開放連接埠，就能從任何地方連回 NAS 與其 App，預設需 DSM 登入。可透過免費 workers.dev 連結、自有
+          Cloudflare 網域、私人網路或 IPv6 直連，並選擇哪些 App 可被存取
+        zh-CN: 无需在路由器开放端口，就能从任何地方连回 NAS 与其 App，默认需 DSM 登录。可通过免费 workers.dev 链接、自有
+          Cloudflare 域名、私有网络或 IPv6 直连，并选择哪些 App 可被访问
+        ja: ルーターのポートを開けずに、どこからでも NAS とそのアプリに接続できます。DSM サインインは既定で必要です。無料の workers.dev
+          リンク、独自の Cloudflare ドメイン、プライベートネットワーク、IPv6 直接接続から選び、公開するアプリも指定できます
+        ko: 라우터 포트를 열지 않고 어디서든 NAS와 앱에 접속해요. DSM 로그인은 기본으로 필요합니다. 무료 workers.dev 링크, 내
+          Cloudflare 도메인, 사설 네트워크, IPv6 직접 연결 중에서 고르고 접근할 앱도 정할 수 있어요
+        de: Erreiche dein NAS und seine Apps von überall, ohne Ports am Router zu
+          öffnen; die DSM-Anmeldung ist standardmäßig erforderlich. Verbinde dich über
+          einen kostenlosen workers.dev-Link, deine eigene Cloudflare-Domain, ein
+          privates Netzwerk oder IPv6-Direktzugriff und wähle, welche Apps erreichbar
+          sind
+        fr: Accédez à votre NAS et à ses Apps depuis n’importe où sans ouvrir de ports
+          sur le routeur, avec la connexion DSM exigée par défaut. Passez par un lien
+          workers.dev gratuit, votre propre domaine Cloudflare, un réseau privé ou
+          l’accès direct IPv6, et choisissez les Apps accessibles
+        es: Acceda a su NAS y a sus Apps desde cualquier lugar sin abrir puertos en el
+          router, con el inicio de sesión de DSM exigido de forma predeterminada.
+          Conéctese mediante un enlace workers.dev gratuito, su propio dominio de
+          Cloudflare, una red privada o el acceso directo por IPv6, y elija qué Apps
+          son accesibles
+        it: Raggiungi il NAS e le sue App da qualsiasi luogo senza aprire porte sul
+          router, con l’accesso DSM richiesto per impostazione predefinita. Collegati
+          con un link workers.dev gratuito, il tuo dominio Cloudflare, una rete
+          privata o l’accesso diretto IPv6 e scegli quali App sono raggiungibili
       long_description:
-        en: >-
-          Reach your NAS remotely without opening router ports
+        en: |-
+          Secure access from anywhere
 
-
-          - Follow a four-step wizard to choose a way, connect it, select Apps
-          and open their links
-
-          - Use a free workers.dev link, your own Cloudflare domain or a private
-          network
-
+          - Reach the NAS and its Apps from anywhere without opening router ports, with DSM sign-in required by default
+          - Pick one way or combine them: a free workers.dev link, your own Cloudflare domain, Tailscale, NetBird, a self-hosted NetBird server or IPv6 direct access
+          - Choose which Apps are reachable and manage each App and its links in one dialog, for Syno Package Land Apps and native DSM apps
+          - Add custom web Apps by URL or from detected NAS services, with DSM sign-in on by default
+          - On your own domain, limit the DSM and App web addresses to an email allow-list with one-time codes using Cloudflare Access (Zero Trust Free); own domain only, and native clients such as Photos or Drive cannot pass the browser email check
+          - Follow a four-step wizard to choose a way, connect it, select Apps and open their links
           - See connections and items needing attention in the home topology
-
-          - Manage each App and its links in one dialog
-
-
-          - Add custom web Apps by URL or from detected NAS services, with DSM
-          sign-in on by default
-
 
           Sign in with a DSM administrator account
         zh-TW: |-
-          不必在路由器開放連接埠，也能從外部連回 NAS
+          從任何地方安全連回 NAS
 
+          - 不必在路由器開放連接埠，就能從任何地方連回 NAS 與其 App，預設需 DSM 登入
+          - 任選一種或併用：免費 workers.dev 連結、自有 Cloudflare 網域、Tailscale、NetBird、自架 NetBird 伺服器或 IPv6 直連
+          - 選擇哪些 App 可被存取，並在單一對話框管理每個 App 與其連結，Syno Package Land App 與 DSM 原生 App 皆適用
+          - 以 URL 或 NAS 偵測到的服務新增自訂網頁 App，預設開啟 DSM 登入
+          - 在自有網域上，可用 Cloudflare Access（Zero Trust Free）把 DSM 與 App 網址限制在需一次性驗證碼的電子郵件允許清單；僅限自有網域，且 Photos、Drive 等原生用戶端無法通過瀏覽器郵件驗證
           - 四步驟精靈引導選擇方式、連線、選擇 App 並開啟連結
-          - 使用免費 workers.dev 連結、自有 Cloudflare 網域或私人網路
           - 首頁拓樸呈現連線狀態與待處理項目
-          - 在單一對話框管理每個 App 與連結
-
-          - 以 URL 或 NAS 偵測清單新增自訂網頁 App，預設先要求 DSM 登入
 
           需使用 DSM 管理員帳號登入
         zh-CN: |-
-          不必在路由器开放连接端口，也能从外部连回 NAS
+          从任何地方安全连回 NAS
 
+          - 无需在路由器开放端口，就能从任何地方连回 NAS 与其 App，默认需 DSM 登录
+          - 任选一种或混用：免费 workers.dev 链接、自有 Cloudflare 域名、Tailscale、NetBird、自建 NetBird 服务器或 IPv6 直连
+          - 选择哪些 App 可被访问，并在单一对话框中管理每个 App 及其链接，Syno Package Land App 与 DSM 原生 App 均适用
+          - 通过 URL 或检测到的 NAS 服务添加自定义网页 App，默认开启 DSM 登录
+          - 在自有域名上，可用 Cloudflare Access（Zero Trust Free）把 DSM 与 App 网址限制在需一次性验证码的电子邮件允许列表；仅限自有域名，且 Photos、Drive 等原生客户端无法通过浏览器邮件验证
           - 四步骤向导引导选择方式、连接、选择 App 并打开链接
-          - 使用免费 workers.dev 链接、自有 Cloudflare 域名或私人网络
-          - 首页拓朴呈现连接状态与待处理项目
-          - 在单一对话框管理每个 App 与链接
-
-          - 以 URL 或 NAS 检测清单添加自订网页 App，默认先要求 DSM 登录
+          - 首页拓扑呈现连接状态与待处理项目
 
           需使用 DSM 管理员帐号登录
-        de: |-
-          Erreiche dein NAS von unterwegs, ohne Ports am Router zu öffnen
-
-          - Ein Assistent in vier Schritten: Weg wählen, verbinden, Apps auswählen und ihre Links öffnen
-          - Nutze einen kostenlosen workers.dev-Link, deine eigene Cloudflare-Domain oder ein privates Netzwerk
-          - Sieh Verbindungen und offene Punkte in der Übersichtstopologie
-          - Verwalte jede App und ihre Links in einem Dialog
-
-          - Füge eigene Web-Apps per URL oder aus erkannten NAS-Diensten hinzu, mit DSM-Anmeldung standardmäßig an
-
-          Melde dich mit einem DSM-Administratorkonto an
-        fr: |-
-          Accédez à votre NAS à distance sans ouvrir de ports sur le routeur
-
-          - Un assistant en quatre étapes : choisir une méthode, la connecter, sélectionner les Apps et ouvrir leurs liens
-          - Utilisez un lien workers.dev gratuit, votre propre domaine Cloudflare ou un réseau privé
-          - Voyez les connexions et les points à traiter dans la topologie d'accueil
-          - Gérez chaque App et ses liens dans une seule fenêtre
-
-          - Ajoutez des Apps web par URL ou depuis les services NAS détectés, avec la connexion DSM activée par défaut
-
-          Connectez-vous avec un compte administrateur DSM
         ja: |-
-          ルーターのポートを開けずに、外出先から NAS に接続できます
+          どこからでも安全に接続
 
+          - ルーターのポートを開けずに、どこからでも NAS とそのアプリに接続でき、DSM サインインは既定で必要です
+          - 方法は 1 つでも組み合わせてもかまいません：無料の workers.dev リンク、独自の Cloudflare ドメイン、Tailscale、NetBird、セルフホストの NetBird サーバー、IPv6 直接接続
+          - 公開するアプリを選び、アプリごとのリンクを 1 つのダイアログで管理できます。Syno Package Land のアプリと DSM ネイティブアプリの両方に対応
+          - URL または検出された NAS サービスからカスタム Web アプリを追加でき、DSM サインインは既定でオンです
+          - 独自ドメインでは Cloudflare Access（Zero Trust Free）を使い、DSM とアプリの Web アドレスをワンタイムコード付きのメール許可リストに限定できます。独自ドメインのみが対象で、Photos や Drive などのネイティブクライアントはブラウザーのメール確認を通れません
           - 4 ステップのウィザードで、方法を選んで接続し、アプリを選んでリンクを開けます
-          - 無料の workers.dev リンク、独自の Cloudflare ドメイン、プライベート ネットワークに対応
           - ホームのトポロジーで接続状況と対応が必要な項目を確認できます
-          - アプリごとのリンクをひとつのダイアログで管理できます
-
-          - URL や検出された NAS サービスからカスタム Web アプリを追加できます。DSM サインインは既定でオンです
 
           DSM 管理者アカウントでサインインしてください
         ko: |-
-          공유기 포트를 열지 않고 밖에서 NAS에 접속해요
+          어디서든 안전하게 접속
 
+          - 라우터 포트를 열지 않고 어디서든 NAS와 그 앱에 접속하며, DSM 로그인은 기본으로 필요해요
+          - 방식을 하나 고르거나 조합할 수 있어요: 무료 workers.dev 링크, 내 Cloudflare 도메인, Tailscale, NetBird, 직접 호스팅한 NetBird 서버, IPv6 직접 연결
+          - 접근할 앱을 고르고 앱마다 링크를 대화 상자 하나에서 관리해요. Syno Package Land 앱과 DSM 네이티브 앱 모두 지원해요
+          - URL이나 감지된 NAS 서비스로 사용자 지정 웹 앱을 추가하며, DSM 로그인은 기본으로 켜져 있어요
+          - 내 도메인에서는 Cloudflare Access(Zero Trust Free)로 DSM과 앱 웹 주소를 일회용 코드를 쓰는 이메일 허용 목록으로 제한해요. 내 도메인만 해당하며 Photos나 Drive 같은 네이티브 클라이언트는 브라우저 이메일 확인을 통과하지 못해요
           - 4단계 마법사로 방식을 고르고, 연결하고, 앱을 선택해 링크를 열어요
-          - 무료 workers.dev 링크, 내 Cloudflare 도메인, 사설 네트워크 중에서 골라요
           - 홈 토폴로지에서 연결 상태와 확인이 필요한 항목을 봐요
-          - 앱마다 링크를 대화 상자 하나에서 관리해요
-
-          - URL이나 감지된 NAS 서비스로 사용자 지정 웹 앱을 추가해요. DSM 로그인은 기본으로 켜져 있어요
 
           DSM 관리자 계정으로 로그인하세요
+        de: |-
+          Sicherer Zugriff von überall
+
+          - Erreiche dein NAS und seine Apps von überall, ohne Ports am Router zu öffnen; die DSM-Anmeldung ist standardmäßig erforderlich
+          - Wähle einen Weg oder kombiniere sie: ein kostenloser workers.dev-Link, deine eigene Cloudflare-Domain, Tailscale, NetBird, ein selbst gehosteter NetBird-Server oder IPv6-Direktzugriff
+          - Lege fest, welche Apps erreichbar sind, und verwalte jede App samt ihren Links in einem Dialog, für Syno Package Land Apps und native DSM-Apps
+          - Füge eigene Web-Apps per URL oder aus erkannten NAS-Diensten hinzu, mit DSM-Anmeldung standardmäßig an
+          - Beschränke auf deiner eigenen Domain die Web-Adressen von DSM und Apps mit Cloudflare Access (Zero Trust Free) auf eine E-Mail-Allowlist mit Einmalcodes; nur eigene Domain, und native Clients wie Photos oder Drive kommen nicht durch die Browser-E-Mail-Prüfung
+          - Ein Assistent in vier Schritten: Weg wählen, verbinden, Apps auswählen und ihre Links öffnen
+          - Sieh Verbindungen und offene Punkte in der Übersichtstopologie
+
+          Melde dich mit einem DSM-Administratorkonto an
+        fr: |-
+          Accès sécurisé depuis n’importe où
+
+          - Accédez à votre NAS et à ses Apps depuis n’importe où sans ouvrir de ports sur le routeur, avec la connexion DSM exigée par défaut
+          - Choisissez une méthode ou combinez-les — un lien workers.dev gratuit, votre propre domaine Cloudflare, Tailscale, NetBird, un serveur NetBird auto-hébergé ou l’accès direct IPv6
+          - Choisissez les Apps accessibles et gérez chaque App et ses liens dans une seule fenêtre, pour les Apps Syno Package Land comme pour les apps DSM natives
+          - Ajoutez des Apps web par URL ou depuis les services NAS détectés, avec la connexion DSM activée par défaut
+          - Sur votre propre domaine, limitez les adresses web du DSM et des Apps à une liste d’e-mails autorisés avec codes à usage unique via Cloudflare Access (Zero Trust Free) ; domaine personnel uniquement, et les clients natifs comme Photos ou Drive ne passent pas la vérification par e-mail du navigateur
+          - Un assistant en quatre étapes : choisir une méthode, la connecter, sélectionner les Apps et ouvrir leurs liens
+          - Voyez les connexions et les points à traiter dans la topologie d’accueil
+
+          Connectez-vous avec un compte administrateur DSM
+        es: |-
+          Acceso seguro desde cualquier lugar
+
+          - Acceda a su NAS y a sus Apps desde cualquier lugar sin abrir puertos en el router, con el inicio de sesión de DSM exigido de forma predeterminada
+          - Elija una forma o combínelas: un enlace workers.dev gratuito, su propio dominio de Cloudflare, Tailscale, NetBird, un servidor NetBird autoalojado o el acceso directo por IPv6
+          - Elija qué Apps son accesibles y gestione cada App y sus enlaces en un solo cuadro de diálogo, tanto para Apps de Syno Package Land como para apps nativas de DSM
+          - Añada Apps web personalizadas por URL o desde los servicios de NAS detectados, con el inicio de sesión de DSM activado de forma predeterminada
+          - En su propio dominio, limite las direcciones web de DSM y de las Apps a una lista de correos permitidos con códigos de un solo uso mediante Cloudflare Access (Zero Trust Free); solo dominio propio, y los clientes nativos como Photos o Drive no superan la comprobación de correo del navegador
+          - Un asistente de cuatro pasos para elegir una forma, conectarla, seleccionar Apps y abrir sus enlaces
+          - Vea las conexiones y los puntos que requieren atención en la topología de inicio
+
+          Inicie sesión con una cuenta de administrador de DSM
+        it: |-
+          Accesso sicuro da qualsiasi luogo
+
+          - Raggiungi il NAS e le sue App da qualsiasi luogo senza aprire porte sul router, con l’accesso DSM richiesto per impostazione predefinita
+          - Scegli un modo o combinane più: un link workers.dev gratuito, il tuo dominio Cloudflare, Tailscale, NetBird, un server NetBird self-hosted o l’accesso diretto IPv6
+          - Scegli quali App sono raggiungibili e gestisci ogni App e i suoi link in un’unica finestra, sia per le App di Syno Package Land sia per le app native DSM
+          - Aggiungi App web personalizzate per URL o dai servizi NAS rilevati, con l’accesso DSM attivo per impostazione predefinita
+          - Sul tuo dominio, limita gli indirizzi web di DSM e delle App a una lista di email consentite con codici monouso tramite Cloudflare Access (Zero Trust Free); solo dominio proprio, e i client nativi come Photos o Drive non superano il controllo email del browser
+          - Una procedura guidata in quattro passi per scegliere un modo, collegarlo, selezionare le App e aprire i link
+          - Vedi connessioni e voci da controllare nella topologia della home
+
+          Accedi con un account amministratore DSM
       changelog:
         en: |-
           0.1.0-0106
