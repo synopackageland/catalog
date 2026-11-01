@@ -1961,7 +1961,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.2-0008
+      release: v2026.10.4-0003
       access: public
     metadata:
       maintainer: Home Assistant
@@ -1971,7 +1971,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-home-assistant
-      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.2-0006
+      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.4-0003
       issues_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/issues
       license: Apache-2.0; hass-oidc-auth and packaging MIT; dependencies retain their
         respective licenses
@@ -2005,40 +2005,37 @@ packages:
         ja: 対応するスマートホーム機器をまとめ、ダッシュボードから操作し、毎日の自動化を作れます。家のコントロールを自分のサーバーに置いておけます。このパッケージは mDNS による検出に対応していますが、SSDP、USB/Bluetooth、Supervisor、アドオンには対応していません。モバイル アプリからのサインインとアップグレードは未検証です。設定はアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 호환되는 스마트홈 기기를 한데 모아 대시보드로 제어하고, 일상을 위한 자동화를 만들어요. 집의 제어권을 내 서버에 둘 수 있어요. 이 패키지는 mDNS 검색을 지원하지만 SSDP, USB/Bluetooth, Supervisor, 애드온은 지원하지 않고, 모바일 앱 로그인과 업그레이드는 검증되지 않았어요. 설정은 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: >-
-          2026.10.2-0008
+        en: |-
+          2026.10.4-0003
 
-
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
+          Updated to upstream Home Assistant 2026.10.4; rebuilt with CLI 0.42.2, SDK/App 0.42.0 and templates 0.37.0
         zh-TW: |-
-          2026.10.2-0008
+          2026.10.4-0003
 
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          更新至上游 Home Assistant 2026.10.4，並以 CLI 0.42.2、SDK/App 0.42.0 與 templates 0.37.0 重建
         zh-CN: |-
-          2026.10.2-0008
+          2026.10.4-0003
 
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+          更新至上游 Home Assistant 2026.10.4，并以 CLI 0.42.2、SDK/App 0.42.0 和 templates 0.37.0 重新构建
         de: |-
-          2026.10.2-0008
+          2026.10.4-0003
 
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+          Auf Home Assistant 2026.10.4 aktualisiert und mit CLI 0.42.2, SDK/App 0.42.0 sowie Templates 0.37.0 neu gebaut
         fr: |-
-          2026.10.2-0008
+          2026.10.4-0003
 
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+          Mise à jour vers Home Assistant 2026.10.4 et reconstruction avec CLI 0.42.2, SDK/App 0.42.0 et templates 0.37.0
         ja: |-
-          2026.10.2-0008
+          2026.10.4-0003
 
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+          上流の Home Assistant 2026.10.4 に更新し、CLI 0.42.2、SDK/App 0.42.0、templates 0.37.0 で再ビルド
         ko: |-
-          2026.10.2-0008
+          2026.10.4-0003
 
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
+          업스트림 Home Assistant 2026.10.4로 업데이트하고 CLI 0.42.2, SDK/App 0.42.0, templates 0.37.0으로 다시 빌드
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.2-0008
+        version: 2026.10.4-0003
         arch:
           - apollolake
           - avoton
@@ -2067,9 +2064,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 761f7328a9b6f383d1556edcd0e40b21c646887753442f89b62be27371cacf84
-        md5: a3f235ac64d17bda6c437aa92b5dc157
-        size: 26844672
+        sha256: 5a7ab739f69ceb5b35385bc746f03841c996ba328e7ef30eb688bd48fc8c49fe
+        md5: be614bf1b5be365008a2344119f24991
+        size: 28462592
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2086,8 +2083,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:22Z
-          source_ref: ec48d927bc81f984ceea78ca19426a6ed24310d6
+          reviewed_at: 2026-11-01T16:15:44Z
+          source_ref: e0c79ffd38e961e42423fab7d4954a2487f76fe9
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
 publishers:
