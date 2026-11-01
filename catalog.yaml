@@ -192,7 +192,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0106
+      release: v0.1.0-0107
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -347,61 +347,54 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0106
+          0.1.0-0107
 
-          - Use SDK 0.40.1 to restart enabled resident children after clean exits
-          - Apply bounded backoff to exit zero, nonzero and signal exits
-          - Keep requested stop and disable stopped; Retry preserves saved identity and settings
+          - Choose the Cloudflare Access session length; the default is 30 days (720h)
+          - Update managed applications in place and preserve dashboard session changes
         zh-TW: |-
-          0.1.0-0106
+          0.1.0-0107
 
-          - 使用 SDK 0.40.1，啟用中的常駐子行程正常退出後也會重啟
-          - 退出碼為零、非零或由訊號終止，均套用有界退避
-          - 主動停止與停用不會重啟；重試保留已儲存的身分與設定
+          - 可設定 Cloudflare Access 登入有效期限，預設為 30 天（720h）
+          - 原地更新受管理的應用程式，並保留在 Cloudflare 控制台修改的期限
         zh-CN: |-
-          0.1.0-0106
+          0.1.0-0107
 
-          - 使用 SDK 0.40.1，已启用的常驻子进程正常退出后也会重启
-          - 退出码为零、非零或由信号终止，均应用有限退避
-          - 主动停止与停用不会重启；重试保留已保存的身份与设置
+          - 可设置 Cloudflare Access 登录有效期，默认为 30 天（720h）
+          - 原地更新受管理的应用，并保留在 Cloudflare 控制台修改的期限
         de: |-
-          0.1.0-0106
+          0.1.0-0107
 
-          - SDK 0.40.1 startet aktivierte dauerhafte Prozesse auch nach regulärem Ende neu
-          - Begrenzte Wiederholungen gelten für Exit 0, Fehlercodes und Signale
-          - Bewusst gestoppte oder deaktivierte Prozesse bleiben aus; Identität und Einstellungen bleiben beim Wiederholen erhalten
+          - Die Cloudflare-Access-Sitzungsdauer ist wählbar; Standard sind 30 Tage (720h)
+          - Verwaltete Anwendungen werden direkt aktualisiert; Änderungen im Dashboard bleiben erhalten
         fr: |-
-          0.1.0-0106
+          0.1.0-0107
 
-          - Le SDK 0.40.1 relance les processus résidents activés après un arrêt normal
-          - La temporisation limitée couvre les codes de sortie zéro, les erreurs et les signaux
-          - Un arrêt demandé ou une désactivation reste effectif ; Réessayer conserve l’identité et les réglages
+          - Choisissez la durée des sessions Cloudflare Access, fixée par défaut à 30 jours (720h)
+          - Les applications gérées sont mises à jour sur place et les modifications du tableau de bord sont conservées
         ja: |-
-          0.1.0-0106
+          0.1.0-0107
 
-          - SDK 0.40.1 により、有効な常駐子プロセスが正常終了しても再起動
-          - 終了コード 0、異常終了、シグナル終了に共通の回数制限付き再試行待ちを適用
-          - 明示的な停止や無効化では再起動せず、再試行時も保存済み ID と設定を維持
+          - Cloudflare Access のセッション期間を設定可能に。既定は30日（720h）
+          - 管理対象アプリを再作成せずに更新し、ダッシュボードで変更した期間を保持
         ko: |-
-          0.1.0-0106
+          0.1.0-0107
 
-          - SDK 0.40.1로 활성화된 상주 자식 프로세스가 정상 종료되어도 다시 시작
-          - 종료 코드 0, 오류 코드 및 시그널 종료에 제한된 재시도 대기 적용
-          - 요청한 중지와 비활성화는 유지하며, 재시도 시 저장된 ID와 설정 유지
+          - Cloudflare Access 세션 기간을 선택할 수 있으며 기본값은 30일(720h)
+          - 관리되는 앱을 다시 만들지 않고 업데이트하며 대시보드의 기간 변경을 유지
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0106-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-0106-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0107-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-0107-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0106
+        version: 0.1.0-0107
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f40fe51e91e44ad8f161fbf64418f80c61a792e90d496ad505d2f30f7ab6d4a4
-        md5: 6deb0de29964025868826bc860e7449f
-        size: 14295040
+        sha256: 8e221a7d07ee7cfb4008798acb63a020d275aa8fba1ceaac08db9ffd274501b4
+        md5: 0612a3335f5de7044617c86a7f616d5a
+        size: 14602240
         facts:
           built_with: sdk
           sdk_backend: go
@@ -418,19 +411,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T20:20:36Z
-          source_ref: cb8a8e75641028e82db74e93ae69ee89cf52ed64
+          reviewed_at: 2026-11-01T03:50:23Z
+          source_ref: 57299d4806b14124cee64ff8222428879de96263
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0106
+        version: 0.1.0-0107
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: c7a569a59a344a45818702d475b0df0dd9ce951ec9ee1924b3c9667e43695bb7
-        md5: e85ba2503ed548c946bd12df74613ed1
-        size: 14919680
+        sha256: 43d78ce00cd884ca39c469f0864fb50b3fcec5780b41ae23edfaba6d979ca8f1
+        md5: b69eb20391421dc1aeefe4bd39fdf5e9
+        size: 15196160
         facts:
           built_with: sdk
           sdk_backend: go
@@ -447,11 +440,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T20:20:36Z
-          source_ref: cb8a8e75641028e82db74e93ae69ee89cf52ed64
+          reviewed_at: 2026-11-01T03:50:23Z
+          source_ref: 57299d4806b14124cee64ff8222428879de96263
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0106
+        version: 0.1.0-0107
         arch:
           - apollolake
           - avoton
@@ -480,9 +473,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ede49525a6cdde0f9aba9946033a19d51b389531b91e444b1e0ea932d86bf863
-        md5: c4ac55592f90653dd4d5d96832d5ba96
-        size: 15718400
+        sha256: 725356014789e9d8dc91664f48af28d1c339bcbd03d048d2b2c6cf4048970e24
+        md5: 27c0bd850c2b7c14e4165b21185d25f9
+        size: 15943680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -499,8 +492,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-31T20:20:36Z
-          source_ref: cb8a8e75641028e82db74e93ae69ee89cf52ed64
+          reviewed_at: 2026-11-01T03:50:23Z
+          source_ref: 57299d4806b14124cee64ff8222428879de96263
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
