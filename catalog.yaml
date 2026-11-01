@@ -683,7 +683,7 @@ packages:
           reviewed_at: 2026-11-01T08:23:18Z
           source_ref: 36e793e1b530168997f71d449015669cff5c71fb
           source_repo: synopackageland/syno-pkg-gopeed
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: utilities
@@ -1266,7 +1266,7 @@ packages:
           reviewed_at: 2026-10-25T14:47:21Z
           source_ref: 920d8ff91e8e7232a43afc2121f97d2c7875e0a7
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: multimedia
@@ -1540,7 +1540,7 @@ packages:
           reviewed_at: 2026-10-25T14:47:22Z
           source_ref: bb585a72d14d6ae15520d9b0277b3be2f9ab2b40
           source_repo: synopackageland/syno-pkg-land-convertx
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: productivity
@@ -1675,7 +1675,7 @@ packages:
           reviewed_at: 2026-11-01T16:16:04Z
           source_ref: e6336f6ea9a985b3fe5a8fb2f567610e5998b84b
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: security
@@ -1950,7 +1950,7 @@ packages:
           source_ref: 6d37d6ddf6bcc09029fc56e8189216f44bb32049
           source_repo: synopackageland/syno-pkg-land-navidrome
 
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: utilities
