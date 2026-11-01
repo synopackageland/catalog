@@ -1549,7 +1549,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.3.3-0010
+      release: v3.4.0-0003
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -1559,7 +1559,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
-      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.3.3-0008
+      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0003
       issues_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/issues
       license: GPL-3.0-only; dependencies retain their respective licenses
       internet: required
@@ -1593,40 +1593,37 @@ packages:
         ja: 紙の文書を検索できるデジタル アーカイブにします。スキャンを取り込み、OCR で文字を認識し、タグ、差出人、文書タイプで整理できます。文書の内容を検索し、共有は Paperless の権限で管理します。取り込んだファイルは受信フォルダーから削除されるので、バックアップを残してください。選択した受信フォルダーにはパッケージ アカウントの読み取り/書き込み権限が必要です。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 종이 문서를 검색할 수 있는 디지털 보관함으로 바꿔요. 스캔을 가져오고, OCR로 글자를 인식하고, 태그, 거래처, 문서 유형으로 정리해요. 문서 내용을 검색하고 공유는 Paperless 권한으로 관리해요. 가져온 파일은 받은 편지함 폴더에서 지워지니 백업을 꼭 남겨 두세요. 선택한 받은 편지함 폴더에는 패키지 계정의 읽기/쓰기 권한이 필요해요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: >-
-          3.3.3-0010
+        en: |-
+          3.4.0-0003
 
-
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
+          Upstream Paperless-ngx 3.4.0; build toolchain updated to CLI 0.42.2 and SDK 0.42.0
         zh-TW: |-
-          3.3.3-0010
+          3.4.0-0003
 
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          上游 Paperless-ngx 3.4.0；建置工具鏈更新至 CLI 0.42.2 與 SDK 0.42.0
         zh-CN: |-
-          3.3.3-0010
+          3.4.0-0003
 
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+          上游 Paperless-ngx 3.4.0；构建工具链更新至 CLI 0.42.2 和 SDK 0.42.0
         de: |-
-          3.3.3-0010
+          3.4.0-0003
 
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+          Paperless-ngx 3.4.0 als Basis; Build-Werkzeuge auf CLI 0.42.2 und SDK 0.42.0 aktualisiert
         fr: |-
-          3.3.3-0010
+          3.4.0-0003
 
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+          Version amont Paperless-ngx 3.4.0 ; outils de compilation mis à jour vers CLI 0.42.2 et SDK 0.42.0
         ja: |-
-          3.3.3-0010
+          3.4.0-0003
 
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+          上流版 Paperless-ngx 3.4.0 を使用し、ビルドツールを CLI 0.42.2 と SDK 0.42.0 に更新
         ko: |-
-          3.3.3-0010
+          3.4.0-0003
 
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
+          업스트림 Paperless-ngx 3.4.0 사용, 빌드 도구를 CLI 0.42.2와 SDK 0.42.0으로 업데이트
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.3.3-0010
+        version: 3.4.0-0003
         arch:
           - apollolake
           - avoton
@@ -1655,9 +1652,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e2c56f6c1e5c1343050b485d27fa649d88bbd1e0aa6b563a9d909210df29e47a
-        md5: 6c447cfe555d079dfd3d15ad2fea5f58
-        size: 26696704
+        sha256: 8a31d5b35d8216e1534be59373d482a97c443c62e24c7ab79f1a3ee69baddff6
+        md5: df3c6cbec53cfe15e9c159414d39723c
+        size: 28533248
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1669,13 +1666,14 @@ packages:
           opens: dsm
           requires: []
           conflicts: []
-          shared_folders: []
+          shared_folders:
+            - SynoPkgPaperlessNgx
           signed: false
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:22Z
-          source_ref: e561e652676a110d8be3e2c597a42dff8e4ba2a3
+          reviewed_at: 2026-11-01T16:16:04Z
+          source_ref: e6336f6ea9a985b3fe5a8fb2f567610e5998b84b
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: false
     recommended: false
