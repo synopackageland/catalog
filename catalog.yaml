@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1604
+      release: v0.1.1-1605
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,26 +40,47 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - Smoother transitions for dialogs, menus, panels and notifications (UI 0.19.0)
-          - Reuse the exact native binaries from 0.1.1-1603 on x86_64, aarch64 and armv7; scanning and cleanup behavior is unchanged
+          - The Overview chart now splits DSM service data and matches the suggested cleanup list
+          - Explore can open files and folders in File Station
+          - Resuming a scan after an upgrade is checked first and explains why when it cannot continue
+          - ctl reports snapshot space and error codes
+          - Updated the interface components
         zh-TW: |-
-          - 對話框、選單、面板與通知的轉場更順暢（UI 0.19.0）
-          - 沿用 0.1.1-1603 的 x86_64、aarch64 與 armv7 原生程式；掃描與清理行為不變
+          - 總覽圖表會細分 DSM 服務資料，並與建議清理清單一致
+          - 探索可在 File Station 開啟檔案與資料夾
+          - 升級後繼續掃描前會先檢查，無法繼續時會說明原因
+          - ctl 會回報快照空間與錯誤代碼
+          - 更新介面元件
         zh-CN: |-
-          - 对话框、菜单、面板与通知的过渡更顺畅（UI 0.19.0）
-          - 沿用 0.1.1-1603 的 x86_64、aarch64 与 armv7 原生程序；扫描与清理行为不变
+          - 总览图表会细分 DSM 服务数据，并与建议清理列表保持一致
+          - 探索可在 File Station 中打开文件和文件夹
+          - 升级后恢复扫描前会先检查，无法继续时会说明原因
+          - ctl 会报告快照空间和错误代码
+          - 更新界面组件
         de: |-
-          - Sanftere Übergänge für Dialoge, Menüs, Panels und Benachrichtigungen (UI 0.19.0)
-          - Verwendet die nativen Programme von 0.1.1-1603 für x86_64, aarch64 und armv7; Scannen und Bereinigen bleiben unverändert
+          - Das Übersichtsdiagramm schlüsselt DSM-Dienstdaten auf und stimmt mit den Bereinigungsvorschlägen überein
+          - In Erkunden lassen sich Dateien und Ordner in File Station öffnen
+          - Vor dem Fortsetzen eines Scans nach einem Upgrade wird der gespeicherte Zustand geprüft; ist eine Fortsetzung nicht möglich, wird der Grund angezeigt
+          - ctl meldet den Speicherplatz von Snapshots und Fehlercodes
+          - Die Oberflächenkomponenten wurden aktualisiert
         fr: |-
-          - Transitions plus douces pour les boîtes de dialogue, les menus, les panneaux et les notifications (UI 0.19.0)
-          - Reprend les programmes natifs de 0.1.1-1603 pour x86_64, aarch64 et armv7 ; l’analyse et le nettoyage sont inchangés
+          - Le graphique de la vue d’ensemble détaille les données des services DSM et correspond à la liste de nettoyage suggéré
+          - Explorer peut ouvrir les fichiers et les dossiers dans File Station
+          - La reprise d’une analyse après une mise à niveau est vérifiée au préalable et affiche la raison si elle ne peut pas continuer
+          - ctl indique l’espace des instantanés et les codes d’erreur
+          - Mise à jour des composants de l’interface
         ja: |-
-          - ダイアログ、メニュー、パネル、通知のトランジションが滑らかになりました（UI 0.19.0）
-          - 0.1.1-1603 のネイティブプログラムを x86_64、aarch64、armv7 で再利用。スキャンとクリーンアップの動作は変更なし
+          - 概要のグラフで DSM サービスデータを分類し、推奨クリーンアップ一覧と一致するようにしました
+          - エクスプローラーからファイルやフォルダーを File Station で開けます
+          - アップグレード後のスキャン再開前に状態を確認し、続行できない場合は理由を表示します
+          - ctl がスナップショットの容量とエラーコードを報告します
+          - インターフェースのコンポーネントを更新しました
         ko: |-
-          - 대화 상자, 메뉴, 패널, 알림의 전환이 더 부드러워졌어요 (UI 0.19.0)
-          - 0.1.1-1603의 네이티브 프로그램을 x86_64, aarch64, armv7에 그대로 사용해요. 스캔과 정리 동작은 바뀌지 않아요
+          - 개요 차트가 DSM 서비스 데이터를 세분화하고 권장 정리 목록과 일치합니다
+          - 탐색에서 파일과 폴더를 File Station으로 열 수 있습니다
+          - 업그레이드 후 스캔을 재개하기 전에 확인하고, 계속할 수 없으면 이유를 알려 줍니다
+          - ctl이 스냅샷 공간과 오류 코드를 보고합니다
+          - 인터페이스 구성 요소를 업데이트했습니다
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
@@ -68,15 +89,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1597.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1604
+        version: 0.1.1-1605
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: d49b74bed5ae1eaaca639c486e5cc500511716638d5ac211a9fdc933bfdf131f
-        md5: ba0d0c84d44d4b27730ee5d9c421be35
-        size: 13773312
+        sha256: 43c913cfd5c482f919b4848867c4ed3c0b9ec5f9cac82fc26147f484e0cc104f
+        md5: 48d7b15adf83f2aa9c69ae2aff533d4c
+        size: 14960640
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -93,19 +114,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T05:29:37Z
-          source_ref: 77464d856b7e2a7dccf33a7ccd99bf2fbc42a6e9
+          reviewed_at: 2026-11-01T08:36:30Z
+          source_ref: 9e849ece7b8d6705e4d5c1daf651db13dd10845b
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1604
+        version: 0.1.1-1605
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 5ef2a859f57f33c218b8bf352c89d6adf9ef29a7dd5a444074c315b2a764ab3f
-        md5: f829baf717870df762116d6db9130596
-        size: 14503424
+        sha256: 02a2f39c66938284d323415239c2f0365dcf60f1463a663cead0fe9e5ff9c808
+        md5: dbbf63508f61c35be1519c3c9f9a8ae6
+        size: 15719936
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -122,11 +143,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T05:29:37Z
-          source_ref: 77464d856b7e2a7dccf33a7ccd99bf2fbc42a6e9
+          reviewed_at: 2026-11-01T08:36:45Z
+          source_ref: 9e849ece7b8d6705e4d5c1daf651db13dd10845b
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1604
+        version: 0.1.1-1605
         arch:
           - apollolake
           - avoton
@@ -155,9 +176,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e68f5cc6b8c11a3a8f30822c55d1f6abfb384686049e26a21cd27815a128a721
-        md5: 75ea390340e35b2140c0ac8ebf593042
-        size: 14804992
+        sha256: 9e7aef5050233004e55e6dab73e82faad5ebc9004bb2d21712df993162994157
+        md5: c44f4ff25e7e803dd54c931885dd9583
+        size: 16110080
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -174,8 +195,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T05:29:37Z
-          source_ref: 77464d856b7e2a7dccf33a7ccd99bf2fbc42a6e9
+          reviewed_at: 2026-11-01T08:37:06Z
+          source_ref: 9e849ece7b8d6705e4d5c1daf651db13dd10845b
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
