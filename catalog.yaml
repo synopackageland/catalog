@@ -1276,7 +1276,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.2-0010
+      release: v12.4-0003
       access: private
     metadata:
       maintainer: Jellyfin
@@ -1286,7 +1286,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-jellyfin
-      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.2-0008
+      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.4-0003
       issues_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/issues
       license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0; dependencies
         retain their own licenses
@@ -1323,40 +1323,37 @@ packages:
         ja: メディア コレクションを自分専用のストリーミング ライブラリにします。アートワーク付きで映画やテレビ番組を見て回り、音楽を整理し、ブラウザーで再生できます。TV やモバイルのネイティブ クライアントはこの入口を使えず、DLNA は無効です。選択したメディア フォルダーは読み取り専用で、パッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM サインインと Container Manager が必要です
         ko: 미디어 컬렉션을 나만의 스트리밍 서재로 만들어요. 아트워크와 함께 영화와 TV 프로그램을 둘러보고, 음악을 정리하고, 브라우저에서 재생해요. TV·모바일 네이티브 클라이언트는 이 입구를 쓸 수 없고 DLNA는 꺼져 있어요. 선택한 미디어 폴더는 읽기 전용이며 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: >-
-          12.2-0010
+        en: |-
+          12.4-0003
 
-
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
+          Update the build toolchain to CLI 0.42.2 and SDK 0.42.0
         zh-TW: |-
-          12.2-0010
+          12.4-0003
 
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          建置工具鏈更新至 CLI 0.42.2 與 SDK 0.42.0
         zh-CN: |-
-          12.2-0010
+          12.4-0003
 
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+          构建工具链更新至 CLI 0.42.2 和 SDK 0.42.0
         de: |-
-          12.2-0010
+          12.4-0003
 
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+          Build-Werkzeuge auf CLI 0.42.2 und SDK 0.42.0 aktualisiert
         fr: |-
-          12.2-0010
+          12.4-0003
 
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+          Outils de compilation mis à jour vers CLI 0.42.2 et SDK 0.42.0
         ja: |-
-          12.2-0010
+          12.4-0003
 
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+          ビルドツールを CLI 0.42.2 と SDK 0.42.0 に更新
         ko: |-
-          12.2-0010
+          12.4-0003
 
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
+          빌드 도구를 CLI 0.42.2 및 SDK 0.42.0으로 업데이트
     pins:
       - package: SynoPkgJellyfin
-        version: 12.2-0010
+        version: 12.4-0003
         arch:
           - apollolake
           - avoton
@@ -1385,9 +1382,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: d0dacb714711ea79f816f0e743b8e5f144641ed272ff536f7cc509cc79fb5dd0
-        md5: 9e9752e5c6aba3dc924e61492bed0a99
-        size: 27756544
+        sha256: 7bea2b9a137599ed2e8748dc33108d898421bdef0bedb340cdb118507cf898aa
+        md5: ef065ce0ee831888ecba9417fe3e3fc1
+        size: 29594112
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1399,13 +1396,14 @@ packages:
           opens: dsm
           requires: []
           conflicts: []
-          shared_folders: []
+          shared_folders:
+            - Jellyfin
           signed: false
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:21Z
-          source_ref: 40a5661308d269861a814d1a6a3b848e4e4d03e9
+          reviewed_at: 2026-11-01T15:58:14Z
+          source_ref: f3e772566e3a317ed174b50d8887cb5b6261e37a
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - listed: false
