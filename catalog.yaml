@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1603
+      release: v0.1.1-1604
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,33 +40,26 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - Rebuilt with SDK 0.41.0, UI 0.18.3 and CLI 0.41.13
-          - Includes SDK security and process supervision updates
-          - No feature changes; keeps existing settings and reports
+          - Smoother transitions for dialogs, menus, panels and notifications (UI 0.19.0)
+          - Reuse the exact native binaries from 0.1.1-1603 on x86_64, aarch64 and armv7; scanning and cleanup behavior is unchanged
         zh-TW: |-
-          - 使用 SDK 0.41.0、UI 0.18.3 與 CLI 0.41.13 重新建置
-          - 包含 SDK 的安全性與程序監督更新
-          - 無功能變更；保留既有設定與報告
+          - 對話框、選單、面板與通知的轉場更順暢（UI 0.19.0）
+          - 沿用 0.1.1-1603 的 x86_64、aarch64 與 armv7 原生程式；掃描與清理行為不變
         zh-CN: |-
-          - 使用 SDK 0.41.0、UI 0.18.3 和 CLI 0.41.13 重新构建
-          - 包含 SDK 的安全性与进程监控更新
-          - 无功能变更；保留现有设置和报告
+          - 对话框、菜单、面板与通知的过渡更顺畅（UI 0.19.0）
+          - 沿用 0.1.1-1603 的 x86_64、aarch64 与 armv7 原生程序；扫描与清理行为不变
         de: |-
-          - Neu erstellt mit SDK 0.41.0, UI 0.18.3 und CLI 0.41.13
-          - Enthält SDK-Updates für Sicherheit und Prozessüberwachung
-          - Keine Funktionsänderungen; vorhandene Einstellungen und Berichte bleiben erhalten
+          - Sanftere Übergänge für Dialoge, Menüs, Panels und Benachrichtigungen (UI 0.19.0)
+          - Verwendet die nativen Programme von 0.1.1-1603 für x86_64, aarch64 und armv7; Scannen und Bereinigen bleiben unverändert
         fr: |-
-          - Reconstruit avec SDK 0.41.0, UI 0.18.3 et CLI 0.41.13
-          - Inclut les mises à jour de sécurité et de supervision des processus du SDK
-          - Aucune modification fonctionnelle ; les paramètres et rapports existants sont conservés
+          - Transitions plus douces pour les boîtes de dialogue, les menus, les panneaux et les notifications (UI 0.19.0)
+          - Reprend les programmes natifs de 0.1.1-1603 pour x86_64, aarch64 et armv7 ; l’analyse et le nettoyage sont inchangés
         ja: |-
-          - SDK 0.41.0、UI 0.18.3、CLI 0.41.13 で再ビルド
-          - SDK のセキュリティとプロセス監視の更新を含みます
-          - 機能の変更はありません。既存の設定とレポートを保持します
+          - ダイアログ、メニュー、パネル、通知のトランジションが滑らかになりました（UI 0.19.0）
+          - 0.1.1-1603 のネイティブプログラムを x86_64、aarch64、armv7 で再利用。スキャンとクリーンアップの動作は変更なし
         ko: |-
-          - SDK 0.41.0, UI 0.18.3 및 CLI 0.41.13으로 다시 빌드했어요
-          - SDK의 보안 및 프로세스 감독 업데이트가 포함돼요
-          - 기능 변경 없이 기존 설정과 보고서를 유지해요
+          - 대화 상자, 메뉴, 패널, 알림의 전환이 더 부드러워졌어요 (UI 0.19.0)
+          - 0.1.1-1603의 네이티브 프로그램을 x86_64, aarch64, armv7에 그대로 사용해요. 스캔과 정리 동작은 바뀌지 않아요
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
@@ -75,15 +68,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1597.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1603
+        version: 0.1.1-1604
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: fc56bca08cc8acdb026d5da40860d0d5ed695a0488d1885b86100af740e95fb8
-        md5: c0b272d379a9c172e44be97a7904108c
-        size: 14924800
+        sha256: d49b74bed5ae1eaaca639c486e5cc500511716638d5ac211a9fdc933bfdf131f
+        md5: ba0d0c84d44d4b27730ee5d9c421be35
+        size: 13773312
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -100,19 +93,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T03:41:47Z
-          source_ref: 189020e5848b64894fe5cf6a0dbd8236ba44d855
+          reviewed_at: 2026-11-01T05:29:37Z
+          source_ref: 77464d856b7e2a7dccf33a7ccd99bf2fbc42a6e9
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1603
+        version: 0.1.1-1604
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 0c595ed7d3723f5a432e1049c2a6ae14e94074140210a6d71a6dea19f71c674a
-        md5: f382f42d84f55e340776d2d8c5dc57ca
-        size: 15688192
+        sha256: 5ef2a859f57f33c218b8bf352c89d6adf9ef29a7dd5a444074c315b2a764ab3f
+        md5: f829baf717870df762116d6db9130596
+        size: 14503424
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -129,11 +122,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T03:41:56Z
-          source_ref: 189020e5848b64894fe5cf6a0dbd8236ba44d855
+          reviewed_at: 2026-11-01T05:29:37Z
+          source_ref: 77464d856b7e2a7dccf33a7ccd99bf2fbc42a6e9
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1603
+        version: 0.1.1-1604
         arch:
           - apollolake
           - avoton
@@ -162,9 +155,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7a21955945812ea4593bfb7154168e0d829b1b6d7f5ee682886eeb9da765ebae
-        md5: 8e50f22b11c2e4dc5f9a8fb4451625a5
-        size: 16069632
+        sha256: e68f5cc6b8c11a3a8f30822c55d1f6abfb384686049e26a21cd27815a128a721
+        md5: 75ea390340e35b2140c0ac8ebf593042
+        size: 14804992
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -181,8 +174,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T03:42:05Z
-          source_ref: 189020e5848b64894fe5cf6a0dbd8236ba44d855
+          reviewed_at: 2026-11-01T05:29:37Z
+          source_ref: 77464d856b7e2a7dccf33a7ccd99bf2fbc42a6e9
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
