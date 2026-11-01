@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1605
+      release: v0.1.1-1607
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,64 +40,50 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - The Overview chart now splits DSM service data and matches the suggested cleanup list
-          - Explore can open files and folders in File Station
-          - Resuming a scan after an upgrade is checked first and explains why when it cannot continue
-          - ctl reports snapshot space and error codes
-          - Updated the interface components
+          - Explore opens a plain file straight in File Station, without waiting on a detail panel
+          - A file with notes shows them at once, each reason in words
+          - File Station opens only inside DSM's shared folders; other paths say why
         zh-TW: |-
-          - 總覽圖表會細分 DSM 服務資料，並與建議清理清單一致
-          - 探索可在 File Station 開啟檔案與資料夾
-          - 升級後繼續掃描前會先檢查，無法繼續時會說明原因
-          - ctl 會回報快照空間與錯誤代碼
-          - 更新介面元件
+          - 探索會直接在 File Station 開啟一般檔案，不必等待詳細資訊面板
+          - 有說明的檔案會立即顯示，每個原因都以文字說明
+          - 只在 DSM 的共用資料夾內開啟 File Station；其他路徑會說明原因
         zh-CN: |-
-          - 总览图表会细分 DSM 服务数据，并与建议清理列表保持一致
-          - 探索可在 File Station 中打开文件和文件夹
-          - 升级后恢复扫描前会先检查，无法继续时会说明原因
-          - ctl 会报告快照空间和错误代码
-          - 更新界面组件
+          - 探索会直接在 File Station 中打开普通文件，无需等待详细信息面板
+          - 有说明的文件会立即显示，每个原因都以文字说明
+          - 仅在 DSM 的共享文件夹内打开 File Station；其他路径会说明原因
         de: |-
-          - Das Übersichtsdiagramm schlüsselt DSM-Dienstdaten auf und stimmt mit den Bereinigungsvorschlägen überein
-          - In Erkunden lassen sich Dateien und Ordner in File Station öffnen
-          - Vor dem Fortsetzen eines Scans nach einem Upgrade wird der gespeicherte Zustand geprüft; ist eine Fortsetzung nicht möglich, wird der Grund angezeigt
-          - ctl meldet den Speicherplatz von Snapshots und Fehlercodes
-          - Die Oberflächenkomponenten wurden aktualisiert
+          - Erkunden öffnet eine gewöhnliche Datei direkt in File Station, ohne auf einen Detailbereich zu warten
+          - Eine Datei mit Hinweisen zeigt diese sofort, jeden Grund in Worten
+          - File Station öffnet nur innerhalb der freigegebenen DSM-Ordner; bei anderen Pfaden wird der Grund angezeigt
         fr: |-
-          - Le graphique de la vue d’ensemble détaille les données des services DSM et correspond à la liste de nettoyage suggéré
-          - Explorer peut ouvrir les fichiers et les dossiers dans File Station
-          - La reprise d’une analyse après une mise à niveau est vérifiée au préalable et affiche la raison si elle ne peut pas continuer
-          - ctl indique l’espace des instantanés et les codes d’erreur
-          - Mise à jour des composants de l’interface
+          - Explorer ouvre un fichier ordinaire directement dans File Station, sans attendre un panneau de détails
+          - Un fichier avec des remarques les affiche immédiatement, chaque raison en toutes lettres
+          - File Station ne s’ouvre que dans les dossiers partagés de DSM ; pour les autres chemins, la raison est indiquée
         ja: |-
-          - 概要のグラフで DSM サービスデータを分類し、推奨クリーンアップ一覧と一致するようにしました
-          - エクスプローラーからファイルやフォルダーを File Station で開けます
-          - アップグレード後のスキャン再開前に状態を確認し、続行できない場合は理由を表示します
-          - ctl がスナップショットの容量とエラーコードを報告します
-          - インターフェースのコンポーネントを更新しました
+          - エクスプローラーで通常のファイルを詳細パネルを待たずに File Station で直接開きます
+          - 注記のあるファイルはすぐに表示し、理由をそれぞれ文章で説明します
+          - File Station は DSM の共有フォルダー内でのみ開き、それ以外のパスでは理由を表示します
         ko: |-
-          - 개요 차트가 DSM 서비스 데이터를 세분화하고 권장 정리 목록과 일치합니다
-          - 탐색에서 파일과 폴더를 File Station으로 열 수 있습니다
-          - 업그레이드 후 스캔을 재개하기 전에 확인하고, 계속할 수 없으면 이유를 알려 줍니다
-          - ctl이 스냅샷 공간과 오류 코드를 보고합니다
-          - 인터페이스 구성 요소를 업데이트했습니다
+          - 탐색에서 일반 파일을 세부 정보 패널을 기다리지 않고 File Station에서 바로 엽니다
+          - 참고 사항이 있는 파일은 즉시 표시하고 각 이유를 문장으로 설명합니다
+          - File Station은 DSM 공유 폴더 안에서만 열고, 다른 경로는 이유를 알려 줍니다
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-scanning-1602.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1597.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1607.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1597.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1605
+        version: 0.1.1-1607
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 43c913cfd5c482f919b4848867c4ed3c0b9ec5f9cac82fc26147f484e0cc104f
-        md5: 48d7b15adf83f2aa9c69ae2aff533d4c
-        size: 14960640
+        sha256: da92636c48c3c7e47243c50b8e39eaecad1786f9c992842210086645ce1633e5
+        md5: 082b2e9b46d71617ddeecac73e9c9c1b
+        size: 14963712
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -114,19 +100,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T08:36:30Z
-          source_ref: 9e849ece7b8d6705e4d5c1daf651db13dd10845b
+          reviewed_at: 2026-11-01T12:52:46Z
+          source_ref: 581c2a602683e2dc67dc386dac053cc152fe889c
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1605
+        version: 0.1.1-1607
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 02a2f39c66938284d323415239c2f0365dcf60f1463a663cead0fe9e5ff9c808
-        md5: dbbf63508f61c35be1519c3c9f9a8ae6
-        size: 15719936
+        sha256: 0ad7bf0a00fc6e47e8f104c05380a2cf7a5a4c66d58518193a886897ee1585c1
+        md5: 36abeab01ebd068d1ed038bb4e918cee
+        size: 15722496
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -143,11 +129,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T08:36:45Z
-          source_ref: 9e849ece7b8d6705e4d5c1daf651db13dd10845b
+          reviewed_at: 2026-11-01T12:53:07Z
+          source_ref: 581c2a602683e2dc67dc386dac053cc152fe889c
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1605
+        version: 0.1.1-1607
         arch:
           - apollolake
           - avoton
@@ -176,9 +162,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 9e7aef5050233004e55e6dab73e82faad5ebc9004bb2d21712df993162994157
-        md5: c44f4ff25e7e803dd54c931885dd9583
-        size: 16110080
+        sha256: 0d85633052ebb7e8e437fc855bef58f0e25baf1faf16bb676bc760d981772542
+        md5: e67c945a4ce3a0cdc90ba8d36c49fc34
+        size: 16112128
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -195,8 +181,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T08:37:06Z
-          source_ref: 9e849ece7b8d6705e4d5c1daf651db13dd10845b
+          reviewed_at: 2026-11-01T12:53:28Z
+          source_ref: 581c2a602683e2dc67dc386dac053cc152fe889c
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
