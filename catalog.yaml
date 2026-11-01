@@ -1686,7 +1686,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0009
+      release: v1.37.4-0012
       access: public
     metadata:
       maintainer: Daniel García
@@ -1696,7 +1696,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-vaultwarden
-      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0007
+      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0012
       issues_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/issues
       license: AGPL-3.0-only; packaging MIT; Web Vault and dependencies retain their
         respective licenses
@@ -1732,40 +1732,37 @@ packages:
         ja: パスワード、ログイン情報、セキュア メモを、自分のサーバー上の暗号化された保管庫に保存できます。Vaultwarden は Bitwarden 互換のサーバーで、項目を管理する Web 保管庫を備えています。保管庫は別のマスター パスワードで解除し、DSM からは復元できません。Bitwarden クライアントには信頼された HTTPS 証明書が必要で、クライアントからのサインインは未検証です。アプリのセッションは別に管理され、データはアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 비밀번호, 로그인 정보, 보안 메모를 내 서버의 암호화된 보관함에 보관해요. Vaultwarden은 Bitwarden과 호환되는 서버로, 항목을 관리하는 웹 보관함이 있어요. 보관함은 별도의 마스터 비밀번호로 열고, DSM으로는 복구할 수 없어요. Bitwarden 클라이언트에는 신뢰할 수 있는 HTTPS 인증서가 필요하고, 클라이언트 로그인은 검증되지 않았어요. 앱 세션은 따로 관리되고, 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: >-
-          1.37.4-0009
+        en: |-
+          1.37.4-0012
 
-
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
+          Updated the build toolchain to CLI 0.42.2 and SDK 0.42.0
         zh-TW: |-
-          1.37.4-0009
+          1.37.4-0012
 
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          建置工具鏈更新至 CLI 0.42.2 與 SDK 0.42.0
         zh-CN: |-
-          1.37.4-0009
+          1.37.4-0012
 
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+          构建工具链更新至 CLI 0.42.2 和 SDK 0.42.0
         de: |-
-          1.37.4-0009
+          1.37.4-0012
 
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+          Build-Werkzeuge auf CLI 0.42.2 und SDK 0.42.0 aktualisiert
         fr: |-
-          1.37.4-0009
+          1.37.4-0012
 
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+          Outils de compilation mis à jour vers CLI 0.42.2 et SDK 0.42.0
         ja: |-
-          1.37.4-0009
+          1.37.4-0012
 
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+          ビルドツールを CLI 0.42.2 と SDK 0.42.0 に更新
         ko: |-
-          1.37.4-0009
+          1.37.4-0012
 
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
+          빌드 도구를 CLI 0.42.2 및 SDK 0.42.0으로 업데이트
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0009
+        version: 1.37.4-0012
         arch:
           - apollolake
           - avoton
@@ -1794,9 +1791,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 80af1d9f128a49900d1a56fffb114ab6c8492b0469b48f607f473cfa8835c43b
-        md5: e8431fc80e56111c7b3ca4690412cec5
-        size: 27786752
+        sha256: 196ccde14d67efeac1bb111babda5184c62017b28ef8de6321d7adfc56eda8f7
+        md5: 73acbc7c043d2b4ed6e33e3fb20873df
+        size: 28291072
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1813,8 +1810,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:22Z
-          source_ref: eda706064d63628ca421ea89a62265fef0b9dafb
+          reviewed_at: 2026-11-01T16:11:30Z
+          source_ref: 36ae891acdc1540f6ca133eed4a75f684da46f4e
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - listed: false
     recommended: false
