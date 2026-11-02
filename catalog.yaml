@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1613
+      release: v0.1.1-1614
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,33 +40,26 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - Read VMM snapshot lock status in the administrator’s DSM session, including scheduled snapshots
-          - VM disks open Virtual Machine Manager, LUNs open SAN Manager and shared folders open Snapshot Replication
-          - Update native and frontend SDK to 0.46.1, UI to 0.19.4 and CLI to 0.47.3; rebuild all three architectures
+          - Read snapshot names and locks through the DSM window WebAPI
+          - Update CLI to 0.47.4 and native/frontend SDK to 0.46.2; keep UI 0.19.4, existing screenshots and missing-data fallbacks
         zh-TW: |-
-          - 透過管理員的 DSM 工作階段讀取 VMM 快照鎖定狀態，包含排程快照
-          - 虛擬機器磁碟開啟 Virtual Machine Manager、LUN 開啟 SAN Manager，共用資料夾開啟 Snapshot Replication
-          - 原生與前端 SDK 更新至 0.46.1、UI 至 0.19.4、CLI 至 0.47.3，重建三個架構
+          - 透過 DSM 視窗 WebAPI 讀取快照名稱與鎖定狀態
+          - CLI 更新至 0.47.4、原生及前端 SDK 至 0.46.2；保留 UI 0.19.4、既有截圖與資料缺失時的顯示
         zh-CN: |-
-          - 通过管理员的 DSM 会话读取 VMM 快照锁定状态，包含计划快照
-          - 虚拟机磁盘打开 Virtual Machine Manager、LUN 打开 SAN Manager，共享文件夹打开 Snapshot Replication
-          - 原生与前端 SDK 更新至 0.46.1、UI 至 0.19.4、CLI 至 0.47.3，重新构建三个架构
+          - 通过 DSM 窗口 WebAPI 读取快照名称与锁定状态
+          - CLI 更新至 0.47.4、原生及前端 SDK 至 0.46.2；保留 UI 0.19.4、现有截图与数据缺失时的显示
         de: |-
-          - VMM-Snapshot-Sperren einschließlich geplanter Snapshots in der DSM-Sitzung des Administrators lesen
-          - VM-Datenträger öffnen Virtual Machine Manager, LUNs SAN Manager und freigegebene Ordner Snapshot Replication
-          - Natives und Frontend-SDK auf 0.46.1, UI auf 0.19.4 und CLI auf 0.47.3 aktualisieren; alle drei Architekturen neu erstellen
+          - Snapshot-Namen und Sperren über die WebAPI des DSM-Fensters lesen
+          - CLI auf 0.47.4 und natives/Frontend-SDK auf 0.46.2 aktualisieren; UI 0.19.4, Screenshots und Anzeigen bei fehlenden Daten beibehalten
         fr: |-
-          - Lire le verrouillage des instantanés VMM, y compris les instantanés planifiés, dans la session DSM de l’administrateur
-          - Les disques de VM ouvrent Virtual Machine Manager, les LUN SAN Manager et les dossiers partagés Snapshot Replication
-          - Mettre à jour les SDK natif et frontal vers 0.46.1, l’interface vers 0.19.4 et la CLI vers 0.47.3 ; reconstruire les trois architectures
+          - Lire les noms et le verrouillage des instantanés via la WebAPI de la fenêtre DSM
+          - Mettre à jour la CLI vers 0.47.4 et les SDK natif/frontal vers 0.46.2 ; conserver l’interface 0.19.4, les captures et l’affichage en cas de données manquantes
         ja: |-
-          - 管理者の DSM セッションで、定期スナップショットを含む VMM スナップショットのロック状態を取得
-          - 仮想マシンディスクは Virtual Machine Manager、LUN は SAN Manager、共有フォルダは Snapshot Replication を開く
-          - ネイティブとフロントエンドの SDK を 0.46.1、UI を 0.19.4、CLI を 0.47.3 に更新し、3 アーキテクチャを再ビルド
+          - DSM ウィンドウの WebAPI でスナップショット名とロック状態を取得
+          - CLI を 0.47.4、ネイティブとフロントエンドの SDK を 0.46.2 に更新。UI 0.19.4、既存の画像、データ欠落時の表示を維持
         ko: |-
-          - 관리자 DSM 세션에서 예약 스냅샷을 포함한 VMM 스냅샷의 잠금 상태 읽기
-          - VM 디스크는 Virtual Machine Manager, LUN은 SAN Manager, 공유 폴더는 Snapshot Replication 열기
-          - 네이티브 및 프런트엔드 SDK를 0.46.1, UI를 0.19.4, CLI를 0.47.3으로 업데이트하고 세 아키텍처 다시 빌드
+          - DSM 창 WebAPI로 스냅샷 이름과 잠금 상태 읽기
+          - CLI를 0.47.4, 네이티브/프런트엔드 SDK를 0.46.2로 업데이트하고 UI 0.19.4, 기존 스크린샷 및 데이터 누락 시 표시 유지
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
@@ -77,15 +70,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1610-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1613
+        version: 0.1.1-1614
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e7fd6386350278935f38e50d852cc1866590035cc1a10fb58ee99e46aca824ff
-        md5: 288284f58b810ba390f9b39d32bdb123
-        size: 14977024
+        sha256: 1647973684c51258683f3721a94462493ddb50793597c1afbca24bcb49afadbe
+        md5: 57012a75913c4f452b658ab672a646f7
+        size: 14977536
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -102,19 +95,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T10:32:15Z
-          source_ref: 9ea3619c215abc7952a4ca63a4c3f8ac272cecba
+          reviewed_at: 2026-11-02T11:55:37Z
+          source_ref: 1607c5a4cf01c76e5c87e44e18a29c643d62602b
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1613
+        version: 0.1.1-1614
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 06cf6eb113ece99e548d8e443e19fcd23ef2b5bbee7b0a4fb87f22a7f6b2f4c2
-        md5: 451b6a66c0ae9e3f0185f5d0e4067c3f
-        size: 15732224
+        sha256: 0ed162853458ce887adc0362b65bf62f6c50264c5c6517daa755eb166f5c6f2e
+        md5: 396a66e6550b070ec1eccb26d7ba7f15
+        size: 15732736
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -131,11 +124,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T10:32:15Z
-          source_ref: 9ea3619c215abc7952a4ca63a4c3f8ac272cecba
+          reviewed_at: 2026-11-02T11:55:42Z
+          source_ref: 1607c5a4cf01c76e5c87e44e18a29c643d62602b
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1613
+        version: 0.1.1-1614
         arch:
           - apollolake
           - avoton
@@ -164,8 +157,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: a9c507722d1ac888f5be5c1e0f96ea6c94abed6ede2923e9953ac4800b2e378a
-        md5: 330a97d4ae6d1db32d4cddb90c9741e7
+        sha256: e7116d66905ec85f7921ba82f6b1cc015138281eed6b68701419e5794cbbd14b
+        md5: 5c2a208cf5ff202757640316385d61d7
         size: 16121856
         facts:
           built_with: sdk
@@ -183,10 +176,9 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T10:32:15Z
-          source_ref: 9ea3619c215abc7952a4ca63a4c3f8ac272cecba
+          reviewed_at: 2026-11-02T11:55:54Z
+          source_ref: 1607c5a4cf01c76e5c87e44e18a29c643d62602b
           source_repo: synopackageland/syno-reclaim
-
   - recommended: true
     category: utilities
     order: 20
