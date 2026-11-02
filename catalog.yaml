@@ -178,7 +178,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0110
+      release: v0.1.0-0111
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -333,61 +333,73 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0110
+          0.1.0-0111
 
-          - Healthy self-hosted NetBird no longer shows a permanent notice; page notices can be closed
-          - Packages can request one approved WebSocket listener on your own domain
-          - Segmented controls slide between options
+          - The first Overview shows a larger picture of your devices, the way still to set up and your NAS
+          - The setup wizard's main action, such as Check and connect, is in the footer beside Back
+          - DSM is listed once in the wizard's app and address steps
         zh-TW: |-
-          0.1.0-0110
+          0.1.0-0111
 
-          - 自架 NetBird 正常時不再常駐提示；頁面提示可以關閉
-          - 套件可申請在自有網域上使用一個經核准的 WebSocket 接聽
-          - 分段控制項會在選項間滑動
+          - 首次開啟總覽時，以較大的圖示呈現你的裝置、尚未設定的連線方式和你的 NAS
+          - 設定精靈的主要按鈕（例如「檢查並連接」）移到底部，在「上一步」旁邊
+          - 精靈的 App 與網址步驟只列出一次 DSM
         zh-CN: |-
-          0.1.0-0110
+          0.1.0-0111
 
-          - 自建 NetBird 正常时不再常驻提示；页面提示可以关闭
-          - 套件可申请在自有域名上使用一个经批准的 WebSocket 监听
-          - 分段控件会在选项间滑动
+          - 首次打开总览时，以较大的图示呈现你的设备、尚未设置的连接方式和你的 NAS
+          - 设置向导的主要按钮（例如“检查并连接”）移到底部，在“上一步”旁边
+          - 向导的 App 与网址步骤只列出一次 DSM
         de: |-
-          0.1.0-0110
+          0.1.0-0111
 
-          - Bei fehlerfreiem selbst gehostetem NetBird erscheint kein dauerhafter Hinweis mehr; Seitenhinweise lassen sich schließen
-          - Pakete können einen genehmigten WebSocket-Listener auf der eigenen Domain anfordern
-          - Segmentierte Schalter gleiten zwischen den Optionen
+          - Die erste Übersicht zeigt Ihre Geräte, den noch einzurichtenden Weg und Ihr NAS größer
+          - Die Hauptaktion des Einrichtungsassistenten, etwa „Prüfen und verbinden“, steht unten neben „Zurück“
+          - DSM erscheint in den Schritten für Apps und Adressen nur noch einmal
         fr: |-
-          0.1.0-0110
+          0.1.0-0111
 
-          - Un NetBird auto-hébergé en bon état n’affiche plus d’avis permanent ; les avis des pages peuvent être fermés
-          - Les paquets peuvent demander un écouteur WebSocket approuvé sur votre propre domaine
-          - Les contrôles segmentés glissent d’une option à l’autre
+          - La première vue d’ensemble montre en plus grand vos appareils, la méthode encore à configurer et votre NAS
+          - L’action principale de l’assistant, comme « Vérifier et connecter », se trouve en bas à côté de « Précédent »
+          - DSM n’apparaît plus qu’une fois dans les étapes des applications et des adresses
         ja: |-
-          0.1.0-0110
+          0.1.0-0111
 
-          - セルフホストの NetBird が正常なときは常設の通知を表示しなくなりました。ページの通知は閉じられます
-          - パッケージは自分のドメインで承認済みの WebSocket リスナーを 1 つ申請できます
-          - セグメントコントロールが選択肢の間をスライドします
+          - 初めての概要で、デバイス・未設定の接続方法・NAS を大きな図で表示します
+          - セットアップウィザードの主な操作（「確認して接続」など）は下部の「戻る」の隣に移りました
+          - ウィザードのアプリと URL の手順で DSM が 1 回だけ表示されます
         ko: |-
-          0.1.0-0110
+          0.1.0-0111
 
-          - 자체 호스팅 NetBird가 정상일 때 상시 알림이 더 이상 표시되지 않아요. 페이지 알림은 닫을 수 있어요
-          - 패키지가 내 도메인에서 승인된 WebSocket 리스너 하나를 요청할 수 있어요
-          - 세그먼트 컨트롤이 옵션 사이를 미끄러지듯 이동해요
+          - 처음 여는 개요에서 내 기기, 아직 설정하지 않은 연결 방법, 내 NAS를 더 크게 보여줘요
+          - 설정 마법사의 주요 동작(예: 확인하고 연결)이 아래쪽 '이전' 옆으로 옮겨졌어요
+          - 마법사의 앱과 주소 단계에 DSM이 한 번만 표시돼요
+        es: |-
+          0.1.0-0111
+
+          - La primera vista general muestra en grande sus dispositivos, el método aún por configurar y su NAS
+          - La acción principal del asistente, como Comprobar y conectar, está abajo junto a Atrás
+          - DSM aparece una sola vez en los pasos de apps y direcciones del asistente
+        it: |-
+          0.1.0-0111
+
+          - La prima panoramica mostra più in grande i tuoi dispositivi, il modo ancora da configurare e il tuo NAS
+          - L’azione principale della procedura guidata, come Verifica e connetti, è in basso accanto a Indietro
+          - DSM compare una sola volta nei passaggi delle App e degli indirizzi
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0110-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-0110-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0111-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-wizard-0111-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0110
+        version: 0.1.0-0111
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: b32c4aa3500ef7d386fc7e070c9941f94178b840cb7ad74afe0e10bbbc18d932
-        md5: 8499db5940cf35152949062a84cdff71
-        size: 14643200
+        sha256: ef9519dfbd82c513c55f15d71f1ed8417a18b3776346c6e899fd8b798ec18265
+        md5: 9c89ba66a9c3d29b3a70a057f96d7efd
+        size: 14653440
         facts:
           built_with: sdk
           sdk_backend: go
@@ -404,18 +416,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T05:58:59Z
-          source_ref: 7c4a6189f5d703d80a547bdcdc5396673986cf47
+          reviewed_at: 2026-11-02T07:08:52Z
+          source_ref: 295ce56c0889c077b37d7793a4464faedda722b4
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0110
+        version: 0.1.0-0111
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 6237c43e509238079afef58600c2eaa7a8f2a8d80baf47f9e69410b7dc8560a0
-        md5: aeb71dd73e3bf3a6e5c6949b1d7d82ea
+        sha256: 5ac4b3e6cbc353cb44dccb5de567d46a1e0a5cb6e0dd6a46c3235982693b10d4
+        md5: 004bb5d6399b5ad5c120332a079fcda9
         size: 15237120
         facts:
           built_with: sdk
@@ -433,11 +445,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T05:58:59Z
-          source_ref: 7c4a6189f5d703d80a547bdcdc5396673986cf47
+          reviewed_at: 2026-11-02T07:08:52Z
+          source_ref: 295ce56c0889c077b37d7793a4464faedda722b4
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0110
+        version: 0.1.0-0111
         arch:
           - apollolake
           - avoton
@@ -466,8 +478,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 05b3c75ede17109bc5df2e909618e53d7c74b55f2474e6b90d3e4267a1aa07d7
-        md5: 120d10f01af6612924013983812c8bf7
+        sha256: 588492d3db3e74a367ea24f98e737d205472de20bbaed6b01a6daf90d9b99460
+        md5: 0b2ee6741c0d289eacafdf3f1e348d51
         size: 15994880
         facts:
           built_with: sdk
@@ -485,8 +497,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T05:58:59Z
-          source_ref: 7c4a6189f5d703d80a547bdcdc5396673986cf47
+          reviewed_at: 2026-11-02T07:08:52Z
+          source_ref: 295ce56c0889c077b37d7793a4464faedda722b4
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
