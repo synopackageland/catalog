@@ -53,3 +53,22 @@ jobs:
           /tmp/ci-yaml/bin/python -c 'import pathlib,yaml; files=list(pathlib.Path(".").rglob("*.yaml"))+list(pathlib.Path(".").rglob("*.yml")); assert files; [list(yaml.safe_load_all(p.read_text())) for p in files]; print(f"Parsed {len(files)} YAML files")'
           /tmp/ci-yaml/bin/python scripts/check_locales.py
           /tmp/ci-yaml/bin/python -m unittest tests/test_check_locales.py
+
+  community:
+    name: Community schema, ownership and SPK integrity
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Check validator regressions
+        run: npm run test:community
+      - name: Validate community schema, publisher ownership, IDs, SHA-256, size and SPK claims
+        run: npm run check:community
