@@ -678,7 +678,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.9-0005
+      release: v4.2.9-0006
       access: private
     metadata:
       maintainer: OpenList Team
@@ -751,36 +751,36 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
         en: |-
-          4.2.9-0005
+          4.2.9-0006
 
-          Opens under DSM's own address at /synopkgland/SynoPkgOpenList/; the separate gateway port is removed
+          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
         zh-TW: |-
-          4.2.9-0005
+          4.2.9-0006
 
-          改由 DSM 本身的網址 /synopkgland/SynoPkgOpenList/ 開啟，並移除獨立的閘道連接埠
+          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
         zh-CN: |-
-          4.2.9-0005
+          4.2.9-0006
 
-          改为通过 DSM 自身的地址 /synopkgland/SynoPkgOpenList/ 打开，并移除独立的网关端口
+          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
         de: |-
-          4.2.9-0005
+          4.2.9-0006
 
-          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgOpenList/; der separate Gateway-Port entfällt
+          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
         fr: |-
-          4.2.9-0005
+          4.2.9-0006
 
-          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgOpenList/ ; le port de passerelle distinct est supprimé
+          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
         ja: |-
-          4.2.9-0005
+          4.2.9-0006
 
-          DSM 自身のアドレスの /synopkgland/SynoPkgOpenList/ で開くようになり、専用のゲートウェイポートは不要になりました
+          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
         ko: |-
-          4.2.9-0005
+          4.2.9-0006
 
-          DSM 자체 주소의 /synopkgland/SynoPkgOpenList/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
+          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.9-0005
+        version: 4.2.9-0006
         arch:
           - apollolake
           - avoton
@@ -809,9 +809,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 6a8e2168530f571d149446404d3c49091420a9579e1c08654f9570adb4ab590f
-        md5: b40550655991ab76107c595a7b7bc84c
-        size: 82307072
+        sha256: dca0b794328d0d6db9848201fa4be32a583840a46d30a25fb947a2f6c9b1c971
+        md5: 3e7564bb0dee4aa078b8728b2d5aeae7
+        size: 92710912
         facts:
           built_with: sdk
           sdk_backend: go
@@ -823,13 +823,13 @@ packages:
           requires: []
           conflicts: []
           shared_folders:
-            - OpenList
+            - "{{library}}"
           signed: false
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T04:41:33Z
-          source_ref: f7be4ecfd7806c7d00f2d1de73f643cecd538923
+          reviewed_at: 2026-11-02T06:09:34Z
+          source_ref: e0202c08c25d892c146c665578098c864c19e4cb
           source_repo: synopackageland/syno-pkg-land-openlist
   - listed: false
     recommended: false
@@ -1102,7 +1102,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.1-0009
+      release: v2.37.2-0007
       access: private
     metadata:
       maintainer: advplyr
@@ -1149,40 +1149,37 @@ packages:
         ja: オーディオブックとポッドキャストの自分だけのライブラリを作り、コレクションを見ながらブラウザーで聴けます。再生位置も記録されます。選択した読み取り専用のメディア フォルダーへのポッドキャストのダウンロードには対応しておらず、モバイルや TV のクライアントは未検証です。フォルダーにはパッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 오디오북과 팟캐스트로 나만의 서재를 만들고, 컬렉션을 둘러보며 브라우저에서 들을 수 있어요. 듣던 위치도 기억해요. 선택한 읽기 전용 미디어 폴더로 팟캐스트를 내려받는 기능은 지원하지 않고, 모바일·TV 클라이언트는 검증되지 않았어요. 폴더에는 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: >-
-          2.37.1-0009
+        en: |-
+          2.37.2-0007
 
-
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
+          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
         zh-TW: |-
-          2.37.1-0009
+          2.37.2-0007
 
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
         zh-CN: |-
-          2.37.1-0009
+          2.37.2-0007
 
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
         de: |-
-          2.37.1-0009
+          2.37.2-0007
 
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
         fr: |-
-          2.37.1-0009
+          2.37.2-0007
 
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
         ja: |-
-          2.37.1-0009
+          2.37.2-0007
 
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
         ko: |-
-          2.37.1-0009
+          2.37.2-0007
 
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
+          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.1-0009
+        version: 2.37.2-0007
         arch:
           - apollolake
           - avoton
@@ -1211,9 +1208,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 945b523b3e9be8601a2443a3c5417e3c7111cd21771e886f9fea01f6d5482138
-        md5: 241f435e061aa1a0b4fcd33ea65444c2
-        size: 26725888
+        sha256: c51cb032692edf03b6456b0e61f79441b63cd89db60b15c327f79076985fe54c
+        md5: b908c4aef300fc07cc93473ac0506596
+        size: 37557760
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1225,13 +1222,14 @@ packages:
           opens: dsm
           requires: []
           conflicts: []
-          shared_folders: []
+          shared_folders:
+            - "{{media}}"
           signed: false
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:21Z
-          source_ref: 920d8ff91e8e7232a43afc2121f97d2c7875e0a7
+          reviewed_at: 2026-11-02T06:09:34Z
+          source_ref: b58e2186c8892db30d5d63a397312013d2699b57
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - listed: true
     recommended: false
@@ -1242,7 +1240,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.4-0004
+      release: v12.4-0005
       access: private
     metadata:
       maintainer: Jellyfin
@@ -1290,36 +1288,36 @@ packages:
         ko: 미디어 컬렉션을 나만의 스트리밍 서재로 만들어요. 아트워크와 함께 영화와 TV 프로그램을 둘러보고, 음악을 정리하고, 브라우저에서 재생해요. TV·모바일 네이티브 클라이언트는 이 입구를 쓸 수 없고 DLNA는 꺼져 있어요. 선택한 미디어 폴더는 읽기 전용이며 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: |-
-          12.4-0004
+          12.4-0005
 
-          Opens under DSM's own address at /synopkgland/SynoPkgJellyfin/; the separate gateway port is removed
+          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
         zh-TW: |-
-          12.4-0004
+          12.4-0005
 
-          改由 DSM 本身的網址 /synopkgland/SynoPkgJellyfin/ 開啟，並移除獨立的閘道連接埠
+          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
         zh-CN: |-
-          12.4-0004
+          12.4-0005
 
-          改为通过 DSM 自身的地址 /synopkgland/SynoPkgJellyfin/ 打开，并移除独立的网关端口
+          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
         de: |-
-          12.4-0004
+          12.4-0005
 
-          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgJellyfin/; der separate Gateway-Port entfällt
+          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
         fr: |-
-          12.4-0004
+          12.4-0005
 
-          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgJellyfin/ ; le port de passerelle distinct est supprimé
+          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
         ja: |-
-          12.4-0004
+          12.4-0005
 
-          DSM 自身のアドレスの /synopkgland/SynoPkgJellyfin/ で開くようになり、専用のゲートウェイポートは不要になりました
+          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
         ko: |-
-          12.4-0004
+          12.4-0005
 
-          DSM 자체 주소의 /synopkgland/SynoPkgJellyfin/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
+          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
     pins:
       - package: SynoPkgJellyfin
-        version: 12.4-0004
+        version: 12.4-0005
         arch:
           - apollolake
           - avoton
@@ -1348,9 +1346,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: f60f93f4806b4d0d44255639f75be3bc8a9ca269111a9e9ddaaeea94e6e6bf66
-        md5: 78fbb5b0894cfd3cf22ee6ae35240039
-        size: 29538816
+        sha256: 87407cbbb39951d0e44afd4b2c3a42dfb07a69664ff748dd11fc51d4a579a289
+        md5: 778fa51dc34efe1fddf2bdf434f0424d
+        size: 39928832
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1363,13 +1361,13 @@ packages:
           requires: []
           conflicts: []
           shared_folders:
-            - Jellyfin
+            - "{{media}}"
           signed: false
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T04:41:33Z
-          source_ref: 3ed18c4c7e76dd5f1d45f75d221ffab9a26b2ee8
+          reviewed_at: 2026-11-02T06:09:34Z
+          source_ref: f666a806af7ccb611defe7054c970eb06b868b6e
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - listed: true
@@ -1514,7 +1512,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.4.0-0004
+      release: v3.4.0-0005
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -1559,36 +1557,36 @@ packages:
         ko: 종이 문서를 검색할 수 있는 디지털 보관함으로 바꿔요. 스캔을 가져오고, OCR로 글자를 인식하고, 태그, 거래처, 문서 유형으로 정리해요. 문서 내용을 검색하고 공유는 Paperless 권한으로 관리해요. 가져온 파일은 받은 편지함 폴더에서 지워지니 백업을 꼭 남겨 두세요. 선택한 받은 편지함 폴더에는 패키지 계정의 읽기/쓰기 권한이 필요해요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: |-
-          3.4.0-0004
+          3.4.0-0005
 
-          Opens under DSM's own address at /synopkgland/SynoPkgPaperlessNgx/; the separate gateway port is removed
+          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
         zh-TW: |-
-          3.4.0-0004
+          3.4.0-0005
 
-          改由 DSM 本身的網址 /synopkgland/SynoPkgPaperlessNgx/ 開啟，並移除獨立的閘道連接埠
+          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
         zh-CN: |-
-          3.4.0-0004
+          3.4.0-0005
 
-          改为通过 DSM 自身的地址 /synopkgland/SynoPkgPaperlessNgx/ 打开，并移除独立的网关端口
+          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
         de: |-
-          3.4.0-0004
+          3.4.0-0005
 
-          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgPaperlessNgx/; der separate Gateway-Port entfällt
+          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
         fr: |-
-          3.4.0-0004
+          3.4.0-0005
 
-          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgPaperlessNgx/ ; le port de passerelle distinct est supprimé
+          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
         ja: |-
-          3.4.0-0004
+          3.4.0-0005
 
-          DSM 自身のアドレスの /synopkgland/SynoPkgPaperlessNgx/ で開くようになり、専用のゲートウェイポートは不要になりました
+          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
         ko: |-
-          3.4.0-0004
+          3.4.0-0005
 
-          DSM 자체 주소의 /synopkgland/SynoPkgPaperlessNgx/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
+          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.4.0-0004
+        version: 3.4.0-0005
         arch:
           - apollolake
           - avoton
@@ -1617,9 +1615,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 15ff26d9b1ff7d4927b835487e8e2f1d673553431d26bd6da4260a4c3376d4a2
-        md5: fe0f49b18bd2ba28f70952be880d7375
-        size: 28481024
+        sha256: 48efad7ded7455650fa8150022e3d03d800ee86efff652e3bf6b0dc7d4906c8c
+        md5: 9857463a267f199026c442a420b5c3a6
+        size: 38871040
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1632,13 +1630,13 @@ packages:
           requires: []
           conflicts: []
           shared_folders:
-            - SynoPkgPaperlessNgx
+            - "{{consume}}"
           signed: false
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T04:41:34Z
-          source_ref: fe9c3a71488c21827d50e681d28d1ca17e96b1f7
+          reviewed_at: 2026-11-02T06:09:34Z
+          source_ref: ae2c3481724fd33f2787c7d21224a6398b4708d0
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
@@ -1785,7 +1783,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0015
+      release: v0.64.2-0016
       access: public
     metadata:
       maintainer: Navidrome
@@ -1831,36 +1829,36 @@ packages:
         ko: 아티스트와 앨범별로 음악을 둘러보고, 재생 목록을 만들고, 웹 플레이어나 호환되는 Subsonic 앱으로 들어요. 권한이 있는 사용자는 선택한 읽기 전용 음악 라이브러리를 함께 쓰고, 이 라이브러리에는 패키지 계정의 읽기 권한이 필요해요. Subsonic 클라이언트는 별도의 Navidrome 비밀번호를 쓰고, 공개 공유 링크는 지울 때까지 열려 있어요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: |-
-          0.64.2-0015
+          0.64.2-0016
 
-          Opens under DSM's own address at /synopkgland/SynoPkgNavidrome/; the separate gateway port is removed
+          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
         zh-TW: |-
-          0.64.2-0015
+          0.64.2-0016
 
-          改由 DSM 本身的網址 /synopkgland/SynoPkgNavidrome/ 開啟，並移除獨立的閘道連接埠
+          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
         zh-CN: |-
-          0.64.2-0015
+          0.64.2-0016
 
-          改为通过 DSM 自身的地址 /synopkgland/SynoPkgNavidrome/ 打开，并移除独立的网关端口
+          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
         de: |-
-          0.64.2-0015
+          0.64.2-0016
 
-          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgNavidrome/; der separate Gateway-Port entfällt
+          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
         fr: |-
-          0.64.2-0015
+          0.64.2-0016
 
-          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgNavidrome/ ; le port de passerelle distinct est supprimé
+          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
         ja: |-
-          0.64.2-0015
+          0.64.2-0016
 
-          DSM 自身のアドレスの /synopkgland/SynoPkgNavidrome/ で開くようになり、専用のゲートウェイポートは不要になりました
+          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
         ko: |-
-          0.64.2-0015
+          0.64.2-0016
 
-          DSM 자체 주소의 /synopkgland/SynoPkgNavidrome/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
+          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0015
+        version: 0.64.2-0016
         arch:
           - apollolake
           - avoton
@@ -1889,9 +1887,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c0eec8cc3e88982b9010d39d4b4000f8a92b6428a4d763925342198e9204f87c
-        md5: 1d2b9a9ad4dc4009723c13f5dbf7ea49
-        size: 38656512
+        sha256: 41d47f9eafeddff3d2751a8be260d32ec9c79db35ea164babf80f7791fa17490
+        md5: 0f8996db63ad6eb95c8b8c161bc6799f
+        size: 49047040
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1904,13 +1902,13 @@ packages:
           requires: []
           conflicts: []
           shared_folders:
-            - Navidrome
+            - "{{music}}"
           signed: false
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T04:41:34Z
-          source_ref: 699bcf3fea7975c9da3cc378a9d82dcc0f7e3f11
+          reviewed_at: 2026-11-02T06:09:34Z
+          source_ref: ffa705b185b09ce0e33a35c92c66ae6c7f67b094
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - listed: true
