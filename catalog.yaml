@@ -695,7 +695,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.9-0006
+      release: v4.2.9-0007
       access: private
     metadata:
       maintainer: OpenList Team
@@ -765,36 +765,36 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
         en: |-
-          4.2.9-0006
+          4.2.9-0007
 
-          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
+          Rebuilt with CLI 0.47.3: detected port conflicts show a warning without blocking the install wizard; free ports are accepted across DSM versions
         zh-TW: |-
-          4.2.9-0006
+          4.2.9-0007
 
-          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
+          使用 CLI 0.47.3 重建：連接埠衝突僅顯示警告、不阻擋安裝精靈，並修正不同 DSM 版本誤拒可用連接埠的問題
         zh-CN: |-
-          4.2.9-0006
+          4.2.9-0007
 
-          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
+          使用 CLI 0.47.3 重建：端口冲突仅显示警告、不阻止安装向导，并修复不同 DSM 版本误拒可用端口的问题
         de: |-
-          4.2.9-0006
+          4.2.9-0007
 
-          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
+          Mit CLI 0.47.3 neu erstellt: Portkonflikte werden als Warnung angezeigt, ohne den Installationsassistenten zu blockieren; freie Ports werden unter verschiedenen DSM-Versionen akzeptiert
         fr: |-
-          4.2.9-0006
+          4.2.9-0007
 
-          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
+          Recompilé avec CLI 0.47.3 : les conflits de port affichent un avertissement sans bloquer l’assistant d’installation ; les ports libres sont acceptés sur les différentes versions de DSM
         ja: |-
-          4.2.9-0006
+          4.2.9-0007
 
-          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
+          CLI 0.47.3 で再ビルド：ポートの競合は警告のみでインストールウィザードを妨げず、各 DSM バージョンで空きポートを正しく受け付けます
         ko: |-
-          4.2.9-0006
+          4.2.9-0007
 
-          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
+          CLI 0.47.3으로 다시 빌드했어요 포트 충돌은 경고만 표시하고 설치 마법사를 차단하지 않으며 여러 DSM 버전에서 사용 가능한 포트를 올바르게 허용해요
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.9-0006
+        version: 4.2.9-0007
         arch:
           - apollolake
           - avoton
@@ -823,9 +823,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: dca0b794328d0d6db9848201fa4be32a583840a46d30a25fb947a2f6c9b1c971
-        md5: 3e7564bb0dee4aa078b8728b2d5aeae7
-        size: 92710912
+        sha256: b38ca84ea7161b768bd133fde3216878c72460606e62210f557c71934f3ae0a6
+        md5: 94f99043dbae968ae2fba1f9e18ba2b6
+        size: 92751360
         facts:
           built_with: sdk
           sdk_backend: go
@@ -842,8 +842,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T06:09:34Z
-          source_ref: e0202c08c25d892c146c665578098c864c19e4cb
+          reviewed_at: 2026-11-02T08:54:42Z
+          source_ref: 2e40d774db5ca22a60c7a7e75eeccf03316b4f7b
           source_repo: synopackageland/syno-pkg-land-openlist
   - listed: false
     recommended: false
