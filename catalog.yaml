@@ -685,7 +685,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.9-0003
+      release: v4.2.9-0005
       access: private
     metadata:
       maintainer: OpenList Team
@@ -757,39 +757,37 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/01-files-0018.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
-        en: >-
-          4.2.9-0003
+        en: |-
+          4.2.9-0005
 
+          Opens under DSM's own address at /synopkgland/SynoPkgOpenList/; the separate gateway port is removed
+        zh-TW: |-
+          4.2.9-0005
 
-          Update OpenList to 4.2.9 and rebuild with CLI 0.42.2 / SDK 0.42.0
-        zh-TW: >-
-          4.2.9-0003
-
-
-          更新 OpenList 至 4.2.9，並以 CLI 0.42.2／SDK 0.42.0 重建
+          改由 DSM 本身的網址 /synopkgland/SynoPkgOpenList/ 開啟，並移除獨立的閘道連接埠
         zh-CN: |-
-          4.2.9-0003
+          4.2.9-0005
 
-          将 OpenList 更新至 4.2.9，并使用 CLI 0.42.2／SDK 0.42.0 重新构建
+          改为通过 DSM 自身的地址 /synopkgland/SynoPkgOpenList/ 打开，并移除独立的网关端口
         de: |-
-          4.2.9-0003
+          4.2.9-0005
 
-          OpenList auf 4.2.9 aktualisiert und mit CLI 0.42.2 / SDK 0.42.0 neu gebaut
+          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgOpenList/; der separate Gateway-Port entfällt
         fr: |-
-          4.2.9-0003
+          4.2.9-0005
 
-          Mise à jour d’OpenList vers 4.2.9 et recompilation avec CLI 0.42.2 / SDK 0.42.0
+          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgOpenList/ ; le port de passerelle distinct est supprimé
         ja: |-
-          4.2.9-0003
+          4.2.9-0005
 
-          OpenList を 4.2.9 に更新し、CLI 0.42.2／SDK 0.42.0 で再ビルド
+          DSM 自身のアドレスの /synopkgland/SynoPkgOpenList/ で開くようになり、専用のゲートウェイポートは不要になりました
         ko: |-
-          4.2.9-0003
+          4.2.9-0005
 
-          OpenList를 4.2.9로 업데이트하고 CLI 0.42.2 / SDK 0.42.0으로 다시 빌드했어요
+          DSM 자체 주소의 /synopkgland/SynoPkgOpenList/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.9-0003
+        version: 4.2.9-0005
         arch:
           - apollolake
           - avoton
@@ -818,9 +816,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 40eefd2b53e013b1d8c3ef228710b531efa871d79d19805ae8a6839328be4a43
-        md5: 208f7781b205dd79d43847e9b0a51ae8
-        size: 82375168
+        sha256: 6a8e2168530f571d149446404d3c49091420a9579e1c08654f9570adb4ab590f
+        md5: b40550655991ab76107c595a7b7bc84c
+        size: 82307072
         facts:
           built_with: sdk
           sdk_backend: go
@@ -837,8 +835,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T15:50:42Z
-          source_ref: f44c3353b053ee2657549c3b6b930bf9a465e2fb
+          reviewed_at: 2026-11-02T04:41:33Z
+          source_ref: f7be4ecfd7806c7d00f2d1de73f643cecd538923
           source_repo: synopackageland/syno-pkg-land-openlist
   - listed: false
     recommended: false
@@ -988,7 +986,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0005
+      release: v1.30.4-0013
       access: private
     metadata:
       maintainer: FreshRSS
@@ -998,7 +996,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-freshrss
-      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.4-0003
+      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.4-0013
       license: AGPL-3.0; packaging MIT; container dependencies retain their own licenses
       internet: required
       telemetry: none
@@ -1021,54 +1019,37 @@ packages:
         ja: お気に入りのサイトのニュースや更新をひとつのリーダーにまとめます。RSS や Atom フィードを購読し、カテゴリーで整理し、記事を検索し、お気に入りを保存できます。購読と既読状況は読者ごとに分かれます。DSM の管理者サインインと Container Manager が必要です
         ko: 좋아하는 사이트의 소식과 업데이트를 리더 하나로 모아요. RSS와 Atom 피드를 구독하고, 카테고리로 정리하고, 글을 검색하고, 즐겨찾기로 저장해 둘 수 있어요. 구독과 읽은 상태는 사용자마다 따로예요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: >-
-          1.30.4-0005
+        en: |-
+          1.30.4-0013
 
+          Opens under DSM's own address at /synopkgland/SynoPkgFreshRSS/; the separate gateway port is removed
+        zh-TW: |-
+          1.30.4-0013
 
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
-        zh-TW: >-
-          1.30.4-0005
-
-
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          改由 DSM 本身的網址 /synopkgland/SynoPkgFreshRSS/ 開啟，並移除獨立的閘道連接埠
         zh-CN: |-
-          1.30.4-0005
+          1.30.4-0013
 
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+          改为通过 DSM 自身的地址 /synopkgland/SynoPkgFreshRSS/ 打开，并移除独立的网关端口
         de: |-
-          1.30.4-0005
+          1.30.4-0013
 
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgFreshRSS/; der separate Gateway-Port entfällt
         fr: |-
-          1.30.4-0005
+          1.30.4-0013
 
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgFreshRSS/ ; le port de passerelle distinct est supprimé
         ja: |-
-          1.30.4-0005
+          1.30.4-0013
 
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+          DSM 自身のアドレスの /synopkgland/SynoPkgFreshRSS/ で開くようになり、専用のゲートウェイポートは不要になりました
         ko: |-
-          1.30.4-0005
+          1.30.4-0013
 
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
-      issues_url: https://github.com/synopackageland/syno-pkg-land-freshrss/issues
-      root_access: none
-      access: admins
-      account: dsm
-      runs: container
-      description:
-        en: Follow and read articles from your RSS and Atom subscriptions
-        zh-TW: 訂閱 RSS 與 Atom，在同一處追蹤和閱讀文章
-        zh-CN: 订阅 RSS 与 Atom，在同一处追踪和阅读文章
-        de: Artikel aus deinen RSS- und Atom-Abos verfolgen und lesen
-        fr: Suivez et lisez les articles de vos abonnements RSS et Atom
-        ja: RSS や Atom の購読記事をチェックして読む
-        ko: RSS와 Atom 구독 글을 모아 읽기
+          DSM 자체 주소의 /synopkgland/SynoPkgFreshRSS/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0005
+        version: 1.30.4-0013
         arch:
           - apollolake
           - avoton
@@ -1097,9 +1078,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 48a00e15f8f39339ec477e510e466326fb5295e1ad18c8ab59c406216e3d418f
-        md5: faf19d1e8d1043a108d65a3e4760535a
-        size: 26650112
+        sha256: 7d0a6add176ff783cfcd0b796d4f06e2e27812479bff44f5328ed1903f6b0a86
+        md5: ca3a6b7e1a0df66190db4af59f85f233
+        size: 28264448
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1116,8 +1097,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:21Z
-          source_ref: 161225ccb02a32616dd6b30447c117212af7cf0b
+          reviewed_at: 2026-11-02T04:41:33Z
+          source_ref: b000ffe9eed54951fbd752cc3591b2a452f91df1
           source_repo: synopackageland/syno-pkg-land-freshrss
   - listed: false
     recommended: false
@@ -1268,7 +1249,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.4-0003
+      release: v12.4-0004
       access: private
     metadata:
       maintainer: Jellyfin
@@ -1278,7 +1259,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-jellyfin
-      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.4-0003
+      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.4-0004
       issues_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/issues
       license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0; dependencies
         retain their own licenses
@@ -1316,36 +1297,36 @@ packages:
         ko: 미디어 컬렉션을 나만의 스트리밍 서재로 만들어요. 아트워크와 함께 영화와 TV 프로그램을 둘러보고, 음악을 정리하고, 브라우저에서 재생해요. TV·모바일 네이티브 클라이언트는 이 입구를 쓸 수 없고 DLNA는 꺼져 있어요. 선택한 미디어 폴더는 읽기 전용이며 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: |-
-          12.4-0003
+          12.4-0004
 
-          Update the build toolchain to CLI 0.42.2 and SDK 0.42.0
+          Opens under DSM's own address at /synopkgland/SynoPkgJellyfin/; the separate gateway port is removed
         zh-TW: |-
-          12.4-0003
+          12.4-0004
 
-          建置工具鏈更新至 CLI 0.42.2 與 SDK 0.42.0
+          改由 DSM 本身的網址 /synopkgland/SynoPkgJellyfin/ 開啟，並移除獨立的閘道連接埠
         zh-CN: |-
-          12.4-0003
+          12.4-0004
 
-          构建工具链更新至 CLI 0.42.2 和 SDK 0.42.0
+          改为通过 DSM 自身的地址 /synopkgland/SynoPkgJellyfin/ 打开，并移除独立的网关端口
         de: |-
-          12.4-0003
+          12.4-0004
 
-          Build-Werkzeuge auf CLI 0.42.2 und SDK 0.42.0 aktualisiert
+          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgJellyfin/; der separate Gateway-Port entfällt
         fr: |-
-          12.4-0003
+          12.4-0004
 
-          Outils de compilation mis à jour vers CLI 0.42.2 et SDK 0.42.0
+          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgJellyfin/ ; le port de passerelle distinct est supprimé
         ja: |-
-          12.4-0003
+          12.4-0004
 
-          ビルドツールを CLI 0.42.2 と SDK 0.42.0 に更新
+          DSM 自身のアドレスの /synopkgland/SynoPkgJellyfin/ で開くようになり、専用のゲートウェイポートは不要になりました
         ko: |-
-          12.4-0003
+          12.4-0004
 
-          빌드 도구를 CLI 0.42.2 및 SDK 0.42.0으로 업데이트
+          DSM 자체 주소의 /synopkgland/SynoPkgJellyfin/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
     pins:
       - package: SynoPkgJellyfin
-        version: 12.4-0003
+        version: 12.4-0004
         arch:
           - apollolake
           - avoton
@@ -1374,9 +1355,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7bea2b9a137599ed2e8748dc33108d898421bdef0bedb340cdb118507cf898aa
-        md5: ef065ce0ee831888ecba9417fe3e3fc1
-        size: 29594112
+        sha256: f60f93f4806b4d0d44255639f75be3bc8a9ca269111a9e9ddaaeea94e6e6bf66
+        md5: 78fbb5b0894cfd3cf22ee6ae35240039
+        size: 29538816
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1394,8 +1375,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T15:58:14Z
-          source_ref: f3e772566e3a317ed174b50d8887cb5b6261e37a
+          reviewed_at: 2026-11-02T04:41:33Z
+          source_ref: 3ed18c4c7e76dd5f1d45f75d221ffab9a26b2ee8
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - listed: true
@@ -1407,7 +1388,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.20.0-0003
+      release: v0.20.0-0005
       access: public
     metadata:
       maintainer: Emrik Östling
@@ -1417,7 +1398,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-convertx
-      source_url: https://github.com/synopackageland/syno-pkg-land-convertx/tree/v0.20.0-0003
+      source_url: https://github.com/synopackageland/syno-pkg-land-convertx/tree/v0.20.0-0005
       issues_url: https://github.com/synopackageland/syno-pkg-land-convertx/issues
       license: AGPL-3.0; packaging MIT; bundled tools retain their respective licenses
       internet: required
@@ -1449,39 +1430,37 @@ packages:
         ja: ブラウザーで文書、画像、音声、動画をアップロードし、出力形式を選んで変換後のファイルをダウンロードできます。許可されたユーザー全員が同じ作業スペースを共有し、互いのファイルを表示・ダウンロードできます。24 時間を過ぎたジョブは定期的に削除されます。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 브라우저에서 문서, 이미지, 오디오, 동영상을 올리고 출력 형식을 골라 변환된 파일을 내려받아요. 권한이 있는 사용자 모두가 작업 공간 하나를 함께 쓰고, 서로의 파일을 보고 내려받을 수 있어요. 24시간이 지난 작업은 주기적으로 지워져요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: >-
-          0.20.0-0003
+        en: |-
+          0.20.0-0005
 
-
-          Updated the toolchain to CLI 0.42.2, SDK/App 0.42.0 and templates
-          0.37.0
+          Opens under DSM's own address at /synopkgland/SynoPkgConvertX/; the separate gateway port is removed
         zh-TW: |-
-          0.20.0-0003
+          0.20.0-0005
 
-          更新工具鏈至 CLI 0.42.2、SDK/App 0.42.0 與 templates 0.37.0
+          改由 DSM 本身的網址 /synopkgland/SynoPkgConvertX/ 開啟，並移除獨立的閘道連接埠
         zh-CN: |-
-          0.20.0-0003
+          0.20.0-0005
 
-          更新工具链至 CLI 0.42.2、SDK/App 0.42.0 和 templates 0.37.0
+          改为通过 DSM 自身的地址 /synopkgland/SynoPkgConvertX/ 打开，并移除独立的网关端口
         de: |-
-          0.20.0-0003
+          0.20.0-0005
 
-          Toolchain auf CLI 0.42.2, SDK/App 0.42.0 und Templates 0.37.0 aktualisiert
+          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgConvertX/; der separate Gateway-Port entfällt
         fr: |-
-          0.20.0-0003
+          0.20.0-0005
 
-          Mise à jour de la chaîne de compilation vers CLI 0.42.2, SDK/App 0.42.0 et templates 0.37.0
+          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgConvertX/ ; le port de passerelle distinct est supprimé
         ja: |-
-          0.20.0-0003
+          0.20.0-0005
 
-          ツールチェーンを CLI 0.42.2、SDK/App 0.42.0、templates 0.37.0 に更新
+          DSM 自身のアドレスの /synopkgland/SynoPkgConvertX/ で開くようになり、専用のゲートウェイポートは不要になりました
         ko: |-
-          0.20.0-0003
+          0.20.0-0005
 
-          도구 체인을 CLI 0.42.2, SDK/App 0.42.0, templates 0.37.0으로 업데이트
+          DSM 자체 주소의 /synopkgland/SynoPkgConvertX/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
     pins:
       - package: SynoPkgConvertX
-        version: 0.20.0-0003
+        version: 0.20.0-0005
         arch:
           - apollolake
           - avoton
@@ -1510,9 +1489,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 43fb09d87dc076bfac8906063033de9c5729e8b7d585b1de97bcff68b0b8ef1e
-        md5: ddea4fa47db4cb68416c1c14f7f41058
-        size: 28147200
+        sha256: b9b160b513b1779a6ce707b84f8ca82350dc14fd9f077f65b26731222ffc30ef
+        md5: 4f4fd66533c18b60d4b8800070c8f806
+        size: 26832896
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1529,8 +1508,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T00:48:44Z
-          source_ref: 3124f6eccef52adc34d424269be92ad3a0b4afbd
+          reviewed_at: 2026-11-02T04:41:34Z
+          source_ref: 8315446d7c9e372ccbe3e8c20a2e794b503d4fbd
           source_repo: synopackageland/syno-pkg-land-convertx
 
   - listed: true
@@ -1542,7 +1521,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.4.0-0003
+      release: v3.4.0-0004
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -1552,7 +1531,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
-      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0003
+      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0004
       issues_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/issues
       license: GPL-3.0-only; dependencies retain their respective licenses
       internet: required
@@ -1587,36 +1566,36 @@ packages:
         ko: 종이 문서를 검색할 수 있는 디지털 보관함으로 바꿔요. 스캔을 가져오고, OCR로 글자를 인식하고, 태그, 거래처, 문서 유형으로 정리해요. 문서 내용을 검색하고 공유는 Paperless 권한으로 관리해요. 가져온 파일은 받은 편지함 폴더에서 지워지니 백업을 꼭 남겨 두세요. 선택한 받은 편지함 폴더에는 패키지 계정의 읽기/쓰기 권한이 필요해요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: |-
-          3.4.0-0003
+          3.4.0-0004
 
-          Upstream Paperless-ngx 3.4.0; build toolchain updated to CLI 0.42.2 and SDK 0.42.0
+          Opens under DSM's own address at /synopkgland/SynoPkgPaperlessNgx/; the separate gateway port is removed
         zh-TW: |-
-          3.4.0-0003
+          3.4.0-0004
 
-          上游 Paperless-ngx 3.4.0；建置工具鏈更新至 CLI 0.42.2 與 SDK 0.42.0
+          改由 DSM 本身的網址 /synopkgland/SynoPkgPaperlessNgx/ 開啟，並移除獨立的閘道連接埠
         zh-CN: |-
-          3.4.0-0003
+          3.4.0-0004
 
-          上游 Paperless-ngx 3.4.0；构建工具链更新至 CLI 0.42.2 和 SDK 0.42.0
+          改为通过 DSM 自身的地址 /synopkgland/SynoPkgPaperlessNgx/ 打开，并移除独立的网关端口
         de: |-
-          3.4.0-0003
+          3.4.0-0004
 
-          Paperless-ngx 3.4.0 als Basis; Build-Werkzeuge auf CLI 0.42.2 und SDK 0.42.0 aktualisiert
+          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgPaperlessNgx/; der separate Gateway-Port entfällt
         fr: |-
-          3.4.0-0003
+          3.4.0-0004
 
-          Version amont Paperless-ngx 3.4.0 ; outils de compilation mis à jour vers CLI 0.42.2 et SDK 0.42.0
+          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgPaperlessNgx/ ; le port de passerelle distinct est supprimé
         ja: |-
-          3.4.0-0003
+          3.4.0-0004
 
-          上流版 Paperless-ngx 3.4.0 を使用し、ビルドツールを CLI 0.42.2 と SDK 0.42.0 に更新
+          DSM 自身のアドレスの /synopkgland/SynoPkgPaperlessNgx/ で開くようになり、専用のゲートウェイポートは不要になりました
         ko: |-
-          3.4.0-0003
+          3.4.0-0004
 
-          업스트림 Paperless-ngx 3.4.0 사용, 빌드 도구를 CLI 0.42.2와 SDK 0.42.0으로 업데이트
+          DSM 자체 주소의 /synopkgland/SynoPkgPaperlessNgx/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.4.0-0003
+        version: 3.4.0-0004
         arch:
           - apollolake
           - avoton
@@ -1645,9 +1624,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8a31d5b35d8216e1534be59373d482a97c443c62e24c7ab79f1a3ee69baddff6
-        md5: df3c6cbec53cfe15e9c159414d39723c
-        size: 28533248
+        sha256: 15ff26d9b1ff7d4927b835487e8e2f1d673553431d26bd6da4260a4c3376d4a2
+        md5: fe0f49b18bd2ba28f70952be880d7375
+        size: 28481024
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1665,8 +1644,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T16:16:04Z
-          source_ref: e6336f6ea9a985b3fe5a8fb2f567610e5998b84b
+          reviewed_at: 2026-11-02T04:41:34Z
+          source_ref: fe9c3a71488c21827d50e681d28d1ca17e96b1f7
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
@@ -1677,7 +1656,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0012
+      release: v1.37.4-0014
       access: public
     metadata:
       maintainer: Daniel García
@@ -1687,7 +1666,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-vaultwarden
-      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0012
+      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0014
       issues_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/issues
       license: AGPL-3.0-only; packaging MIT; Web Vault and dependencies retain their
         respective licenses
@@ -1724,36 +1703,36 @@ packages:
         ko: 비밀번호, 로그인 정보, 보안 메모를 내 서버의 암호화된 보관함에 보관해요. Vaultwarden은 Bitwarden과 호환되는 서버로, 항목을 관리하는 웹 보관함이 있어요. 보관함은 별도의 마스터 비밀번호로 열고, DSM으로는 복구할 수 없어요. Bitwarden 클라이언트에는 신뢰할 수 있는 HTTPS 인증서가 필요하고, 클라이언트 로그인은 검증되지 않았어요. 앱 세션은 따로 관리되고, 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
         en: |-
-          1.37.4-0012
+          1.37.4-0014
 
-          Updated the build toolchain to CLI 0.42.2 and SDK 0.42.0
+          Opens under DSM's own address at /synopkgland/SynoPkgVaultwarden/; the separate gateway port is removed
         zh-TW: |-
-          1.37.4-0012
+          1.37.4-0014
 
-          建置工具鏈更新至 CLI 0.42.2 與 SDK 0.42.0
+          改由 DSM 本身的網址 /synopkgland/SynoPkgVaultwarden/ 開啟，並移除獨立的閘道連接埠
         zh-CN: |-
-          1.37.4-0012
+          1.37.4-0014
 
-          构建工具链更新至 CLI 0.42.2 和 SDK 0.42.0
+          改为通过 DSM 自身的地址 /synopkgland/SynoPkgVaultwarden/ 打开，并移除独立的网关端口
         de: |-
-          1.37.4-0012
+          1.37.4-0014
 
-          Build-Werkzeuge auf CLI 0.42.2 und SDK 0.42.0 aktualisiert
+          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgVaultwarden/; der separate Gateway-Port entfällt
         fr: |-
-          1.37.4-0012
+          1.37.4-0014
 
-          Outils de compilation mis à jour vers CLI 0.42.2 et SDK 0.42.0
+          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgVaultwarden/ ; le port de passerelle distinct est supprimé
         ja: |-
-          1.37.4-0012
+          1.37.4-0014
 
-          ビルドツールを CLI 0.42.2 と SDK 0.42.0 に更新
+          DSM 自身のアドレスの /synopkgland/SynoPkgVaultwarden/ で開くようになり、専用のゲートウェイポートは不要になりました
         ko: |-
-          1.37.4-0012
+          1.37.4-0014
 
-          빌드 도구를 CLI 0.42.2 및 SDK 0.42.0으로 업데이트
+          DSM 자체 주소의 /synopkgland/SynoPkgVaultwarden/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0012
+        version: 1.37.4-0014
         arch:
           - apollolake
           - avoton
@@ -1782,9 +1761,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 196ccde14d67efeac1bb111babda5184c62017b28ef8de6321d7adfc56eda8f7
-        md5: 73acbc7c043d2b4ed6e33e3fb20873df
-        size: 28291072
+        sha256: ba83b996ae1494ac2e0aff77e0806ad4fc8c59855e956c7ee6f040b73e5081c3
+        md5: 70d3e2077b20ff6b29031572e7fa05cc
+        size: 28234240
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1801,8 +1780,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T16:11:30Z
-          source_ref: 36ae891acdc1540f6ca133eed4a75f684da46f4e
+          reviewed_at: 2026-11-02T04:41:34Z
+          source_ref: 4abae7be68365207ba9c4ae8dfc025905f4d9e98
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - listed: false
     recommended: false
@@ -1813,7 +1792,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0009
+      release: v0.64.2-0015
       access: public
     metadata:
       maintainer: Navidrome
@@ -1823,7 +1802,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-navidrome
-      source_url: https://github.com/synopackageland/syno-pkg-land-navidrome/tree/v0.64.2-0007
+      source_url: https://github.com/synopackageland/syno-pkg-land-navidrome/tree/v0.64.2-0015
       issues_url: https://github.com/synopackageland/syno-pkg-land-navidrome/issues
       license: GPL-3.0; packaging and identity adapter MIT; dependencies retain their
         respective licenses
@@ -1858,40 +1837,37 @@ packages:
         ja: アーティストやアルバムで音楽を探し、プレイリストを作り、Web プレーヤーや対応する Subsonic アプリで聴けます。許可されたユーザーは選択した読み取り専用の音楽ライブラリを共有し、そのライブラリにはパッケージ アカウントの読み取り権限が必要です。Subsonic クライアントは別の Navidrome パスワードを使います。公開共有リンクは削除するまでアクセスできます。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 아티스트와 앨범별로 음악을 둘러보고, 재생 목록을 만들고, 웹 플레이어나 호환되는 Subsonic 앱으로 들어요. 권한이 있는 사용자는 선택한 읽기 전용 음악 라이브러리를 함께 쓰고, 이 라이브러리에는 패키지 계정의 읽기 권한이 필요해요. Subsonic 클라이언트는 별도의 Navidrome 비밀번호를 쓰고, 공개 공유 링크는 지울 때까지 열려 있어요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: >-
-          0.64.2-0009
+        en: |-
+          0.64.2-0015
 
-
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
+          Opens under DSM's own address at /synopkgland/SynoPkgNavidrome/; the separate gateway port is removed
         zh-TW: |-
-          0.64.2-0009
+          0.64.2-0015
 
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          改由 DSM 本身的網址 /synopkgland/SynoPkgNavidrome/ 開啟，並移除獨立的閘道連接埠
         zh-CN: |-
-          0.64.2-0009
+          0.64.2-0015
 
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+          改为通过 DSM 自身的地址 /synopkgland/SynoPkgNavidrome/ 打开，并移除独立的网关端口
         de: |-
-          0.64.2-0009
+          0.64.2-0015
 
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgNavidrome/; der separate Gateway-Port entfällt
         fr: |-
-          0.64.2-0009
+          0.64.2-0015
 
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgNavidrome/ ; le port de passerelle distinct est supprimé
         ja: |-
-          0.64.2-0009
+          0.64.2-0015
 
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+          DSM 自身のアドレスの /synopkgland/SynoPkgNavidrome/ で開くようになり、専用のゲートウェイポートは不要になりました
         ko: |-
-          0.64.2-0009
+          0.64.2-0015
 
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
+          DSM 자체 주소의 /synopkgland/SynoPkgNavidrome/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0009
+        version: 0.64.2-0015
         arch:
           - apollolake
           - avoton
@@ -1920,9 +1896,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 286d56aba84239b636281a17d67677aca096bd6cdcede5d1a16b6134e279bba5
-        md5: cbcc9e0019b47186dc410c60ba497dbc
-        size: 38218752
+        sha256: c0eec8cc3e88982b9010d39d4b4000f8a92b6428a4d763925342198e9204f87c
+        md5: 1d2b9a9ad4dc4009723c13f5dbf7ea49
+        size: 38656512
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1934,13 +1910,14 @@ packages:
           opens: dsm
           requires: []
           conflicts: []
-          shared_folders: []
+          shared_folders:
+            - Navidrome
           signed: false
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:22Z
-          source_ref: 6d37d6ddf6bcc09029fc56e8189216f44bb32049
+          reviewed_at: 2026-11-02T04:41:34Z
+          source_ref: 699bcf3fea7975c9da3cc378a9d82dcc0f7e3f11
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - listed: true
