@@ -237,7 +237,9 @@ that same ID. `maintainers` lists numeric GitHub user IDs for maintainer review
 of updates; passing the check does not itself authorize a submission. Publisher
 registration, changes of ownership and update authorization require maintainer
 review. GitHub may require approval to start first-time fork PR workflows.
-Both automatic checks and maintainer merge are required before website listing.
+If no check appears, the maintainer must confirm repository Actions are enabled;
+absence is not a pass. Both automatic checks and maintainer merge are required
+before website listing.
 
 `assets[].arch` is the complete set of space-separated INFO.arch tokens, not
 the build family in the filename. The public CLI expands `--arch x86_64` into

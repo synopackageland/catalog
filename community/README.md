@@ -27,7 +27,9 @@ rate limits may require a later retry. No SPK code is executed.
 
 Open a PR against `synopackageland/catalog:main`. Wait for **Community schema,
 ownership and SPK integrity** and maintainer review and merge. A first-time
-fork workflow may need maintainer approval to start. Checks do not authorize
+fork workflow may need maintainer approval to start. If no check appears, ask
+the maintainer to confirm repository Actions are enabled; absence is not a pass.
+Checks do not authorize
 publisher registration or updates and do not publish automatically.
 
 These packages receive no Package Center basic security check. After merge,
