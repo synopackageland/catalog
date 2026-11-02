@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1610
+      release: v0.1.1-1611
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,26 +40,19 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - Fix snapshot update scan progress and mode switching
-          - Fix the Settings interface
+          - Scan history table scrolls inside its own area
         zh-TW: |-
-          - 修正快照更新掃描的進度與模式切換
-          - 修正設定頁介面
+          - 掃描紀錄表格改在自己的區域內捲動
         zh-CN: |-
-          - 修复快照更新扫描的进度与模式切换
-          - 修复设置页面界面
+          - 扫描记录表格改为在自身区域内滚动
         de: |-
-          - Fortschritt und Moduswechsel beim Aktualisieren von Schnappschüssen korrigiert
-          - Oberfläche der Einstellungen korrigiert
+          - Die Tabelle des Scanverlaufs scrollt in ihrem eigenen Bereich
         fr: |-
-          - Correction de la progression et du changement de mode lors de la mise à jour des instantanés
-          - Correction de l’interface des paramètres
+          - Le tableau de l’historique des analyses défile dans sa propre zone
         ja: |-
-          - スナップショット更新スキャンの進捗とモード切り替えを修正
-          - 設定画面のインターフェースを修正
+          - スキャン履歴の表をその領域内でスクロールするように変更
         ko: |-
-          - 스냅샷 업데이트 스캔의 진행률 및 모드 전환 수정
-          - 설정 페이지 인터페이스 수정
+          - 스캔 기록 표가 자체 영역 안에서 스크롤됨
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
@@ -68,14 +61,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1610-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1610
+        version: 0.1.1-1611
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 7e17b9bccae7f07e171fde48fb821d216648ed0855844fce725052799fc348cb
-        md5: 02e8af4a28771ea08b07727f074cdaf6
+        sha256: c450fb0f584434156cfdcf39c7972aaa50ad6a9c25419ae0dc48ca45a551987e
+        md5: 896b1f6e327cdd7345329d7ab5b493ec
         size: 14968832
         facts:
           built_with: sdk
@@ -93,18 +86,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T03:49:53Z
-          source_ref: 9e7bd79c794ce48fca2fde8c147e4f1ec5263d9f
+          reviewed_at: 2026-11-02T04:10:34Z
+          source_ref: 3e19c595844fa1d55a668bc3b5e1fc56ddd10e56
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1610
+        version: 0.1.1-1611
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 4de900aaf4987dd3ea6dcfa79395d5b2095591fa21400a505e53025f90bd59b9
-        md5: 4efb22394fbac83a7d397efc1fe285b7
+        sha256: 5601002a9fa22a2ec0cf83b87f64a49e7e4774c27147c8dedbd5aa143c0c9a6e
+        md5: 488c1c4a41f633b8e4e3fc1b8bf2ba8b
         size: 15726592
         facts:
           built_with: sdk
@@ -122,11 +115,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T03:49:54Z
-          source_ref: 9e7bd79c794ce48fca2fde8c147e4f1ec5263d9f
+          reviewed_at: 2026-11-02T04:10:34Z
+          source_ref: 3e19c595844fa1d55a668bc3b5e1fc56ddd10e56
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1610
+        version: 0.1.1-1611
         arch:
           - apollolake
           - avoton
@@ -155,8 +148,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 11115616d03ed31bc17c5c4aacedb0ea833ede1182837e257d077ec9441b75c1
-        md5: d91d264d77ec160566d8bdf9a419b17b
+        sha256: 325232af53abc055b67b7a0893308f8bc3bbd2a753a87812637b888898b3ce0c
+        md5: 26bbc92d9601113e08e3fd8581764448
         size: 16117760
         facts:
           built_with: sdk
@@ -174,8 +167,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T03:49:56Z
-          source_ref: 9e7bd79c794ce48fca2fde8c147e4f1ec5263d9f
+          reviewed_at: 2026-11-02T04:10:34Z
+          source_ref: 3e19c595844fa1d55a668bc3b5e1fc56ddd10e56
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
