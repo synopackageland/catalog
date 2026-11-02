@@ -147,21 +147,27 @@ comes first. "By Package Land" on the website comes from the publisher id
 
 ### Checks
 
-Run these from a syno-package-land checkout; `<catalog>` is a checkout of
-this catalog repository.
+For community submissions, clone this public catalog, install Node 24 and run:
 
 ```sh
-node --import tsx scripts/catalog/pin.mts --catalog <catalog>/catalog.yaml --pin     # new pins, with facts
-node --import tsx scripts/catalog/pin.mts --catalog <catalog>/catalog.yaml --facts   # add or refresh facts on existing pins
-node --import tsx scripts/catalog/pin.mts --catalog <catalog>/catalog.yaml --check   # release check
-node --import tsx scripts/catalog/check-community.mts --catalog-dir <catalog> --spk  # community pull request check
+npm ci --ignore-scripts --registry=https://registry.npmjs.org
+npm run test:community
+npm run check:community
 ```
 
-`--check` and `check-community.mts` fail with a message naming the field for
-an unknown field, a value outside its list, a URL that is not `https://`, pin
-facts that differ from the SPK, or a statement the SPK contradicts. The
-package source Worker validates the same schema when it loads the catalog and
-keeps serving the last good copy when a file is refused.
+`check:community` runs `node scripts/check-community.mjs --owners --spk`.
+For offline schema/namespace checks only, run `node scripts/check-community.mjs`.
+The full check anonymously verifies GitHub numeric publisher/repository ownership,
+ID uniqueness (case-insensitive, including checked reservations), SHA-256, exact
+byte size, INFO package/version/full architecture/minimum DSM, and app claims.
+SPKs are parsed without executing or extracting their contents. Network errors
+and rate limits fail the check; retry when the anonymous GitHub quota resets.
+No secrets or private repository access are required, including on fork PRs.
+
+The public script is generated from the package source Worker's rules in
+`synopackageland/syno-package-land`; its source CI checks generation drift.
+See `scripts/community-check-NOTICE.md`. Do not maintain a separate rule copy.
+Checked Package Center release pinning remains a maintainer operation.
 
 ## Two sources, three website sections
 
@@ -181,9 +187,19 @@ the website: https://synopkgland.com/docs/guides/list-your-app/
 
 All these SPKs are unsigned. Schema 3 has no `trust` and no publisher
 `verified`. Third-party publisher contact and support emails are required;
-official defaults are support@synopkgland.com. Third-party INFO.package must
-begin `<publisher-id>.` or appear in the maintainer-approved publisher
-`package_names` reservation; identities are globally unique,
+official defaults are support@synopkgland.com. New third-party INFO.package uses
+`C<github_owner_id>X<Name>`: the owner's numeric GitHub ID in canonical decimal,
+then literal `X`, then an ASCII letter followed by ASCII letters/digits. The whole
+ID is 2–64 characters (`^[A-Za-z][A-Za-z0-9]{1,63}$`, matching the public CLI).
+Example: owner ID 1234567 uses `C1234567XMyApp`. Numeric owner IDs avoid
+collisions between logins containing punctuation; removing login punctuation is
+not a namespace scheme. This is a deliberately conservative subset of
+[DSM's package identity rules](https://help.synology.com/developer-guide/synology_package/INFO_necessary_fields.html),
+which prohibit `: / > < | =`. A login or repository transfer requires renewed
+maintainer review; package identity does not follow a new owner's numeric ID.
+For Package Center, the maintainer must reserve the exact ID in the publisher's
+`package_names`; existing approved reservations retain upgrade continuity.
+Community has no arbitrary reservation exception; identities are globally unique,
 case-insensitively, and catalog.yaml wins over community for the same ID.
 
 ## Community packages
@@ -200,9 +216,9 @@ maintainers: [1234567]
 ```
 
 ```yaml
-# community/alice/alice.MyApp.yaml   (file name = package ID)
+# community/alice/C1234567XMyApp.yaml   (file name = package ID)
 schema: 1
-package: alice.MyApp               # "<publisher>." prefix; no ".dev" suffix
+package: C1234567XMyApp            # prefix binds github_owner_id; letters/digits only
 version: 1.2.0-3
 displayname: My App
 description: Does one thing.       # optional
@@ -214,6 +230,21 @@ source: { repo: alice/app, release: v1.2.0-3 }   # owner = publisher; not "lates
 assets:
   - { name: app-x86_64.spk, arch: [x86_64], sha256: <64 hex>, size: 2048 }
 ```
+
+The directory must match the public GitHub owner login (lowercase); its numeric
+ID must equal `github_owner_id`, and `source.repo` must be public and owned by
+that same ID. `maintainers` lists numeric GitHub user IDs for maintainer review
+of updates; passing the check does not itself authorize a submission. Publisher
+registration, changes of ownership and update authorization require maintainer
+review. GitHub may require approval to start first-time fork PR workflows.
+If no check appears, the maintainer must confirm repository Actions are enabled;
+absence is not a pass. Both automatic checks and maintainer merge are required
+before website listing.
+
+`assets[].arch` is the complete set of space-separated INFO.arch tokens, not
+the build family in the filename. The public CLI expands `--arch x86_64` into
+DSM platform names; copy `data.info.arch` from its inspect JSON into the YAML
+array. The checker compares the entire set.
 
 Limits: 1–8 assets of at most 64 MiB with disjoint architectures, files of at
 most 64 KiB, 10 packages per publisher, 200 in all. Tier fields (`trust`,
