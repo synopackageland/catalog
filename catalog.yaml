@@ -506,7 +506,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0075
+      release: v0.2.2-0076
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -576,34 +576,15 @@ packages:
         ja: HTTP/HTTPS リンク、Torrent、マグネット リンク、ED2K のファイルに加え、yt-dlp 対応サイトの動画や拡張機能で追加したソースからダウンロードできます。ダウンロードの一時停止・再開・整理、完了したファイルの保存先の選択、履歴の確認ができます。ダウンロードはユーザーごとに分かれ、アクセス、拡張機能、エンジンの更新は管理者が管理します。Gopeed を利用しています。DSM サインインが必要です
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
-        en: |-
-          0.2.2-0075
-
-          - Updated the interface components
-        zh-TW: |-
-          0.2.2-0075
-
-          - 更新介面元件
-        zh-CN: |-
-          0.2.2-0075
-
-          - 更新界面组件
-        de: |-
-          0.2.2-0075
-
-          - Oberflächenkomponenten aktualisiert
-        fr: |-
-          0.2.2-0075
-
-          - Composants d’interface mis à jour
-        ja: |-
-          0.2.2-0075
-
-          - インターフェースコンポーネントを更新
-        ko: |-
-          0.2.2-0075
-
-          - 인터페이스 구성 요소 업데이트
+        en: "Install wizard: port conflicts only warn; shared folder selection fixed"
+        zh-TW: 安裝精靈：連接埠衝突僅顯示警告；修正共享資料夾選取
+        zh-CN: 安装向导：端口冲突仅显示警告；修复共享文件夹选择
+        ja: インストールウィザード：ポートの競合は警告のみ表示し、共有フォルダーの選択を修正
+        ko: "설치 마법사: 포트 충돌은 경고만 표시하며 공유 폴더 선택 문제 수정"
+        de: "Installationsassistent: Portkonflikte zeigen nur eine Warnung an; Auswahl freigegebener Ordner korrigiert"
+        fr: "Assistant d’installation : les conflits de ports affichent un avertissement ; sélection du dossier partagé corrigée"
+        es: "Asistente de instalación: los conflictos de puertos solo muestran una advertencia; selección de carpetas compartidas corregida"
+        it: "Procedura guidata di installazione: i conflitti di porta mostrano solo un avviso; selezione delle cartelle condivise corretta"
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0070-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0070-en.png
@@ -612,15 +593,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0070-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0075
+        version: 0.2.2-0076
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: c12aad6bc4f7233fff7035910e6de824a65497cfb81a4ec2fafd4f3f1cea4005
-        md5: 1fba3f6f4fc0fd9575d2e30dfc3d8b83
-        size: 66433024
+        sha256: 508fa9a2edc71a3ab19ced7b6cc534627b5afa4dd430a94ca74c4fda08e2d865
+        md5: 803fdbec46735b13941d93b9b946eee6
+        size: 66434048
         facts:
           built_with: sdk
           sdk_backend: go
@@ -638,11 +619,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T08:23:18Z
-          source_ref: 36e793e1b530168997f71d449015669cff5c71fb
+          reviewed_at: 2026-11-02T12:21:30Z
+          source_ref: 93e07e7fbd28a26cb0b49e914f4d02a9e77c7ace
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0075
+        version: 0.2.2-0076
         arch:
           - apollolake
           - avoton
@@ -671,9 +652,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7797da92b3e62a7985879174514abe503f6ae8c332288a55f79a6cbcc9aa897f
-        md5: 2cdd1d5f61faf3cbc4f2d1c257dbc0ef
-        size: 70053376
+        sha256: d8fba17498c8ae7a6a2362b8021d83cf7086b1a4a8b6a5635e12f61ca0f8512a
+        md5: 02085b2b190f6aecb1a4231692d3d1ca
+        size: 70054400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -691,8 +672,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T08:23:18Z
-          source_ref: 36e793e1b530168997f71d449015669cff5c71fb
+          reviewed_at: 2026-11-02T12:21:39Z
+          source_ref: 93e07e7fbd28a26cb0b49e914f4d02a9e77c7ace
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
@@ -862,7 +843,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-uptime-kuma
-      release: v2.5.6-0017
+      release: v2.5.8-0004
       access: private
     metadata:
       maintainer: Louis Lam
@@ -872,7 +853,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-uptime-kuma
-      source_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/tree/v2.5.6-0015
+      source_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/tree/v2.5.8-0004
       issues_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/issues
       upstream:
         name: Uptime Kuma
@@ -908,40 +889,16 @@ packages:
         ja: Web サイトやネットワーク サービスが利用できるかを確認し、稼働履歴を見て、停止時に通知を受け取れます。サービスの状態をまとめたステータス ページを作成できますが、ステータス ページは管理者専用で、一般公開はできません。使える監視の種類は、このパッケージのネットワーク権限によって変わります。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 웹사이트와 네트워크 서비스가 살아 있는지 확인하고, 가동 기록을 보고, 장애가 나면 알림을 받아요. 서비스 상태를 요약한 상태 페이지를 만들 수 있지만, 상태 페이지는 관리자 전용이라 공개로 공유할 수 없어요. 쓸 수 있는 모니터 종류는 이 패키지의 네트워크 권한에 따라 달라요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: >-
-          2.5.6-0017
-
-
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
-        zh-TW: |-
-          2.5.6-0017
-
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
-        zh-CN: |-
-          2.5.6-0017
-
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
-        de: |-
-          2.5.6-0017
-
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
-        fr: |-
-          2.5.6-0017
-
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
-        ja: |-
-          2.5.6-0017
-
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
-        ko: |-
-          2.5.6-0017
-
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
+        en: "Uptime Kuma install wizard: port conflicts only warn; shared folder selection fixed"
+        zh-TW: Uptime Kuma 安裝精靈：連接埠衝突僅顯示警告；修正共享資料夾選取
+        zh-CN: Uptime Kuma 安装向导：端口冲突仅显示警告；修复共享文件夹选择
+        de: "Uptime Kuma-Installationsassistent: Portkonflikte werden nur als Warnung angezeigt; Auswahl freigegebener Ordner korrigiert"
+        fr: "Assistant d’installation Uptime Kuma : les conflits de ports affichent seulement un avertissement ; sélection des dossiers partagés corrigée"
+        ja: Uptime Kuma インストールウィザード：ポートの競合は警告のみ表示、共有フォルダーの選択を修正
+        ko: "Uptime Kuma 설치 마법사: 포트 충돌은 경고만 표시하고 공유 폴더 선택 수정"
     pins:
       - package: SynoPkgUptimeKuma
-        version: 2.5.6-0017
+        version: 2.5.8-0004
         arch:
           - apollolake
           - avoton
@@ -970,9 +927,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ce459455368e44733ba4f98d1c1363d7ec883cc633d43ee44e01b1bb879a0159
-        md5: d24294e345dc7b99080fd6584a3f4169
-        size: 26646528
+        sha256: fb5840173d1fccfbdc4a723dde4bc3ff41fa35b4ea674d50bf6e3fb1901ea080
+        md5: 25f5e0d952316b50a4b2ee403f269156
+        size: 28212224
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -989,8 +946,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:21Z
-          source_ref: 38f5dcf939cea032eab815f7da920fae6c3eb061
+          reviewed_at: 2026-11-02T12:12:32Z
+          source_ref: ed16b10c5da38fd964077d8596de5e55b122500e
           source_repo: synopackageland/syno-pkg-land-uptime-kuma
   - listed: false
     recommended: false
@@ -1001,7 +958,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0013
+      release: v1.30.4-0014
       access: private
     metadata:
       maintainer: FreshRSS
@@ -1011,7 +968,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-freshrss
-      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.4-0013
+      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.4-0014
       license: AGPL-3.0; packaging MIT; container dependencies retain their own licenses
       internet: required
       telemetry: none
@@ -1034,37 +991,16 @@ packages:
         ja: お気に入りのサイトのニュースや更新をひとつのリーダーにまとめます。RSS や Atom フィードを購読し、カテゴリーで整理し、記事を検索し、お気に入りを保存できます。購読と既読状況は読者ごとに分かれます。DSM の管理者サインインと Container Manager が必要です
         ko: 좋아하는 사이트의 소식과 업데이트를 리더 하나로 모아요. RSS와 Atom 피드를 구독하고, 카테고리로 정리하고, 글을 검색하고, 즐겨찾기로 저장해 둘 수 있어요. 구독과 읽은 상태는 사용자마다 따로예요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: |-
-          1.30.4-0013
-
-          Opens under DSM's own address at /synopkgland/SynoPkgFreshRSS/; the separate gateway port is removed
-        zh-TW: |-
-          1.30.4-0013
-
-          改由 DSM 本身的網址 /synopkgland/SynoPkgFreshRSS/ 開啟，並移除獨立的閘道連接埠
-        zh-CN: |-
-          1.30.4-0013
-
-          改为通过 DSM 自身的地址 /synopkgland/SynoPkgFreshRSS/ 打开，并移除独立的网关端口
-        de: |-
-          1.30.4-0013
-
-          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgFreshRSS/; der separate Gateway-Port entfällt
-        fr: |-
-          1.30.4-0013
-
-          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgFreshRSS/ ; le port de passerelle distinct est supprimé
-        ja: |-
-          1.30.4-0013
-
-          DSM 自身のアドレスの /synopkgland/SynoPkgFreshRSS/ で開くようになり、専用のゲートウェイポートは不要になりました
-        ko: |-
-          1.30.4-0013
-
-          DSM 자체 주소의 /synopkgland/SynoPkgFreshRSS/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
+        en: "FreshRSS install wizard: port conflicts only warn; shared folder selection fixed"
+        zh-TW: FreshRSS 安裝精靈：連接埠衝突僅顯示警告；修正共享資料夾選取
+        zh-CN: FreshRSS 安装向导：端口冲突仅显示警告；修复共享文件夹选择
+        de: "FreshRSS-Installationsassistent: Portkonflikte werden nur als Warnung angezeigt; Auswahl freigegebener Ordner korrigiert"
+        fr: "Assistant d’installation FreshRSS : les conflits de ports affichent seulement un avertissement ; sélection des dossiers partagés corrigée"
+        ja: FreshRSS インストールウィザード：ポートの競合は警告のみ表示、共有フォルダーの選択を修正
+        ko: "FreshRSS 설치 마법사: 포트 충돌은 경고만 표시하고 공유 폴더 선택 수정"
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0013
+        version: 1.30.4-0014
         arch:
           - apollolake
           - avoton
@@ -1093,9 +1029,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7d0a6add176ff783cfcd0b796d4f06e2e27812479bff44f5328ed1903f6b0a86
-        md5: ca3a6b7e1a0df66190db4af59f85f233
-        size: 28264448
+        sha256: 50b9c054b0a43ef15537ee445e4819bcfc88c499e2b7d9d407414cbe7c0abaa6
+        md5: 7f74f9cd0564d8c7157e3ae4ecc8f440
+        size: 28304384
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1112,8 +1048,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T04:41:33Z
-          source_ref: b000ffe9eed54951fbd752cc3591b2a452f91df1
+          reviewed_at: 2026-11-02T12:13:00Z
+          source_ref: 0aae6528e2b421c24f47809bbbf06349764090ca
           source_repo: synopackageland/syno-pkg-land-freshrss
   - listed: false
     recommended: false
@@ -1124,7 +1060,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.2-0007
+      release: v2.37.2-0008
       access: private
     metadata:
       maintainer: advplyr
@@ -1134,7 +1070,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-audiobookshelf
-      source_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/tree/v2.37.2-0007
+      source_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/tree/v2.37.2-0008
       issues_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/issues
       license: GPL-3.0; dependencies retain their own licenses
       internet: required
@@ -1171,37 +1107,16 @@ packages:
         ja: オーディオブックとポッドキャストの自分だけのライブラリを作り、コレクションを見ながらブラウザーで聴けます。再生位置も記録されます。選択した読み取り専用のメディア フォルダーへのポッドキャストのダウンロードには対応しておらず、モバイルや TV のクライアントは未検証です。フォルダーにはパッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 오디오북과 팟캐스트로 나만의 서재를 만들고, 컬렉션을 둘러보며 브라우저에서 들을 수 있어요. 듣던 위치도 기억해요. 선택한 읽기 전용 미디어 폴더로 팟캐스트를 내려받는 기능은 지원하지 않고, 모바일·TV 클라이언트는 검증되지 않았어요. 폴더에는 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: |-
-          2.37.2-0007
-
-          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
-        zh-TW: |-
-          2.37.2-0007
-
-          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
-        zh-CN: |-
-          2.37.2-0007
-
-          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
-        de: |-
-          2.37.2-0007
-
-          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
-        fr: |-
-          2.37.2-0007
-
-          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
-        ja: |-
-          2.37.2-0007
-
-          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
-        ko: |-
-          2.37.2-0007
-
-          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
+        en: "Install wizard: port conflicts only warn; shared folder selection fixed"
+        zh-TW: 安裝精靈：連接埠衝突僅顯示警告；修正共享資料夾選取
+        zh-CN: 安装向导：端口冲突仅显示警告；修复共享文件夹选择
+        ja: インストールウィザード：ポートの競合は警告のみ表示し、共有フォルダーの選択を修正
+        ko: "설치 마법사: 포트 충돌은 경고만 표시하며 공유 폴더 선택 문제 수정"
+        de: "Installationsassistent: Portkonflikte zeigen nur eine Warnung an; Auswahl freigegebener Ordner korrigiert"
+        fr: "Assistant d’installation : les conflits de ports affichent un avertissement ; sélection du dossier partagé corrigée"
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.2-0007
+        version: 2.37.2-0008
         arch:
           - apollolake
           - avoton
@@ -1230,9 +1145,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c51cb032692edf03b6456b0e61f79441b63cd89db60b15c327f79076985fe54c
-        md5: b908c4aef300fc07cc93473ac0506596
-        size: 37557760
+        sha256: b4dff825971bcfe9a9c18b3ee3d24705155e4292e5fbc942292a844f4ec3586e
+        md5: 10e25d56f9742cccfaadb18491aa6d9a
+        size: 37558272
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1250,8 +1165,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T06:09:34Z
-          source_ref: b58e2186c8892db30d5d63a397312013d2699b57
+          reviewed_at: 2026-11-02T12:12:37Z
+          source_ref: a45de9ec83164a0f9f80bc5bed1cbb666869f4ba
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - listed: true
     recommended: false
@@ -1262,7 +1177,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.4-0005
+      release: v12.4-0006
       access: private
     metadata:
       maintainer: Jellyfin
@@ -1272,7 +1187,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-jellyfin
-      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.4-0005
+      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.4-0006
       issues_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/issues
       license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0; dependencies
         retain their own licenses
@@ -1309,37 +1224,16 @@ packages:
         ja: メディア コレクションを自分専用のストリーミング ライブラリにします。アートワーク付きで映画やテレビ番組を見て回り、音楽を整理し、ブラウザーで再生できます。TV やモバイルのネイティブ クライアントはこの入口を使えず、DLNA は無効です。選択したメディア フォルダーは読み取り専用で、パッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM サインインと Container Manager が必要です
         ko: 미디어 컬렉션을 나만의 스트리밍 서재로 만들어요. 아트워크와 함께 영화와 TV 프로그램을 둘러보고, 음악을 정리하고, 브라우저에서 재생해요. TV·모바일 네이티브 클라이언트는 이 입구를 쓸 수 없고 DLNA는 꺼져 있어요. 선택한 미디어 폴더는 읽기 전용이며 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: |-
-          12.4-0005
-
-          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
-        zh-TW: |-
-          12.4-0005
-
-          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
-        zh-CN: |-
-          12.4-0005
-
-          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
-        de: |-
-          12.4-0005
-
-          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
-        fr: |-
-          12.4-0005
-
-          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
-        ja: |-
-          12.4-0005
-
-          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
-        ko: |-
-          12.4-0005
-
-          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
+        en: "Install wizard: port conflicts only warn; shared folder selection fixed"
+        zh-TW: 安裝精靈：連接埠衝突僅顯示警告，並修正共用資料夾選擇
+        zh-CN: 安装向导：端口冲突仅显示警告，并修复共享文件夹选择
+        de: "Installationsassistent: Portkonflikte werden nur als Warnung angezeigt; Auswahl freigegebener Ordner korrigiert"
+        fr: "Assistant d’installation : les conflits de ports affichent seulement un avertissement ; sélection des dossiers partagés corrigée"
+        ja: インストールウィザード：ポート競合は警告のみ表示し、共有フォルダーの選択を修正
+        ko: "설치 마법사: 포트 충돌은 경고만 표시하며 공유 폴더 선택 수정"
     pins:
       - package: SynoPkgJellyfin
-        version: 12.4-0005
+        version: 12.4-0006
         arch:
           - apollolake
           - avoton
@@ -1368,9 +1262,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 87407cbbb39951d0e44afd4b2c3a42dfb07a69664ff748dd11fc51d4a579a289
-        md5: 778fa51dc34efe1fddf2bdf434f0424d
-        size: 39928832
+        sha256: 01b29ae731c4ba6f7c4464bbe62f0f8890faa76e0c55a92564f872518db4b741
+        md5: 8ee0507686f37f404b72db53b89616c1
+        size: 39969280
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1388,8 +1282,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T06:09:34Z
-          source_ref: f666a806af7ccb611defe7054c970eb06b868b6e
+          reviewed_at: 2026-11-02T12:14:50Z
+          source_ref: c843a221be4be3bf34bbdc074d7df9be7ee14818
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - listed: true
@@ -1534,7 +1428,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.4.0-0005
+      release: v3.4.0-0006
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -1544,7 +1438,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
-      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0005
+      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0006
       issues_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/issues
       license: GPL-3.0-only; dependencies retain their respective licenses
       internet: required
@@ -1578,37 +1472,16 @@ packages:
         ja: 紙の文書を検索できるデジタル アーカイブにします。スキャンを取り込み、OCR で文字を認識し、タグ、差出人、文書タイプで整理できます。文書の内容を検索し、共有は Paperless の権限で管理します。取り込んだファイルは受信フォルダーから削除されるので、バックアップを残してください。選択した受信フォルダーにはパッケージ アカウントの読み取り/書き込み権限が必要です。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 종이 문서를 검색할 수 있는 디지털 보관함으로 바꿔요. 스캔을 가져오고, OCR로 글자를 인식하고, 태그, 거래처, 문서 유형으로 정리해요. 문서 내용을 검색하고 공유는 Paperless 권한으로 관리해요. 가져온 파일은 받은 편지함 폴더에서 지워지니 백업을 꼭 남겨 두세요. 선택한 받은 편지함 폴더에는 패키지 계정의 읽기/쓰기 권한이 필요해요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: |-
-          3.4.0-0005
-
-          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
-        zh-TW: |-
-          3.4.0-0005
-
-          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
-        zh-CN: |-
-          3.4.0-0005
-
-          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
-        de: |-
-          3.4.0-0005
-
-          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
-        fr: |-
-          3.4.0-0005
-
-          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
-        ja: |-
-          3.4.0-0005
-
-          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
-        ko: |-
-          3.4.0-0005
-
-          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
+        en: "Install wizard: port conflicts only warn; shared folder selection fixed"
+        zh-TW: 安裝精靈：連接埠衝突僅顯示警告，並修正共用資料夾選擇
+        zh-CN: 安装向导：端口冲突仅显示警告，并修复共享文件夹选择
+        de: "Installationsassistent: Portkonflikte werden nur als Warnung angezeigt; Auswahl freigegebener Ordner korrigiert"
+        fr: "Assistant d’installation : les conflits de ports affichent seulement un avertissement ; sélection des dossiers partagés corrigée"
+        ja: インストールウィザード：ポート競合は警告のみ表示し、共有フォルダーの選択を修正
+        ko: "설치 마법사: 포트 충돌은 경고만 표시하며 공유 폴더 선택 수정"
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.4.0-0005
+        version: 3.4.0-0006
         arch:
           - apollolake
           - avoton
@@ -1637,9 +1510,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 48efad7ded7455650fa8150022e3d03d800ee86efff652e3bf6b0dc7d4906c8c
-        md5: 9857463a267f199026c442a420b5c3a6
-        size: 38871040
+        sha256: 86c8c808f379002f95de5009cbafc07ccbcca286c3c8d444efa97d2e06b0b258
+        md5: 12d927c106545f576542184aeab45894
+        size: 38910976
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1657,8 +1530,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T06:09:34Z
-          source_ref: ae2c3481724fd33f2787c7d21224a6398b4708d0
+          reviewed_at: 2026-11-02T12:14:55Z
+          source_ref: 08fe300d15da18888827e19ed4a6a439de64d7f8
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
@@ -1669,7 +1542,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0014
+      release: v1.37.4-0015
       access: public
     metadata:
       maintainer: Daniel García
@@ -1679,7 +1552,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-vaultwarden
-      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0014
+      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0015
       issues_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/issues
       license: AGPL-3.0-only; packaging MIT; Web Vault and dependencies retain their
         respective licenses
@@ -1715,37 +1588,16 @@ packages:
         ja: パスワード、ログイン情報、セキュア メモを、自分のサーバー上の暗号化された保管庫に保存できます。Vaultwarden は Bitwarden 互換のサーバーで、項目を管理する Web 保管庫を備えています。保管庫は別のマスター パスワードで解除し、DSM からは復元できません。Bitwarden クライアントには信頼された HTTPS 証明書が必要で、クライアントからのサインインは未検証です。アプリのセッションは別に管理され、データはアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 비밀번호, 로그인 정보, 보안 메모를 내 서버의 암호화된 보관함에 보관해요. Vaultwarden은 Bitwarden과 호환되는 서버로, 항목을 관리하는 웹 보관함이 있어요. 보관함은 별도의 마스터 비밀번호로 열고, DSM으로는 복구할 수 없어요. Bitwarden 클라이언트에는 신뢰할 수 있는 HTTPS 인증서가 필요하고, 클라이언트 로그인은 검증되지 않았어요. 앱 세션은 따로 관리되고, 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: |-
-          1.37.4-0014
-
-          Opens under DSM's own address at /synopkgland/SynoPkgVaultwarden/; the separate gateway port is removed
-        zh-TW: |-
-          1.37.4-0014
-
-          改由 DSM 本身的網址 /synopkgland/SynoPkgVaultwarden/ 開啟，並移除獨立的閘道連接埠
-        zh-CN: |-
-          1.37.4-0014
-
-          改为通过 DSM 自身的地址 /synopkgland/SynoPkgVaultwarden/ 打开，并移除独立的网关端口
-        de: |-
-          1.37.4-0014
-
-          Öffnet unter der DSM-Adresse /synopkgland/SynoPkgVaultwarden/; der separate Gateway-Port entfällt
-        fr: |-
-          1.37.4-0014
-
-          S’ouvre à l’adresse de DSM sous /synopkgland/SynoPkgVaultwarden/ ; le port de passerelle distinct est supprimé
-        ja: |-
-          1.37.4-0014
-
-          DSM 自身のアドレスの /synopkgland/SynoPkgVaultwarden/ で開くようになり、専用のゲートウェイポートは不要になりました
-        ko: |-
-          1.37.4-0014
-
-          DSM 자체 주소의 /synopkgland/SynoPkgVaultwarden/ 경로에서 열리며, 별도의 게이트웨이 포트는 제거했어요
+        en: "Install wizard: port conflicts only warn; shared folder selection fixed"
+        zh-TW: 安裝精靈：連接埠衝突僅顯示警告，並修正共用資料夾選擇
+        zh-CN: 安装向导：端口冲突仅显示警告，并修复共享文件夹选择
+        de: "Installationsassistent: Portkonflikte werden nur als Warnung angezeigt; Auswahl freigegebener Ordner korrigiert"
+        fr: "Assistant d’installation : les conflits de ports affichent seulement un avertissement ; sélection des dossiers partagés corrigée"
+        ja: インストールウィザード：ポート競合は警告のみ表示し、共有フォルダーの選択を修正
+        ko: "설치 마법사: 포트 충돌은 경고만 표시하며 공유 폴더 선택 수정"
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0014
+        version: 1.37.4-0015
         arch:
           - apollolake
           - avoton
@@ -1774,9 +1626,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ba83b996ae1494ac2e0aff77e0806ad4fc8c59855e956c7ee6f040b73e5081c3
-        md5: 70d3e2077b20ff6b29031572e7fa05cc
-        size: 28234240
+        sha256: 89562233c9556a4cd7519a525271aad1b5f923366d9185cca1ff0b3f01b2dede
+        md5: 4411712132a794d28bb9f26702380d27
+        size: 28274176
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1793,8 +1645,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T04:41:34Z
-          source_ref: 4abae7be68365207ba9c4ae8dfc025905f4d9e98
+          reviewed_at: 2026-11-02T12:15:00Z
+          source_ref: 370eb0201addeee78a4e82c231af31096ee24c6a
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - listed: false
     recommended: false
@@ -1805,7 +1657,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0016
+      release: v0.64.2-0017
       access: public
     metadata:
       maintainer: Navidrome
@@ -1815,7 +1667,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-navidrome
-      source_url: https://github.com/synopackageland/syno-pkg-land-navidrome/tree/v0.64.2-0016
+      source_url: https://github.com/synopackageland/syno-pkg-land-navidrome/tree/v0.64.2-0017
       issues_url: https://github.com/synopackageland/syno-pkg-land-navidrome/issues
       license: GPL-3.0; packaging and identity adapter MIT; dependencies retain their
         respective licenses
@@ -1850,37 +1702,16 @@ packages:
         ja: アーティストやアルバムで音楽を探し、プレイリストを作り、Web プレーヤーや対応する Subsonic アプリで聴けます。許可されたユーザーは選択した読み取り専用の音楽ライブラリを共有し、そのライブラリにはパッケージ アカウントの読み取り権限が必要です。Subsonic クライアントは別の Navidrome パスワードを使います。公開共有リンクは削除するまでアクセスできます。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 아티스트와 앨범별로 음악을 둘러보고, 재생 목록을 만들고, 웹 플레이어나 호환되는 Subsonic 앱으로 들어요. 권한이 있는 사용자는 선택한 읽기 전용 음악 라이브러리를 함께 쓰고, 이 라이브러리에는 패키지 계정의 읽기 권한이 필요해요. Subsonic 클라이언트는 별도의 Navidrome 비밀번호를 쓰고, 공개 공유 링크는 지울 때까지 열려 있어요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: |-
-          0.64.2-0016
-
-          Existing shared folders selected in the wizard receive the declared package-account access through DSM data-share; Package Center upgrades use the fixed CGI dispatch
-        zh-TW: |-
-          0.64.2-0016
-
-          精靈中選取的既有共享資料夾會由 DSM 授予套件帳號所需權限，並修正套件中心升級時的 CGI 分派
-        zh-CN: |-
-          0.64.2-0016
-
-          向导中选择的已有共享文件夹将由 DSM 授予套件账号所需权限，并修复套件中心升级时的 CGI 分派
-        de: |-
-          0.64.2-0016
-
-          DSM erteilt dem Paketkonto die vorgesehenen Rechte für im Assistenten ausgewählte vorhandene Ordner; die CGI-Verarbeitung bei Aktualisierungen im Paket-Zentrum ist korrigiert
-        fr: |-
-          0.64.2-0016
-
-          DSM accorde au compte du paquet les droits prévus sur les dossiers existants choisis dans l’assistant ; le traitement CGI des mises à jour du Centre de paquets est corrigé
-        ja: |-
-          0.64.2-0016
-
-          ウィザードで選択した既存の共有フォルダーに DSM がパッケージアカウントの権限を付与し、パッケージセンター更新時の CGI 処理を修正
-        ko: |-
-          0.64.2-0016
-
-          마법사에서 선택한 기존 공유 폴더에 DSM이 패키지 계정 권한을 부여하며 패키지 센터 업데이트의 CGI 처리를 수정했어요
+        en: "Install wizard: port conflicts only warn; shared folder selection fixed"
+        zh-TW: 安裝精靈：連接埠衝突僅顯示警告；修正共享資料夾選取
+        zh-CN: 安装向导：端口冲突仅显示警告；修复共享文件夹选择
+        ja: インストールウィザード：ポートの競合は警告のみ表示し、共有フォルダーの選択を修正
+        ko: "설치 마법사: 포트 충돌은 경고만 표시하며 공유 폴더 선택 문제 수정"
+        de: "Installationsassistent: Portkonflikte zeigen nur eine Warnung an; Auswahl freigegebener Ordner korrigiert"
+        fr: "Assistant d’installation : les conflits de ports affichent un avertissement ; sélection du dossier partagé corrigée"
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0016
+        version: 0.64.2-0017
         arch:
           - apollolake
           - avoton
@@ -1909,9 +1740,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 41d47f9eafeddff3d2751a8be260d32ec9c79db35ea164babf80f7791fa17490
-        md5: 0f8996db63ad6eb95c8b8c161bc6799f
-        size: 49047040
+        sha256: d98f2ef381c2ff06e7a5b8b037a4314989435508724b1d8407bc4612a5474779
+        md5: fd4f0f95f1d3b3baf4395e21074b8ccf
+        size: 49047552
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1929,8 +1760,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T06:09:34Z
-          source_ref: ffa705b185b09ce0e33a35c92c66ae6c7f67b094
+          reviewed_at: 2026-11-02T12:12:46Z
+          source_ref: a09eea1343ee46818d0ead266219b0695fef397a
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - listed: true
@@ -1942,7 +1773,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.4-0003
+      release: v2026.10.4-0004
       access: public
     metadata:
       maintainer: Home Assistant
@@ -1952,7 +1783,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-home-assistant
-      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.4-0003
+      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.4-0004
       issues_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/issues
       license: Apache-2.0; hass-oidc-auth and packaging MIT; dependencies retain their
         respective licenses
@@ -1986,37 +1817,16 @@ packages:
         ja: 対応するスマートホーム機器をまとめ、ダッシュボードから操作し、毎日の自動化を作れます。家のコントロールを自分のサーバーに置いておけます。このパッケージは mDNS による検出に対応していますが、SSDP、USB/Bluetooth、Supervisor、アドオンには対応していません。モバイル アプリからのサインインとアップグレードは未検証です。設定はアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 호환되는 스마트홈 기기를 한데 모아 대시보드로 제어하고, 일상을 위한 자동화를 만들어요. 집의 제어권을 내 서버에 둘 수 있어요. 이 패키지는 mDNS 검색을 지원하지만 SSDP, USB/Bluetooth, Supervisor, 애드온은 지원하지 않고, 모바일 앱 로그인과 업그레이드는 검증되지 않았어요. 설정은 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: |-
-          2026.10.4-0003
-
-          Updated to upstream Home Assistant 2026.10.4; rebuilt with CLI 0.42.2, SDK/App 0.42.0 and templates 0.37.0
-        zh-TW: |-
-          2026.10.4-0003
-
-          更新至上游 Home Assistant 2026.10.4，並以 CLI 0.42.2、SDK/App 0.42.0 與 templates 0.37.0 重建
-        zh-CN: |-
-          2026.10.4-0003
-
-          更新至上游 Home Assistant 2026.10.4，并以 CLI 0.42.2、SDK/App 0.42.0 和 templates 0.37.0 重新构建
-        de: |-
-          2026.10.4-0003
-
-          Auf Home Assistant 2026.10.4 aktualisiert und mit CLI 0.42.2, SDK/App 0.42.0 sowie Templates 0.37.0 neu gebaut
-        fr: |-
-          2026.10.4-0003
-
-          Mise à jour vers Home Assistant 2026.10.4 et reconstruction avec CLI 0.42.2, SDK/App 0.42.0 et templates 0.37.0
-        ja: |-
-          2026.10.4-0003
-
-          上流の Home Assistant 2026.10.4 に更新し、CLI 0.42.2、SDK/App 0.42.0、templates 0.37.0 で再ビルド
-        ko: |-
-          2026.10.4-0003
-
-          업스트림 Home Assistant 2026.10.4로 업데이트하고 CLI 0.42.2, SDK/App 0.42.0, templates 0.37.0으로 다시 빌드
+        en: "Home Assistant install wizard: port conflicts only warn; shared folder selection fixed"
+        zh-TW: Home Assistant 安裝精靈：連接埠衝突僅顯示警告；修正共享資料夾選取
+        zh-CN: Home Assistant 安装向导：端口冲突仅显示警告；修复共享文件夹选择
+        de: "Home Assistant-Installationsassistent: Portkonflikte werden nur als Warnung angezeigt; Auswahl freigegebener Ordner korrigiert"
+        fr: "Assistant d’installation Home Assistant : les conflits de ports affichent seulement un avertissement ; sélection des dossiers partagés corrigée"
+        ja: Home Assistant インストールウィザード：ポートの競合は警告のみ表示、共有フォルダーの選択を修正
+        ko: "Home Assistant 설치 마법사: 포트 충돌은 경고만 표시하고 공유 폴더 선택 수정"
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.4-0003
+        version: 2026.10.4-0004
         arch:
           - apollolake
           - avoton
@@ -2045,9 +1855,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 5a7ab739f69ceb5b35385bc746f03841c996ba328e7ef30eb688bd48fc8c49fe
-        md5: be614bf1b5be365008a2344119f24991
-        size: 28462592
+        sha256: 6c77b4a2bf5d055577227a5e669a9514f84d16dff1ed8e888f59f3a9e962c9ab
+        md5: 1a3d1ccdba379334eac059af0307993e
+        size: 28540928
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2064,8 +1874,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T16:15:44Z
-          source_ref: e0c79ffd38e961e42423fab7d4954a2487f76fe9
+          reviewed_at: 2026-11-02T12:12:27Z
+          source_ref: 6f46244203c51083435d73fd7a6a7c98f7fbb7bd
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
 publishers:
