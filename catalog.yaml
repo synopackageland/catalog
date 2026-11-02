@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1607
+      release: v0.1.1-1610
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,50 +40,43 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - Explore opens a plain file straight in File Station, without waiting on a detail panel
-          - A file with notes shows them at once, each reason in words
-          - File Station opens only inside DSM's shared folders; other paths say why
+          - Fix snapshot update scan progress and mode switching
+          - Fix the Settings interface
         zh-TW: |-
-          - 探索會直接在 File Station 開啟一般檔案，不必等待詳細資訊面板
-          - 有說明的檔案會立即顯示，每個原因都以文字說明
-          - 只在 DSM 的共用資料夾內開啟 File Station；其他路徑會說明原因
+          - 修正快照更新掃描的進度與模式切換
+          - 修正設定頁介面
         zh-CN: |-
-          - 探索会直接在 File Station 中打开普通文件，无需等待详细信息面板
-          - 有说明的文件会立即显示，每个原因都以文字说明
-          - 仅在 DSM 的共享文件夹内打开 File Station；其他路径会说明原因
+          - 修复快照更新扫描的进度与模式切换
+          - 修复设置页面界面
         de: |-
-          - Erkunden öffnet eine gewöhnliche Datei direkt in File Station, ohne auf einen Detailbereich zu warten
-          - Eine Datei mit Hinweisen zeigt diese sofort, jeden Grund in Worten
-          - File Station öffnet nur innerhalb der freigegebenen DSM-Ordner; bei anderen Pfaden wird der Grund angezeigt
+          - Fortschritt und Moduswechsel beim Aktualisieren von Schnappschüssen korrigiert
+          - Oberfläche der Einstellungen korrigiert
         fr: |-
-          - Explorer ouvre un fichier ordinaire directement dans File Station, sans attendre un panneau de détails
-          - Un fichier avec des remarques les affiche immédiatement, chaque raison en toutes lettres
-          - File Station ne s’ouvre que dans les dossiers partagés de DSM ; pour les autres chemins, la raison est indiquée
+          - Correction de la progression et du changement de mode lors de la mise à jour des instantanés
+          - Correction de l’interface des paramètres
         ja: |-
-          - エクスプローラーで通常のファイルを詳細パネルを待たずに File Station で直接開きます
-          - 注記のあるファイルはすぐに表示し、理由をそれぞれ文章で説明します
-          - File Station は DSM の共有フォルダー内でのみ開き、それ以外のパスでは理由を表示します
+          - スナップショット更新スキャンの進捗とモード切り替えを修正
+          - 設定画面のインターフェースを修正
         ko: |-
-          - 탐색에서 일반 파일을 세부 정보 패널을 기다리지 않고 File Station에서 바로 엽니다
-          - 참고 사항이 있는 파일은 즉시 표시하고 각 이유를 문장으로 설명합니다
-          - File Station은 DSM 공유 폴더 안에서만 열고, 다른 경로는 이유를 알려 줍니다
+          - 스냅샷 업데이트 스캔의 진행률 및 모드 전환 수정
+          - 설정 페이지 인터페이스 수정
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-scanning-1602.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1607.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-packages-1597.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1610-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1607
+        version: 0.1.1-1610
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: da92636c48c3c7e47243c50b8e39eaecad1786f9c992842210086645ce1633e5
-        md5: 082b2e9b46d71617ddeecac73e9c9c1b
-        size: 14963712
+        sha256: 7e17b9bccae7f07e171fde48fb821d216648ed0855844fce725052799fc348cb
+        md5: 02e8af4a28771ea08b07727f074cdaf6
+        size: 14968832
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -100,19 +93,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T12:52:46Z
-          source_ref: 581c2a602683e2dc67dc386dac053cc152fe889c
+          reviewed_at: 2026-11-02T03:49:53Z
+          source_ref: 9e7bd79c794ce48fca2fde8c147e4f1ec5263d9f
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1607
+        version: 0.1.1-1610
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 0ad7bf0a00fc6e47e8f104c05380a2cf7a5a4c66d58518193a886897ee1585c1
-        md5: 36abeab01ebd068d1ed038bb4e918cee
-        size: 15722496
+        sha256: 4de900aaf4987dd3ea6dcfa79395d5b2095591fa21400a505e53025f90bd59b9
+        md5: 4efb22394fbac83a7d397efc1fe285b7
+        size: 15726592
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -129,11 +122,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T12:53:07Z
-          source_ref: 581c2a602683e2dc67dc386dac053cc152fe889c
+          reviewed_at: 2026-11-02T03:49:54Z
+          source_ref: 9e7bd79c794ce48fca2fde8c147e4f1ec5263d9f
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1607
+        version: 0.1.1-1610
         arch:
           - apollolake
           - avoton
@@ -162,9 +155,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 0d85633052ebb7e8e437fc855bef58f0e25baf1faf16bb676bc760d981772542
-        md5: e67c945a4ce3a0cdc90ba8d36c49fc34
-        size: 16112128
+        sha256: 11115616d03ed31bc17c5c4aacedb0ea833ede1182837e257d077ec9441b75c1
+        md5: d91d264d77ec160566d8bdf9a419b17b
+        size: 16117760
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -181,8 +174,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T12:53:28Z
-          source_ref: 581c2a602683e2dc67dc386dac053cc152fe889c
+          reviewed_at: 2026-11-02T03:49:56Z
+          source_ref: 9e7bd79c794ce48fca2fde8c147e4f1ec5263d9f
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
