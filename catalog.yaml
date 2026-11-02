@@ -178,7 +178,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0111
+      release: v0.1.0-0112
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -333,72 +333,63 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0111
+          0.1.0-0112
 
-          - The first Overview shows a larger picture of your devices, the way still to set up and your NAS
-          - The setup wizard's main action, such as Check and connect, is in the footer beside Back
-          - DSM is listed once in the wizard's app and address steps
+          - Keep dashboards connected while startup WebSocket subscriptions arrive in bursts
+          - Slow consumers wait for capacity within the relay memory budget
         zh-TW: |-
-          0.1.0-0111
+          0.1.0-0112
 
-          - 首次開啟總覽時，以較大的圖示呈現你的裝置、尚未設定的連線方式和你的 NAS
-          - 設定精靈的主要按鈕（例如「檢查並連接」）移到底部，在「上一步」旁邊
-          - 精靈的 App 與網址步驟只列出一次 DSM
+          - 修正登入後 WebSocket 訂閱突發流量造成的斷線與持續載入
+          - 慢速接收端會等待容量，保留 relay 記憶體上限
         zh-CN: |-
-          0.1.0-0111
+          0.1.0-0112
 
-          - 首次打开总览时，以较大的图示呈现你的设备、尚未设置的连接方式和你的 NAS
-          - 设置向导的主要按钮（例如“检查并连接”）移到底部，在“上一步”旁边
-          - 向导的 App 与网址步骤只列出一次 DSM
+          - 修复登录后 WebSocket 订阅突发流量造成的断线和持续加载
+          - 慢速接收端会等待容量，保留 relay 内存上限
         de: |-
-          0.1.0-0111
+          0.1.0-0112
 
-          - Die erste Übersicht zeigt Ihre Geräte, den noch einzurichtenden Weg und Ihr NAS größer
-          - Die Hauptaktion des Einrichtungsassistenten, etwa „Prüfen und verbinden“, steht unten neben „Zurück“
-          - DSM erscheint in den Schritten für Apps und Adressen nur noch einmal
+          - WebSocket-Abonnements beim Start trennen das Dashboard nicht mehr
+          - Langsame Empfänger warten auf Kapazität innerhalb des Relay-Speicherlimits
         fr: |-
-          0.1.0-0111
+          0.1.0-0112
 
-          - La première vue d’ensemble montre en plus grand vos appareils, la méthode encore à configurer et votre NAS
-          - L’action principale de l’assistant, comme « Vérifier et connecter », se trouve en bas à côté de « Précédent »
-          - DSM n’apparaît plus qu’une fois dans les étapes des applications et des adresses
+          - Les abonnements WebSocket groupés au démarrage ne déconnectent plus le tableau de bord
+          - Les récepteurs lents attendent de la capacité dans la limite mémoire du relais
         ja: |-
-          0.1.0-0111
+          0.1.0-0112
 
-          - 初めての概要で、デバイス・未設定の接続方法・NAS を大きな図で表示します
-          - セットアップウィザードの主な操作（「確認して接続」など）は下部の「戻る」の隣に移りました
-          - ウィザードのアプリと URL の手順で DSM が 1 回だけ表示されます
+          - 起動時の WebSocket 購読が集中してもダッシュボードの接続を維持します
+          - 低速な受信側はリレーのメモリ上限内で空き容量を待ちます
         ko: |-
-          0.1.0-0111
+          0.1.0-0112
 
-          - 처음 여는 개요에서 내 기기, 아직 설정하지 않은 연결 방법, 내 NAS를 더 크게 보여줘요
-          - 설정 마법사의 주요 동작(예: 확인하고 연결)이 아래쪽 '이전' 옆으로 옮겨졌어요
-          - 마법사의 앱과 주소 단계에 DSM이 한 번만 표시돼요
+          - 시작 시 WebSocket 구독이 몰려도 대시보드 연결을 유지해요
+          - 수신이 느리면 릴레이 메모리 한도 안에서 여유 공간을 기다려요
         es: |-
-          0.1.0-0111
+          0.1.0-0112
 
-          - La primera vista general muestra en grande sus dispositivos, el método aún por configurar y su NAS
-          - La acción principal del asistente, como Comprobar y conectar, está abajo junto a Atrás
-          - DSM aparece una sola vez en los pasos de apps y direcciones del asistente
+          - Las suscripciones WebSocket al inicio ya no desconectan el panel
+          - Los receptores lentos esperan capacidad dentro del límite de memoria del relé
         it: |-
-          0.1.0-0111
+          0.1.0-0112
 
-          - La prima panoramica mostra più in grande i tuoi dispositivi, il modo ancora da configurare e il tuo NAS
-          - L’azione principale della procedura guidata, come Verifica e connetti, è in basso accanto a Indietro
-          - DSM compare una sola volta nei passaggi delle App e degli indirizzi
+          - Le sottoscrizioni WebSocket all’avvio non disconnettono più la dashboard
+          - I destinatari lenti attendono capacità entro il limite di memoria del relay
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0111-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-wizard-0111-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0111
+        version: 0.1.0-0112
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: ef9519dfbd82c513c55f15d71f1ed8417a18b3776346c6e899fd8b798ec18265
-        md5: 9c89ba66a9c3d29b3a70a057f96d7efd
+        sha256: 9649bd79df26532cc9a73630b97e4d8c0ed7212c53943d15a879c5e84cd899ba
+        md5: f6d53d6f3691242949ad9a1ba33cd462
         size: 14653440
         facts:
           built_with: sdk
@@ -416,18 +407,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T07:08:52Z
-          source_ref: 295ce56c0889c077b37d7793a4464faedda722b4
+          reviewed_at: 2026-11-02T07:40:32Z
+          source_ref: dfdf7bf7110d68eab92479c756a93d2379a9fd17
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0111
+        version: 0.1.0-0112
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 5ac4b3e6cbc353cb44dccb5de567d46a1e0a5cb6e0dd6a46c3235982693b10d4
-        md5: 004bb5d6399b5ad5c120332a079fcda9
+        sha256: 816d3159c304db3d00bee66d637155529cd1b06d366107f3a784ada3a8cdf849
+        md5: 9775d95460a0a6280bef63a57f24b547
         size: 15237120
         facts:
           built_with: sdk
@@ -445,11 +436,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T07:08:52Z
-          source_ref: 295ce56c0889c077b37d7793a4464faedda722b4
+          reviewed_at: 2026-11-02T07:40:39Z
+          source_ref: dfdf7bf7110d68eab92479c756a93d2379a9fd17
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0111
+        version: 0.1.0-0112
         arch:
           - apollolake
           - avoton
@@ -478,8 +469,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 588492d3db3e74a367ea24f98e737d205472de20bbaed6b01a6daf90d9b99460
-        md5: 0b2ee6741c0d289eacafdf3f1e348d51
+        sha256: 4c889862b509ab7677de5cdc4628511d27ae23baa1d2ca21d4df57d8fb69fd1c
+        md5: 69e4254732c78b6d11fb629c1f807ce1
         size: 15994880
         facts:
           built_with: sdk
@@ -497,8 +488,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T07:08:52Z
-          source_ref: 295ce56c0889c077b37d7793a4464faedda722b4
+          reviewed_at: 2026-11-02T07:40:54Z
+          source_ref: dfdf7bf7110d68eab92479c756a93d2379a9fd17
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
