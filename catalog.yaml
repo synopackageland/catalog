@@ -178,7 +178,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0109
+      release: v0.1.0-0110
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -333,47 +333,61 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0109
+          0.1.0-0110
 
-          - Updated the interface components
+          - Healthy self-hosted NetBird no longer shows a permanent notice; page notices can be closed
+          - Packages can request one approved WebSocket listener on your own domain
+          - Segmented controls slide between options
         zh-TW: |-
-          0.1.0-0109
+          0.1.0-0110
 
-          - 更新介面元件
+          - 自架 NetBird 正常時不再常駐提示；頁面提示可以關閉
+          - 套件可申請在自有網域上使用一個經核准的 WebSocket 接聽
+          - 分段控制項會在選項間滑動
         zh-CN: |-
-          0.1.0-0109
+          0.1.0-0110
 
-          - 更新界面组件
+          - 自建 NetBird 正常时不再常驻提示；页面提示可以关闭
+          - 套件可申请在自有域名上使用一个经批准的 WebSocket 监听
+          - 分段控件会在选项间滑动
         de: |-
-          0.1.0-0109
+          0.1.0-0110
 
-          - Oberflächenkomponenten aktualisiert
+          - Bei fehlerfreiem selbst gehostetem NetBird erscheint kein dauerhafter Hinweis mehr; Seitenhinweise lassen sich schließen
+          - Pakete können einen genehmigten WebSocket-Listener auf der eigenen Domain anfordern
+          - Segmentierte Schalter gleiten zwischen den Optionen
         fr: |-
-          0.1.0-0109
+          0.1.0-0110
 
-          - Mise à jour des composants de l’interface
+          - Un NetBird auto-hébergé en bon état n’affiche plus d’avis permanent ; les avis des pages peuvent être fermés
+          - Les paquets peuvent demander un écouteur WebSocket approuvé sur votre propre domaine
+          - Les contrôles segmentés glissent d’une option à l’autre
         ja: |-
-          0.1.0-0109
+          0.1.0-0110
 
-          - インターフェースのコンポーネントを更新しました
+          - セルフホストの NetBird が正常なときは常設の通知を表示しなくなりました。ページの通知は閉じられます
+          - パッケージは自分のドメインで承認済みの WebSocket リスナーを 1 つ申請できます
+          - セグメントコントロールが選択肢の間をスライドします
         ko: |-
-          0.1.0-0109
+          0.1.0-0110
 
-          - 인터페이스 구성 요소를 업데이트했어요
+          - 자체 호스팅 NetBird가 정상일 때 상시 알림이 더 이상 표시되지 않아요. 페이지 알림은 닫을 수 있어요
+          - 패키지가 내 도메인에서 승인된 WebSocket 리스너 하나를 요청할 수 있어요
+          - 세그먼트 컨트롤이 옵션 사이를 미끄러지듯 이동해요
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0107-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-0107-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0110-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-cloudflare-0110-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0109
+        version: 0.1.0-0110
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: b94b3e75187c5b3f5ec766886a9b8178ed5aa2cf4f5c201ab84d25bfc66af5a5
-        md5: 7ae00803f823c192200cd0e882b21381
-        size: 14305280
+        sha256: b32c4aa3500ef7d386fc7e070c9941f94178b840cb7ad74afe0e10bbbc18d932
+        md5: 8499db5940cf35152949062a84cdff71
+        size: 14643200
         facts:
           built_with: sdk
           sdk_backend: go
@@ -390,19 +404,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T08:23:15Z
-          source_ref: e1251d60a9b726b8952834429943a6b880235da6
+          reviewed_at: 2026-11-02T05:58:59Z
+          source_ref: 7c4a6189f5d703d80a547bdcdc5396673986cf47
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0109
+        version: 0.1.0-0110
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 13b8c327a74f7ea327d5f40e488632d7f30d004af5b76f1336a78a9fa251fa88
-        md5: e098ba822267b68c47deff3a397493e0
-        size: 14929920
+        sha256: 6237c43e509238079afef58600c2eaa7a8f2a8d80baf47f9e69410b7dc8560a0
+        md5: aeb71dd73e3bf3a6e5c6949b1d7d82ea
+        size: 15237120
         facts:
           built_with: sdk
           sdk_backend: go
@@ -419,11 +433,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T08:23:15Z
-          source_ref: e1251d60a9b726b8952834429943a6b880235da6
+          reviewed_at: 2026-11-02T05:58:59Z
+          source_ref: 7c4a6189f5d703d80a547bdcdc5396673986cf47
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0109
+        version: 0.1.0-0110
         arch:
           - apollolake
           - avoton
@@ -452,9 +466,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 544c22df9469d36a2343e043941ec9a6d0df34c5ffaf2623d753a79640d76748
-        md5: f4eed805a26e711199d3606ac14ecfa8
-        size: 15738880
+        sha256: 05b3c75ede17109bc5df2e909618e53d7c74b55f2474e6b90d3e4267a1aa07d7
+        md5: 120d10f01af6612924013983812c8bf7
+        size: 15994880
         facts:
           built_with: sdk
           sdk_backend: go
@@ -471,8 +485,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-01T08:23:15Z
-          source_ref: e1251d60a9b726b8952834429943a6b880235da6
+          reviewed_at: 2026-11-02T05:58:59Z
+          source_ref: 7c4a6189f5d703d80a547bdcdc5396673986cf47
           source_repo: synopackageland/syno-pkg-connect
 
   - category: utilities
