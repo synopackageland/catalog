@@ -1405,7 +1405,7 @@ packages:
           source_ref: f3e772566e3a317ed174b50d8887cb5b6261e37a
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: utilities
@@ -1414,7 +1414,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.19.0-0008
+      release: v0.20.0-0003
       access: public
     metadata:
       maintainer: Emrik Östling
@@ -1424,7 +1424,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-convertx
-      source_url: https://github.com/synopackageland/syno-pkg-land-convertx/tree/v0.19.0-0006
+      source_url: https://github.com/synopackageland/syno-pkg-land-convertx/tree/v0.20.0-0003
       issues_url: https://github.com/synopackageland/syno-pkg-land-convertx/issues
       license: AGPL-3.0; packaging MIT; bundled tools retain their respective licenses
       internet: required
@@ -1457,39 +1457,38 @@ packages:
         ko: 브라우저에서 문서, 이미지, 오디오, 동영상을 올리고 출력 형식을 골라 변환된 파일을 내려받아요. 권한이 있는 사용자 모두가 작업 공간 하나를 함께 쓰고, 서로의 파일을 보고 내려받을 수 있어요. 24시간이 지난 작업은 주기적으로 지워져요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
         en: >-
-          0.19.0-0008
+          0.20.0-0003
 
 
-          The page shown when an App can't be opened from the DSM menu is
-          redesigned and now explains when the App's port isn't reachable from
-          outside
+          Updated the toolchain to CLI 0.42.2, SDK/App 0.42.0 and templates
+          0.37.0
         zh-TW: |-
-          0.19.0-0008
+          0.20.0-0003
 
-          重新設計從 DSM 選單無法開啟 App 時顯示的頁面，並說明 App 的連接埠無法從外部連線的情況
+          更新工具鏈至 CLI 0.42.2、SDK/App 0.42.0 與 templates 0.37.0
         zh-CN: |-
-          0.19.0-0008
+          0.20.0-0003
 
-          重新设计从 DSM 菜单无法打开 App 时显示的页面，并说明 App 的连接端口无法从外部连接的情况
+          更新工具链至 CLI 0.42.2、SDK/App 0.42.0 和 templates 0.37.0
         de: |-
-          0.19.0-0008
+          0.20.0-0003
 
-          Die Seite, die erscheint, wenn sich eine App nicht aus dem DSM-Menü öffnen lässt, ist neu gestaltet und erklärt jetzt, wenn der Port der App von außen nicht erreichbar ist
+          Toolchain auf CLI 0.42.2, SDK/App 0.42.0 und Templates 0.37.0 aktualisiert
         fr: |-
-          0.19.0-0008
+          0.20.0-0003
 
-          La page affichée quand une App ne s'ouvre pas depuis le menu DSM est repensée et explique désormais quand le port de l'App n'est pas joignable depuis l'extérieur
+          Mise à jour de la chaîne de compilation vers CLI 0.42.2, SDK/App 0.42.0 et templates 0.37.0
         ja: |-
-          0.19.0-0008
+          0.20.0-0003
 
-          DSM のメニューからアプリを開けないときに表示されるページを刷新し、アプリのポートに外部から接続できない場合はその旨を説明するようにしました
+          ツールチェーンを CLI 0.42.2、SDK/App 0.42.0、templates 0.37.0 に更新
         ko: |-
-          0.19.0-0008
+          0.20.0-0003
 
-          DSM 메뉴에서 앱을 열 수 없을 때 보이는 페이지를 새로 디자인했고, 앱 포트에 외부에서 접근할 수 없으면 그 사실을 알려 줘요
+          도구 체인을 CLI 0.42.2, SDK/App 0.42.0, templates 0.37.0으로 업데이트
     pins:
       - package: SynoPkgConvertX
-        version: 0.19.0-0008
+        version: 0.20.0-0003
         arch:
           - apollolake
           - avoton
@@ -1518,9 +1517,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2cae2fed2ca053308ec5bf5036d99fb80fbd8dffc8f7711d4d06e99a2bd3e813
-        md5: 3fc8f9130747a1eb9bf7ff3086c34762
-        size: 26613248
+        sha256: 43fb09d87dc076bfac8906063033de9c5729e8b7d585b1de97bcff68b0b8ef1e
+        md5: ddea4fa47db4cb68416c1c14f7f41058
+        size: 28147200
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1537,9 +1536,10 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-10-25T14:47:22Z
-          source_ref: bb585a72d14d6ae15520d9b0277b3be2f9ab2b40
+          reviewed_at: 2026-11-02T00:48:44Z
+          source_ref: 3124f6eccef52adc34d424269be92ad3a0b4afbd
           source_repo: synopackageland/syno-pkg-land-convertx
+
   - listed: true
     recommended: false
     featured: false
