@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1612
+      release: v0.1.1-1613
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,45 +40,52 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - The snapshot picker names shared folders, LUNs and VM disks and shows how much space each one's snapshots hold, largest first
-          - A snapshot list with lock status and per-snapshot size replaces the bar chart; shift-click and "Older than" select ranges
+          - Read VMM snapshot lock status in the administrator’s DSM session, including scheduled snapshots
+          - VM disks open Virtual Machine Manager, LUNs open SAN Manager and shared folders open Snapshot Replication
+          - Update native and frontend SDK to 0.46.1, UI to 0.19.4 and CLI to 0.47.3; rebuild all three architectures
         zh-TW: |-
-          - 快照選單改為顯示共用資料夾、LUN 與虛擬機器磁碟的名稱，並依快照佔用空間由大到小排列
-          - 以含鎖定狀態與單獨佔用空間的快照清單取代長條圖；可用 Shift 點選或「早於」選取範圍
+          - 透過管理員的 DSM 工作階段讀取 VMM 快照鎖定狀態，包含排程快照
+          - 虛擬機器磁碟開啟 Virtual Machine Manager、LUN 開啟 SAN Manager，共用資料夾開啟 Snapshot Replication
+          - 原生與前端 SDK 更新至 0.46.1、UI 至 0.19.4、CLI 至 0.47.3，重建三個架構
         zh-CN: |-
-          - 快照菜单改为显示共享文件夹、LUN 与虚拟机磁盘的名称，并按快照占用空间从大到小排列
-          - 以含锁定状态与单独占用空间的快照列表取代柱状图；可用 Shift 点选或“早于”选择范围
+          - 通过管理员的 DSM 会话读取 VMM 快照锁定状态，包含计划快照
+          - 虚拟机磁盘打开 Virtual Machine Manager、LUN 打开 SAN Manager，共享文件夹打开 Snapshot Replication
+          - 原生与前端 SDK 更新至 0.46.1、UI 至 0.19.4、CLI 至 0.47.3，重新构建三个架构
         de: |-
-          - Die Snapshot-Auswahl nennt freigegebene Ordner, LUNs und VM-Datenträger und zeigt, wie viel Platz ihre Snapshots belegen, die größten zuerst
-          - Eine Snapshot-Liste mit Sperrstatus und Größe pro Snapshot ersetzt das Balkendiagramm; Umschalt-Klick und „Älter als“ wählen Bereiche
+          - VMM-Snapshot-Sperren einschließlich geplanter Snapshots in der DSM-Sitzung des Administrators lesen
+          - VM-Datenträger öffnen Virtual Machine Manager, LUNs SAN Manager und freigegebene Ordner Snapshot Replication
+          - Natives und Frontend-SDK auf 0.46.1, UI auf 0.19.4 und CLI auf 0.47.3 aktualisieren; alle drei Architekturen neu erstellen
         fr: |-
-          - Le sélecteur d’instantanés nomme les dossiers partagés, les LUN et les disques de VM et indique l’espace occupé par leurs instantanés, du plus grand au plus petit
-          - Une liste d’instantanés avec l’état du verrou et la taille de chacun remplace le graphique à barres ; Maj-clic et « Antérieurs au » sélectionnent des plages
+          - Lire le verrouillage des instantanés VMM, y compris les instantanés planifiés, dans la session DSM de l’administrateur
+          - Les disques de VM ouvrent Virtual Machine Manager, les LUN SAN Manager et les dossiers partagés Snapshot Replication
+          - Mettre à jour les SDK natif et frontal vers 0.46.1, l’interface vers 0.19.4 et la CLI vers 0.47.3 ; reconstruire les trois architectures
         ja: |-
-          - スナップショットの対象選択に共有フォルダ、LUN、仮想マシンディスクの名前と、スナップショットが使う容量を大きい順に表示
-          - 棒グラフをロック状態とスナップショットごとのサイズを示す一覧に置き換え、Shift クリックと「より前」で範囲を選択
+          - 管理者の DSM セッションで、定期スナップショットを含む VMM スナップショットのロック状態を取得
+          - 仮想マシンディスクは Virtual Machine Manager、LUN は SAN Manager、共有フォルダは Snapshot Replication を開く
+          - ネイティブとフロントエンドの SDK を 0.46.1、UI を 0.19.4、CLI を 0.47.3 に更新し、3 アーキテクチャを再ビルド
         ko: |-
-          - 스냅샷 대상 선택에 공유 폴더, LUN, VM 디스크 이름과 스냅샷이 차지하는 공간을 큰 순서로 표시
-          - 막대 차트를 잠금 상태와 스냅샷별 크기를 보여 주는 목록으로 교체; Shift 클릭과 "이전"으로 범위 선택
+          - 관리자 DSM 세션에서 예약 스냅샷을 포함한 VMM 스냅샷의 잠금 상태 읽기
+          - VM 디스크는 Virtual Machine Manager, LUN은 SAN Manager, 공유 폴더는 Snapshot Replication 열기
+          - 네이티브 및 프런트엔드 SDK를 0.46.1, UI를 0.19.4, CLI를 0.47.3으로 업데이트하고 세 아키텍처 다시 빌드
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-scanning-1602.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1607.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1612-picker-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1612-list-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1613-picker-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1613-locks-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1610-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1612
+        version: 0.1.1-1613
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 68e33dc3834f543fa696262f995632ff762e75577f592702384ffe6ea0503f15
-        md5: a7a164c0d17638953b2d75d2c9057ee7
-        size: 14975488
+        sha256: e7fd6386350278935f38e50d852cc1866590035cc1a10fb58ee99e46aca824ff
+        md5: 288284f58b810ba390f9b39d32bdb123
+        size: 14977024
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -95,19 +102,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T09:18:12Z
-          source_ref: a3b4a525ed02e2923f10acad552336f757b0fd80
+          reviewed_at: 2026-11-02T10:32:15Z
+          source_ref: 9ea3619c215abc7952a4ca63a4c3f8ac272cecba
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1612
+        version: 0.1.1-1613
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 5b1830de0d033abb087d8ab0859988e92a231c484c82b95891effb57b0e8017c
-        md5: f4f50cd226b75664c8d42cf021ac6ad2
-        size: 15730176
+        sha256: 06cf6eb113ece99e548d8e443e19fcd23ef2b5bbee7b0a4fb87f22a7f6b2f4c2
+        md5: 451b6a66c0ae9e3f0185f5d0e4067c3f
+        size: 15732224
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -124,11 +131,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T09:18:12Z
-          source_ref: a3b4a525ed02e2923f10acad552336f757b0fd80
+          reviewed_at: 2026-11-02T10:32:15Z
+          source_ref: 9ea3619c215abc7952a4ca63a4c3f8ac272cecba
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1612
+        version: 0.1.1-1613
         arch:
           - apollolake
           - avoton
@@ -157,9 +164,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: aa5c2f3329334dc0ffa72571b6dc4c53c13bf3302db844a7e4338cee0a5be252
-        md5: cb2ea1703bee307ab62057f91373f00f
-        size: 16120832
+        sha256: a9c507722d1ac888f5be5c1e0f96ea6c94abed6ede2923e9953ac4800b2e378a
+        md5: 330a97d4ae6d1db32d4cddb90c9741e7
+        size: 16121856
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -176,8 +183,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T09:18:12Z
-          source_ref: a3b4a525ed02e2923f10acad552336f757b0fd80
+          reviewed_at: 2026-11-02T10:32:15Z
+          source_ref: 9ea3619c215abc7952a4ca63a4c3f8ac272cecba
           source_repo: synopackageland/syno-reclaim
 
   - recommended: true
