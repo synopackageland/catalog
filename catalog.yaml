@@ -743,42 +743,6 @@ packages:
           seule au dossier choisi dans l’assistant ; ajoutez ce dossier comme Local
           storage dans OpenList pour le parcourir. L’accès WebDAV externe est
           indisponible. Version en aperçu ; connexion administrateur DSM requise
-      en: Bring local folders and supported cloud drives into one file browser.
-          Preview files, play audio and video, and upload, download or organize
-          files across your connected storage. After installation, grant the
-          package account Read/Write permission on the selected shared folder
-          and add it as Local storage in OpenList; selecting a folder alone does
-          neither. External WebDAV access is unavailable. Preview package; DSM
-          administrator sign-in is required
-        zh-TW: 在同一個檔案瀏覽器整合本機資料夾與支援的雲端硬碟。預覽檔案、播放影音，並在已連接的儲存空間上傳、下載及整理檔案。安裝後須授予套件帳號所選共用資料夾的讀寫權限，並在
-          OpenList 新增 Local storage；選擇資料夾不會自動完成這兩項設定。不開放外部 WebDAV 存取。本套件為預覽版；需
-          DSM 管理員登入
-        zh-CN: 在同一个文件浏览器中整合本地文件夹与支持的云盘。预览文件、播放音视频，并在已连接的存储中上传、下载和整理文件。安装后须授予套件账号所选共享文件夹的读写权限，并在
-          OpenList 中新增 Local storage；选择文件夹不会自动完成这两项设置。不开放外部 WebDAV 访问。本套件为预览版；需
-          DSM 管理员登录
-        ja: ローカルフォルダーと対応するクラウドドライブを一つのファイルブラウザーにまとめます。ファイルのプレビュー、音声・動画の再生、接続したストレージでのアップロード、ダウンロード、整理ができます。インストール後は、選択した共有フォルダーの読み書き権限をパッケージアカウントに付与し、OpenList
-          で Local storage を追加してください。フォルダーの選択だけでは設定されません。外部 WebDAV
-          アクセスは利用できません。プレビュー版で、DSM 管理者のサインインが必要です
-        ko: 로컬 폴더와 지원되는 클라우드 드라이브를 하나의 파일 탐색기에 모아요. 파일 미리보기, 오디오·동영상 재생, 연결된 저장소의 파일
-          업로드, 다운로드와 정리를 할 수 있어요. 설치 후 패키지 계정에 선택한 공유 폴더의 읽기/쓰기 권한을 부여하고
-          OpenList에 Local storage를 추가하세요. 폴더를 선택하는 것만으로는 설정되지 않아요. 외부 WebDAV 접속은
-          제공하지 않아요. 미리보기 버전이며 DSM 관리자 로그인이 필요해요
-        de: Lokale Ordner und unterstützte Cloud-Laufwerke in einem Dateibrowser
-          verbinden. Dateien als Vorschau ansehen, Audio und Video abspielen
-          sowie Dateien in verbundenen Speichern hochladen, herunterladen und
-          organisieren. Nach der Installation dem Paketkonto Lese-/Schreibrechte
-          für den gewählten gemeinsamen Ordner geben und diesen als Local
-          storage in OpenList hinzufügen; die Ordnerauswahl erledigt beides
-          nicht automatisch. Externer WebDAV-Zugriff ist nicht verfügbar.
-          Vorschauversion; DSM-Administratoranmeldung erforderlich
-        fr: Regroupez les dossiers locaux et les espaces cloud compatibles dans un seul
-          navigateur de fichiers. Prévisualisez des fichiers, lisez des contenus
-          audio et vidéo, puis importez, téléchargez et organisez les fichiers
-          de vos stockages connectés. Après installation, accordez au compte du
-          paquet les droits de lecture/écriture sur le dossier partagé choisi et
-          ajoutez-le comme Local storage dans OpenList ; sélectionner le dossier
-          ne suffit pas. L’accès WebDAV externe est indisponible. Version en
-          aperçu ; connexion administrateur DSM requise
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/01-files-0018.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
