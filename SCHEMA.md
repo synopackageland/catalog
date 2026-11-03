@@ -335,6 +335,7 @@ start GitHub Actions, publish anything, or change the CLI or package source Work
 Downloads are temporary and removed after the check. For offline review, supply
 `--spk-dir /path/to/spks` containing **every active pinned artifact**, including
 each architecture. Non-GitHub sources use this offline mode.
+Downloads have no elapsed-time cap; press Ctrl-C to cancel the gate and its download.
 
 The gate verifies each artifact's SHA-256, size and INFO identity against its pin,
 then compares `(protocol, port)` across packages. It reads `conf/resource` and the

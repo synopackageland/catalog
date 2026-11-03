@@ -7,9 +7,11 @@ import sys
 import tarfile
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from check_ports import active_entries, check_spks
+import check_ports
 
 
 def tar_bytes(files):
@@ -180,6 +182,52 @@ class PortCheckTests(unittest.TestCase):
         catalog.write_text(yaml.safe_dump({"packages": [{"publisher": "example", "pins": self.pins[:1]}]}))
         result = subprocess.run(command, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
+
+    def download_catalog(self):
+        import yaml
+        self.spk("AppOne", web(31443))
+        catalog = Path(self.temp.name) / "catalog.yaml"
+        catalog.write_text(yaml.safe_dump({"packages": [{"publisher": "example",
+            "source": {"kind": "github-release", "repo": "example/app", "release": "v1.0"},
+            "pins": self.pins}]}))
+        return ["check_ports.py", "--catalog", str(catalog)]
+
+    def test_slow_download_is_validated_after_six_minutes(self):
+        argv = self.download_catalog()
+
+        def slow_download(command, **options):
+            elapsed = 6 * 60
+            if options.get("timeout") is not None and options["timeout"] < elapsed:
+                raise subprocess.TimeoutExpired(command, options["timeout"])
+            directory = Path(command[command.index("--dir") + 1])
+            directory.mkdir(parents=True)
+            (directory / "app.spk").write_bytes(self.paths[0].read_bytes())
+            return subprocess.CompletedProcess(command, 0)
+
+        output = io.StringIO()
+        with patch.object(sys, "argv", argv), patch.object(sys, "stdout", output), \
+                patch.object(check_ports.subprocess, "run", side_effect=slow_download) as download:
+            self.assertEqual(check_ports.main(), 0)
+        self.assertEqual(download.call_count, 1)
+        self.assertEqual(json.loads(output.getvalue())["artifacts"], 1)
+
+    def test_download_interrupt_propagates_and_cleans_scratch(self):
+        argv = self.download_catalog()
+        directories = []
+
+        def interrupted(command, **options):
+            directories.append(Path(command[command.index("--dir") + 1]).parent)
+            raise KeyboardInterrupt
+
+        with patch.object(sys, "argv", argv), \
+                patch.object(check_ports.subprocess, "run", side_effect=interrupted) as download, \
+                patch.object(check_ports, "check_spks") as inspect:
+            with self.assertRaises(KeyboardInterrupt):
+                check_ports.main()
+        self.assertEqual(download.call_count, 1)
+        inspect.assert_not_called()
+        self.assertTrue(directories)
+        self.assertTrue(all(not directory.exists() for directory in directories))
 
 
 if __name__ == "__main__":
