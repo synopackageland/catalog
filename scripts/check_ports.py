@@ -172,7 +172,8 @@ def main():
                         command.append(source["release"])
                     # gh owns authentication; never copy credentials into command arguments.
                     try:
-                        subprocess.run(command, check=True, capture_output=True, timeout=180)
+                        # Slow transfers may finish; Ctrl-C still interrupts the child and gate.
+                        subprocess.run(command, check=True, capture_output=True)
                     except subprocess.SubprocessError as error:
                         raise ValueError(f'SPK download failed for {source["repo"]} '
                                          f'{source["release"]}; check gh authentication/release access') from error
