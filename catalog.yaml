@@ -186,7 +186,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0113
+      release: v0.1.0-0114
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -341,50 +341,50 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0113
+          0.1.0-0114
 
-          - Align Cloudflare consent, conflicts and errors with the form fields and actions
-          - Show a connection you turned off in grey as “Turned off” instead of a failure
+          - Keep Cloudflare sign-in refusals visible in both the setup wizard and sign-in tab
+          - Explain the NetBird dependency and open its server settings from the recovery action
         zh-TW: |-
-          0.1.0-0113
+          0.1.0-0114
 
-          - Cloudflare 同意核取方塊、名稱衝突與錯誤列對齊表單欄位及操作
-          - 主動停用的連線以灰色「已停用」顯示，不再顯示為失敗
+          - Cloudflare 登入遭拒時，設定精靈與登入分頁都會保留原因
+          - 說明 NetBird 相依限制，並可透過復原操作前往伺服器設定
         zh-CN: |-
-          0.1.0-0113
+          0.1.0-0114
 
-          - Cloudflare 同意复选框、名称冲突和错误行与表单字段及操作对齐
-          - 主动停用的连接以灰色“已停用”显示，不再显示为失败
+          - Cloudflare 登录被拒绝时，设置向导与登录标签页都会保留原因
+          - 说明 NetBird 依赖限制，并可通过恢复操作前往服务器设置
         de: |-
-          0.1.0-0113
+          0.1.0-0114
 
-          - Cloudflare-Zustimmung, Namenskonflikte und Fehler an Formularfeldern und Aktionen ausrichten
-          - Bewusst ausgeschaltete Verbindungen grau als „Ausgeschaltet“ statt als Fehler anzeigen
+          - Cloudflare-Anmeldefehler im Einrichtungsassistenten und im Anmeldetab sichtbar lassen
+          - Die NetBird-Abhängigkeit erklären und über die Wiederherstellungsaktion die Servereinstellungen öffnen
         fr: |-
-          0.1.0-0113
+          0.1.0-0114
 
-          - Aligner le consentement Cloudflare, les conflits de nom et les erreurs sur les champs et les actions
-          - Afficher en gris les connexions désactivées volontairement, sans les signaler comme des échecs
+          - Conserver le motif du refus de connexion Cloudflare dans l’assistant et l’onglet de connexion
+          - Expliquer la dépendance NetBird et ouvrir les réglages du serveur depuis l’action de récupération
         ja: |-
-          0.1.0-0113
+          0.1.0-0114
 
-          - Cloudflare の同意、名前の競合、エラーをフォームの入力欄と操作に揃える
-          - 意図的にオフにした接続をエラーではなくグレーの「オフ」で表示
+          - Cloudflare ログインが拒否された理由を設定ウィザードとログインタブの両方に表示
+          - NetBird の依存関係を説明し、復旧操作からサーバー設定を開けるようにする
         ko: |-
-          0.1.0-0113
+          0.1.0-0114
 
-          - Cloudflare 동의, 이름 충돌 및 오류를 양식 필드와 작업에 맞춰 정렬해요
-          - 직접 끈 연결을 실패 대신 회색의 꺼짐 상태로 표시해요
+          - Cloudflare 로그인 거부 이유를 설정 마법사와 로그인 탭에 계속 표시해요
+          - NetBird 종속성을 설명하고 복구 작업에서 서버 설정을 열 수 있어요
         es: |-
-          0.1.0-0113
+          0.1.0-0114
 
-          - Alinear el consentimiento de Cloudflare, los conflictos de nombre y los errores con los campos y las acciones
-          - Mostrar en gris las conexiones desactivadas voluntariamente, sin marcarlas como fallos
+          - Mantener visible el motivo del rechazo de inicio de sesión de Cloudflare en el asistente y la pestaña
+          - Explicar la dependencia de NetBird y abrir la configuración del servidor desde la acción de recuperación
         it: |-
-          0.1.0-0113
+          0.1.0-0114
 
-          - Allineare il consenso Cloudflare, i conflitti di nome e gli errori ai campi e alle azioni del modulo
-          - Mostrare in grigio le connessioni disattivate volontariamente, senza segnalarle come errori
+          - Mantenere visibile il motivo del rifiuto di accesso a Cloudflare nella procedura guidata e nella scheda
+          - Spiegare la dipendenza NetBird e aprire le impostazioni del server dall’azione di ripristino
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-own-domain-0113-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-free-link-0113-en.png
@@ -392,14 +392,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-wizard-0111-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0113
+        version: 0.1.0-0114
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 17f6b5ab11a2b87b39bd43174de58405f94cb2a3254e207cf18d3e196fe71217
-        md5: f3fa1041590acec3c86f075b855c4f7c
+        sha256: b86b64041e88ff120343283ebdf4cba7def25084f67ba78a1fda455560f5f5c6
+        md5: 5e0d49cc3f84665b5564e8b220f821f7
         size: 14284800
         facts:
           built_with: sdk
@@ -417,19 +417,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T05:13:58Z
-          source_ref: e06a9ba01ec6a1636b3f5ae9e24dcb4884e4d87d
+          reviewed_at: 2026-11-03T07:27:11Z
+          source_ref: 62f25d839968dd36c328aa336a79b61fe4267448
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0113
+        version: 0.1.0-0114
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 6d9747b483dd00e91b08a8900175e1161b6103810c67f5ef395d3a6e50a6a338
-        md5: d18de564ebd93e3d5d63488e43b9dc14
-        size: 14868480
+        sha256: f3f32c9d5f84c90c0524d3cc42ff080d6ab9d6c78565dcf9197fba4acd799a3b
+        md5: a93120a324c7176d90af62a6c673dfc1
+        size: 14878720
         facts:
           built_with: sdk
           sdk_backend: go
@@ -446,11 +446,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T05:14:18Z
-          source_ref: e06a9ba01ec6a1636b3f5ae9e24dcb4884e4d87d
+          reviewed_at: 2026-11-03T07:27:14Z
+          source_ref: 62f25d839968dd36c328aa336a79b61fe4267448
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0113
+        version: 0.1.0-0114
         arch:
           - apollolake
           - avoton
@@ -479,8 +479,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 495da15c0e6d6992687e99d181574f1159ec5110a3a81535a14c547030667350
-        md5: 5ef572bdb1f108b3947148f6039b6cb7
+        sha256: 5d0612d6ad10983ac17b9260387e49167b4c3b59a4172f7be8ec04d5dab949d9
+        md5: 095cf2b6982e15b6928380a5dd78901b
         size: 15677440
         facts:
           built_with: sdk
@@ -498,10 +498,9 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T05:14:42Z
-          source_ref: e06a9ba01ec6a1636b3f5ae9e24dcb4884e4d87d
+          reviewed_at: 2026-11-03T07:27:16Z
+          source_ref: 62f25d839968dd36c328aa336a79b61fe4267448
           source_repo: synopackageland/syno-pkg-connect
-
   - category: utilities
     order: 30
     publisher: synopackageland
