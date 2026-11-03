@@ -186,7 +186,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0114
+      release: v0.1.0-0120
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -341,50 +341,50 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0114
+          0.1.0-0120
 
-          - Keep Cloudflare sign-in refusals visible in both the setup wizard and sign-in tab
-          - Explain the NetBird dependency and open its server settings from the recovery action
+          - Recover self-hosted NetBird after tunnel reconnection, missing Signal Worker or interrupted setup
+          - Show exact cloud object guides, Retry and safe alternative names; preserve ownership and distinguish Workers authorization
         zh-TW: |-
-          0.1.0-0114
+          0.1.0-0120
 
-          - Cloudflare 登入遭拒時，設定精靈與登入分頁都會保留原因
-          - 說明 NetBird 相依限制，並可透過復原操作前往伺服器設定
+          - 修復 tunnel 重新連線、Signal Worker 遺失或設定中斷後的自架 NetBird
+          - 顯示精確物件指引、重試與安全替代名稱，保留所有權並區分 Workers 授權
         zh-CN: |-
-          0.1.0-0114
+          0.1.0-0120
 
-          - Cloudflare 登录被拒绝时，设置向导与登录标签页都会保留原因
-          - 说明 NetBird 依赖限制，并可通过恢复操作前往服务器设置
+          - 修复 tunnel 重新连接、Signal Worker 缺失或设置中断后的自建 NetBird
+          - 显示精确对象指引、重试与安全替代名称，保留所有权并区分 Workers 授权
         de: |-
-          0.1.0-0114
+          0.1.0-0120
 
-          - Cloudflare-Anmeldefehler im Einrichtungsassistenten und im Anmeldetab sichtbar lassen
-          - Die NetBird-Abhängigkeit erklären und über die Wiederherstellungsaktion die Servereinstellungen öffnen
+          - Selbst gehostetes NetBird nach Tunnel-Neuverbindung, fehlendem Signal Worker oder unterbrochener Einrichtung wiederherstellen
+          - Objektgenaue Anleitung, Wiederholen und sichere Alternativnamen; Besitz erhalten und Workers-Autorisierung unterscheiden
         fr: |-
-          0.1.0-0114
+          0.1.0-0120
 
-          - Conserver le motif du refus de connexion Cloudflare dans l’assistant et l’onglet de connexion
-          - Expliquer la dépendance NetBird et ouvrir les réglages du serveur depuis l’action de récupération
+          - Rétablir NetBird auto-hébergé après reconnexion du tunnel, absence du Signal Worker ou configuration interrompue
+          - Afficher un guide précis, Réessayer et des noms alternatifs sûrs; conserver la propriété et distinguer l’autorisation Workers
         ja: |-
-          0.1.0-0114
+          0.1.0-0120
 
-          - Cloudflare ログインが拒否された理由を設定ウィザードとログインタブの両方に表示
-          - NetBird の依存関係を説明し、復旧操作からサーバー設定を開けるようにする
+          - トンネル再接続、Signal Worker の欠落、設定中断後のセルフホスト NetBird を復旧
+          - 正確なオブジェクトの案内、再試行、安全な代替名を表示し、所有権と Workers 認可を区別
         ko: |-
-          0.1.0-0114
+          0.1.0-0120
 
-          - Cloudflare 로그인 거부 이유를 설정 마법사와 로그인 탭에 계속 표시해요
-          - NetBird 종속성을 설명하고 복구 작업에서 서버 설정을 열 수 있어요
+          - 터널 재연결, Signal Worker 누락 또는 설정 중단 후 자체 호스팅 NetBird 복구
+          - 정확한 개체 안내, 재시도와 안전한 대체 이름을 표시하고 소유권과 Workers 인증 구분
         es: |-
-          0.1.0-0114
+          0.1.0-0120
 
-          - Mantener visible el motivo del rechazo de inicio de sesión de Cloudflare en el asistente y la pestaña
-          - Explicar la dependencia de NetBird y abrir la configuración del servidor desde la acción de recuperación
+          - Recuperar NetBird autohospedado tras reconexión del túnel, ausencia del Signal Worker o configuración interrumpida
+          - Mostrar guías precisas, Reintentar y nombres alternativos seguros; conservar la propiedad y distinguir la autorización Workers
         it: |-
-          0.1.0-0114
+          0.1.0-0120
 
-          - Mantenere visibile il motivo del rifiuto di accesso a Cloudflare nella procedura guidata e nella scheda
-          - Spiegare la dipendenza NetBird e aprire le impostazioni del server dall’azione di ripristino
+          - Ripristinare NetBird self-hosted dopo riconnessione del tunnel, Signal Worker mancante o configurazione interrotta
+          - Mostrare guide precise, Riprova e nomi alternativi sicuri; conservare la proprietà e distinguere l’autorizzazione Workers
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-own-domain-0113-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-free-link-0113-en.png
@@ -392,15 +392,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-wizard-0111-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0114
+        version: 0.1.0-0120
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: b86b64041e88ff120343283ebdf4cba7def25084f67ba78a1fda455560f5f5c6
-        md5: 5e0d49cc3f84665b5564e8b220f821f7
-        size: 14284800
+        sha256: a64912222e3c1272c7872ada0202a1df3cafa5da0460a0698199bf574c089903
+        md5: eb889caa4c4d199be2978ba45c627b0b
+        size: 14755840
         facts:
           built_with: sdk
           sdk_backend: go
@@ -417,19 +417,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T07:27:11Z
-          source_ref: 62f25d839968dd36c328aa336a79b61fe4267448
+          reviewed_at: 2026-11-03T11:34:52Z
+          source_ref: e91f0cdbe260138d8055969b5af63cbbaab351a0
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0114
+        version: 0.1.0-0120
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: f3f32c9d5f84c90c0524d3cc42ff080d6ab9d6c78565dcf9197fba4acd799a3b
-        md5: a93120a324c7176d90af62a6c673dfc1
-        size: 14878720
+        sha256: 788d6c42fd2f979e31d7cc8e2293b75345aed51815380b275d7c8e05cddb9e10
+        md5: 05c84b443bbd4ec51c5fc484b7e82e5a
+        size: 15349760
         facts:
           built_with: sdk
           sdk_backend: go
@@ -446,11 +446,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T07:27:14Z
-          source_ref: 62f25d839968dd36c328aa336a79b61fe4267448
+          reviewed_at: 2026-11-03T11:34:53Z
+          source_ref: e91f0cdbe260138d8055969b5af63cbbaab351a0
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0114
+        version: 0.1.0-0120
         arch:
           - apollolake
           - avoton
@@ -479,9 +479,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 5d0612d6ad10983ac17b9260387e49167b4c3b59a4172f7be8ec04d5dab949d9
-        md5: 095cf2b6982e15b6928380a5dd78901b
-        size: 15677440
+        sha256: b9f546341823d8c5509e61c57acfc41262bbbfec149aa954d94fe74e1ff66d0f
+        md5: 19a7ca7c7c156ebf43637af9ccb39fca
+        size: 16107520
         facts:
           built_with: sdk
           sdk_backend: go
@@ -498,8 +498,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T07:27:16Z
-          source_ref: 62f25d839968dd36c328aa336a79b61fe4267448
+          reviewed_at: 2026-11-03T11:34:53Z
+          source_ref: e91f0cdbe260138d8055969b5af63cbbaab351a0
           source_repo: synopackageland/syno-pkg-connect
   - category: utilities
     order: 30
