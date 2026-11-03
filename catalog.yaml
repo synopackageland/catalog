@@ -516,7 +516,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0076
+      release: v0.2.2-0079
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -586,32 +586,32 @@ packages:
         ja: HTTP/HTTPS リンク、Torrent、マグネット リンク、ED2K のファイルに加え、yt-dlp 対応サイトの動画や拡張機能で追加したソースからダウンロードできます。ダウンロードの一時停止・再開・整理、完了したファイルの保存先の選択、履歴の確認ができます。ダウンロードはユーザーごとに分かれ、アクセス、拡張機能、エンジンの更新は管理者が管理します。Gopeed を利用しています。DSM サインインが必要です
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
-        en: "Install wizard: port conflicts only warn; shared folder selection fixed"
-        zh-TW: 安裝精靈：連接埠衝突僅顯示警告；修正共享資料夾選取
-        zh-CN: 安装向导：端口冲突仅显示警告；修复共享文件夹选择
-        ja: インストールウィザード：ポートの競合は警告のみ表示し、共有フォルダーの選択を修正
-        ko: "설치 마법사: 포트 충돌은 경고만 표시하며 공유 폴더 선택 문제 수정"
-        de: "Installationsassistent: Portkonflikte zeigen nur eine Warnung an; Auswahl freigegebener Ordner korrigiert"
-        fr: "Assistant d’installation : les conflits de ports affichent un avertissement ; sélection du dossier partagé corrigée"
-        es: "Asistente de instalación: los conflictos de puertos solo muestran una advertencia; selección de carpetas compartidas corregida"
-        it: "Procedura guidata di installazione: i conflitti di porta mostrano solo un avviso; selezione delle cartelle condivise corretta"
+        en: "Image, PDF, page and text previews, the folder picker and Open in File Station work on DSM 7.x; EZTV search filters its results; Pause all also pauses downloads still saving; progress bars have a tinted track; a download cleared while it starts no longer blocks core updates; extension icons no longer show as blocked images"
+        zh-TW: "圖片、PDF、網頁與文字預覽、資料夾選擇器與「在 File Station 中開啟」可在 DSM 7.x 正常使用；EZTV 搜尋會篩選結果；「全部暫停」也會暫停仍在儲存的下載；進度條改用淡色軌道；開始時清除的下載不會再擋住核心更新；擴充套件圖示不再顯示為無法載入的圖片"
+        zh-CN: "图片、PDF、网页与文本预览、文件夹选择器与“在 File Station 中打开”可在 DSM 7.x 正常使用；EZTV 搜索会筛选结果；“全部暂停”也会暂停仍在保存的下载；进度条改用浅色轨道；开始时清除的下载不会再阻止核心更新；扩展图标不再显示为无法加载的图片"
+        ja: "画像・PDF・Web ページ・テキストのプレビュー、フォルダーの選択、「File Station で開く」が DSM 7.x で動作するようになりました。EZTV 検索で結果を絞り込み、「すべて一時停止」で保存中のダウンロードも一時停止し、進行状況バーのトラックに淡い色が付きました。開始中に消去したダウンロードがコアの更新を妨げなくなり、拡張機能のアイコンが読み込めない画像として表示されなくなりました"
+        ko: "이미지, PDF, 웹 페이지, 텍스트 미리 보기와 폴더 선택, File Station에서 열기가 DSM 7.x에서 작동하고, EZTV 검색이 결과를 필터링하며, 모두 일시 중지가 저장 중인 다운로드도 일시 중지하고, 진행률 표시줄에 옅은 색 트랙이 생겼으며, 시작 중에 지운 다운로드가 더 이상 코어 업데이트를 막지 않고, 확장 기능 아이콘이 불러올 수 없는 이미지로 보이지 않음"
+        de: "Bild-, PDF-, Seiten- und Textvorschau, die Ordnerauswahl und „In File Station öffnen“ funktionieren unter DSM 7.x; die EZTV-Suche filtert ihre Ergebnisse; „Alle pausieren“ pausiert auch Downloads, die noch gespeichert werden; Fortschrittsbalken haben eine getönte Spur; ein beim Start entfernter Download blockiert keine Core-Updates mehr; Erweiterungssymbole erscheinen nicht mehr als blockierte Bilder"
+        fr: "Les aperçus d’images, de PDF, de pages et de texte, le sélecteur de dossier et « Ouvrir dans File Station » fonctionnent sous DSM 7.x ; la recherche EZTV filtre ses résultats ; « Tout suspendre » suspend aussi les téléchargements encore en cours d’enregistrement ; les barres de progression ont une piste teintée ; un téléchargement effacé pendant son démarrage ne bloque plus les mises à jour du cœur ; les icônes d’extension ne s’affichent plus comme des images bloquées"
+        es: "Las vistas previas de imágenes, PDF, páginas y texto, el selector de carpetas y «Abrir en File Station» funcionan en DSM 7.x; la búsqueda de EZTV filtra sus resultados; «Pausar todo» también pausa las descargas que aún se están guardando; las barras de progreso tienen una pista tintada; una descarga borrada mientras se inicia ya no bloquea las actualizaciones del núcleo; los iconos de extensiones ya no aparecen como imágenes bloqueadas"
+        it: "Le anteprime di immagini, PDF, pagine e testo, il selettore di cartelle e «Apri in File Station» funzionano su DSM 7.x; la ricerca EZTV filtra i risultati; «Sospendi tutto» sospende anche i download ancora in salvataggio; le barre di avanzamento hanno una traccia colorata; un download cancellato mentre si avvia non blocca più gli aggiornamenti del core; le icone delle estensioni non appaiono più come immagini bloccate"
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0070-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0070-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0070-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0070-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0070-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0079-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0079-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0079-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0079-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0079-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0076
+        version: 0.2.2-0079
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 508fa9a2edc71a3ab19ced7b6cc534627b5afa4dd430a94ca74c4fda08e2d865
-        md5: 803fdbec46735b13941d93b9b946eee6
-        size: 66434048
+        sha256: 9c56ce63fe7765956fb112b4c9dd32b3630b7421274f8aa0e8aa1dd1ae087a40
+        md5: f33a609a30a0e9baf80f821a76dbf6c4
+        size: 67546112
         facts:
           built_with: sdk
           sdk_backend: go
@@ -629,11 +629,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T12:21:30Z
-          source_ref: 93e07e7fbd28a26cb0b49e914f4d02a9e77c7ace
+          reviewed_at: 2026-11-03T14:25:30Z
+          source_ref: fdb4bac02274927fddce428656831c44d3124217
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0076
+        version: 0.2.2-0079
         arch:
           - apollolake
           - avoton
@@ -662,9 +662,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: d8fba17498c8ae7a6a2362b8021d83cf7086b1a4a8b6a5635e12f61ca0f8512a
-        md5: 02085b2b190f6aecb1a4231692d3d1ca
-        size: 70054400
+        sha256: 67990872f31499b867b64cb4f844ecdfe735e555538ff6e5a59b888eb7feeea4
+        md5: a0cf3f76ea310fff779d6b439069a362
+        size: 71269376
         facts:
           built_with: sdk
           sdk_backend: go
@@ -682,8 +682,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T12:21:39Z
-          source_ref: 93e07e7fbd28a26cb0b49e914f4d02a9e77c7ace
+          reviewed_at: 2026-11-03T14:25:30Z
+          source_ref: fdb4bac02274927fddce428656831c44d3124217
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
