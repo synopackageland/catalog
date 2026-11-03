@@ -186,7 +186,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0114
+      release: v0.1.0-0115
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -341,50 +341,50 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0114
+          0.1.0-0115
 
-          - Keep Cloudflare sign-in refusals visible in both the setup wizard and sign-in tab
-          - Explain the NetBird dependency and open its server settings from the recovery action
+          - Keep provider identities when turned off, add Forget, and start retained-data reinstalls with all connections off
+          - Automatically recreate deleted Cloudflare tunnels and safely repair owned DNS records
         zh-TW: |-
-          0.1.0-0114
+          0.1.0-0115
 
-          - Cloudflare 登入遭拒時，設定精靈與登入分頁都會保留原因
-          - 說明 NetBird 相依限制，並可透過復原操作前往伺服器設定
+          - 關閉連線時保留 provider 身分，新增「忘記」，保留資料重裝後所有連線維持關閉
+          - 自動重建被刪除的 Cloudflare tunnel，安全修復自有 DNS 記錄
         zh-CN: |-
-          0.1.0-0114
+          0.1.0-0115
 
-          - Cloudflare 登录被拒绝时，设置向导与登录标签页都会保留原因
-          - 说明 NetBird 依赖限制，并可通过恢复操作前往服务器设置
+          - 关闭连接时保留 provider 身份，新增「忘记」，保留数据重装后所有连接保持关闭
+          - 自动重建被删除的 Cloudflare tunnel，安全修复自有 DNS 记录
         de: |-
-          0.1.0-0114
+          0.1.0-0115
 
-          - Cloudflare-Anmeldefehler im Einrichtungsassistenten und im Anmeldetab sichtbar lassen
-          - Die NetBird-Abhängigkeit erklären und über die Wiederherstellungsaktion die Servereinstellungen öffnen
+          - Anmeldedaten beim Ausschalten behalten, Vergessen hinzufügen und nach einer Neuinstallation mit behaltenen Daten alle Verbindungen ausgeschaltet lassen
+          - Gelöschte Cloudflare-Tunnel automatisch neu erstellen und eigene DNS-Einträge sicher reparieren
         fr: |-
-          0.1.0-0114
+          0.1.0-0115
 
-          - Conserver le motif du refus de connexion Cloudflare dans l’assistant et l’onglet de connexion
-          - Expliquer la dépendance NetBird et ouvrir les réglages du serveur depuis l’action de récupération
+          - Conserver les identités à la désactivation, ajouter Oublier et laisser toutes les connexions désactivées après une réinstallation conservant les données
+          - Recréer automatiquement les tunnels Cloudflare supprimés et réparer les enregistrements DNS associés en toute sécurité
         ja: |-
-          0.1.0-0114
+          0.1.0-0115
 
-          - Cloudflare ログインが拒否された理由を設定ウィザードとログインタブの両方に表示
-          - NetBird の依存関係を説明し、復旧操作からサーバー設定を開けるようにする
+          - 接続をオフにしても認証情報を保持し、「登録を解除」を追加。データを保持した再インストール後はすべての接続をオフに
+          - 削除された Cloudflare トンネルを自動的に再作成し、所有する DNS レコードを安全に修復
         ko: |-
-          0.1.0-0114
+          0.1.0-0115
 
-          - Cloudflare 로그인 거부 이유를 설정 마법사와 로그인 탭에 계속 표시해요
-          - NetBird 종속성을 설명하고 복구 작업에서 서버 설정을 열 수 있어요
+          - 연결을 꺼도 인증 정보를 유지하고 삭제 기능을 추가해요. 데이터를 유지한 재설치 후에는 모든 연결을 꺼요
+          - 삭제된 Cloudflare 터널을 자동으로 다시 만들고 소유한 DNS 레코드를 안전하게 복구해요
         es: |-
-          0.1.0-0114
+          0.1.0-0115
 
-          - Mantener visible el motivo del rechazo de inicio de sesión de Cloudflare en el asistente y la pestaña
-          - Explicar la dependencia de NetBird y abrir la configuración del servidor desde la acción de recuperación
+          - Conservar las identidades al desactivar, añadir Olvidar y dejar todas las conexiones desactivadas al reinstalar conservando los datos
+          - Recrear automáticamente los túneles Cloudflare eliminados y reparar de forma segura sus registros DNS
         it: |-
-          0.1.0-0114
+          0.1.0-0115
 
-          - Mantenere visibile il motivo del rifiuto di accesso a Cloudflare nella procedura guidata e nella scheda
-          - Spiegare la dipendenza NetBird e aprire le impostazioni del server dall’azione di ripristino
+          - Mantenere le identità alla disattivazione, aggiungere Dimentica e lasciare tutte le connessioni disattivate dopo una reinstallazione con dati conservati
+          - Ricreare automaticamente i tunnel Cloudflare eliminati e riparare in sicurezza i relativi record DNS
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-own-domain-0113-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-free-link-0113-en.png
@@ -392,15 +392,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-wizard-0111-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0114
+        version: 0.1.0-0115
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: b86b64041e88ff120343283ebdf4cba7def25084f67ba78a1fda455560f5f5c6
-        md5: 5e0d49cc3f84665b5564e8b220f821f7
-        size: 14284800
+        sha256: d8303bbb609838631e2d21d1badba5c9baa4e6965f87577ddb01df6b25de42c7
+        md5: 74245c2cbdd1d3fea2abe0ada56b7e68
+        size: 14745600
         facts:
           built_with: sdk
           sdk_backend: go
@@ -417,19 +417,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T07:27:11Z
-          source_ref: 62f25d839968dd36c328aa336a79b61fe4267448
+          reviewed_at: 2026-11-03T09:03:45Z
+          source_ref: 36553b204b2dcc8c1375a31dea92c9e78f75da7c
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0114
+        version: 0.1.0-0115
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: f3f32c9d5f84c90c0524d3cc42ff080d6ab9d6c78565dcf9197fba4acd799a3b
-        md5: a93120a324c7176d90af62a6c673dfc1
-        size: 14878720
+        sha256: c6de9e9927d6bb6b8edfc473ab77043d58f75bafcdbd2fdb33f1de0907bd8ad1
+        md5: b1ce1d2443631a9da6b07e152b363d47
+        size: 15329280
         facts:
           built_with: sdk
           sdk_backend: go
@@ -446,11 +446,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T07:27:14Z
-          source_ref: 62f25d839968dd36c328aa336a79b61fe4267448
+          reviewed_at: 2026-11-03T09:03:45Z
+          source_ref: 36553b204b2dcc8c1375a31dea92c9e78f75da7c
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0114
+        version: 0.1.0-0115
         arch:
           - apollolake
           - avoton
@@ -479,9 +479,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 5d0612d6ad10983ac17b9260387e49167b4c3b59a4172f7be8ec04d5dab949d9
-        md5: 095cf2b6982e15b6928380a5dd78901b
-        size: 15677440
+        sha256: 189a5ab23d7b878b23921a7a55501f9a2e3ff2d272a80cc3dc5cc1b1dbf508f5
+        md5: e75ae7e886f54f1a5184c1716fab9ba4
+        size: 16087040
         facts:
           built_with: sdk
           sdk_backend: go
@@ -498,8 +498,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T07:27:16Z
-          source_ref: 62f25d839968dd36c328aa336a79b61fe4267448
+          reviewed_at: 2026-11-03T09:03:45Z
+          source_ref: 36553b204b2dcc8c1375a31dea92c9e78f75da7c
           source_repo: synopackageland/syno-pkg-connect
   - category: utilities
     order: 30
