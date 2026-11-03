@@ -186,7 +186,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0121
+      release: v0.1.0-0123
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -341,59 +341,50 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0121
+          0.1.0-0123
 
-          - Recover self-hosted NetBird after tunnel reconnection, missing Signal Worker or interrupted setup
-          - Show exact cloud object guides, Retry and safe alternative names; preserve ownership and distinguish Workers authorization
-          - Name Workers authorization precisely while existing devices can remain online
+          - Fixes a false DSM certificate change error when re-enabling DSM path Apps
+          - Preserves the actual connection error and genuine certificate review with Retry
         zh-TW: |-
-          0.1.0-0121
+          0.1.0-0123
 
-          - 修復 tunnel 重新連線、Signal Worker 遺失或設定中斷後的自架 NetBird
-          - 顯示精確物件指引、重試與安全替代名稱，保留所有權並區分 Workers 授權
-          - 精確顯示 Workers 授權原因，避免將在線裝置誤報為中斷
+          - 修正重新啟用 DSM 路徑 App 時誤報憑證變更的問題
+          - 保留真正的連線錯誤與憑證變更核准及重試流程
         zh-CN: |-
-          0.1.0-0121
+          0.1.0-0123
 
-          - 修复 tunnel 重新连接、Signal Worker 缺失或设置中断后的自建 NetBird
-          - 显示精确对象指引、重试与安全替代名称，保留所有权并区分 Workers 授权
-          - 准确显示 Workers 授权原因，避免将在连接的设备误报为断开
+          - 修复重新启用 DSM 路径 App 时误报证书变更的问题
+          - 保留真实连接错误及证书变更确认与重试流程
         de: |-
-          0.1.0-0121
+          0.1.0-0123
 
-          - Selbst gehostetes NetBird nach Tunnel-Neuverbindung, fehlendem Signal Worker oder unterbrochener Einrichtung wiederherstellen
-          - Objektgenaue Anleitung, Wiederholen und sichere Alternativnamen; Besitz erhalten und Workers-Autorisierung unterscheiden
-          - Workers-Autorisierung präzise benennen, während Geräte verbunden bleiben können
+          - Behebt eine falsche DSM-Zertifikatswarnung beim erneuten Aktivieren von DSM-Pfad-Apps
+          - Zeigt die tatsächliche Verbindungsursache und behält Zertifikatsprüfung und Wiederholung bei
         fr: |-
-          0.1.0-0121
+          0.1.0-0123
 
-          - Rétablir NetBird auto-hébergé après reconnexion du tunnel, absence du Signal Worker ou configuration interrompue
-          - Afficher un guide précis, Réessayer et des noms alternatifs sûrs; conserver la propriété et distinguer l’autorisation Workers
-          - Nommer précisément l’autorisation Workers pendant que les appareils restent connectés
+          - Corrige une fausse alerte de changement de certificat lors de la réactivation des apps avec chemin DSM
+          - Conserve la cause réelle de connexion et la validation des certificats avec nouvelle tentative
         ja: |-
-          0.1.0-0121
+          0.1.0-0123
 
-          - トンネル再接続、Signal Worker の欠落、設定中断後のセルフホスト NetBird を復旧
-          - 正確なオブジェクトの案内、再試行、安全な代替名を表示し、所有権と Workers 認可を区別
-          - 接続中の端末を切断と誤表示せず Workers 認可の問題を正確に表示
+          - DSM パスの App を再開する際の誤った証明書変更エラーを修正
+          - 実際の接続エラーを保持し、証明書変更の承認と再試行に対応
         ko: |-
-          0.1.0-0121
+          0.1.0-0123
 
-          - 터널 재연결, Signal Worker 누락 또는 설정 중단 후 자체 호스팅 NetBird 복구
-          - 정확한 개체 안내, 재시도와 안전한 대체 이름을 표시하고 소유권과 Workers 인증 구분
-          - 온라인 장치를 연결 끊김으로 표시하지 않고 Workers 인증 원인을 정확히 표시
+          - DSM 경로 앱을 다시 켤 때 잘못 표시되던 인증서 변경 오류 수정
+          - 실제 연결 오류를 유지하고 인증서 변경 승인과 재시도 지원
         es: |-
-          0.1.0-0121
+          0.1.0-0123
 
-          - Recuperar NetBird autohospedado tras reconexión del túnel, ausencia del Signal Worker o configuración interrumpida
-          - Mostrar guías precisas, Reintentar y nombres alternativos seguros; conservar la propiedad y distinguir la autorización Workers
-          - Indicar la autorización Workers con precisión mientras los dispositivos siguen conectados
+          - Corrige una alerta falsa de cambio de certificado al reactivar apps con ruta DSM
+          - Conserva la causa real de conexión y la revisión de certificados con reintento
         it: |-
-          0.1.0-0121
+          0.1.0-0123
 
-          - Ripristinare NetBird self-hosted dopo riconnessione del tunnel, Signal Worker mancante o configurazione interrotta
-          - Mostrare guide precise, Riprova e nomi alternativi sicuri; conservare la proprietà e distinguere l’autorizzazione Workers
-          - Indicare con precisione l’autorizzazione Workers mentre i dispositivi restano connessi
+          - Corregge un falso avviso di cambio certificato alla riattivazione delle app con percorso DSM
+          - Mantiene la causa reale di connessione e la verifica dei certificati con nuovo tentativo
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-own-domain-0113-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-free-link-0113-en.png
@@ -401,15 +392,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-wizard-0111-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0121
+        version: 0.1.0-0123
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: ef765fb2f86bb1b2269c606b046e3c1f9a9cfdcd08947f7bf41be97b36230c18
-        md5: 525535cca8b276694b02bb73883b1f3f
-        size: 14755840
+        sha256: 03c2f1a13da559bce809c7fee52594467a9b04a4e074e2675aa94741a2efa6a1
+        md5: 5c2bcc2db6825f935d092beb20dbe9a4
+        size: 14796800
         facts:
           built_with: sdk
           sdk_backend: go
@@ -426,19 +417,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T12:07:42Z
-          source_ref: 24c969196bb937c14f32b6e7090b07cab7088794
+          reviewed_at: 2026-11-03T16:07:57Z
+          source_ref: bdef8e81add9cab949e225daacfd8608b02ff9d8
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0121
+        version: 0.1.0-0123
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: b4c2a74d75d9821146fc04d327b40f96304a635fc852fd43dbbcf916d9129057
-        md5: 1b385c7f1bd8e07321c51c0ae2cdbec7
-        size: 15349760
+        sha256: a8ddc77b8b504d8de2b740ff35e664eba56f3577e93b2dace5ed92bce6558af1
+        md5: 5f9254e827cb581adf0192d3c8bb559f
+        size: 15380480
         facts:
           built_with: sdk
           sdk_backend: go
@@ -455,11 +446,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T12:07:42Z
-          source_ref: 24c969196bb937c14f32b6e7090b07cab7088794
+          reviewed_at: 2026-11-03T16:07:57Z
+          source_ref: bdef8e81add9cab949e225daacfd8608b02ff9d8
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0121
+        version: 0.1.0-0123
         arch:
           - apollolake
           - avoton
@@ -488,9 +479,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 89a2734324b688dda317bab2f3aa61ea514e88161ed9cb5352b6879b788adfc2
-        md5: d58eeabc1ef543b0b02965be8f6a3273
-        size: 16107520
+        sha256: 5cbf8f548829437c4d4ff08040afecfb3f5cb1cc4ba9708a3bcb57d5bfa95eec
+        md5: 186c3f18b09a28e0f53fd74da149f1c7
+        size: 16148480
         facts:
           built_with: sdk
           sdk_backend: go
@@ -507,8 +498,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T12:07:43Z
-          source_ref: 24c969196bb937c14f32b6e7090b07cab7088794
+          reviewed_at: 2026-11-03T16:07:57Z
+          source_ref: bdef8e81add9cab949e225daacfd8608b02ff9d8
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
