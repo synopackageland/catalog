@@ -1,0 +1,27 @@
+schema: 1
+package: C351288041XUptimeKuma
+version: 2.5.8-0001
+displayname: TOTODOIT Uptime Kuma
+description: Monitor website and service uptime and get alerts when they go down
+os_min_ver: 7.2.1-69057
+category: utilities
+icon: synology/assets/icon.png
+metadata:
+  maintainer: Louis Lam
+  maintainer_url: https://github.com/louislam/uptime-kuma
+  distributor: totodoit-app
+  distributor_url: https://github.com/totodoit-app
+  source_url: https://github.com/totodoit-app/uptime-kuma/tree/v2.5.8-0001
+  issues_url: https://github.com/totodoit-app/uptime-kuma/issues
+  license: MIT
+  upstream: {name: Uptime Kuma, url: https://github.com/louislam/uptime-kuma, license: MIT}
+  screenshots:
+    - https://uptime.kuma.pet/img/light.jpg
+source:
+  repo: totodoit-app/uptime-kuma
+  release: v2.5.8-0001
+assets:
+  - name: C351288041XUptimeKuma-2.5.8-0001-x86_64.spk
+    arch: [apollolake, avoton, braswell, broadwell, broadwellnk, broadwellnkv2, broadwellntb, broadwellntbap, bromolow, cedarview, coffeelake, denverton, epyc7002, epyc7003, epyc7003ntb, geminilake, geminilakenk, grantley, icelaked, kvmcloud, kvmx64, purley, r1000, r1000nk, skylaked, v1000, v1000nk]
+    sha256: ceac3db13f11fb9030f7284d43c153e4627ad78b3330c57412d2cd45badcf517
+    size: 26680320
