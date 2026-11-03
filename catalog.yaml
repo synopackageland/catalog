@@ -814,7 +814,7 @@ packages:
           reviewed_at: 2026-11-03T11:19:58Z
           source_ref: e8644698dc7d4a2d027b7a844a8ab99aac916569
           source_repo: synopackageland/syno-pkg-land-openlist
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: utilities
@@ -929,7 +929,7 @@ packages:
           reviewed_at: 2026-11-03T11:19:58Z
           source_ref: 800350d600f6d5be9c4e4f1a359ee36941745ac5
           source_repo: synopackageland/syno-pkg-land-uptime-kuma
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: utilities
@@ -1031,7 +1031,7 @@ packages:
           reviewed_at: 2026-11-03T11:19:58Z
           source_ref: a13e438713544b6517617936dd3b5185723557c4
           source_repo: synopackageland/syno-pkg-land-freshrss
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: multimedia
@@ -1607,7 +1607,7 @@ packages:
           reviewed_at: 2026-11-03T11:19:58Z
           source_ref: 8c55cb4eb920f66d3be1ff5f102886763368251f
           source_repo: synopackageland/syno-pkg-land-vaultwarden
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: multimedia
