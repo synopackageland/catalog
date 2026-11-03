@@ -186,7 +186,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0122
+      release: v0.1.0-0123
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -341,59 +341,50 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0122
+          0.1.0-0123
 
-          - Supports DSM path Apps and follows verified package entry changes while retaining the hostname
-          - Shows old/new entries and protection for approval when needed
-          - Preserves DSM sign-in and App privileges while restricting each hostname to the selected App
+          - Fixes a false DSM certificate change error when re-enabling DSM path Apps
+          - Preserves the actual connection error and genuine certificate review with Retry
         zh-TW: |-
-          0.1.0-0122
+          0.1.0-0123
 
-          - 支援 DSM 路徑 App，在已核准的保護範圍內跟隨入口並保留主機名稱
-          - 需要確認時顯示原入口、新入口與保護範圍
-          - 保留 DSM 登入與 App 權限，每個網址只代理所選 App
+          - 修正重新啟用 DSM 路徑 App 時誤報憑證變更的問題
+          - 保留真正的連線錯誤與憑證變更核准及重試流程
         zh-CN: |-
-          0.1.0-0122
+          0.1.0-0123
 
-          - 支持 DSM 路径 App，在已批准的保护范围内跟随入口并保留主机名
-          - 需要确认时显示原入口、新入口与保护范围
-          - 保留 DSM 登录与 App 权限，每个网址只代理所选 App
+          - 修复重新启用 DSM 路径 App 时误报证书变更的问题
+          - 保留真实连接错误及证书变更确认与重试流程
         de: |-
-          0.1.0-0122
+          0.1.0-0123
 
-          - Unterstützt DSM-Pfad-Apps und folgt bestätigten Zugangsänderungen bei gleichem Hostnamen
-          - Zeigt bisherige und neue Zugänge sowie den Schutz zur nötigen Bestätigung
-          - Behält DSM-Anmeldung und App-Rechte bei und beschränkt jeden Hostnamen auf die gewählte App
+          - Behebt eine falsche DSM-Zertifikatswarnung beim erneuten Aktivieren von DSM-Pfad-Apps
+          - Zeigt die tatsächliche Verbindungsursache und behält Zertifikatsprüfung und Wiederholung bei
         fr: |-
-          0.1.0-0122
+          0.1.0-0123
 
-          - Prend en charge les apps avec chemin DSM et suit les accès vérifiés en conservant le nom d’hôte
-          - Affiche les anciens et nouveaux accès et leur protection avant approbation
-          - Conserve la connexion DSM et les privilèges et limite chaque nom d’hôte à l’app choisie
+          - Corrige une fausse alerte de changement de certificat lors de la réactivation des apps avec chemin DSM
+          - Conserve la cause réelle de connexion et la validation des certificats avec nouvelle tentative
         ja: |-
-          0.1.0-0122
+          0.1.0-0123
 
-          - DSM パスの App に対応し、承認済みの保護範囲で入口を追従してホスト名を保持
-          - 確認が必要な場合は以前と現在の入口と保護範囲を表示
-          - DSM サインインと App 権限を維持し、選択した App のみをプロキシ
+          - DSM パスの App を再開する際の誤った証明書変更エラーを修正
+          - 実際の接続エラーを保持し、証明書変更の承認と再試行に対応
         ko: |-
-          0.1.0-0122
+          0.1.0-0123
 
-          - DSM 경로 앱을 지원하며 승인된 보호 범위에서 진입점을 따라 호스트 이름 유지
-          - 필요할 때 이전 및 새 진입점과 보호 범위를 표시하고 승인 요청
-          - DSM 로그인과 앱 권한을 유지하며 선택한 앱만 프록시
+          - DSM 경로 앱을 다시 켤 때 잘못 표시되던 인증서 변경 오류 수정
+          - 실제 연결 오류를 유지하고 인증서 변경 승인과 재시도 지원
         es: |-
-          0.1.0-0122
+          0.1.0-0123
 
-          - Admite apps con ruta DSM y sigue cambios de entrada verificados conservando el nombre de host
-          - Muestra las entradas anterior y actual y su protección cuando se requiere aprobación
-          - Mantiene el inicio de sesión DSM y los privilegios y limita cada host a la app elegida
+          - Corrige una alerta falsa de cambio de certificado al reactivar apps con ruta DSM
+          - Conserva la causa real de conexión y la revisión de certificados con reintento
         it: |-
-          0.1.0-0122
+          0.1.0-0123
 
-          - Supporta le app con percorso DSM e segue le modifiche verificate mantenendo il nome host
-          - Mostra gli accessi precedenti e attuali e la protezione quando serve approvazione
-          - Mantiene accesso DSM e privilegi e limita ogni host all’app scelta
+          - Corregge un falso avviso di cambio certificato alla riattivazione delle app con percorso DSM
+          - Mantiene la causa reale di connessione e la verifica dei certificati con nuovo tentativo
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-own-domain-0113-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-free-link-0113-en.png
@@ -401,14 +392,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-wizard-0111-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0122
+        version: 0.1.0-0123
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 11c90756df40c92122c9ab7e2cb4e745db36a1aecdad5e3af8f4955a917455e4
-        md5: 1d765c756798b05dc89bec952d3dec01
+        sha256: 03c2f1a13da559bce809c7fee52594467a9b04a4e074e2675aa94741a2efa6a1
+        md5: 5c2bcc2db6825f935d092beb20dbe9a4
         size: 14796800
         facts:
           built_with: sdk
@@ -426,18 +417,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T14:42:04Z
-          source_ref: 4db5c0d2f3f30d7d3d57ce960f6a9614aed24944
+          reviewed_at: 2026-11-03T16:07:57Z
+          source_ref: bdef8e81add9cab949e225daacfd8608b02ff9d8
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0122
+        version: 0.1.0-0123
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: b02a43895d87fdc48a21028065f3990fd6572eb697c11690a450736c59daa620
-        md5: 782bb08e9b265b92699e607c074e8a06
+        sha256: a8ddc77b8b504d8de2b740ff35e664eba56f3577e93b2dace5ed92bce6558af1
+        md5: 5f9254e827cb581adf0192d3c8bb559f
         size: 15380480
         facts:
           built_with: sdk
@@ -455,11 +446,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T14:42:04Z
-          source_ref: 4db5c0d2f3f30d7d3d57ce960f6a9614aed24944
+          reviewed_at: 2026-11-03T16:07:57Z
+          source_ref: bdef8e81add9cab949e225daacfd8608b02ff9d8
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0122
+        version: 0.1.0-0123
         arch:
           - apollolake
           - avoton
@@ -488,8 +479,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: a32b897bd54102a7807f2023a33e9d8ee7c1434b46abb6ac96099c4110be576e
-        md5: 1ab4ed16f205369412c0b2f78f10ae7b
+        sha256: 5cbf8f548829437c4d4ff08040afecfb3f5cb1cc4ba9708a3bcb57d5bfa95eec
+        md5: 186c3f18b09a28e0f53fd74da149f1c7
         size: 16148480
         facts:
           built_with: sdk
@@ -507,8 +498,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T14:42:04Z
-          source_ref: 4db5c0d2f3f30d7d3d57ce960f6a9614aed24944
+          reviewed_at: 2026-11-03T16:07:57Z
+          source_ref: bdef8e81add9cab949e225daacfd8608b02ff9d8
           source_repo: synopackageland/syno-pkg-connect
   - category: utilities
     order: 30
