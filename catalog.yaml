@@ -186,7 +186,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0121
+      release: v0.1.0-0122
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -341,59 +341,59 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0121
+          0.1.0-0122
 
-          - Recover self-hosted NetBird after tunnel reconnection, missing Signal Worker or interrupted setup
-          - Show exact cloud object guides, Retry and safe alternative names; preserve ownership and distinguish Workers authorization
-          - Name Workers authorization precisely while existing devices can remain online
+          - Supports DSM path Apps and follows verified package entry changes while retaining the hostname
+          - Shows old/new entries and protection for approval when needed
+          - Preserves DSM sign-in and App privileges while restricting each hostname to the selected App
         zh-TW: |-
-          0.1.0-0121
+          0.1.0-0122
 
-          - 修復 tunnel 重新連線、Signal Worker 遺失或設定中斷後的自架 NetBird
-          - 顯示精確物件指引、重試與安全替代名稱，保留所有權並區分 Workers 授權
-          - 精確顯示 Workers 授權原因，避免將在線裝置誤報為中斷
+          - 支援 DSM 路徑 App，在已核准的保護範圍內跟隨入口並保留主機名稱
+          - 需要確認時顯示原入口、新入口與保護範圍
+          - 保留 DSM 登入與 App 權限，每個網址只代理所選 App
         zh-CN: |-
-          0.1.0-0121
+          0.1.0-0122
 
-          - 修复 tunnel 重新连接、Signal Worker 缺失或设置中断后的自建 NetBird
-          - 显示精确对象指引、重试与安全替代名称，保留所有权并区分 Workers 授权
-          - 准确显示 Workers 授权原因，避免将在连接的设备误报为断开
+          - 支持 DSM 路径 App，在已批准的保护范围内跟随入口并保留主机名
+          - 需要确认时显示原入口、新入口与保护范围
+          - 保留 DSM 登录与 App 权限，每个网址只代理所选 App
         de: |-
-          0.1.0-0121
+          0.1.0-0122
 
-          - Selbst gehostetes NetBird nach Tunnel-Neuverbindung, fehlendem Signal Worker oder unterbrochener Einrichtung wiederherstellen
-          - Objektgenaue Anleitung, Wiederholen und sichere Alternativnamen; Besitz erhalten und Workers-Autorisierung unterscheiden
-          - Workers-Autorisierung präzise benennen, während Geräte verbunden bleiben können
+          - Unterstützt DSM-Pfad-Apps und folgt bestätigten Zugangsänderungen bei gleichem Hostnamen
+          - Zeigt bisherige und neue Zugänge sowie den Schutz zur nötigen Bestätigung
+          - Behält DSM-Anmeldung und App-Rechte bei und beschränkt jeden Hostnamen auf die gewählte App
         fr: |-
-          0.1.0-0121
+          0.1.0-0122
 
-          - Rétablir NetBird auto-hébergé après reconnexion du tunnel, absence du Signal Worker ou configuration interrompue
-          - Afficher un guide précis, Réessayer et des noms alternatifs sûrs; conserver la propriété et distinguer l’autorisation Workers
-          - Nommer précisément l’autorisation Workers pendant que les appareils restent connectés
+          - Prend en charge les apps avec chemin DSM et suit les accès vérifiés en conservant le nom d’hôte
+          - Affiche les anciens et nouveaux accès et leur protection avant approbation
+          - Conserve la connexion DSM et les privilèges et limite chaque nom d’hôte à l’app choisie
         ja: |-
-          0.1.0-0121
+          0.1.0-0122
 
-          - トンネル再接続、Signal Worker の欠落、設定中断後のセルフホスト NetBird を復旧
-          - 正確なオブジェクトの案内、再試行、安全な代替名を表示し、所有権と Workers 認可を区別
-          - 接続中の端末を切断と誤表示せず Workers 認可の問題を正確に表示
+          - DSM パスの App に対応し、承認済みの保護範囲で入口を追従してホスト名を保持
+          - 確認が必要な場合は以前と現在の入口と保護範囲を表示
+          - DSM サインインと App 権限を維持し、選択した App のみをプロキシ
         ko: |-
-          0.1.0-0121
+          0.1.0-0122
 
-          - 터널 재연결, Signal Worker 누락 또는 설정 중단 후 자체 호스팅 NetBird 복구
-          - 정확한 개체 안내, 재시도와 안전한 대체 이름을 표시하고 소유권과 Workers 인증 구분
-          - 온라인 장치를 연결 끊김으로 표시하지 않고 Workers 인증 원인을 정확히 표시
+          - DSM 경로 앱을 지원하며 승인된 보호 범위에서 진입점을 따라 호스트 이름 유지
+          - 필요할 때 이전 및 새 진입점과 보호 범위를 표시하고 승인 요청
+          - DSM 로그인과 앱 권한을 유지하며 선택한 앱만 프록시
         es: |-
-          0.1.0-0121
+          0.1.0-0122
 
-          - Recuperar NetBird autohospedado tras reconexión del túnel, ausencia del Signal Worker o configuración interrumpida
-          - Mostrar guías precisas, Reintentar y nombres alternativos seguros; conservar la propiedad y distinguir la autorización Workers
-          - Indicar la autorización Workers con precisión mientras los dispositivos siguen conectados
+          - Admite apps con ruta DSM y sigue cambios de entrada verificados conservando el nombre de host
+          - Muestra las entradas anterior y actual y su protección cuando se requiere aprobación
+          - Mantiene el inicio de sesión DSM y los privilegios y limita cada host a la app elegida
         it: |-
-          0.1.0-0121
+          0.1.0-0122
 
-          - Ripristinare NetBird self-hosted dopo riconnessione del tunnel, Signal Worker mancante o configurazione interrotta
-          - Mostrare guide precise, Riprova e nomi alternativi sicuri; conservare la proprietà e distinguere l’autorizzazione Workers
-          - Indicare con precisione l’autorizzazione Workers mentre i dispositivi restano connessi
+          - Supporta le app con percorso DSM e segue le modifiche verificate mantenendo il nome host
+          - Mostra gli accessi precedenti e attuali e la protezione quando serve approvazione
+          - Mantiene accesso DSM e privilegi e limita ogni host all’app scelta
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-own-domain-0113-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-free-link-0113-en.png
@@ -401,15 +401,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-wizard-0111-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0121
+        version: 0.1.0-0122
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: ef765fb2f86bb1b2269c606b046e3c1f9a9cfdcd08947f7bf41be97b36230c18
-        md5: 525535cca8b276694b02bb73883b1f3f
-        size: 14755840
+        sha256: 11c90756df40c92122c9ab7e2cb4e745db36a1aecdad5e3af8f4955a917455e4
+        md5: 1d765c756798b05dc89bec952d3dec01
+        size: 14796800
         facts:
           built_with: sdk
           sdk_backend: go
@@ -426,19 +426,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T12:07:42Z
-          source_ref: 24c969196bb937c14f32b6e7090b07cab7088794
+          reviewed_at: 2026-11-03T14:42:04Z
+          source_ref: 4db5c0d2f3f30d7d3d57ce960f6a9614aed24944
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0121
+        version: 0.1.0-0122
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: b4c2a74d75d9821146fc04d327b40f96304a635fc852fd43dbbcf916d9129057
-        md5: 1b385c7f1bd8e07321c51c0ae2cdbec7
-        size: 15349760
+        sha256: b02a43895d87fdc48a21028065f3990fd6572eb697c11690a450736c59daa620
+        md5: 782bb08e9b265b92699e607c074e8a06
+        size: 15380480
         facts:
           built_with: sdk
           sdk_backend: go
@@ -455,11 +455,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T12:07:42Z
-          source_ref: 24c969196bb937c14f32b6e7090b07cab7088794
+          reviewed_at: 2026-11-03T14:42:04Z
+          source_ref: 4db5c0d2f3f30d7d3d57ce960f6a9614aed24944
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0121
+        version: 0.1.0-0122
         arch:
           - apollolake
           - avoton
@@ -488,9 +488,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 89a2734324b688dda317bab2f3aa61ea514e88161ed9cb5352b6879b788adfc2
-        md5: d58eeabc1ef543b0b02965be8f6a3273
-        size: 16107520
+        sha256: a32b897bd54102a7807f2023a33e9d8ee7c1434b46abb6ac96099c4110be576e
+        md5: 1ab4ed16f205369412c0b2f78f10ae7b
+        size: 16148480
         facts:
           built_with: sdk
           sdk_backend: go
@@ -507,8 +507,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T12:07:43Z
-          source_ref: 24c969196bb937c14f32b6e7090b07cab7088794
+          reviewed_at: 2026-11-03T14:42:04Z
+          source_ref: 4db5c0d2f3f30d7d3d57ce960f6a9614aed24944
           source_repo: synopackageland/syno-pkg-connect
   - category: utilities
     order: 30
