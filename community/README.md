@@ -13,7 +13,7 @@ Add `community/<lowercase GitHub login>/publisher.yaml` and one
 including numeric owner/maintainer IDs, source repo/tag and asset pins. The
 GitHub login, numeric publisher ID and public release repository owner must match.
 
-From this checkout with Node 24:
+From this checkout with the latest Node.js LTS:
 
 ```sh
 npm ci --ignore-scripts --registry=https://registry.npmjs.org
@@ -26,14 +26,33 @@ IDs, SHA-256/size, SPK INFO and claims. It needs no credentials; anonymous GitHu
 rate limits may require a later retry. No SPK code is executed.
 
 Open a PR against `synopackageland/catalog:main`. Wait for **Community schema,
-ownership and SPK integrity** and maintainer review and merge. A first-time
-fork workflow may need maintainer approval to start. If no check appears, ask
+ownership and SPK integrity** and maintainer review. If no check appears, ask
 the maintainer to confirm repository Actions are enabled; absence is not a pass.
-Checks do not authorize
-publisher registration or updates and do not publish automatically.
 
 These packages receive no Package Center basic security check. After merge,
-they are listed on the website only and linked to the author's Release.
+they appear in the [app community list](https://synopkgland.com/apps/?list=community)
+and link directly to the publisher's Release. The site's top-nav Community link
+opens the forum instead.
 
-The complete build-to-PR walkthrough and Package Center path are at
-https://synopkgland.com/docs/guides/list-your-app/
+## Listing and moderation rules
+
+- Listing is never automatic: passing CI does not list an app. A maintainer must
+  merge the PR; every later update also needs a PR and maintainer merge.
+- First-time contributors' CI waits for maintainer approval to start.
+- SPKs must be publicly downloadable. Community submissions require a public
+  GitHub Release repository owned by the publisher; source code may live
+  elsewhere, including privately. Package Center submissions require a public
+  Release or public HTTPS SPK, plus source access for maintainer review.
+- A maintainer can remove an entry through a PR deleting
+  `community/<publisher>/<package ID>.yaml`, or block it in `moderation.yaml`
+  using `blocked_publishers`, `blocked_packages` or `blocked_sha256`. Blocked
+  publishers/packages stay hidden even if re-added; blocked SPK hashes stay
+  excluded from downloads (an entry with no remaining assets is hidden).
+- Merged listing, update, removal and moderation changes normally take effect
+  within about five minutes.
+- To move from the app community list to Package Center, open an issue. After
+  maintainer review and a basic security check report, the maintainer adds the
+  package to `catalog.yaml` with artifact pins. Every new release is rechecked.
+
+The complete build-to-PR walkthrough and Package Center requirements are in the
+[submission guide](https://synopkgland.com/docs/guides/list-your-app/).
