@@ -510,7 +510,8 @@ packages:
           reviewed_at: 2026-11-03T12:07:43Z
           source_ref: 24c969196bb937c14f32b6e7090b07cab7088794
           source_repo: synopackageland/syno-pkg-connect
-  - category: utilities
+  - recommended: true
+    category: utilities
     order: 30
     publisher: synopackageland
     source:
