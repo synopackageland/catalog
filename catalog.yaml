@@ -191,7 +191,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0125
+      release: v0.1.0-0126
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -346,58 +346,58 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0125
+          0.1.0-0126
 
-          - SDK 0.50.3 keeps AI/ctl response content intact; UI 0.20.1 provides compact full-width notices
+          - App URLs: drag column edges to resize; the address is the widest column and widths are kept after a reload
         zh-TW: |-
-          0.1.0-0125
+          0.1.0-0126
 
-          - SDK 0.50.3 保留 AI／ctl 回應內容，UI 0.20.1 提供精簡且填滿容器寬度的提示
+          - App 網址：可拖拉欄寬，網址欄最寬，重新整理後保留欄寬
         zh-CN: |-
-          0.1.0-0125
+          0.1.0-0126
 
-          - SDK 0.50.3 保留 AI／ctl 响应内容，UI 0.20.1 提供精简且填满容器宽度的提示
+          - App 网址：可拖动调整列宽，网址列最宽，刷新后保留列宽
         de: |-
-          0.1.0-0125
+          0.1.0-0126
 
-          - SDK 0.50.3 erhält vollständige AI/ctl-Antworten; UI 0.20.1 bietet kompakte Hinweise über die gesamte Breite
+          - App-URLs: Spaltenbreiten per Ziehen anpassen; die Adresse ist am breitesten, Breiten bleiben nach dem Neuladen erhalten
         fr: |-
-          0.1.0-0125
+          0.1.0-0126
 
-          - Le SDK 0.50.3 conserve le contenu des réponses AI/ctl ; UI 0.20.1 affiche des avis compacts sur toute la largeur
+          - URL des apps : redimensionnez les colonnes en les faisant glisser ; l’adresse est la plus large et les largeurs restent après un rechargement
         ja: |-
-          0.1.0-0125
+          0.1.0-0126
 
-          - SDK 0.50.3 で AI／ctl の応答内容を保持し、UI 0.20.1 でコンパクトな全幅の通知を表示
+          - App URL：列幅をドラッグで変更でき、アドレス列が最も広く、再読み込み後も列幅を保持
         ko: |-
-          0.1.0-0125
+          0.1.0-0126
 
-          - SDK 0.50.3은 AI/ctl 응답 내용을 유지하고 UI 0.20.1은 간결한 전체 너비 알림을 제공
+          - App URL: 열 너비를 끌어서 조절하며, 주소 열이 가장 넓고 새로 고침 후에도 너비 유지
         es: |-
-          0.1.0-0125
+          0.1.0-0126
 
-          - El SDK 0.50.3 conserva el contenido de las respuestas AI/ctl; UI 0.20.1 ofrece avisos compactos de ancho completo
+          - URL de apps: arrastre los bordes para cambiar el ancho de columna; la dirección es la más ancha y los anchos se mantienen al recargar
         it: |-
-          0.1.0-0125
+          0.1.0-0126
 
-          - SDK 0.50.3 mantiene il contenuto delle risposte AI/ctl; UI 0.20.1 offre avvisi compatti a larghezza intera
+          - URL delle app: trascina i bordi per ridimensionare le colonne; l’indirizzo è la più larga e le larghezze restano dopo il ricaricamento
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0125-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-app-urls-0125-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-0125-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-0125-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0125-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0126-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-app-urls-0126-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-0126-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-0126-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0126-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0125
+        version: 0.1.0-0126
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 15b43c51c5231873bf1573d3204a99f3abf7e44941153f84f01af1f93d72da2d
-        md5: fc3f8ab0613bee8a5a4efb279d623f9d
-        size: 14858240
+        sha256: e61677c367d0009ff86817496e3530af6a58a35e3c236e925816cb9fd1f3db73
+        md5: db36a94eb37d5d4f7bc6fee59257c8ed
+        size: 14868480
         facts:
           built_with: sdk
           sdk_backend: go
@@ -414,19 +414,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T05:37:27Z
-          source_ref: 3fdee9270669e6e5621faf673f5b0a9e0a0818c6
+          reviewed_at: 2026-11-04T06:54:39Z
+          source_ref: 9df7fb112c4441ed4e0e6f52d4130f3dadbb5b2f
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0125
+        version: 0.1.0-0126
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 1153ed14eac15edd319054fb1e8c153da2d4e942006cbed986ad869c3db3a507
-        md5: bf1b0dd1873d37c5c5c70263c85a63a4
-        size: 15441920
+        sha256: 5653a287d5e29f74ab77f2e9e953586dfeac5abe135adb5fcdbe8e8ccab7a226
+        md5: 0560ab8ad41d2195f0df10fae4495bcd
+        size: 15452160
         facts:
           built_with: sdk
           sdk_backend: go
@@ -443,11 +443,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T05:37:27Z
-          source_ref: 3fdee9270669e6e5621faf673f5b0a9e0a0818c6
+          reviewed_at: 2026-11-04T06:54:39Z
+          source_ref: 9df7fb112c4441ed4e0e6f52d4130f3dadbb5b2f
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0125
+        version: 0.1.0-0126
         arch:
           - apollolake
           - avoton
@@ -476,9 +476,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e552cf0b345c9ae35259912f3ef5dc2cf42662cd40739f5dda22bae04dcb5145
-        md5: b87588758e30070b219fa3e024b471fe
-        size: 16209920
+        sha256: 323a71db3281e30b9510861c7ef4198df7d6177b21a43c6ebbddd3945d7f04c9
+        md5: c5207c62830d2f1b98465357f475efe8
+        size: 16230400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -495,8 +495,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T05:37:27Z
-          source_ref: 3fdee9270669e6e5621faf673f5b0a9e0a0818c6
+          reviewed_at: 2026-11-04T06:54:39Z
+          source_ref: 9df7fb112c4441ed4e0e6f52d4130f3dadbb5b2f
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
