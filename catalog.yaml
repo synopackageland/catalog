@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1617
+      release: v0.1.1-1619
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,50 +40,57 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - Update UI to 0.20.1: keep list pages white when a selected row opens its detail pane
-          - Fix callout width, remembered dismissal and close-icon alignment
-          - Reuse the unchanged native runtime and protected payloads from 0.1.1-1616
+          - Rebuild with SDK/App 0.50.5, UI 0.20.3, CLI 0.48.11 and templates 0.40.1
+          - Preserve approval failure diagnostics and complete App and AI responses
+          - Resize and remember list detail panes; keep table widths separate per App and show compact recycle dates
+          - Retain settings and scan reports on all three architectures
         zh-TW: |-
-          - UI 更新至 0.20.1：選取列開啟詳細面板時，清單頁面維持白底
-          - 修正提示訊息寬度、記住關閉狀態及關閉圖示對齊
-          - 沿用 0.1.1-1616 的原生執行程式與受保護載荷
+          - 使用 SDK/App 0.50.5、UI 0.20.3、CLI 0.48.11 與 templates 0.40.1 重新建置
+          - 保留核准失敗診斷與完整的 App、AI 指令回應
+          - 詳細面板可調寬並記憶，各 App 分開記憶表格欄寬，資源回收筒日期改為精簡格式
+          - 三個架構皆保留設定與掃描報告
         zh-CN: |-
-          - UI 更新至 0.20.1：选中行打开详情面板时，列表页面保持白底
-          - 修复提示信息宽度、记住关闭状态及关闭图标对齐
-          - 沿用 0.1.1-1616 的原生运行程序与受保护载荷
+          - 使用 SDK/App 0.50.5、UI 0.20.3、CLI 0.48.11 和 templates 0.40.1 重新构建
+          - 保留批准失败诊断及完整的 App、AI 指令响应
+          - 详情面板可调整宽度并记忆，各 App 分别记忆表格列宽，回收站日期改为精简格式
+          - 三种架构均保留设置和扫描报告
         de: |-
-          - UI auf 0.20.1 aktualisieren: Listenseiten bleiben beim Öffnen der Detailansicht einer ausgewählten Zeile weiß
-          - Breite der Hinweise, gespeicherten Schließzustand und Ausrichtung des Schließen-Symbols korrigieren
-          - Unveränderte native Laufzeit und geschützte Programme aus 0.1.1-1616 wiederverwenden
+          - Neu mit SDK/App 0.50.5, UI 0.20.3, CLI 0.48.11 und Templates 0.40.1
+          - Diagnosen bei fehlgeschlagener Genehmigung und vollständige App- und KI-Antworten erhalten
+          - Detailbereiche vergrößern und Breiten speichern; Tabellenbreiten je App und kompakte Papierkorbdaten
+          - Einstellungen und Scanberichte auf allen drei Architekturen beibehalten
         fr: |-
-          - Mettre l’interface à jour vers 0.20.1 : les listes restent blanches à l’ouverture des détails d’une ligne sélectionnée
-          - Corriger la largeur des messages, la mémorisation de leur fermeture et l’alignement de l’icône de fermeture
-          - Réutiliser les programmes natifs et les composants protégés inchangés de 0.1.1-1616
+          - Reconstruit avec SDK/App 0.50.5, UI 0.20.3, CLI 0.48.11 et templates 0.40.1
+          - Conserver les diagnostics d’échec d’approbation et les réponses complètes de l’App et de l’IA
+          - Redimensionner et mémoriser les panneaux de détails ; largeurs de colonnes par App et dates compactes dans la corbeille
+          - Conserver les réglages et rapports d’analyse sur les trois architectures
         ja: |-
-          - UI を 0.20.1 に更新し、選択した行の詳細パネルを開いても一覧ページの白い背景を維持
-          - 通知の幅、閉じた状態の保存、閉じるアイコンの位置を修正
-          - 0.1.1-1616 のネイティブ実行プログラムと保護されたプログラムを変更せずに再利用
+          - SDK/App 0.50.5、UI 0.20.3、CLI 0.48.11、templates 0.40.1 で再ビルド
+          - 承認失敗時の診断と App・AI の完全な応答を保持
+          - 詳細パネルの幅を調整・記憶し、表の列幅を App ごとに保存、ごみ箱の日付を短く表示
+          - 3 つのアーキテクチャで設定とスキャンレポートを保持
         ko: |-
-          - UI를 0.20.1로 업데이트하여 선택한 행의 상세 패널을 열어도 목록 페이지의 흰 배경 유지
-          - 알림 너비, 닫힘 상태 저장 및 닫기 아이콘 정렬 수정
-          - 0.1.1-1616의 네이티브 실행 프로그램과 보호된 프로그램을 변경 없이 재사용
+          - SDK/App 0.50.5, UI 0.20.3, CLI 0.48.11 및 templates 0.40.1로 다시 빌드
+          - 승인 실패 진단과 완전한 App 및 AI 응답 유지
+          - 상세 패널 너비 조절 및 기억, App별 표 열 너비 저장, 휴지통 날짜를 간결하게 표시
+          - 세 아키텍처 모두 설정과 스캔 보고서 유지
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1616-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-packages-details-1617-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-recycle-callout-1617-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-packages-details-1619-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-recycle-details-1619-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-snapshots-1616-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1616-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1617
+        version: 0.1.1-1619
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: daf0fbf71bdf3658b03acd78b979e9f7c4c1a485b4cf56f6ab40f8d9c0352781
-        md5: 01784f8387e81c36e7b25f8eb8474e3c
-        size: 15065088
+        sha256: 86e0ec2ded86779afc44f554b401dacc1053b876b2f06ff5b621528895685983
+        md5: e5c04e38fdeae8f76c58955321d39792
+        size: 15074304
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -100,19 +107,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T04:41:03Z
-          source_ref: 677e80f2f94db8b088186b591ee375b56fda05f2
+          reviewed_at: 2026-11-04T07:40:43Z
+          source_ref: 3422b335d4b5e7bd8b2b762094881713ee0426d7
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1617
+        version: 0.1.1-1619
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 866fa6f2f0eee3fdcd8adc44d56e9e20113b75138fb750e5c7fd9fe88992aa7c
-        md5: 90c9912bbfe03934731bd15fb467db54
-        size: 15825920
+        sha256: ca781a2108c15606fc8df2067a8fba164d3135b4c1ca06d3aafd129a2f572b20
+        md5: 6f7d34823e2fec222c8a424340df382c
+        size: 15836672
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -129,11 +136,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T04:41:03Z
-          source_ref: 677e80f2f94db8b088186b591ee375b56fda05f2
+          reviewed_at: 2026-11-04T07:40:46Z
+          source_ref: 3422b335d4b5e7bd8b2b762094881713ee0426d7
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1617
+        version: 0.1.1-1619
         arch:
           - apollolake
           - avoton
@@ -162,9 +169,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 471a443c5476fe3871c6440d5488fe41e4ece1665f8baa923212710a12f62612
-        md5: b521ec191713dd62dc7f96763eaeafde
-        size: 16215040
+        sha256: a44b03e7f2b80de6233e7527ed33c5ba8135b764a201f9c60d2093934b4d96c0
+        md5: 438feea1615001cc290879139801fc0d
+        size: 16231424
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -181,8 +188,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T04:41:03Z
-          source_ref: 677e80f2f94db8b088186b591ee375b56fda05f2
+          reviewed_at: 2026-11-04T07:40:49Z
+          source_ref: 3422b335d4b5e7bd8b2b762094881713ee0426d7
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: utilities
