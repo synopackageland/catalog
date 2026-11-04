@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1616
+      release: v0.1.1-1617
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,57 +40,50 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - Remove large page titles while keeping page actions in the toolbar
-          - Keep snapshot metadata loading while the NAS is busy; cancel obsolete reads when navigating away
-          - Continue monitoring long-running jobs by their original ID instead of imposing a total polling deadline
-          - Use shared five-minute request and lifecycle budgets with CLI 0.48.4 and SDK 0.50.0 / UI 0.20.0
+          - Update UI to 0.20.1: keep list pages white when a selected row opens its detail pane
+          - Fix callout width, remembered dismissal and close-icon alignment
+          - Reuse the unchanged native runtime and protected payloads from 0.1.1-1616
         zh-TW: |-
-          - 移除頁面大標題，操作按鈕保留在工具列
-          - NAS 忙碌時持續載入快照資訊，離開頁面後取消過時的讀取
-          - 以原工作 ID 持續追蹤長時間工作，不再以總輪詢時間判定失敗
-          - 使用 CLI 0.48.4 與 SDK 0.50.0 / UI 0.20.0 的共用五分鐘請求及生命週期預算
+          - UI 更新至 0.20.1：選取列開啟詳細面板時，清單頁面維持白底
+          - 修正提示訊息寬度、記住關閉狀態及關閉圖示對齊
+          - 沿用 0.1.1-1616 的原生執行程式與受保護載荷
         zh-CN: |-
-          - 移除页面大标题，操作按钮保留在工具栏
-          - NAS 忙碌时持续加载快照信息，离开页面后取消过时的读取
-          - 以原任务 ID 持续跟踪长时间任务，不再以总轮询时间判定失败
-          - 使用 CLI 0.48.4 与 SDK 0.50.0 / UI 0.20.0 的共享五分钟请求及生命周期预算
+          - UI 更新至 0.20.1：选中行打开详情面板时，列表页面保持白底
+          - 修复提示信息宽度、记住关闭状态及关闭图标对齐
+          - 沿用 0.1.1-1616 的原生运行程序与受保护载荷
         de: |-
-          - Große Seitentitel entfernen und Seitenaktionen in der Werkzeugleiste beibehalten
-          - Snapshot-Metadaten weiter laden, wenn das NAS ausgelastet ist; veraltete Abfragen beim Seitenwechsel abbrechen
-          - Lang laufende Aufgaben mit ihrer ursprünglichen ID ohne Gesamtlaufzeit für die Statusabfrage überwachen
-          - Gemeinsame Fünf-Minuten-Budgets für Anfragen und Lebenszyklus mit CLI 0.48.4 und SDK 0.50.0 / UI 0.20.0 verwenden
+          - UI auf 0.20.1 aktualisieren: Listenseiten bleiben beim Öffnen der Detailansicht einer ausgewählten Zeile weiß
+          - Breite der Hinweise, gespeicherten Schließzustand und Ausrichtung des Schließen-Symbols korrigieren
+          - Unveränderte native Laufzeit und geschützte Programme aus 0.1.1-1616 wiederverwenden
         fr: |-
-          - Retirer les grands titres des pages et conserver les actions dans la barre d’outils
-          - Continuer à charger les métadonnées des instantanés lorsque le NAS est occupé et annuler les lectures obsolètes en quittant la page
-          - Suivre les tâches longues avec leur identifiant initial, sans durée totale maximale de suivi
-          - Utiliser les budgets communs de cinq minutes pour les requêtes et le cycle de vie avec CLI 0.48.4 et SDK 0.50.0 / UI 0.20.0
+          - Mettre l’interface à jour vers 0.20.1 : les listes restent blanches à l’ouverture des détails d’une ligne sélectionnée
+          - Corriger la largeur des messages, la mémorisation de leur fermeture et l’alignement de l’icône de fermeture
+          - Réutiliser les programmes natifs et les composants protégés inchangés de 0.1.1-1616
         ja: |-
-          - 大きなページタイトルを非表示にし、操作ボタンはツールバーに保持
-          - NAS がビジーでもスナップショット情報の読み込みを継続し、ページを離れたら古い読み込みをキャンセル
-          - 長時間のジョブを元の ID で追跡し、ポーリングの合計時間による失敗判定を廃止
-          - CLI 0.48.4 と SDK 0.50.0 / UI 0.20.0 の共通の5分間のリクエスト・ライフサイクル予算を使用
+          - UI を 0.20.1 に更新し、選択した行の詳細パネルを開いても一覧ページの白い背景を維持
+          - 通知の幅、閉じた状態の保存、閉じるアイコンの位置を修正
+          - 0.1.1-1616 のネイティブ実行プログラムと保護されたプログラムを変更せずに再利用
         ko: |-
-          - 큰 페이지 제목을 숨기고 작업 버튼은 도구 모음에 유지
-          - NAS가 바쁠 때도 스냅샷 메타데이터 로딩을 유지하고 페이지를 떠나면 오래된 읽기를 취소
-          - 전체 폴링 시간 제한 없이 원래 작업 ID로 장시간 작업을 계속 추적
-          - CLI 0.48.4와 SDK 0.50.0 / UI 0.20.0의 공통 5분 요청 및 수명 주기 예산 사용
+          - UI를 0.20.1로 업데이트하여 선택한 행의 상세 패널을 열어도 목록 페이지의 흰 배경 유지
+          - 알림 너비, 닫힘 상태 저장 및 닫기 아이콘 정렬 수정
+          - 0.1.1-1616의 네이티브 실행 프로그램과 보호된 프로그램을 변경 없이 재사용
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1616-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1616-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-packages-details-1617-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-recycle-callout-1617-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-snapshots-1616-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1616-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-system-partition-1616-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1616
+        version: 0.1.1-1617
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 3b8c3deb86e513671fba2d425c8e54a0e2dd75f88836cd3d40ad23bd1ccd9672
-        md5: 8a7ad28384a64cd748f01e02a0d915ac
-        size: 15063552
+        sha256: daf0fbf71bdf3658b03acd78b979e9f7c4c1a485b4cf56f6ab40f8d9c0352781
+        md5: 01784f8387e81c36e7b25f8eb8474e3c
+        size: 15065088
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -107,19 +100,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T02:51:06Z
-          source_ref: c7f45d4ac973d3abf5df49553e7ecab51fdfe11a
+          reviewed_at: 2026-11-04T04:41:03Z
+          source_ref: 677e80f2f94db8b088186b591ee375b56fda05f2
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1616
+        version: 0.1.1-1617
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 757da896fcda3648778be92c407da349faf0835e972b1c8b884608a9ab933df4
-        md5: 018247fe020689c63e0f2f8922c00dee
-        size: 15824384
+        sha256: 866fa6f2f0eee3fdcd8adc44d56e9e20113b75138fb750e5c7fd9fe88992aa7c
+        md5: 90c9912bbfe03934731bd15fb467db54
+        size: 15825920
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -136,11 +129,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T02:51:17Z
-          source_ref: c7f45d4ac973d3abf5df49553e7ecab51fdfe11a
+          reviewed_at: 2026-11-04T04:41:03Z
+          source_ref: 677e80f2f94db8b088186b591ee375b56fda05f2
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1616
+        version: 0.1.1-1617
         arch:
           - apollolake
           - avoton
@@ -169,9 +162,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: f2bfd038b59d92773bbe409843b4fffbcbf00b7c117621cc4606c3ecf8ad844b
-        md5: c80bb7a9f8c56bbb20a08e0c1c53908e
-        size: 16212480
+        sha256: 471a443c5476fe3871c6440d5488fe41e4ece1665f8baa923212710a12f62612
+        md5: b521ec191713dd62dc7f96763eaeafde
+        size: 16215040
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -188,8 +181,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T02:51:34Z
-          source_ref: c7f45d4ac973d3abf5df49553e7ecab51fdfe11a
+          reviewed_at: 2026-11-04T04:41:03Z
+          source_ref: 677e80f2f94db8b088186b591ee375b56fda05f2
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: utilities
