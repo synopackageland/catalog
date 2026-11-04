@@ -690,7 +690,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.9-0008
+      release: v4.2.9-0009
       access: private
     metadata:
       maintainer: OpenList Team
@@ -759,16 +759,16 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/01-files-0018.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた場合の DSM ログインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.9-0008
+        version: 4.2.9-0009
         arch:
           - apollolake
           - avoton
@@ -797,9 +797,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: b699cbb5709086f39e45ed7cf6b57bd8040f3d6f7cbba5fa7d51c99909e777ce
-        md5: f74e248a92fe260af994416d69898d72
-        size: 92775424
+        sha256: 424e78a470a044e04599cc30bc724382d653750936ca9a56e07bd177b0206bb1
+        md5: 986a44b53415a451b6faea6803e0ccbb
+        size: 93139968
         facts:
           built_with: sdk
           sdk_backend: go
@@ -816,8 +816,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: e8644698dc7d4a2d027b7a844a8ab99aac916569
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: 6adc46850ef9609575ec56fa439abd25ba9af11e
           source_repo: synopackageland/syno-pkg-land-openlist
   - listed: true
     recommended: false
@@ -828,7 +828,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-uptime-kuma
-      release: v2.5.8-0005
+      release: v2.5.8-0006
       access: private
     metadata:
       maintainer: Louis Lam
@@ -838,7 +838,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-uptime-kuma
-      source_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/tree/v2.5.8-0005
+      source_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/tree/v2.5.8-0006
       issues_url: https://github.com/synopackageland/syno-pkg-land-uptime-kuma/issues
       upstream:
         name: Uptime Kuma
@@ -874,16 +874,16 @@ packages:
         ja: Web サイトやネットワーク サービスが利用できるかを確認し、稼働履歴を見て、停止時に通知を受け取れます。サービスの状態をまとめたステータス ページを作成できますが、ステータス ページは管理者専用で、一般公開はできません。使える監視の種類は、このパッケージのネットワーク権限によって変わります。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 웹사이트와 네트워크 서비스가 살아 있는지 확인하고, 가동 기록을 보고, 장애가 나면 알림을 받아요. 서비스 상태를 요약한 상태 페이지를 만들 수 있지만, 상태 페이지는 관리자 전용이라 공개로 공유할 수 없어요. 쓸 수 있는 모니터 종류는 이 패키지의 네트워크 권한에 따라 달라요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた場合の DSM ログインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgUptimeKuma
-        version: 2.5.8-0005
+        version: 2.5.8-0006
         arch:
           - apollolake
           - avoton
@@ -912,9 +912,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 64013d0d636253818fa95586d547b0d2332019d128ed1c143eafa8bf89160383
-        md5: 1871e6612ef4526e39221deb6720f4b9
-        size: 28293632
+        sha256: 71e21949cba0f3f5270bae42920737717b5f544f4edacbe202ffbaf5bd672d59
+        md5: ed4a6034272a778a411df81e4794d139
+        size: 28529152
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -931,8 +931,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: 800350d600f6d5be9c4e4f1a359ee36941745ac5
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: 4cfbeeb7576430b5ca38e3558084c69dbfdd0286
           source_repo: synopackageland/syno-pkg-land-uptime-kuma
   - listed: true
     recommended: false
@@ -943,7 +943,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0015
+      release: v1.30.4-0016
       access: private
     metadata:
       maintainer: FreshRSS
@@ -953,7 +953,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-freshrss
-      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.4-0015
+      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.4-0016
       license: AGPL-3.0; packaging MIT; container dependencies retain their own licenses
       internet: required
       telemetry: none
@@ -976,16 +976,16 @@ packages:
         ja: お気に入りのサイトのニュースや更新をひとつのリーダーにまとめます。RSS や Atom フィードを購読し、カテゴリーで整理し、記事を検索し、お気に入りを保存できます。購読と既読状況は読者ごとに分かれます。DSM の管理者サインインと Container Manager が必要です
         ko: 좋아하는 사이트의 소식과 업데이트를 리더 하나로 모아요. RSS와 Atom 피드를 구독하고, 카테고리로 정리하고, 글을 검색하고, 즐겨찾기로 저장해 둘 수 있어요. 구독과 읽은 상태는 사용자마다 따로예요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた際の DSM サインインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 문제 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigieren"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0015
+        version: 1.30.4-0016
         arch:
           - apollolake
           - avoton
@@ -1014,9 +1014,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 0a0476663e6cba0e6ad1da8c9eec42f5b86637839f95f8c67d8c8cf4bb85fcae
-        md5: 5f7f55bb85d614b95402433c81329b10
-        size: 38721024
+        sha256: 58744fd75618e8b088876d6cca786a06cb75b3525b4f0971ab6285ca1ed6f89e
+        md5: 2c684dd1ea9679bc32502c32aef72f97
+        size: 39080448
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1033,8 +1033,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: a13e438713544b6517617936dd3b5185723557c4
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: f6d8c6c7cf16b51e31faad60120395d701f308af
           source_repo: synopackageland/syno-pkg-land-freshrss
   - listed: true
     recommended: false
@@ -1045,7 +1045,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.2-0009
+      release: v2.37.2-0010
       access: private
     metadata:
       maintainer: advplyr
@@ -1055,7 +1055,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-audiobookshelf
-      source_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/tree/v2.37.2-0009
+      source_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/tree/v2.37.2-0010
       issues_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/issues
       license: GPL-3.0; dependencies retain their own licenses
       internet: required
@@ -1092,16 +1092,16 @@ packages:
         ja: オーディオブックとポッドキャストの自分だけのライブラリを作り、コレクションを見ながらブラウザーで聴けます。再生位置も記録されます。選択した読み取り専用のメディア フォルダーへのポッドキャストのダウンロードには対応しておらず、モバイルや TV のクライアントは未検証です。フォルダーにはパッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 오디오북과 팟캐스트로 나만의 서재를 만들고, 컬렉션을 둘러보며 브라우저에서 들을 수 있어요. 듣던 위치도 기억해요. 선택한 읽기 전용 미디어 폴더로 팟캐스트를 내려받는 기능은 지원하지 않고, 모바일·TV 클라이언트는 검증되지 않았어요. 폴더에는 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた際の DSM サインインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 문제 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigieren"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.2-0009
+        version: 2.37.2-0010
         arch:
           - apollolake
           - avoton
@@ -1130,9 +1130,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 963abef13f41e9e338c587b972e75ddab788c14c08439e05a84d6bfa26c61d4c
-        md5: 37a4f7709157b21f9bd1fc21d5d63f7a
-        size: 37583360
+        sha256: 054b0627b41a1fad9c645c965f8a899a2bc9b7a38de8a09c8d09f2e50d811580
+        md5: 99439666becc3fb9e8fbdd43ab95c1d1
+        size: 37942272
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1150,8 +1150,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: 6b7c29907f9e97256ebd9ca9267fb0ecc9d04a95
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: 5bd78bfa14b8ca43a3b206541b5faa8e848e75d4
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - listed: true
     recommended: false
@@ -1162,7 +1162,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.4-0007
+      release: v12.4-0008
       access: private
     metadata:
       maintainer: Jellyfin
@@ -1172,7 +1172,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-jellyfin
-      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.4-0007
+      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.4-0008
       issues_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/issues
       license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0; dependencies
         retain their own licenses
@@ -1209,16 +1209,16 @@ packages:
         ja: メディア コレクションを自分専用のストリーミング ライブラリにします。アートワーク付きで映画やテレビ番組を見て回り、音楽を整理し、ブラウザーで再生できます。TV やモバイルのネイティブ クライアントはこの入口を使えず、DLNA は無効です。選択したメディア フォルダーは読み取り専用で、パッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM サインインと Container Manager が必要です
         ko: 미디어 컬렉션을 나만의 스트리밍 서재로 만들어요. 아트워크와 함께 영화와 TV 프로그램을 둘러보고, 음악을 정리하고, 브라우저에서 재생해요. TV·모바일 네이티브 클라이언트는 이 입구를 쓸 수 없고 DLNA는 꺼져 있어요. 선택한 미디어 폴더는 읽기 전용이며 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた場合の DSM ログインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgJellyfin
-        version: 12.4-0007
+        version: 12.4-0008
         arch:
           - apollolake
           - avoton
@@ -1247,9 +1247,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 599da1e869ebe7511f3a0bca8c1419d1c0557b6af5e71b803f3ee495ab86dc86
-        md5: c65072fa3674c601118b24beec537121
-        size: 39993856
+        sha256: 236f88a58470b9a30818cd2917bd84f7ba3779b6378c262760491be5419e8f27
+        md5: c4d801d61f7f8b2b8f1bfe70669657a5
+        size: 40353792
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1267,8 +1267,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: 6c46aa9bf3b81b264d3437c6f550da5d8e811cd5
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: a6847c9224a79095b52d97353661f28c611fe472
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - listed: true
@@ -1280,7 +1280,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.20.0-0006
+      release: v0.20.0-0007
       access: public
     metadata:
       maintainer: Emrik Östling
@@ -1290,7 +1290,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-convertx
-      source_url: https://github.com/synopackageland/syno-pkg-land-convertx/tree/v0.20.0-0006
+      source_url: https://github.com/synopackageland/syno-pkg-land-convertx/tree/v0.20.0-0007
       issues_url: https://github.com/synopackageland/syno-pkg-land-convertx/issues
       license: AGPL-3.0; packaging MIT; bundled tools retain their respective licenses
       internet: required
@@ -1322,16 +1322,16 @@ packages:
         ja: ブラウザーで文書、画像、音声、動画をアップロードし、出力形式を選んで変換後のファイルをダウンロードできます。許可されたユーザー全員が同じ作業スペースを共有し、互いのファイルを表示・ダウンロードできます。24 時間を過ぎたジョブは定期的に削除されます。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 브라우저에서 문서, 이미지, 오디오, 동영상을 올리고 출력 형식을 골라 변환된 파일을 내려받아요. 권한이 있는 사용자 모두가 작업 공간 하나를 함께 쓰고, 서로의 파일을 보고 내려받을 수 있어요. 24시간이 지난 작업은 주기적으로 지워져요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた際の DSM サインインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 문제 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigieren"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgConvertX
-        version: 0.20.0-0006
+        version: 0.20.0-0007
         arch:
           - apollolake
           - avoton
@@ -1360,9 +1360,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 43936b3a06dfc732e6d51ac1fb9cd70a11e7cd8b09ef68dddf999ad8def9e47c
-        md5: 13e9a601c4203c859a232160f66a6a56
-        size: 37246464
+        sha256: ca169c3eec1c5dec6a8b4642ac4f64b0013bc56624a1ecff84ed9869e54951df
+        md5: c4e4c07e0a7c6dca5a2642c82c7c7470
+        size: 37608960
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1379,8 +1379,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: eb922be04d14a4de8e45a49b3ae69cc344d1f4e6
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: 6a7b2ad63910ab5c38a421744da9622e9df4ac3a
           source_repo: synopackageland/syno-pkg-land-convertx
 
   - listed: true
@@ -1392,7 +1392,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.4.0-0007
+      release: v3.4.0-0008
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -1402,7 +1402,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
-      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0007
+      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0008
       issues_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/issues
       license: GPL-3.0-only; dependencies retain their respective licenses
       internet: required
@@ -1436,16 +1436,16 @@ packages:
         ja: 紙の文書を検索できるデジタル アーカイブにします。スキャンを取り込み、OCR で文字を認識し、タグ、差出人、文書タイプで整理できます。文書の内容を検索し、共有は Paperless の権限で管理します。取り込んだファイルは受信フォルダーから削除されるので、バックアップを残してください。選択した受信フォルダーにはパッケージ アカウントの読み取り/書き込み権限が必要です。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 종이 문서를 검색할 수 있는 디지털 보관함으로 바꿔요. 스캔을 가져오고, OCR로 글자를 인식하고, 태그, 거래처, 문서 유형으로 정리해요. 문서 내용을 검색하고 공유는 Paperless 권한으로 관리해요. 가져온 파일은 받은 편지함 폴더에서 지워지니 백업을 꼭 남겨 두세요. 선택한 받은 편지함 폴더에는 패키지 계정의 읽기/쓰기 권한이 필요해요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた場合の DSM ログインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.4.0-0007
+        version: 3.4.0-0008
         arch:
           - apollolake
           - avoton
@@ -1474,9 +1474,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: f4d9b4a483f1453d51ae220e78b4495ab9d4629b653cf3c0e427895a09278d6f
-        md5: ceaa3e49ee2865c561f259c91341d766
-        size: 38935040
+        sha256: 12481b341a7ae8d21901484ad701647e72ec87de847f7792b600c47b13e168dc
+        md5: b8ccb3f23fb19b6208d2f0690020dc9c
+        size: 39300096
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1494,8 +1494,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: 91912f37a8e3066461fdd62294005e4839499c79
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: c0324e9739ded455fcff5e272949644e7c356b5b
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
@@ -1506,7 +1506,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0016
+      release: v1.37.4-0017
       access: public
     metadata:
       maintainer: Daniel García
@@ -1516,7 +1516,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-vaultwarden
-      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0016
+      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0017
       issues_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/issues
       license: AGPL-3.0-only; packaging MIT; Web Vault and dependencies retain their
         respective licenses
@@ -1552,16 +1552,16 @@ packages:
         ja: パスワード、ログイン情報、セキュア メモを、自分のサーバー上の暗号化された保管庫に保存できます。Vaultwarden は Bitwarden 互換のサーバーで、項目を管理する Web 保管庫を備えています。保管庫は別のマスター パスワードで解除し、DSM からは復元できません。Bitwarden クライアントには信頼された HTTPS 証明書が必要で、クライアントからのサインインは未検証です。アプリのセッションは別に管理され、データはアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 비밀번호, 로그인 정보, 보안 메모를 내 서버의 암호화된 보관함에 보관해요. Vaultwarden은 Bitwarden과 호환되는 서버로, 항목을 관리하는 웹 보관함이 있어요. 보관함은 별도의 마스터 비밀번호로 열고, DSM으로는 복구할 수 없어요. Bitwarden 클라이언트에는 신뢰할 수 있는 HTTPS 인증서가 필요하고, 클라이언트 로그인은 검증되지 않았어요. 앱 세션은 따로 관리되고, 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた場合の DSM ログインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0016
+        version: 1.37.4-0017
         arch:
           - apollolake
           - avoton
@@ -1590,9 +1590,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: fe3bb1d5899a48cff5e27cbecfb3aa4a30198af0c4df368c151da2df0ab3aa56
-        md5: dc3b785110880aae0e740fe62fa153cb
-        size: 38688768
+        sha256: 5afbbf3e0fcb0599e237b22a8f4205e6a0399da7dc0b341a78cc54597ded441c
+        md5: 6eeb1e3b8853785617c38c13b69bb004
+        size: 39052288
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1609,8 +1609,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: 8c55cb4eb920f66d3be1ff5f102886763368251f
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: 9438c9483f1f1b0f6de96e76b81b20e8f0dc0c26
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - listed: true
     recommended: false
@@ -1621,7 +1621,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0018
+      release: v0.64.2-0019
       access: public
     metadata:
       maintainer: Navidrome
@@ -1631,7 +1631,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-navidrome
-      source_url: https://github.com/synopackageland/syno-pkg-land-navidrome/tree/v0.64.2-0018
+      source_url: https://github.com/synopackageland/syno-pkg-land-navidrome/tree/v0.64.2-0019
       issues_url: https://github.com/synopackageland/syno-pkg-land-navidrome/issues
       license: GPL-3.0; packaging and identity adapter MIT; dependencies retain their
         respective licenses
@@ -1666,16 +1666,16 @@ packages:
         ja: アーティストやアルバムで音楽を探し、プレイリストを作り、Web プレーヤーや対応する Subsonic アプリで聴けます。許可されたユーザーは選択した読み取り専用の音楽ライブラリを共有し、そのライブラリにはパッケージ アカウントの読み取り権限が必要です。Subsonic クライアントは別の Navidrome パスワードを使います。公開共有リンクは削除するまでアクセスできます。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 아티스트와 앨범별로 음악을 둘러보고, 재생 목록을 만들고, 웹 플레이어나 호환되는 Subsonic 앱으로 들어요. 권한이 있는 사용자는 선택한 읽기 전용 음악 라이브러리를 함께 쓰고, 이 라이브러리에는 패키지 계정의 읽기 권한이 필요해요. Subsonic 클라이언트는 별도의 Navidrome 비밀번호를 쓰고, 공개 공유 링크는 지울 때까지 열려 있어요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた際の DSM サインインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 문제 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigieren"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0018
+        version: 0.64.2-0019
         arch:
           - apollolake
           - avoton
@@ -1704,9 +1704,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 642fc114f42a389aeffb0ea8642f4ced2d4058763227eff7c2afbc942f24987c
-        md5: 54a5ef0b0b4ede002a5f9ca410d0e6eb
-        size: 49072640
+        sha256: 76a4e1c62e29dcd44f6539a33966df1ea11aaba4b591c7f037da33f30b89e538
+        md5: d9c914efc7905417fadc9fd839e62c5c
+        size: 49435648
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1724,8 +1724,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: 1797732cbdbe1560101bf20eeb54b71acd51ea73
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: 4e021c4feb568495c0ae31a44305c845ad430ef0
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - listed: true
@@ -1737,7 +1737,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.4-0005
+      release: v2026.10.4-0006
       access: public
     metadata:
       maintainer: Home Assistant
@@ -1747,7 +1747,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-home-assistant
-      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.4-0005
+      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.4-0006
       issues_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/issues
       license: Apache-2.0; hass-oidc-auth and packaging MIT; dependencies retain their
         respective licenses
@@ -1781,16 +1781,16 @@ packages:
         ja: 対応するスマートホーム機器をまとめ、ダッシュボードから操作し、毎日の自動化を作れます。家のコントロールを自分のサーバーに置いておけます。このパッケージは mDNS による検出に対応していますが、SSDP、USB/Bluetooth、Supervisor、アドオンには対応していません。モバイル アプリからのサインインとアップグレードは未検証です。設定はアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 호환되는 스마트홈 기기를 한데 모아 대시보드로 제어하고, 일상을 위한 자동화를 만들어요. 집의 제어권을 내 서버에 둘 수 있어요. 이 패키지는 mDNS 검색을 지원하지만 SSDP, USB/Bluetooth, Supervisor, 애드온은 지원하지 않고, 모바일 앱 로그인과 업그레이드는 검증되지 않았어요. 설정은 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Signed-out visitors go straight to DSM sign-in and return to the page they opened; clearer sign-in error page"
-        zh-TW: "未登入時直接導向 DSM 登入並回到原頁面；登入錯誤頁更清楚"
-        zh-CN: "未登录时直接跳转到 DSM 登录并返回原页面；登录错误页更清晰"
-        ja: "未サインイン時は DSM サインインへ移動し、元のページに戻ります。サインインのエラーページを改善"
-        ko: "DSM에 로그인하지 않았으면 바로 DSM 로그인으로 이동하고 원래 페이지로 돌아와요. 로그인 오류 페이지 개선"
-        de: "Nicht angemeldete Besucher werden direkt zur DSM-Anmeldung geleitet und kehren zur geöffneten Seite zurück; klarere Anmelde-Fehlerseite"
-        fr: "Les visiteurs non connectés sont redirigés vers la connexion DSM puis ramenés à la page ouverte ; page d’erreur de connexion plus claire"
+        en: "Fix DSM sign-in when opening over HTTP"
+        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
+        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
+        ja: "HTTP で開いた場合の DSM ログインを修正"
+        ko: "HTTP로 열 때 DSM 로그인 수정"
+        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
+        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.4-0005
+        version: 2026.10.4-0006
         arch:
           - apollolake
           - avoton
@@ -1819,9 +1819,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: b5dd9d4bef50080d1b0d1ac4dd9b88f12ef0db040a543e20675de35944b49bb1
-        md5: 17115f862c5580d4be2eacd4f56bf5ad
-        size: 28620800
+        sha256: 338e504289d9fa4ca788528deba00fbf4d7ac875c0acf1fd13eb9bef789204b6
+        md5: 70d00692458a2122e063b7dd71e92384
+        size: 28852736
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1838,8 +1838,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T11:19:58Z
-          source_ref: 67e38b5048cb5cc5c88d814b9fd45eb07b3a36bd
+          reviewed_at: 2026-11-04T16:53:05Z
+          source_ref: de3e000a988efaeb23e8c219b28a3539de429ef6
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
 publishers:
