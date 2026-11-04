@@ -186,7 +186,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0123
+      release: v0.1.0-0124
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -341,65 +341,57 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0123
+          0.1.0-0124
 
-          - Fixes a false DSM certificate change error when re-enabling DSM path Apps
-          - Preserves the actual connection error and genuine certificate review with Retry
+          - Use SDK 0.50.0 and UI 0.20.0 defaults: no large page headings, with Refresh and Add retained in the toolbar
         zh-TW: |-
-          0.1.0-0123
+          0.1.0-0124
 
-          - 修正重新啟用 DSM 路徑 App 時誤報憑證變更的問題
-          - 保留真正的連線錯誤與憑證變更核准及重試流程
+          - 採用 SDK 0.50.0 與 UI 0.20.0 預設版面，隱藏頁面大標題，工具列保留重新整理與新增按鈕
         zh-CN: |-
-          0.1.0-0123
+          0.1.0-0124
 
-          - 修复重新启用 DSM 路径 App 时误报证书变更的问题
-          - 保留真实连接错误及证书变更确认与重试流程
+          - 采用 SDK 0.50.0 与 UI 0.20.0 默认布局，隐藏页面大标题，工具栏保留刷新与新增按钮
         de: |-
-          0.1.0-0123
+          0.1.0-0124
 
-          - Behebt eine falsche DSM-Zertifikatswarnung beim erneuten Aktivieren von DSM-Pfad-Apps
-          - Zeigt die tatsächliche Verbindungsursache und behält Zertifikatsprüfung und Wiederholung bei
+          - SDK 0.50.0 und UI 0.20.0: keine großen Seitenüberschriften, Aktualisieren und Hinzufügen bleiben in der Werkzeugleiste
         fr: |-
-          0.1.0-0123
+          0.1.0-0124
 
-          - Corrige une fausse alerte de changement de certificat lors de la réactivation des apps avec chemin DSM
-          - Conserve la cause réelle de connexion et la validation des certificats avec nouvelle tentative
+          - SDK 0.50.0 et UI 0.20.0 : les grands titres sont masqués, Actualiser et Ajouter restent dans la barre d’outils
         ja: |-
-          0.1.0-0123
+          0.1.0-0124
 
-          - DSM パスの App を再開する際の誤った証明書変更エラーを修正
-          - 実際の接続エラーを保持し、証明書変更の承認と再試行に対応
+          - SDK 0.50.0 と UI 0.20.0 の標準レイアウトを採用し、大きなページ見出しを非表示にして更新と追加をツールバーに保持
         ko: |-
-          0.1.0-0123
+          0.1.0-0124
 
-          - DSM 경로 앱을 다시 켤 때 잘못 표시되던 인증서 변경 오류 수정
-          - 실제 연결 오류를 유지하고 인증서 변경 승인과 재시도 지원
+          - SDK 0.50.0 및 UI 0.20.0 기본 레이아웃으로 큰 페이지 제목을 숨기고 도구 모음의 새로 고침 및 추가 버튼 유지
         es: |-
-          0.1.0-0123
+          0.1.0-0124
 
-          - Corrige una alerta falsa de cambio de certificado al reactivar apps con ruta DSM
-          - Conserva la causa real de conexión y la revisión de certificados con reintento
+          - SDK 0.50.0 y UI 0.20.0: se ocultan los títulos grandes y se mantienen Actualizar y Añadir en la barra de herramientas
         it: |-
-          0.1.0-0123
+          0.1.0-0124
 
-          - Corregge un falso avviso di cambio certificato alla riattivazione delle app con percorso DSM
-          - Mantiene la causa reale di connessione e la verifica dei certificati con nuovo tentativo
+          - SDK 0.50.0 e UI 0.20.0: titoli grandi nascosti, Aggiorna e Aggiungi restano nella barra degli strumenti
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-own-domain-0113-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-free-link-0113-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0111-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-setup-wizard-0111-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0124-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-app-urls-0124-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-0124-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-0124-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0124-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0123
+        version: 0.1.0-0124
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 03c2f1a13da559bce809c7fee52594467a9b04a4e074e2675aa94741a2efa6a1
-        md5: 5c2bcc2db6825f935d092beb20dbe9a4
+        sha256: 77d250c5f3dbc3fc4a873c35d7ff25ba3e05568955d100cc9d4f630edcf69922
+        md5: 9927c70941be839fc27d0333c578e18f
         size: 14796800
         facts:
           built_with: sdk
@@ -417,19 +409,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T16:07:57Z
-          source_ref: bdef8e81add9cab949e225daacfd8608b02ff9d8
+          reviewed_at: 2026-11-04T02:50:44Z
+          source_ref: ea3f105485cd50206e85c8101969bc90e85dd8d5
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0123
+        version: 0.1.0-0124
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: a8ddc77b8b504d8de2b740ff35e664eba56f3577e93b2dace5ed92bce6558af1
-        md5: 5f9254e827cb581adf0192d3c8bb559f
-        size: 15380480
+        sha256: 415db34d2f7b6e9a908a086c6215bcdcdedda55ac8d4c150afecf0b447a04349
+        md5: 255b5f27cd458898af41156b165c0e15
+        size: 15390720
         facts:
           built_with: sdk
           sdk_backend: go
@@ -446,11 +438,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T16:07:57Z
-          source_ref: bdef8e81add9cab949e225daacfd8608b02ff9d8
+          reviewed_at: 2026-11-04T02:50:44Z
+          source_ref: ea3f105485cd50206e85c8101969bc90e85dd8d5
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0123
+        version: 0.1.0-0124
         arch:
           - apollolake
           - avoton
@@ -479,8 +471,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 5cbf8f548829437c4d4ff08040afecfb3f5cb1cc4ba9708a3bcb57d5bfa95eec
-        md5: 186c3f18b09a28e0f53fd74da149f1c7
+        sha256: 712de2a3b8b5d94d7c2ed5734cd21128a11b5a8a75bbec2053092dddfdab778b
+        md5: d261c56e546d8970ad7cecee544056ab
         size: 16148480
         facts:
           built_with: sdk
@@ -498,8 +490,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-03T16:07:57Z
-          source_ref: bdef8e81add9cab949e225daacfd8608b02ff9d8
+          reviewed_at: 2026-11-04T02:50:44Z
+          source_ref: ea3f105485cd50206e85c8101969bc90e85dd8d5
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
