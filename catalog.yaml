@@ -512,7 +512,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0080
+      release: v0.2.2-0081
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -582,32 +582,32 @@ packages:
         ja: HTTP/HTTPS リンク、Torrent、マグネット リンク、ED2K のファイルに加え、yt-dlp 対応サイトの動画や拡張機能で追加したソースからダウンロードできます。ダウンロードの一時停止・再開・整理、完了したファイルの保存先の選択、履歴の確認ができます。ダウンロードはユーザーごとに分かれ、アクセス、拡張機能、エンジンの更新は管理者が管理します。Gopeed を利用しています。DSM サインインが必要です
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
-        en: "Updated the interface: page headings are hidden by default and actions remain in the toolbar"
-        zh-TW: "更新介面：預設隱藏頁面大標題，操作按鈕保留在工具列"
-        zh-CN: "更新界面：默认隐藏页面大标题，操作按钮保留在工具栏"
-        ja: "インターフェースを更新：ページ見出しを既定で非表示にし、操作ボタンはツールバーに表示"
-        ko: "인터페이스 업데이트: 페이지 제목은 기본적으로 숨기고 작업 버튼은 도구 모음에 표시"
-        de: "Oberfläche aktualisiert: Seitenüberschriften sind standardmäßig ausgeblendet; Aktionen bleiben in der Symbolleiste"
-        fr: "Interface mise à jour : les titres de page sont masqués par défaut et les actions restent dans la barre d’outils"
-        es: "Interfaz actualizada: los títulos de página se ocultan de forma predeterminada y las acciones permanecen en la barra de herramientas"
-        it: "Interfaccia aggiornata: i titoli delle pagine sono nascosti per impostazione predefinita e le azioni restano nella barra degli strumenti"
+        en: "Search: results appear as sources answer, the remaining sources can be stopped, and a busy NAS no longer shows false timeouts; Downloads has tabs"
+        zh-TW: "搜尋：來源一回應就顯示結果，可停止其餘來源，NAS 忙碌時不再誤報逾時；下載頁新增分頁"
+        zh-CN: "搜索：来源一响应就显示结果，可停止其余来源，NAS 繁忙时不再误报超时；下载页新增标签页"
+        ja: "検索：ソースが応答するたびに結果を表示し、残りのソースを停止可能。NAS が混雑していても誤ったタイムアウトを表示しません。ダウンロードにタブを追加"
+        ko: "검색: 소스가 응답하는 대로 결과를 표시하고 나머지 소스를 중지할 수 있으며, NAS가 바쁠 때 잘못된 시간 초과를 표시하지 않음. 다운로드에 탭 추가"
+        de: "Suche: Ergebnisse erscheinen, sobald Quellen antworten, übrige Quellen lassen sich stoppen, und ein ausgelastetes NAS meldet keine falschen Zeitüberschreitungen mehr; Downloads mit Tabs"
+        fr: "Recherche : les résultats s’affichent dès que les sources répondent, les autres sources peuvent être arrêtées et un NAS occupé n’affiche plus de faux délais dépassés ; onglets dans Téléchargements"
+        es: "Búsqueda: los resultados aparecen en cuanto responden las fuentes, se pueden detener las demás y un NAS ocupado ya no muestra falsos tiempos de espera agotados; pestañas en Descargas"
+        it: "Ricerca: i risultati appaiono appena le fonti rispondono, le altre fonti si possono interrompere e un NAS occupato non mostra più falsi timeout; schede in Download"
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0080-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0080-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0080-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0080-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0080-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0081-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0081-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0081-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0081-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0080
+        version: 0.2.2-0081
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 1c31af62b4cfc22d4f59368e685ddcf5ced533e3cb27b55089344f38c9e1276e
-        md5: ebb8a99ec702af3c3e18905cd96faf10
-        size: 66864128
+        sha256: 89df675c210903c9f428fa2d5ea151d2b754653b640330d65c76a39cc136b742
+        md5: 1dbba50ffaf09a736875863a53102ba1
+        size: 67579392
         facts:
           built_with: sdk
           sdk_backend: go
@@ -625,11 +625,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T02:54:18Z
-          source_ref: 8a5c95b27d339ee716e3f81e01b778f6b78de769
+          reviewed_at: 2026-11-04T04:41:34Z
+          source_ref: 32b764dd8d885d68aae77c557d5ff14a6a618db1
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0080
+        version: 0.2.2-0081
         arch:
           - apollolake
           - avoton
@@ -658,9 +658,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: aa61aaea2899241a307884f376bb17a17d078dda0d348edf3e9095f46c9e9827
-        md5: 75fea3957104177ee8d439e6b0beee26
-        size: 70511616
+        sha256: d44d7f01b046becf9dce4c50bd52232c4551fb9eb4f0c7aac04641ba1aadf326
+        md5: c64bf7c1005f0e8a8915a71216077a5c
+        size: 71303680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -678,8 +678,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T02:54:19Z
-          source_ref: 8a5c95b27d339ee716e3f81e01b778f6b78de769
+          reviewed_at: 2026-11-04T04:41:34Z
+          source_ref: 32b764dd8d885d68aae77c557d5ff14a6a618db1
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
