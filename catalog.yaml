@@ -1162,7 +1162,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.4-0008
+      release: v12.4-0009
       access: private
     metadata:
       maintainer: Jellyfin
@@ -1172,7 +1172,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-jellyfin
-      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.4-0008
+      source_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/tree/v12.4-0009
       issues_url: https://github.com/synopackageland/syno-pkg-land-jellyfin/issues
       license: GPL-2.0-or-later; SSO plugin and integration GPL-3.0; dependencies
         retain their own licenses
@@ -1209,16 +1209,16 @@ packages:
         ja: メディア コレクションを自分専用のストリーミング ライブラリにします。アートワーク付きで映画やテレビ番組を見て回り、音楽を整理し、ブラウザーで再生できます。TV やモバイルのネイティブ クライアントはこの入口を使えず、DLNA は無効です。選択したメディア フォルダーは読み取り専用で、パッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM サインインと Container Manager が必要です
         ko: 미디어 컬렉션을 나만의 스트리밍 서재로 만들어요. 아트워크와 함께 영화와 TV 프로그램을 둘러보고, 음악을 정리하고, 브라우저에서 재생해요. TV·모바일 네이티브 클라이언트는 이 입구를 쓸 수 없고 DLNA는 꺼져 있어요. 선택한 미디어 폴더는 읽기 전용이며 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Fix DSM sign-in when opening over HTTP"
-        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
-        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
-        ja: "HTTP で開いた場合の DSM ログインを修正"
-        ko: "HTTP로 열 때 DSM 로그인 수정"
-        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
-        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
+        en: "Keep DSM sign-in callbacks on the requested HTTP or HTTPS scheme"
+        zh-TW: "DSM 登入回呼跟隨實際開啟的 HTTP 或 HTTPS"
+        zh-CN: "DSM 登录回调跟随实际打开的 HTTP 或 HTTPS"
+        ja: "DSM ログインのコールバックを要求された HTTP または HTTPS に合わせる"
+        ko: "DSM 로그인 콜백에 요청된 HTTP 또는 HTTPS 사용"
+        de: "DSM-Anmelderückruf verwendet das angeforderte HTTP oder HTTPS"
+        fr: "Le retour de connexion DSM suit le protocole HTTP ou HTTPS demandé"
     pins:
       - package: SynoPkgJellyfin
-        version: 12.4-0008
+        version: 12.4-0009
         arch:
           - apollolake
           - avoton
@@ -1247,9 +1247,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 236f88a58470b9a30818cd2917bd84f7ba3779b6378c262760491be5419e8f27
-        md5: c4d801d61f7f8b2b8f1bfe70669657a5
-        size: 40353792
+        sha256: 0c79410b145ac9c7455fdee456b2ddb2599e858ea5541da09221a45300feafe6
+        md5: 9997da1c6e622ab62c80cbaf7ea81f18
+        size: 40354304
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1267,8 +1267,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T16:53:05Z
-          source_ref: a6847c9224a79095b52d97353661f28c611fe472
+          reviewed_at: 2026-11-04T18:02:04Z
+          source_ref: 2481d8a12e271c4d0510bb473c6ef63ae489e01b
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - listed: true
@@ -1392,7 +1392,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.4.0-0008
+      release: v3.4.0-0009
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -1402,7 +1402,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
-      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0008
+      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0009
       issues_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/issues
       license: GPL-3.0-only; dependencies retain their respective licenses
       internet: required
@@ -1436,16 +1436,16 @@ packages:
         ja: 紙の文書を検索できるデジタル アーカイブにします。スキャンを取り込み、OCR で文字を認識し、タグ、差出人、文書タイプで整理できます。文書の内容を検索し、共有は Paperless の権限で管理します。取り込んだファイルは受信フォルダーから削除されるので、バックアップを残してください。選択した受信フォルダーにはパッケージ アカウントの読み取り/書き込み権限が必要です。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 종이 문서를 검색할 수 있는 디지털 보관함으로 바꿔요. 스캔을 가져오고, OCR로 글자를 인식하고, 태그, 거래처, 문서 유형으로 정리해요. 문서 내용을 검색하고 공유는 Paperless 권한으로 관리해요. 가져온 파일은 받은 편지함 폴더에서 지워지니 백업을 꼭 남겨 두세요. 선택한 받은 편지함 폴더에는 패키지 계정의 읽기/쓰기 권한이 필요해요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Fix DSM sign-in when opening over HTTP"
-        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
-        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
-        ja: "HTTP で開いた場合の DSM ログインを修正"
-        ko: "HTTP로 열 때 DSM 로그인 수정"
-        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
-        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
+        en: "Preserve HTTP and HTTPS in OIDC sign-in callbacks"
+        zh-TW: "OIDC 登入回呼依照開啟時的 HTTP 或 HTTPS 協定"
+        zh-CN: "OIDC 登录回调遵循打开时的 HTTP 或 HTTPS 协议"
+        ja: "OIDC ログインのコールバックで HTTP と HTTPS を維持"
+        ko: "OIDC 로그인 콜백에서 HTTP 및 HTTPS 유지"
+        de: "HTTP und HTTPS bei OIDC-Anmelderückrufen beibehalten"
+        fr: "Conserver HTTP et HTTPS dans les rappels de connexion OIDC"
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.4.0-0008
+        version: 3.4.0-0009
         arch:
           - apollolake
           - avoton
@@ -1474,9 +1474,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 12481b341a7ae8d21901484ad701647e72ec87de847f7792b600c47b13e168dc
-        md5: b8ccb3f23fb19b6208d2f0690020dc9c
-        size: 39300096
+        sha256: 8f1a76210f8deaded6fc623a1a6c37d93b6d8bf150ed8df31aad17461733bc77
+        md5: 32fbd0de9a3415b431c0d540633ef5fb
+        size: 39300608
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1494,8 +1494,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T16:53:05Z
-          source_ref: c0324e9739ded455fcff5e272949644e7c356b5b
+          reviewed_at: 2026-11-04T18:02:04Z
+          source_ref: c5317ee35b59c68538987d713118a4bd0792db50
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
