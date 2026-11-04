@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1614
+      release: v0.1.1-1616
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,45 +40,57 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          - Read snapshot names and locks through the DSM window WebAPI
-          - Update CLI to 0.47.4 and native/frontend SDK to 0.46.2; keep UI 0.19.4, existing screenshots and missing-data fallbacks
+          - Remove large page titles while keeping page actions in the toolbar
+          - Keep snapshot metadata loading while the NAS is busy; cancel obsolete reads when navigating away
+          - Continue monitoring long-running jobs by their original ID instead of imposing a total polling deadline
+          - Use shared five-minute request and lifecycle budgets with CLI 0.48.4 and SDK 0.50.0 / UI 0.20.0
         zh-TW: |-
-          - 透過 DSM 視窗 WebAPI 讀取快照名稱與鎖定狀態
-          - CLI 更新至 0.47.4、原生及前端 SDK 至 0.46.2；保留 UI 0.19.4、既有截圖與資料缺失時的顯示
+          - 移除頁面大標題，操作按鈕保留在工具列
+          - NAS 忙碌時持續載入快照資訊，離開頁面後取消過時的讀取
+          - 以原工作 ID 持續追蹤長時間工作，不再以總輪詢時間判定失敗
+          - 使用 CLI 0.48.4 與 SDK 0.50.0 / UI 0.20.0 的共用五分鐘請求及生命週期預算
         zh-CN: |-
-          - 通过 DSM 窗口 WebAPI 读取快照名称与锁定状态
-          - CLI 更新至 0.47.4、原生及前端 SDK 至 0.46.2；保留 UI 0.19.4、现有截图与数据缺失时的显示
+          - 移除页面大标题，操作按钮保留在工具栏
+          - NAS 忙碌时持续加载快照信息，离开页面后取消过时的读取
+          - 以原任务 ID 持续跟踪长时间任务，不再以总轮询时间判定失败
+          - 使用 CLI 0.48.4 与 SDK 0.50.0 / UI 0.20.0 的共享五分钟请求及生命周期预算
         de: |-
-          - Snapshot-Namen und Sperren über die WebAPI des DSM-Fensters lesen
-          - CLI auf 0.47.4 und natives/Frontend-SDK auf 0.46.2 aktualisieren; UI 0.19.4, Screenshots und Anzeigen bei fehlenden Daten beibehalten
+          - Große Seitentitel entfernen und Seitenaktionen in der Werkzeugleiste beibehalten
+          - Snapshot-Metadaten weiter laden, wenn das NAS ausgelastet ist; veraltete Abfragen beim Seitenwechsel abbrechen
+          - Lang laufende Aufgaben mit ihrer ursprünglichen ID ohne Gesamtlaufzeit für die Statusabfrage überwachen
+          - Gemeinsame Fünf-Minuten-Budgets für Anfragen und Lebenszyklus mit CLI 0.48.4 und SDK 0.50.0 / UI 0.20.0 verwenden
         fr: |-
-          - Lire les noms et le verrouillage des instantanés via la WebAPI de la fenêtre DSM
-          - Mettre à jour la CLI vers 0.47.4 et les SDK natif/frontal vers 0.46.2 ; conserver l’interface 0.19.4, les captures et l’affichage en cas de données manquantes
+          - Retirer les grands titres des pages et conserver les actions dans la barre d’outils
+          - Continuer à charger les métadonnées des instantanés lorsque le NAS est occupé et annuler les lectures obsolètes en quittant la page
+          - Suivre les tâches longues avec leur identifiant initial, sans durée totale maximale de suivi
+          - Utiliser les budgets communs de cinq minutes pour les requêtes et le cycle de vie avec CLI 0.48.4 et SDK 0.50.0 / UI 0.20.0
         ja: |-
-          - DSM ウィンドウの WebAPI でスナップショット名とロック状態を取得
-          - CLI を 0.47.4、ネイティブとフロントエンドの SDK を 0.46.2 に更新。UI 0.19.4、既存の画像、データ欠落時の表示を維持
+          - 大きなページタイトルを非表示にし、操作ボタンはツールバーに保持
+          - NAS がビジーでもスナップショット情報の読み込みを継続し、ページを離れたら古い読み込みをキャンセル
+          - 長時間のジョブを元の ID で追跡し、ポーリングの合計時間による失敗判定を廃止
+          - CLI 0.48.4 と SDK 0.50.0 / UI 0.20.0 の共通の5分間のリクエスト・ライフサイクル予算を使用
         ko: |-
-          - DSM 창 WebAPI로 스냅샷 이름과 잠금 상태 읽기
-          - CLI를 0.47.4, 네이티브/프런트엔드 SDK를 0.46.2로 업데이트하고 UI 0.19.4, 기존 스크린샷 및 데이터 누락 시 표시 유지
+          - 큰 페이지 제목을 숨기고 작업 버튼은 도구 모음에 유지
+          - NAS가 바쁠 때도 스냅샷 메타데이터 로딩을 유지하고 페이지를 떠나면 오래된 읽기를 취소
+          - 전체 폴링 시간 제한 없이 원래 작업 ID로 장시간 작업을 계속 추적
+          - CLI 0.48.4와 SDK 0.50.0 / UI 0.20.0의 공통 5분 요청 및 수명 주기 예산 사용
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1598.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-system-partition-1600.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-scanning-1602.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1607.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1613-picker-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-snapshots-1613-locks-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1610-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1616-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1616-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-snapshots-1616-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1616-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-system-partition-1616-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1614
+        version: 0.1.1-1616
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 1647973684c51258683f3721a94462493ddb50793597c1afbca24bcb49afadbe
-        md5: 57012a75913c4f452b658ab672a646f7
-        size: 14977536
+        sha256: 3b8c3deb86e513671fba2d425c8e54a0e2dd75f88836cd3d40ad23bd1ccd9672
+        md5: 8a7ad28384a64cd748f01e02a0d915ac
+        size: 15063552
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -95,19 +107,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T11:55:37Z
-          source_ref: 1607c5a4cf01c76e5c87e44e18a29c643d62602b
+          reviewed_at: 2026-11-04T02:51:06Z
+          source_ref: c7f45d4ac973d3abf5df49553e7ecab51fdfe11a
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1614
+        version: 0.1.1-1616
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 0ed162853458ce887adc0362b65bf62f6c50264c5c6517daa755eb166f5c6f2e
-        md5: 396a66e6550b070ec1eccb26d7ba7f15
-        size: 15732736
+        sha256: 757da896fcda3648778be92c407da349faf0835e972b1c8b884608a9ab933df4
+        md5: 018247fe020689c63e0f2f8922c00dee
+        size: 15824384
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -124,11 +136,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T11:55:42Z
-          source_ref: 1607c5a4cf01c76e5c87e44e18a29c643d62602b
+          reviewed_at: 2026-11-04T02:51:17Z
+          source_ref: c7f45d4ac973d3abf5df49553e7ecab51fdfe11a
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1614
+        version: 0.1.1-1616
         arch:
           - apollolake
           - avoton
@@ -157,9 +169,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e7116d66905ec85f7921ba82f6b1cc015138281eed6b68701419e5794cbbd14b
-        md5: 5c2a208cf5ff202757640316385d61d7
-        size: 16121856
+        sha256: f2bfd038b59d92773bbe409843b4fffbcbf00b7c117621cc4606c3ecf8ad844b
+        md5: c80bb7a9f8c56bbb20a08e0c1c53908e
+        size: 16212480
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -176,8 +188,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-02T11:55:54Z
-          source_ref: 1607c5a4cf01c76e5c87e44e18a29c643d62602b
+          reviewed_at: 2026-11-04T02:51:34Z
+          source_ref: c7f45d4ac973d3abf5df49553e7ecab51fdfe11a
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: utilities
