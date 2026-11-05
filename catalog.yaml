@@ -191,7 +191,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0127
+      release: v0.1.0-0128
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -346,41 +346,68 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0127
+          0.1.0-0128
 
-          - Improve phone navigation, header titles and segmented labels with the latest shared UI and SDK
+          - Pin UI 0.20.9
+          - List installed Synology apps using Login Portal aliases and ports
+          - Support start paths in custom URLs
+          - Show picker loading, empty and error states with Retry
         zh-TW: |-
-          0.1.0-0127
+          0.1.0-0128
 
-          - 更新共用 UI 與 SDK，改善手機導覽、標題及分段控制項標籤
+          - 固定使用 UI 0.20.9
+          - 依登入入口別名與連接埠列出已安裝的 Synology App
+          - 自訂網址支援起始路徑
+          - 選單顯示載入、空清單與錯誤狀態，並提供重試
         zh-CN: |-
-          0.1.0-0127
+          0.1.0-0128
 
-          - 更新共享 UI 与 SDK，改善手机导航、标题和分段控件标签
+          - 固定使用 UI 0.20.9
+          - 根据登录门户别名和端口列出已安装的 Synology App
+          - 自定义网址支持起始路径
+          - 选择列表显示加载、空列表和错误状态，并提供重试
         de: |-
-          0.1.0-0127
+          0.1.0-0128
 
-          - Gemeinsame UI und SDK aktualisiert: bessere Navigation, Titel und Segmentbeschriftungen auf dem Smartphone
+          - UI auf 0.20.9 festlegen
+          - Installierte Synology-Apps anhand der Login-Portal-Aliasse und Ports anzeigen
+          - Startpfade in benutzerdefinierten URLs unterstützen
+          - Lade-, Leer- und Fehlerzustände mit Wiederholen anzeigen
         fr: |-
-          0.1.0-0127
+          0.1.0-0128
 
-          - Mise à jour de l’UI partagée et du SDK pour améliorer la navigation, les titres et les libellés segmentés sur téléphone
+          - Fixer l’UI à la version 0.20.9
+          - Lister les apps Synology installées selon les alias et ports du Portail de connexion
+          - Prendre en charge un chemin de départ dans les URL personnalisées
+          - Afficher le chargement, les listes vides et les erreurs avec Réessayer
         ja: |-
-          0.1.0-0127
+          0.1.0-0128
 
-          - 共通 UI と SDK を更新し、スマートフォンのナビゲーション、見出しとセグメントラベルを改善
+          - UI を 0.20.9 に固定
+          - ログインポータルのエイリアスとポートでインストール済みの Synology アプリを表示
+          - カスタム URL の開始パスに対応
+          - 選択リストの読み込み中、空、エラー状態と再試行を表示
         ko: |-
-          0.1.0-0127
+          0.1.0-0128
 
-          - 공유 UI와 SDK를 업데이트하여 휴대폰 탐색, 제목과 분할 컨트롤 레이블 개선
+          - UI를 0.20.9로 고정
+          - 로그인 포털 별칭과 포트로 설치된 Synology 앱 표시
+          - 사용자 지정 URL의 시작 경로 지원
+          - 선택 목록의 로딩, 빈 목록, 오류 상태와 다시 시도 표시
         es: |-
-          0.1.0-0127
+          0.1.0-0128
 
-          - Actualiza la UI compartida y el SDK para mejorar la navegación, los títulos y las etiquetas segmentadas en el móvil
+          - Fijar la UI en 0.20.9
+          - Listar las apps Synology instaladas con los alias y puertos del Portal de inicio de sesión
+          - Admitir rutas iniciales en las URL personalizadas
+          - Mostrar carga, listas vacías y errores con Reintentar
         it: |-
-          0.1.0-0127
+          0.1.0-0128
 
-          - Aggiorna UI condivisa e SDK per migliorare navigazione, titoli ed etichette segmentate sul telefono
+          - Fissa la UI alla versione 0.20.9
+          - Elenca le app Synology installate con alias e porte del Portale di accesso
+          - Supporta percorsi iniziali negli URL personalizzati
+          - Mostra caricamento, elenchi vuoti ed errori con Riprova
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0126-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-app-urls-0126-en.png
@@ -389,15 +416,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0126-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0127
+        version: 0.1.0-0128
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 1a7a4359166dd67fffa82f77043d2527479834944f0cfd8edc3cca60cf8a9328
-        md5: a378eb032d5220e4b718b3a3e3decacd
-        size: 14929920
+        sha256: 81b3ea9abf6259a7f4f48878089b6540e747d45be085e4da3568c3b6b25af2ac
+        md5: 408a2bcfe49639852e113ddb0fbc1cda
+        size: 14950400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -414,19 +441,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T01:45:10Z
-          source_ref: c5fcdc551439575486cd398c7d2d1606ded89ab7
+          reviewed_at: 2026-11-05T06:05:51Z
+          source_ref: 0da0fcdb0fe8632076f3d6b17e2dd2c4dfe9dac1
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0127
+        version: 0.1.0-0128
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: f31ddfd50ebe9b34e0ff56d1dbfd4efaeaf0782bb4ce865c59f6cb66372fd93c
-        md5: 4018df304a7efe358385f5f4abbce4a1
-        size: 15523840
+        sha256: d2bbf43ebca9747cdd5bf4202878fa87d89d77937ab38707371a37e1274ca3be
+        md5: 09a31017f854955f7eedbec89c2f6069
+        size: 15534080
         facts:
           built_with: sdk
           sdk_backend: go
@@ -443,11 +470,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T01:45:10Z
-          source_ref: c5fcdc551439575486cd398c7d2d1606ded89ab7
+          reviewed_at: 2026-11-05T06:05:51Z
+          source_ref: 0da0fcdb0fe8632076f3d6b17e2dd2c4dfe9dac1
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0127
+        version: 0.1.0-0128
         arch:
           - apollolake
           - avoton
@@ -476,9 +503,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 290a9394eddb21fdd8a6c5011569b7645e234559ce2f97b2e23490d482897237
-        md5: 149a1ff6c9b11b2f9e18eba2f220a5bf
-        size: 16291840
+        sha256: 283b292e15f9340d0c5fbd9c5ea76a3e95ac59be75b6885f641ffc52e2cea840
+        md5: 67f152dc48910fae0fbf31b5c4391c87
+        size: 16302080
         facts:
           built_with: sdk
           sdk_backend: go
@@ -495,8 +522,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T01:45:10Z
-          source_ref: c5fcdc551439575486cd398c7d2d1606ded89ab7
+          reviewed_at: 2026-11-05T06:05:51Z
+          source_ref: 0da0fcdb0fe8632076f3d6b17e2dd2c4dfe9dac1
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
