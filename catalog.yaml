@@ -532,7 +532,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0083
+      release: v0.2.2-0084
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -602,15 +602,15 @@ packages:
         ja: HTTP/HTTPS リンク、Torrent、マグネット リンク、ED2K のファイルに加え、yt-dlp 対応サイトの動画や拡張機能で追加したソースからダウンロードできます。ダウンロードの一時停止・再開・整理、完了したファイルの保存先の選択、履歴の確認ができます。ダウンロードはユーザーごとに分かれ、アクセス、拡張機能、エンジンの更新は管理者が管理します。Gopeed を利用しています。DSM サインインが必要です
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
-        en: "New phone layout with paste-and-download and simpler search; personal media options, rules, followed channels, NFO files and cookies"
-        zh-TW: "新增手機版貼上即下載與簡化搜尋，支援個人媒體選項、規則、追蹤頻道、NFO 檔案及 cookies"
-        zh-CN: "新增手机版粘贴即下载与简化搜索，支持个人媒体选项、规则、关注频道、NFO 文件及 cookies"
-        ja: "スマートフォンで貼り付けてダウンロード、シンプルな検索に対応。個人用メディア設定、ルール、フォローチャンネル、NFO ファイル、Cookie を追加"
-        ko: "붙여넣기 다운로드와 간편 검색을 제공하는 휴대폰 화면 및 개인 미디어 옵션, 규칙, 팔로우 채널, NFO 파일, 쿠키 추가"
-        de: "Neue Handyansicht mit Einfügen und Herunterladen sowie einfacherer Suche; persönliche Medienoptionen, Regeln, abonnierte Kanäle, NFO-Dateien und Cookies"
-        fr: "Nouvelle interface mobile avec téléchargement par collage et recherche simplifiée ; options média personnelles, règles, chaînes suivies, fichiers NFO et cookies"
-        es: "Nueva interfaz móvil para pegar y descargar y buscar fácilmente; opciones multimedia personales, reglas, canales seguidos, archivos NFO y cookies"
-        it: "Nuova interfaccia mobile per incollare e scaricare e cercare più facilmente; opzioni multimediali personali, regole, canali seguiti, file NFO e cookie"
+        en: "0.2.2-0084\n\n- Pin UI 0.20.9\n- Download image galleries with optional gallery-dl on x86_64; keep filenames distinct across posts\n- Choose relative subfolders for downloads, media rules and followed channels\n- Explain unavailable home folders and offer Retry or another allowed folder"
+        zh-TW: "0.2.2-0084\n\n- 固定使用 UI 0.20.9\n- x86_64 可透過選用的 gallery-dl 下載相簿，避免不同貼文的圖片檔名重複\n- 下載、媒體規則與追蹤頻道支援相對子資料夾\n- 家目錄不可用時提供說明、重試與其他允許的資料夾"
+        zh-CN: "0.2.2-0084\n\n- 固定使用 UI 0.20.9\n- x86_64 可通过可选的 gallery-dl 下载图库，避免不同帖子的图片文件名重复\n- 下载、媒体规则与关注频道支持相对子文件夹\n- 主目录不可用时提供说明、重试与其他允许的文件夹"
+        ja: "0.2.2-0084\n\n- UI を 0.20.9 に固定\n- x86_64 で任意の gallery-dl による画像ギャラリーのダウンロードに対応し、投稿間のファイル名重複を防止\n- ダウンロード、メディアルール、フォローチャンネルに相対サブフォルダーを指定可能\n- ホームが利用できない場合の案内、再試行、別の許可済みフォルダーの選択を追加"
+        ko: "0.2.2-0084\n\n- UI를 0.20.9로 고정\n- x86_64에서 선택적 gallery-dl로 이미지 갤러리를 다운로드하고 게시물 간 파일명 중복 방지\n- 다운로드, 미디어 규칙 및 팔로우 채널의 상대 하위 폴더 지원\n- 홈 폴더를 사용할 수 없을 때 안내, 다시 시도 및 다른 허용 폴더 선택 제공"
+        de: "0.2.2-0084\n\n- UI auf 0.20.9 festlegen\n- Bildgalerien mit optionalem gallery-dl auf x86_64 laden und doppelte Dateinamen zwischen Beiträgen vermeiden\n- Relative Unterordner für Downloads, Medienregeln und abonnierte Kanäle wählen\n- Bei nicht verfügbarem Home-Ordner Hinweise, Wiederholen und andere erlaubte Ordner anbieten"
+        fr: "0.2.2-0084\n\n- Fixer l’UI à la version 0.20.9\n- Télécharger des galeries avec gallery-dl en option sur x86_64 et éviter les noms identiques entre publications\n- Choisir des sous-dossiers relatifs pour les téléchargements, règles média et chaînes suivies\n- Expliquer un dossier personnel indisponible et proposer Réessayer ou un autre dossier autorisé"
+        es: "0.2.2-0084\n\n- Fijar la UI en 0.20.9\n- Descargar galerías con gallery-dl opcional en x86_64 y evitar nombres duplicados entre publicaciones\n- Elegir subcarpetas relativas para descargas, reglas multimedia y canales seguidos\n- Explicar las carpetas personales no disponibles y ofrecer Reintentar u otra carpeta permitida"
+        it: "0.2.2-0084\n\n- Fissa la UI alla versione 0.20.9\n- Scarica gallerie con gallery-dl opzionale su x86_64 evitando nomi duplicati tra i post\n- Scegli sottocartelle relative per download, regole multimediali e canali seguiti\n- Spiega quando la cartella home non è disponibile e offre Riprova o un’altra cartella consentita"
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0081-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -619,15 +619,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0081-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0083
+        version: 0.2.2-0084
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: ecf1fa792ea06a1dcc3f28b71d3cd3fb08d89645aeefe360b1108d2c27ad527f
-        md5: 84660d2f6384c1849bf57bd5885ec590
-        size: 67093504
+        sha256: 7945f24eb306c9b5c2b8f96597b49bbdfafee0a8b0d016bc31836c6675987624
+        md5: a55971fc268915ff9953fb52dba573ed
+        size: 67123712
         facts:
           built_with: sdk
           sdk_backend: go
@@ -645,11 +645,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T01:58:44Z
-          source_ref: c56d7390eafab0561753e47ec2d7802585408468
+          reviewed_at: 2026-11-05T06:23:41Z
+          source_ref: a480cc03a0eee346d29258ed6383eb9eac22ec02
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0083
+        version: 0.2.2-0084
         arch:
           - apollolake
           - avoton
@@ -678,9 +678,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 27bde690253abd67e7e8cf48c39f2ab7ff4cb8610a0180e874ec5fc839a0eaf3
-        md5: 4356c00c47a3dba43a54b87248a18a80
-        size: 70763520
+        sha256: 6bdd7ca1c264ef28d545e4ce055e730f472c627a9b434f2f9bcf5da9e7d43aef
+        md5: a21d3198537a0c800b59c25462d608f5
+        size: 70795264
         facts:
           built_with: sdk
           sdk_backend: go
@@ -698,8 +698,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T01:58:44Z
-          source_ref: c56d7390eafab0561753e47ec2d7802585408468
+          reviewed_at: 2026-11-05T06:23:41Z
+          source_ref: a480cc03a0eee346d29258ed6383eb9eac22ec02
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
