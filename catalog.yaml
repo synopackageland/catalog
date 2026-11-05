@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1621
+      release: v0.1.1-1622
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,50 +40,76 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          0.1.1-1621
+          0.1.1-1622
 
-          - Pin UI 0.20.9 for clearer full-page text and layout fixes, preserving settings and scan reports
+          - Resume paused scans without losing progress on unchanged data
+          - Keep saved reports and settings after upgrading
+          - Update SDK and App to 0.50.15 and UI to 0.20.12
         zh-TW: |-
-          0.1.1-1621
+          0.1.1-1622
 
-          - 固定 UI 0.20.9，改善全頁文字與版面，保留設定和掃描報告
+          - 暫停後繼續掃描，未變更的部分不會重新計算
+          - 升級後保留已儲存的報告與設定
+          - 更新 SDK 與 App 至 0.50.15、UI 至 0.20.12
         zh-CN: |-
-          0.1.1-1621
+          0.1.1-1622
 
-          - 固定 UI 0.20.9，改善全页文字与布局，保留设置和扫描报告
+          - 暂停后继续扫描，未变更的部分不会重新计算
+          - 升级后保留已保存的报告和设置
+          - 更新 SDK 与 App 至 0.50.15、UI 至 0.20.12
         de: |-
-          0.1.1-1621
+          0.1.1-1622
 
-          - UI 0.20.9 festlegen, Vollseitentext und Layout verbessern sowie Einstellungen und Scanberichte erhalten
+          - Pausierte Scans fortsetzen, ohne den Fortschritt bei unveränderten Daten zu verlieren
+          - Gespeicherte Berichte und Einstellungen nach dem Upgrade behalten
+          - SDK und App auf 0.50.15 und UI auf 0.20.12 aktualisieren
         fr: |-
-          0.1.1-1621
+          0.1.1-1622
 
-          - Fixer UI à 0.20.9 pour améliorer le texte en pleine page et la mise en page, en conservant les réglages et rapports d’analyse
+          - Reprendre les analyses en pause sans perdre la progression sur les données inchangées
+          - Conserver les rapports et réglages après la mise à niveau
+          - Mise à jour du SDK et de l’App vers 0.50.15 et de l’UI vers 0.20.12
         ja: |-
-          0.1.1-1621
+          0.1.1-1622
 
-          - UI を 0.20.9 に固定し、全画面の文字とレイアウトを改善、設定とスキャンレポートを保持
+          - 一時停止したスキャンを再開しても、変更のないデータの進捗を保持
+          - アップグレード後も保存済みレポートと設定を保持
+          - SDK と App を 0.50.15、UI を 0.20.12 に更新
         ko: |-
-          0.1.1-1621
+          0.1.1-1622
 
-          - UI를 0.20.9로 고정하고 전체 페이지 텍스트와 레이아웃 개선, 설정과 스캔 보고서 유지
+          - 일시 중지한 스캔을 재개해도 변경되지 않은 데이터의 진행률 유지
+          - 업그레이드 후에도 저장된 보고서와 설정 유지
+          - SDK와 App을 0.50.15, UI를 0.20.12로 업데이트
+        es: |-
+          0.1.1-1622
+
+          - Reanudar análisis en pausa sin perder el progreso de los datos sin cambios
+          - Conservar los informes y la configuración tras actualizar
+          - Actualizar el SDK y la App a 0.50.15 y la UI a 0.20.12
+        it: |-
+          0.1.1-1622
+
+          - Riprendi le scansioni in pausa senza perdere i progressi sui dati invariati
+          - Mantieni report e impostazioni salvati dopo l’aggiornamento
+          - Aggiorna SDK e App a 0.50.15 e UI a 0.20.12
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1616-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1622-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-packages-details-1619-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-recycle-details-1619-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-snapshots-1616-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1616-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1621
+        version: 0.1.1-1622
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 79dc00554b4801df7f08a6d25acf32ed697cf37764475dfcd129daa17078638b
-        md5: df9eec23eaf0a489c8835c13265a8f32
-        size: 15130624
+        sha256: e2875c2a544291599b949224a4ee3325e7acfdb005b67c555efaa7c535fa8aa9
+        md5: 6b80f16ce68dfd65bdf64bec55849687
+        size: 15163392
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -100,19 +126,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T06:15:43Z
-          source_ref: d406a7c48fa2b2853f116c2ccd27251e3d800960
+          reviewed_at: 2026-11-05T11:43:38Z
+          source_ref: 95d4b7be4210953aa62a26082a32f28d16a78687
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1621
+        version: 0.1.1-1622
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: b671b0cdddcb665e6e26ed39c593c159309cfe2237a495bedd906d936f9c2009
-        md5: 9342af8d151b49f80eeed1adf2031425
-        size: 15895040
+        sha256: c7a501cfc8137f4f0246c0c6ea364294ba0d52e8928ebe872a93a1ae742ac355
+        md5: 70321cb3fb18637aa6329e68fbc5fe59
+        size: 15939072
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -129,11 +155,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T06:15:43Z
-          source_ref: d406a7c48fa2b2853f116c2ccd27251e3d800960
+          reviewed_at: 2026-11-05T11:43:38Z
+          source_ref: 95d4b7be4210953aa62a26082a32f28d16a78687
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1621
+        version: 0.1.1-1622
         arch:
           - apollolake
           - avoton
@@ -162,9 +188,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 28b03d75ab793a095ee4f5bf42c509bb4bd46d4c4a77ae7fceca3d4781b50dab
-        md5: 360680024fdb2951260ac358dc037b65
-        size: 16287744
+        sha256: 772cc52243593863aa7df5896587c8c9a7a170a2bd25f121bebe4123fa7b0979
+        md5: 5a8185ec163692f954b2a51d9a1d74b1
+        size: 16316416
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -181,8 +207,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T06:15:43Z
-          source_ref: d406a7c48fa2b2853f116c2ccd27251e3d800960
+          reviewed_at: 2026-11-05T11:43:38Z
+          source_ref: 95d4b7be4210953aa62a26082a32f28d16a78687
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: utilities
