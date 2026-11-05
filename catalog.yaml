@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1620
+      release: v0.1.1-1621
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,33 +40,33 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          0.1.1-1620
+          0.1.1-1621
 
-          - Improve phone navigation, page titles and segmented controls, use shared border and dialog fixes, and retain settings and scan reports
+          - Pin UI 0.20.9 for clearer full-page text and layout fixes, preserving settings and scan reports
         zh-TW: |-
-          0.1.1-1620
+          0.1.1-1621
 
-          - 改善手機導覽、頁面標題與分段控制，採用共用邊框及對話框修正，保留設定與掃描報告
+          - 固定 UI 0.20.9，改善全頁文字與版面，保留設定和掃描報告
         zh-CN: |-
-          0.1.1-1620
+          0.1.1-1621
 
-          - 改进手机导航、页面标题和分段控件，采用共享边框及对话框修复，保留设置与扫描报告
+          - 固定 UI 0.20.9，改善全页文字与布局，保留设置和扫描报告
         de: |-
-          0.1.1-1620
+          0.1.1-1621
 
-          - Handynavigation, Seitentitel und Segmentauswahl verbessern, gemeinsame Rahmen- und Dialogkorrekturen übernehmen sowie Einstellungen und Scanberichte erhalten
+          - UI 0.20.9 festlegen, Vollseitentext und Layout verbessern sowie Einstellungen und Scanberichte erhalten
         fr: |-
-          0.1.1-1620
+          0.1.1-1621
 
-          - Améliorer la navigation mobile, les titres et les commandes segmentées, appliquer les corrections communes des bordures et dialogues, et conserver les réglages et rapports d’analyse
+          - Fixer UI à 0.20.9 pour améliorer le texte en pleine page et la mise en page, en conservant les réglages et rapports d’analyse
         ja: |-
-          0.1.1-1620
+          0.1.1-1621
 
-          - スマートフォンのナビゲーション、ページタイトル、セグメント操作を改善し、共通の枠線とダイアログの修正を適用、設定とスキャンレポートを保持
+          - UI を 0.20.9 に固定し、全画面の文字とレイアウトを改善、設定とスキャンレポートを保持
         ko: |-
-          0.1.1-1620
+          0.1.1-1621
 
-          - 휴대폰 탐색, 페이지 제목 및 분할 컨트롤 개선, 공통 테두리와 대화 상자 수정 적용, 설정과 스캔 보고서 유지
+          - UI를 0.20.9로 고정하고 전체 페이지 텍스트와 레이아웃 개선, 설정과 스캔 보고서 유지
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1616-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-packages-details-1619-en.png
@@ -75,15 +75,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1616-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1620
+        version: 0.1.1-1621
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 14169a24917409f063406a4f12d9a5e852b0f17305e2719802ae6c2983fe20cc
-        md5: 44e74bcfaf4e722f54c6eb79e259768d
-        size: 15130112
+        sha256: 79dc00554b4801df7f08a6d25acf32ed697cf37764475dfcd129daa17078638b
+        md5: df9eec23eaf0a489c8835c13265a8f32
+        size: 15130624
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -100,19 +100,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T03:07:56Z
-          source_ref: f852b57db024577fc5d4fa59c47edc68ade3d58c
+          reviewed_at: 2026-11-05T06:15:43Z
+          source_ref: d406a7c48fa2b2853f116c2ccd27251e3d800960
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1620
+        version: 0.1.1-1621
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 763faa03c188c482e28dd60bfcc8b3867ff441b44fd4117f515451aab049c268
-        md5: f1eecfca309fa616440dea88106f6672
-        size: 15894016
+        sha256: b671b0cdddcb665e6e26ed39c593c159309cfe2237a495bedd906d936f9c2009
+        md5: 9342af8d151b49f80eeed1adf2031425
+        size: 15895040
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -129,11 +129,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T03:07:56Z
-          source_ref: f852b57db024577fc5d4fa59c47edc68ade3d58c
+          reviewed_at: 2026-11-05T06:15:43Z
+          source_ref: d406a7c48fa2b2853f116c2ccd27251e3d800960
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1620
+        version: 0.1.1-1621
         arch:
           - apollolake
           - avoton
@@ -162,8 +162,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e74a15494ee797d034a4fc7c4557e6f4c2a74f71aa20a0b6331d9a5a5f8867b9
-        md5: 1b4137c09502511857cf6bd97a7b54e0
+        sha256: 28b03d75ab793a095ee4f5bf42c509bb4bd46d4c4a77ae7fceca3d4781b50dab
+        md5: 360680024fdb2951260ac358dc037b65
         size: 16287744
         facts:
           built_with: sdk
@@ -181,8 +181,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T03:07:56Z
-          source_ref: f852b57db024577fc5d4fa59c47edc68ade3d58c
+          reviewed_at: 2026-11-05T06:15:43Z
+          source_ref: d406a7c48fa2b2853f116c2ccd27251e3d800960
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: utilities
