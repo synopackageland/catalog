@@ -217,7 +217,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0129
+      release: v0.1.0-0131
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -372,50 +372,50 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0129
+          0.1.0-0131
 
-          - Update SDK and App to 0.50.15 and UI to 0.20.12
-          - Improve layout on short landscape screens
+          - Keep Cloudflare own-domain settings after reinstalling with data kept, and reconnect automatically
+          - Take over Connect's own old DNS records automatically and remember the last name
         zh-TW: |-
-          0.1.0-0129
+          0.1.0-0131
 
-          - 更新 SDK 與 App 至 0.50.15、UI 至 0.20.12
-          - 改善橫向矮螢幕的版面
+          - 保留資料重裝後保留 Cloudflare 自有網域設定並自動重新連線
+          - 自動接管 Connect 自己的舊 DNS 記錄並記住上次名稱
         zh-CN: |-
-          0.1.0-0129
+          0.1.0-0131
 
-          - 更新 SDK 与 App 至 0.50.15、UI 至 0.20.12
-          - 改进横向矮屏幕的布局
+          - 保留数据重装后保留 Cloudflare 自有域名设置并自动重新连接
+          - 自动接管 Connect 自己的旧 DNS 记录并记住上次名称
         de: |-
-          0.1.0-0129
+          0.1.0-0131
 
-          - SDK und App auf 0.50.15 und UI auf 0.20.12 aktualisieren
-          - Layout auf niedrigen Querformat-Bildschirmen verbessern
+          - Cloudflare-Domaineinstellungen nach Neuinstallation mit behaltenen Daten beibehalten und automatisch neu verbinden
+          - Eigene alte DNS-Einträge von Connect automatisch übernehmen und den letzten Namen merken
         fr: |-
-          0.1.0-0129
+          0.1.0-0131
 
-          - Mise à jour du SDK et de l’App vers 0.50.15 et de l’UI vers 0.20.12
-          - Meilleure mise en page sur les écrans paysage peu hauts
+          - Conserver les réglages du domaine Cloudflare après une réinstallation avec données conservées et se reconnecter automatiquement
+          - Reprendre automatiquement les anciens enregistrements DNS de Connect et mémoriser le dernier nom
         ja: |-
-          0.1.0-0129
+          0.1.0-0131
 
-          - SDK と App を 0.50.15、UI を 0.20.12 に更新
-          - 高さの低い横向き画面のレイアウトを改善
+          - データを保持した再インストール後も Cloudflare 独自ドメインの設定を保持し自動で再接続
+          - Connect 自身の古い DNS レコードを自動で引き継ぎ、前回の名前を記憶
         ko: |-
-          0.1.0-0129
+          0.1.0-0131
 
-          - SDK와 App을 0.50.15, UI를 0.20.12로 업데이트
-          - 높이가 낮은 가로 화면의 레이아웃 개선
+          - 데이터를 유지한 재설치 후에도 Cloudflare 자체 도메인 설정을 유지하고 자동으로 다시 연결
+          - Connect의 이전 DNS 레코드를 자동으로 인수하고 마지막 이름 기억
         es: |-
-          0.1.0-0129
+          0.1.0-0131
 
-          - Actualizar el SDK y la App a 0.50.15 y la UI a 0.20.12
-          - Mejorar el diseño en pantallas horizontales de poca altura
+          - Conservar la configuración del dominio de Cloudflare tras reinstalar conservando los datos y reconectar automáticamente
+          - Recuperar automáticamente los registros DNS antiguos de Connect y recordar el último nombre
         it: |-
-          0.1.0-0129
+          0.1.0-0131
 
-          - Aggiorna SDK e App a 0.50.15 e UI a 0.20.12
-          - Migliora il layout sugli schermi orizzontali poco alti
+          - Mantieni le impostazioni del dominio Cloudflare dopo la reinstallazione con dati conservati e riconnetti automaticamente
+          - Riprendi automaticamente i vecchi record DNS di Connect e ricorda l'ultimo nome
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0129-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-app-urls-0129-en.png
@@ -424,15 +424,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0126-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0129
+        version: 0.1.0-0131
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: aaa04c47285fdad0bb8ce3b9bcb2ce29dd077cf221729f45eafb8588bfb86a3c
-        md5: 7dc096a1d3ac414981f0b51df0eb6d91
-        size: 14950400
+        sha256: ec1ebd53720ef930286d32d1585475ff6154d04b16b0a074e8070152b4a642f5
+        md5: 07e2587927d945172d732135772a495c
+        size: 14960640
         facts:
           built_with: sdk
           sdk_backend: go
@@ -449,19 +449,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T11:26:17Z
-          source_ref: 70105d83ae0ca7bf4574b6e0d2e3dfd8145828b6
+          reviewed_at: 2026-11-05T13:33:40Z
+          source_ref: 585c7990f82daf98899f86ac0ea2feecd32eafb7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0129
+        version: 0.1.0-0131
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 90a8d0d4046a9b901b5aae163089230e1e38fa8510d8ca57a6ac0c603e11455e
-        md5: 4b0d2924473b5a9ef59b3e03bfec00c5
-        size: 15534080
+        sha256: a0b095a347bdd9e1b2c9232d7f645e5ee19f0f050628ece977e9886217d19a39
+        md5: 66b807d6c281649231639c2ed8fb83fe
+        size: 15544320
         facts:
           built_with: sdk
           sdk_backend: go
@@ -478,11 +478,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T11:26:17Z
-          source_ref: 70105d83ae0ca7bf4574b6e0d2e3dfd8145828b6
+          reviewed_at: 2026-11-05T13:33:40Z
+          source_ref: 585c7990f82daf98899f86ac0ea2feecd32eafb7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0129
+        version: 0.1.0-0131
         arch:
           - apollolake
           - avoton
@@ -511,9 +511,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: de0c8ed61d0ce4babd58345f234605bf7bba90c7086c16ef1e5a3f6d781fd7b2
-        md5: b93d6bcc01cc5c7aed621131fa6496ef
-        size: 16302080
+        sha256: f62735bbde27a58b7b4ad80cf23a35fc28d5dc12a0acf4040c7c8aa14efbffb4
+        md5: 4abf625cbf4a800b7477ae882fa345d0
+        size: 16312320
         facts:
           built_with: sdk
           sdk_backend: go
@@ -530,8 +530,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T11:26:17Z
-          source_ref: 70105d83ae0ca7bf4574b6e0d2e3dfd8145828b6
+          reviewed_at: 2026-11-05T13:33:40Z
+          source_ref: 585c7990f82daf98899f86ac0ea2feecd32eafb7
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
