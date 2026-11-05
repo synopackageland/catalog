@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1622
+      release: v0.1.1-1626
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,59 +40,59 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          0.1.1-1622
+          0.1.1-1626
 
-          - Resume paused scans without losing progress on unchanged data
-          - Keep saved reports and settings after upgrading
-          - Update SDK and App to 0.50.15 and UI to 0.20.12
+          - Explore and Recycle Bin show each shared folder from its newest scan, with the scan's scope and a report picker
+          - Recycle Bin lists every oldest item; Explore fits a maximized 1440 px window
+          - Retain settings and saved scan reports; approve the updated system tasks after upgrading
         zh-TW: |-
-          0.1.1-1622
+          0.1.1-1626
 
-          - 暫停後繼續掃描，未變更的部分不會重新計算
-          - 升級後保留已儲存的報告與設定
-          - 更新 SDK 與 App 至 0.50.15、UI 至 0.20.12
+          - 探索與資源回收筒依各共用資料夾最新的掃描顯示，並標示掃描範圍、可切換報表
+          - 資源回收筒列出所有最舊項目；探索在 1440 px 最大化視窗完整顯示
+          - 保留設定和已儲存的掃描報告；升級後請核准更新的系統工作
         zh-CN: |-
-          0.1.1-1622
+          0.1.1-1626
 
-          - 暂停后继续扫描，未变更的部分不会重新计算
-          - 升级后保留已保存的报告和设置
-          - 更新 SDK 与 App 至 0.50.15、UI 至 0.20.12
+          - 探索与回收站按各共享文件夹最新的扫描显示，并标示扫描范围、可切换报告
+          - 回收站列出所有最旧项目；探索在 1440 px 最大化窗口完整显示
+          - 保留设置和已保存的扫描报告；升级后请批准更新的系统任务
         de: |-
-          0.1.1-1622
+          0.1.1-1626
 
-          - Pausierte Scans fortsetzen, ohne den Fortschritt bei unveränderten Daten zu verlieren
-          - Gespeicherte Berichte und Einstellungen nach dem Upgrade behalten
-          - SDK und App auf 0.50.15 und UI auf 0.20.12 aktualisieren
+          - Erkunden und Papierkorb zeigen jeden freigegebenen Ordner aus seinem neuesten Scan, mit Scanumfang und Berichtsauswahl
+          - Der Papierkorb listet alle ältesten Elemente; Erkunden passt in ein maximiertes 1440-px-Fenster
+          - Einstellungen und gespeicherte Scanberichte bleiben erhalten; aktualisierte Systemaufgaben nach dem Upgrade freigeben
         fr: |-
-          0.1.1-1622
+          0.1.1-1626
 
-          - Reprendre les analyses en pause sans perdre la progression sur les données inchangées
-          - Conserver les rapports et réglages après la mise à niveau
-          - Mise à jour du SDK et de l’App vers 0.50.15 et de l’UI vers 0.20.12
+          - Explorer et Corbeille affichent chaque dossier partagé selon son analyse la plus récente, avec sa portée et un sélecteur de rapport
+          - La Corbeille liste tous les éléments les plus anciens ; Explorer tient dans une fenêtre de 1440 px maximisée
+          - Réglages et rapports d’analyse conservés ; approuvez les tâches système mises à jour après la mise à niveau
         ja: |-
-          0.1.1-1622
+          0.1.1-1626
 
-          - 一時停止したスキャンを再開しても、変更のないデータの進捗を保持
-          - アップグレード後も保存済みレポートと設定を保持
-          - SDK と App を 0.50.15、UI を 0.20.12 に更新
+          - 探索とごみ箱は各共有フォルダーを最新のスキャンで表示し、スキャン範囲の表示とレポートの切り替えに対応
+          - ごみ箱に最も古い項目をすべて表示。探索は 1440 px の最大化ウィンドウに収まるよう改善
+          - 設定と保存済みのスキャンレポートを維持。アップグレード後に更新されたシステムタスクを承認してください
         ko: |-
-          0.1.1-1622
+          0.1.1-1626
 
-          - 일시 중지한 스캔을 재개해도 변경되지 않은 데이터의 진행률 유지
-          - 업그레이드 후에도 저장된 보고서와 설정 유지
-          - SDK와 App을 0.50.15, UI를 0.20.12로 업데이트
+          - 탐색과 휴지통이 각 공유 폴더를 최신 스캔으로 표시하고 스캔 범위 표시와 보고서 전환 지원
+          - 휴지통에 가장 오래된 항목을 모두 표시; 탐색이 1440px 최대화 창에 맞게 표시
+          - 설정과 저장된 스캔 보고서 유지; 업그레이드 후 업데이트된 시스템 작업 승인 필요
         es: |-
-          0.1.1-1622
+          0.1.1-1626
 
-          - Reanudar análisis en pausa sin perder el progreso de los datos sin cambios
-          - Conservar los informes y la configuración tras actualizar
-          - Actualizar el SDK y la App a 0.50.15 y la UI a 0.20.12
+          - Explorar y Papelera de reciclaje muestran cada carpeta compartida según su análisis más reciente, con su alcance y un selector de informe
+          - La Papelera de reciclaje lista todos los elementos más antiguos; Explorar se ajusta a una ventana maximizada de 1440 px
+          - Se conservan los ajustes y los informes de análisis guardados; apruebe las tareas del sistema actualizadas tras la actualización
         it: |-
-          0.1.1-1622
+          0.1.1-1626
 
-          - Riprendi le scansioni in pausa senza perdere i progressi sui dati invariati
-          - Mantieni report e impostazioni salvati dopo l’aggiornamento
-          - Aggiorna SDK e App a 0.50.15 e UI a 0.20.12
+          - Esplora e Cestino mostrano ogni cartella condivisa dalla sua scansione più recente, con l’ambito della scansione e un selettore di report
+          - Il Cestino elenca tutti gli elementi più vecchi; Esplora si adatta a una finestra massimizzata di 1440 px
+          - Impostazioni e report di scansione salvati conservati; approva le attività di sistema aggiornate dopo l’aggiornamento
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1622-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-packages-details-1619-en.png
@@ -101,15 +101,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1622
+        version: 0.1.1-1626
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e2875c2a544291599b949224a4ee3325e7acfdb005b67c555efaa7c535fa8aa9
-        md5: 6b80f16ce68dfd65bdf64bec55849687
-        size: 15163392
+        sha256: f3e9a509b22639c2aa297d403fb764f2317b0db0a44bd61c27c44e1059ab1488
+        md5: 28f6d9af941244128bc8e7653361ff31
+        size: 15188992
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -126,19 +126,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T11:43:38Z
-          source_ref: 95d4b7be4210953aa62a26082a32f28d16a78687
+          reviewed_at: 2026-11-05T20:04:24Z
+          source_ref: fb9667bc6f9a42b69e853cf9d0788262f20b27d6
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1622
+        version: 0.1.1-1626
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: c7a501cfc8137f4f0246c0c6ea364294ba0d52e8928ebe872a93a1ae742ac355
-        md5: 70321cb3fb18637aa6329e68fbc5fe59
-        size: 15939072
+        sha256: d06f1b61020e6b1243067df613a054d749b720b0cd25dd5d1eb602a47fd1441e
+        md5: 186c8e46ff3b651dbcfa6f512a6096c3
+        size: 15972864
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -155,11 +155,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T11:43:38Z
-          source_ref: 95d4b7be4210953aa62a26082a32f28d16a78687
+          reviewed_at: 2026-11-05T20:04:24Z
+          source_ref: fb9667bc6f9a42b69e853cf9d0788262f20b27d6
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1622
+        version: 0.1.1-1626
         arch:
           - apollolake
           - avoton
@@ -188,9 +188,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 772cc52243593863aa7df5896587c8c9a7a170a2bd25f121bebe4123fa7b0979
-        md5: 5a8185ec163692f954b2a51d9a1d74b1
-        size: 16316416
+        sha256: 0b8332f69ba8d4fdb9b8077e614d1c8fc87aabdd5d1b47c55d1b6a116805faa2
+        md5: 0377c42aab6dd7f306885075e440983d
+        size: 16350208
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -207,8 +207,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T11:43:38Z
-          source_ref: 95d4b7be4210953aa62a26082a32f28d16a78687
+          reviewed_at: 2026-11-05T20:04:24Z
+          source_ref: fb9667bc6f9a42b69e853cf9d0788262f20b27d6
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: utilities
