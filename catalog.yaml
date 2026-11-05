@@ -198,7 +198,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0126
+      release: v0.1.0-0127
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -353,41 +353,41 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0126
+          0.1.0-0127
 
-          - App URLs: drag column edges to resize; the address is the widest column and widths are kept after a reload
+          - Improve phone navigation, header titles and segmented labels with the latest shared UI and SDK
         zh-TW: |-
-          0.1.0-0126
+          0.1.0-0127
 
-          - App 網址：可拖拉欄寬，網址欄最寬，重新整理後保留欄寬
+          - 更新共用 UI 與 SDK，改善手機導覽、標題及分段控制項標籤
         zh-CN: |-
-          0.1.0-0126
+          0.1.0-0127
 
-          - App 网址：可拖动调整列宽，网址列最宽，刷新后保留列宽
+          - 更新共享 UI 与 SDK，改善手机导航、标题和分段控件标签
         de: |-
-          0.1.0-0126
+          0.1.0-0127
 
-          - App-URLs: Spaltenbreiten per Ziehen anpassen; die Adresse ist am breitesten, Breiten bleiben nach dem Neuladen erhalten
+          - Gemeinsame UI und SDK aktualisiert: bessere Navigation, Titel und Segmentbeschriftungen auf dem Smartphone
         fr: |-
-          0.1.0-0126
+          0.1.0-0127
 
-          - URL des apps : redimensionnez les colonnes en les faisant glisser ; l’adresse est la plus large et les largeurs restent après un rechargement
+          - Mise à jour de l’UI partagée et du SDK pour améliorer la navigation, les titres et les libellés segmentés sur téléphone
         ja: |-
-          0.1.0-0126
+          0.1.0-0127
 
-          - App URL：列幅をドラッグで変更でき、アドレス列が最も広く、再読み込み後も列幅を保持
+          - 共通 UI と SDK を更新し、スマートフォンのナビゲーション、見出しとセグメントラベルを改善
         ko: |-
-          0.1.0-0126
+          0.1.0-0127
 
-          - App URL: 열 너비를 끌어서 조절하며, 주소 열이 가장 넓고 새로 고침 후에도 너비 유지
+          - 공유 UI와 SDK를 업데이트하여 휴대폰 탐색, 제목과 분할 컨트롤 레이블 개선
         es: |-
-          0.1.0-0126
+          0.1.0-0127
 
-          - URL de apps: arrastre los bordes para cambiar el ancho de columna; la dirección es la más ancha y los anchos se mantienen al recargar
+          - Actualiza la UI compartida y el SDK para mejorar la navegación, los títulos y las etiquetas segmentadas en el móvil
         it: |-
-          0.1.0-0126
+          0.1.0-0127
 
-          - URL delle app: trascina i bordi per ridimensionare le colonne; l’indirizzo è la più larga e le larghezze restano dopo il ricaricamento
+          - Aggiorna UI condivisa e SDK per migliorare navigazione, titoli ed etichette segmentate sul telefono
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0126-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-app-urls-0126-en.png
@@ -396,15 +396,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0126-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0126
+        version: 0.1.0-0127
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e61677c367d0009ff86817496e3530af6a58a35e3c236e925816cb9fd1f3db73
-        md5: db36a94eb37d5d4f7bc6fee59257c8ed
-        size: 14868480
+        sha256: 1a7a4359166dd67fffa82f77043d2527479834944f0cfd8edc3cca60cf8a9328
+        md5: a378eb032d5220e4b718b3a3e3decacd
+        size: 14929920
         facts:
           built_with: sdk
           sdk_backend: go
@@ -421,19 +421,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T06:54:39Z
-          source_ref: 9df7fb112c4441ed4e0e6f52d4130f3dadbb5b2f
+          reviewed_at: 2026-11-05T01:45:10Z
+          source_ref: c5fcdc551439575486cd398c7d2d1606ded89ab7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0126
+        version: 0.1.0-0127
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 5653a287d5e29f74ab77f2e9e953586dfeac5abe135adb5fcdbe8e8ccab7a226
-        md5: 0560ab8ad41d2195f0df10fae4495bcd
-        size: 15452160
+        sha256: f31ddfd50ebe9b34e0ff56d1dbfd4efaeaf0782bb4ce865c59f6cb66372fd93c
+        md5: 4018df304a7efe358385f5f4abbce4a1
+        size: 15523840
         facts:
           built_with: sdk
           sdk_backend: go
@@ -450,11 +450,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T06:54:39Z
-          source_ref: 9df7fb112c4441ed4e0e6f52d4130f3dadbb5b2f
+          reviewed_at: 2026-11-05T01:45:10Z
+          source_ref: c5fcdc551439575486cd398c7d2d1606ded89ab7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0126
+        version: 0.1.0-0127
         arch:
           - apollolake
           - avoton
@@ -483,9 +483,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 323a71db3281e30b9510861c7ef4198df7d6177b21a43c6ebbddd3945d7f04c9
-        md5: c5207c62830d2f1b98465357f475efe8
-        size: 16230400
+        sha256: 290a9394eddb21fdd8a6c5011569b7645e234559ce2f97b2e23490d482897237
+        md5: 149a1ff6c9b11b2f9e18eba2f220a5bf
+        size: 16291840
         facts:
           built_with: sdk
           sdk_backend: go
@@ -502,8 +502,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T06:54:39Z
-          source_ref: 9df7fb112c4441ed4e0e6f52d4130f3dadbb5b2f
+          reviewed_at: 2026-11-05T01:45:10Z
+          source_ref: c5fcdc551439575486cd398c7d2d1606ded89ab7
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: utilities
