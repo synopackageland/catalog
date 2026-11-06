@@ -331,6 +331,20 @@ function normalizeArch(arch) {
   return Object.hasOwn(ARCH_ALIASES, arch) ? ARCH_ALIASES[arch] : arch;
 }
 
+// packages/package-source/src/categories.ts
+var CATEGORIES = [
+  "media",
+  "productivity",
+  "files",
+  "network",
+  "security",
+  "home",
+  "developer",
+  "system"
+];
+var DEFAULT_CATEGORY = "system";
+var isCategory = (value) => typeof value === "string" && CATEGORIES.includes(value);
+
 // packages/package-source/src/catalog-schema.ts
 var record2 = (v) => !!v && typeof v === "object" && !Array.isArray(v);
 var slug = /^[a-z][a-z0-9-]{1,40}$/;
@@ -338,7 +352,6 @@ var email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 var GITHUB_REPO = /^[a-zA-Z0-9][a-zA-Z0-9-]{0,38}\/[a-zA-Z0-9][a-zA-Z0-9._-]{0,99}$/;
 var RELEASE_TAG = /^[A-Za-z0-9][A-Za-z0-9._+~-]{0,127}$/;
 var PACKAGE_VERSION = /^[A-Za-z0-9_.+~-]+-\d+$/;
-var CATEGORY = /^[a-z][a-z0-9-]{0,40}$/;
 var validArch = (arch) => Array.isArray(arch) && arch.length > 0 && arch.every((a) => typeof a === "string" && /^[A-Za-z0-9_]+$/.test(a)) && new Set(arch).size === arch.length;
 function readYaml(text2) {
   const doc = parseDocument(text2, { uniqueKeys: true });
@@ -462,8 +475,8 @@ function parseCatalogYaml(text2) {
       throw new Error("recommended must be true or false");
     if (v.recommended && trust === "community")
       throw new Error("recommended needs the basic security check; this entry is community");
-    if (v.category !== void 0 && (typeof v.category !== "string" || !CATEGORY.test(v.category)))
-      throw new Error("invalid category");
+    if (v.category !== void 0 && !isCategory(v.category))
+      throw new Error(`category must be one of: ${CATEGORIES.join(", ")}`);
     if (v.order !== void 0 && (!Number.isSafeInteger(v.order) || v.order < 0 || v.order > 1e4))
       throw new Error("invalid order");
     if (v.blocked_versions !== void 0 && (!Array.isArray(v.blocked_versions) || !v.blocked_versions.every((x) => typeof x === "string")))
@@ -540,7 +553,7 @@ function parseCatalogYaml(text2) {
       listed: v.listed ?? true,
       featured: v.featured ?? false,
       recommended: v.recommended ?? false,
-      category: v.category ?? "utilities",
+      category: v.category ?? DEFAULT_CATEGORY,
       order: v.order ?? 100
     };
   });
@@ -789,6 +802,9 @@ function parseInfo2(text2) {
   return info;
 }
 
+// packages/package-source/src/download-history.ts
+var DOWNLOAD_GRACE_MS = 7 * 86400 * 1e3;
+
 // packages/package-source/src/github-catalog.ts
 var JSON_LIMIT2 = 1024 * 1024;
 function addDisjointArch(seen, arch) {
@@ -871,8 +887,8 @@ function parsePackage(publisher, file, source, reserved) {
     throw new Error("description must be one line of at most 1,000 characters");
   if (raw.os_min_ver !== void 0 && (typeof raw.os_min_ver !== "string" || !dsm7(raw.os_min_ver)))
     throw new Error("os_min_ver must be a DSM 7 version such as 7.0-40000");
-  if (raw.category !== void 0 && (typeof raw.category !== "string" || !CATEGORY.test(raw.category)))
-    throw new Error("category must be a lowercase word");
+  if (raw.category !== void 0 && !isCategory(raw.category))
+    throw new Error(`category must be one of: ${CATEGORIES.join(", ")}`);
   if (raw.icon !== void 0 && (typeof raw.icon !== "string" || !ICON_PATH.test(raw.icon) || /(?:^|\/)\.\.?(?:\/|$)|\/\//.test(raw.icon)))
     throw new Error("icon must be a .png path in the source repository");
   const lower = `${id} ${raw.displayname}`.toLowerCase();
@@ -905,7 +921,7 @@ function parsePackage(publisher, file, source, reserved) {
     dname: raw.displayname,
     desc: raw.description ?? "",
     ...raw.os_min_ver ? { osMinVer: raw.os_min_ver } : {},
-    category: raw.category ?? "utilities",
+    category: raw.category ?? DEFAULT_CATEGORY,
     ...raw.icon ? {
       icon: `https://raw.githubusercontent.com/${src.repo}/${src.release}/${raw.icon}`
     } : {},

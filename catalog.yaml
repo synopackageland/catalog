@@ -2,7 +2,7 @@ schema: 3
 packages:
   - featured: true
     recommended: true
-    category: utilities
+    category: system
     order: 10
     publisher: synopackageland
     source:
@@ -211,7 +211,7 @@ packages:
           source_ref: fb9667bc6f9a42b69e853cf9d0788262f20b27d6
           source_repo: synopackageland/syno-reclaim
   - recommended: true
-    category: utilities
+    category: network
     order: 20
     publisher: synopackageland
     source:
@@ -534,7 +534,7 @@ packages:
           source_ref: 585c7990f82daf98899f86ac0ea2feecd32eafb7
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
-    category: utilities
+    category: files
     order: 30
     publisher: synopackageland
     source:
@@ -748,7 +748,7 @@ packages:
   - listed: true
     recommended: false
     featured: false
-    category: utilities
+    category: files
     order: 40
     publisher: synopackageland
     source:
@@ -886,7 +886,7 @@ packages:
   - listed: true
     recommended: false
     featured: false
-    category: utilities
+    category: system
     order: 50
     publisher: synopackageland
     source:
@@ -1001,7 +1001,7 @@ packages:
   - listed: true
     recommended: false
     featured: false
-    category: utilities
+    category: productivity
     order: 60
     publisher: synopackageland
     source:
@@ -1103,7 +1103,7 @@ packages:
   - listed: true
     recommended: false
     featured: false
-    category: multimedia
+    category: media
     order: 70
     publisher: synopackageland
     source:
@@ -1220,7 +1220,7 @@ packages:
   - listed: true
     recommended: false
     featured: false
-    category: multimedia
+    category: media
     order: 80
     publisher: synopackageland
     source:
@@ -1338,7 +1338,7 @@ packages:
   - listed: true
     recommended: false
     featured: false
-    category: utilities
+    category: productivity
     order: 90
     publisher: synopackageland
     source:
@@ -1679,7 +1679,7 @@ packages:
   - listed: true
     recommended: false
     featured: false
-    category: multimedia
+    category: media
     order: 120
     publisher: synopackageland
     source:
@@ -1795,7 +1795,7 @@ packages:
   - listed: true
     recommended: false
     featured: false
-    category: utilities
+    category: home
     order: 130
     publisher: synopackageland
     source:
