@@ -217,7 +217,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0132
+      release: v0.1.0-0133
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -372,50 +372,41 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0132
+          0.1.0-0133
 
-          - Updated interface components: touch targets no longer cause sideways scrolling on phones
-          - Dialogs and drawers return focus to the button that opened them
+          - The App is now called Syno Connect Center; nothing else changed
         zh-TW: |-
-          0.1.0-0132
+          0.1.0-0133
 
-          - 更新介面元件：觸控目標不再讓手機頁面左右捲動
-          - 對話框與抽屜關閉後，焦點回到開啟它們的按鈕
+          - App 現在更名為 Syno Connect Center，其他內容不變
         zh-CN: |-
-          0.1.0-0132
+          0.1.0-0133
 
-          - 更新界面组件：触控目标不再让手机页面左右滚动
-          - 对话框与抽屉关闭后，焦点回到打开它们的按钮
+          - App 现已更名为 Syno Connect Center，其他内容不变
         de: |-
-          0.1.0-0132
+          0.1.0-0133
 
-          - Oberflächenkomponenten aktualisiert: Tippziele lösen auf Smartphones kein seitliches Scrollen mehr aus
-          - Dialoge und Schubladen setzen den Fokus zurück auf die Schaltfläche, die sie geöffnet hat
+          - Die App heißt jetzt Syno Connect Center; sonst hat sich nichts geändert
         fr: |-
-          0.1.0-0132
+          0.1.0-0133
 
-          - Composants d’interface mis à jour : les cibles tactiles ne provoquent plus de défilement horizontal sur les téléphones
-          - Les boîtes de dialogue et les panneaux rendent le focus au bouton qui les a ouverts
+          - L’App s’appelle désormais Syno Connect Center ; rien d’autre n’a changé
         ja: |-
-          0.1.0-0132
+          0.1.0-0133
 
-          - インターフェース コンポーネントを更新：タッチ ターゲットでスマートフォンのページが横にスクロールしなくなりました
-          - ダイアログとドロワーを閉じると、開いたボタンにフォーカスが戻ります
+          - App の名称を Syno Connect Center に変更しました。その他の変更はありません
         ko: |-
-          0.1.0-0132
+          0.1.0-0133
 
-          - 인터페이스 구성 요소 업데이트: 터치 대상으로 인해 휴대폰 페이지가 가로로 스크롤되지 않습니다
-          - 대화 상자와 서랍을 닫으면 연 버튼으로 포커스가 돌아갑니다
+          - 앱 이름이 Syno Connect Center로 변경되었습니다. 다른 변경 사항은 없습니다
         es: |-
-          0.1.0-0132
+          0.1.0-0133
 
-          - Componentes de interfaz actualizados: los objetivos táctiles ya no provocan desplazamiento lateral en los teléfonos
-          - Los cuadros de diálogo y los paneles devuelven el foco al botón que los abrió
+          - La App ahora se llama Syno Connect Center; no hay otros cambios
         it: |-
-          0.1.0-0132
+          0.1.0-0133
 
-          - Componenti dell’interfaccia aggiornati: i bersagli tattili non causano più lo scorrimento laterale sugli smartphone
-          - Le finestre di dialogo e i pannelli restituiscono lo stato attivo al pulsante che li ha aperti
+          - L’App ora si chiama Syno Connect Center; non ci sono altre modifiche
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0129-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-app-urls-0129-en.png
@@ -424,15 +415,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0126-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0132
+        version: 0.1.0-0133
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 10b4ee00bb67c83972eb6f39615506b4f601880c22440bdf8b203860e1154b80
-        md5: 3f97ff9528626274008c6d9fe8f714c3
-        size: 14960640
+        sha256: a84bd503a866e3003a8ccfbeb2679f15a293f467fc2b1779013fe7f25d840093
+        md5: 07d2af204243595402f66b0063adbe7f
+        size: 14970880
         facts:
           built_with: sdk
           sdk_backend: go
@@ -449,18 +440,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T02:19:16Z
-          source_ref: 593f5d3fe1d1c36ff812e8931fc972f98776b957
+          reviewed_at: 2026-11-06T08:00:57Z
+          source_ref: 9f38f2281fc39404b49cca881928a29ddf3b6220
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0132
+        version: 0.1.0-0133
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 3f0ce4a5596d2e0810a2dc1fdff6ba8eaa052d1bd04fdee722d29add2dc66d97
-        md5: 4b74e48f1caa5d2ab51a302bb5b80add
+        sha256: a97ca780cf97f46c6579e8143b9e5da9d3e9c6bfa1a5f3683f250a8eaed16987
+        md5: 263f4a156146da961e985352616f6196
         size: 15544320
         facts:
           built_with: sdk
@@ -478,11 +469,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T02:19:16Z
-          source_ref: 593f5d3fe1d1c36ff812e8931fc972f98776b957
+          reviewed_at: 2026-11-06T08:00:57Z
+          source_ref: 9f38f2281fc39404b49cca881928a29ddf3b6220
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0132
+        version: 0.1.0-0133
         arch:
           - apollolake
           - avoton
@@ -511,8 +502,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: b74cf167655794925a955cadc438f5c8de57e146c00be3c3c54fefe114ff7153
-        md5: 3bcc7b67091735c4d0db556a8b482979
+        sha256: a1d409d7bc2f7b86985e6596ee36a95c48b29b5768bf2e3c5b1a87e5ab94425f
+        md5: 3fb7f182096f2f8f076a2d695d48162f
         size: 16312320
         facts:
           built_with: sdk
@@ -530,8 +521,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T02:19:16Z
-          source_ref: 593f5d3fe1d1c36ff812e8931fc972f98776b957
+          reviewed_at: 2026-11-06T08:00:57Z
+          source_ref: 9f38f2281fc39404b49cca881928a29ddf3b6220
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
