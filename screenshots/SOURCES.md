@@ -15,8 +15,6 @@ media artwork and trademarks remain with their respective owners.
 
 | File | Upstream project / exact original source | License |
 | --- | --- | --- |
-| [SynoPkgUptimeKuma/01-dashboard-light-upstream.jpg](SynoPkgUptimeKuma/01-dashboard-light-upstream.jpg) | [louislam/uptime-kuma-website](https://raw.githubusercontent.com/louislam/uptime-kuma-website/d72a8fc4c610db91eca59428fb8459546a0d040e/frontend/public/img/light.jpg) | [MIT](licenses/louislam-uptime-kuma-website.txt) |
-| [SynoPkgUptimeKuma/02-dashboard-dark-upstream.jpg](SynoPkgUptimeKuma/02-dashboard-dark-upstream.jpg) | [louislam/uptime-kuma-website](https://raw.githubusercontent.com/louislam/uptime-kuma-website/d72a8fc4c610db91eca59428fb8459546a0d040e/frontend/public/img/dark.jpg) | [MIT](licenses/louislam-uptime-kuma-website.txt) |
 | [SynoPkgFreshRSS/01-feed-reader-upstream.png](SynoPkgFreshRSS/01-feed-reader-upstream.png) | [FreshRSS/FreshRSS](https://raw.githubusercontent.com/FreshRSS/FreshRSS/4e8a258b011aad190597d7953b7122fc43f4658f/docs/img/FreshRSS-screenshot.png) | [AGPL-3.0](licenses/FreshRSS-FreshRSS.txt) |
 | [SynoPkgAudiobookshelf/01-demo-library-upstream.jpg](SynoPkgAudiobookshelf/01-demo-library-upstream.jpg) | [advplyr/audiobookshelf](https://raw.githubusercontent.com/advplyr/audiobookshelf/f57ca09f6ea7b02efbec0549bf1960b9ba5de427/images/DemoLibrary.png) | [GPL-3.0](licenses/advplyr-audiobookshelf.txt) |
 | [SynoPkgAudiobookshelf/02-library-player-upstream.png](SynoPkgAudiobookshelf/02-library-player-upstream.png) | [advplyr/audiobookshelf](https://raw.githubusercontent.com/advplyr/audiobookshelf/f57ca09f6ea7b02efbec0549bf1960b9ba5de427/images/LibraryStreamSquare.png) | [GPL-3.0](licenses/advplyr-audiobookshelf.txt) |
@@ -31,7 +29,7 @@ media artwork and trademarks remain with their respective owners.
 
 FreshRSS and ConvertX each contribute one suitable English screenshot; other
 candidates were fragments or alternate-language views rather than additional
-representative English screens. Uptime Kuma lists its light theme first.
+representative English screens.
 
 No images were added for Vaultwarden (no suitable official Web UI screenshot
 found) or Home Assistant (the frontend repo candidates are legacy mobile views
