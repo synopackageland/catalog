@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1626
+      release: v0.1.1-1627
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,59 +40,59 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
-          0.1.1-1626
+          0.1.1-1627
 
-          - Explore and Recycle Bin show each shared folder from its newest scan, with the scan's scope and a report picker
-          - Recycle Bin lists every oldest item; Explore fits a maximized 1440 px window
-          - Retain settings and saved scan reports; approve the updated system tasks after upgrading
+          - Updated UI components to 0.20.17: on a touch screen a control's tap box no longer makes the page scroll sideways, overlays return focus to the button that opened them, and short screens keep compact settings rows
+          - Reuse the unchanged runtime, executor and root programs from 0.1.1-1626 for x86_64, aarch64 and armv7
+          - Settings and saved scan reports are kept; the system task approval is unchanged
         zh-TW: |-
-          0.1.1-1626
+          0.1.1-1627
 
-          - 探索與資源回收筒依各共用資料夾最新的掃描顯示，並標示掃描範圍、可切換報表
-          - 資源回收筒列出所有最舊項目；探索在 1440 px 最大化視窗完整顯示
-          - 保留設定和已儲存的掃描報告；升級後請核准更新的系統工作
+          - 更新 UI 元件至 0.20.17：觸控螢幕上控制項的點按區不再讓頁面左右捲動，覆蓋層關閉後焦點回到開啟它的按鈕，矮螢幕維持精簡的設定列
+          - x86_64、aarch64 與 armv7 沿用 0.1.1-1626 未變更的執行環境、executor 與 root 程式
+          - 保留設定與已儲存的掃描報告；系統工作核准狀態不變
         zh-CN: |-
-          0.1.1-1626
+          0.1.1-1627
 
-          - 探索与回收站按各共享文件夹最新的扫描显示，并标示扫描范围、可切换报告
-          - 回收站列出所有最旧项目；探索在 1440 px 最大化窗口完整显示
-          - 保留设置和已保存的扫描报告；升级后请批准更新的系统任务
-        de: |-
-          0.1.1-1626
-
-          - Erkunden und Papierkorb zeigen jeden freigegebenen Ordner aus seinem neuesten Scan, mit Scanumfang und Berichtsauswahl
-          - Der Papierkorb listet alle ältesten Elemente; Erkunden passt in ein maximiertes 1440-px-Fenster
-          - Einstellungen und gespeicherte Scanberichte bleiben erhalten; aktualisierte Systemaufgaben nach dem Upgrade freigeben
-        fr: |-
-          0.1.1-1626
-
-          - Explorer et Corbeille affichent chaque dossier partagé selon son analyse la plus récente, avec sa portée et un sélecteur de rapport
-          - La Corbeille liste tous les éléments les plus anciens ; Explorer tient dans une fenêtre de 1440 px maximisée
-          - Réglages et rapports d’analyse conservés ; approuvez les tâches système mises à jour après la mise à niveau
+          - 更新 UI 组件至 0.20.17：触控屏幕上控件的点按区域不再让页面左右滚动，覆盖层关闭后焦点回到打开它的按钮，矮屏幕保持精简的设置行
+          - x86_64、aarch64 与 armv7 沿用 0.1.1-1626 未改变的运行环境、executor 与 root 程序
+          - 保留设置与已保存的扫描报告；系统任务批准状态不变
         ja: |-
-          0.1.1-1626
+          0.1.1-1627
 
-          - 探索とごみ箱は各共有フォルダーを最新のスキャンで表示し、スキャン範囲の表示とレポートの切り替えに対応
-          - ごみ箱に最も古い項目をすべて表示。探索は 1440 px の最大化ウィンドウに収まるよう改善
-          - 設定と保存済みのスキャンレポートを維持。アップグレード後に更新されたシステムタスクを承認してください
+          - UI コンポーネントを 0.20.17 に更新：タッチ画面でコントロールのタップ領域がページの横スクロールを起こさなくなり、オーバーレイを閉じると開いたボタンにフォーカスが戻り、低い画面では設定行がコンパクトなままになります
+          - x86_64、aarch64、armv7 は 0.1.1-1626 の未変更のランタイム、executor、root プログラムを再利用します
+          - 設定と保存済みスキャンレポートは保持され、システムタスクの承認状態は変わりません
         ko: |-
-          0.1.1-1626
+          0.1.1-1627
 
-          - 탐색과 휴지통이 각 공유 폴더를 최신 스캔으로 표시하고 스캔 범위 표시와 보고서 전환 지원
-          - 휴지통에 가장 오래된 항목을 모두 표시; 탐색이 1440px 최대화 창에 맞게 표시
-          - 설정과 저장된 스캔 보고서 유지; 업그레이드 후 업데이트된 시스템 작업 승인 필요
+          - UI 구성 요소를 0.20.17로 업데이트: 터치 화면에서 컨트롤의 탭 영역이 페이지를 가로로 스크롤하지 않으며, 오버레이를 닫으면 연 버튼으로 포커스가 돌아가고, 낮은 화면에서는 설정 행이 간결하게 유지됩니다
+          - x86_64, aarch64, armv7은 0.1.1-1626의 변경되지 않은 런타임, executor, root 프로그램을 재사용합니다
+          - 설정과 저장된 스캔 보고서는 유지되며 시스템 작업 승인 상태는 변경되지 않습니다
+        de: |-
+          0.1.1-1627
+
+          - UI-Komponenten auf 0.20.17 aktualisiert: Auf Touchscreens lässt die Tippfläche eines Steuerelements die Seite nicht mehr seitwärts scrollen, Overlays geben den Fokus an die Schaltfläche zurück, die sie geöffnet hat, und niedrige Bildschirme behalten kompakte Einstellungszeilen
+          - Unveränderte Laufzeit, Executor und Root-Programme aus 0.1.1-1626 werden für x86_64, aarch64 und armv7 wiederverwendet
+          - Einstellungen und gespeicherte Scanberichte bleiben erhalten; die Freigabe der Systemaufgaben ist unverändert
+        fr: |-
+          0.1.1-1627
+
+          - Composants UI mis à jour vers 0.20.17 : sur un écran tactile, la zone de pression d’un contrôle ne fait plus défiler la page latéralement, les superpositions rendent le focus au bouton qui les a ouvertes et les écrans bas gardent des lignes de réglage compactes
+          - Le runtime, l’executor et les programmes root inchangés de 0.1.1-1626 sont réutilisés pour x86_64, aarch64 et armv7
+          - Les réglages et les rapports d’analyse enregistrés sont conservés ; l’approbation des tâches système est inchangée
         es: |-
-          0.1.1-1626
+          0.1.1-1627
 
-          - Explorar y Papelera de reciclaje muestran cada carpeta compartida según su análisis más reciente, con su alcance y un selector de informe
-          - La Papelera de reciclaje lista todos los elementos más antiguos; Explorar se ajusta a una ventana maximizada de 1440 px
-          - Se conservan los ajustes y los informes de análisis guardados; apruebe las tareas del sistema actualizadas tras la actualización
+          - Componentes de UI actualizados a 0.20.17: en una pantalla táctil, el área de toque de un control ya no desplaza la página en horizontal, las capas devuelven el foco al botón que las abrió y las pantallas bajas mantienen filas de ajustes compactas
+          - Se reutilizan el runtime, el executor y los programas root sin cambios de 0.1.1-1626 para x86_64, aarch64 y armv7
+          - Se conservan los ajustes y los informes de análisis guardados; la aprobación de las tareas del sistema no cambia
         it: |-
-          0.1.1-1626
+          0.1.1-1627
 
-          - Esplora e Cestino mostrano ogni cartella condivisa dalla sua scansione più recente, con l’ambito della scansione e un selettore di report
-          - Il Cestino elenca tutti gli elementi più vecchi; Esplora si adatta a una finestra massimizzata di 1440 px
-          - Impostazioni e report di scansione salvati conservati; approva le attività di sistema aggiornate dopo l’aggiornamento
+          - Componenti UI aggiornati a 0.20.17: su uno schermo touch l’area di tocco di un controllo non fa più scorrere la pagina lateralmente, le sovrapposizioni restituiscono il focus al pulsante che le ha aperte e gli schermi bassi mantengono righe delle impostazioni compatte
+          - Runtime, executor e programmi root invariati di 0.1.1-1626 vengono riutilizzati per x86_64, aarch64 e armv7
+          - Impostazioni e report di analisi salvati vengono conservati; l’approvazione delle attività di sistema resta invariata
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1622-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-packages-details-1619-en.png
@@ -101,15 +101,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1626
+        version: 0.1.1-1627
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f3e9a509b22639c2aa297d403fb764f2317b0db0a44bd61c27c44e1059ab1488
-        md5: 28f6d9af941244128bc8e7653361ff31
-        size: 15188992
+        sha256: 5f579f5ccb71c6b3e3a9784e5b5727cbe0bea7844fe22798323d47499a760f09
+        md5: b5cc89c7bc00d17389bdc6e31fbaba19
+        size: 15190016
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -126,19 +126,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T20:04:24Z
-          source_ref: fb9667bc6f9a42b69e853cf9d0788262f20b27d6
+          reviewed_at: 2026-11-06T02:19:16Z
+          source_ref: 0aacc7d15e477f4328077185fce75d343649b6f8
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1626
+        version: 0.1.1-1627
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: d06f1b61020e6b1243067df613a054d749b720b0cd25dd5d1eb602a47fd1441e
-        md5: 186c8e46ff3b651dbcfa6f512a6096c3
-        size: 15972864
+        sha256: 5da04a28f2a4339b61384a6cdaa46319624e3f3f75e403f8eed159846f8f6532
+        md5: 320ac2c43b690fea2824ddf53bc57d1f
+        size: 15973888
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -155,11 +155,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T20:04:24Z
-          source_ref: fb9667bc6f9a42b69e853cf9d0788262f20b27d6
+          reviewed_at: 2026-11-06T02:19:16Z
+          source_ref: 0aacc7d15e477f4328077185fce75d343649b6f8
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1626
+        version: 0.1.1-1627
         arch:
           - apollolake
           - avoton
@@ -188,9 +188,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 0b8332f69ba8d4fdb9b8077e614d1c8fc87aabdd5d1b47c55d1b6a116805faa2
-        md5: 0377c42aab6dd7f306885075e440983d
-        size: 16350208
+        sha256: 006c46633db59661461f37eedb0294aabe9e733782d11a50bd1d025aa9f81b53
+        md5: 27be1e751d565e77739f6566e3cf2dca
+        size: 16351744
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -207,8 +207,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T20:04:24Z
-          source_ref: fb9667bc6f9a42b69e853cf9d0788262f20b27d6
+          reviewed_at: 2026-11-06T02:19:16Z
+          source_ref: 0aacc7d15e477f4328077185fce75d343649b6f8
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
@@ -217,7 +217,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0131
+      release: v0.1.0-0132
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -372,50 +372,50 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0131
+          0.1.0-0132
 
-          - Keep Cloudflare own-domain settings after reinstalling with data kept, and reconnect automatically
-          - Take over Connect's own old DNS records automatically and remember the last name
+          - Updated interface components: touch targets no longer cause sideways scrolling on phones
+          - Dialogs and drawers return focus to the button that opened them
         zh-TW: |-
-          0.1.0-0131
+          0.1.0-0132
 
-          - 保留資料重裝後保留 Cloudflare 自有網域設定並自動重新連線
-          - 自動接管 Connect 自己的舊 DNS 記錄並記住上次名稱
+          - 更新介面元件：觸控目標不再讓手機頁面左右捲動
+          - 對話框與抽屜關閉後，焦點回到開啟它們的按鈕
         zh-CN: |-
-          0.1.0-0131
+          0.1.0-0132
 
-          - 保留数据重装后保留 Cloudflare 自有域名设置并自动重新连接
-          - 自动接管 Connect 自己的旧 DNS 记录并记住上次名称
+          - 更新界面组件：触控目标不再让手机页面左右滚动
+          - 对话框与抽屉关闭后，焦点回到打开它们的按钮
         de: |-
-          0.1.0-0131
+          0.1.0-0132
 
-          - Cloudflare-Domaineinstellungen nach Neuinstallation mit behaltenen Daten beibehalten und automatisch neu verbinden
-          - Eigene alte DNS-Einträge von Connect automatisch übernehmen und den letzten Namen merken
+          - Oberflächenkomponenten aktualisiert: Tippziele lösen auf Smartphones kein seitliches Scrollen mehr aus
+          - Dialoge und Schubladen setzen den Fokus zurück auf die Schaltfläche, die sie geöffnet hat
         fr: |-
-          0.1.0-0131
+          0.1.0-0132
 
-          - Conserver les réglages du domaine Cloudflare après une réinstallation avec données conservées et se reconnecter automatiquement
-          - Reprendre automatiquement les anciens enregistrements DNS de Connect et mémoriser le dernier nom
+          - Composants d’interface mis à jour : les cibles tactiles ne provoquent plus de défilement horizontal sur les téléphones
+          - Les boîtes de dialogue et les panneaux rendent le focus au bouton qui les a ouverts
         ja: |-
-          0.1.0-0131
+          0.1.0-0132
 
-          - データを保持した再インストール後も Cloudflare 独自ドメインの設定を保持し自動で再接続
-          - Connect 自身の古い DNS レコードを自動で引き継ぎ、前回の名前を記憶
+          - インターフェース コンポーネントを更新：タッチ ターゲットでスマートフォンのページが横にスクロールしなくなりました
+          - ダイアログとドロワーを閉じると、開いたボタンにフォーカスが戻ります
         ko: |-
-          0.1.0-0131
+          0.1.0-0132
 
-          - 데이터를 유지한 재설치 후에도 Cloudflare 자체 도메인 설정을 유지하고 자동으로 다시 연결
-          - Connect의 이전 DNS 레코드를 자동으로 인수하고 마지막 이름 기억
+          - 인터페이스 구성 요소 업데이트: 터치 대상으로 인해 휴대폰 페이지가 가로로 스크롤되지 않습니다
+          - 대화 상자와 서랍을 닫으면 연 버튼으로 포커스가 돌아갑니다
         es: |-
-          0.1.0-0131
+          0.1.0-0132
 
-          - Conservar la configuración del dominio de Cloudflare tras reinstalar conservando los datos y reconectar automáticamente
-          - Recuperar automáticamente los registros DNS antiguos de Connect y recordar el último nombre
+          - Componentes de interfaz actualizados: los objetivos táctiles ya no provocan desplazamiento lateral en los teléfonos
+          - Los cuadros de diálogo y los paneles devuelven el foco al botón que los abrió
         it: |-
-          0.1.0-0131
+          0.1.0-0132
 
-          - Mantieni le impostazioni del dominio Cloudflare dopo la reinstallazione con dati conservati e riconnetti automaticamente
-          - Riprendi automaticamente i vecchi record DNS di Connect e ricorda l'ultimo nome
+          - Componenti dell’interfaccia aggiornati: i bersagli tattili non causano più lo scorrimento laterale sugli smartphone
+          - Le finestre di dialogo e i pannelli restituiscono lo stato attivo al pulsante che li ha aperti
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0129-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-app-urls-0129-en.png
@@ -424,14 +424,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0126-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0131
+        version: 0.1.0-0132
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: ec1ebd53720ef930286d32d1585475ff6154d04b16b0a074e8070152b4a642f5
-        md5: 07e2587927d945172d732135772a495c
+        sha256: 10b4ee00bb67c83972eb6f39615506b4f601880c22440bdf8b203860e1154b80
+        md5: 3f97ff9528626274008c6d9fe8f714c3
         size: 14960640
         facts:
           built_with: sdk
@@ -449,18 +449,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T13:33:40Z
-          source_ref: 585c7990f82daf98899f86ac0ea2feecd32eafb7
+          reviewed_at: 2026-11-06T02:19:16Z
+          source_ref: 593f5d3fe1d1c36ff812e8931fc972f98776b957
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0131
+        version: 0.1.0-0132
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: a0b095a347bdd9e1b2c9232d7f645e5ee19f0f050628ece977e9886217d19a39
-        md5: 66b807d6c281649231639c2ed8fb83fe
+        sha256: 3f0ce4a5596d2e0810a2dc1fdff6ba8eaa052d1bd04fdee722d29add2dc66d97
+        md5: 4b74e48f1caa5d2ab51a302bb5b80add
         size: 15544320
         facts:
           built_with: sdk
@@ -478,11 +478,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T13:33:40Z
-          source_ref: 585c7990f82daf98899f86ac0ea2feecd32eafb7
+          reviewed_at: 2026-11-06T02:19:16Z
+          source_ref: 593f5d3fe1d1c36ff812e8931fc972f98776b957
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0131
+        version: 0.1.0-0132
         arch:
           - apollolake
           - avoton
@@ -511,8 +511,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: f62735bbde27a58b7b4ad80cf23a35fc28d5dc12a0acf4040c7c8aa14efbffb4
-        md5: 4abf625cbf4a800b7477ae882fa345d0
+        sha256: b74cf167655794925a955cadc438f5c8de57e146c00be3c3c54fefe114ff7153
+        md5: 3bcc7b67091735c4d0db556a8b482979
         size: 16312320
         facts:
           built_with: sdk
@@ -530,8 +530,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T13:33:40Z
-          source_ref: 585c7990f82daf98899f86ac0ea2feecd32eafb7
+          reviewed_at: 2026-11-06T02:19:16Z
+          source_ref: 593f5d3fe1d1c36ff812e8931fc972f98776b957
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
