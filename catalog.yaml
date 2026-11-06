@@ -928,6 +928,9 @@ packages:
         fr: Vérifiez que vos sites web et services réseau sont disponibles, consultez l'historique de disponibilité et recevez des notifications en cas de panne. Créez des pages d'état qui résument la santé de vos services ; elles sont réservées aux administrateurs et ne peuvent pas être partagées publiquement. Les types de sondes disponibles dépendent des autorisations réseau de ce paquet. Les données de l'App restent dans les volumes de Container Manager après la désinstallation ; connexion DSM en tant qu'administrateur et Container Manager requis
         ja: Web サイトやネットワーク サービスが利用できるかを確認し、稼働履歴を見て、停止時に通知を受け取れます。サービスの状態をまとめたステータス ページを作成できますが、ステータス ページは管理者専用で、一般公開はできません。使える監視の種類は、このパッケージのネットワーク権限によって変わります。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 웹사이트와 네트워크 서비스가 살아 있는지 확인하고, 가동 기록을 보고, 장애가 나면 알림을 받아요. 서비스 상태를 요약한 상태 페이지를 만들 수 있지만, 상태 페이지는 관리자 전용이라 공개로 공유할 수 없어요. 쓸 수 있는 모니터 종류는 이 패키지의 네트워크 권한에 따라 달라요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgUptimeKuma/01-dashboard-light-upstream.jpg
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgUptimeKuma/02-dashboard-dark-upstream.jpg
       changelog:
         en: "Fix DSM sign-in when opening over HTTP"
         zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
@@ -1030,6 +1033,8 @@ packages:
         fr: Rassemblez les actualités de vos sites préférés dans un seul lecteur. Abonnez-vous à des flux RSS et Atom, rangez vos abonnements par catégories, recherchez des articles et gardez vos favoris pour plus tard. Chaque lecteur a ses propres abonnements et sa progression de lecture ; connexion DSM en tant qu'administrateur et Container Manager requis
         ja: お気に入りのサイトのニュースや更新をひとつのリーダーにまとめます。RSS や Atom フィードを購読し、カテゴリーで整理し、記事を検索し、お気に入りを保存できます。購読と既読状況は読者ごとに分かれます。DSM の管理者サインインと Container Manager が必要です
         ko: 좋아하는 사이트의 소식과 업데이트를 리더 하나로 모아요. RSS와 Atom 피드를 구독하고, 카테고리로 정리하고, 글을 검색하고, 즐겨찾기로 저장해 둘 수 있어요. 구독과 읽은 상태는 사용자마다 따로예요. DSM 관리자 로그인과 Container Manager가 필요해요
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgFreshRSS/01-feed-reader-upstream.png
       changelog:
         en: "Fix DSM sign-in when opening over HTTP"
         zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
@@ -1146,6 +1151,9 @@ packages:
         fr: Constituez votre bibliothèque de livres audio et de podcasts, parcourez votre collection et écoutez-la dans votre navigateur en gardant votre progression. Le téléchargement de podcasts dans le dossier multimédia choisi, en lecture seule, n'est pas pris en charge, et les clients mobiles et TV ne sont pas vérifiés. Le dossier doit accorder la lecture au compte du paquet ; les données de l'App restent après la désinstallation. Connexion DSM en tant qu'administrateur et Container Manager requis
         ja: オーディオブックとポッドキャストの自分だけのライブラリを作り、コレクションを見ながらブラウザーで聴けます。再生位置も記録されます。選択した読み取り専用のメディア フォルダーへのポッドキャストのダウンロードには対応しておらず、モバイルや TV のクライアントは未検証です。フォルダーにはパッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 오디오북과 팟캐스트로 나만의 서재를 만들고, 컬렉션을 둘러보며 브라우저에서 들을 수 있어요. 듣던 위치도 기억해요. 선택한 읽기 전용 미디어 폴더로 팟캐스트를 내려받는 기능은 지원하지 않고, 모바일·TV 클라이언트는 검증되지 않았어요. 폴더에는 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgAudiobookshelf/01-demo-library-upstream.jpg
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgAudiobookshelf/02-library-player-upstream.png
       changelog:
         en: "Fix DSM sign-in when opening over HTTP"
         zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
@@ -1263,6 +1271,10 @@ packages:
         fr: Transformez votre collection multimédia en bibliothèque de streaming personnelle. Parcourez films et séries avec leurs visuels, organisez votre musique et lisez votre collection dans un navigateur. Les clients natifs TV et mobiles ne peuvent pas utiliser cet accès, et le DLNA est désactivé. Le dossier multimédia choisi est en lecture seule et doit accorder la lecture au compte du paquet ; les données de l'App restent après la désinstallation. Connexion DSM et Container Manager requis
         ja: メディア コレクションを自分専用のストリーミング ライブラリにします。アートワーク付きで映画やテレビ番組を見て回り、音楽を整理し、ブラウザーで再生できます。TV やモバイルのネイティブ クライアントはこの入口を使えず、DLNA は無効です。選択したメディア フォルダーは読み取り専用で、パッケージ アカウントの読み取り権限が必要です。アプリのデータはアンインストール後も残ります。DSM サインインと Container Manager が必要です
         ko: 미디어 컬렉션을 나만의 스트리밍 서재로 만들어요. 아트워크와 함께 영화와 TV 프로그램을 둘러보고, 음악을 정리하고, 브라우저에서 재생해요. TV·모바일 네이티브 클라이언트는 이 입구를 쓸 수 없고 DLNA는 꺼져 있어요. 선택한 미디어 폴더는 읽기 전용이며 패키지 계정의 읽기 권한이 필요하고, 앱 데이터는 제거 후에도 남아요. DSM 로그인과 Container Manager가 필요해요
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgJellyfin/01-home-upstream.jpg
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgJellyfin/02-movie-library-upstream.jpg
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgJellyfin/03-movie-details-upstream.jpg
       changelog:
         en: "Keep DSM sign-in callbacks on the requested HTTP or HTTPS scheme"
         zh-TW: "DSM 登入回呼跟隨實際開啟的 HTTP 或 HTTPS"
@@ -1376,6 +1388,8 @@ packages:
         fr: Envoyez des documents, images, fichiers audio ou vidéo dans votre navigateur, choisissez un format de sortie et téléchargez les fichiers convertis. Tous les utilisateurs autorisés partagent un même espace de travail et peuvent voir et télécharger les fichiers des autres. Les tâches de plus de 24 heures sont supprimées régulièrement. Les données de l'App restent dans les volumes de Container Manager après la désinstallation ; connexion DSM et Container Manager requis
         ja: ブラウザーで文書、画像、音声、動画をアップロードし、出力形式を選んで変換後のファイルをダウンロードできます。許可されたユーザー全員が同じ作業スペースを共有し、互いのファイルを表示・ダウンロードできます。24 時間を過ぎたジョブは定期的に削除されます。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 브라우저에서 문서, 이미지, 오디오, 동영상을 올리고 출력 형식을 골라 변환된 파일을 내려받아요. 권한이 있는 사용자 모두가 작업 공간 하나를 함께 쓰고, 서로의 파일을 보고 내려받을 수 있어요. 24시간이 지난 작업은 주기적으로 지워져요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConvertX/01-file-conversion-upstream.png
       changelog:
         en: "Fix DSM sign-in when opening over HTTP"
         zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
@@ -1490,6 +1504,9 @@ packages:
         fr: Transformez vos documents papier en archive numérique consultable. Importez des numérisations, reconnaissez leur texte par OCR et classez les documents par étiquettes, correspondants et types de documents. Recherchez dans leur contenu et contrôlez le partage avec les autorisations de Paperless. Les fichiers importés sont retirés de la boîte de réception, gardez donc des sauvegardes ; la boîte de réception choisie doit accorder la lecture et l'écriture au compte du paquet. Les données de l'App restent dans les volumes de Container Manager après la désinstallation ; connexion DSM et Container Manager requis
         ja: 紙の文書を検索できるデジタル アーカイブにします。スキャンを取り込み、OCR で文字を認識し、タグ、差出人、文書タイプで整理できます。文書の内容を検索し、共有は Paperless の権限で管理します。取り込んだファイルは受信フォルダーから削除されるので、バックアップを残してください。選択した受信フォルダーにはパッケージ アカウントの読み取り/書き込み権限が必要です。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 종이 문서를 검색할 수 있는 디지털 보관함으로 바꿔요. 스캔을 가져오고, OCR로 글자를 인식하고, 태그, 거래처, 문서 유형으로 정리해요. 문서 내용을 검색하고 공유는 Paperless 권한으로 관리해요. 가져온 파일은 받은 편지함 폴더에서 지워지니 백업을 꼭 남겨 두세요. 선택한 받은 편지함 폴더에는 패키지 계정의 읽기/쓰기 권한이 필요해요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgPaperlessNgx/01-correspondents-upstream.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgPaperlessNgx/02-workflow-upstream.png
       changelog:
         en: "Preserve HTTP and HTTPS in OIDC sign-in callbacks"
         zh-TW: "OIDC 登入回呼依照開啟時的 HTTP 或 HTTPS 協定"
@@ -1720,6 +1737,9 @@ packages:
         fr: Parcourez votre musique par artiste et par album, créez des playlists et écoutez-la avec le lecteur web ou des Apps Subsonic compatibles. Les utilisateurs autorisés partagent la bibliothèque musicale choisie, en lecture seule, qui doit accorder la lecture au compte du paquet. Les clients Subsonic utilisent un mot de passe Navidrome distinct ; les liens de partage publics restent accessibles jusqu'à leur suppression. Les données de l'App restent dans les volumes de Container Manager après la désinstallation ; connexion DSM et Container Manager requis
         ja: アーティストやアルバムで音楽を探し、プレイリストを作り、Web プレーヤーや対応する Subsonic アプリで聴けます。許可されたユーザーは選択した読み取り専用の音楽ライブラリを共有し、そのライブラリにはパッケージ アカウントの読み取り権限が必要です。Subsonic クライアントは別の Navidrome パスワードを使います。公開共有リンクは削除するまでアクセスできます。アプリのデータはアンインストール後も Container Manager のボリュームに残ります。DSM サインインと Container Manager が必要です
         ko: 아티스트와 앨범별로 음악을 둘러보고, 재생 목록을 만들고, 웹 플레이어나 호환되는 Subsonic 앱으로 들어요. 권한이 있는 사용자는 선택한 읽기 전용 음악 라이브러리를 함께 쓰고, 이 라이브러리에는 패키지 계정의 읽기 권한이 필요해요. Subsonic 클라이언트는 별도의 Navidrome 비밀번호를 쓰고, 공개 공유 링크는 지울 때까지 열려 있어요. 앱 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 로그인과 Container Manager가 필요해요
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgNavidrome/01-album-library-upstream.jpg
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgNavidrome/02-album-player-upstream.jpg
       changelog:
         en: "Fix DSM sign-in when opening over HTTP"
         zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
