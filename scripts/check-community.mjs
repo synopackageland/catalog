@@ -338,7 +338,6 @@ var CATEGORIES = [
   "files",
   "network",
   "security",
-  "home",
   "developer",
   "system"
 ];

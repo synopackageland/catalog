@@ -216,9 +216,8 @@ Anything else is refused. An entry without one is `system`.
 | `files` | Files & Downloads | File browsing, cloud drives, sync, downloaders |
 | `network` | Network & Remote Access | Remote access, VPN, proxies, DNS |
 | `security` | Security & Data Protection | Passwords, backup, encryption, privacy |
-| `home` | Smart Home | Home automation, cameras, IoT |
 | `developer` | Developer & AI | Coding tools, Git, CI, AI models and agents |
-| `system` | System & Utilities | Storage tools, monitoring, everything else |
+| `system` | System & Utilities | Storage tools, monitoring, home automation, everything else |
 
 Pick the closest one; the list stays coarse on purpose, so a new kind of app
 joins an existing category.
