@@ -217,7 +217,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0133
+      release: v0.1.0-0134
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -372,58 +372,67 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0133
+          0.1.0-0134
 
-          - The App is now called Syno Connect Center; nothing else changed
+          - Overview shows DSM's QuickConnect and DDNS when they are on
+          - Compare all ways adds the Free link, DDNS and a Sign-in in front column, with updated entries
         zh-TW: |-
-          0.1.0-0133
+          0.1.0-0134
 
-          - App 現在更名為 Syno Connect Center，其他內容不變
+          - 總覽在 DSM 的 QuickConnect 與 DDNS 啟用時一併顯示
+          - 「比較所有方式」新增免費連結、DDNS 與「前置登入」欄，並更新各項內容
         zh-CN: |-
-          0.1.0-0133
+          0.1.0-0134
 
-          - App 现已更名为 Syno Connect Center，其他内容不变
+          - 总览在 DSM 的 QuickConnect 与 DDNS 启用时一并显示
+          - “比较所有方式”新增免费链接、DDNS 与“前置登录”列，并更新各项内容
         de: |-
-          0.1.0-0133
+          0.1.0-0134
 
-          - Die App heißt jetzt Syno Connect Center; sonst hat sich nichts geändert
+          - Die Übersicht zeigt QuickConnect und DDNS von DSM, wenn sie aktiviert sind
+          - Alle Arten vergleichen enthält jetzt den kostenlosen Link, DDNS und die Spalte Vorgeschaltete Anmeldung, mit aktualisierten Einträgen
         fr: |-
-          0.1.0-0133
+          0.1.0-0134
 
-          - L’App s’appelle désormais Syno Connect Center ; rien d’autre n’a changé
+          - La Vue d’ensemble affiche QuickConnect et DDNS de DSM lorsqu’ils sont activés
+          - Comparer tous les modes ajoute le lien gratuit, DDNS et la colonne Connexion en amont, avec des entrées mises à jour
         ja: |-
-          0.1.0-0133
+          0.1.0-0134
 
-          - App の名称を Syno Connect Center に変更しました。その他の変更はありません
+          - DSM の QuickConnect と DDNS が有効な場合、概要に表示されます
+          - 「すべての方法を比較」に無料リンク、DDNS、「手前のサインイン」列を追加し、各項目を更新しました
         ko: |-
-          0.1.0-0133
+          0.1.0-0134
 
-          - 앱 이름이 Syno Connect Center로 변경되었습니다. 다른 변경 사항은 없습니다
+          - DSM의 QuickConnect와 DDNS가 켜져 있으면 개요에 표시됩니다
+          - 모든 방법 비교에 무료 링크, DDNS, 앞단 로그인 열을 추가하고 각 항목을 업데이트했습니다
         es: |-
-          0.1.0-0133
+          0.1.0-0134
 
-          - La App ahora se llama Syno Connect Center; no hay otros cambios
+          - El Resumen muestra QuickConnect y DDNS de DSM cuando están activados
+          - Comparar todas las formas añade el enlace gratuito, DDNS y la columna Inicio de sesión previo, con entradas actualizadas
         it: |-
-          0.1.0-0133
+          0.1.0-0134
 
-          - L’App ora si chiama Syno Connect Center; non ci sono altre modifiche
+          - La Panoramica mostra QuickConnect e DDNS di DSM quando sono attivi
+          - Confronta tutti i modi aggiunge il link gratuito, DDNS e la colonna Accesso preliminare, con voci aggiornate
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0129-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-app-urls-0129-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-cloudflare-0129-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-tailscale-0126-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0126-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0134-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-compare-0134-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-app-urls-0134-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-cloudflare-0134-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0133
+        version: 0.1.0-0134
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: a84bd503a866e3003a8ccfbeb2679f15a293f467fc2b1779013fe7f25d840093
-        md5: 07d2af204243595402f66b0063adbe7f
-        size: 14970880
+        sha256: e3b7f1374145dab3b581785584833189522a90aedeea76cd6f2dd6b35061e013
+        md5: 48040c65ff288d7a3fad26e78be2d8ed
+        size: 14981120
         facts:
           built_with: sdk
           sdk_backend: go
@@ -440,19 +449,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T08:00:57Z
-          source_ref: 9f38f2281fc39404b49cca881928a29ddf3b6220
+          reviewed_at: 2026-11-06T15:09:29Z
+          source_ref: a969186e758ba04dd0e04b97a10b27ecd6bb1dcc
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0133
+        version: 0.1.0-0134
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: a97ca780cf97f46c6579e8143b9e5da9d3e9c6bfa1a5f3683f250a8eaed16987
-        md5: 263f4a156146da961e985352616f6196
-        size: 15544320
+        sha256: 57d16d61400d3b34b059a01d562ea0c97d38b86e89f01d758be5186cca25385a
+        md5: c428cd0be27feef926d60c631752691a
+        size: 15554560
         facts:
           built_with: sdk
           sdk_backend: go
@@ -469,11 +478,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T08:00:57Z
-          source_ref: 9f38f2281fc39404b49cca881928a29ddf3b6220
+          reviewed_at: 2026-11-06T15:09:29Z
+          source_ref: a969186e758ba04dd0e04b97a10b27ecd6bb1dcc
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0133
+        version: 0.1.0-0134
         arch:
           - apollolake
           - avoton
@@ -502,9 +511,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: a1d409d7bc2f7b86985e6596ee36a95c48b29b5768bf2e3c5b1a87e5ab94425f
-        md5: 3fb7f182096f2f8f076a2d695d48162f
-        size: 16312320
+        sha256: 39eb73368e609c59554ce86e2cb3573a847f3e1ef54b5a6fecb05924aed153b7
+        md5: 920ba5f246f246d0bd7e4da7558c5d85
+        size: 16332800
         facts:
           built_with: sdk
           sdk_backend: go
@@ -521,8 +530,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T08:00:57Z
-          source_ref: 9f38f2281fc39404b49cca881928a29ddf3b6220
+          reviewed_at: 2026-11-06T15:09:29Z
+          source_ref: a969186e758ba04dd0e04b97a10b27ecd6bb1dcc
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
