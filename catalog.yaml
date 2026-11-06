@@ -540,7 +540,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0087
+      release: v0.2.2-0088
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -611,50 +611,41 @@ packages:
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
         en: |-
-          0.2.2-0087
+          0.2.2-0088
 
-          - Fix search results and download task selection
-          - Update SDK to 0.50.15 and UI to 0.20.12
+          - Updated UI components: touch targets no longer cause sideways scrolling on phones
         zh-TW: |-
-          0.2.2-0087
+          0.2.2-0088
 
-          - 修正搜尋結果與下載任務選取
-          - 更新 SDK 至 0.50.15、UI 至 0.20.12
+          - 更新介面元件：觸控目標不再讓手機畫面左右捲動
         zh-CN: |-
-          0.2.2-0087
+          0.2.2-0088
 
-          - 修复搜索结果和下载任务选择
-          - 更新 SDK 至 0.50.15、UI 至 0.20.12
-        de: |-
-          0.2.2-0087
-
-          - Suchergebnisse und Auswahl von Download-Aufgaben korrigiert
-          - SDK auf 0.50.15 und UI auf 0.20.12 aktualisiert
-        fr: |-
-          0.2.2-0087
-
-          - Correction des résultats de recherche et de la sélection des téléchargements
-          - Mise à jour du SDK vers 0.50.15 et de l’UI vers 0.20.12
+          - 更新界面组件：触控目标不再让手机画面左右滚动
         ja: |-
-          0.2.2-0087
+          0.2.2-0088
 
-          - 検索結果とダウンロードタスクの選択を修正
-          - SDK を 0.50.15、UI を 0.20.12 に更新
+          - UI コンポーネントを更新：タップ領域が原因でスマートフォンで横スクロールしなくなりました
         ko: |-
-          0.2.2-0087
+          0.2.2-0088
 
-          - 검색 결과와 다운로드 작업 선택 수정
-          - SDK를 0.50.15, UI를 0.20.12로 업데이트
+          - UI 구성 요소 업데이트: 터치 대상이 휴대폰에서 가로 스크롤을 일으키지 않습니다
+        de: |-
+          0.2.2-0088
+
+          - UI-Komponenten aktualisiert: Tippflächen verursachen auf Smartphones kein seitliches Scrollen mehr
+        fr: |-
+          0.2.2-0088
+
+          - Composants d’interface mis à jour : les zones tactiles ne provoquent plus de défilement latéral sur téléphone
         es: |-
-          0.2.2-0087
+          0.2.2-0088
 
-          - Corregir los resultados de búsqueda y la selección de descargas
-          - Actualizar el SDK a 0.50.15 y la UI a 0.20.12
+          - Componentes de la interfaz actualizados: las áreas táctiles ya no provocan desplazamiento lateral en el teléfono
         it: |-
-          0.2.2-0087
+          0.2.2-0088
 
-          - Corretti i risultati di ricerca e la selezione dei download
-          - Aggiornati SDK a 0.50.15 e UI a 0.20.12
+          - Componenti dell’interfaccia aggiornati: le aree di tocco non causano più scorrimento laterale sul telefono
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0081-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -663,15 +654,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0081-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0087
+        version: 0.2.2-0088
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: c3699932b4a23b2c23f61a7596a04a3f16741ff0d9bc90f0357c1912b5b110b7
-        md5: 14863806b701da856bf3c42f563644fa
-        size: 67139072
+        sha256: 0a4290b417276f427991bab1111718b49899f87d91381f23adbab99d3ad99753
+        md5: 7c3c4ad8e4a1ec678e89807e4f437dfc
+        size: 67140096
         facts:
           built_with: sdk
           sdk_backend: go
@@ -689,11 +680,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T11:51:35Z
-          source_ref: 1087587fd5bb2143047a3ea0b3a2078e104f27f7
+          reviewed_at: 2026-11-06T02:20:45Z
+          source_ref: e9608808dc577f3890b77be00cae0964d6369184
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0087
+        version: 0.2.2-0088
         arch:
           - apollolake
           - avoton
@@ -722,9 +713,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 379f54f6e13aaefd798b2b65251d90eec1886ce8cd922fef885690ba990e0465
-        md5: 24cfab6bacdfa481a51d1b679cbe170a
-        size: 70793216
+        sha256: 8569a42b0aac808f16cac82cc8e18b3c71611eadd8a9ff830165a59fd9eb6625
+        md5: a9f547f752b773d489f6dc1acaf2f2d5
+        size: 70793728
         facts:
           built_with: sdk
           sdk_backend: go
@@ -742,8 +733,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-05T11:51:35Z
-          source_ref: 1087587fd5bb2143047a3ea0b3a2078e104f27f7
+          reviewed_at: 2026-11-06T02:20:45Z
+          source_ref: e9608808dc577f3890b77be00cae0964d6369184
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
