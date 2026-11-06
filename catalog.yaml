@@ -2068,7 +2068,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-06T04:37:28Z
-          source_ref: 47657a293803dd87a1aa310c99559853454255f2
+          source_ref: 1d1beeb9665603cf48bb31a72053090ac307ab5f
           source_repo: synopackageland/syno-pkg-magpie
       - package: Magpie
         version: 0.1.3093-0007
@@ -2119,7 +2119,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-06T04:38:02Z
-          source_ref: 47657a293803dd87a1aa310c99559853454255f2
+          source_ref: 1d1beeb9665603cf48bb31a72053090ac307ab5f
           source_repo: synopackageland/syno-pkg-magpie
 
 publishers:
