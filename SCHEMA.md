@@ -169,10 +169,11 @@ The public script is generated from the package source Worker's rules in
 See `scripts/community-check-NOTICE.md`. Do not maintain a separate rule copy.
 Checked Package Center release pinning remains a maintainer operation.
 
-## Two sources, three website sections
+## Two sources, two website tabs
 
-The website lists Recommended (catalog.yaml entries with `recommended: true`),
-In Package Center (the other catalog.yaml entries) and Community (community/).
+The website's Apps page has two tabs: In Package Center (every catalog.yaml
+entry, those with `recommended: true` first and marked Recommended) and
+Community (community/).
 How a developer gets listed, and how every new version is checked again, is on
 the website: https://synopkgland.com/docs/guides/list-your-app/
 
@@ -202,6 +203,26 @@ For Package Center, the maintainer must reserve the exact ID in the publisher's
 Community has no arbitrary reservation exception; identities are globally unique,
 case-insensitively, and catalog.yaml wins over community for the same ID.
 
+## Categories
+
+Every entry, in catalog.yaml and in community/, has exactly one `category` from
+this list; the website's category filter uses the same list in both tabs.
+Anything else is refused. An entry without one is `system`.
+
+| `category` | Label | For |
+|---|---|---|
+| `media` | Media & Entertainment | Video, music, audiobooks, photos |
+| `productivity` | Productivity & Documents | Documents, notes, reading, file conversion |
+| `files` | Files & Downloads | File browsing, cloud drives, sync, downloaders |
+| `network` | Network & Remote Access | Remote access, VPN, proxies, DNS |
+| `security` | Security & Data Protection | Passwords, backup, encryption, privacy |
+| `home` | Smart Home | Home automation, cameras, IoT |
+| `developer` | Developer & AI | Coding tools, Git, CI, AI models and agents |
+| `system` | System & Utilities | Storage tools, monitoring, everything else |
+
+Pick the closest one; the list stays coarse on purpose, so a new kind of app
+joins an existing category.
+
 ## Community packages
 
 ```yaml
@@ -223,7 +244,7 @@ version: 1.2.0-3
 displayname: My App
 description: Does one thing.       # optional
 os_min_ver: 7.0-40000              # optional; DSM 7 or later
-category: media                    # optional
+category: media                    # optional; see Categories
 icon: assets/icon.png              # optional PNG in the source repo at the tag
 metadata: { license: MIT }         # optional
 source: { repo: alice/app, release: v1.2.0-3 }   # owner = publisher; not "latest"
@@ -390,6 +411,6 @@ A pin contains package, version, arch (array), sha256 (64 lowercase hex), md5
 (32 lowercase hex), size (bytes), review.type (reviewed/submitted), review.reviewer,
 review.reviewed_at (UTC ISO time), review.source_ref (40/64 hex immutable ref), and
 optional review.source_repo. Publisher homepage and blocked are optional. Selection
-featured, category, order retain their v1 defaults; blocked_versions is an optional
+featured and order retain their v1 defaults, category defaults to `system`; blocked_versions is an optional
 array of INFO.version values. Unknown fields, duplicate selections/pins, invalid
 emails, unsafe URLs, malformed review records and namespace conflicts are refused.
