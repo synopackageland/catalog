@@ -1897,9 +1897,215 @@ packages:
           source_ref: de3e000a988efaeb23e8c219b28a3539de429ef6
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
+  - publisher: synopackageland
+    category: developer
+    order: 140
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-magpie
+      release: v0.1.3093-0007
+      access: public
+    metadata:
+      maintainer: yetone
+      maintainer_url: https://github.com/yetone/magpie
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://github.com/synopackageland/syno-pkg-magpie
+      source_url: https://github.com/synopackageland/syno-pkg-magpie
+      issues_url: https://github.com/synopackageland/syno-pkg-magpie/issues
+      upstream:
+        name: magpie
+        url: https://github.com/yetone/magpie
+        license: MIT
+      license: MIT
+      internet: required
+      telemetry: none
+      description:
+        en: Switch every coding agent's model from one panel, with a local gateway that fails over when a quota runs out
+        zh-TW: 在同一個面板切換每個 coding agent 的模型，本機閘道會在額度用完時自動接手
+        zh-CN: 在同一个面板切换每个 coding agent 的模型，本地网关会在额度用完时自动接手
+        de: Das Modell jedes Coding-Agents in einem Panel wechseln, mit einem lokalen Gateway, das bei erschöpftem Kontingent übernimmt
+        fr: Changez le modèle de chaque agent de code depuis un panneau, avec une passerelle locale qui prend le relais quand un quota s'épuise
+        ja: コーディングエージェントのモデルを 1 つのパネルで切り替え、枠が尽きたらローカルゲートウェイが引き継ぎます
+        ko: 코딩 에이전트의 모델을 한 패널에서 바꾸고, 할당량이 떨어지면 로컬 게이트웨이가 이어받아요
+      long_description:
+        en: |-
+          Magpie keeps every coding agent's model in one place. Pick the model for Claude Code, Codex, Gemini CLI, OpenCode, Zed and the rest from one list, and magpie writes it into that agent's own config.
+
+          This package runs magpie as a DSM package service. Administrators open the panel from the DSM main menu after signing in to DSM, and the model gateway serves the LAN on port 3425 with magpie's own gateway keys, so agents and other machines use it without signing in to DSM.
+        zh-TW: |-
+          Magpie 把每個 coding agent 的模型集中在一處。從同一份清單挑選 Claude Code、Codex、Gemini CLI、OpenCode、Zed 等代理要用的模型，magpie 會把它寫進該代理自己的設定檔。
+
+          這個套件把 magpie 以 DSM 套件服務執行：管理員登入 DSM 後從主選單開啟面板，模型的閘道則以 magpie 自己的 gateway key 在 3425 埠對區域網路提供服務，代理與其他機器不需要登入 DSM。
+        zh-CN: |-
+          Magpie 把每个 coding agent 的模型集中在一处。从同一份清单挑选 Claude Code、Codex、Gemini CLI、OpenCode、Zed 等代理要用的模型，magpie 会把它写进该代理自己的配置文件。
+
+          这个套件把 magpie 以 DSM 套件服务运行：管理员登录 DSM 后从主菜单打开面板，模型的网关则以 magpie 自己的 gateway key 在 3425 端口对局域网提供服务，代理与其他机器不需要登录 DSM。
+        de: |-
+          Magpie bündelt das Modell jedes Coding-Agents an einer Stelle. Wählen Sie das Modell für Claude Code, Codex, Gemini CLI, OpenCode, Zed und die übrigen aus einer Liste, und magpie schreibt es in die eigene Konfiguration des Agents.
+
+          Dieses Paket betreibt magpie als DSM-Paketdienst. Administratoren öffnen das Panel nach der DSM-Anmeldung über das DSM-Hauptmenü, und das Modell-Gateway ist im LAN auf Port 3425 mit magpies eigenen Gateway-Schlüsseln erreichbar, sodass Agents und andere Rechner sich nicht bei DSM anmelden müssen.
+        fr: |-
+          Magpie réunit le modèle de chaque agent de code au même endroit. Choisissez le modèle de Claude Code, Codex, Gemini CLI, OpenCode, Zed et des autres dans une seule liste, et magpie l'écrit dans la configuration propre à l'agent.
+
+          Ce paquet exécute magpie comme service de paquet DSM. Les administrateurs ouvrent le panneau depuis le menu principal de DSM après s'être connectés, et la passerelle de modèles est joignable sur le LAN au port 3425 avec les clés de passerelle de magpie ; les agents et les autres machines n'ont donc pas besoin de se connecter à DSM.
+        ja: |-
+          magpie はコーディングエージェントのモデルを 1 か所にまとめます。Claude Code、Codex、Gemini CLI、OpenCode、Zed などのモデルを 1 つの一覧から選ぶと、magpie が各エージェント自身の設定に書き込みます。
+
+          このパッケージは magpie を DSM のパッケージサービスとして動かします。管理者は DSM にサインインしたあとメインメニューからパネルを開き、モデルのゲートウェイは magpie 自身のゲートウェイキーでポート 3425 から LAN に提供されるため、エージェントや他のマシンは DSM にサインインする必要がありません。
+        ko: |-
+          magpie는 모든 코딩 에이전트의 모델을 한곳에 모아요. Claude Code, Codex, Gemini CLI, OpenCode, Zed 등의 모델을 한 목록에서 고르면 magpie가 각 에이전트의 설정 파일에 기록해요.
+
+          이 패키지는 magpie를 DSM 패키지 서비스로 실행해요. 관리자는 DSM에 로그인한 뒤 메인 메뉴에서 패널을 열고, 모델 게이트웨이는 magpie 자체 게이트웨이 키로 3425 포트에서 LAN에 제공되므로 에이전트와 다른 컴퓨터는 DSM에 로그인할 필요가 없어요.
+      changelog:
+        en: |-
+          0.1.3093-0007
+
+          - First Syno Package Land release, following magpie 0.1.3093
+          - The panel opens from the DSM main menu for DSM administrators; the DSM identity gateway supplies magpie's own panel key, so there is no second App password
+          - The model gateway serves the LAN on port 3425 with magpie gateway keys, without DSM sign-in
+          - Community plugin pages work inside the panel
+          - magpie's own updater stays on, and a new SPK replaces the packaged binary
+        zh-TW: |-
+          0.1.3093-0007
+
+          - 首個 Syno Package Land 版本，跟隨 magpie 0.1.3093
+          - 管理員從 DSM 主選單開啟面板；面板金鑰由 DSM identity gateway 提供，不需要第二組 App 密碼
+          - 模型閘道在 3425 埠以 magpie gateway key 對區域網路提供服務，不需 DSM 登入
+          - 社群 plugin 頁面可在面板內使用
+          - 保留 magpie 自己的更新機制，新的 SPK 會覆蓋打包的二進位檔
+        zh-CN: |-
+          0.1.3093-0007
+
+          - 首个 Syno Package Land 版本，跟随 magpie 0.1.3093
+          - 管理员从 DSM 主菜单打开面板；面板密钥由 DSM identity gateway 提供，不需要第二组 App 密码
+          - 模型网关在 3425 端口以 magpie gateway key 对局域网提供服务，无需 DSM 登录
+          - 社区 plugin 页面可在面板内使用
+          - 保留 magpie 自己的更新机制，新的 SPK 会覆盖打包的二进制文件
+        de: |-
+          0.1.3093-0007
+
+          - Erste Syno-Package-Land-Version, folgt magpie 0.1.3093
+          - Administratoren öffnen das Panel über das DSM-Hauptmenü; das DSM-Identity-Gateway liefert magpies eigenen Panel-Schlüssel, ein zweites App-Passwort gibt es nicht
+          - Das Modell-Gateway ist im LAN auf Port 3425 mit magpie-Gateway-Schlüsseln erreichbar, ohne DSM-Anmeldung
+          - Community-Plugin-Seiten funktionieren im Panel
+          - magpies eigener Updater bleibt aktiv, ein neues SPK ersetzt die mitgelieferte Binärdatei
+        fr: |-
+          0.1.3093-0007
+
+          - Première version Syno Package Land, basée sur magpie 0.1.3093
+          - Les administrateurs ouvrent le panneau depuis le menu principal de DSM ; la passerelle d'identité DSM fournit la clé du panneau de magpie, sans second mot de passe d'application
+          - La passerelle de modèles est joignable sur le LAN au port 3425 avec les clés de passerelle de magpie, sans connexion à DSM
+          - Les pages des plugins communautaires fonctionnent dans le panneau
+          - Le programme de mise à jour de magpie reste actif ; un nouveau SPK remplace le binaire fourni
+        ja: |-
+          0.1.3093-0007
+
+          - Syno Package Land 初回リリース（magpie 0.1.3093 に追従）
+          - 管理者は DSM のメインメニューからパネルを開きます。パネルのキーは DSM identity gateway が渡すため、2 つ目のアプリパスワードは不要です
+          - モデルのゲートウェイは magpie のゲートウェイキーでポート 3425 から LAN に提供され、DSM へのサインインは不要です
+          - コミュニティプラグインのページがパネル内で動作します
+          - magpie 自身の更新機能は有効なままで、新しい SPK が同梱のバイナリを置き換えます
+        ko: |-
+          0.1.3093-0007
+
+          - Syno Package Land 첫 릴리스, magpie 0.1.3093 기반
+          - 관리자는 DSM 메인 메뉴에서 패널을 열어요. 패널 키는 DSM identity gateway가 제공하므로 두 번째 앱 비밀번호가 필요 없어요
+          - 모델 게이트웨이는 magpie 게이트웨이 키로 3425 포트에서 LAN에 제공되며 DSM 로그인이 필요 없어요
+          - 커뮤니티 플러그인 페이지가 패널 안에서 동작해요
+          - magpie 자체 업데이터는 그대로 켜져 있고, 새 SPK가 패키지된 바이너리를 교체해요
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Magpie/01-agents.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Magpie/02-plugins.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Magpie/03-rsshub.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Magpie/04-masking.png
+    pins:
+      - package: Magpie
+        version: 0.1.3093-0007
+        arch:
+        - armada37xx
+        - rtd1296
+        - rtd1619
+        - rtd1619b
+        sha256: 458546a80f56c01f5b4d6659ee9543aacc88f299cb5e2c00d2c5af35a11a8bbc
+        md5: 58545af6c7e62908d95061eb00c02e8d
+        size: 53107712
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: none
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-11-06T04:37:28Z
+          source_ref: 47657a293803dd87a1aa310c99559853454255f2
+          source_repo: synopackageland/syno-pkg-magpie
+      - package: Magpie
+        version: 0.1.3093-0007
+        arch:
+        - apollolake
+        - avoton
+        - braswell
+        - broadwell
+        - broadwellnk
+        - broadwellnkv2
+        - broadwellntb
+        - broadwellntbap
+        - bromolow
+        - cedarview
+        - coffeelake
+        - denverton
+        - epyc7002
+        - epyc7003
+        - epyc7003ntb
+        - geminilake
+        - geminilakenk
+        - grantley
+        - icelaked
+        - kvmcloud
+        - kvmx64
+        - purley
+        - r1000
+        - r1000nk
+        - skylaked
+        - v1000
+        - v1000nk
+        sha256: bc3227fc1e3032c587fbca881dff8a4f7f0fe306b6ea9111c0330855c7697c8a
+        md5: 32af1893a0dd2ce59716cad551ad97ca
+        size: 57681408
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: none
+          runs: native
+          access: admins
+          account: dsm
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-11-06T04:38:02Z
+          source_ref: 47657a293803dd87a1aa310c99559853454255f2
+          source_repo: synopackageland/syno-pkg-magpie
+
 publishers:
   synopackageland:
     display_name: Syno Package Land
+    package_names: [Magpie]
     contact_email: support@synopkgland.com
     support_email: support@synopkgland.com
     homepage: https://synopkgland.com/
