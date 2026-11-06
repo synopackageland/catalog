@@ -1795,7 +1795,7 @@ packages:
   - listed: true
     recommended: false
     featured: false
-    category: home
+    category: system
     order: 130
     publisher: synopackageland
     source:
