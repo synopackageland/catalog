@@ -1,7 +1,7 @@
 schema: 1
 package: C351288041XUptimeKuma
 version: 2.5.8-0001
-displayname: TOTODOIT Uptime Kuma
+displayname: Uptime Kuma
 description: Monitor website and service uptime and get alerts when they go down
 os_min_ver: 7.2.1-69057
 category: system
