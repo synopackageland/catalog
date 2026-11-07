@@ -540,7 +540,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0088
+      release: v0.2.2-0090
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -611,41 +611,68 @@ packages:
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
         en: |-
-          0.2.2-0088
+          0.2.2-0090
 
-          - Updated UI components: touch targets no longer cause sideways scrolling on phones
+          - Share links, text containing links and torrent files into Download Hub through the compatible Syno Package Land mobile app, then review before starting
+          - Save completed NAS downloads to your phone, including individual files from multi-file downloads
+          - Replace unsupported filename characters and automatically rename same-name downloads without replacing existing files
+          - Correctly recognize completed multi-file saves in subfolders and recover saves left pending by the earlier result check without copying again
         zh-TW: |-
-          0.2.2-0088
+          0.2.2-0090
 
-          - 更新介面元件：觸控目標不再讓手機畫面左右捲動
+          - 透過相容的 Syno Package Land 行動 App 將連結、含連結的文字與種子檔分享至 Download Hub，確認後再開始下載
+          - 將已儲存至 NAS 的下載存到手機，也可個別儲存多檔下載中的檔案
+          - 替換檔名中不支援的字元，並自動重新命名同名下載，保留既有檔案
+          - 正確辨識已存入子資料夾的多檔下載，並恢復因舊版結果檢查而停在待確認的儲存狀態，不重複複製
         zh-CN: |-
-          0.2.2-0088
+          0.2.2-0090
 
-          - 更新界面组件：触控目标不再让手机画面左右滚动
-        ja: |-
-          0.2.2-0088
-
-          - UI コンポーネントを更新：タップ領域が原因でスマートフォンで横スクロールしなくなりました
-        ko: |-
-          0.2.2-0088
-
-          - UI 구성 요소 업데이트: 터치 대상이 휴대폰에서 가로 스크롤을 일으키지 않습니다
+          - 通过兼容的 Syno Package Land 移动 App 将链接、含链接的文本和种子文件分享至 Download Hub，确认后再开始下载
+          - 将已保存至 NAS 的下载存到手机，也可单独保存多文件下载中的文件
+          - 替换文件名中不支持的字符，并自动重命名同名下载，保留现有文件
+          - 正确识别已存入子文件夹的多文件下载，并恢复因旧版结果检查而停在待确认的保存状态，不重复复制
         de: |-
-          0.2.2-0088
+          0.2.2-0090
 
-          - UI-Komponenten aktualisiert: Tippflächen verursachen auf Smartphones kein seitliches Scrollen mehr
+          - Links, Text mit Links und Torrent-Dateien über die kompatible mobile App von Syno Package Land an Download Hub teilen und vor dem Start prüfen
+          - Auf dem NAS gespeicherte Downloads auf dem Smartphone speichern, auch einzelne Dateien aus Downloads mit mehreren Dateien
+          - Nicht unterstützte Zeichen in Dateinamen ersetzen und gleichnamige Downloads automatisch umbenennen, ohne vorhandene Dateien zu ersetzen
+          - Abgeschlossene Speichervorgänge für mehrere Dateien in Unterordnern korrekt erkennen und durch die frühere Ergebnisprüfung ausstehende Vorgänge ohne erneutes Kopieren abschließen
         fr: |-
-          0.2.2-0088
+          0.2.2-0090
 
-          - Composants d’interface mis à jour : les zones tactiles ne provoquent plus de défilement latéral sur téléphone
+          - Partager des liens, du texte contenant des liens et des fichiers torrent vers Download Hub depuis l’application mobile compatible Syno Package Land, puis vérifier avant de lancer le téléchargement
+          - Enregistrer sur le téléphone les téléchargements sauvegardés sur le NAS, y compris des fichiers individuels issus d’un téléchargement multiple
+          - Remplacer les caractères non pris en charge dans les noms et renommer automatiquement les téléchargements de même nom sans remplacer les fichiers existants
+          - Reconnaître correctement les sauvegardes multiples terminées dans des sous-dossiers et rétablir celles restées en attente à cause de l’ancienne vérification, sans nouvelle copie
+        ja: |-
+          0.2.2-0090
+
+          - 対応する Syno Package Land モバイルアプリからリンク、リンクを含むテキスト、Torrent ファイルを Download Hub に共有し、内容を確認してからダウンロードを開始
+          - NAS に保存済みのダウンロードをスマートフォンに保存し、複数ファイルのダウンロードから個別のファイルも保存可能
+          - ファイル名の未対応文字を置き換え、同名のダウンロードを自動で改名して既存のファイルを保持
+          - サブフォルダーへの複数ファイルの保存完了を正しく認識し、従来の結果確認で保留になった保存を再コピーせずに復元
+        ko: |-
+          0.2.2-0090
+
+          - 호환되는 Syno Package Land 모바일 앱에서 링크, 링크가 포함된 텍스트와 토렌트 파일을 Download Hub로 공유하고 내용을 확인한 후 다운로드 시작
+          - NAS에 저장된 다운로드를 휴대폰에 저장하고 여러 파일로 구성된 다운로드의 개별 파일도 저장
+          - 파일명의 지원되지 않는 문자를 바꾸고 이름이 같은 다운로드는 자동으로 이름을 변경하여 기존 파일 보존
+          - 하위 폴더의 여러 파일 저장 완료를 올바르게 인식하고 이전 결과 확인으로 보류된 저장 상태를 다시 복사하지 않고 복구
         es: |-
-          0.2.2-0088
+          0.2.2-0090
 
-          - Componentes de la interfaz actualizados: las áreas táctiles ya no provocan desplazamiento lateral en el teléfono
+          - Comparte enlaces, texto con enlaces y archivos torrent con Download Hub desde la aplicación móvil compatible de Syno Package Land y revisa el contenido antes de iniciar la descarga
+          - Guarda en el teléfono las descargas almacenadas en el NAS, incluidos archivos individuales de descargas con varios archivos
+          - Sustituye los caracteres no admitidos en los nombres y renombra automáticamente las descargas con el mismo nombre sin reemplazar los archivos existentes
+          - Reconoce correctamente los guardados de varios archivos completados en subcarpetas y recupera los que quedaron pendientes por la comprobación anterior sin volver a copiarlos
         it: |-
-          0.2.2-0088
+          0.2.2-0090
 
-          - Componenti dell’interfaccia aggiornati: le aree di tocco non causano più scorrimento laterale sul telefono
+          - Condividi link, testo contenente link e file torrent con Download Hub dall’app mobile compatibile di Syno Package Land e controlla il contenuto prima di avviare il download
+          - Salva sul telefono i download archiviati sul NAS, anche i singoli file dei download con più file
+          - Sostituisci i caratteri non supportati nei nomi e rinomina automaticamente i download omonimi senza sostituire i file esistenti
+          - Riconosci correttamente i salvataggi di più file completati nelle sottocartelle e recupera quelli rimasti in sospeso per il precedente controllo senza copiarli di nuovo
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0081-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -654,15 +681,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0081-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0088
+        version: 0.2.2-0090
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 0a4290b417276f427991bab1111718b49899f87d91381f23adbab99d3ad99753
-        md5: 7c3c4ad8e4a1ec678e89807e4f437dfc
-        size: 67140096
+        sha256: 73ef8e67f817fdf2d42214a4f8b6e070ed7b453bd9bf3c3ea8653a21184ca2e6
+        md5: 56091f01c8cfdc1218addea49f4116f4
+        size: 67355136
         facts:
           built_with: sdk
           sdk_backend: go
@@ -680,11 +707,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T02:20:45Z
-          source_ref: e9608808dc577f3890b77be00cae0964d6369184
+          reviewed_at: 2026-11-07T02:40:00Z
+          source_ref: fcbc084e9b47bbc7b60a719eece96b891d304ea7
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0088
+        version: 0.2.2-0090
         arch:
           - apollolake
           - avoton
@@ -713,9 +740,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8569a42b0aac808f16cac82cc8e18b3c71611eadd8a9ff830165a59fd9eb6625
-        md5: a9f547f752b773d489f6dc1acaf2f2d5
-        size: 70793728
+        sha256: 7b398c4202f7fbb6d7bbed53872b809faeb65d7f8ce06aa7347c3e41f1dd7b14
+        md5: fbc493ef0cae7dcf608f9b9d7943b8ae
+        size: 71014912
         facts:
           built_with: sdk
           sdk_backend: go
@@ -733,8 +760,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T02:20:45Z
-          source_ref: e9608808dc577f3890b77be00cae0964d6369184
+          reviewed_at: 2026-11-07T02:40:00Z
+          source_ref: fcbc084e9b47bbc7b60a719eece96b891d304ea7
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
