@@ -882,7 +882,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0093
+      release: v0.2.2-0094
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -953,6 +953,10 @@ packages:
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
         en: |-
+          0.2.2-0094
+
+          - Update the toolchain and fix phone sign-in approval, bottom spacing, sideways scrolling and sticky positioning
+
           0.2.2-0093
 
           - Update the UI, SDK and packaging tools with compact phone controls and mobile approval
@@ -964,6 +968,10 @@ packages:
           - Replace unsupported filename characters and automatically rename same-name downloads without replacing existing files
           - Correctly recognize completed multi-file saves in subfolders and recover saves left pending by the earlier result check without copying again
         zh-TW: |-
+          0.2.2-0094
+
+          - 更新工具鏈，修正手機登入核准、底部留白、橫向捲動與固定列位置
+
           0.2.2-0093
 
           - 更新 UI、SDK 與打包工具鏈，精簡手機控制項並支援行動版權限核准
@@ -975,6 +983,10 @@ packages:
           - 替換檔名中不支援的字元，並自動重新命名同名下載，保留既有檔案
           - 正確辨識已存入子資料夾的多檔下載，並恢復因舊版結果檢查而停在待確認的儲存狀態，不重複複製
         zh-CN: |-
+          0.2.2-0094
+
+          - 更新工具链，修复手机登录授权、底部留白、横向滚动和固定栏位置
+
           0.2.2-0093
 
           - 更新 UI、SDK 和打包工具链，精简手机控件并支持移动版权限授权
@@ -986,6 +998,10 @@ packages:
           - 替换文件名中不支持的字符，并自动重命名同名下载，保留现有文件
           - 正确识别已存入子文件夹的多文件下载，并恢复因旧版结果检查而停在待确认的保存状态，不重复复制
         de: |-
+          0.2.2-0094
+
+          - Toolchain aktualisieren und Anmeldegenehmigung, unteren Abstand, seitliches Scrollen und fixierte Leisten auf Smartphones korrigieren
+
           0.2.2-0093
 
           - UI, SDK und Paketwerkzeuge aktualisieren, mit kompakteren Smartphone-Bedienelementen und mobiler Genehmigung
@@ -997,6 +1013,10 @@ packages:
           - Nicht unterstützte Zeichen in Dateinamen ersetzen und gleichnamige Downloads automatisch umbenennen, ohne vorhandene Dateien zu ersetzen
           - Abgeschlossene Speichervorgänge für mehrere Dateien in Unterordnern korrekt erkennen und durch die frühere Ergebnisprüfung ausstehende Vorgänge ohne erneutes Kopieren abschließen
         fr: |-
+          0.2.2-0094
+
+          - Mettre à jour les outils et corriger l’approbation de connexion, l’espace inférieur, le défilement horizontal et les barres fixes sur téléphone
+
           0.2.2-0093
 
           - Mettre à jour l’UI, le SDK et les outils de création avec des commandes compactes et l’approbation sur mobile
@@ -1008,6 +1028,10 @@ packages:
           - Remplacer les caractères non pris en charge dans les noms et renommer automatiquement les téléchargements de même nom sans remplacer les fichiers existants
           - Reconnaître correctement les sauvegardes multiples terminées dans des sous-dossiers et rétablir celles restées en attente à cause de l’ancienne vérification, sans nouvelle copie
         ja: |-
+          0.2.2-0094
+
+          - ツールチェーンを更新し、スマートフォンのログイン承認、下部の余白、横スクロール、固定バーの位置を修正
+
           0.2.2-0093
 
           - UI、SDK、パッケージングツールを更新し、スマートフォンの操作部をコンパクトにしてモバイルでの承認に対応
@@ -1019,6 +1043,10 @@ packages:
           - ファイル名の未対応文字を置き換え、同名のダウンロードを自動で改名して既存のファイルを保持
           - サブフォルダーへの複数ファイルの保存完了を正しく認識し、従来の結果確認で保留になった保存を再コピーせずに復元
         ko: |-
+          0.2.2-0094
+
+          - 툴체인을 업데이트하고 휴대폰 로그인 승인, 하단 여백, 가로 스크롤 및 고정 막대 위치 수정
+
           0.2.2-0093
 
           - UI, SDK 및 패키징 도구를 업데이트하고 휴대폰 컨트롤을 간결하게 개선하며 모바일 승인 지원
@@ -1030,6 +1058,10 @@ packages:
           - 파일명의 지원되지 않는 문자를 바꾸고 이름이 같은 다운로드는 자동으로 이름을 변경하여 기존 파일 보존
           - 하위 폴더의 여러 파일 저장 완료를 올바르게 인식하고 이전 결과 확인으로 보류된 저장 상태를 다시 복사하지 않고 복구
         es: |-
+          0.2.2-0094
+
+          - Actualizar las herramientas y corregir la aprobación de inicio de sesión, el espacio inferior, el desplazamiento horizontal y las barras fijas en teléfonos
+
           0.2.2-0093
 
           - Actualizar la UI, el SDK y las herramientas de empaquetado con controles compactos y aprobación desde el móvil
@@ -1041,6 +1073,10 @@ packages:
           - Sustituye los caracteres no admitidos en los nombres y renombra automáticamente las descargas con el mismo nombre sin reemplazar los archivos existentes
           - Reconoce correctamente los guardados de varios archivos completados en subcarpetas y recupera los que quedaron pendientes por la comprobación anterior sin volver a copiarlos
         it: |-
+          0.2.2-0094
+
+          - Aggiornare gli strumenti e correggere l’approvazione di accesso, lo spazio inferiore, lo scorrimento orizzontale e le barre fisse sui telefoni
+
           0.2.2-0093
 
           - Aggiornare UI, SDK e strumenti di creazione con controlli compatti e approvazione da dispositivi mobili
@@ -1059,15 +1095,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0081-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0093
+        version: 0.2.2-0094
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 9a19b08b4097e8cf234aa41f06e27518a7a829d8a57e89f67c387f9c0949fcad
-        md5: 9158f7f149fcc56a93fd4dada50dd6ad
-        size: 67337216
+        sha256: b6dc8079ea31c2d6dd0c3294e216442d6af680f574a2db6896a7e84a42a1f955
+        md5: b9234641bf5b2975aa6ee76884c85578
+        size: 67353600
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1085,11 +1121,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-07T12:39:38Z
-          source_ref: f8810b6660f05d9719890bdf041f5c0730a7a32f
+          reviewed_at: 2026-11-07T18:30:00Z
+          source_ref: 696988b3c539e68d67d81fa3f84dd181e7c7aa1d
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0093
+        version: 0.2.2-0094
         arch:
           - apollolake
           - avoton
@@ -1118,9 +1154,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 047036125f2abf18afe88f111e2d1aced044a70c9ec3ebd90a2ee4deca69a02e
-        md5: c326d38cd079219dcdc9a7a0c5a417f5
-        size: 70995968
+        sha256: c24dc4ca76809b6d6773d29b420862e15d8aa43ac8af781607953a35a79d29ef
+        md5: 66f313c922a8ad5b692b6a5b1529c8c4
+        size: 71014912
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1138,8 +1174,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-07T12:39:38Z
-          source_ref: f8810b6660f05d9719890bdf041f5c0730a7a32f
+          reviewed_at: 2026-11-07T18:30:00Z
+          source_ref: 696988b3c539e68d67d81fa3f84dd181e7c7aa1d
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
