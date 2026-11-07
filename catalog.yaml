@@ -2030,6 +2030,175 @@ packages:
           reviewed_at: 2026-11-06T04:38:02Z
           source_ref: 1d1beeb9665603cf48bb31a72053090ac307ab5f
           source_repo: synopackageland/syno-pkg-magpie
+  - listed: true
+    recommended: false
+    featured: false
+    category: developer
+    order: 150
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-ovis
+      release: v0.4.22-0006
+      access: public
+    info:
+      displayname: Ovis
+      description: Herdr's coding agents in your browser and on your phone, served from your NAS.
+      os_min_ver: 7.2.1-69057
+    metadata:
+      maintainer: devswha
+      maintainer_url: https://github.com/devswha/ovis
+      distributor: Syno Package Land
+      distributor_url: https://synopkgland.com/
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://ovis.sh/
+      source_url: https://github.com/synopackageland/syno-pkg-land-ovis/tree/v0.4.22-0006
+      issues_url: https://github.com/synopackageland/syno-pkg-land-ovis/issues
+      license: MIT
+      upstream:
+        name: Ovis
+        url: https://github.com/devswha/ovis
+        license: MIT
+      internet: required
+      telemetry: opt-in
+      description:
+        en: Use herdr workspaces, coding agents and terminals from your browser or phone
+        zh-TW: 透過瀏覽器或手機使用 herdr 工作區、coding agent 與終端機
+        zh-CN: 通过浏览器或手机使用 herdr 工作区、coding agent 和终端
+        de: herdr-Arbeitsbereiche, Coding-Agenten und Terminals im Browser oder auf dem Smartphone nutzen
+        fr: Accédez aux espaces de travail, agents de code et terminaux herdr depuis votre navigateur ou
+          téléphone
+        ja: ブラウザーやスマートフォンから herdr のワークスペース、コーディングエージェント、ターミナルを利用
+        ko: 브라우저나 휴대폰에서 herdr 작업 공간, 코딩 에이전트, 터미널 사용
+        es: Usa espacios de trabajo, agentes de código y terminales de herdr desde tu navegador o teléfono
+        it: Usa spazi di lavoro, agenti di coding e terminali herdr dal browser o dal telefono
+      long_description:
+        en: Bring herdr workspaces, agent conversations, prompts, approvals and live terminals to your browser
+          or phone. Connect other computers over SSH, or run shells and agents inside the App's own container
+          with bundled herdr, Bun, Node.js, common command-line tools and Python. Requires DSM 7.2.1 or
+          later, Container Manager and DSM administrator sign-in; all administrators share one Ovis identity.
+          The pinned container image is downloaded separately. Data volumes remain after uninstall. Relay
+          and Portal are disabled; anonymous usage counts are off by default and can be enabled in Settings
+        zh-TW: 在瀏覽器或手機上使用 herdr 工作區、agent 對話、提示、核准與即時終端機。可透過 SSH 連接其他電腦，或在 App 專用容器內執行 shell 與 agent，內附
+          herdr、Bun、Node.js、常用命令列工具及 Python。需要 DSM 7.2.1 以上、Container Manager 與 DSM 管理員登入；所有管理員共用同一個 Ovis
+          身分。安裝時另行下載固定版本的容器映像。卸載後保留資料 volume。Relay 與 Portal 已停用；匿名使用統計預設關閉，可在設定中開啟
+        zh-CN: 在浏览器或手机上使用 herdr 工作区、agent 对话、提示、批准和实时终端。可通过 SSH 连接其他电脑，或在 App 专用容器内运行 shell 和 agent，内含 herdr、Bun、Node.js、常用命令行工具及
+          Python。需要 DSM 7.2.1 及以上、Container Manager 和 DSM 管理员登录；所有管理员共用同一个 Ovis 身份。安装时另行下载固定版本的容器镜像。卸载后保留数据卷。Relay
+          和 Portal 已禁用；匿名使用统计默认关闭，可在设置中开启
+        de: Nutze herdr-Arbeitsbereiche, Agenten-Chats, Eingabeaufforderungen, Freigaben und Live-Terminals
+          im Browser oder auf dem Smartphone. Verbinde andere Computer per SSH oder starte Shells und Agenten
+          im eigenen App-Container mit herdr, Bun, Node.js, gängigen Kommandozeilenwerkzeugen und Python.
+          DSM ab 7.2.1, Container Manager und eine DSM-Administratoranmeldung sind erforderlich; alle Administratoren
+          teilen eine Ovis-Identität. Das festgelegte Container-Image wird separat heruntergeladen. Datenvolumes
+          bleiben nach der Deinstallation erhalten. Relay und Portal sind deaktiviert; anonyme Nutzungsstatistiken
+          sind standardmäßig aus und können in den Einstellungen aktiviert werden
+        fr: Retrouvez les espaces herdr, conversations d'agents, invites, approbations et terminaux en direct
+          sur navigateur ou téléphone. Connectez d'autres ordinateurs en SSH, ou exécutez shells et agents
+          dans le conteneur de l'App avec herdr, Bun, Node.js, les outils de ligne de commande courants
+          et Python. DSM 7.2.1 ou ultérieur, Container Manager et une connexion administrateur DSM sont
+          requis ; tous les administrateurs partagent une identité Ovis. L'image de conteneur épinglée est
+          téléchargée séparément. Les volumes de données restent après la désinstallation. Relay et Portal
+          sont désactivés ; les statistiques anonymes sont désactivées par défaut et peuvent être activées
+          dans les paramètres
+        ja: herdr のワークスペース、エージェントとの会話、プロンプト、承認、ライブターミナルをブラウザーやスマートフォンで利用できます。SSH で別のコンピューターに接続するほか、herdr、Bun、Node.js、一般的なコマンドラインツール、Python
+          を備えた専用コンテナー内でシェルやエージェントを実行できます。DSM 7.2.1 以降、Container Manager、DSM 管理者サインインが必要で、すべての管理者が一つの Ovis
+          ID を共有します。固定されたコンテナーイメージは別途ダウンロードされます。データボリュームはアンインストール後も残ります。Relay と Portal は無効です。匿名の利用統計は初期状態でオフになっており、設定で有効にできます
+        ko: herdr 작업 공간, 에이전트 대화, 프롬프트, 승인, 실시간 터미널을 브라우저나 휴대폰에서 이용하세요. 다른 컴퓨터에 SSH로 연결하거나 herdr, Bun, Node.js,
+          일반 명령줄 도구, Python이 포함된 App 전용 컨테이너에서 셸과 에이전트를 실행할 수 있어요. DSM 7.2.1 이상, Container Manager, DSM
+          관리자 로그인이 필요하며 모든 관리자가 하나의 Ovis 계정을 공유해요. 고정된 컨테이너 이미지는 별도로 다운로드돼요. 제거 후에도 데이터 볼륨은 남아요. Relay와
+          Portal은 꺼져 있어요. 익명 사용 통계는 기본적으로 꺼져 있으며 설정에서 켤 수 있어요
+        es: Accede a espacios herdr, conversaciones de agentes, indicaciones, aprobaciones y terminales
+          en directo desde el navegador o el teléfono. Conecta otros equipos por SSH o ejecuta shells y
+          agentes en el contenedor de la App con herdr, Bun, Node.js, herramientas habituales de línea de
+          comandos y Python. Requiere DSM 7.2.1 o posterior, Container Manager e inicio de sesión como administrador
+          de DSM; todos los administradores comparten una identidad Ovis. La imagen de contenedor fijada
+          se descarga por separado. Los volúmenes de datos se conservan tras desinstalar. Relay y Portal
+          están desactivados; las estadísticas anónimas están desactivadas por defecto y se pueden activar
+          en los ajustes
+        it: Accedi a spazi herdr, conversazioni degli agenti, richieste, approvazioni e terminali in tempo
+          reale dal browser o dal telefono. Collega altri computer tramite SSH oppure esegui shell e agenti
+          nel contenitore dell'App con herdr, Bun, Node.js, i comuni strumenti da riga di comando e Python.
+          Richiede DSM 7.2.1 o successivo, Container Manager e accesso come amministratore DSM; tutti gli
+          amministratori condividono un'identità Ovis. L'immagine del contenitore fissata viene scaricata
+          separatamente. I volumi dei dati restano dopo la disinstallazione. Relay e Portal sono disabilitati;
+          le statistiche anonime sono disattivate per impostazione predefinita e possono essere attivate
+          nelle impostazioni
+      changelog:
+        en: First public DSM release of Ovis 0.4.22 with administrator sign-in, an isolated container runtime,
+          bundled herdr, common shell tools and Python, and persistent workspace data
+        zh-TW: 首次公開發佈 Ovis 0.4.22 DSM 套件，提供管理員登入、獨立容器執行環境、內附 herdr、常用 shell 工具與 Python，並保留工作區資料
+        zh-CN: 首次公开发布 Ovis 0.4.22 DSM 套件，提供管理员登录、独立容器运行环境、内含 herdr、常用 shell 工具和 Python，并保留工作区数据
+        de: Erste öffentliche DSM-Version von Ovis 0.4.22 mit Administratoranmeldung, isolierter Container-Laufzeit,
+          herdr, gängigen Shell-Werkzeugen, Python und dauerhaft gespeicherten Arbeitsbereichsdaten
+        fr: Première version publique DSM d'Ovis 0.4.22 avec connexion administrateur, environnement conteneurisé
+          isolé, herdr, outils shell courants, Python et données d'espace de travail persistantes
+        ja: Ovis 0.4.22 の DSM 向け初公開版。管理者サインイン、分離されたコンテナー環境、herdr、一般的なシェルツール、Python、ワークスペースデータの保持に対応
+        ko: 'Ovis 0.4.22의 첫 공개 DSM 릴리스: 관리자 로그인, 격리된 컨테이너 환경, herdr, 일반 셸 도구, Python 및 작업 공간 데이터 유지 지원'
+        es: Primera versión pública para DSM de Ovis 0.4.22 con inicio de sesión de administrador, entorno
+          de contenedor aislado, herdr, herramientas shell habituales, Python y datos de trabajo persistentes
+        it: Prima versione pubblica DSM di Ovis 0.4.22 con accesso amministratore, ambiente contenitore
+          isolato, herdr, strumenti shell comuni, Python e dati di lavoro persistenti
+      screenshots:
+      - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/01-welcome.png
+      - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/02-agent-setup.png
+      - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/03-phone-welcome.png
+    pins:
+    - package: Ovis
+      version: 0.4.22-0006
+      arch:
+      - apollolake
+      - avoton
+      - braswell
+      - broadwell
+      - broadwellnk
+      - broadwellnkv2
+      - broadwellntb
+      - broadwellntbap
+      - bromolow
+      - cedarview
+      - coffeelake
+      - denverton
+      - epyc7002
+      - epyc7003
+      - epyc7003ntb
+      - geminilake
+      - geminilakenk
+      - grantley
+      - icelaked
+      - kvmcloud
+      - kvmx64
+      - purley
+      - r1000
+      - r1000nk
+      - skylaked
+      - v1000
+      - v1000nk
+      sha256: 9aab8e83e06f869eefbfff8a2ad14c8f5018672947340b80277ff1bb0136949d
+      md5: f03af67663432c22d6ec4eeb1e3df31f
+      size: 29563392
+      review:
+        type: reviewed
+        reviewer: synopackageland
+        reviewed_at: '2026-11-07T02:08:09Z'
+        source_ref: 60c28429cc694982b019279b33222a08f3f51187
+        source_repo: synopackageland/syno-pkg-land-ovis
+    - package: Ovis
+      version: 0.4.22-0006
+      arch:
+      - armada37xx
+      - rtd1296
+      - rtd1619
+      - rtd1619b
+      sha256: f10e81f77be79e6dfd98810400a131d63ff1df8853b614fccb507488fa7430f7
+      md5: 6c30dc8a39c9c643f4e1a95aab138446
+      size: 26895872
+      review:
+        type: reviewed
+        reviewer: synopackageland
+        reviewed_at: '2026-11-07T02:08:09Z'
+        source_ref: 60c28429cc694982b019279b33222a08f3f51187
+        source_repo: synopackageland/syno-pkg-land-ovis
 
 publishers:
   synopackageland:
