@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1627
+      release: v0.1.1-1628
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,54 +40,117 @@ packages:
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
         en: |-
+          0.1.1-1628
+
+          - Open Reclaim in the Package Land phone layout without enabling Application Portal, preserving administrator access, settings and scan reports
+          - Approve system tasks directly from the phone entry on first launch
+          - Use minified public frontend bundles without source maps; all App data requires an administrator session
+          - Approve the updated system tasks after upgrading
+
           0.1.1-1627
 
           - Updated UI components to 0.20.17: on a touch screen a control's tap box no longer makes the page scroll sideways, overlays return focus to the button that opened them, and short screens keep compact settings rows
           - Reuse the unchanged runtime, executor and root programs from 0.1.1-1626 for x86_64, aarch64 and armv7
           - Settings and saved scan reports are kept; the system task approval is unchanged
         zh-TW: |-
+          0.1.1-1628
+
+          - 在 Package Land 以手機版面開啟 Reclaim，無須啟用應用程式入口，保留管理員權限、設定與掃描報告
+          - 首次啟動時可直接從手機入口核准系統工作
+          - 公開前端檔案經壓縮且不含 source maps，所有 App 資料皆須管理員工作階段
+          - 升級後請核准更新的系統工作
+
           0.1.1-1627
 
           - 更新 UI 元件至 0.20.17：觸控螢幕上控制項的點按區不再讓頁面左右捲動，覆蓋層關閉後焦點回到開啟它的按鈕，矮螢幕維持精簡的設定列
           - x86_64、aarch64 與 armv7 沿用 0.1.1-1626 未變更的執行環境、executor 與 root 程式
           - 保留設定與已儲存的掃描報告；系統工作核准狀態不變
         zh-CN: |-
+          0.1.1-1628
+
+          - 在 Package Land 以手机版面打开 Reclaim，无需启用应用程序门户，保留管理员权限、设置与扫描报告
+          - 首次启动时可直接从手机入口批准系统任务
+          - 公开前端文件经过压缩且不含 source maps，所有 App 数据均需管理员会话
+          - 升级后请批准更新的系统任务
+
           0.1.1-1627
 
           - 更新 UI 组件至 0.20.17：触控屏幕上控件的点按区域不再让页面左右滚动，覆盖层关闭后焦点回到打开它的按钮，矮屏幕保持精简的设置行
           - x86_64、aarch64 与 armv7 沿用 0.1.1-1626 未改变的运行环境、executor 与 root 程序
           - 保留设置与已保存的扫描报告；系统任务批准状态不变
         ja: |-
+          0.1.1-1628
+
+          - アプリケーションポータルを有効にせず Package Land のスマートフォン用レイアウトで Reclaim を開き、管理者アクセス、設定、スキャンレポートを保持
+          - 初回起動時にスマートフォンの入口から直接システムタスクを承認
+          - 公開フロントエンドを圧縮しソースマップを除外、すべてのアプリデータに管理者セッションが必要
+          - アップグレード後に更新されたシステムタスクを承認してください
+
           0.1.1-1627
 
           - UI コンポーネントを 0.20.17 に更新：タッチ画面でコントロールのタップ領域がページの横スクロールを起こさなくなり、オーバーレイを閉じると開いたボタンにフォーカスが戻り、低い画面では設定行がコンパクトなままになります
           - x86_64、aarch64、armv7 は 0.1.1-1626 の未変更のランタイム、executor、root プログラムを再利用します
           - 設定と保存済みスキャンレポートは保持され、システムタスクの承認状態は変わりません
         ko: |-
+          0.1.1-1628
+
+          - 응용 프로그램 포털을 활성화하지 않고 Package Land의 휴대폰 레이아웃으로 Reclaim을 열며 관리자 접근 권한, 설정 및 스캔 보고서 유지
+          - 처음 실행할 때 휴대폰 진입 화면에서 직접 시스템 작업 승인
+          - 공개 프런트엔드 번들을 최소화하고 소스 맵을 제외하며 모든 앱 데이터에 관리자 세션 필요
+          - 업그레이드 후 업데이트된 시스템 작업 승인 필요
+
           0.1.1-1627
 
           - UI 구성 요소를 0.20.17로 업데이트: 터치 화면에서 컨트롤의 탭 영역이 페이지를 가로로 스크롤하지 않으며, 오버레이를 닫으면 연 버튼으로 포커스가 돌아가고, 낮은 화면에서는 설정 행이 간결하게 유지됩니다
           - x86_64, aarch64, armv7은 0.1.1-1626의 변경되지 않은 런타임, executor, root 프로그램을 재사용합니다
           - 설정과 저장된 스캔 보고서는 유지되며 시스템 작업 승인 상태는 변경되지 않습니다
         de: |-
+          0.1.1-1628
+
+          - Reclaim im Smartphone-Layout von Package Land ohne aktiviertes Anwendungsportal öffnen; Administratorzugriff, Einstellungen und Scanberichte bleiben erhalten
+          - Systemaufgaben beim ersten Start direkt über den Smartphone-Einstieg freigeben
+          - Minimierte öffentliche Frontend-Bundles ohne Source Maps verwenden; alle App-Daten erfordern eine Administratorsitzung
+          - Aktualisierte Systemaufgaben nach dem Upgrade freigeben
+
           0.1.1-1627
 
           - UI-Komponenten auf 0.20.17 aktualisiert: Auf Touchscreens lässt die Tippfläche eines Steuerelements die Seite nicht mehr seitwärts scrollen, Overlays geben den Fokus an die Schaltfläche zurück, die sie geöffnet hat, und niedrige Bildschirme behalten kompakte Einstellungszeilen
           - Unveränderte Laufzeit, Executor und Root-Programme aus 0.1.1-1626 werden für x86_64, aarch64 und armv7 wiederverwendet
           - Einstellungen und gespeicherte Scanberichte bleiben erhalten; die Freigabe der Systemaufgaben ist unverändert
         fr: |-
+          0.1.1-1628
+
+          - Ouvrir Reclaim dans l’interface mobile de Package Land sans activer le Portail des applications, en conservant l’accès administrateur, les réglages et les rapports d’analyse
+          - Approuver les tâches système directement depuis l’entrée mobile au premier lancement
+          - Utiliser des fichiers frontend publics minifiés sans source maps ; toutes les données de l’application nécessitent une session administrateur
+          - Approuvez les tâches système mises à jour après la mise à niveau
+
           0.1.1-1627
 
           - Composants UI mis à jour vers 0.20.17 : sur un écran tactile, la zone de pression d’un contrôle ne fait plus défiler la page latéralement, les superpositions rendent le focus au bouton qui les a ouvertes et les écrans bas gardent des lignes de réglage compactes
           - Le runtime, l’executor et les programmes root inchangés de 0.1.1-1626 sont réutilisés pour x86_64, aarch64 et armv7
           - Les réglages et les rapports d’analyse enregistrés sont conservés ; l’approbation des tâches système est inchangée
         es: |-
+          0.1.1-1628
+
+          - Abrir Reclaim con el diseño para teléfonos de Package Land sin activar el Portal de aplicaciones, conservando el acceso de administrador, los ajustes y los informes de análisis
+          - Aprobar las tareas del sistema directamente desde la entrada móvil en el primer inicio
+          - Usar archivos frontend públicos minificados sin mapas de código fuente; todos los datos de la aplicación requieren una sesión de administrador
+          - Apruebe las tareas del sistema actualizadas después de actualizar
+
           0.1.1-1627
 
           - Componentes de UI actualizados a 0.20.17: en una pantalla táctil, el área de toque de un control ya no desplaza la página en horizontal, las capas devuelven el foco al botón que las abrió y las pantallas bajas mantienen filas de ajustes compactas
           - Se reutilizan el runtime, el executor y los programas root sin cambios de 0.1.1-1626 para x86_64, aarch64 y armv7
           - Se conservan los ajustes y los informes de análisis guardados; la aprobación de las tareas del sistema no cambia
         it: |-
+          0.1.1-1628
+
+          - Aprire Reclaim nel layout per telefoni di Package Land senza attivare il Portale applicazioni, mantenendo l’accesso amministratore, le impostazioni e i rapporti di scansione
+          - Approvare le attività di sistema direttamente dall’accesso mobile al primo avvio
+          - Usare bundle frontend pubblici minimizzati senza source map; tutti i dati dell’app richiedono una sessione amministratore
+          - Approvare le attività di sistema aggiornate dopo l’aggiornamento
+
           0.1.1-1627
 
           - Componenti UI aggiornati a 0.20.17: su uno schermo touch l’area di tocco di un controllo non fa più scorrere la pagina lateralmente, le sovrapposizioni restituiscono il focus al pulsante che le ha aperte e gli schermi bassi mantengono righe delle impostazioni compatte
@@ -101,15 +164,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1627
+        version: 0.1.1-1628
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 5f579f5ccb71c6b3e3a9784e5b5727cbe0bea7844fe22798323d47499a760f09
-        md5: b5cc89c7bc00d17389bdc6e31fbaba19
-        size: 15190016
+        sha256: bcb0d86f5ea76e3a7e071f6fdc8f4033527ccec9413b41be36281f2828ce1d35
+        md5: e0bf76d30105777184c8462d92c6afef
+        size: 15229440
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -126,19 +189,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T02:19:16Z
-          source_ref: 0aacc7d15e477f4328077185fce75d343649b6f8
+          reviewed_at: 2026-11-07T14:10:51Z
+          source_ref: fe4cf8c5d8360e2b2b8d8d10dfeea95ece962535
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1627
+        version: 0.1.1-1628
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 5da04a28f2a4339b61384a6cdaa46319624e3f3f75e403f8eed159846f8f6532
-        md5: 320ac2c43b690fea2824ddf53bc57d1f
-        size: 15973888
+        sha256: 9074da6d0745be049e3342e7e979f2a35ab978d045d70e885086cd32e37858ed
+        md5: 6ee2a1cb6b189ba522309baae2ebd05f
+        size: 16016384
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -155,11 +218,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T02:19:16Z
-          source_ref: 0aacc7d15e477f4328077185fce75d343649b6f8
+          reviewed_at: 2026-11-07T14:10:51Z
+          source_ref: fe4cf8c5d8360e2b2b8d8d10dfeea95ece962535
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1627
+        version: 0.1.1-1628
         arch:
           - apollolake
           - avoton
@@ -188,9 +251,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 006c46633db59661461f37eedb0294aabe9e733782d11a50bd1d025aa9f81b53
-        md5: 27be1e751d565e77739f6566e3cf2dca
-        size: 16351744
+        sha256: 92f257bf62da1060c03f01f33edaf9e224c95192aeaecbe5767955763b3d1aa3
+        md5: 679732c9592fe5873d48dfda9dd59349
+        size: 16388608
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -207,8 +270,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T02:19:16Z
-          source_ref: 0aacc7d15e477f4328077185fce75d343649b6f8
+          reviewed_at: 2026-11-07T14:10:51Z
+          source_ref: fe4cf8c5d8360e2b2b8d8d10dfeea95ece962535
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
