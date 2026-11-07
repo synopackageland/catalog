@@ -217,7 +217,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0134
+      release: v0.1.0-0137
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -372,67 +372,175 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
-          0.1.0-0134
+          0.1.0-0137
 
-          - Overview shows DSM's QuickConnect and DDNS when they are on
-          - Compare all ways adds the Free link, DDNS and a Sign-in in front column, with updated entries
+          - Keep the two newest NetBird corrupt-state backups and remove stale temporary files
+          - Limit Tailscale certificate and DNS caches; check private temporary storage every 15 seconds and stop providers that exceed its budget
+          - If temporary files still exceed the budget after safe cache cleanup, explain the cause and offer Restart with the saved sign-in
+
+          0.1.0-0136
+
+          - Keep temporary Cloudflare access working when DSM redirects HTTP to HTTPS by using the existing pinned HTTPS proxy
+          - Report DSM HTTPS port changes with the old and new ports and an inline review/reconnect action
+          - Bound Tailscale/NetBird files to 1 MiB, disable Taildrop and network-map disk caching, and clear transient provider data on stop
+
+          0.1.0-0135
+
+          - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your phone QR code on the Home, or copy the same link
+          - LAN addresses come first, followed by connected external addresses; untrusted HTTPS LAN addresses include certificate fingerprints, while temporary Cloudflare addresses and credentials are omitted
         zh-TW: |-
-          0.1.0-0134
+          0.1.0-0137
 
-          - 總覽在 DSM 的 QuickConnect 與 DDNS 啟用時一併顯示
-          - 「比較所有方式」新增免費連結、DDNS 與「前置登入」欄，並更新各項內容
+          - NetBird 僅保留最新兩份損毀狀態備份，並清除過期暫存檔
+          - 限制 Tailscale 憑證與 DNS 快取；每 15 秒檢查私有暫存空間，超過預算時停止連線服務
+          - 先淘汰可清理的快取，暫存檔仍超額時說明原因，並提供使用已儲存登入身分的重新啟動操作
+
+          0.1.0-0136
+
+          - 臨時 Cloudflare 網址改用既有 HTTPS 憑證釘選代理，支援 DSM 的 HTTP 轉 HTTPS 設定
+          - DSM HTTPS 改埠時顯示原埠、新埠及確認後重新連接的操作
+          - 限制 Tailscale／NetBird 單檔為 1 MiB，停用 Taildrop 與網路對應磁碟快取，停止時清除暫存資料
+
+          0.1.0-0135
+
+          - 在首頁開啟新的「連接手機」，使用 Syno Package Land 行動應用程式掃描 QR code，即可加入這台 NAS，也可複製相同連結
+          - 優先列出區域網路位址，再列出已連線的外部位址；不受信任的 HTTPS 區域網路位址附帶憑證指紋，並排除 Cloudflare 臨時位址與登入憑證
         zh-CN: |-
-          0.1.0-0134
+          0.1.0-0137
 
-          - 总览在 DSM 的 QuickConnect 与 DDNS 启用时一并显示
-          - “比较所有方式”新增免费链接、DDNS 与“前置登录”列，并更新各项内容
+          - NetBird 仅保留最新两份损坏状态备份，并清除过期临时文件
+          - 限制 Tailscale 证书与 DNS 缓存；每 15 秒检查私有临时空间，超出预算时停止连接服务
+          - 先淘汰可清理的缓存，临时文件仍超额时说明原因，并提供使用已保存登录身份的重新启动操作
+
+          0.1.0-0136
+
+          - 临时 Cloudflare 地址改用现有 HTTPS 证书固定代理，支持 DSM 的 HTTP 转 HTTPS 设置
+          - DSM HTTPS 端口更改时显示原端口、新端口及确认后重新连接的操作
+          - 将 Tailscale／NetBird 单个文件限制为 1 MiB，禁用 Taildrop 和网络映射磁盘缓存，停止时清除临时数据
+
+          0.1.0-0135
+
+          - 在首页打开新的“连接手机”，使用 Syno Package Land 移动应用扫描二维码，即可添加这台 NAS，也可复制相同链接
+          - 优先列出局域网地址，再列出已连接的外部地址；不受信任的 HTTPS 局域网地址附带证书指纹，并排除 Cloudflare 临时地址与登录凭据
         de: |-
-          0.1.0-0134
+          0.1.0-0137
 
-          - Die Übersicht zeigt QuickConnect und DDNS von DSM, wenn sie aktiviert sind
-          - Alle Arten vergleichen enthält jetzt den kostenlosen Link, DDNS und die Spalte Vorgeschaltete Anmeldung, mit aktualisierten Einträgen
+          - Nur die zwei neuesten NetBird-Sicherungen beschädigter Zustände behalten und veraltete temporäre Dateien löschen
+          - Tailscale-Zertifikat- und DNS-Caches begrenzen; privaten temporären Speicher alle 15 Sekunden prüfen und Dienste bei Überschreitung stoppen
+          - Zuerst entbehrliche Caches löschen; bei verbleibender Überschreitung Ursache und Neustart mit gespeicherter Anmeldung anbieten
+
+          0.1.0-0136
+
+          - Temporäre Cloudflare-Verbindungen verwenden den vorhandenen HTTPS-Proxy mit Zertifikatsbindung und unterstützen die HTTPS-Weiterleitung von DSM
+          - Änderungen am DSM-HTTPS-Port zeigen alten und neuen Port sowie eine Aktion zum Prüfen und erneuten Verbinden
+          - Tailscale/NetBird-Dateien auf jeweils 1 MiB begrenzen, Taildrop und Netzwerkplan-Disk-Cache deaktivieren und temporäre Daten beim Stoppen entfernen
+
+          0.1.0-0135
+
+          - Fügen Sie dieses NAS zur mobilen Syno Package Land App hinzu: Scannen Sie den neuen QR-Code unter Telefon verbinden auf der Startseite oder kopieren Sie denselben Link
+          - LAN-Adressen stehen zuerst, danach folgen verbundene externe Adressen; nicht vertrauenswürdige HTTPS-LAN-Adressen enthalten Zertifikat-Fingerabdrücke, temporäre Cloudflare-Adressen und Zugangsdaten werden ausgelassen
         fr: |-
-          0.1.0-0134
+          0.1.0-0137
 
-          - La Vue d’ensemble affiche QuickConnect et DDNS de DSM lorsqu’ils sont activés
-          - Comparer tous les modes ajoute le lien gratuit, DDNS et la colonne Connexion en amont, avec des entrées mises à jour
+          - Conserver les deux sauvegardes NetBird les plus récentes des états corrompus et supprimer les fichiers temporaires anciens
+          - Limiter les caches de certificats et DNS Tailscale ; vérifier le stockage temporaire privé toutes les 15 secondes et arrêter les services dépassant le budget
+          - Nettoyer d’abord les caches supprimables ; si la limite reste dépassée, expliquer la cause et proposer un redémarrage avec les identifiants enregistrés
+
+          0.1.0-0136
+
+          - Utiliser le proxy HTTPS existant avec épinglage du certificat pour les adresses Cloudflare temporaires et la redirection HTTPS de DSM
+          - Afficher les anciens et nouveaux ports HTTPS de DSM avec une action de vérification et de reconnexion
+          - Limiter chaque fichier Tailscale/NetBird à 1 MiB, désactiver Taildrop et le cache disque de la carte réseau, et supprimer les données temporaires à l’arrêt
+
+          0.1.0-0135
+
+          - Ajoutez ce NAS à l’application mobile Syno Package Land en scannant le nouveau code QR de Connecter votre téléphone sur l’accueil, ou copiez le même lien
+          - Les adresses LAN précèdent les adresses externes connectées ; les adresses HTTPS LAN non approuvées incluent les empreintes des certificats, tandis que les adresses Cloudflare temporaires et les identifiants sont exclus
         ja: |-
-          0.1.0-0134
+          0.1.0-0137
 
-          - DSM の QuickConnect と DDNS が有効な場合、概要に表示されます
-          - 「すべての方法を比較」に無料リンク、DDNS、「手前のサインイン」列を追加し、各項目を更新しました
+          - NetBird の破損した状態のバックアップを最新 2 件に制限し、古い一時ファイルを削除
+          - Tailscale の証明書と DNS キャッシュを制限。専用の一時領域を 15 秒ごとに確認し、上限を超えたサービスを停止
+          - 安全に削除できるキャッシュを先に整理し、上限を超える場合は理由と保存済み認証情報での再起動を表示
+
+          0.1.0-0136
+
+          - 一時的な Cloudflare 接続で既存の証明書固定 HTTPS プロキシを使用し、DSM の HTTPS リダイレクトに対応
+          - DSM HTTPS ポートの変更前後を表示し、確認して再接続する操作を追加
+          - Tailscale/NetBird のファイルを各 1 MiB に制限し、Taildrop とネットワークマップのディスクキャッシュを無効化。停止時に一時データを削除
+
+          0.1.0-0135
+
+          - ホームの新しい「スマートフォンを接続」で QR コードを表示し、Syno Package Land モバイルアプリでスキャンしてこの NAS を追加できます。同じリンクのコピーも可能です
+          - LAN アドレスを先に、その後に接続中の外部アドレスを表示します。信頼されていない HTTPS LAN アドレスには証明書のフィンガープリントを含め、一時的な Cloudflare アドレスと認証情報は除外します
         ko: |-
-          0.1.0-0134
+          0.1.0-0137
 
-          - DSM의 QuickConnect와 DDNS가 켜져 있으면 개요에 표시됩니다
-          - 모든 방법 비교에 무료 링크, DDNS, 앞단 로그인 열을 추가하고 각 항목을 업데이트했습니다
+          - NetBird의 손상된 상태 백업을 최신 2개만 유지하고 오래된 임시 파일 삭제
+          - Tailscale 인증서 및 DNS 캐시 제한. 전용 임시 저장소를 15초마다 확인하고 한도를 초과하면 서비스 중지
+          - 안전한 캐시 정리 후에도 한도를 초과하면 원인을 설명하고 저장된 로그인으로 다시 시작 제공
+
+          0.1.0-0136
+
+          - 임시 Cloudflare 연결에 기존 인증서 고정 HTTPS 프록시를 사용하여 DSM HTTPS 리디렉션 지원
+          - DSM HTTPS 포트 변경 시 이전 및 새 포트와 확인 후 재연결 작업 표시
+          - Tailscale/NetBird 파일을 각각 1 MiB로 제한하고 Taildrop 및 네트워크 맵 디스크 캐시 비활성화, 중지 시 임시 데이터 삭제
+
+          0.1.0-0135
+
+          - 홈의 새로운 휴대폰 연결에서 QR 코드를 표시하고 Syno Package Land 모바일 앱으로 스캔하여 이 NAS를 추가하거나 같은 링크를 복사할 수 있습니다
+          - LAN 주소를 먼저 표시한 다음 연결된 외부 주소를 표시합니다. 신뢰되지 않는 HTTPS LAN 주소에는 인증서 지문을 포함하며 임시 Cloudflare 주소와 로그인 자격 증명은 제외합니다
         es: |-
-          0.1.0-0134
+          0.1.0-0137
 
-          - El Resumen muestra QuickConnect y DDNS de DSM cuando están activados
-          - Comparar todas las formas añade el enlace gratuito, DDNS y la columna Inicio de sesión previo, con entradas actualizadas
+          - Conservar las dos copias más recientes del estado dañado de NetBird y eliminar archivos temporales antiguos
+          - Limitar las cachés de certificados y DNS de Tailscale; comprobar el almacenamiento temporal privado cada 15 segundos y detener servicios que superen el límite
+          - Limpiar primero las cachés prescindibles; si se sigue superando el límite, explicar la causa y ofrecer reinicio con la sesión guardada
+
+          0.1.0-0136
+
+          - Usar el proxy HTTPS existente con certificado fijado para las direcciones temporales de Cloudflare y la redirección HTTPS de DSM
+          - Mostrar los puertos HTTPS anterior y nuevo de DSM con una acción para revisar y reconectar
+          - Limitar cada archivo de Tailscale/NetBird a 1 MiB, desactivar Taildrop y la caché de disco del mapa de red y borrar los datos temporales al detener
+
+          0.1.0-0135
+
+          - Añada este NAS a la aplicación móvil Syno Package Land escaneando el nuevo código QR de Conectar el teléfono en el inicio, o copie el mismo enlace
+          - Las direcciones LAN aparecen primero, seguidas de las direcciones externas conectadas; las direcciones HTTPS LAN no fiables incluyen las huellas de sus certificados, y se omiten las direcciones temporales de Cloudflare y las credenciales
         it: |-
-          0.1.0-0134
+          0.1.0-0137
 
-          - La Panoramica mostra QuickConnect e DDNS di DSM quando sono attivi
-          - Confronta tutti i modi aggiunge il link gratuito, DDNS e la colonna Accesso preliminare, con voci aggiornate
+          - Conservare solo i due backup NetBird più recenti degli stati danneggiati ed eliminare i file temporanei obsoleti
+          - Limitare le cache di certificati e DNS di Tailscale; controllare lo spazio temporaneo privato ogni 15 secondi e arrestare i servizi che superano il limite
+          - Eliminare prima le cache ricreabili; se il limite resta superato, spiegare il motivo e offrire il riavvio con le credenziali salvate
+
+          0.1.0-0136
+
+          - Usare il proxy HTTPS esistente con certificato fissato per gli indirizzi Cloudflare temporanei e il reindirizzamento HTTPS di DSM
+          - Mostrare la vecchia e la nuova porta HTTPS di DSM con un’azione di verifica e riconnessione
+          - Limitare ogni file di Tailscale/NetBird a 1 MiB, disabilitare Taildrop e la cache su disco della mappa di rete e rimuovere i dati temporanei all’arresto
+
+          0.1.0-0135
+
+          - Aggiungi questo NAS all’app mobile Syno Package Land scansionando il nuovo codice QR di Collega il telefono nella home, oppure copia lo stesso link
+          - Gli indirizzi LAN precedono quelli esterni connessi; gli indirizzi HTTPS LAN non attendibili includono le impronte dei certificati, mentre gli indirizzi temporanei Cloudflare e le credenziali sono esclusi
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0134-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0137-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-compare-0134-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-app-urls-0134-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-cloudflare-0134-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0134
+        version: 0.1.0-0137
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e3b7f1374145dab3b581785584833189522a90aedeea76cd6f2dd6b35061e013
-        md5: 48040c65ff288d7a3fad26e78be2d8ed
-        size: 14981120
+        sha256: bd335817be73933a97548a4a34712f09c663248b1d961391c54f4c9061edcee0
+        md5: 94f3d91d0ed46c097bc7bf1cf5b5b967
+        size: 15134720
         facts:
           built_with: sdk
           sdk_backend: go
@@ -449,19 +557,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T15:09:29Z
-          source_ref: a969186e758ba04dd0e04b97a10b27ecd6bb1dcc
+          reviewed_at: 2026-11-07T07:24:44Z
+          source_ref: 6bf02be623293b16fa74fed445c48fa9e152ab2a
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0134
+        version: 0.1.0-0137
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 57d16d61400d3b34b059a01d562ea0c97d38b86e89f01d758be5186cca25385a
-        md5: c428cd0be27feef926d60c631752691a
-        size: 15554560
+        sha256: f4a02770950fefb6bcc01caad5ae0f56cb1351cc1ea92753a0739df39d0076b4
+        md5: 6dc278a2ee3ad8a405da8f9b794c3da9
+        size: 15718400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -478,11 +586,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T15:09:29Z
-          source_ref: a969186e758ba04dd0e04b97a10b27ecd6bb1dcc
+          reviewed_at: 2026-11-07T07:24:44Z
+          source_ref: 6bf02be623293b16fa74fed445c48fa9e152ab2a
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0134
+        version: 0.1.0-0137
         arch:
           - apollolake
           - avoton
@@ -511,9 +619,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 39eb73368e609c59554ce86e2cb3573a847f3e1ef54b5a6fecb05924aed153b7
-        md5: 920ba5f246f246d0bd7e4da7558c5d85
-        size: 16332800
+        sha256: b9fa0f0b937f4f1199b54f23b7944506fb4de7f14b6ae31bb40822258875b8a8
+        md5: 090952274620292aa8a485c55f2123d8
+        size: 16486400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -530,8 +638,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T15:09:29Z
-          source_ref: a969186e758ba04dd0e04b97a10b27ecd6bb1dcc
+          reviewed_at: 2026-11-07T07:24:44Z
+          source_ref: 6bf02be623293b16fa74fed445c48fa9e152ab2a
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
