@@ -1324,7 +1324,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0016
+      release: v1.30.4-0017
       access: private
     metadata:
       maintainer: FreshRSS
@@ -1334,7 +1334,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-freshrss
-      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.4-0016
+      source_url: https://github.com/synopackageland/syno-pkg-land-freshrss/tree/v1.30.4-0017
       license: AGPL-3.0; packaging MIT; container dependencies retain their own licenses
       internet: required
       telemetry: none
@@ -1359,16 +1359,18 @@ packages:
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgFreshRSS/01-feed-reader-upstream.png
       changelog:
-        en: "Fix DSM sign-in when opening over HTTP"
-        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
-        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
-        ja: "HTTP で開いた際の DSM サインインを修正"
-        ko: "HTTP로 열 때 DSM 로그인 문제 수정"
-        de: "DSM-Anmeldung beim Öffnen über HTTP korrigieren"
-        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
+        en: "Add native API controls and preserve API preferences"
+        zh-TW: "新增原生 API 控制並保留 API 偏好設定"
+        zh-CN: "新增原生 API 控制并保留 API 偏好设置"
+        ja: "ネイティブ API 操作を追加し API 設定を保持"
+        ko: "네이티브 API 제어 추가 및 API 설정 유지"
+        de: "Native API-Steuerung hinzufügen und API-Einstellungen erhalten"
+        fr: "Ajouter les commandes API natives et conserver les préférences API"
+        es: "Añadir controles de API nativa y conservar las preferencias"
+        it: "Aggiungere controlli API nativi e conservare le preferenze"
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0016
+        version: 1.30.4-0017
         arch:
           - apollolake
           - avoton
@@ -1397,9 +1399,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 58744fd75618e8b088876d6cca786a06cb75b3525b4f0971ab6285ca1ed6f89e
-        md5: 2c684dd1ea9679bc32502c32aef72f97
-        size: 39080448
+        sha256: 0685385bf406d65f930f8376af451f74c4cf30adc55236bdbdbfd6a9b193a5b3
+        md5: eda15bc982c43163ba60ce9fe2eaf90a
+        size: 41712128
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1416,8 +1418,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T16:53:05Z
-          source_ref: f6d8c6c7cf16b51e31faad60120395d701f308af
+          reviewed_at: 2026-11-08T02:25:14Z
+          source_ref: 05cb6000015aa70733e069b6ed604f7f8e4d6216
           source_repo: synopackageland/syno-pkg-land-freshrss
   - listed: true
     recommended: false
@@ -1784,7 +1786,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.4.0-0009
+      release: v3.4.0-0010
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -1794,7 +1796,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
-      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0009
+      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0010
       issues_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/issues
       license: GPL-3.0-only; dependencies retain their respective licenses
       internet: required
@@ -1831,16 +1833,18 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgPaperlessNgx/01-correspondents-upstream.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgPaperlessNgx/02-workflow-upstream.png
       changelog:
-        en: "Preserve HTTP and HTTPS in OIDC sign-in callbacks"
-        zh-TW: "OIDC 登入回呼依照開啟時的 HTTP 或 HTTPS 協定"
-        zh-CN: "OIDC 登录回调遵循打开时的 HTTP 或 HTTPS 协议"
-        ja: "OIDC ログインのコールバックで HTTP と HTTPS を維持"
-        ko: "OIDC 로그인 콜백에서 HTTP 및 HTTPS 유지"
-        de: "HTTP und HTTPS bei OIDC-Anmelderückrufen beibehalten"
-        fr: "Conserver HTTP et HTTPS dans les rappels de connexion OIDC"
+        en: "Control documents with personal API tokens, bounded uploads and verified original downloads"
+        zh-TW: "以個人 API token 操作文件，支援有界上傳與原檔下載驗證"
+        zh-CN: "使用个人 API token 操作文档，支持有界上传与原文件下载验证"
+        ja: "個人 API トークンで文書を操作し、上限付きアップロードと原本ダウンロードを検証"
+        ko: "개인 API 토큰으로 문서를 관리하고 제한된 업로드와 원본 다운로드 검증 지원"
+        de: "Dokumente mit persönlichen API-Tokens steuern, begrenzt hochladen und Originaldownloads prüfen"
+        fr: "Gérer les documents avec des jetons API personnels, des envois bornés et des originaux vérifiés"
+        es: "Gestiona documentos con tokens API personales, cargas limitadas y descargas originales verificadas"
+        it: "Gestisci documenti con token API personali, caricamenti limitati e download originali verificati"
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.4.0-0009
+        version: 3.4.0-0010
         arch:
           - apollolake
           - avoton
@@ -1869,9 +1873,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8f1a76210f8deaded6fc623a1a6c37d93b6d8bf150ed8df31aad17461733bc77
-        md5: 32fbd0de9a3415b431c0d540633ef5fb
-        size: 39300608
+        sha256: 75da96d1d31268fa5ad76be82f057ae4da6b75dcd43b9c467919763cfe45fed7
+        md5: 0e85276b1d7929601b56b15880e22e9a
+        size: 41932288
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1889,8 +1893,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T18:02:04Z
-          source_ref: c5317ee35b59c68538987d713118a4bd0792db50
+          reviewed_at: 2026-11-08T02:25:14Z
+          source_ref: 6479ceff0a7f5ad434e4da24534f41c3df0947a4
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
