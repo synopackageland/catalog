@@ -19,25 +19,25 @@ packages:
       internet: none
       telemetry: none
       description:
-        en: Find what really frees space on a Btrfs volume, and free it safely
-        zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
-        zh-CN: 找出 Btrfs 存储空间的可回收项目，并安全释放空间
-        de: Finde, was auf einem Btrfs-Volume wirklich Platz freigibt, und gib ihn
-          sicher frei
-        fr: Trouvez ce qui libère vraiment de l'espace sur un volume Btrfs, et
-          libérez-le en toute sécurité
-        ja: Btrfs ボリュームで本当に空き容量を増やせるものを見つけ、安全に解放
-        ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
+        en: "See what is filling your Synology NAS and safely free up space"
+        zh-TW: "看清 Synology NAS 的空間被什麼佔用，安全清出空間"
+        zh-CN: "看清 Synology NAS 的空间被什么占用，安全清出空间"
+        ja: "Synology NAS の容量を何が使っているかを把握し、安全に空き容量を確保"
+        ko: "Synology NAS 공간을 무엇이 차지하는지 확인하고 안전하게 공간 확보"
+        de: "Sieh, was den Speicher deiner Synology NAS belegt, und gib sicher Platz frei"
+        fr: "Voyez ce qui remplit votre NAS Synology et libérez de l'espace en toute sécurité"
+        es: "Descubre qué ocupa el espacio de tu NAS Synology y libéralo de forma segura"
+        it: "Scopri cosa occupa lo spazio del tuo NAS Synology e liberalo in sicurezza"
       long_description:
-        en: Find what really frees space on a Btrfs volume, and free it safely
-        zh-TW: 找出 Btrfs 儲存空間的可回收項目，並安全釋放空間
-        zh-CN: 找出 Btrfs 存储空间的可回收项目，并安全释放空间
-        de: Finde, was auf einem Btrfs-Volume wirklich Platz freigibt, und gib ihn
-          sicher frei
-        fr: Trouvez ce qui libère vraiment de l'espace sur un volume Btrfs, et
-          libérez-le en toute sécurité
-        ja: Btrfs ボリュームで本当に空き容量を増やせるものを見つけ、安全に解放
-        ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
+        en: "Space cleanup for Synology NAS, for Btrfs and ext4 volumes. Scan a volume or chosen folders to see what really uses space: shared folders, package data, recycle bins, snapshots and the system partition. Reclaim shows how much deleting something would actually free, including space still held by snapshots or shared copies, and tracks how usage changes over time. Cleanup uses a reviewed plan that is checked again right before anything is deleted"
+        zh-TW: "Synology NAS 的空間整理工具，支援 Btrfs 與 ext4 儲存空間。掃描整個儲存空間或指定資料夾，看清共用資料夾、套件資料、資源回收筒、快照與系統分割區實際佔用多少空間。Reclaim 會算出刪除後真正能釋放的空間，包含仍被快照或共用副本佔住的部分，並追蹤用量變化。清理前會先列出計畫供確認，實際刪除前再重新檢查一次"
+        zh-CN: "Synology NAS 的空间整理工具，支持 Btrfs 与 ext4 存储空间。扫描整个存储空间或指定文件夹，看清共享文件夹、套件数据、回收站、快照与系统分区实际占用多少空间。Reclaim 会算出删除后真正能释放的空间，包含仍被快照或共享副本占用的部分，并追踪用量变化。清理前会先列出计划供确认，实际删除前再重新检查一次"
+        ja: "Synology NAS の容量整理ツール。Btrfs と ext4 のボリュームに対応。ボリューム全体または指定したフォルダーをスキャンし、共有フォルダー、パッケージデータ、ごみ箱、スナップショット、システムパーティションが実際に使っている容量を確認できます。削除で本当に解放される容量を、スナップショットや共有コピーが保持している分も含めて算出し、使用量の変化も追跡します。クリーンアップは確認済みの計画に沿って行い、削除の直前にもう一度検証します"
+        ko: "Synology NAS용 공간 정리 도구로 Btrfs와 ext4 볼륨을 지원합니다. 볼륨 전체 또는 선택한 폴더를 스캔해 공유 폴더, 패키지 데이터, 휴지통, 스냅샷, 시스템 파티션이 실제로 차지하는 공간을 확인합니다. 스냅샷이나 공유 사본이 아직 붙잡고 있는 공간까지 포함해 삭제 시 실제로 확보되는 공간을 계산하고 사용량 변화도 추적합니다. 정리는 검토한 계획대로 진행하며 삭제 직전에 다시 확인합니다"
+        de: "Speicherbereinigung für Synology NAS mit Btrfs- und ext4-Volumes. Scanne ein Volume oder ausgewählte Ordner und sieh, was wirklich Platz belegt: freigegebene Ordner, Paketdaten, Papierkörbe, Snapshots und die Systempartition. Reclaim zeigt, wie viel das Löschen tatsächlich freigibt, auch Platz, den Snapshots oder geteilte Kopien noch halten, und verfolgt die Belegung über die Zeit. Bereinigt wird nach einem geprüften Plan, der direkt vor dem Löschen erneut kontrolliert wird"
+        fr: "Nettoyage de l'espace pour NAS Synology, avec volumes Btrfs et ext4. Analysez un volume ou des dossiers choisis pour voir ce qui occupe vraiment l'espace : dossiers partagés, données des paquets, corbeilles, instantanés et partition système. Reclaim indique combien une suppression libérerait réellement, y compris l'espace encore retenu par des instantanés ou des copies partagées, et suit l'évolution de l'utilisation. Le nettoyage suit un plan validé, vérifié de nouveau juste avant toute suppression"
+        es: "Limpieza de espacio para NAS Synology con volúmenes Btrfs y ext4. Analiza un volumen o carpetas elegidas para ver qué ocupa realmente el espacio: carpetas compartidas, datos de paquetes, papeleras, instantáneas y la partición del sistema. Reclaim muestra cuánto liberaría de verdad una eliminación, incluido el espacio que aún retienen instantáneas o copias compartidas, y sigue la evolución del uso. La limpieza sigue un plan revisado que se vuelve a comprobar justo antes de borrar nada"
+        it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. La pulizia segue un piano verificato, controllato di nuovo subito prima di eliminare qualsiasi cosa"
       changelog:
         en: "0.1.1-1629\n\n- Fix phone scrolling when the hidden header reappears, and keep the header above page content\n- Improve the phone toolbar and settings action buttons\n- Keep read-only system task checks in memory to avoid waking disks\n- Update SDK/App to 0.53.6 and UI to 0.23.7; retain settings and scan reports\n\n0.1.1-1628\n\n- Open Reclaim in the Package Land phone layout without enabling Application Portal, preserving administrator access, settings and scan reports\n- Approve system tasks directly from the phone entry on first launch\n- Use minified public frontend bundles without source maps; all App data requires an administrator session\n- Approve the updated system tasks after upgrading\n\n0.1.1-1627\n\n- Updated UI components to 0.20.17: on a touch screen a control's tap box no longer makes the page scroll sideways, overlays return focus to the button that opened them, and short screens keep compact settings rows\n- Reuse the unchanged runtime, executor and root programs from 0.1.1-1626 for x86_64, aarch64 and armv7\n- Settings and saved scan reports are kept; the system task approval is unchanged"
         zh-TW: "0.1.1-1629\n\n- 修正手機版隱藏標頭重新出現時畫面凍結的問題，並讓標頭保持在內容上方\n- 改善手機頂部工具列與設定頁操作按鈕\n- 唯讀系統工作檢查改用記憶體紀錄，避免喚醒硬碟\n- 更新 SDK/App 至 0.53.6、UI 至 0.23.7，保留設定與掃描報告\n\n0.1.1-1628\n\n- 在 Package Land 以手機版面開啟 Reclaim，無須啟用應用程式入口，保留管理員權限、設定與掃描報告\n- 首次啟動時可直接從手機入口核准系統工作\n- 公開前端檔案經壓縮且不含 source maps，所有 App 資料皆須管理員工作階段\n- 升級後請核准更新的系統工作\n\n0.1.1-1627\n\n- 更新 UI 元件至 0.20.17：觸控螢幕上控制項的點按區不再讓頁面左右捲動，覆蓋層關閉後焦點回到開啟它的按鈕，矮螢幕維持精簡的設定列\n- x86_64、aarch64 與 armv7 沿用 0.1.1-1626 未變更的執行環境、executor 與 root 程式\n- 保留設定與已儲存的掃描報告；系統工作核准狀態不變"
