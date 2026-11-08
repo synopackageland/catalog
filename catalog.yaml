@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1628
+      release: v0.1.1-1629
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -39,123 +39,15 @@ packages:
         ja: Btrfs ボリュームで本当に空き容量を増やせるものを見つけ、安全に解放
         ko: Btrfs 볼륨에서 실제로 공간을 확보할 수 있는 항목을 찾아 안전하게 정리
       changelog:
-        en: |-
-          0.1.1-1628
-
-          - Open Reclaim in the Package Land phone layout without enabling Application Portal, preserving administrator access, settings and scan reports
-          - Approve system tasks directly from the phone entry on first launch
-          - Use minified public frontend bundles without source maps; all App data requires an administrator session
-          - Approve the updated system tasks after upgrading
-
-          0.1.1-1627
-
-          - Updated UI components to 0.20.17: on a touch screen a control's tap box no longer makes the page scroll sideways, overlays return focus to the button that opened them, and short screens keep compact settings rows
-          - Reuse the unchanged runtime, executor and root programs from 0.1.1-1626 for x86_64, aarch64 and armv7
-          - Settings and saved scan reports are kept; the system task approval is unchanged
-        zh-TW: |-
-          0.1.1-1628
-
-          - 在 Package Land 以手機版面開啟 Reclaim，無須啟用應用程式入口，保留管理員權限、設定與掃描報告
-          - 首次啟動時可直接從手機入口核准系統工作
-          - 公開前端檔案經壓縮且不含 source maps，所有 App 資料皆須管理員工作階段
-          - 升級後請核准更新的系統工作
-
-          0.1.1-1627
-
-          - 更新 UI 元件至 0.20.17：觸控螢幕上控制項的點按區不再讓頁面左右捲動，覆蓋層關閉後焦點回到開啟它的按鈕，矮螢幕維持精簡的設定列
-          - x86_64、aarch64 與 armv7 沿用 0.1.1-1626 未變更的執行環境、executor 與 root 程式
-          - 保留設定與已儲存的掃描報告；系統工作核准狀態不變
-        zh-CN: |-
-          0.1.1-1628
-
-          - 在 Package Land 以手机版面打开 Reclaim，无需启用应用程序门户，保留管理员权限、设置与扫描报告
-          - 首次启动时可直接从手机入口批准系统任务
-          - 公开前端文件经过压缩且不含 source maps，所有 App 数据均需管理员会话
-          - 升级后请批准更新的系统任务
-
-          0.1.1-1627
-
-          - 更新 UI 组件至 0.20.17：触控屏幕上控件的点按区域不再让页面左右滚动，覆盖层关闭后焦点回到打开它的按钮，矮屏幕保持精简的设置行
-          - x86_64、aarch64 与 armv7 沿用 0.1.1-1626 未改变的运行环境、executor 与 root 程序
-          - 保留设置与已保存的扫描报告；系统任务批准状态不变
-        ja: |-
-          0.1.1-1628
-
-          - アプリケーションポータルを有効にせず Package Land のスマートフォン用レイアウトで Reclaim を開き、管理者アクセス、設定、スキャンレポートを保持
-          - 初回起動時にスマートフォンの入口から直接システムタスクを承認
-          - 公開フロントエンドを圧縮しソースマップを除外、すべてのアプリデータに管理者セッションが必要
-          - アップグレード後に更新されたシステムタスクを承認してください
-
-          0.1.1-1627
-
-          - UI コンポーネントを 0.20.17 に更新：タッチ画面でコントロールのタップ領域がページの横スクロールを起こさなくなり、オーバーレイを閉じると開いたボタンにフォーカスが戻り、低い画面では設定行がコンパクトなままになります
-          - x86_64、aarch64、armv7 は 0.1.1-1626 の未変更のランタイム、executor、root プログラムを再利用します
-          - 設定と保存済みスキャンレポートは保持され、システムタスクの承認状態は変わりません
-        ko: |-
-          0.1.1-1628
-
-          - 응용 프로그램 포털을 활성화하지 않고 Package Land의 휴대폰 레이아웃으로 Reclaim을 열며 관리자 접근 권한, 설정 및 스캔 보고서 유지
-          - 처음 실행할 때 휴대폰 진입 화면에서 직접 시스템 작업 승인
-          - 공개 프런트엔드 번들을 최소화하고 소스 맵을 제외하며 모든 앱 데이터에 관리자 세션 필요
-          - 업그레이드 후 업데이트된 시스템 작업 승인 필요
-
-          0.1.1-1627
-
-          - UI 구성 요소를 0.20.17로 업데이트: 터치 화면에서 컨트롤의 탭 영역이 페이지를 가로로 스크롤하지 않으며, 오버레이를 닫으면 연 버튼으로 포커스가 돌아가고, 낮은 화면에서는 설정 행이 간결하게 유지됩니다
-          - x86_64, aarch64, armv7은 0.1.1-1626의 변경되지 않은 런타임, executor, root 프로그램을 재사용합니다
-          - 설정과 저장된 스캔 보고서는 유지되며 시스템 작업 승인 상태는 변경되지 않습니다
-        de: |-
-          0.1.1-1628
-
-          - Reclaim im Smartphone-Layout von Package Land ohne aktiviertes Anwendungsportal öffnen; Administratorzugriff, Einstellungen und Scanberichte bleiben erhalten
-          - Systemaufgaben beim ersten Start direkt über den Smartphone-Einstieg freigeben
-          - Minimierte öffentliche Frontend-Bundles ohne Source Maps verwenden; alle App-Daten erfordern eine Administratorsitzung
-          - Aktualisierte Systemaufgaben nach dem Upgrade freigeben
-
-          0.1.1-1627
-
-          - UI-Komponenten auf 0.20.17 aktualisiert: Auf Touchscreens lässt die Tippfläche eines Steuerelements die Seite nicht mehr seitwärts scrollen, Overlays geben den Fokus an die Schaltfläche zurück, die sie geöffnet hat, und niedrige Bildschirme behalten kompakte Einstellungszeilen
-          - Unveränderte Laufzeit, Executor und Root-Programme aus 0.1.1-1626 werden für x86_64, aarch64 und armv7 wiederverwendet
-          - Einstellungen und gespeicherte Scanberichte bleiben erhalten; die Freigabe der Systemaufgaben ist unverändert
-        fr: |-
-          0.1.1-1628
-
-          - Ouvrir Reclaim dans l’interface mobile de Package Land sans activer le Portail des applications, en conservant l’accès administrateur, les réglages et les rapports d’analyse
-          - Approuver les tâches système directement depuis l’entrée mobile au premier lancement
-          - Utiliser des fichiers frontend publics minifiés sans source maps ; toutes les données de l’application nécessitent une session administrateur
-          - Approuvez les tâches système mises à jour après la mise à niveau
-
-          0.1.1-1627
-
-          - Composants UI mis à jour vers 0.20.17 : sur un écran tactile, la zone de pression d’un contrôle ne fait plus défiler la page latéralement, les superpositions rendent le focus au bouton qui les a ouvertes et les écrans bas gardent des lignes de réglage compactes
-          - Le runtime, l’executor et les programmes root inchangés de 0.1.1-1626 sont réutilisés pour x86_64, aarch64 et armv7
-          - Les réglages et les rapports d’analyse enregistrés sont conservés ; l’approbation des tâches système est inchangée
-        es: |-
-          0.1.1-1628
-
-          - Abrir Reclaim con el diseño para teléfonos de Package Land sin activar el Portal de aplicaciones, conservando el acceso de administrador, los ajustes y los informes de análisis
-          - Aprobar las tareas del sistema directamente desde la entrada móvil en el primer inicio
-          - Usar archivos frontend públicos minificados sin mapas de código fuente; todos los datos de la aplicación requieren una sesión de administrador
-          - Apruebe las tareas del sistema actualizadas después de actualizar
-
-          0.1.1-1627
-
-          - Componentes de UI actualizados a 0.20.17: en una pantalla táctil, el área de toque de un control ya no desplaza la página en horizontal, las capas devuelven el foco al botón que las abrió y las pantallas bajas mantienen filas de ajustes compactas
-          - Se reutilizan el runtime, el executor y los programas root sin cambios de 0.1.1-1626 para x86_64, aarch64 y armv7
-          - Se conservan los ajustes y los informes de análisis guardados; la aprobación de las tareas del sistema no cambia
-        it: |-
-          0.1.1-1628
-
-          - Aprire Reclaim nel layout per telefoni di Package Land senza attivare il Portale applicazioni, mantenendo l’accesso amministratore, le impostazioni e i rapporti di scansione
-          - Approvare le attività di sistema direttamente dall’accesso mobile al primo avvio
-          - Usare bundle frontend pubblici minimizzati senza source map; tutti i dati dell’app richiedono una sessione amministratore
-          - Approvare le attività di sistema aggiornate dopo l’aggiornamento
-
-          0.1.1-1627
-
-          - Componenti UI aggiornati a 0.20.17: su uno schermo touch l’area di tocco di un controllo non fa più scorrere la pagina lateralmente, le sovrapposizioni restituiscono il focus al pulsante che le ha aperte e gli schermi bassi mantengono righe delle impostazioni compatte
-          - Runtime, executor e programmi root invariati di 0.1.1-1626 vengono riutilizzati per x86_64, aarch64 e armv7
-          - Impostazioni e report di analisi salvati vengono conservati; l’approvazione delle attività di sistema resta invariata
+        en: "0.1.1-1629\n\n- Fix phone scrolling when the hidden header reappears, and keep the header above page content\n- Improve the phone toolbar and settings action buttons\n- Keep read-only system task checks in memory to avoid waking disks\n- Update SDK/App to 0.53.6 and UI to 0.23.7; retain settings and scan reports\n\n0.1.1-1628\n\n- Open Reclaim in the Package Land phone layout without enabling Application Portal, preserving administrator access, settings and scan reports\n- Approve system tasks directly from the phone entry on first launch\n- Use minified public frontend bundles without source maps; all App data requires an administrator session\n- Approve the updated system tasks after upgrading\n\n0.1.1-1627\n\n- Updated UI components to 0.20.17: on a touch screen a control's tap box no longer makes the page scroll sideways, overlays return focus to the button that opened them, and short screens keep compact settings rows\n- Reuse the unchanged runtime, executor and root programs from 0.1.1-1626 for x86_64, aarch64 and armv7\n- Settings and saved scan reports are kept; the system task approval is unchanged"
+        zh-TW: "0.1.1-1629\n\n- 修正手機版隱藏標頭重新出現時畫面凍結的問題，並讓標頭保持在內容上方\n- 改善手機頂部工具列與設定頁操作按鈕\n- 唯讀系統工作檢查改用記憶體紀錄，避免喚醒硬碟\n- 更新 SDK/App 至 0.53.6、UI 至 0.23.7，保留設定與掃描報告\n\n0.1.1-1628\n\n- 在 Package Land 以手機版面開啟 Reclaim，無須啟用應用程式入口，保留管理員權限、設定與掃描報告\n- 首次啟動時可直接從手機入口核准系統工作\n- 公開前端檔案經壓縮且不含 source maps，所有 App 資料皆須管理員工作階段\n- 升級後請核准更新的系統工作\n\n0.1.1-1627\n\n- 更新 UI 元件至 0.20.17：觸控螢幕上控制項的點按區不再讓頁面左右捲動，覆蓋層關閉後焦點回到開啟它的按鈕，矮螢幕維持精簡的設定列\n- x86_64、aarch64 與 armv7 沿用 0.1.1-1626 未變更的執行環境、executor 與 root 程式\n- 保留設定與已儲存的掃描報告；系統工作核准狀態不變"
+        zh-CN: "0.1.1-1629\n\n- 修复手机版隐藏标题栏重新出现时画面冻结的问题，并让标题栏保持在内容上方\n- 改善手机顶部工具栏与设置页操作按钮\n- 只读系统任务检查改用内存记录，避免唤醒硬盘\n- 更新 SDK/App 至 0.53.6、UI 至 0.23.7，保留设置与扫描报告\n\n0.1.1-1628\n\n- 在 Package Land 以手机版面打开 Reclaim，无需启用应用程序门户，保留管理员权限、设置与扫描报告\n- 首次启动时可直接从手机入口批准系统任务\n- 公开前端文件经过压缩且不含 source maps，所有 App 数据均需管理员会话\n- 升级后请批准更新的系统任务\n\n0.1.1-1627\n\n- 更新 UI 组件至 0.20.17：触控屏幕上控件的点按区域不再让页面左右滚动，覆盖层关闭后焦点回到打开它的按钮，矮屏幕保持精简的设置行\n- x86_64、aarch64 与 armv7 沿用 0.1.1-1626 未改变的运行环境、executor 与 root 程序\n- 保留设置与已保存的扫描报告；系统任务批准状态不变"
+        ja: "0.1.1-1629\n\n- スマートフォンで非表示のヘッダーが再表示される際のフリーズを修正し、ヘッダーをページ内容の上に表示\n- スマートフォン上部のツールバーと設定画面の操作ボタンを改善\n- システムタスクの読み取り専用チェックをメモリに記録し、ディスクの不要な起動を抑制\n- SDK/App を 0.53.6、UI を 0.23.7 に更新し、設定とスキャンレポートを保持\n\n0.1.1-1628\n\n- アプリケーションポータルを有効にせず Package Land のスマートフォン用レイアウトで Reclaim を開き、管理者アクセス、設定、スキャンレポートを保持\n- 初回起動時にスマートフォンの入口から直接システムタスクを承認\n- 公開フロントエンドを圧縮しソースマップを除外、すべてのアプリデータに管理者セッションが必要\n- アップグレード後に更新されたシステムタスクを承認してください\n\n0.1.1-1627\n\n- UI コンポーネントを 0.20.17 に更新：タッチ画面でコントロールのタップ領域がページの横スクロールを起こさなくなり、オーバーレイを閉じると開いたボタンにフォーカスが戻り、低い画面では設定行がコンパクトなままになります\n- x86_64、aarch64、armv7 は 0.1.1-1626 の未変更のランタイム、executor、root プログラムを再利用します\n- 設定と保存済みスキャンレポートは保持され、システムタスクの承認状態は変わりません"
+        ko: "0.1.1-1629\n\n- 휴대폰에서 숨겨진 헤더가 다시 나타날 때 화면이 멈추는 문제를 수정하고 헤더를 콘텐츠 위에 표시\n- 휴대폰 상단 도구 모음과 설정 화면의 작업 버튼 개선\n- 읽기 전용 시스템 작업 확인 기록을 메모리에 보관하여 디스크가 깨어나는 현상 방지\n- SDK/App을 0.53.6, UI를 0.23.7로 업데이트하고 설정 및 스캔 보고서 유지\n\n0.1.1-1628\n\n- 응용 프로그램 포털을 활성화하지 않고 Package Land의 휴대폰 레이아웃으로 Reclaim을 열며 관리자 접근 권한, 설정 및 스캔 보고서 유지\n- 처음 실행할 때 휴대폰 진입 화면에서 직접 시스템 작업 승인\n- 공개 프런트엔드 번들을 최소화하고 소스 맵을 제외하며 모든 앱 데이터에 관리자 세션 필요\n- 업그레이드 후 업데이트된 시스템 작업 승인 필요\n\n0.1.1-1627\n\n- UI 구성 요소를 0.20.17로 업데이트: 터치 화면에서 컨트롤의 탭 영역이 페이지를 가로로 스크롤하지 않으며, 오버레이를 닫으면 연 버튼으로 포커스가 돌아가고, 낮은 화면에서는 설정 행이 간결하게 유지됩니다\n- x86_64, aarch64, armv7은 0.1.1-1626의 변경되지 않은 런타임, executor, root 프로그램을 재사용합니다\n- 설정과 저장된 스캔 보고서는 유지되며 시스템 작업 승인 상태는 변경되지 않습니다"
+        de: "0.1.1-1629\n\n- Einfrieren beim erneuten Einblenden der Kopfzeile auf dem Smartphone beheben und die Kopfzeile über dem Seiteninhalt halten\n- Smartphone-Werkzeugleiste und Schaltflächen der Einstellungen verbessern\n- Schreibgeschützte Prüfungen der Systemaufgaben im Speicher protokollieren, ohne Festplatten aufzuwecken\n- SDK/App auf 0.53.6 und UI auf 0.23.7 aktualisieren; Einstellungen und Scanberichte beibehalten\n\n0.1.1-1628\n\n- Reclaim im Smartphone-Layout von Package Land ohne aktiviertes Anwendungsportal öffnen; Administratorzugriff, Einstellungen und Scanberichte bleiben erhalten\n- Systemaufgaben beim ersten Start direkt über den Smartphone-Einstieg freigeben\n- Minimierte öffentliche Frontend-Bundles ohne Source Maps verwenden; alle App-Daten erfordern eine Administratorsitzung\n- Aktualisierte Systemaufgaben nach dem Upgrade freigeben\n\n0.1.1-1627\n\n- UI-Komponenten auf 0.20.17 aktualisiert: Auf Touchscreens lässt die Tippfläche eines Steuerelements die Seite nicht mehr seitwärts scrollen, Overlays geben den Fokus an die Schaltfläche zurück, die sie geöffnet hat, und niedrige Bildschirme behalten kompakte Einstellungszeilen\n- Unveränderte Laufzeit, Executor und Root-Programme aus 0.1.1-1626 werden für x86_64, aarch64 und armv7 wiederverwendet\n- Einstellungen und gespeicherte Scanberichte bleiben erhalten; die Freigabe der Systemaufgaben ist unverändert"
+        fr: "0.1.1-1629\n\n- Corriger le blocage au retour de l’en-tête sur téléphone et le maintenir au-dessus du contenu\n- Améliorer la barre d’outils mobile et les boutons des réglages\n- Conserver en mémoire les journaux des vérifications en lecture seule pour éviter de réveiller les disques\n- Mettre à jour SDK/App vers 0.53.6 et UI vers 0.23.7 en conservant les réglages et rapports d’analyse\n\n0.1.1-1628\n\n- Ouvrir Reclaim dans l’interface mobile de Package Land sans activer le Portail des applications, en conservant l’accès administrateur, les réglages et les rapports d’analyse\n- Approuver les tâches système directement depuis l’entrée mobile au premier lancement\n- Utiliser des fichiers frontend publics minifiés sans source maps ; toutes les données de l’application nécessitent une session administrateur\n- Approuvez les tâches système mises à jour après la mise à niveau\n\n0.1.1-1627\n\n- Composants UI mis à jour vers 0.20.17 : sur un écran tactile, la zone de pression d’un contrôle ne fait plus défiler la page latéralement, les superpositions rendent le focus au bouton qui les a ouvertes et les écrans bas gardent des lignes de réglage compactes\n- Le runtime, l’executor et les programmes root inchangés de 0.1.1-1626 sont réutilisés pour x86_64, aarch64 et armv7\n- Les réglages et les rapports d’analyse enregistrés sont conservés ; l’approbation des tâches système est inchangée"
+        es: "0.1.1-1629\n\n- Corregir el bloqueo al reaparecer la cabecera en el teléfono y mantenerla por encima del contenido\n- Mejorar la barra de herramientas del teléfono y los botones de ajustes\n- Registrar en memoria las comprobaciones de tareas del sistema de solo lectura para evitar activar los discos\n- Actualizar SDK/App a 0.53.6 y UI a 0.23.7 conservando los ajustes y los informes de análisis\n\n0.1.1-1628\n\n- Abrir Reclaim con el diseño para teléfonos de Package Land sin activar el Portal de aplicaciones, conservando el acceso de administrador, los ajustes y los informes de análisis\n- Aprobar las tareas del sistema directamente desde la entrada móvil en el primer inicio\n- Usar archivos frontend públicos minificados sin mapas de código fuente; todos los datos de la aplicación requieren una sesión de administrador\n- Apruebe las tareas del sistema actualizadas después de actualizar\n\n0.1.1-1627\n\n- Componentes de UI actualizados a 0.20.17: en una pantalla táctil, el área de toque de un control ya no desplaza la página en horizontal, las capas devuelven el foco al botón que las abrió y las pantallas bajas mantienen filas de ajustes compactas\n- Se reutilizan el runtime, el executor y los programas root sin cambios de 0.1.1-1626 para x86_64, aarch64 y armv7\n- Se conservan los ajustes y los informes de análisis guardados; la aprobación de las tareas del sistema no cambia"
+        it: "0.1.1-1629\n\n- Correggere il blocco quando ricompare l’intestazione sul telefono e mantenerla sopra il contenuto\n- Migliorare la barra degli strumenti del telefono e i pulsanti delle impostazioni\n- Registrare in memoria i controlli di sola lettura delle attività di sistema per non riattivare i dischi\n- Aggiornare SDK/App a 0.53.6 e UI a 0.23.7 mantenendo impostazioni e rapporti di scansione\n\n0.1.1-1628\n\n- Aprire Reclaim nel layout per telefoni di Package Land senza attivare il Portale applicazioni, mantenendo l’accesso amministratore, le impostazioni e i rapporti di scansione\n- Approvare le attività di sistema direttamente dall’accesso mobile al primo avvio\n- Usare bundle frontend pubblici minimizzati senza source map; tutti i dati dell’app richiedono una sessione amministratore\n- Approvare le attività di sistema aggiornate dopo l’aggiornamento\n\n0.1.1-1627\n\n- Componenti UI aggiornati a 0.20.17: su uno schermo touch l’area di tocco di un controllo non fa più scorrere la pagina lateralmente, le sovrapposizioni restituiscono il focus al pulsante che le ha aperte e gli schermi bassi mantengono righe delle impostazioni compatte\n- Runtime, executor e programmi root invariati di 0.1.1-1626 vengono riutilizzati per x86_64, aarch64 e armv7\n- Impostazioni e report di analisi salvati vengono conservati; l’approvazione delle attività di sistema resta invariata"
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1622-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-packages-details-1619-en.png
@@ -164,15 +56,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1628
+        version: 0.1.1-1629
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: bcb0d86f5ea76e3a7e071f6fdc8f4033527ccec9413b41be36281f2828ce1d35
-        md5: e0bf76d30105777184c8462d92c6afef
-        size: 15229440
+        sha256: cd7cba6fe4a6bacbb929f8866f001fab62192ddc869da4b3ab6c837764677c2a
+        md5: c3c28a402ce72c13bd8420b483be3286
+        size: 15254528
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -189,19 +81,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-07T14:10:51Z
-          source_ref: fe4cf8c5d8360e2b2b8d8d10dfeea95ece962535
+          reviewed_at: 2026-11-08T08:55:00Z
+          source_ref: 0813c8607061f973f645ee652599ba20df3ed5e4
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1628
+        version: 0.1.1-1629
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 9074da6d0745be049e3342e7e979f2a35ab978d045d70e885086cd32e37858ed
-        md5: 6ee2a1cb6b189ba522309baae2ebd05f
-        size: 16016384
+        sha256: 25eb25e80c873fb969114bfd147a3b5869cb2cf8b4131dcce0cc9a71dc1b671e
+        md5: 98fd344adabed6fe8642d6978f43335a
+        size: 16038912
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -218,11 +110,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-07T14:10:51Z
-          source_ref: fe4cf8c5d8360e2b2b8d8d10dfeea95ece962535
+          reviewed_at: 2026-11-08T08:55:00Z
+          source_ref: 0813c8607061f973f645ee652599ba20df3ed5e4
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1628
+        version: 0.1.1-1629
         arch:
           - apollolake
           - avoton
@@ -251,9 +143,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 92f257bf62da1060c03f01f33edaf9e224c95192aeaecbe5767955763b3d1aa3
-        md5: 679732c9592fe5873d48dfda9dd59349
-        size: 16388608
+        sha256: e4df2d3e766cb7e3890500fe0d10f0d7ba6656fbaba41c8c5735d28eb0e9390c
+        md5: dff04ca059bd583c4c63a5f2e0393bb5
+        size: 16413184
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -270,8 +162,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-07T14:10:51Z
-          source_ref: fe4cf8c5d8360e2b2b8d8d10dfeea95ece962535
+          reviewed_at: 2026-11-08T08:55:00Z
+          source_ref: 0813c8607061f973f645ee652599ba20df3ed5e4
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
@@ -280,7 +172,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0141
+      release: v0.1.0-0142
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -434,330 +326,15 @@ packages:
 
           Accedi con un account amministratore DSM
       changelog:
-        en: |-
-          0.1.0-0141
-
-          - Update the build toolchain
-          - Fix extra page space, sideways panning and sticky offsets on phones
-
-          0.1.0-0140
-
-          - Update the build toolchain and shrink public UI bundles with minification
-          - Remove empty action space on phone pages and fix drawer button focus after touch
-
-          0.1.0-0139
-
-          - Register Syno Connect Center in the Syno Package Land mobile app with a direct phone layout, without enabling DSM Application Portal. Keep administrator-only API access and update CLI, SDK and UI dependencies
-          - Keep phone page actions in one SDK overflow menu
-
-          0.1.0-0138
-
-          - Show the old and new DSM HTTPS ports after named-tunnel route withdrawal or restart; offer Review and reconnect instead of a certificate-change warning. Keep explicit administrator trust before forwarding to the changed endpoint
-
-          0.1.0-0137
-
-          - Keep the two newest NetBird corrupt-state backups and remove stale temporary files
-          - Limit Tailscale certificate and DNS caches; check private temporary storage every 15 seconds and stop providers that exceed its budget
-          - If temporary files still exceed the budget after safe cache cleanup, explain the cause and offer Restart with the saved sign-in
-
-          0.1.0-0136
-
-          - Keep temporary Cloudflare access working when DSM redirects HTTP to HTTPS by using the existing pinned HTTPS proxy
-          - Report DSM HTTPS port changes with the old and new ports and an inline review/reconnect action
-          - Bound Tailscale/NetBird files to 1 MiB, disable Taildrop and network-map disk caching, and clear transient provider data on stop
-
-          0.1.0-0135
-
-          - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your phone QR code on the Home, or copy the same link
-          - LAN addresses come first, followed by connected external addresses; untrusted HTTPS LAN addresses include certificate fingerprints, while temporary Cloudflare addresses and credentials are omitted
-        zh-TW: |-
-          0.1.0-0141
-
-          - 更新建置工具鏈
-          - 修正手機頁面多餘留白、橫向滑動與固定元素偏移
-
-          0.1.0-0140
-
-          - 更新建置工具鏈，壓縮公開 UI 檔案以縮小體積
-          - 移除手機頁面的操作區留白，修正觸控關閉導覽選單後的按鈕焦點框
-
-          0.1.0-0139
-
-          - 將 Syno Connect Center 註冊至 Syno Package Land 行動 App，可直接開啟手機版介面，無須啟用 DSM 應用程式入口。保留僅限管理員的 API 存取，並更新 CLI、SDK 與 UI 相依套件
-          - 手機頁面操作集中於 SDK 的單一更多選單
-
-          0.1.0-0138
-
-          - 自訂網域通道撤回路由或重新啟動後，仍顯示 DSM HTTPS 的新舊連接埠，提供檢查並重新連線，不再誤報憑證變更。轉送至變更後的端點前，仍須管理員明確信任
-
-          0.1.0-0137
-
-          - NetBird 僅保留最新兩份損毀狀態備份，並清除過期暫存檔
-          - 限制 Tailscale 憑證與 DNS 快取；每 15 秒檢查私有暫存空間，超過預算時停止連線服務
-          - 先淘汰可清理的快取，暫存檔仍超額時說明原因，並提供使用已儲存登入身分的重新啟動操作
-
-          0.1.0-0136
-
-          - 臨時 Cloudflare 網址改用既有 HTTPS 憑證釘選代理，支援 DSM 的 HTTP 轉 HTTPS 設定
-          - DSM HTTPS 改埠時顯示原埠、新埠及確認後重新連接的操作
-          - 限制 Tailscale／NetBird 單檔為 1 MiB，停用 Taildrop 與網路對應磁碟快取，停止時清除暫存資料
-
-          0.1.0-0135
-
-          - 在首頁開啟新的「連接手機」，使用 Syno Package Land 行動應用程式掃描 QR code，即可加入這台 NAS，也可複製相同連結
-          - 優先列出區域網路位址，再列出已連線的外部位址；不受信任的 HTTPS 區域網路位址附帶憑證指紋，並排除 Cloudflare 臨時位址與登入憑證
-        zh-CN: |-
-          0.1.0-0141
-
-          - 更新构建工具链
-          - 修正手机页面多余留白、横向滑动与固定元素偏移
-
-          0.1.0-0140
-
-          - 更新构建工具链，压缩公开 UI 文件以缩小体积
-          - 移除手机页面的操作区留白，修正触控关闭导航菜单后的按钮焦点框
-
-          0.1.0-0139
-
-          - 将 Syno Connect Center 注册到 Syno Package Land 移动 App，可直接打开手机版界面，无需启用 DSM 应用程序门户。保留仅限管理员的 API 访问，并更新 CLI、SDK 和 UI 依赖
-          - 手机页面操作集中于 SDK 的单一更多菜单
-
-          0.1.0-0138
-
-          - 自定义域名通道撤回路由或重新启动后，仍显示 DSM HTTPS 的新旧端口，提供检查并重新连接，不再误报证书变更。转发至变更后的端点前，仍须管理员明确信任
-
-          0.1.0-0137
-
-          - NetBird 仅保留最新两份损坏状态备份，并清除过期临时文件
-          - 限制 Tailscale 证书与 DNS 缓存；每 15 秒检查私有临时空间，超出预算时停止连接服务
-          - 先淘汰可清理的缓存，临时文件仍超额时说明原因，并提供使用已保存登录身份的重新启动操作
-
-          0.1.0-0136
-
-          - 临时 Cloudflare 地址改用现有 HTTPS 证书固定代理，支持 DSM 的 HTTP 转 HTTPS 设置
-          - DSM HTTPS 端口更改时显示原端口、新端口及确认后重新连接的操作
-          - 将 Tailscale／NetBird 单个文件限制为 1 MiB，禁用 Taildrop 和网络映射磁盘缓存，停止时清除临时数据
-
-          0.1.0-0135
-
-          - 在首页打开新的“连接手机”，使用 Syno Package Land 移动应用扫描二维码，即可添加这台 NAS，也可复制相同链接
-          - 优先列出局域网地址，再列出已连接的外部地址；不受信任的 HTTPS 局域网地址附带证书指纹，并排除 Cloudflare 临时地址与登录凭据
-        ja: |-
-          0.1.0-0141
-
-          - ビルドツールチェーンを更新
-          - スマートフォン画面の余白、横方向のずれ、固定要素の位置ずれを修正
-
-          0.1.0-0140
-
-          - ビルドツールチェーンを更新し、公開 UI ファイルを圧縮して小型化
-          - スマートフォン画面の操作用余白を削除し、タッチでメニューを閉じた後のボタンのフォーカス枠を修正
-
-          0.1.0-0139
-
-          - Syno Connect Center を Syno Package Land モバイルアプリに登録し、DSM アプリケーションポータルを有効にせずにスマートフォン用画面を直接開けるようにしました。管理者専用 API アクセスを維持し、CLI、SDK、UI を更新
-          - スマートフォンのページ操作を SDK の単一メニューにまとめる
-
-          0.1.0-0138
-
-          - 独自ドメインのトンネルの経路撤回や再起動後も DSM HTTPS の変更前後のポートを表示し、証明書変更の警告ではなく確認と再接続を案内。変更後の接続先への転送には引き続き管理者による明示的な信頼が必要
-
-          0.1.0-0137
-
-          - NetBird の破損した状態のバックアップを最新 2 件に制限し、古い一時ファイルを削除
-          - Tailscale の証明書と DNS キャッシュを制限。専用の一時領域を 15 秒ごとに確認し、上限を超えたサービスを停止
-          - 安全に削除できるキャッシュを先に整理し、上限を超える場合は理由と保存済み認証情報での再起動を表示
-
-          0.1.0-0136
-
-          - 一時的な Cloudflare 接続で既存の証明書固定 HTTPS プロキシを使用し、DSM の HTTPS リダイレクトに対応
-          - DSM HTTPS ポートの変更前後を表示し、確認して再接続する操作を追加
-          - Tailscale/NetBird のファイルを各 1 MiB に制限し、Taildrop とネットワークマップのディスクキャッシュを無効化。停止時に一時データを削除
-
-          0.1.0-0135
-
-          - ホームの新しい「スマートフォンを接続」で QR コードを表示し、Syno Package Land モバイルアプリでスキャンしてこの NAS を追加できます。同じリンクのコピーも可能です
-          - LAN アドレスを先に、その後に接続中の外部アドレスを表示します。信頼されていない HTTPS LAN アドレスには証明書のフィンガープリントを含め、一時的な Cloudflare アドレスと認証情報は除外します
-        ko: |-
-          0.1.0-0141
-
-          - 빌드 도구 업데이트
-          - 휴대폰 페이지의 불필요한 여백, 가로 이동 및 고정 요소 위치 수정
-
-          0.1.0-0140
-
-          - 빌드 도구를 업데이트하고 공개 UI 파일을 압축하여 크기 축소
-          - 휴대폰 페이지의 빈 작업 공간을 제거하고 터치로 메뉴를 닫은 뒤 버튼에 남는 포커스 테두리 수정
-
-          0.1.0-0139
-
-          - Syno Connect Center를 Syno Package Land 모바일 앱에 등록하여 DSM 응용 프로그램 포털을 활성화하지 않고 휴대폰 화면을 직접 엽니다. 관리자 전용 API 접근을 유지하고 CLI, SDK, UI 의존성을 업데이트
-          - 휴대폰 페이지 작업을 SDK의 단일 더보기 메뉴에 모으기
-
-          0.1.0-0138
-
-          - 자체 도메인 터널의 경로 철회나 재시작 후에도 DSM HTTPS의 이전 포트와 새 포트를 표시하고 인증서 변경 경고 대신 검토 및 재연결을 제공합니다. 변경된 엔드포인트로 전달하기 전에 관리자의 명시적 신뢰가 필요합니다
-
-          0.1.0-0137
-
-          - NetBird의 손상된 상태 백업을 최신 2개만 유지하고 오래된 임시 파일 삭제
-          - Tailscale 인증서 및 DNS 캐시 제한. 전용 임시 저장소를 15초마다 확인하고 한도를 초과하면 서비스 중지
-          - 안전한 캐시 정리 후에도 한도를 초과하면 원인을 설명하고 저장된 로그인으로 다시 시작 제공
-
-          0.1.0-0136
-
-          - 임시 Cloudflare 연결에 기존 인증서 고정 HTTPS 프록시를 사용하여 DSM HTTPS 리디렉션 지원
-          - DSM HTTPS 포트 변경 시 이전 및 새 포트와 확인 후 재연결 작업 표시
-          - Tailscale/NetBird 파일을 각각 1 MiB로 제한하고 Taildrop 및 네트워크 맵 디스크 캐시 비활성화, 중지 시 임시 데이터 삭제
-
-          0.1.0-0135
-
-          - 홈의 새로운 휴대폰 연결에서 QR 코드를 표시하고 Syno Package Land 모바일 앱으로 스캔하여 이 NAS를 추가하거나 같은 링크를 복사할 수 있습니다
-          - LAN 주소를 먼저 표시한 다음 연결된 외부 주소를 표시합니다. 신뢰되지 않는 HTTPS LAN 주소에는 인증서 지문을 포함하며 임시 Cloudflare 주소와 로그인 자격 증명은 제외합니다
-        de: |-
-          0.1.0-0141
-
-          - Build-Toolchain aktualisieren
-          - Zusätzlichen Seitenabstand, seitliches Verschieben und versetzte fixierte Elemente auf dem Smartphone korrigieren
-
-          0.1.0-0140
-
-          - Build-Toolchain aktualisieren und öffentliche UI-Dateien durch Minifizierung verkleinern
-          - Leeren Aktionsbereich auf Telefonseiten entfernen und Button-Fokus nach Schließen des Menüs per Touch korrigieren
-
-          0.1.0-0139
-
-          - Syno Connect Center in der mobilen Syno Package Land App registrieren und die Telefonansicht direkt ohne DSM Anwendungsportal öffnen. API-Zugriff bleibt auf Administratoren beschränkt; CLI, SDK und UI aktualisieren
-          - Seitenaktionen auf dem Telefon in einem SDK-Menü bündeln
-
-          0.1.0-0138
-
-          - Nach Rücknahme oder Neustart einer Tunnelroute mit eigener Domain die alten und neuen DSM-HTTPS-Ports mit Prüfung und Wiederverbindung statt einer Zertifikatswarnung anzeigen. Weiterleitung weiterhin erst nach ausdrücklicher Bestätigung durch den Administrator
-
-          0.1.0-0137
-
-          - Nur die zwei neuesten NetBird-Sicherungen beschädigter Zustände behalten und veraltete temporäre Dateien löschen
-          - Tailscale-Zertifikat- und DNS-Caches begrenzen; privaten temporären Speicher alle 15 Sekunden prüfen und Dienste bei Überschreitung stoppen
-          - Zuerst entbehrliche Caches löschen; bei verbleibender Überschreitung Ursache und Neustart mit gespeicherter Anmeldung anbieten
-
-          0.1.0-0136
-
-          - Temporäre Cloudflare-Verbindungen verwenden den vorhandenen HTTPS-Proxy mit Zertifikatsbindung und unterstützen die HTTPS-Weiterleitung von DSM
-          - Änderungen am DSM-HTTPS-Port zeigen alten und neuen Port sowie eine Aktion zum Prüfen und erneuten Verbinden
-          - Tailscale/NetBird-Dateien auf jeweils 1 MiB begrenzen, Taildrop und Netzwerkplan-Disk-Cache deaktivieren und temporäre Daten beim Stoppen entfernen
-
-          0.1.0-0135
-
-          - Fügen Sie dieses NAS zur mobilen Syno Package Land App hinzu: Scannen Sie den neuen QR-Code unter Telefon verbinden auf der Startseite oder kopieren Sie denselben Link
-          - LAN-Adressen stehen zuerst, danach folgen verbundene externe Adressen; nicht vertrauenswürdige HTTPS-LAN-Adressen enthalten Zertifikat-Fingerabdrücke, temporäre Cloudflare-Adressen und Zugangsdaten werden ausgelassen
-        fr: |-
-          0.1.0-0141
-
-          - Mettre à jour les outils de compilation
-          - Corriger l’espace superflu, le défilement latéral et le décalage des éléments fixes sur téléphone
-
-          0.1.0-0140
-
-          - Mettre à jour les outils de compilation et réduire les fichiers UI publics par minification
-          - Supprimer l’espace vide des actions sur téléphone et corriger le focus du bouton après fermeture tactile du menu
-
-          0.1.0-0139
-
-          - Enregistrer Syno Connect Center dans l’app mobile Syno Package Land pour ouvrir directement la vue téléphone sans activer le portail des applications DSM. Conserver les API réservées aux administrateurs et mettre à jour CLI, SDK et UI
-          - Regrouper les actions de page du téléphone dans un seul menu du SDK
-
-          0.1.0-0138
-
-          - Afficher les anciens et nouveaux ports HTTPS de DSM après le retrait ou le redémarrage du tunnel avec domaine personnel, avec vérification et reconnexion au lieu d’une alerte de certificat. Conserver la validation explicite de l’administrateur avant le transfert
-
-          0.1.0-0137
-
-          - Conserver les deux sauvegardes NetBird les plus récentes des états corrompus et supprimer les fichiers temporaires anciens
-          - Limiter les caches de certificats et DNS Tailscale ; vérifier le stockage temporaire privé toutes les 15 secondes et arrêter les services dépassant le budget
-          - Nettoyer d’abord les caches supprimables ; si la limite reste dépassée, expliquer la cause et proposer un redémarrage avec les identifiants enregistrés
-
-          0.1.0-0136
-
-          - Utiliser le proxy HTTPS existant avec épinglage du certificat pour les adresses Cloudflare temporaires et la redirection HTTPS de DSM
-          - Afficher les anciens et nouveaux ports HTTPS de DSM avec une action de vérification et de reconnexion
-          - Limiter chaque fichier Tailscale/NetBird à 1 MiB, désactiver Taildrop et le cache disque de la carte réseau, et supprimer les données temporaires à l’arrêt
-
-          0.1.0-0135
-
-          - Ajoutez ce NAS à l’application mobile Syno Package Land en scannant le nouveau code QR de Connecter votre téléphone sur l’accueil, ou copiez le même lien
-          - Les adresses LAN précèdent les adresses externes connectées ; les adresses HTTPS LAN non approuvées incluent les empreintes des certificats, tandis que les adresses Cloudflare temporaires et les identifiants sont exclus
-        es: |-
-          0.1.0-0141
-
-          - Actualizar las herramientas de compilación
-          - Corregir el espacio sobrante, el desplazamiento lateral y la posición de los elementos fijos en el teléfono
-
-          0.1.0-0140
-
-          - Actualizar las herramientas de compilación y reducir los archivos públicos de la interfaz mediante minificación
-          - Eliminar el espacio vacío de acciones en el teléfono y corregir el foco del botón al cerrar el menú con un toque
-
-          0.1.0-0139
-
-          - Registrar Syno Connect Center en la app móvil Syno Package Land para abrir directamente la vista de teléfono sin activar el portal de aplicaciones de DSM. Mantener las API solo para administradores y actualizar CLI, SDK y UI
-          - Agrupar las acciones de página del teléfono en un único menú del SDK
-
-          0.1.0-0138
-
-          - Mostrar los puertos HTTPS de DSM anteriores y nuevos tras retirar la ruta o reiniciar el túnel con dominio propio, con revisión y reconexión en lugar de un aviso de certificado. Mantener la confianza explícita del administrador antes de reenviar
-
-          0.1.0-0137
-
-          - Conservar las dos copias más recientes del estado dañado de NetBird y eliminar archivos temporales antiguos
-          - Limitar las cachés de certificados y DNS de Tailscale; comprobar el almacenamiento temporal privado cada 15 segundos y detener servicios que superen el límite
-          - Limpiar primero las cachés prescindibles; si se sigue superando el límite, explicar la causa y ofrecer reinicio con la sesión guardada
-
-          0.1.0-0136
-
-          - Usar el proxy HTTPS existente con certificado fijado para las direcciones temporales de Cloudflare y la redirección HTTPS de DSM
-          - Mostrar los puertos HTTPS anterior y nuevo de DSM con una acción para revisar y reconectar
-          - Limitar cada archivo de Tailscale/NetBird a 1 MiB, desactivar Taildrop y la caché de disco del mapa de red y borrar los datos temporales al detener
-
-          0.1.0-0135
-
-          - Añada este NAS a la aplicación móvil Syno Package Land escaneando el nuevo código QR de Conectar el teléfono en el inicio, o copie el mismo enlace
-          - Las direcciones LAN aparecen primero, seguidas de las direcciones externas conectadas; las direcciones HTTPS LAN no fiables incluyen las huellas de sus certificados, y se omiten las direcciones temporales de Cloudflare y las credenciales
-        it: |-
-          0.1.0-0141
-
-          - Aggiornare gli strumenti di compilazione
-          - Correggere lo spazio in eccesso, lo scorrimento laterale e la posizione degli elementi fissi sul telefono
-
-          0.1.0-0140
-
-          - Aggiornare gli strumenti di compilazione e ridurre i file UI pubblici tramite minificazione
-          - Rimuovere lo spazio vuoto delle azioni sul telefono e correggere il focus del pulsante dopo la chiusura del menu tramite tocco
-
-          0.1.0-0139
-
-          - Registrare Syno Connect Center nell’app mobile Syno Package Land per aprire direttamente la vista telefono senza attivare il portale applicazioni DSM. Mantenere le API riservate agli amministratori e aggiornare CLI, SDK e UI
-          - Riunire le azioni della pagina sul telefono in un unico menu SDK
-
-          0.1.0-0138
-
-          - Mostrare le porte HTTPS di DSM precedenti e nuove dopo il ritiro della rotta o il riavvio del tunnel con dominio proprio, con verifica e riconnessione invece di un avviso sul certificato. Richiedere ancora la fiducia esplicita dell’amministratore prima di inoltrare
-
-          0.1.0-0137
-
-          - Conservare solo i due backup NetBird più recenti degli stati danneggiati ed eliminare i file temporanei obsoleti
-          - Limitare le cache di certificati e DNS di Tailscale; controllare lo spazio temporaneo privato ogni 15 secondi e arrestare i servizi che superano il limite
-          - Eliminare prima le cache ricreabili; se il limite resta superato, spiegare il motivo e offrire il riavvio con le credenziali salvate
-
-          0.1.0-0136
-
-          - Usare il proxy HTTPS esistente con certificato fissato per gli indirizzi Cloudflare temporanei e il reindirizzamento HTTPS di DSM
-          - Mostrare la vecchia e la nuova porta HTTPS di DSM con un’azione di verifica e riconnessione
-          - Limitare ogni file di Tailscale/NetBird a 1 MiB, disabilitare Taildrop e la cache su disco della mappa di rete e rimuovere i dati temporanei all’arresto
-
-          0.1.0-0135
-
-          - Aggiungi questo NAS all’app mobile Syno Package Land scansionando il nuovo codice QR di Collega il telefono nella home, oppure copia lo stesso link
-          - Gli indirizzi LAN precedono quelli esterni connessi; gli indirizzi HTTPS LAN non attendibili includono le impronte dei certificati, mentre gli indirizzi temporanei Cloudflare e le credenziali sono esclusi
+        en: "0.1.0-0142\n\n- Fixed phone pages freezing when scrolling back up after the header hides; improved the phone top bar and Settings action footer\n\n0.1.0-0141\n\n- Update the build toolchain\n- Fix extra page space, sideways panning and sticky offsets on phones\n\n0.1.0-0140\n\n- Update the build toolchain and shrink public UI bundles with minification\n- Remove empty action space on phone pages and fix drawer button focus after touch\n\n0.1.0-0139\n\n- Register Syno Connect Center in the Syno Package Land mobile app with a direct phone layout, without enabling DSM Application Portal. Keep administrator-only API access and update CLI, SDK and UI dependencies\n- Keep phone page actions in one SDK overflow menu\n\n0.1.0-0138\n\n- Show the old and new DSM HTTPS ports after named-tunnel route withdrawal or restart; offer Review and reconnect instead of a certificate-change warning. Keep explicit administrator trust before forwarding to the changed endpoint\n\n0.1.0-0137\n\n- Keep the two newest NetBird corrupt-state backups and remove stale temporary files\n- Limit Tailscale certificate and DNS caches; check private temporary storage every 15 seconds and stop providers that exceed its budget\n- If temporary files still exceed the budget after safe cache cleanup, explain the cause and offer Restart with the saved sign-in\n\n0.1.0-0136\n\n- Keep temporary Cloudflare access working when DSM redirects HTTP to HTTPS by using the existing pinned HTTPS proxy\n- Report DSM HTTPS port changes with the old and new ports and an inline review/reconnect action\n- Bound Tailscale/NetBird files to 1 MiB, disable Taildrop and network-map disk caching, and clear transient provider data on stop\n\n0.1.0-0135\n\n- Add this NAS to the Syno Package Land mobile app by scanning the new Connect your phone QR code on the Home, or copy the same link\n- LAN addresses come first, followed by connected external addresses; untrusted HTTPS LAN addresses include certificate fingerprints, while temporary Cloudflare addresses and credentials are omitted"
+        zh-TW: "0.1.0-0142\n\n- 修正手機頁面在頂部列隱藏後往上捲動會凍結的問題，改善手機頂部列與設定頁的操作列\n\n0.1.0-0141\n\n- 更新建置工具鏈\n- 修正手機頁面多餘留白、橫向滑動與固定元素偏移\n\n0.1.0-0140\n\n- 更新建置工具鏈，壓縮公開 UI 檔案以縮小體積\n- 移除手機頁面的操作區留白，修正觸控關閉導覽選單後的按鈕焦點框\n\n0.1.0-0139\n\n- 將 Syno Connect Center 註冊至 Syno Package Land 行動 App，可直接開啟手機版介面，無須啟用 DSM 應用程式入口。保留僅限管理員的 API 存取，並更新 CLI、SDK 與 UI 相依套件\n- 手機頁面操作集中於 SDK 的單一更多選單\n\n0.1.0-0138\n\n- 自訂網域通道撤回路由或重新啟動後，仍顯示 DSM HTTPS 的新舊連接埠，提供檢查並重新連線，不再誤報憑證變更。轉送至變更後的端點前，仍須管理員明確信任\n\n0.1.0-0137\n\n- NetBird 僅保留最新兩份損毀狀態備份，並清除過期暫存檔\n- 限制 Tailscale 憑證與 DNS 快取；每 15 秒檢查私有暫存空間，超過預算時停止連線服務\n- 先淘汰可清理的快取，暫存檔仍超額時說明原因，並提供使用已儲存登入身分的重新啟動操作\n\n0.1.0-0136\n\n- 臨時 Cloudflare 網址改用既有 HTTPS 憑證釘選代理，支援 DSM 的 HTTP 轉 HTTPS 設定\n- DSM HTTPS 改埠時顯示原埠、新埠及確認後重新連接的操作\n- 限制 Tailscale／NetBird 單檔為 1 MiB，停用 Taildrop 與網路對應磁碟快取，停止時清除暫存資料\n\n0.1.0-0135\n\n- 在首頁開啟新的「連接手機」，使用 Syno Package Land 行動應用程式掃描 QR code，即可加入這台 NAS，也可複製相同連結\n- 優先列出區域網路位址，再列出已連線的外部位址；不受信任的 HTTPS 區域網路位址附帶憑證指紋，並排除 Cloudflare 臨時位址與登入憑證"
+        zh-CN: "0.1.0-0142\n\n- 修复手机页面在顶部栏隐藏后向上滚动会冻结的问题，改善手机顶部栏与设置页的操作栏\n\n0.1.0-0141\n\n- 更新构建工具链\n- 修正手机页面多余留白、横向滑动与固定元素偏移\n\n0.1.0-0140\n\n- 更新构建工具链，压缩公开 UI 文件以缩小体积\n- 移除手机页面的操作区留白，修正触控关闭导航菜单后的按钮焦点框\n\n0.1.0-0139\n\n- 将 Syno Connect Center 注册到 Syno Package Land 移动 App，可直接打开手机版界面，无需启用 DSM 应用程序门户。保留仅限管理员的 API 访问，并更新 CLI、SDK 和 UI 依赖\n- 手机页面操作集中于 SDK 的单一更多菜单\n\n0.1.0-0138\n\n- 自定义域名通道撤回路由或重新启动后，仍显示 DSM HTTPS 的新旧端口，提供检查并重新连接，不再误报证书变更。转发至变更后的端点前，仍须管理员明确信任\n\n0.1.0-0137\n\n- NetBird 仅保留最新两份损坏状态备份，并清除过期临时文件\n- 限制 Tailscale 证书与 DNS 缓存；每 15 秒检查私有临时空间，超出预算时停止连接服务\n- 先淘汰可清理的缓存，临时文件仍超额时说明原因，并提供使用已保存登录身份的重新启动操作\n\n0.1.0-0136\n\n- 临时 Cloudflare 地址改用现有 HTTPS 证书固定代理，支持 DSM 的 HTTP 转 HTTPS 设置\n- DSM HTTPS 端口更改时显示原端口、新端口及确认后重新连接的操作\n- 将 Tailscale／NetBird 单个文件限制为 1 MiB，禁用 Taildrop 和网络映射磁盘缓存，停止时清除临时数据\n\n0.1.0-0135\n\n- 在首页打开新的“连接手机”，使用 Syno Package Land 移动应用扫描二维码，即可添加这台 NAS，也可复制相同链接\n- 优先列出局域网地址，再列出已连接的外部地址；不受信任的 HTTPS 局域网地址附带证书指纹，并排除 Cloudflare 临时地址与登录凭据"
+        ja: "0.1.0-0142\n\n- ヘッダーが隠れた後に上へスクロールするとスマートフォンの画面が固まる問題を修正し、上部バーと設定画面の操作フッターを改善\n\n0.1.0-0141\n\n- ビルドツールチェーンを更新\n- スマートフォン画面の余白、横方向のずれ、固定要素の位置ずれを修正\n\n0.1.0-0140\n\n- ビルドツールチェーンを更新し、公開 UI ファイルを圧縮して小型化\n- スマートフォン画面の操作用余白を削除し、タッチでメニューを閉じた後のボタンのフォーカス枠を修正\n\n0.1.0-0139\n\n- Syno Connect Center を Syno Package Land モバイルアプリに登録し、DSM アプリケーションポータルを有効にせずにスマートフォン用画面を直接開けるようにしました。管理者専用 API アクセスを維持し、CLI、SDK、UI を更新\n- スマートフォンのページ操作を SDK の単一メニューにまとめる\n\n0.1.0-0138\n\n- 独自ドメインのトンネルの経路撤回や再起動後も DSM HTTPS の変更前後のポートを表示し、証明書変更の警告ではなく確認と再接続を案内。変更後の接続先への転送には引き続き管理者による明示的な信頼が必要\n\n0.1.0-0137\n\n- NetBird の破損した状態のバックアップを最新 2 件に制限し、古い一時ファイルを削除\n- Tailscale の証明書と DNS キャッシュを制限。専用の一時領域を 15 秒ごとに確認し、上限を超えたサービスを停止\n- 安全に削除できるキャッシュを先に整理し、上限を超える場合は理由と保存済み認証情報での再起動を表示\n\n0.1.0-0136\n\n- 一時的な Cloudflare 接続で既存の証明書固定 HTTPS プロキシを使用し、DSM の HTTPS リダイレクトに対応\n- DSM HTTPS ポートの変更前後を表示し、確認して再接続する操作を追加\n- Tailscale/NetBird のファイルを各 1 MiB に制限し、Taildrop とネットワークマップのディスクキャッシュを無効化。停止時に一時データを削除\n\n0.1.0-0135\n\n- ホームの新しい「スマートフォンを接続」で QR コードを表示し、Syno Package Land モバイルアプリでスキャンしてこの NAS を追加できます。同じリンクのコピーも可能です\n- LAN アドレスを先に、その後に接続中の外部アドレスを表示します。信頼されていない HTTPS LAN アドレスには証明書のフィンガープリントを含め、一時的な Cloudflare アドレスと認証情報は除外します"
+        ko: "0.1.0-0142\n\n- 헤더가 숨겨진 뒤 위로 스크롤할 때 휴대폰 화면이 멈추는 문제를 수정하고 상단 표시줄과 설정 화면의 작업 표시줄을 개선\n\n0.1.0-0141\n\n- 빌드 도구 업데이트\n- 휴대폰 페이지의 불필요한 여백, 가로 이동 및 고정 요소 위치 수정\n\n0.1.0-0140\n\n- 빌드 도구를 업데이트하고 공개 UI 파일을 압축하여 크기 축소\n- 휴대폰 페이지의 빈 작업 공간을 제거하고 터치로 메뉴를 닫은 뒤 버튼에 남는 포커스 테두리 수정\n\n0.1.0-0139\n\n- Syno Connect Center를 Syno Package Land 모바일 앱에 등록하여 DSM 응용 프로그램 포털을 활성화하지 않고 휴대폰 화면을 직접 엽니다. 관리자 전용 API 접근을 유지하고 CLI, SDK, UI 의존성을 업데이트\n- 휴대폰 페이지 작업을 SDK의 단일 더보기 메뉴에 모으기\n\n0.1.0-0138\n\n- 자체 도메인 터널의 경로 철회나 재시작 후에도 DSM HTTPS의 이전 포트와 새 포트를 표시하고 인증서 변경 경고 대신 검토 및 재연결을 제공합니다. 변경된 엔드포인트로 전달하기 전에 관리자의 명시적 신뢰가 필요합니다\n\n0.1.0-0137\n\n- NetBird의 손상된 상태 백업을 최신 2개만 유지하고 오래된 임시 파일 삭제\n- Tailscale 인증서 및 DNS 캐시 제한. 전용 임시 저장소를 15초마다 확인하고 한도를 초과하면 서비스 중지\n- 안전한 캐시 정리 후에도 한도를 초과하면 원인을 설명하고 저장된 로그인으로 다시 시작 제공\n\n0.1.0-0136\n\n- 임시 Cloudflare 연결에 기존 인증서 고정 HTTPS 프록시를 사용하여 DSM HTTPS 리디렉션 지원\n- DSM HTTPS 포트 변경 시 이전 및 새 포트와 확인 후 재연결 작업 표시\n- Tailscale/NetBird 파일을 각각 1 MiB로 제한하고 Taildrop 및 네트워크 맵 디스크 캐시 비활성화, 중지 시 임시 데이터 삭제\n\n0.1.0-0135\n\n- 홈의 새로운 휴대폰 연결에서 QR 코드를 표시하고 Syno Package Land 모바일 앱으로 스캔하여 이 NAS를 추가하거나 같은 링크를 복사할 수 있습니다\n- LAN 주소를 먼저 표시한 다음 연결된 외부 주소를 표시합니다. 신뢰되지 않는 HTTPS LAN 주소에는 인증서 지문을 포함하며 임시 Cloudflare 주소와 로그인 자격 증명은 제외합니다"
+        de: "0.1.0-0142\n\n- Einfrieren der Mobilansicht beim Zurückscrollen nach dem Ausblenden der Kopfzeile behoben; obere Leiste und Aktionsleiste der Einstellungen verbessert\n\n0.1.0-0141\n\n- Build-Toolchain aktualisieren\n- Zusätzlichen Seitenabstand, seitliches Verschieben und versetzte fixierte Elemente auf dem Smartphone korrigieren\n\n0.1.0-0140\n\n- Build-Toolchain aktualisieren und öffentliche UI-Dateien durch Minifizierung verkleinern\n- Leeren Aktionsbereich auf Telefonseiten entfernen und Button-Fokus nach Schließen des Menüs per Touch korrigieren\n\n0.1.0-0139\n\n- Syno Connect Center in der mobilen Syno Package Land App registrieren und die Telefonansicht direkt ohne DSM Anwendungsportal öffnen. API-Zugriff bleibt auf Administratoren beschränkt; CLI, SDK und UI aktualisieren\n- Seitenaktionen auf dem Telefon in einem SDK-Menü bündeln\n\n0.1.0-0138\n\n- Nach Rücknahme oder Neustart einer Tunnelroute mit eigener Domain die alten und neuen DSM-HTTPS-Ports mit Prüfung und Wiederverbindung statt einer Zertifikatswarnung anzeigen. Weiterleitung weiterhin erst nach ausdrücklicher Bestätigung durch den Administrator\n\n0.1.0-0137\n\n- Nur die zwei neuesten NetBird-Sicherungen beschädigter Zustände behalten und veraltete temporäre Dateien löschen\n- Tailscale-Zertifikat- und DNS-Caches begrenzen; privaten temporären Speicher alle 15 Sekunden prüfen und Dienste bei Überschreitung stoppen\n- Zuerst entbehrliche Caches löschen; bei verbleibender Überschreitung Ursache und Neustart mit gespeicherter Anmeldung anbieten\n\n0.1.0-0136\n\n- Temporäre Cloudflare-Verbindungen verwenden den vorhandenen HTTPS-Proxy mit Zertifikatsbindung und unterstützen die HTTPS-Weiterleitung von DSM\n- Änderungen am DSM-HTTPS-Port zeigen alten und neuen Port sowie eine Aktion zum Prüfen und erneuten Verbinden\n- Tailscale/NetBird-Dateien auf jeweils 1 MiB begrenzen, Taildrop und Netzwerkplan-Disk-Cache deaktivieren und temporäre Daten beim Stoppen entfernen\n\n0.1.0-0135\n\n- Fügen Sie dieses NAS zur mobilen Syno Package Land App hinzu: Scannen Sie den neuen QR-Code unter Telefon verbinden auf der Startseite oder kopieren Sie denselben Link\n- LAN-Adressen stehen zuerst, danach folgen verbundene externe Adressen; nicht vertrauenswürdige HTTPS-LAN-Adressen enthalten Zertifikat-Fingerabdrücke, temporäre Cloudflare-Adressen und Zugangsdaten werden ausgelassen"
+        fr: "0.1.0-0142\n\n- Correction du blocage sur mobile lors du défilement vers le haut après le masquage de l’en-tête ; amélioration de la barre supérieure et des actions des paramètres\n\n0.1.0-0141\n\n- Mettre à jour les outils de compilation\n- Corriger l’espace superflu, le défilement latéral et le décalage des éléments fixes sur téléphone\n\n0.1.0-0140\n\n- Mettre à jour les outils de compilation et réduire les fichiers UI publics par minification\n- Supprimer l’espace vide des actions sur téléphone et corriger le focus du bouton après fermeture tactile du menu\n\n0.1.0-0139\n\n- Enregistrer Syno Connect Center dans l’app mobile Syno Package Land pour ouvrir directement la vue téléphone sans activer le portail des applications DSM. Conserver les API réservées aux administrateurs et mettre à jour CLI, SDK et UI\n- Regrouper les actions de page du téléphone dans un seul menu du SDK\n\n0.1.0-0138\n\n- Afficher les anciens et nouveaux ports HTTPS de DSM après le retrait ou le redémarrage du tunnel avec domaine personnel, avec vérification et reconnexion au lieu d’une alerte de certificat. Conserver la validation explicite de l’administrateur avant le transfert\n\n0.1.0-0137\n\n- Conserver les deux sauvegardes NetBird les plus récentes des états corrompus et supprimer les fichiers temporaires anciens\n- Limiter les caches de certificats et DNS Tailscale ; vérifier le stockage temporaire privé toutes les 15 secondes et arrêter les services dépassant le budget\n- Nettoyer d’abord les caches supprimables ; si la limite reste dépassée, expliquer la cause et proposer un redémarrage avec les identifiants enregistrés\n\n0.1.0-0136\n\n- Utiliser le proxy HTTPS existant avec épinglage du certificat pour les adresses Cloudflare temporaires et la redirection HTTPS de DSM\n- Afficher les anciens et nouveaux ports HTTPS de DSM avec une action de vérification et de reconnexion\n- Limiter chaque fichier Tailscale/NetBird à 1 MiB, désactiver Taildrop et le cache disque de la carte réseau, et supprimer les données temporaires à l’arrêt\n\n0.1.0-0135\n\n- Ajoutez ce NAS à l’application mobile Syno Package Land en scannant le nouveau code QR de Connecter votre téléphone sur l’accueil, ou copiez le même lien\n- Les adresses LAN précèdent les adresses externes connectées ; les adresses HTTPS LAN non approuvées incluent les empreintes des certificats, tandis que les adresses Cloudflare temporaires et les identifiants sont exclus"
+        es: "0.1.0-0142\n\n- Corregido el bloqueo de la vista móvil al desplazarse hacia arriba tras ocultarse la cabecera; mejoradas la barra superior y las acciones de configuración\n\n0.1.0-0141\n\n- Actualizar las herramientas de compilación\n- Corregir el espacio sobrante, el desplazamiento lateral y la posición de los elementos fijos en el teléfono\n\n0.1.0-0140\n\n- Actualizar las herramientas de compilación y reducir los archivos públicos de la interfaz mediante minificación\n- Eliminar el espacio vacío de acciones en el teléfono y corregir el foco del botón al cerrar el menú con un toque\n\n0.1.0-0139\n\n- Registrar Syno Connect Center en la app móvil Syno Package Land para abrir directamente la vista de teléfono sin activar el portal de aplicaciones de DSM. Mantener las API solo para administradores y actualizar CLI, SDK y UI\n- Agrupar las acciones de página del teléfono en un único menú del SDK\n\n0.1.0-0138\n\n- Mostrar los puertos HTTPS de DSM anteriores y nuevos tras retirar la ruta o reiniciar el túnel con dominio propio, con revisión y reconexión en lugar de un aviso de certificado. Mantener la confianza explícita del administrador antes de reenviar\n\n0.1.0-0137\n\n- Conservar las dos copias más recientes del estado dañado de NetBird y eliminar archivos temporales antiguos\n- Limitar las cachés de certificados y DNS de Tailscale; comprobar el almacenamiento temporal privado cada 15 segundos y detener servicios que superen el límite\n- Limpiar primero las cachés prescindibles; si se sigue superando el límite, explicar la causa y ofrecer reinicio con la sesión guardada\n\n0.1.0-0136\n\n- Usar el proxy HTTPS existente con certificado fijado para las direcciones temporales de Cloudflare y la redirección HTTPS de DSM\n- Mostrar los puertos HTTPS anterior y nuevo de DSM con una acción para revisar y reconectar\n- Limitar cada archivo de Tailscale/NetBird a 1 MiB, desactivar Taildrop y la caché de disco del mapa de red y borrar los datos temporales al detener\n\n0.1.0-0135\n\n- Añada este NAS a la aplicación móvil Syno Package Land escaneando el nuevo código QR de Conectar el teléfono en el inicio, o copie el mismo enlace\n- Las direcciones LAN aparecen primero, seguidas de las direcciones externas conectadas; las direcciones HTTPS LAN no fiables incluyen las huellas de sus certificados, y se omiten las direcciones temporales de Cloudflare y las credenciales"
+        it: "0.1.0-0142\n\n- Risolto il blocco della vista mobile scorrendo verso l’alto dopo la scomparsa dell’intestazione; migliorate la barra superiore e le azioni delle impostazioni\n\n0.1.0-0141\n\n- Aggiornare gli strumenti di compilazione\n- Correggere lo spazio in eccesso, lo scorrimento laterale e la posizione degli elementi fissi sul telefono\n\n0.1.0-0140\n\n- Aggiornare gli strumenti di compilazione e ridurre i file UI pubblici tramite minificazione\n- Rimuovere lo spazio vuoto delle azioni sul telefono e correggere il focus del pulsante dopo la chiusura del menu tramite tocco\n\n0.1.0-0139\n\n- Registrare Syno Connect Center nell’app mobile Syno Package Land per aprire direttamente la vista telefono senza attivare il portale applicazioni DSM. Mantenere le API riservate agli amministratori e aggiornare CLI, SDK e UI\n- Riunire le azioni della pagina sul telefono in un unico menu SDK\n\n0.1.0-0138\n\n- Mostrare le porte HTTPS di DSM precedenti e nuove dopo il ritiro della rotta o il riavvio del tunnel con dominio proprio, con verifica e riconnessione invece di un avviso sul certificato. Richiedere ancora la fiducia esplicita dell’amministratore prima di inoltrare\n\n0.1.0-0137\n\n- Conservare solo i due backup NetBird più recenti degli stati danneggiati ed eliminare i file temporanei obsoleti\n- Limitare le cache di certificati e DNS di Tailscale; controllare lo spazio temporaneo privato ogni 15 secondi e arrestare i servizi che superano il limite\n- Eliminare prima le cache ricreabili; se il limite resta superato, spiegare il motivo e offrire il riavvio con le credenziali salvate\n\n0.1.0-0136\n\n- Usare il proxy HTTPS esistente con certificato fissato per gli indirizzi Cloudflare temporanei e il reindirizzamento HTTPS di DSM\n- Mostrare la vecchia e la nuova porta HTTPS di DSM con un’azione di verifica e riconnessione\n- Limitare ogni file di Tailscale/NetBird a 1 MiB, disabilitare Taildrop e la cache su disco della mappa di rete e rimuovere i dati temporanei all’arresto\n\n0.1.0-0135\n\n- Aggiungi questo NAS all’app mobile Syno Package Land scansionando il nuovo codice QR di Collega il telefono nella home, oppure copia lo stesso link\n- Gli indirizzi LAN precedono quelli esterni connessi; gli indirizzi HTTPS LAN non attendibili includono le impronte dei certificati, mentre gli indirizzi temporanei Cloudflare e le credenziali sono esclusi"
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0137-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-compare-0134-en.png
@@ -766,14 +343,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0141
+        version: 0.1.0-0142
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 188a602e0f305e52cd147aea63b9abf9a95a72b62d34454d0639614e0ae89caa
-        md5: 00a8db16e38474d5c3c3e90dcdcf168b
+        sha256: 4334ed80e696015e8e7cf338b241323de1eae478ca099f0b3b2d0b40ba983cbc
+        md5: 09d324c9c3016713b09ca0d8bd7f2020
         size: 15360000
         facts:
           built_with: sdk
@@ -791,18 +368,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-07T18:17:00Z
-          source_ref: af90d0a880aa32bfb5537623ef860d6ef7b973df
+          reviewed_at: 2026-11-08T08:55:00Z
+          source_ref: 1d4c2a9979dccc7d1afb4a3d8442afd052966c64
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0141
+        version: 0.1.0-0142
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: e3e89d7e50d645a63d791ec81b53dcc558eca576a1f43cf6697a0208b19ed856
-        md5: f63e5048b5cccb02115d41fd9fe6651b
+        sha256: 74df494f6629ec8ac89e830db683f9b149476d4616d5e3f521c22553b6863bdb
+        md5: 0045bd10c071720e9744c6431d944788
         size: 15943680
         facts:
           built_with: sdk
@@ -820,11 +397,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-07T18:17:00Z
-          source_ref: af90d0a880aa32bfb5537623ef860d6ef7b973df
+          reviewed_at: 2026-11-08T08:55:00Z
+          source_ref: 1d4c2a9979dccc7d1afb4a3d8442afd052966c64
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0141
+        version: 0.1.0-0142
         arch:
           - apollolake
           - avoton
@@ -853,8 +430,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 42e2011b8b190effa8baa8dc12555ef612e828e768f56de3faa0c2222228e365
-        md5: ac366cd8c8503435d14dbe82e7f6a78c
+        sha256: c8814c881118450544d231eaeee8e0bf07f508f5e056a4da7e0ddd130a39b987
+        md5: 2b8a53296308f6e42b225307d881950f
         size: 16711680
         facts:
           built_with: sdk
@@ -872,8 +449,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-07T18:17:00Z
-          source_ref: af90d0a880aa32bfb5537623ef860d6ef7b973df
+          reviewed_at: 2026-11-08T08:55:00Z
+          source_ref: 1d4c2a9979dccc7d1afb4a3d8442afd052966c64
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
