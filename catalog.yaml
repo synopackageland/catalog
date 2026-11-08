@@ -2082,7 +2082,7 @@ packages:
       os_min_ver: 7.2.1-69057
     metadata:
       maintainer: pingdotgg
-      maintainer_url: https://github.com/pingdotgg
+      maintainer_url: https://github.com/pingdotgg/t3code
       distributor: Syno Package Land
       distributor_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
