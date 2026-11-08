@@ -1908,7 +1908,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-ovis
-      release: v0.4.22-0006
+      release: v0.5.1-0001
       access: public
     info:
       displayname: Ovis
@@ -1922,7 +1922,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://ovis.sh/
-      source_url: https://github.com/synopackageland/syno-pkg-land-ovis/tree/v0.4.22-0006
+      source_url: https://github.com/synopackageland/syno-pkg-land-ovis/tree/v0.5.1-0001
       issues_url: https://github.com/synopackageland/syno-pkg-land-ovis/issues
       license: MIT
       upstream:
@@ -1994,27 +1994,22 @@ packages:
           le statistiche anonime sono disattivate per impostazione predefinita e possono essere attivate
           nelle impostazioni
       changelog:
-        en: First public DSM release of Ovis 0.4.22 with administrator sign-in, an isolated container runtime,
-          bundled herdr, common shell tools and Python, and persistent workspace data
-        zh-TW: 首次公開發佈 Ovis 0.4.22 DSM 套件，提供管理員登入、獨立容器執行環境、內附 herdr、常用 shell 工具與 Python，並保留工作區資料
-        zh-CN: 首次公开发布 Ovis 0.4.22 DSM 套件，提供管理员登录、独立容器运行环境、内含 herdr、常用 shell 工具和 Python，并保留工作区数据
-        de: Erste öffentliche DSM-Version von Ovis 0.4.22 mit Administratoranmeldung, isolierter Container-Laufzeit,
-          herdr, gängigen Shell-Werkzeugen, Python und dauerhaft gespeicherten Arbeitsbereichsdaten
-        fr: Première version publique DSM d'Ovis 0.4.22 avec connexion administrateur, environnement conteneurisé
-          isolé, herdr, outils shell courants, Python et données d'espace de travail persistantes
-        ja: Ovis 0.4.22 の DSM 向け初公開版。管理者サインイン、分離されたコンテナー環境、herdr、一般的なシェルツール、Python、ワークスペースデータの保持に対応
-        ko: 'Ovis 0.4.22의 첫 공개 DSM 릴리스: 관리자 로그인, 격리된 컨테이너 환경, herdr, 일반 셸 도구, Python 및 작업 공간 데이터 유지 지원'
-        es: Primera versión pública para DSM de Ovis 0.4.22 con inicio de sesión de administrador, entorno
-          de contenedor aislado, herdr, herramientas shell habituales, Python y datos de trabajo persistentes
-        it: Prima versione pubblica DSM di Ovis 0.4.22 con accesso amministratore, ambiente contenitore
-          isolato, herdr, strumenti shell comuni, Python e dati di lavoro persistenti
+        en: "0.5.1-0001\n\n- Upgrade to upstream Ovis 0.5.1 with conversation, terminal and mobile fixes\n- Find SSH PCs under Devices and PCs > Add a connection > SSH\n- Preserve SSH keys, aliases and workspaces while repairing container account and home ownership\n- Rebuild both architectures with SDK 0.53.9 and CLI 0.52.6; retain DSM administrator sign-in\n\n0.4.22-0006\n\n- First public DSM release of Ovis 0.4.22 with administrator sign-in, an isolated container runtime, bundled herdr, common shell tools and Python, and persistent workspace data"
+        zh-TW: "0.5.1-0001\n\n- 升級至上游 Ovis 0.5.1，改善對話、終端機與行動裝置體驗\n- 在 Devices and PCs > Add a connection > SSH 尋找 SSH 電腦\n- 修正容器帳號與家目錄擁有者，保留 SSH 金鑰、別名與工作區\n- 使用 SDK 0.53.9 與 CLI 0.52.6 重建兩架構，沿用 DSM 管理員登入\n\n0.4.22-0006\n\n- 首次公開發佈 Ovis 0.4.22 DSM 套件，提供管理員登入、獨立容器執行環境、內附 herdr、常用 shell 工具與 Python，並保留工作區資料"
+        zh-CN: "0.5.1-0001\n\n- 升级至上游 Ovis 0.5.1，改善对话、终端与移动设备体验\n- 在 Devices and PCs > Add a connection > SSH 查找 SSH 电脑\n- 修复容器账户与主目录所有者，保留 SSH 密钥、别名和工作区\n- 使用 SDK 0.53.9 与 CLI 0.52.6 重建两种架构，沿用 DSM 管理员登录\n\n0.4.22-0006\n\n- 首次公开发布 Ovis 0.4.22 DSM 套件，提供管理员登录、独立容器运行环境、内含 herdr、常用 shell 工具和 Python，并保留工作区数据"
+        ja: "0.5.1-0001\n\n- 上流 Ovis 0.5.1 に更新し、会話、ターミナル、モバイルの問題を修正\n- SSH 接続先は Devices and PCs > Add a connection > SSH に移動\n- コンテナのアカウントとホームの所有権を修正し、SSH 鍵、別名、ワークスペースを保持\n- SDK 0.53.9 と CLI 0.52.6 で両アーキテクチャを再ビルドし、DSM 管理者ログインを維持\n\n0.4.22-0006\n\n- Ovis 0.4.22 の DSM 向け初公開版。管理者サインイン、分離されたコンテナー環境、herdr、一般的なシェルツール、Python、ワークスペースデータの保持に対応"
+        ko: "0.5.1-0001\n\n- 업스트림 Ovis 0.5.1로 업데이트하여 대화, 터미널 및 모바일 문제 수정\n- Devices and PCs > Add a connection > SSH에서 SSH PC 찾기\n- 컨테이너 계정과 홈 소유권을 수정하면서 SSH 키, 별칭 및 작업 공간 유지\n- SDK 0.53.9와 CLI 0.52.6으로 두 아키텍처를 다시 빌드하고 DSM 관리자 로그인 유지\n\n0.4.22-0006\n\n- Ovis 0.4.22의 첫 공개 DSM 릴리스: 관리자 로그인, 격리된 컨테이너 환경, herdr, 일반 셸 도구, Python 및 작업 공간 데이터 유지 지원"
+        de: "0.5.1-0001\n\n- Auf Ovis 0.5.1 mit Korrekturen für Gespräche, Terminal und Mobilgeräte aktualisieren\n- SSH-PCs unter Devices and PCs > Add a connection > SSH finden\n- Containerkonto und Home-Eigentümer korrigieren; SSH-Schlüssel, Aliase und Arbeitsbereiche behalten\n- Beide Architekturen mit SDK 0.53.9 und CLI 0.52.6 neu bauen; DSM-Administratoranmeldung beibehalten\n\n0.4.22-0006\n\n- Erste öffentliche DSM-Version von Ovis 0.4.22 mit Administratoranmeldung, isolierter Container-Laufzeit, herdr, gängigen Shell-Werkzeugen, Python und dauerhaft gespeicherten Arbeitsbereichsdaten"
+        fr: "0.5.1-0001\n\n- Passer à Ovis 0.5.1 avec des corrections des conversations, du terminal et de l’affichage mobile\n- Retrouver les PC SSH dans Devices and PCs > Add a connection > SSH\n- Corriger le compte du conteneur et la propriété du dossier personnel en conservant clés SSH, alias et espaces de travail\n- Reconstruire les deux architectures avec SDK 0.53.9 et CLI 0.52.6, avec connexion administrateur DSM\n\n0.4.22-0006\n\n- Première version publique DSM d'Ovis 0.4.22 avec connexion administrateur, environnement conteneurisé isolé, herdr, outils shell courants, Python et données d'espace de travail persistantes"
+        es: "0.5.1-0001\n\n- Actualizar a Ovis 0.5.1 con correcciones de conversaciones, terminal y dispositivos móviles\n- Encontrar los PC SSH en Devices and PCs > Add a connection > SSH\n- Corregir la cuenta del contenedor y la propiedad del directorio personal conservando claves SSH, alias y espacios de trabajo\n- Reconstruir ambas arquitecturas con SDK 0.53.9 y CLI 0.52.6 y mantener el acceso de administrador DSM\n\n0.4.22-0006\n\n- Primera versión pública para DSM de Ovis 0.4.22 con inicio de sesión de administrador, entorno de contenedor aislado, herdr, herramientas shell habituales, Python y datos de trabajo persistentes"
+        it: "0.5.1-0001\n\n- Aggiornare a Ovis 0.5.1 con correzioni per conversazioni, terminale e dispositivi mobili\n- Trovare i PC SSH in Devices and PCs > Add a connection > SSH\n- Correggere l’account del contenitore e la proprietà della home mantenendo chiavi SSH, alias e spazi di lavoro\n- Ricostruire entrambe le architetture con SDK 0.53.9 e CLI 0.52.6 mantenendo l’accesso amministratore DSM\n\n0.4.22-0006\n\n- Prima versione pubblica DSM di Ovis 0.4.22 con accesso amministratore, ambiente contenitore isolato, herdr, strumenti shell comuni, Python e dati di lavoro persistenti"
       screenshots:
       - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/01-welcome.png
       - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/02-agent-setup.png
       - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/03-phone-welcome.png
     pins:
     - package: Ovis
-      version: 0.4.22-0006
+      version: 0.5.1-0001
       arch:
       - apollolake
       - avoton
@@ -2043,30 +2038,30 @@ packages:
       - skylaked
       - v1000
       - v1000nk
-      sha256: 9aab8e83e06f869eefbfff8a2ad14c8f5018672947340b80277ff1bb0136949d
-      md5: f03af67663432c22d6ec4eeb1e3df31f
-      size: 29563392
+      sha256: 659cb0a9d4bf8e5d3a810e27b43b7003759d03269c18afed236ef77c58db913b
+      md5: 63aaba44163899d262805f568ea62ea5
+      size: 29569024
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: '2026-11-07T02:08:09Z'
-        source_ref: 60c28429cc694982b019279b33222a08f3f51187
+        reviewed_at: '2026-11-08T11:58:25Z'
+        source_ref: 61a8b749c6c5c6228f5652e308ce33899d57a002
         source_repo: synopackageland/syno-pkg-land-ovis
     - package: Ovis
-      version: 0.4.22-0006
+      version: 0.5.1-0001
       arch:
       - armada37xx
       - rtd1296
       - rtd1619
       - rtd1619b
-      sha256: f10e81f77be79e6dfd98810400a131d63ff1df8853b614fccb507488fa7430f7
-      md5: 6c30dc8a39c9c643f4e1a95aab138446
-      size: 26895872
+      sha256: aa2d987a26320cd556e45203f66441977d6f0ac888d281623ea3ddca582ab800
+      md5: c98777d2672519cdc5badb3fbf6993c9
+      size: 26903040
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: '2026-11-07T02:08:09Z'
-        source_ref: 60c28429cc694982b019279b33222a08f3f51187
+        reviewed_at: '2026-11-08T11:58:25Z'
+        source_ref: 61a8b749c6c5c6228f5652e308ce33899d57a002
         source_repo: synopackageland/syno-pkg-land-ovis
 
 publishers:
