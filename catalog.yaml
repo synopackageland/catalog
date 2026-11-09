@@ -2374,7 +2374,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.4.0-0011
+      release: v3.4.0-0012
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -2422,44 +2422,62 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgPaperlessNgx/02-workflow-upstream.png
       changelog:
         en: |-
+          Store temporary files on disk instead of memory
+
           Choose an existing NAS subfolder for document consumption
 
           Control documents with personal API tokens, bounded uploads and verified original downloads
         zh-TW: |-
+          暫存檔改存於磁碟而非記憶體
+
           支援選擇既有 NAS 子資料夾作為文件匯入目錄
 
           以個人 API token 操作文件，支援有界上傳與原檔下載驗證
         zh-CN: |-
+          临时文件改存于磁盘而非内存
+
           支持选择现有 NAS 子文件夹作为文档导入目录
 
           使用个人 API token 操作文档，支持有界上传与原文件下载验证
         ja: |-
+          一時ファイルをメモリではなくディスクに保存
+
           文書の取り込みに既存の NAS サブフォルダーを選択
 
           個人 API トークンで文書を操作し、上限付きアップロードと原本ダウンロードを検証
         ko: |-
+          임시 파일을 메모리 대신 디스크에 저장
+
           문서 가져오기에 기존 NAS 하위 폴더 선택
 
           개인 API 토큰으로 문서를 관리하고 제한된 업로드와 원본 다운로드 검증 지원
         de: |-
+          Temporäre Dateien auf der Festplatte statt im Arbeitsspeicher speichern
+
           Vorhandenen NAS-Unterordner für den Dokumentimport wählen
 
           Dokumente mit persönlichen API-Tokens steuern, begrenzt hochladen und Originaldownloads prüfen
         fr: |-
+          Stocker les fichiers temporaires sur le disque plutôt qu’en mémoire
+
           Choisir un sous-dossier NAS existant pour importer les documents
 
           Gérer les documents avec des jetons API personnels, des envois bornés et des originaux vérifiés
         es: |-
+          Guardar los archivos temporales en el disco en lugar de en la memoria
+
           Elegir una subcarpeta existente del NAS para importar documentos
 
           Gestiona documentos con tokens API personales, cargas limitadas y descargas originales verificadas
         it: |-
+          Salvare i file temporanei su disco invece che in memoria
+
           Scegliere una sottocartella NAS esistente per importare documenti
 
           Gestisci documenti con token API personali, caricamenti limitati e download originali verificati
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.4.0-0011
+        version: 3.4.0-0012
         arch:
           - apollolake
           - avoton
@@ -2488,9 +2506,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 6f3667058c18ce1bb5ab70019868b6b1ee64393bd0c25473f154e324cc1758a9
-        md5: 3df54b55b92204fbd2ed46350146586a
-        size: 43347456
+        sha256: 652cc3f508bf7184c0c9c28220191c1e830b71aa16ea9a6e2fc0ed8947dfc3d9
+        md5: 4fce98a5cf99679e714bab96a2630516
+        size: 43364352
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2508,8 +2526,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T10:39:35Z
-          source_ref: 88d5702493113d19e3e59ce9e1667fec4575920f
+          reviewed_at: 2026-11-09T14:54:24Z
+          source_ref: 6f534603ef1588f59acb75443c3215610bfd028c
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
