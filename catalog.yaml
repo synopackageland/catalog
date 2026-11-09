@@ -397,7 +397,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0143
+      release: v0.1.0-0144
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -552,6 +552,11 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         en: |-
+          0.1.0-0144
+
+          - Keep the app open when a sign-in status check cannot complete
+          - Improve the visibility of selected items on mobile
+
           0.1.0-0143
 
           - Refresh window corners, keyboard focus and dialog overlays
@@ -597,6 +602,11 @@ packages:
           - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your phone QR code on the Home, or copy the same link
           - LAN addresses come first, followed by connected external addresses; untrusted HTTPS LAN addresses include certificate fingerprints, while temporary Cloudflare addresses and credentials are omitted
         zh-TW: |-
+          0.1.0-0144
+
+          - 登入狀態暫時無法確認時，保持應用程式畫面開啟
+          - 讓手機版已選取的項目更清楚可見
+
           0.1.0-0143
 
           - 更新視窗圓角、鍵盤焦點與對話框遮罩
@@ -642,6 +652,11 @@ packages:
           - 在首頁開啟新的「連接手機」，使用 Syno Package Land 行動應用程式掃描 QR code，即可加入這台 NAS，也可複製相同連結
           - 優先列出區域網路位址，再列出已連線的外部位址；不受信任的 HTTPS 區域網路位址附帶憑證指紋，並排除 Cloudflare 臨時位址與登入憑證
         zh-CN: |-
+          0.1.0-0144
+
+          - 暂时无法确认登录状态时，保持应用程序界面打开
+          - 让手机版已选中的项目更清晰可见
+
           0.1.0-0143
 
           - 更新窗口圆角、键盘焦点与对话框遮罩
@@ -687,6 +702,11 @@ packages:
           - 在首页打开新的“连接手机”，使用 Syno Package Land 移动应用扫描二维码，即可添加这台 NAS，也可复制相同链接
           - 优先列出局域网地址，再列出已连接的外部地址；不受信任的 HTTPS 局域网地址附带证书指纹，并排除 Cloudflare 临时地址与登录凭据
         de: |-
+          0.1.0-0144
+
+          - Die App bleibt geöffnet, wenn der Anmeldestatus vorübergehend nicht geprüft werden kann
+          - Ausgewählte Elemente auf Mobilgeräten deutlicher hervorheben
+
           0.1.0-0143
 
           - Fensterecken, Tastaturfokus und Dialogüberlagerungen überarbeitet
@@ -732,6 +752,11 @@ packages:
           - Fügen Sie dieses NAS zur mobilen Syno Package Land App hinzu: Scannen Sie den neuen QR-Code unter Telefon verbinden auf der Startseite oder kopieren Sie denselben Link
           - LAN-Adressen stehen zuerst, danach folgen verbundene externe Adressen; nicht vertrauenswürdige HTTPS-LAN-Adressen enthalten Zertifikat-Fingerabdrücke, temporäre Cloudflare-Adressen und Zugangsdaten werden ausgelassen
         fr: |-
+          0.1.0-0144
+
+          - Garder l’application ouverte si la vérification de la connexion ne peut pas aboutir
+          - Rendre les éléments sélectionnés plus visibles sur mobile
+
           0.1.0-0143
 
           - Actualisation des coins des fenêtres, du focus clavier et des arrière-plans des boîtes de dialogue
@@ -777,6 +802,11 @@ packages:
           - Ajoutez ce NAS à l’application mobile Syno Package Land en scannant le nouveau code QR de Connecter votre téléphone sur l’accueil, ou copiez le même lien
           - Les adresses LAN précèdent les adresses externes connectées ; les adresses HTTPS LAN non approuvées incluent les empreintes des certificats, tandis que les adresses Cloudflare temporaires et les identifiants sont exclus
         ja: |-
+          0.1.0-0144
+
+          - サインイン状態を一時的に確認できない場合もアプリ画面を維持
+          - モバイルで選択済みの項目をより見やすく表示
+
           0.1.0-0143
 
           - ウィンドウの角丸、キーボードフォーカス、ダイアログの背景を更新
@@ -822,6 +852,11 @@ packages:
           - ホームの新しい「スマートフォンを接続」で QR コードを表示し、Syno Package Land モバイルアプリでスキャンしてこの NAS を追加できます。同じリンクのコピーも可能です
           - LAN アドレスを先に、その後に接続中の外部アドレスを表示します。信頼されていない HTTPS LAN アドレスには証明書のフィンガープリントを含め、一時的な Cloudflare アドレスと認証情報は除外します
         ko: |-
+          0.1.0-0144
+
+          - 로그인 상태를 일시적으로 확인할 수 없어도 앱 화면 유지
+          - 모바일에서 선택한 항목을 더 쉽게 확인
+
           0.1.0-0143
 
           - 창 모서리, 키보드 포커스 및 대화 상자 배경 업데이트
@@ -867,6 +902,11 @@ packages:
           - 홈의 새로운 휴대폰 연결에서 QR 코드를 표시하고 Syno Package Land 모바일 앱으로 스캔하여 이 NAS를 추가하거나 같은 링크를 복사할 수 있습니다
           - LAN 주소를 먼저 표시한 다음 연결된 외부 주소를 표시합니다. 신뢰되지 않는 HTTPS LAN 주소에는 인증서 지문을 포함하며 임시 Cloudflare 주소와 로그인 자격 증명은 제외합니다
         es: |-
+          0.1.0-0144
+
+          - Mantener la aplicación abierta si no se puede comprobar el estado de la sesión
+          - Mejorar la visibilidad de los elementos seleccionados en el móvil
+
           0.1.0-0143
 
           - Actualizar las esquinas de las ventanas, el foco del teclado y los fondos de los diálogos
@@ -912,6 +952,11 @@ packages:
           - Añada este NAS a la aplicación móvil Syno Package Land escaneando el nuevo código QR de Conectar el teléfono en el inicio, o copie el mismo enlace
           - Las direcciones LAN aparecen primero, seguidas de las direcciones externas conectadas; las direcciones HTTPS LAN no fiables incluyen las huellas de sus certificados, y se omiten las direcciones temporales de Cloudflare y las credenciales
         it: |-
+          0.1.0-0144
+
+          - Mantenere aperta l’app se non è possibile verificare lo stato di accesso
+          - Rendere più visibili gli elementi selezionati sui dispositivi mobili
+
           0.1.0-0143
 
           - Aggiornati gli angoli delle finestre, il focus della tastiera e gli sfondi delle finestre di dialogo
@@ -964,14 +1009,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0143
+        version: 0.1.0-0144
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 4a090e3d354cba3028f6b529adb8354e7b3ff54bdb6a91a272013ee25882b1b8
-        md5: 2e62a18b6c023c849ed489cb2eec577b
+        sha256: 010b9059fcb7f26ed1ea7f01d0492ab7cf317b9b5cc51c27bcb31e1bf1577b3d
+        md5: f2f166e79a55d495382640789aa7f1e4
         size: 15370240
         facts:
           built_with: sdk
@@ -989,18 +1034,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T01:05:47Z
-          source_ref: df1a54c65ec4ee34807adae84291895eeb705276
+          reviewed_at: 2026-11-09T05:30:00Z
+          source_ref: f4814f9745ed27c34ad332e5bc0bee3f0fe6d31f
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0143
+        version: 0.1.0-0144
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: e368257cab36d11e4ae0deb27c8030f65769b97c59431e9bd238014e2235605b
-        md5: eabf9de2aba662e42071c7e35b489734
+        sha256: dd7b7944139a5978fa358841fc15acbf8016fee198c139e68ce3c57060cf681a
+        md5: 45efd433741008c10db206eecc9be28e
         size: 15953920
         facts:
           built_with: sdk
@@ -1018,11 +1063,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T01:05:47Z
-          source_ref: df1a54c65ec4ee34807adae84291895eeb705276
+          reviewed_at: 2026-11-09T05:30:00Z
+          source_ref: f4814f9745ed27c34ad332e5bc0bee3f0fe6d31f
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0143
+        version: 0.1.0-0144
         arch:
           - apollolake
           - avoton
@@ -1051,8 +1096,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e926861fe867e2a58596ea79d45b0194e6d5f3e1db2afbf86d944d232dd5ed7f
-        md5: 0ee9e8eb2ccced5be3d8f136c451f678
+        sha256: 383e0faa44416622b255f7ec3cfcc1f44e04121773dab55b4cb533fee183f16d
+        md5: 38bdb4d247f3a33dddc23328fc980dab
         size: 16732160
         facts:
           built_with: sdk
@@ -1070,8 +1115,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T01:05:47Z
-          source_ref: df1a54c65ec4ee34807adae84291895eeb705276
+          reviewed_at: 2026-11-09T05:30:00Z
+          source_ref: f4814f9745ed27c34ad332e5bc0bee3f0fe6d31f
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
