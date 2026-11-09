@@ -1871,7 +1871,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.2-0011
+      release: v2.37.2-0012
       access: private
     metadata:
       maintainer: advplyr
@@ -1922,40 +1922,58 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgAudiobookshelf/02-library-player-upstream.png
       changelog:
         en: |-
+          Keep temporary files on disk instead of memory
+
           Select a media folder at any depth within a shared folder
 
           Fix DSM sign-in when opening over HTTP
         zh-TW: |-
+          暫存檔改存於磁碟而非記憶體
+
           可選取共享資料夾內任意層級的媒體資料夾
 
           修正以 HTTP 開啟時的 DSM 登入
         zh-CN: |-
+          临时文件改存于磁盘而非内存
+
           可选择共享文件夹内任意层级的媒体文件夹
 
           修复通过 HTTP 打开时的 DSM 登录
         ja: |-
+          一時ファイルをメモリーではなくディスクに保存
+
           共有フォルダー内の任意の階層にあるメディアフォルダーを選択
 
           HTTP で開いた際の DSM サインインを修正
         ko: |-
+          임시 파일을 메모리 대신 디스크에 저장
+
           공유 폴더 내 모든 깊이의 미디어 폴더 선택 지원
 
           HTTP로 열 때 DSM 로그인 문제 수정
         de: |-
+          Temporäre Dateien auf dem Datenträger statt im Arbeitsspeicher ablegen
+
           Medienordner auf jeder Ebene eines freigegebenen Ordners auswählen
 
           DSM-Anmeldung beim Öffnen über HTTP korrigieren
         fr: |-
+          Conserver les fichiers temporaires sur le disque plutôt qu’en mémoire
+
           Choisir un dossier multimédia à toute profondeur dans un dossier partagé
 
           Corriger la connexion DSM lors de l’ouverture via HTTP
         es: |-
+          Guardar los archivos temporales en el disco en lugar de en la memoria
+
           Seleccionar una carpeta multimedia a cualquier nivel dentro de una carpeta compartida
         it: |-
+          Conservare i file temporanei su disco anziché in memoria
+
           Seleziona una cartella multimediale a qualsiasi livello in una cartella condivisa
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.2-0011
+        version: 2.37.2-0012
         arch:
           - apollolake
           - avoton
@@ -1984,9 +2002,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: dede8cdce53e85def863118530f8ca16f2ebcf9f9578e429191d4f80f912c898
-        md5: fd7d7765410afc6167ce3f3e60cc790d
-        size: 38542848
+        sha256: 51a7c7d2f62b37d0d906410159a3091c4e5e6f6ba9205173b5b4e65dc8c9f271
+        md5: 33ca2c6f7c3e4805ece95c0aeb627ee4
+        size: 38565888
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2004,8 +2022,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T10:46:22Z
-          source_ref: 5666b233a47ca524b3a0d0abc4e08a3b95c7945c
+          reviewed_at: 2026-11-09T14:18:41Z
+          source_ref: 46f71021243242d857f71d3c7fea1d9da88e7581
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - listed: true
     recommended: false
