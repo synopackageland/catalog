@@ -1738,7 +1738,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0017
+      release: v1.30.4-0018
       access: private
     metadata:
       maintainer: FreshRSS
@@ -1773,18 +1773,45 @@ packages:
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgFreshRSS/01-feed-reader-upstream.png
       changelog:
-        en: "Add native API controls and preserve API preferences"
-        zh-TW: "新增原生 API 控制並保留 API 偏好設定"
-        zh-CN: "新增原生 API 控制并保留 API 偏好设置"
-        ja: "ネイティブ API 操作を追加し API 設定を保持"
-        ko: "네이티브 API 제어 추가 및 API 설정 유지"
-        de: "Native API-Steuerung hinzufügen und API-Einstellungen erhalten"
-        fr: "Ajouter les commandes API natives et conserver les préférences API"
-        es: "Añadir controles de API nativa y conservar las preferencias"
-        it: "Aggiungere controlli API nativi e conservare le preferenze"
+        en: |-
+          Improve page loading reliability when signing in
+
+          Add native API controls and preserve API preferences
+        zh-TW: |-
+          改善登入時頁面載入的穩定性
+
+          新增原生 API 控制並保留 API 偏好設定
+        zh-CN: |-
+          改善登录时页面加载的稳定性
+
+          新增原生 API 控制并保留 API 偏好设置
+        ja: |-
+          サインイン時のページ読み込みの安定性を改善
+
+          ネイティブ API 操作を追加し API 設定を保持
+        ko: |-
+          로그인 시 페이지 로딩 안정성 개선
+
+          네이티브 API 제어 추가 및 API 설정 유지
+        de: |-
+          Zuverlässigkeit beim Laden von Seiten während der Anmeldung verbessern
+
+          Native API-Steuerung hinzufügen und API-Einstellungen erhalten
+        fr: |-
+          Améliorer la fiabilité du chargement des pages lors de la connexion
+
+          Ajouter les commandes API natives et conserver les préférences API
+        es: |-
+          Mejorar la fiabilidad de la carga de páginas al iniciar sesión
+
+          Añadir controles de API nativa y conservar las preferencias
+        it: |-
+          Migliorare l’affidabilità del caricamento delle pagine durante l’accesso
+
+          Aggiungere controlli API nativi e conservare le preferenze
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0017
+        version: 1.30.4-0018
         arch:
           - apollolake
           - avoton
@@ -1813,9 +1840,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 0685385bf406d65f930f8376af451f74c4cf30adc55236bdbdbfd6a9b193a5b3
-        md5: eda15bc982c43163ba60ce9fe2eaf90a
-        size: 41712128
+        sha256: caedc0c654907b21c51344333567bb3f56796f170012da822da088e4740f84f8
+        md5: 4ddf666abd0c5a8029f805727305d47c
+        size: 41786880
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1832,8 +1859,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-08T02:25:14Z
-          source_ref: 05cb6000015aa70733e069b6ed604f7f8e4d6216
+          reviewed_at: 2026-11-09T06:59:52Z
+          source_ref: 241d5bd2e6486c237bfc824846a67b729055df2e
           source_repo: synopackageland/syno-pkg-land-freshrss
   - listed: true
     recommended: false
