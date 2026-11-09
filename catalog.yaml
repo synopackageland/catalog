@@ -2624,7 +2624,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-navidrome
-      release: v0.64.2-0020
+      release: v0.64.2-0021
       access: public
     metadata:
       maintainer: Navidrome
@@ -2673,40 +2673,58 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgNavidrome/02-album-player-upstream.jpg
       changelog:
         en: |-
+          Keep temporary files on disk instead of memory
+
           Select a media folder at any depth within a shared folder
 
           Fix DSM sign-in when opening over HTTP
         zh-TW: |-
+          暫存檔改存於磁碟而非記憶體
+
           可選取共享資料夾內任意層級的媒體資料夾
 
           修正以 HTTP 開啟時的 DSM 登入
         zh-CN: |-
+          临时文件改存于磁盘而非内存
+
           可选择共享文件夹内任意层级的媒体文件夹
 
           修复通过 HTTP 打开时的 DSM 登录
         ja: |-
+          一時ファイルをメモリーではなくディスクに保存
+
           共有フォルダー内の任意の階層にあるメディアフォルダーを選択
 
           HTTP で開いた際の DSM サインインを修正
         ko: |-
+          임시 파일을 메모리 대신 디스크에 저장
+
           공유 폴더 내 모든 깊이의 미디어 폴더 선택 지원
 
           HTTP로 열 때 DSM 로그인 문제 수정
         de: |-
+          Temporäre Dateien auf dem Datenträger statt im Arbeitsspeicher ablegen
+
           Medienordner auf jeder Ebene eines freigegebenen Ordners auswählen
 
           DSM-Anmeldung beim Öffnen über HTTP korrigieren
         fr: |-
+          Conserver les fichiers temporaires sur le disque plutôt qu’en mémoire
+
           Choisir un dossier multimédia à toute profondeur dans un dossier partagé
 
           Corriger la connexion DSM lors de l’ouverture via HTTP
         es: |-
+          Guardar los archivos temporales en el disco en lugar de en la memoria
+
           Seleccionar una carpeta multimedia a cualquier nivel dentro de una carpeta compartida
         it: |-
+          Conservare i file temporanei su disco anziché in memoria
+
           Seleziona una cartella multimediale a qualsiasi livello in una cartella condivisa
     pins:
       - package: SynoPkgNavidrome
-        version: 0.64.2-0020
+        version: 0.64.2-0021
         arch:
           - apollolake
           - avoton
@@ -2735,9 +2753,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 0d1a74148127e160e7f974ca0a6ba5160fee104a1c257f111b072e67e77187bf
-        md5: 2bd4f7f0ba47b8f5db75af00e2802745
-        size: 50028032
+        sha256: cd63f1fbc6dcb60f8c6efd446ba0183054577aa695cb796d805570ce5a23e8f2
+        md5: 92cf4b751ce913ff0b09e3e33f995217
+        size: 50059264
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2755,8 +2773,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T10:46:43Z
-          source_ref: f7c40077a1b52bd6f2c1bf163a62082205198cab
+          reviewed_at: 2026-11-09T14:19:31Z
+          source_ref: 2c265cc6595843001600405abd8a10cbcee95c58
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - listed: true
