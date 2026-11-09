@@ -1738,7 +1738,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0018
+      release: v1.30.4-0019
       access: private
     metadata:
       maintainer: FreshRSS
@@ -1774,44 +1774,62 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgFreshRSS/01-feed-reader-upstream.png
       changelog:
         en: |-
+          Store temporary files on disk instead of memory
+
           Improve page loading reliability when signing in
 
           Add native API controls and preserve API preferences
         zh-TW: |-
+          暫存檔改存於磁碟而非記憶體
+
           改善登入時頁面載入的穩定性
 
           新增原生 API 控制並保留 API 偏好設定
         zh-CN: |-
+          临时文件改存于磁盘而非内存
+
           改善登录时页面加载的稳定性
 
           新增原生 API 控制并保留 API 偏好设置
         ja: |-
+          一時ファイルをメモリではなくディスクに保存
+
           サインイン時のページ読み込みの安定性を改善
 
           ネイティブ API 操作を追加し API 設定を保持
         ko: |-
+          임시 파일을 메모리 대신 디스크에 저장
+
           로그인 시 페이지 로딩 안정성 개선
 
           네이티브 API 제어 추가 및 API 설정 유지
         de: |-
+          Temporäre Dateien auf der Festplatte statt im Arbeitsspeicher speichern
+
           Zuverlässigkeit beim Laden von Seiten während der Anmeldung verbessern
 
           Native API-Steuerung hinzufügen und API-Einstellungen erhalten
         fr: |-
+          Stocker les fichiers temporaires sur le disque plutôt qu’en mémoire
+
           Améliorer la fiabilité du chargement des pages lors de la connexion
 
           Ajouter les commandes API natives et conserver les préférences API
         es: |-
+          Guardar los archivos temporales en el disco en lugar de en la memoria
+
           Mejorar la fiabilidad de la carga de páginas al iniciar sesión
 
           Añadir controles de API nativa y conservar las preferencias
         it: |-
+          Salvare i file temporanei su disco invece che in memoria
+
           Migliorare l’affidabilità del caricamento delle pagine durante l’accesso
 
           Aggiungere controlli API nativi e conservare le preferenze
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0018
+        version: 1.30.4-0019
         arch:
           - apollolake
           - avoton
@@ -1840,9 +1858,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: caedc0c654907b21c51344333567bb3f56796f170012da822da088e4740f84f8
-        md5: 4ddf666abd0c5a8029f805727305d47c
-        size: 41786880
+        sha256: c5ba7c33157640e3b4fd7eebb8d5654d259943cd574045c006c50f839a9205cf
+        md5: b2239434fb0980f77db9c7df1b7c6547
+        size: 42681856
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1859,8 +1877,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T06:59:52Z
-          source_ref: 241d5bd2e6486c237bfc824846a67b729055df2e
+          reviewed_at: 2026-11-09T14:53:39Z
+          source_ref: 2ab81d1869633e2b1e2ac35104b9deacb308c9a4
           source_repo: synopackageland/syno-pkg-land-freshrss
   - listed: true
     recommended: false
