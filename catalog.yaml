@@ -1125,7 +1125,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0096
+      release: v0.2.2-0097
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1196,6 +1196,10 @@ packages:
         ko: HTTP/HTTPS 링크, 토렌트, 마그넷 링크, ED2K 파일은 물론 yt-dlp가 지원하는 사이트의 동영상과 확장 기능으로 추가한 소스에서도 내려받아요. 다운로드를 일시 정지, 재개, 정리하고, 완료된 파일을 저장할 위치를 고르고, 기록을 볼 수 있어요. 다운로드는 사용자마다 따로이고, 접근 권한과 확장 기능, 엔진 업데이트는 관리자가 관리해요. Gopeed 기반이며 DSM 로그인이 필요해요
       changelog:
         en: |-
+          0.2.2-0097
+
+          - Improve sign-in reliability and responsiveness when the NAS is busy, and make selected items clearer on phones
+
           0.2.2-0096
 
           - Improve startup and authorization feedback, refresh window and dialog styling, and refine touch feedback on phones
@@ -1219,6 +1223,10 @@ packages:
           - Replace unsupported filename characters and automatically rename same-name downloads without replacing existing files
           - Correctly recognize completed multi-file saves in subfolders and recover saves left pending by the earlier result check without copying again
         zh-TW: |-
+          0.2.2-0097
+
+          - 改善登入穩定性與 NAS 忙碌時的操作回應，讓手機上的已選項目更清楚
+
           0.2.2-0096
 
           - 改善啟動與授權提示，更新視窗及對話框外觀，並優化手機觸控回饋
@@ -1242,6 +1250,10 @@ packages:
           - 替換檔名中不支援的字元，並自動重新命名同名下載，保留既有檔案
           - 正確辨識已存入子資料夾的多檔下載，並恢復因舊版結果檢查而停在待確認的儲存狀態，不重複複製
         zh-CN: |-
+          0.2.2-0097
+
+          - 改善登录稳定性与 NAS 忙碌时的操作响应，让手机上的已选项目更清楚
+
           0.2.2-0096
 
           - 改善启动与授权提示，更新窗口及对话框外观，并优化手机触控反馈
@@ -1265,6 +1277,10 @@ packages:
           - 替换文件名中不支持的字符，并自动重命名同名下载，保留现有文件
           - 正确识别已存入子文件夹的多文件下载，并恢复因旧版结果检查而停在待确认的保存状态，不重复复制
         de: |-
+          0.2.2-0097
+
+          - Zuverlässigere Anmeldung und bessere Reaktion bei ausgelastetem NAS sowie deutlichere Markierung ausgewählter Elemente auf Smartphones
+
           0.2.2-0096
 
           - Verbesserte Rückmeldungen beim Start und bei der Autorisierung, überarbeitete Fenster und Dialoge sowie optimierte Touch-Rückmeldungen auf Smartphones
@@ -1288,6 +1304,10 @@ packages:
           - Nicht unterstützte Zeichen in Dateinamen ersetzen und gleichnamige Downloads automatisch umbenennen, ohne vorhandene Dateien zu ersetzen
           - Abgeschlossene Speichervorgänge für mehrere Dateien in Unterordnern korrekt erkennen und durch die frühere Ergebnisprüfung ausstehende Vorgänge ohne erneutes Kopieren abschließen
         fr: |-
+          0.2.2-0097
+
+          - Connexion plus fiable et meilleure réactivité lorsque le NAS est occupé, avec une sélection plus visible sur téléphone
+
           0.2.2-0096
 
           - Amélioration des indications au démarrage et lors de l’autorisation, nouveau style des fenêtres et des boîtes de dialogue et retour tactile affiné sur téléphone
@@ -1311,6 +1331,10 @@ packages:
           - Remplacer les caractères non pris en charge dans les noms et renommer automatiquement les téléchargements de même nom sans remplacer les fichiers existants
           - Reconnaître correctement les sauvegardes multiples terminées dans des sous-dossiers et rétablir celles restées en attente à cause de l’ancienne vérification, sans nouvelle copie
         ja: |-
+          0.2.2-0097
+
+          - サインインの安定性と NAS が混雑しているときの操作応答を改善し、スマートフォンで選択中の項目を見やすく表示
+
           0.2.2-0096
 
           - 起動と認証の案内を改善し、ウィンドウとダイアログの表示を更新、スマートフォンのタッチ操作時の反応を調整
@@ -1334,6 +1358,10 @@ packages:
           - ファイル名の未対応文字を置き換え、同名のダウンロードを自動で改名して既存のファイルを保持
           - サブフォルダーへの複数ファイルの保存完了を正しく認識し、従来の結果確認で保留になった保存を再コピーせずに復元
         ko: |-
+          0.2.2-0097
+
+          - 로그인 안정성과 NAS가 사용 중일 때의 응답성을 개선하고 휴대폰에서 선택한 항목을 더 명확하게 표시
+
           0.2.2-0096
 
           - 시작 및 권한 승인 안내를 개선하고, 창과 대화 상자 디자인을 새롭게 다듬으며 휴대폰 터치 반응을 개선
@@ -1357,6 +1385,10 @@ packages:
           - 파일명의 지원되지 않는 문자를 바꾸고 이름이 같은 다운로드는 자동으로 이름을 변경하여 기존 파일 보존
           - 하위 폴더의 여러 파일 저장 완료를 올바르게 인식하고 이전 결과 확인으로 보류된 저장 상태를 다시 복사하지 않고 복구
         es: |-
+          0.2.2-0097
+
+          - Mejora la fiabilidad del inicio de sesión y la respuesta cuando el NAS está ocupado, y muestra con más claridad los elementos seleccionados en teléfonos
+
           0.2.2-0096
 
           - Mejoras en los avisos de inicio y autorización, en el aspecto de ventanas y diálogos y en la respuesta táctil en teléfonos
@@ -1380,6 +1412,10 @@ packages:
           - Sustituye los caracteres no admitidos en los nombres y renombra automáticamente las descargas con el mismo nombre sin reemplazar los archivos existentes
           - Reconoce correctamente los guardados de varios archivos completados en subcarpetas y recupera los que quedaron pendientes por la comprobación anterior sin volver a copiarlos
         it: |-
+          0.2.2-0097
+
+          - Migliora l’affidabilità dell’accesso e la risposta quando il NAS è occupato, rendendo più chiari gli elementi selezionati sui telefoni
+
           0.2.2-0096
 
           - Miglioramenti alle indicazioni di avvio e autorizzazione, allo stile di finestre e dialoghi e alla risposta al tocco sui telefoni
@@ -1410,15 +1446,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0096
+        version: 0.2.2-0097
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 77c6f65a3e116260bbe34eba9a89d9ce81934c3925092b97a89538d0d92a48cd
-        md5: ee780d373174f8062bb5509e9bacd01a
-        size: 67390464
+        sha256: 3cae18b155a2e98225e73f9fe141ba0207da49d2ee810daabbbc7db77941073e
+        md5: b8c98e5abb53e8b7c59f69a150a7b941
+        size: 67396608
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1436,11 +1472,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T02:30:00Z
-          source_ref: 127fec05887f2f29dcf0958c5db6092fe049362c
+          reviewed_at: 2026-11-09T06:00:00Z
+          source_ref: 3b5d3165db8568037e404a291b18e7aa22e0539a
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0096
+        version: 0.2.2-0097
         arch:
           - apollolake
           - avoton
@@ -1469,9 +1505,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c19db8b21f7eafbd53f94781c1773f64077703fb58c30369ab5e93f1ecd75ecc
-        md5: f0feb1d024d16706d18b56712ab8f29d
-        size: 71053824
+        sha256: 0e3e0c0e85f19d38b5b471534cbf8207b9ced1d3fc824da16b657c54f849e50a
+        md5: 26e4d150e241ce50ffc49b32f88a7603
+        size: 71070720
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1489,8 +1525,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T02:30:00Z
-          source_ref: 127fec05887f2f29dcf0958c5db6092fe049362c
+          reviewed_at: 2026-11-09T06:00:00Z
+          source_ref: 3b5d3165db8568037e404a291b18e7aa22e0539a
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
