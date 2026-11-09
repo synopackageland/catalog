@@ -2630,7 +2630,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.4-0006
+      release: v2026.10.4-0007
       access: public
     metadata:
       maintainer: Home Assistant
@@ -2674,16 +2674,41 @@ packages:
         ja: 対応するスマートホーム機器をまとめ、ダッシュボードから操作し、毎日の自動化を作れます。家のコントロールを自分のサーバーに置いておけます。このパッケージは mDNS による検出に対応していますが、SSDP、USB/Bluetooth、Supervisor、アドオンには対応していません。モバイル アプリからのサインインとアップグレードは未検証です。設定はアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 호환되는 스마트홈 기기를 한데 모아 대시보드로 제어하고, 일상을 위한 자동화를 만들어요. 집의 제어권을 내 서버에 둘 수 있어요. 이 패키지는 mDNS 검색을 지원하지만 SSDP, USB/Bluetooth, Supervisor, 애드온은 지원하지 않고, 모바일 앱 로그인과 업그레이드는 검증되지 않았어요. 설정은 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Fix DSM sign-in when opening over HTTP"
-        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
-        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
-        ja: "HTTP で開いた場合の DSM ログインを修正"
-        ko: "HTTP로 열 때 DSM 로그인 수정"
-        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
-        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
+        en: |-
+          Improve page loading reliability when signing in
+
+          Fix DSM sign-in when opening over HTTP
+        zh-TW: |-
+          改善登入時的頁面載入穩定性
+
+          修正以 HTTP 開啟時的 DSM 登入
+        zh-CN: |-
+          改善登录时的页面加载稳定性
+
+          修复通过 HTTP 打开时的 DSM 登录
+        ja: |-
+          ログイン時のページ読み込みの安定性を改善
+
+          HTTP で開いた場合の DSM ログインを修正
+        ko: |-
+          로그인 시 페이지 로딩 안정성 개선
+
+          HTTP로 열 때 DSM 로그인 수정
+        de: |-
+          Zuverlässigkeit beim Laden der Seite während der Anmeldung verbessern
+
+          DSM-Anmeldung beim Öffnen über HTTP korrigiert
+        fr: |-
+          Améliorer la fiabilité du chargement des pages lors de la connexion
+
+          Corriger la connexion DSM lors de l’ouverture via HTTP
+        es: |-
+          Mejorar la fiabilidad de carga de las páginas al iniciar sesión
+        it: |-
+          Migliorare l’affidabilità del caricamento delle pagine durante l’accesso
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.4-0006
+        version: 2026.10.4-0007
         arch:
           - apollolake
           - avoton
@@ -2712,9 +2737,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 338e504289d9fa4ca788528deba00fbf4d7ac875c0acf1fd13eb9bef789204b6
-        md5: 70d00692458a2122e063b7dd71e92384
-        size: 28852736
+        sha256: d00aac0f4be92c5ac43b370dc23da9c27760828c816fd578745ae2520a990a92
+        md5: 14188593f76c17042c6678635aa41119
+        size: 28912128
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2731,8 +2756,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T16:53:05Z
-          source_ref: de3e000a988efaeb23e8c219b28a3539de429ef6
+          reviewed_at: 2026-11-09T07:01:58Z
+          source_ref: 6493980cf0e2a37f5379eac825d234a8b4828c98
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
   - publisher: synopackageland
