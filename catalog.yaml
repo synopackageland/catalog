@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1630
+      release: v0.1.1-1631
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,6 +40,13 @@ packages:
         it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. La pulizia segue un piano verificato, controllato di nuovo subito prima di eliminare qualsiasi cosa"
       changelog:
         en: |-
+          0.1.1-1631
+
+          - Improve sign-in reliability when connection checks fail
+          - Handle busy requests more reliably
+          - Make selected items clearer on phones
+          - Keep existing settings and saved scan reports
+
           0.1.1-1630
 
           - Refresh the interface on desktop and phone with updated corners, focus styles and touch feedback
@@ -66,6 +73,13 @@ packages:
           - Reuse the unchanged runtime, executor and root programs from 0.1.1-1626 for x86_64, aarch64 and armv7
           - Settings and saved scan reports are kept; the system task approval is unchanged
         zh-TW: |-
+          0.1.1-1631
+
+          - 改善連線檢查失敗時的登入狀態處理
+          - 提升忙碌時處理操作要求的穩定性
+          - 讓手機上的已選取項目更清楚
+          - 保留現有設定與已儲存的掃描報告
+
           0.1.1-1630
 
           - 更新電腦與手機介面的圓角、焦點樣式及觸控回饋
@@ -92,6 +106,13 @@ packages:
           - x86_64、aarch64 與 armv7 沿用 0.1.1-1626 未變更的執行環境、executor 與 root 程式
           - 保留設定與已儲存的掃描報告；系統工作核准狀態不變
         zh-CN: |-
+          0.1.1-1631
+
+          - 改善连接检查失败时的登录状态处理
+          - 提升繁忙时处理操作请求的稳定性
+          - 让手机上的已选项目更清晰
+          - 保留现有设置与已保存的扫描报告
+
           0.1.1-1630
 
           - 更新电脑与手机界面的圆角、焦点样式及触控反馈
@@ -118,6 +139,13 @@ packages:
           - x86_64、aarch64 与 armv7 沿用 0.1.1-1626 未改变的运行环境、executor 与 root 程序
           - 保留设置与已保存的扫描报告；系统任务批准状态不变
         de: |-
+          0.1.1-1631
+
+          - Anmeldestatus bei fehlgeschlagenen Verbindungsprüfungen zuverlässiger behandeln
+          - Anfragen bei hoher Auslastung zuverlässiger verarbeiten
+          - Ausgewählte Elemente auf Smartphones deutlicher anzeigen
+          - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
+
           0.1.1-1630
 
           - Oberfläche auf Desktop und Smartphone mit neuen Rundungen, Fokusstilen und Berührungsfeedback aktualisieren
@@ -144,6 +172,13 @@ packages:
           - Unveränderte Laufzeit, Executor und Root-Programme aus 0.1.1-1626 werden für x86_64, aarch64 und armv7 wiederverwendet
           - Einstellungen und gespeicherte Scanberichte bleiben erhalten; die Freigabe der Systemaufgaben ist unverändert
         fr: |-
+          0.1.1-1631
+
+          - Améliorer la gestion de la connexion lorsque les vérifications échouent
+          - Traiter les demandes plus fiablement en période de forte activité
+          - Rendre les éléments sélectionnés plus visibles sur téléphone
+          - Conserver les réglages existants et les rapports d’analyse enregistrés
+
           0.1.1-1630
 
           - Actualiser les arrondis, les styles de focus et le retour tactile sur ordinateur et téléphone
@@ -170,6 +205,13 @@ packages:
           - Le runtime, l’executor et les programmes root inchangés de 0.1.1-1626 sont réutilisés pour x86_64, aarch64 et armv7
           - Les réglages et les rapports d’analyse enregistrés sont conservés ; l’approbation des tâches système est inchangée
         ja: |-
+          0.1.1-1631
+
+          - 接続確認に失敗した場合のログイン状態の処理を改善
+          - 混雑時の操作リクエストをより安定して処理
+          - スマートフォンで選択した項目を見やすく表示
+          - 既存の設定と保存済みスキャンレポートを保持
+
           0.1.1-1630
 
           - パソコンとスマートフォンの画面の角丸、フォーカス表示、タッチ操作の反応を更新
@@ -196,6 +238,13 @@ packages:
           - x86_64、aarch64、armv7 は 0.1.1-1626 の未変更のランタイム、executor、root プログラムを再利用します
           - 設定と保存済みスキャンレポートは保持され、システムタスクの承認状態は変わりません
         ko: |-
+          0.1.1-1631
+
+          - 연결 확인 실패 시 로그인 상태 처리를 개선
+          - 사용량이 많을 때 요청을 더 안정적으로 처리
+          - 휴대폰에서 선택한 항목을 더 명확하게 표시
+          - 기존 설정과 저장된 스캔 보고서 유지
+
           0.1.1-1630
 
           - 데스크톱과 휴대폰의 모서리, 포커스 스타일 및 터치 피드백 개선
@@ -222,6 +271,13 @@ packages:
           - x86_64, aarch64, armv7은 0.1.1-1626의 변경되지 않은 런타임, executor, root 프로그램을 재사용합니다
           - 설정과 저장된 스캔 보고서는 유지되며 시스템 작업 승인 상태는 변경되지 않습니다
         es: |-
+          0.1.1-1631
+
+          - Mejorar el estado de inicio de sesión cuando fallan las comprobaciones de conexión
+          - Procesar las solicitudes con más fiabilidad durante periodos de actividad intensa
+          - Mostrar con mayor claridad los elementos seleccionados en el teléfono
+          - Conservar los ajustes existentes y los informes de análisis guardados
+
           0.1.1-1630
 
           - Actualizar las esquinas, los estilos de enfoque y la respuesta táctil en ordenador y teléfono
@@ -248,6 +304,13 @@ packages:
           - Se reutilizan el runtime, el executor y los programas root sin cambios de 0.1.1-1626 para x86_64, aarch64 y armv7
           - Se conservan los ajustes y los informes de análisis guardados; la aprobación de las tareas del sistema no cambia
         it: |-
+          0.1.1-1631
+
+          - Migliorare la gestione dello stato di accesso quando i controlli di connessione falliscono
+          - Gestire le richieste in modo più affidabile nei momenti di maggiore attività
+          - Rendere più chiari gli elementi selezionati sul telefono
+          - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
+
           0.1.1-1630
 
           - Aggiornare angoli, stili di messa a fuoco e risposta al tocco su computer e telefono
@@ -281,15 +344,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1630
+        version: 0.1.1-1631
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 957822fee4cf29a46bf0879d2aaf28b299a5dd1aef409921cc71c26308497321
-        md5: 122da3745e41bb9c1599e002b2e84579
-        size: 15261696
+        sha256: 46dadc92266ea4faf88402da373c06b56dd62b1796494827ee785d11e6aa5d43
+        md5: 30559c889378da05cab902cf1e8b1106
+        size: 15267840
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -306,19 +369,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T01:13:52Z
-          source_ref: 2e8832e740c7bf88c3e4204b8f2afbe7cf42064a
+          reviewed_at: 2026-11-09T07:00:00Z
+          source_ref: b5b76b84d9c8d458b18f9d7923a56c003446d134
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1630
+        version: 0.1.1-1631
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 1a2d2126e790ad09936279e2d8a3fda1845aafcd193155bca921009f19b08ce6
-        md5: fcf591e7768d3d56f9b46d31e64fb8ae
-        size: 16045568
+        sha256: 540995f512e17a4b1a1e6c70670838ce6edf876b992b8d72184bd1d595670bff
+        md5: 04b45ed058e224b2e4dab8795ff76a89
+        size: 16050688
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -335,11 +398,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T01:13:52Z
-          source_ref: 2e8832e740c7bf88c3e4204b8f2afbe7cf42064a
+          reviewed_at: 2026-11-09T07:00:00Z
+          source_ref: b5b76b84d9c8d458b18f9d7923a56c003446d134
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1630
+        version: 0.1.1-1631
         arch:
           - apollolake
           - avoton
@@ -368,9 +431,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 339f4d682db0294c2768907fa81dfacb7fbaa3df2e9fd84b659b0ebda4ea0eba
-        md5: 32a7c64718b8c06579dcadd5cec89211
-        size: 16424448
+        sha256: 3bf0db54df806a7fd392951a16cd72eed42dcf822c326547a3dbd79af5217e1f
+        md5: d6e6e00a8560894d99aaa89201258ecb
+        size: 16430592
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -387,8 +450,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T01:13:52Z
-          source_ref: 2e8832e740c7bf88c3e4204b8f2afbe7cf42064a
+          reviewed_at: 2026-11-09T07:00:00Z
+          source_ref: b5b76b84d9c8d458b18f9d7923a56c003446d134
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
