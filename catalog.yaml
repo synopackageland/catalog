@@ -2371,7 +2371,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0019
+      release: v1.37.4-0020
       access: public
     metadata:
       maintainer: Daniel García
@@ -2417,16 +2417,41 @@ packages:
         ja: パスワード、ログイン情報、セキュア メモを、自分のサーバー上の暗号化された保管庫に保存できます。Vaultwarden は Bitwarden 互換のサーバーで、項目を管理する Web 保管庫を備えています。保管庫は別のマスター パスワードで解除し、DSM からは復元できません。Bitwarden クライアントには信頼された HTTPS 証明書が必要で、クライアントからのサインインは未検証です。アプリのセッションは別に管理され、データはアンインストール後も Container Manager のボリュームに残ります。DSM の管理者サインインと Container Manager が必要です
         ko: 비밀번호, 로그인 정보, 보안 메모를 내 서버의 암호화된 보관함에 보관해요. Vaultwarden은 Bitwarden과 호환되는 서버로, 항목을 관리하는 웹 보관함이 있어요. 보관함은 별도의 마스터 비밀번호로 열고, DSM으로는 복구할 수 없어요. Bitwarden 클라이언트에는 신뢰할 수 있는 HTTPS 인증서가 필요하고, 클라이언트 로그인은 검증되지 않았어요. 앱 세션은 따로 관리되고, 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
-        en: "Show an HTTPS guidance page with a direct HTTPS link when opened over HTTP"
-        zh-TW: "以 HTTP 開啟時顯示 HTTPS 引導頁並提供 HTTPS 連結"
-        zh-CN: "通过 HTTP 打开时显示 HTTPS 引导页并提供 HTTPS 链接"
-        ja: "HTTP で開いた場合に HTTPS リンク付きの案内ページを表示"
-        ko: "HTTP로 열면 HTTPS 링크가 있는 안내 페이지 표시"
-        de: "Beim Öffnen über HTTP eine HTTPS-Hinweisseite mit direktem HTTPS-Link anzeigen"
-        fr: "Afficher une page d’aide HTTPS avec un lien HTTPS direct lors d’une ouverture via HTTP"
+        en: |-
+          Improve page loading reliability when signing in
+
+          Show an HTTPS guidance page with a direct HTTPS link when opened over HTTP
+        zh-TW: |-
+          改善登入時頁面載入的穩定性
+
+          以 HTTP 開啟時顯示 HTTPS 引導頁並提供 HTTPS 連結
+        zh-CN: |-
+          改善登录时页面加载的稳定性
+
+          通过 HTTP 打开时显示 HTTPS 引导页并提供 HTTPS 链接
+        ja: |-
+          サインイン時のページ読み込みの安定性を改善
+
+          HTTP で開いた場合に HTTPS リンク付きの案内ページを表示
+        ko: |-
+          로그인 시 페이지 로딩 안정성 개선
+
+          HTTP로 열면 HTTPS 링크가 있는 안내 페이지 표시
+        de: |-
+          Zuverlässigkeit beim Laden von Seiten während der Anmeldung verbessern
+
+          Beim Öffnen über HTTP eine HTTPS-Hinweisseite mit direktem HTTPS-Link anzeigen
+        fr: |-
+          Améliorer la fiabilité du chargement des pages lors de la connexion
+
+          Afficher une page d’aide HTTPS avec un lien HTTPS direct lors d’une ouverture via HTTP
+        es: |-
+          Mejorar la fiabilidad de la carga de páginas al iniciar sesión
+        it: |-
+          Migliorare l’affidabilità del caricamento delle pagine durante l’accesso
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0019
+        version: 1.37.4-0020
         arch:
           - apollolake
           - avoton
@@ -2455,9 +2480,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 02ebb737b670c39417dc205ac2e5a539add6062e788fd29345bd8979421fa596
-        md5: 157b83fc03912f71aa3993662e05d8ac
-        size: 39091200
+        sha256: c6fdad4499a19ea051b1b55c91daf8c4720b66cd42331bf5856632b3180ab45f
+        md5: 59d6124f5f7918f562793c9960774917
+        size: 39150080
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2474,8 +2499,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T19:57:20Z
-          source_ref: 132fe3eaca4f852964497de5c87f4f9bb4371dd0
+          reviewed_at: 2026-11-09T07:00:54Z
+          source_ref: b64e59f7bbb9a0632973b0d01a987b21fe124df4
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - listed: true
     recommended: false
