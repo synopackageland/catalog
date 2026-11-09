@@ -2034,7 +2034,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.4-0010
+      release: v12.4-0011
       access: private
     metadata:
       maintainer: Jellyfin
@@ -2086,40 +2086,58 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgJellyfin/03-movie-details-upstream.jpg
       changelog:
         en: |-
+          Keep temporary files on disk instead of memory
+
           Select a media folder at any depth within a shared folder
 
           Keep DSM sign-in callbacks on the requested HTTP or HTTPS scheme
         zh-TW: |-
+          暫存檔改存於磁碟而非記憶體
+
           可選取共享資料夾內任意層級的媒體資料夾
 
           DSM 登入回呼跟隨實際開啟的 HTTP 或 HTTPS
         zh-CN: |-
+          临时文件改存于磁盘而非内存
+
           可选择共享文件夹内任意层级的媒体文件夹
 
           DSM 登录回调跟随实际打开的 HTTP 或 HTTPS
         ja: |-
+          一時ファイルをメモリーではなくディスクに保存
+
           共有フォルダー内の任意の階層にあるメディアフォルダーを選択
 
           DSM ログインのコールバックを要求された HTTP または HTTPS に合わせる
         ko: |-
+          임시 파일을 메모리 대신 디스크에 저장
+
           공유 폴더 내 모든 깊이의 미디어 폴더 선택 지원
 
           DSM 로그인 콜백에 요청된 HTTP 또는 HTTPS 사용
         de: |-
+          Temporäre Dateien auf dem Datenträger statt im Arbeitsspeicher ablegen
+
           Medienordner auf jeder Ebene eines freigegebenen Ordners auswählen
 
           DSM-Anmelderückruf verwendet das angeforderte HTTP oder HTTPS
         fr: |-
+          Conserver les fichiers temporaires sur le disque plutôt qu’en mémoire
+
           Choisir un dossier multimédia à toute profondeur dans un dossier partagé
 
           Le retour de connexion DSM suit le protocole HTTP ou HTTPS demandé
         es: |-
+          Guardar los archivos temporales en el disco en lugar de en la memoria
+
           Seleccionar una carpeta multimedia a cualquier nivel dentro de una carpeta compartida
         it: |-
+          Conservare i file temporanei su disco anziché in memoria
+
           Seleziona una cartella multimediale a qualsiasi livello in una cartella condivisa
     pins:
       - package: SynoPkgJellyfin
-        version: 12.4-0010
+        version: 12.4-0011
         arch:
           - apollolake
           - avoton
@@ -2148,9 +2166,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ce989020e1e16778416220f86b144bde9b58c981c31e26bbe54ff2f3dd777266
-        md5: 9b0feda6c0b5fccd08ddb65c6c823e5f
-        size: 41806848
+        sha256: ccb1e6eaa0802a50ed5905ffa1b39c616309860f95acd19d4ddb6ffcc44974c7
+        md5: d8898ca9845077b899727e76fa17c0db
+        size: 41831424
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2168,8 +2186,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T10:47:04Z
-          source_ref: c73e750479c244e2026cf75ef47fcf28b9540a9c
+          reviewed_at: 2026-11-09T14:19:07Z
+          source_ref: dfa24bebead4a6b10ec78bf458dd106914399be2
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - listed: true
