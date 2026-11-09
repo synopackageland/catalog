@@ -2113,7 +2113,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.20.0-0007
+      release: v0.20.0-0008
       access: public
     metadata:
       maintainer: Emrik Östling
@@ -2157,16 +2157,41 @@ packages:
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConvertX/01-file-conversion-upstream.png
       changelog:
-        en: "Fix DSM sign-in when opening over HTTP"
-        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
-        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
-        ja: "HTTP で開いた際の DSM サインインを修正"
-        ko: "HTTP로 열 때 DSM 로그인 문제 수정"
-        de: "DSM-Anmeldung beim Öffnen über HTTP korrigieren"
-        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
+        en: |-
+          Improve page loading reliability when signing in
+
+          Fix DSM sign-in when opening over HTTP
+        zh-TW: |-
+          改善登入時頁面載入的穩定性
+
+          修正以 HTTP 開啟時的 DSM 登入
+        zh-CN: |-
+          改善登录时页面加载的稳定性
+
+          修复通过 HTTP 打开时的 DSM 登录
+        ja: |-
+          サインイン時のページ読み込みの安定性を改善
+
+          HTTP で開いた際の DSM サインインを修正
+        ko: |-
+          로그인 시 페이지 로딩 안정성 개선
+
+          HTTP로 열 때 DSM 로그인 문제 수정
+        de: |-
+          Zuverlässigkeit beim Laden von Seiten während der Anmeldung verbessern
+
+          DSM-Anmeldung beim Öffnen über HTTP korrigieren
+        fr: |-
+          Améliorer la fiabilité du chargement des pages lors de la connexion
+
+          Corriger la connexion DSM lors de l’ouverture via HTTP
+        es: |-
+          Mejorar la fiabilidad de la carga de páginas al iniciar sesión
+        it: |-
+          Migliorare l’affidabilità del caricamento delle pagine durante l’accesso
     pins:
       - package: SynoPkgConvertX
-        version: 0.20.0-0007
+        version: 0.20.0-0008
         arch:
           - apollolake
           - avoton
@@ -2195,9 +2220,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ca169c3eec1c5dec6a8b4642ac4f64b0013bc56624a1ecff84ed9869e54951df
-        md5: c4e4c07e0a7c6dca5a2642c82c7c7470
-        size: 37608960
+        sha256: eb039a7b0bb912083e132ee620977b5114183a0fffd82486fc05a08a0240715f
+        md5: 2fe7c5776772399937759f2ddb2bda61
+        size: 37715456
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2214,8 +2239,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T16:53:05Z
-          source_ref: 6a7b2ad63910ab5c38a421744da9622e9df4ac3a
+          reviewed_at: 2026-11-09T07:00:49Z
+          source_ref: 45859ac88b40c5d738e638ad180a5e932461e8f3
           source_repo: synopackageland/syno-pkg-land-convertx
 
   - listed: true
