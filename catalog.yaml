@@ -2840,7 +2840,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.4-0007
+      release: v2026.10.4-0008
       access: public
     metadata:
       maintainer: Home Assistant
@@ -2885,40 +2885,58 @@ packages:
         ko: 호환되는 스마트홈 기기를 한데 모아 대시보드로 제어하고, 일상을 위한 자동화를 만들어요. 집의 제어권을 내 서버에 둘 수 있어요. 이 패키지는 mDNS 검색을 지원하지만 SSDP, USB/Bluetooth, Supervisor, 애드온은 지원하지 않고, 모바일 앱 로그인과 업그레이드는 검증되지 않았어요. 설정은 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
         en: |-
+          Store temporary files on disk instead of memory
+
           Improve page loading reliability when signing in
 
           Fix DSM sign-in when opening over HTTP
         zh-TW: |-
+          暫存檔改存於磁碟而非記憶體
+
           改善登入時的頁面載入穩定性
 
           修正以 HTTP 開啟時的 DSM 登入
         zh-CN: |-
+          临时文件改存于磁盘而非内存
+
           改善登录时的页面加载稳定性
 
           修复通过 HTTP 打开时的 DSM 登录
         ja: |-
+          一時ファイルをメモリではなくディスクに保存
+
           ログイン時のページ読み込みの安定性を改善
 
           HTTP で開いた場合の DSM ログインを修正
         ko: |-
+          임시 파일을 메모리 대신 디스크에 저장
+
           로그인 시 페이지 로딩 안정성 개선
 
           HTTP로 열 때 DSM 로그인 수정
         de: |-
+          Temporäre Dateien auf der Festplatte statt im Arbeitsspeicher speichern
+
           Zuverlässigkeit beim Laden der Seite während der Anmeldung verbessern
 
           DSM-Anmeldung beim Öffnen über HTTP korrigiert
         fr: |-
+          Stocker les fichiers temporaires sur le disque plutôt qu’en mémoire
+
           Améliorer la fiabilité du chargement des pages lors de la connexion
 
           Corriger la connexion DSM lors de l’ouverture via HTTP
         es: |-
+          Guardar los archivos temporales en el disco en lugar de en la memoria
+
           Mejorar la fiabilidad de carga de las páginas al iniciar sesión
         it: |-
+          Salvare i file temporanei su disco invece che in memoria
+
           Migliorare l’affidabilità del caricamento delle pagine durante l’accesso
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.4-0007
+        version: 2026.10.4-0008
         arch:
           - apollolake
           - avoton
@@ -2947,9 +2965,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: d00aac0f4be92c5ac43b370dc23da9c27760828c816fd578745ae2520a990a92
-        md5: 14188593f76c17042c6678635aa41119
-        size: 28912128
+        sha256: 8647eb5167326e039603ae951903f449f009b2cac74933d69a8ec77dfa450f60
+        md5: 2126d7fbcb12cf09453626d05f8bea42
+        size: 29795328
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2966,8 +2984,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T07:01:58Z
-          source_ref: 6493980cf0e2a37f5379eac825d234a8b4828c98
+          reviewed_at: 2026-11-09T14:54:04Z
+          source_ref: d8f65a56bec7f1dcc0540e43c8a160f956ea1356
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
   - publisher: synopackageland
