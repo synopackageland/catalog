@@ -1871,7 +1871,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.2-0010
+      release: v2.37.2-0011
       access: private
     metadata:
       maintainer: advplyr
@@ -1921,16 +1921,41 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgAudiobookshelf/01-demo-library-upstream.jpg
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgAudiobookshelf/02-library-player-upstream.png
       changelog:
-        en: "Fix DSM sign-in when opening over HTTP"
-        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
-        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
-        ja: "HTTP で開いた際の DSM サインインを修正"
-        ko: "HTTP로 열 때 DSM 로그인 문제 수정"
-        de: "DSM-Anmeldung beim Öffnen über HTTP korrigieren"
-        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
+        en: |-
+          Select a media folder at any depth within a shared folder
+
+          Fix DSM sign-in when opening over HTTP
+        zh-TW: |-
+          可選取共享資料夾內任意層級的媒體資料夾
+
+          修正以 HTTP 開啟時的 DSM 登入
+        zh-CN: |-
+          可选择共享文件夹内任意层级的媒体文件夹
+
+          修复通过 HTTP 打开时的 DSM 登录
+        ja: |-
+          共有フォルダー内の任意の階層にあるメディアフォルダーを選択
+
+          HTTP で開いた際の DSM サインインを修正
+        ko: |-
+          공유 폴더 내 모든 깊이의 미디어 폴더 선택 지원
+
+          HTTP로 열 때 DSM 로그인 문제 수정
+        de: |-
+          Medienordner auf jeder Ebene eines freigegebenen Ordners auswählen
+
+          DSM-Anmeldung beim Öffnen über HTTP korrigieren
+        fr: |-
+          Choisir un dossier multimédia à toute profondeur dans un dossier partagé
+
+          Corriger la connexion DSM lors de l’ouverture via HTTP
+        es: |-
+          Seleccionar una carpeta multimedia a cualquier nivel dentro de una carpeta compartida
+        it: |-
+          Seleziona una cartella multimediale a qualsiasi livello in una cartella condivisa
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.2-0010
+        version: 2.37.2-0011
         arch:
           - apollolake
           - avoton
@@ -1959,9 +1984,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 054b0627b41a1fad9c645c965f8a899a2bc9b7a38de8a09c8d09f2e50d811580
-        md5: 99439666becc3fb9e8fbdd43ab95c1d1
-        size: 37942272
+        sha256: dede8cdce53e85def863118530f8ca16f2ebcf9f9578e429191d4f80f912c898
+        md5: fd7d7765410afc6167ce3f3e60cc790d
+        size: 38542848
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1979,8 +2004,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T16:53:05Z
-          source_ref: 5bd78bfa14b8ca43a3b206541b5faa8e848e75d4
+          reviewed_at: 2026-11-09T10:46:22Z
+          source_ref: b56151d02487b4ea8baabcc7588b278d05df2df0
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - listed: true
     recommended: false
