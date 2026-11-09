@@ -2199,7 +2199,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.20.0-0008
+      release: v0.20.0-0009
       access: public
     metadata:
       maintainer: Emrik Östling
@@ -2244,40 +2244,58 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConvertX/01-file-conversion-upstream.png
       changelog:
         en: |-
+          Store temporary files on disk instead of memory
+
           Improve page loading reliability when signing in
 
           Fix DSM sign-in when opening over HTTP
         zh-TW: |-
+          暫存檔改存於磁碟而非記憶體
+
           改善登入時頁面載入的穩定性
 
           修正以 HTTP 開啟時的 DSM 登入
         zh-CN: |-
+          临时文件改存于磁盘而非内存
+
           改善登录时页面加载的稳定性
 
           修复通过 HTTP 打开时的 DSM 登录
         ja: |-
+          一時ファイルをメモリではなくディスクに保存
+
           サインイン時のページ読み込みの安定性を改善
 
           HTTP で開いた際の DSM サインインを修正
         ko: |-
+          임시 파일을 메모리 대신 디스크에 저장
+
           로그인 시 페이지 로딩 안정성 개선
 
           HTTP로 열 때 DSM 로그인 문제 수정
         de: |-
+          Temporäre Dateien auf der Festplatte statt im Arbeitsspeicher speichern
+
           Zuverlässigkeit beim Laden von Seiten während der Anmeldung verbessern
 
           DSM-Anmeldung beim Öffnen über HTTP korrigieren
         fr: |-
+          Stocker les fichiers temporaires sur le disque plutôt qu’en mémoire
+
           Améliorer la fiabilité du chargement des pages lors de la connexion
 
           Corriger la connexion DSM lors de l’ouverture via HTTP
         es: |-
+          Guardar los archivos temporales en el disco en lugar de en la memoria
+
           Mejorar la fiabilidad de la carga de páginas al iniciar sesión
         it: |-
+          Salvare i file temporanei su disco invece che in memoria
+
           Migliorare l’affidabilità del caricamento delle pagine durante l’accesso
     pins:
       - package: SynoPkgConvertX
-        version: 0.20.0-0008
+        version: 0.20.0-0009
         arch:
           - apollolake
           - avoton
@@ -2306,9 +2324,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: eb039a7b0bb912083e132ee620977b5114183a0fffd82486fc05a08a0240715f
-        md5: 2fe7c5776772399937759f2ddb2bda61
-        size: 37715456
+        sha256: c346d722b774a137fa4c58c64e2ec9a0738b23990bdb6c0570addfebbf65aa87
+        md5: 760be17c5112163a7f05a13e497f549f
+        size: 37844480
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2325,8 +2343,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T07:00:49Z
-          source_ref: 45859ac88b40c5d738e638ad180a5e932461e8f3
+          reviewed_at: 2026-11-09T14:53:17Z
+          source_ref: 87cc78f1fece2a8d17899aef784d56b050b0de45
           source_repo: synopackageland/syno-pkg-land-convertx
 
   - listed: true
