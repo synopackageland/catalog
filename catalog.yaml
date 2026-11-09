@@ -2484,7 +2484,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0020
+      release: v1.37.4-0021
       access: public
     metadata:
       maintainer: Daniel García
@@ -2531,40 +2531,58 @@ packages:
         ko: 비밀번호, 로그인 정보, 보안 메모를 내 서버의 암호화된 보관함에 보관해요. Vaultwarden은 Bitwarden과 호환되는 서버로, 항목을 관리하는 웹 보관함이 있어요. 보관함은 별도의 마스터 비밀번호로 열고, DSM으로는 복구할 수 없어요. Bitwarden 클라이언트에는 신뢰할 수 있는 HTTPS 인증서가 필요하고, 클라이언트 로그인은 검증되지 않았어요. 앱 세션은 따로 관리되고, 데이터는 제거 후에도 Container Manager 볼륨에 남아요. DSM 관리자 로그인과 Container Manager가 필요해요
       changelog:
         en: |-
+          Keep temporary files on disk instead of memory
+
           Improve page loading reliability when signing in
 
           Show an HTTPS guidance page with a direct HTTPS link when opened over HTTP
         zh-TW: |-
+          暫存檔改存於磁碟而非記憶體
+
           改善登入時頁面載入的穩定性
 
           以 HTTP 開啟時顯示 HTTPS 引導頁並提供 HTTPS 連結
         zh-CN: |-
+          临时文件改存于磁盘而非内存
+
           改善登录时页面加载的稳定性
 
           通过 HTTP 打开时显示 HTTPS 引导页并提供 HTTPS 链接
         ja: |-
+          一時ファイルをメモリーではなくディスクに保存
+
           サインイン時のページ読み込みの安定性を改善
 
           HTTP で開いた場合に HTTPS リンク付きの案内ページを表示
         ko: |-
+          임시 파일을 메모리 대신 디스크에 저장
+
           로그인 시 페이지 로딩 안정성 개선
 
           HTTP로 열면 HTTPS 링크가 있는 안내 페이지 표시
         de: |-
+          Temporäre Dateien auf dem Datenträger statt im Arbeitsspeicher ablegen
+
           Zuverlässigkeit beim Laden von Seiten während der Anmeldung verbessern
 
           Beim Öffnen über HTTP eine HTTPS-Hinweisseite mit direktem HTTPS-Link anzeigen
         fr: |-
+          Conserver les fichiers temporaires sur le disque plutôt qu’en mémoire
+
           Améliorer la fiabilité du chargement des pages lors de la connexion
 
           Afficher une page d’aide HTTPS avec un lien HTTPS direct lors d’une ouverture via HTTP
         es: |-
+          Guardar los archivos temporales en el disco en lugar de en la memoria
+
           Mejorar la fiabilidad de la carga de páginas al iniciar sesión
         it: |-
+          Conservare i file temporanei su disco anziché in memoria
+
           Migliorare l’affidabilità del caricamento delle pagine durante l’accesso
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0020
+        version: 1.37.4-0021
         arch:
           - apollolake
           - avoton
@@ -2593,9 +2611,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c6fdad4499a19ea051b1b55c91daf8c4720b66cd42331bf5856632b3180ab45f
-        md5: 59d6124f5f7918f562793c9960774917
-        size: 39150080
+        sha256: fcc1390d10b8ede723349f3d79f9ffc5502b087922ad5c83cd9fa08eca4bb358
+        md5: 4cfb82446bd30d647d60456fc7d72a4e
+        size: 40058368
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2612,8 +2630,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T07:00:54Z
-          source_ref: e39ce0a014bf277ffd8be7944cce75eb9b0fd151
+          reviewed_at: 2026-11-09T14:19:59Z
+          source_ref: 3eade4a04661e5f97e68d10ce107e9a454b16adc
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - listed: true
     recommended: false
