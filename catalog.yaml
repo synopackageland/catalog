@@ -2766,7 +2766,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-magpie
-      release: v0.1.3093-0007
+      release: v0.1.3093-0008
       access: public
     metadata:
       maintainer: yetone
@@ -2824,6 +2824,8 @@ packages:
           이 패키지는 magpie를 DSM 패키지 서비스로 실행해요. 관리자는 DSM에 로그인한 뒤 메인 메뉴에서 패널을 열고, 모델 게이트웨이는 magpie 자체 게이트웨이 키로 3425 포트에서 LAN에 제공되므로 에이전트와 다른 컴퓨터는 DSM에 로그인할 필요가 없어요.
       changelog:
         en: |-
+          Improve page loading reliability when signing in
+
           0.1.3093-0007
 
           - First Syno Package Land release, following magpie 0.1.3093
@@ -2832,6 +2834,8 @@ packages:
           - Community plugin pages work inside the panel
           - magpie's own updater stays on, and a new SPK replaces the packaged binary
         zh-TW: |-
+          改善登入時的頁面載入穩定性
+
           0.1.3093-0007
 
           - 首個 Syno Package Land 版本，跟隨 magpie 0.1.3093
@@ -2840,6 +2844,8 @@ packages:
           - 社群 plugin 頁面可在面板內使用
           - 保留 magpie 自己的更新機制，新的 SPK 會覆蓋打包的二進位檔
         zh-CN: |-
+          改善登录时的页面加载稳定性
+
           0.1.3093-0007
 
           - 首个 Syno Package Land 版本，跟随 magpie 0.1.3093
@@ -2847,23 +2853,9 @@ packages:
           - 模型网关在 3425 端口以 magpie gateway key 对局域网提供服务，无需 DSM 登录
           - 社区 plugin 页面可在面板内使用
           - 保留 magpie 自己的更新机制，新的 SPK 会覆盖打包的二进制文件
-        de: |-
-          0.1.3093-0007
-
-          - Erste Syno-Package-Land-Version, folgt magpie 0.1.3093
-          - Administratoren öffnen das Panel über das DSM-Hauptmenü; das DSM-Identity-Gateway liefert magpies eigenen Panel-Schlüssel, ein zweites App-Passwort gibt es nicht
-          - Das Modell-Gateway ist im LAN auf Port 3425 mit magpie-Gateway-Schlüsseln erreichbar, ohne DSM-Anmeldung
-          - Community-Plugin-Seiten funktionieren im Panel
-          - magpies eigener Updater bleibt aktiv, ein neues SPK ersetzt die mitgelieferte Binärdatei
-        fr: |-
-          0.1.3093-0007
-
-          - Première version Syno Package Land, basée sur magpie 0.1.3093
-          - Les administrateurs ouvrent le panneau depuis le menu principal de DSM ; la passerelle d'identité DSM fournit la clé du panneau de magpie, sans second mot de passe d'application
-          - La passerelle de modèles est joignable sur le LAN au port 3425 avec les clés de passerelle de magpie, sans connexion à DSM
-          - Les pages des plugins communautaires fonctionnent dans le panneau
-          - Le programme de mise à jour de magpie reste actif ; un nouveau SPK remplace le binaire fourni
         ja: |-
+          ログイン時のページ読み込みの安定性を改善
+
           0.1.3093-0007
 
           - Syno Package Land 初回リリース（magpie 0.1.3093 に追従）
@@ -2872,6 +2864,8 @@ packages:
           - コミュニティプラグインのページがパネル内で動作します
           - magpie 自身の更新機能は有効なままで、新しい SPK が同梱のバイナリを置き換えます
         ko: |-
+          로그인 시 페이지 로딩 안정성 개선
+
           0.1.3093-0007
 
           - Syno Package Land 첫 릴리스, magpie 0.1.3093 기반
@@ -2879,6 +2873,30 @@ packages:
           - 모델 게이트웨이는 magpie 게이트웨이 키로 3425 포트에서 LAN에 제공되며 DSM 로그인이 필요 없어요
           - 커뮤니티 플러그인 페이지가 패널 안에서 동작해요
           - magpie 자체 업데이터는 그대로 켜져 있고, 새 SPK가 패키지된 바이너리를 교체해요
+        de: |-
+          Zuverlässigkeit beim Laden der Seite während der Anmeldung verbessern
+
+          0.1.3093-0007
+
+          - Erste Syno-Package-Land-Version, folgt magpie 0.1.3093
+          - Administratoren öffnen das Panel über das DSM-Hauptmenü; das DSM-Identity-Gateway liefert magpies eigenen Panel-Schlüssel, ein zweites App-Passwort gibt es nicht
+          - Das Modell-Gateway ist im LAN auf Port 3425 mit magpie-Gateway-Schlüsseln erreichbar, ohne DSM-Anmeldung
+          - Community-Plugin-Seiten funktionieren im Panel
+          - magpies eigener Updater bleibt aktiv, ein neues SPK ersetzt die mitgelieferte Binärdatei
+        fr: |-
+          Améliorer la fiabilité du chargement des pages lors de la connexion
+
+          0.1.3093-0007
+
+          - Première version Syno Package Land, basée sur magpie 0.1.3093
+          - Les administrateurs ouvrent le panneau depuis le menu principal de DSM ; la passerelle d'identité DSM fournit la clé du panneau de magpie, sans second mot de passe d'application
+          - La passerelle de modèles est joignable sur le LAN au port 3425 avec les clés de passerelle de magpie, sans connexion à DSM
+          - Les pages des plugins communautaires fonctionnent dans le panneau
+          - Le programme de mise à jour de magpie reste actif ; un nouveau SPK remplace le binaire fourni
+        es: |-
+          Mejorar la fiabilidad de carga de las páginas al iniciar sesión
+        it: |-
+          Migliorare l’affidabilità del caricamento delle pagine durante l’accesso
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Magpie/01-agents.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Magpie/02-plugins.png
@@ -2886,15 +2904,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Magpie/04-masking.png
     pins:
       - package: Magpie
-        version: 0.1.3093-0007
+        version: 0.1.3093-0008
         arch:
         - armada37xx
         - rtd1296
         - rtd1619
         - rtd1619b
-        sha256: 458546a80f56c01f5b4d6659ee9543aacc88f299cb5e2c00d2c5af35a11a8bbc
-        md5: 58545af6c7e62908d95061eb00c02e8d
-        size: 53107712
+        sha256: e2d68517e5297d3743163302e6423b3dfa926afc916232093712d5090b26d70e
+        md5: 857f5027ea3c9e060167b739bf282183
+        size: 52693504
         facts:
           built_with: sdk
           sdk_backend: go
@@ -2910,11 +2928,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T04:37:28Z
-          source_ref: 1d1beeb9665603cf48bb31a72053090ac307ab5f
+          reviewed_at: 2026-11-09T07:02:26Z
+          source_ref: ff528589311a67112479794e1695684c4d931ece
           source_repo: synopackageland/syno-pkg-magpie
       - package: Magpie
-        version: 0.1.3093-0007
+        version: 0.1.3093-0008
         arch:
         - apollolake
         - avoton
@@ -2943,9 +2961,9 @@ packages:
         - skylaked
         - v1000
         - v1000nk
-        sha256: bc3227fc1e3032c587fbca881dff8a4f7f0fe306b6ea9111c0330855c7697c8a
-        md5: 32af1893a0dd2ce59716cad551ad97ca
-        size: 57681408
+        sha256: 25e93aca0c7a684287d8270da72afdda4f317e37b4a7c7944b09c094b53e9c0a
+        md5: c5e88730a2edf7d365ab8e95b6ab57d9
+        size: 57179136
         facts:
           built_with: sdk
           sdk_backend: go
@@ -2961,8 +2979,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-06T04:38:02Z
-          source_ref: 1d1beeb9665603cf48bb31a72053090ac307ab5f
+          reviewed_at: 2026-11-09T07:02:26Z
+          source_ref: ff528589311a67112479794e1695684c4d931ece
           source_repo: synopackageland/syno-pkg-magpie
   - listed: false
     recommended: false
