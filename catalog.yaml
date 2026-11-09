@@ -2005,7 +2005,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-09T10:46:22Z
-          source_ref: b56151d02487b4ea8baabcc7588b278d05df2df0
+          source_ref: 5666b233a47ca524b3a0d0abc4e08a3b95c7945c
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - listed: true
     recommended: false
@@ -2151,7 +2151,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-09T10:47:04Z
-          source_ref: dc73299f1100e2d224b81dea308e488a3a75315a
+          source_ref: c73e750479c244e2026cf75ef47fcf28b9540a9c
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - listed: true
@@ -2437,7 +2437,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-09T10:39:35Z
-          source_ref: 3f92b7edaeac69d40f3db225bdbed291d80d397a
+          source_ref: 88d5702493113d19e3e59ce9e1667fec4575920f
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
@@ -2577,7 +2577,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-09T07:00:54Z
-          source_ref: b64e59f7bbb9a0632973b0d01a987b21fe124df4
+          source_ref: e39ce0a014bf277ffd8be7944cce75eb9b0fd151
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - listed: true
     recommended: false
@@ -2720,7 +2720,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-09T10:46:43Z
-          source_ref: 1a4db6a9e320033752d97c712d371f57d32fc7f9
+          source_ref: f7c40077a1b52bd6f2c1bf163a62082205198cab
           source_repo: synopackageland/syno-pkg-land-navidrome
 
   - listed: true
@@ -3356,7 +3356,7 @@ packages:
         type: reviewed
         reviewer: synopackageland
         reviewed_at: 2026-11-09T10:38:28Z
-        source_ref: ff92bac26cadfc85a04aa1f012079d476445896e
+        source_ref: f1856f2451be93b8e1ecb06828c07ce9ee22ab2c
         source_repo: synopackageland/syno-pkg-land-ovis
     - package: Ovis
       version: 0.5.1-0003
@@ -3372,7 +3372,7 @@ packages:
         type: reviewed
         reviewer: synopackageland
         reviewed_at: 2026-11-09T10:38:28Z
-        source_ref: ff92bac26cadfc85a04aa1f012079d476445896e
+        source_ref: f1856f2451be93b8e1ecb06828c07ce9ee22ab2c
         source_repo: synopackageland/syno-pkg-land-ovis
 
   - listed: false
