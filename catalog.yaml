@@ -3546,7 +3546,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-t3code
-      release: v0.1.7-0001
+      release: v0.1.7-0008
       access: public
     info:
       displayname: T3 Code
@@ -3660,135 +3660,121 @@ packages:
           dei dispositivi e i dati di utilizzo sono disattivati e T3 Code viene aggiornato solo tramite
           il Centro pacchetti. Per usarlo al di fuori della rete locale, connettiti tramite VPN'
       changelog:
-        en: '0.1.7-0001
+        en: |-
+          0.1.7-0008
 
+          - Choose a NAS shared folder for T3 Code's home and projects, install tools with sudo inside the container, keep temporary files on disk and require 1.7 GB of memory. Earlier data is not carried over
+
+          0.1.7-0001
 
           - First release of T3 Code 0.1.7, a browser console for coding agents
-
-          - No agent included: install Codex, Claude Code or other agents from T3 Code and sign in with
-          your own account
-
+          - No agent included: install Codex, Claude Code or other agents from T3 Code and sign in with your own account
           - DSM administrators only, with no extra password or pairing; all administrators share one instance
+          - Browser tabs and page previews run on the NAS; their Chrome is ended after 10 idle minutes to free memory
+          - T3 Code updates only through Package Center
+        zh-TW: |-
+          0.1.7-0008
 
-          - Browser tabs and page previews run on the NAS; their Chrome is ended after 10 idle minutes to
-          free memory
+          - 可選擇 NAS 共用資料夾存放 T3 Code 的家目錄與專案，可在容器內以 sudo 安裝工具，暫存檔改存於磁碟，安裝需 1.7 GB 記憶體。先前的資料不會沿用
 
-          - T3 Code updates only through Package Center'
-        zh-TW: '0.1.7-0001
-
+          0.1.7-0001
 
           - 首次推出 T3 Code 0.1.7，coding agent 的瀏覽器控制台
-
           - 不含 agent：請從 T3 Code 安裝 Codex、Claude Code 等 agent，並以您自己的帳號登入
-
           - 僅限 DSM 管理員，不需額外密碼或配對；所有管理員共用同一個實例
-
           - 瀏覽器分頁與頁面預覽在 NAS 上執行；閒置 10 分鐘後會結束其 Chrome 以釋放記憶體
+          - T3 Code 僅透過套件中心更新
+        zh-CN: |-
+          0.1.7-0008
 
-          - T3 Code 僅透過套件中心更新'
-        zh-CN: '0.1.7-0001
+          - 可选择 NAS 共享文件夹存放 T3 Code 的主目录和项目，可在容器内用 sudo 安装工具，临时文件改存于磁盘，安装需 1.7 GB 内存。之前的数据不会沿用
 
+          0.1.7-0001
 
           - 首次推出 T3 Code 0.1.7，coding agent 的浏览器控制台
-
           - 不含 agent：请从 T3 Code 安装 Codex、Claude Code 等 agent，并使用您自己的账户登录
-
           - 仅限 DSM 管理员，无需额外密码或配对；所有管理员共用同一个实例
-
           - 浏览器标签页与页面预览在 NAS 上运行；闲置 10 分钟后会结束其 Chrome 以释放内存
+          - T3 Code 仅通过套件中心更新
+        ja: |-
+          0.1.7-0008
 
-          - T3 Code 仅通过套件中心更新'
-        ja: '0.1.7-0001
+          - T3 Code のホームとプロジェクト用に NAS の共有フォルダを選択可能、コンテナ内で sudo によるツールのインストールに対応、一時ファイルをディスクに保存、1.7 GB のメモリが必要に。以前のデータは引き継がれません
 
+          0.1.7-0001
 
           - コーディングエージェント用ブラウザーコンソール T3 Code 0.1.7 の初回リリース
-
           - エージェントは含まれません：T3 Code から Codex や Claude Code などをインストールし、ご自身のアカウントでサインイン
-
           - DSM 管理者専用で、追加のパスワードやペアリングは不要。すべての管理者が 1 つのインスタンスを共有
-
           - ブラウザータブとページプレビューは NAS 上で動作。10 分間使用されないと Chrome を終了してメモリを解放
+          - T3 Code はパッケージセンターからのみ更新
+        ko: |-
+          0.1.7-0008
 
-          - T3 Code はパッケージセンターからのみ更新'
-        ko: '0.1.7-0001
+          - T3 Code의 홈과 프로젝트용 NAS 공유 폴더 선택, 컨테이너 안에서 sudo로 도구 설치, 임시 파일을 디스크에 저장, 1.7GB 메모리 필요. 이전 데이터는 이어지지 않습니다
 
+          0.1.7-0001
 
           - 코딩 에이전트를 위한 브라우저 콘솔 T3 Code 0.1.7 첫 출시
-
           - 에이전트 미포함: T3 Code에서 Codex, Claude Code 등을 설치하고 본인 계정으로 로그인
-
           - DSM 관리자 전용이며 추가 비밀번호나 페어링 불필요, 모든 관리자가 하나의 인스턴스 공유
-
           - 브라우저 탭과 페이지 미리 보기는 NAS에서 실행되며, 10분 동안 사용하지 않으면 Chrome을 종료해 메모리를 확보
+          - T3 Code는 패키지 센터를 통해서만 업데이트
+        de: |-
+          0.1.7-0008
 
-          - T3 Code는 패키지 센터를 통해서만 업데이트'
-        de: '0.1.7-0001
+          - Freigegebenen NAS-Ordner für T3 Code-Home und Projekte wählen, Tools im Container mit sudo installieren, temporäre Dateien auf der Festplatte, 1,7 GB Arbeitsspeicher erforderlich. Frühere Daten werden nicht übernommen
 
+          0.1.7-0001
 
           - Erste Version von T3 Code 0.1.7, einer Browser-Konsole für Coding-Agenten
+          - Kein Agent enthalten: Codex, Claude Code oder andere Agenten in T3 Code installieren und mit dem eigenen Konto anmelden
+          - Nur für DSM-Administratoren, ohne zusätzliches Passwort oder Kopplung; alle Administratoren teilen sich eine Instanz
+          - Browser-Tabs und Seitenvorschauen laufen auf dem NAS; ihr Chrome wird nach 10 Minuten ohne Nutzung beendet, um Speicher freizugeben
+          - T3 Code wird nur über das Paket-Zentrum aktualisiert
+        fr: |-
+          0.1.7-0008
 
-          - Kein Agent enthalten: Codex, Claude Code oder andere Agenten in T3 Code installieren und mit
-          dem eigenen Konto anmelden
+          - Choix d'un dossier partagé du NAS pour le dossier personnel et les projets de T3 Code, installation d'outils avec sudo dans le conteneur, fichiers temporaires sur disque, 1,7 Go de mémoire requis. Les données précédentes ne sont pas reprises
 
-          - Nur für DSM-Administratoren, ohne zusätzliches Passwort oder Kopplung; alle Administratoren
-          teilen sich eine Instanz
-
-          - Browser-Tabs und Seitenvorschauen laufen auf dem NAS; ihr Chrome wird nach 10 Minuten ohne Nutzung
-          beendet, um Speicher freizugeben
-
-          - T3 Code wird nur über das Paket-Zentrum aktualisiert'
-        fr: '0.1.7-0001
-
+          0.1.7-0001
 
           - Première version de T3 Code 0.1.7, une console web pour les agents de code
+          - Aucun agent inclus : installez Codex, Claude Code ou d’autres agents depuis T3 Code et connectez-vous avec votre propre compte
+          - Réservé aux administrateurs DSM, sans mot de passe ni appairage supplémentaire ; tous les administrateurs partagent une instance
+          - Les onglets de navigateur et les aperçus de pages s’exécutent sur le NAS ; leur Chrome est arrêté après 10 minutes d’inactivité pour libérer de la mémoire
+          - T3 Code est mis à jour uniquement via le Centre de paquets
+        es: |-
+          0.1.7-0008
 
-          - Aucun agent inclus : installez Codex, Claude Code ou d’autres agents depuis T3 Code et connectez-vous
-          avec votre propre compte
+          - Elija una carpeta compartida del NAS para el directorio personal y los proyectos de T3 Code, instale herramientas con sudo en el contenedor, archivos temporales en disco y 1,7 GB de memoria necesarios. Los datos anteriores no se conservan
 
-          - Réservé aux administrateurs DSM, sans mot de passe ni appairage supplémentaire ; tous les administrateurs
-          partagent une instance
-
-          - Les onglets de navigateur et les aperçus de pages s’exécutent sur le NAS ; leur Chrome est arrêté
-          après 10 minutes d’inactivité pour libérer de la mémoire
-
-          - T3 Code est mis à jour uniquement via le Centre de paquets'
-        es: '0.1.7-0001
-
+          0.1.7-0001
 
           - Primera versión de T3 Code 0.1.7, una consola web para agentes de código
+          - No incluye agentes: instale Codex, Claude Code u otros agentes desde T3 Code e inicie sesión con su propia cuenta
+          - Solo para administradores de DSM, sin contraseña ni emparejamiento adicionales; todos los administradores comparten una instancia
+          - Las pestañas del navegador y las vistas previas de páginas se ejecutan en el NAS; su Chrome se cierra tras 10 minutos sin uso para liberar memoria
+          - T3 Code solo se actualiza desde el Centro de paquetes
+        it: |-
+          0.1.7-0008
 
-          - No incluye agentes: instale Codex, Claude Code u otros agentes desde T3 Code e inicie sesión
-          con su propia cuenta
+          - Scegli una cartella condivisa del NAS per la home e i progetti di T3 Code, installa strumenti con sudo nel container, file temporanei su disco e 1,7 GB di memoria richiesti. I dati precedenti non vengono mantenuti
 
-          - Solo para administradores de DSM, sin contraseña ni emparejamiento adicionales; todos los administradores
-          comparten una instancia
-
-          - Las pestañas del navegador y las vistas previas de páginas se ejecutan en el NAS; su Chrome
-          se cierra tras 10 minutos sin uso para liberar memoria
-
-          - T3 Code solo se actualiza desde el Centro de paquetes'
-        it: '0.1.7-0001
-
+          0.1.7-0001
 
           - Prima versione di T3 Code 0.1.7, una console web per gli agenti di coding
-
-          - Nessun agente incluso: installa Codex, Claude Code o altri agenti da T3 Code e accedi con il
-          tuo account
-
-          - Solo per gli amministratori DSM, senza password o abbinamento aggiuntivi; tutti gli amministratori
-          condividono un''istanza
-
-          - Le schede del browser e le anteprime delle pagine vengono eseguite sul NAS; il loro Chrome viene
-          chiuso dopo 10 minuti di inattività per liberare memoria
-
-          - T3 Code si aggiorna solo tramite il Centro pacchetti'
+          - Nessun agente incluso: installa Codex, Claude Code o altri agenti da T3 Code e accedi con il tuo account
+          - Solo per gli amministratori DSM, senza password o abbinamento aggiuntivi; tutti gli amministratori condividono un'istanza
+          - Le schede del browser e le anteprime delle pagine vengono eseguite sul NAS; il loro Chrome viene chiuso dopo 10 minuti di inattività per liberare memoria
+          - T3 Code si aggiorna solo tramite il Centro pacchetti
       screenshots:
       - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/T3Code/01-agent-setup.png
       - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/T3Code/02-browser-preview.png
       - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/T3Code/03-terminal.png
     pins:
     - package: T3Code
-      version: 0.1.7-0001
+      version: 0.1.7-0008
       arch:
       - apollolake
       - avoton
@@ -3817,30 +3803,30 @@ packages:
       - skylaked
       - v1000
       - v1000nk
-      sha256: 2f18965763b0197bcc3c2a7999285cb86232f4bbc446b4113c5ac9845ce50147
-      md5: 9cb1fadb9234c54861a6d91edbe77be5
-      size: 29742080
+      sha256: 7ebc9c430e4fdfdb691d218b01327ea4c182882f5fd970e07d659ae19d24e325
+      md5: 793b04d4d300152e58c9832134b651b2
+      size: 31168512
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: '2026-11-08T14:19:03Z'
-        source_ref: 83e78f016c6c1d9615497b6249b75baa7ec0cf39
+        reviewed_at: 2026-11-10T02:16:33Z
+        source_ref: bde096e3745b27267f8c7c9d3421b492fa354786
         source_repo: synopackageland/syno-pkg-land-t3code
     - package: T3Code
-      version: 0.1.7-0001
+      version: 0.1.7-0008
       arch:
       - armada37xx
       - rtd1296
       - rtd1619
       - rtd1619b
-      sha256: 66b33a3c40c54efc40b2aee8766886de0638e30dc5ad14c48a2668e044d2929a
-      md5: 9331482425f8e732017698285b43a186
-      size: 27079680
+      sha256: fcbfb58352eb8e5c39bf97ecc317e717adf72201b3e9884b484350afea9b2223
+      md5: ea460a6c22c5fa1e2b0e671e584ae8ed
+      size: 28435456
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: '2026-11-08T14:19:03Z'
-        source_ref: 83e78f016c6c1d9615497b6249b75baa7ec0cf39
+        reviewed_at: 2026-11-10T02:16:33Z
+        source_ref: bde096e3745b27267f8c7c9d3421b492fa354786
         source_repo: synopackageland/syno-pkg-land-t3code
 
 publishers:
