@@ -3286,16 +3286,22 @@ packages:
       internet: required
       telemetry: opt-in
       description:
-        en: Use herdr workspaces, coding agents and terminals from your browser or phone
-        zh-TW: 透過瀏覽器或手機使用 herdr 工作區、coding agent 與終端機
-        zh-CN: 通过浏览器或手机使用 herdr 工作区、coding agent 和终端
-        de: herdr-Arbeitsbereiche, Coding-Agenten und Terminals im Browser oder auf dem Smartphone nutzen
-        fr: Accédez aux espaces de travail, agents de code et terminaux herdr depuis votre navigateur ou
-          téléphone
-        ja: ブラウザーやスマートフォンから herdr のワークスペース、コーディングエージェント、ターミナルを利用
-        ko: 브라우저나 휴대폰에서 herdr 작업 공간, 코딩 에이전트, 터미널 사용
-        es: Usa espacios de trabajo, agentes de código y terminales de herdr desde tu navegador o teléfono
-        it: Usa spazi di lavoro, agenti di coding e terminali herdr dal browser o dal telefono
+        en: Use herdr workspaces, coding agents and terminals from your browser or phone. On a NAS with less than 4 GB of
+          memory, run agents on another computer or use a lightweight one such as Pi
+        zh-TW: 透過瀏覽器或手機使用 herdr 工作區、coding agent 與終端機。記憶體少於 4 GB 的 NAS 建議在其他電腦執行 agent，或改用 Pi 等輕量 agent
+        zh-CN: 通过浏览器或手机使用 herdr 工作区、coding agent 和终端。内存少于 4 GB 的 NAS 建议在其他电脑运行 agent，或改用 Pi 等轻量 agent
+        de: herdr-Arbeitsbereiche, Coding-Agenten und Terminals im Browser oder auf dem Smartphone nutzen. Auf einem NAS
+          mit weniger als 4 GB Arbeitsspeicher Agenten besser auf einem anderen Computer ausführen oder einen schlanken
+          wie Pi nutzen
+        fr: Accédez aux espaces de travail, agents de code et terminaux herdr depuis votre navigateur ou téléphone. Sur
+          un NAS doté de moins de 4 Go de mémoire, exécutez les agents sur un autre ordinateur ou choisissez-en un léger
+          comme Pi
+        ja: ブラウザーやスマートフォンから herdr のワークスペース、コーディングエージェント、ターミナルを利用。メモリが 4 GB 未満の NAS では、別のコンピューターでエージェントを実行するか、Pi のような軽量なエージェントをお使いください
+        ko: 브라우저나 휴대폰에서 herdr 작업 공간, 코딩 에이전트, 터미널 사용. 메모리가 4 GB 미만인 NAS에서는 다른 컴퓨터에서 에이전트를 실행하거나 Pi 같은 가벼운 에이전트를 사용하세요
+        es: Usa espacios de trabajo, agentes de código y terminales de herdr desde tu navegador o teléfono. En un NAS con
+          menos de 4 GB de memoria, ejecuta los agentes en otro equipo o usa uno ligero como Pi
+        it: Usa spazi di lavoro, agenti di coding e terminali herdr dal browser o dal telefono. Su un NAS con meno di 4
+          GB di memoria, esegui gli agenti su un altro computer o usane uno leggero come Pi
       long_description:
         en: 'Bring herdr workspaces, agent conversations, prompts, approvals and live terminals to your browser or phone.
           Connect other computers over SSH, or run shells and agents inside the App''s own container with bundled herdr,
@@ -3628,19 +3634,24 @@ packages:
       internet: required
       telemetry: none
       description:
-        en: A browser console for coding agents such as Codex and Claude Code. Install the agents you want
-          yourself
-        zh-TW: Codex、Claude Code 等 coding agent 的瀏覽器控制台。請自行安裝所需的 agent
-        zh-CN: Codex、Claude Code 等 coding agent 的浏览器控制台。请自行安装所需的 agent
-        ja: Codex や Claude Code などのコーディングエージェント用ブラウザーコンソール。エージェントはご自身でインストールしてください
-        ko: Codex, Claude Code 등 코딩 에이전트를 위한 브라우저 콘솔입니다. 원하는 에이전트는 직접 설치하세요
-        de: Browser-Konsole für Coding-Agenten wie Codex und Claude Code. Die gewünschten Agenten installieren
-          Sie selbst
-        fr: Console web pour les agents de code comme Codex et Claude Code. Installez vous-même les agents
-          de votre choix
-        es: Consola web para agentes de código como Codex y Claude Code. Instale usted mismo los agentes
-          que desee
-        it: Console web per agenti di coding come Codex e Claude Code. Installa tu gli agenti che desideri
+        en: A browser console for coding agents such as Codex and Claude Code. Install the agents you want yourself. On
+          a NAS with less than 4 GB of memory, run agents on another computer or use a lightweight one such as Pi
+        zh-TW: Codex、Claude Code 等 coding agent 的瀏覽器控制台。請自行安裝所需的 agent。記憶體少於 4 GB 的 NAS 建議在其他電腦執行 agent，或改用 Pi 等輕量 agent
+        zh-CN: Codex、Claude Code 等 coding agent 的浏览器控制台。请自行安装所需的 agent。内存少于 4 GB 的 NAS 建议在其他电脑运行 agent，或改用 Pi 等轻量 agent
+        ja: Codex や Claude Code などのコーディングエージェント用ブラウザーコンソール。エージェントはご自身でインストールしてください。メモリが 4 GB 未満の NAS では、別のコンピューターでエージェントを実行するか、Pi
+          のような軽量なエージェントをお使いください
+        ko: Codex, Claude Code 등 코딩 에이전트를 위한 브라우저 콘솔입니다. 원하는 에이전트는 직접 설치하세요. 메모리가 4 GB 미만인 NAS에서는 다른 컴퓨터에서 에이전트를 실행하거나 Pi
+          같은 가벼운 에이전트를 사용하세요
+        de: Browser-Konsole für Coding-Agenten wie Codex und Claude Code. Die gewünschten Agenten installieren Sie selbst.
+          Auf einem NAS mit weniger als 4 GB Arbeitsspeicher führen Sie Agenten besser auf einem anderen Computer aus oder
+          nutzen einen schlanken wie Pi
+        fr: Console web pour les agents de code comme Codex et Claude Code. Installez vous-même les agents de votre choix.
+          Sur un NAS doté de moins de 4 Go de mémoire, exécutez les agents sur un autre ordinateur ou choisissez-en un léger
+          comme Pi
+        es: Consola web para agentes de código como Codex y Claude Code. Instale usted mismo los agentes que desee. En un
+          NAS con menos de 4 GB de memoria, ejecute los agentes en otro equipo o use uno ligero como Pi
+        it: Console web per agenti di coding come Codex e Claude Code. Installa tu gli agenti che desideri. Su un NAS con
+          meno di 4 GB di memoria, esegui gli agenti su un altro computer o usane uno leggero come Pi
       long_description:
         en: 'T3 Code is a browser console for coding agents. Run Codex, Claude Code, Pi, OpenCode and other supported agents
           on your Synology NAS, and work with them from any browser on your network: chat with agents, review their changes
