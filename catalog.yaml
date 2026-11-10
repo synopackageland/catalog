@@ -1600,7 +1600,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.9-0009
+      release: v4.2.9-0010
       access: private
     metadata:
       maintainer: OpenList Team
@@ -1669,16 +1669,41 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/01-files-0018.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
-        en: "Fix DSM sign-in when opening over HTTP"
-        zh-TW: "修正以 HTTP 開啟時的 DSM 登入"
-        zh-CN: "修复通过 HTTP 打开时的 DSM 登录"
-        ja: "HTTP で開いた場合の DSM ログインを修正"
-        ko: "HTTP로 열 때 DSM 로그인 수정"
-        de: "DSM-Anmeldung beim Öffnen über HTTP korrigiert"
-        fr: "Corriger la connexion DSM lors de l’ouverture via HTTP"
+        en: |-
+          Choose a storage subfolder during installation
+
+          Fix DSM sign-in when opening over HTTP
+        zh-TW: |-
+          安裝時選擇儲存子資料夾
+
+          修正以 HTTP 開啟時的 DSM 登入
+        zh-CN: |-
+          安装时选择存储子文件夹
+
+          修复通过 HTTP 打开时的 DSM 登录
+        de: |-
+          Speicherunterordner bei der Installation auswählen
+
+          DSM-Anmeldung beim Öffnen über HTTP korrigiert
+        fr: |-
+          Choisir un sous-dossier de stockage pendant l’installation
+
+          Corriger la connexion DSM lors de l’ouverture via HTTP
+        ja: |-
+          インストール時に保存先のサブフォルダーを選択
+
+          HTTP で開いた場合の DSM ログインを修正
+        ko: |-
+          설치 중 저장소 하위 폴더 선택
+
+          HTTP로 열 때 DSM 로그인 수정
+        es: |-
+          Elegir una subcarpeta de almacenamiento durante la instalación
+        it: |-
+          Scegliere una sottocartella di archiviazione durante l’installazione
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.9-0009
+        version: 4.2.9-0010
         arch:
           - apollolake
           - avoton
@@ -1707,9 +1732,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 424e78a470a044e04599cc30bc724382d653750936ca9a56e07bd177b0206bb1
-        md5: 986a44b53415a451b6faea6803e0ccbb
-        size: 93139968
+        sha256: fffb19ed0c7c0a0d899ce0d6153e0a2df111ec7c1d3e304e83ace9f7327c44dd
+        md5: 8d23bcf5505a7d200b9f82b8477dcb41
+        size: 94632448
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1726,8 +1751,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-04T16:53:05Z
-          source_ref: 6adc46850ef9609575ec56fa439abd25ba9af11e
+          reviewed_at: 2026-11-10T02:50:20Z
+          source_ref: 120817643fdec1395bf0f56fc002d96bef15533e
           source_repo: synopackageland/syno-pkg-land-openlist
   - listed: true
     recommended: false
