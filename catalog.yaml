@@ -3253,7 +3253,7 @@ packages:
           reviewed_at: 2026-11-09T07:02:26Z
           source_ref: ff528589311a67112479794e1695684c4d931ece
           source_repo: synopackageland/syno-pkg-magpie
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: developer
@@ -3580,7 +3580,7 @@ packages:
         source_ref: 2e6e2e0c3770324443bb6a5307fd213ddbfe2666
         source_repo: synopackageland/syno-pkg-land-ovis
 
-  - listed: false
+  - listed: true
     recommended: false
     featured: false
     category: developer
