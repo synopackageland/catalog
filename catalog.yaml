@@ -3262,7 +3262,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-ovis
-      release: v0.5.1-0005
+      release: v0.5.1-0006
       access: public
     info:
       displayname: Ovis
@@ -3369,6 +3369,8 @@ packages:
           le statistiche anonime sono disattivate per impostazione predefinita e possono essere attivate nelle impostazioni'
       changelog:
         en: |-
+          Package Center description recommends running agents on another computer on low-memory NAS models
+
           On NAS models with less than 4 GB of RAM, the install wizard recommends connecting a remote PC with Add PC instead of running AI agents on the NAS; installation can continue
 
           Use sudo inside the container to install tools; the SDK now handles SSH key permissions
@@ -3388,6 +3390,8 @@ packages:
 
           - First public DSM release of Ovis 0.4.22 with administrator sign-in, an isolated container runtime, bundled herdr, common shell tools and Python, and persistent workspace data
         zh-TW: |-
+          套件中心說明建議在低記憶體 NAS 機型上改於其他電腦執行 agent
+
           記憶體少於 4 GB 的 NAS 安裝時會建議使用 Add PC 連線遠端電腦，而非在 NAS 上執行 AI agent；仍可繼續安裝
 
           可在容器內使用 sudo 安裝工具；SSH 金鑰權限改由 SDK 處理
@@ -3407,6 +3411,8 @@ packages:
 
           - 首次公開發佈 Ovis 0.4.22 DSM 套件，提供管理員登入、獨立容器執行環境、內附 herdr、常用 shell 工具與 Python，並保留工作區資料
         zh-CN: |-
+          套件中心说明建议在低内存 NAS 机型上改于其他电脑运行 agent
+
           内存少于 4 GB 的 NAS 安装时会建议使用“添加 PC”连接远程电脑，而非在 NAS 上运行 AI agent；仍可继续安装
 
           可在容器内使用 sudo 安装工具；SSH 密钥权限改由 SDK 处理
@@ -3426,6 +3432,8 @@ packages:
 
           - 首次公开发布 Ovis 0.4.22 DSM 套件，提供管理员登录、独立容器运行环境、内含 herdr、常用 shell 工具和 Python，并保留工作区数据
         ja: |-
+          パッケージセンターの説明で、メモリの少ない NAS では別のコンピューターでエージェントを実行することを推奨
+
           メモリが 4 GB 未満の NAS では、インストール時に NAS で AI エージェントを実行せず「PC を追加」でリモート PC に接続するよう案内。インストールは続行可能
 
           コンテナー内で sudo を使ってツールをインストール可能に。SSH 鍵の権限は SDK が管理
@@ -3445,6 +3453,8 @@ packages:
 
           - Ovis 0.4.22 の DSM 向け初公開版。管理者サインイン、分離されたコンテナー環境、herdr、一般的なシェルツール、Python、ワークスペースデータの保持に対応
         ko: |-
+          패키지 센터 설명에서 메모리가 적은 NAS 모델은 다른 컴퓨터에서 에이전트를 실행하도록 권장
+
           메모리가 4 GB 미만인 NAS에서는 설치 시 NAS에서 AI 에이전트를 실행하는 대신 'PC 추가'로 원격 PC에 연결하도록 권장하며, 설치는 계속할 수 있음
 
           컨테이너 안에서 sudo로 도구 설치 가능, SSH 키 권한은 SDK가 관리
@@ -3464,6 +3474,8 @@ packages:
 
           - Ovis 0.4.22의 첫 공개 DSM 릴리스: 관리자 로그인, 격리된 컨테이너 환경, herdr, 일반 셸 도구, Python 및 작업 공간 데이터 유지 지원
         de: |-
+          Die Beschreibung im Paket-Zentrum empfiehlt bei NAS-Modellen mit wenig Arbeitsspeicher, Agenten auf einem anderen Computer auszuführen
+
           Auf NAS mit weniger als 4 GB RAM empfiehlt der Installationsassistent, statt KI-Agenten auf dem NAS einen Remote-PC über Add PC zu verbinden; die Installation kann fortgesetzt werden
 
           Werkzeuge mit sudo im Container installieren; das SDK verwaltet jetzt die SSH-Schlüsselrechte
@@ -3483,6 +3495,8 @@ packages:
 
           - Erste öffentliche DSM-Version von Ovis 0.4.22 mit Administratoranmeldung, isolierter Container-Laufzeit, herdr, gängigen Shell-Werkzeugen, Python und dauerhaft gespeicherten Arbeitsbereichsdaten
         fr: |-
+          La description du Centre de paquets recommande d’exécuter les agents sur un autre ordinateur pour les NAS disposant de peu de mémoire
+
           Sur les NAS de moins de 4 Go de RAM, l'assistant d'installation conseille de connecter un PC distant avec Add PC plutôt que d'exécuter des agents IA sur le NAS ; l'installation peut continuer
 
           Installer des outils avec sudo dans le conteneur ; le SDK gère désormais les droits des clés SSH
@@ -3502,6 +3516,8 @@ packages:
 
           - Première version publique DSM d'Ovis 0.4.22 avec connexion administrateur, environnement conteneurisé isolé, herdr, outils shell courants, Python et données d'espace de travail persistantes
         es: |-
+          La descripción del Centro de paquetes recomienda ejecutar los agentes en otro equipo en modelos NAS con poca memoria
+
           En NAS con menos de 4 GB de RAM, el asistente de instalación recomienda conectar un PC remoto con Add PC en lugar de ejecutar agentes de IA en el NAS; la instalación puede continuar
 
           Instalar herramientas con sudo dentro del contenedor; el SDK gestiona ahora los permisos de las claves SSH
@@ -3521,6 +3537,8 @@ packages:
 
           - Primera versión pública para DSM de Ovis 0.4.22 con inicio de sesión de administrador, entorno de contenedor aislado, herdr, herramientas shell habituales, Python y datos de trabajo persistentes
         it: |-
+          La descrizione nel Centro pacchetti consiglia di eseguire gli agenti su un altro computer sui modelli NAS con poca memoria
+
           Sui NAS con meno di 4 GB di RAM, la procedura di installazione consiglia di collegare un PC remoto con Add PC invece di eseguire agenti IA sul NAS; l'installazione può continuare
 
           Installare strumenti con sudo nel container; l’SDK ora gestisce i permessi delle chiavi SSH
@@ -3545,7 +3563,7 @@ packages:
       - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/03-phone-welcome.png
     pins:
     - package: Ovis
-      version: 0.5.1-0005
+      version: 0.5.1-0006
       arch:
       - apollolake
       - avoton
@@ -3574,30 +3592,30 @@ packages:
       - skylaked
       - v1000
       - v1000nk
-      sha256: 3f837b184c2772cad7d851e42e2a1fcf3820802e0e56793090fbe241492db838
-      md5: 448e4f8828211b7ebe54f2170ee9e8df
-      size: 31264256
+      sha256: 06e6768ca87a49bc762041761ad9fd5718931abe65207ffa9d574b7f239619df
+      md5: 60c0924dee17446f13931de3c4b74514
+      size: 31265792
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: 2026-11-10T03:42:59Z
-        source_ref: 2e6e2e0c3770324443bb6a5307fd213ddbfe2666
+        reviewed_at: 2026-11-10T08:21:40Z
+        source_ref: 01a960ada5d8929cf21f8de0f44957d0faf6356d
         source_repo: synopackageland/syno-pkg-land-ovis
     - package: Ovis
-      version: 0.5.1-0005
+      version: 0.5.1-0006
       arch:
       - armada37xx
       - rtd1296
       - rtd1619
       - rtd1619b
-      sha256: 11f58d7d406bd5999ad5ab8d310c0eb4f25e37404b9f7623cb44db86245d3080
-      md5: df025c7a307d413902a35f66a769801e
-      size: 28529152
+      sha256: 1535bc6e1c2bcfe74114b3c9d41cc0dd13351f31992f48eca297b76eda831478
+      md5: a954b87d7e34122653ce947db62f843c
+      size: 28530688
       review:
         type: reviewed
         reviewer: synopackageland
-        reviewed_at: 2026-11-10T03:42:59Z
-        source_ref: 2e6e2e0c3770324443bb6a5307fd213ddbfe2666
+        reviewed_at: 2026-11-10T08:21:40Z
+        source_ref: 01a960ada5d8929cf21f8de0f44957d0faf6356d
         source_repo: synopackageland/syno-pkg-land-ovis
 
   - listed: true
