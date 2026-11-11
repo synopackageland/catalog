@@ -54,3 +54,35 @@ test('public command fails closed for unknown fields and missing catalog control
     assert.equal(run(root).status, 1);
   } finally { rmSync(root, { recursive: true }); }
 });
+
+test('public command reads schema 4 and enforces translations, punctuation and exact pinned notes', () => {
+  const root = fixture();
+  const languages = ['en', 'zh-TW', 'zh-CN', 'de', 'fr', 'ja', 'ko', 'es', 'it'];
+  const translated = Object.fromEntries(languages.map(language => [language, `${language} Read files`]));
+  const notes = Object.fromEntries(languages.map(language => [language, [`${language} Improve reading`]]));
+  const document = {
+    schema: 4, publishers: {}, packages: [{
+      source: { kind: 'github-release', repo: 'synopackageland/demo', release: 'v1.0-1' },
+      pins: [{
+        package: 'Demo', version: '1.0-1', arch: ['x86_64'], sha256: 'a'.repeat(64), md5: 'b'.repeat(32), size: 2048,
+        review: { type: 'reviewed', reviewer: 'fixture', reviewed_at: '2026-11-11T00:00:00Z', source_ref: 'c'.repeat(40) },
+      }],
+      metadata: { description: translated, long_description: structuredClone(translated), changelog: { releases: { '1.0-1': notes } } },
+    }],
+  };
+  const write = value => writeFileSync(join(root, 'catalog.yaml'), stringify(value));
+  try {
+    write(document);
+    const valid = run(root);
+    assert.equal(valid.status, 0, valid.stderr);
+    for (const mutate of [
+      value => { delete value.packages[0].metadata.description.it; },
+      value => { value.packages[0].metadata.changelog.releases['1.0-1'].es = ['Una mejora.']; },
+      value => { value.packages[0].pins[0].version = '1.0-2'; },
+    ]) {
+      const invalid = structuredClone(document);
+      mutate(invalid); write(invalid);
+      assert.equal(run(root).status, 1);
+    }
+  } finally { rmSync(root, { recursive: true }); }
+});

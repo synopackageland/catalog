@@ -120,6 +120,67 @@ function contradictions(derived, declared) {
   });
 }
 
+// packages/package-source/src/changelog.ts
+function isStructuredChangelog(value) {
+  return !!value && typeof value === "object" && !Array.isArray(value) && Object.hasOwn(value, "releases");
+}
+
+// packages/package-source/src/catalog-text.ts
+var CATALOG_LANGUAGES = ["en", "zh-TW", "zh-CN", "de", "fr", "ja", "ko", "es", "it"];
+var object = (value) => !!value && typeof value === "object" && !Array.isArray(value);
+var trailingPeriod = /[.。．｡]$/u;
+function uiText(value, path, max) {
+  if (typeof value !== "string" || !value.trim() || value.length > max || /[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]/.test(value))
+    throw new Error(`${path}: nonempty text of at most ${max} characters required`);
+  if (trailingPeriod.test(value.trimEnd()))
+    throw new Error(`${path}: trailing periods are not allowed`);
+}
+function translations(value, path, notes) {
+  if (!object(value)) throw new Error(`${path}: all nine languages required`);
+  for (const key of Object.keys(value))
+    if (!CATALOG_LANGUAGES.includes(key))
+      throw new Error(`${path}.${key}: unknown language`);
+  for (const language of CATALOG_LANGUAGES) {
+    const text2 = value[language];
+    const here = `${path}.${language}`;
+    if (notes) {
+      if (!Array.isArray(text2) || !text2.length || text2.length > 128)
+        throw new Error(`${here}: nonempty notes list required`);
+      text2.forEach((note, i2) => uiText(note, `${here}[${i2}]`, 16e3));
+    } else uiText(text2, here, path.endsWith(".description") ? 1e3 : 16e3);
+    if (language !== "en" && JSON.stringify(text2) === JSON.stringify(value.en))
+      throw new Error(`${here}: repeats English instead of a translation`);
+  }
+}
+function validateStructuredChangelog(raw) {
+  if (!object(raw) || !object(raw.releases))
+    throw new Error("metadata.changelog.releases: version records required");
+  for (const key of Object.keys(raw))
+    if (!["releases", "unrecorded"].includes(key)) throw new Error(`metadata.changelog.${key}: unknown field`);
+  if (Object.keys(raw.releases).length > 256) throw new Error("too many changelog releases");
+  for (const [version, notes] of Object.entries(raw.releases)) {
+    if (!/^[A-Za-z0-9_.+~-]+-\d+$/.test(version)) throw new Error(`invalid changelog SPK version: ${version}`);
+    translations(notes, `metadata.changelog.releases.${version}`, true);
+  }
+  if (raw.unrecorded !== void 0) {
+    if (!Array.isArray(raw.unrecorded) || raw.unrecorded.length > 256)
+      throw new Error("metadata.changelog.unrecorded: list required");
+    raw.unrecorded.forEach((notes, i2) => translations(notes, `metadata.changelog.unrecorded[${i2}]`, true));
+  }
+  if (!Object.keys(raw.releases).length && !raw.unrecorded?.length)
+    throw new Error("metadata.changelog: history is empty");
+}
+function validateCatalogText(metadata, versions) {
+  translations(metadata.description, "metadata.description", false);
+  translations(metadata.long_description, "metadata.long_description", false);
+  if (!isStructuredChangelog(metadata.changelog))
+    throw new Error("metadata.changelog: structured history required");
+  validateStructuredChangelog(metadata.changelog);
+  for (const version of new Set(versions))
+    if (!Object.hasOwn(metadata.changelog.releases, version))
+      throw new Error(`pinned version ${version} has no changelog notes`);
+}
+
 // packages/package-source/src/metadata.ts
 function safeMetadataUrl(value, mail = false) {
   if (typeof value !== "string" || value.length > 2048) return false;
@@ -177,6 +238,10 @@ function validateMetadata(raw, maxScreenshots = MAX_SCREENSHOTS) {
   for (const [k, v] of Object.entries(raw)) {
     if (validateDeclared(k, v)) continue;
     if (!allowed.includes(k)) throw new Error(`metadata.${k} is not a known field`);
+    if (k === "changelog" && isStructuredChangelog(v)) {
+      validateStructuredChangelog(v);
+      continue;
+    }
     if (k === "maintainer" || k === "distributor") {
       if (!oneLine(v, 80)) throw new Error(`metadata.${k} must be one line of at most 80 characters`);
       continue;
@@ -370,11 +435,11 @@ var only = (v, keys) => {
 };
 function parseCatalogYaml(text2) {
   const raw = readYaml(text2);
-  if (!record2(raw) || ![1, 2, 3].includes(raw.schema) || !Array.isArray(raw.packages) || raw.packages.length > (raw.schema === 3 ? 50 : 20))
+  if (!record2(raw) || ![1, 2, 3, 4].includes(raw.schema) || !Array.isArray(raw.packages) || raw.packages.length > (raw.schema >= 3 ? 50 : 20))
     throw new Error("invalid schema");
   only(raw, ["schema", "publishers", "packages"]);
   const publishers = { synopackageland: official };
-  const checkedFile = raw.schema === 3;
+  const checkedFile = raw.schema >= 3;
   if (raw.schema >= 2 && !record2(raw.publishers))
     throw new Error("missing publishers");
   for (const [id, p] of Object.entries(raw.publishers ?? {})) {
@@ -523,6 +588,7 @@ function parseCatalogYaml(text2) {
       keys.add(key);
     }
     const metadata = v.metadata ? validateMetadata(v.metadata, MAX_CATALOG_SCREENSHOTS) : {};
+    if (raw.schema >= 4) validateCatalogText(metadata, pins.map((pin) => pin.version));
     const ownApp = pins.length > 0 && pins.every((p) => ["SynoReclaim", "SynoPkgConnect", "SynoPkgGopeed"].includes(p.package));
     if (publisher.id === "synopackageland" && metadata.upstream && !ownApp) {
       if (!metadata.maintainer || /^syno\s*package\s*land$/i.test(metadata.maintainer.trim()))
