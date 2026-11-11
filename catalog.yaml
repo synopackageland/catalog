@@ -1277,7 +1277,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0097
+      release: v0.2.2-0098
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1366,6 +1366,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0098:
+            en:
+              - Make resizing table columns smoother and fix occasional errors when approving from a phone on older DSM versions
+            zh-TW:
+              - 調整表格欄寬時更流暢，並修正在舊版 DSM 上從手機核准時偶爾發生的錯誤
+            zh-CN:
+              - 调整表格列宽时更流畅，并修复在旧版 DSM 上从手机授权时偶尔出现的错误
+            ja:
+              - 表の列幅の調整をよりスムーズにし、古い DSM でスマートフォンから承認するときにまれに発生するエラーを修正
+            ko:
+              - 표 열 너비 조정을 더 매끄럽게 하고 이전 DSM 버전에서 휴대폰으로 승인할 때 가끔 발생하던 오류 수정
+            de:
+              - Flüssigeres Anpassen von Tabellenspalten und Behebung gelegentlicher Fehler beim Genehmigen per Smartphone unter älteren DSM-Versionen
+            fr:
+              - Redimensionnement plus fluide des colonnes des tableaux et correction d’erreurs occasionnelles lors de l’approbation depuis un téléphone sur les anciennes versions de DSM
+            es:
+              - Ajuste más fluido del ancho de las columnas de las tablas y corrección de errores ocasionales al aprobar desde un teléfono en versiones anteriores de DSM
+            it:
+              - Ridimensionamento più fluido delle colonne delle tabelle e correzione di errori occasionali durante l’approvazione da telefono nelle versioni meno recenti di DSM
           0.2.2-0097:
             en:
               - Improve sign-in reliability and responsiveness when the NAS is busy, and make
@@ -1575,15 +1594,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0097
+        version: 0.2.2-0098
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 3cae18b155a2e98225e73f9fe141ba0207da49d2ee810daabbbc7db77941073e
-        md5: b8c98e5abb53e8b7c59f69a150a7b941
-        size: 67396608
+        sha256: 30394055a8e2743cb7ad2551df3fab165b3f019fad08af530bc7c07aa82a3403
+        md5: d8d4132eea37bae4ba7940c3361b8a57
+        size: 67469824
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1601,11 +1620,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T06:00:00Z
-          source_ref: 3b5d3165db8568037e404a291b18e7aa22e0539a
+          reviewed_at: 2026-11-11T07:51:26Z
+          source_ref: dd823c2a8ecadd7b1fd7ed3c8c72c09d6f9d18fe
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0097
+        version: 0.2.2-0098
         arch:
           - apollolake
           - avoton
@@ -1634,9 +1653,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 0e3e0c0e85f19d38b5b471534cbf8207b9ced1d3fc824da16b657c54f849e50a
-        md5: 26e4d150e241ce50ffc49b32f88a7603
-        size: 71070720
+        sha256: dd3dcd1120b4d98f1708362274f39e28936fb232024a6bfbd17ffc484fefcca1
+        md5: bffa8ca27d200ca28636bdb4d1ae71de
+        size: 71140352
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1654,8 +1673,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T06:00:00Z
-          source_ref: 3b5d3165db8568037e404a291b18e7aa22e0539a
+          reviewed_at: 2026-11-11T07:51:26Z
+          source_ref: dd823c2a8ecadd7b1fd7ed3c8c72c09d6f9d18fe
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
