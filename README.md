@@ -22,3 +22,10 @@ Upstream-based Apps name the upstream owner as maintainer and Syno Package Land 
 distributor. Only Reclaim, Connect and Download Hub retain Syno Package Land as
 maintainer. Run `python3 scripts/check_attribution.py` before submitting catalog
 changes; the package-source schema enforces the same rule.
+
+Store-facing descriptions and full release history are edited only in each
+`catalog.yaml` entry. Schema 4 requires all nine site languages, structured
+per-SPK-version note lists, no trailing periods and notes for every pinned
+version. Unrecoverable historical versions remain `unrecorded`; keep all notes.
+See [the text schema and release workflow](SCHEMA.md#catalog-schema-4-one-store-text-source).
+Run `python3 scripts/check_locales.py` before submitting a change.

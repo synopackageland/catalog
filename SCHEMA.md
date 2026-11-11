@@ -1,4 +1,73 @@
-# Catalog v2: publishers, review tiers and pinned delivery
+# Catalog schema 4: one store-text source
+
+Each entry in `catalog.yaml` is the sole handwritten source of its store-facing
+short description, long description and package release history. Do not create
+separate language files or copy these texts into another catalog file. Existing
+App manifest/INFO copies will be migrated through the release integration; schema
+4 itself changes discovery and rendering, not already published SPK bytes.
+
+`metadata.description` and `metadata.long_description` must each contain `en`,
+`zh-TW`, `zh-CN`, `de`, `fr`, `ja`, `ko`, `es` and `it`. Every release and
+unrecorded record below also requires all nine languages. Text must be nonempty,
+and descriptions and each note must have no trailing period (`.`, `。`, `．`, `｡`).
+Do not use internal machine names or copy the English text as a translation.
+
+```yaml
+schema: 4
+# publishers and package delivery fields omitted here
+packages:
+  - metadata:
+      description: # all nine translations
+        en: Read your feeds in one place
+        # ...the other eight translations
+      long_description: # all nine translations
+        en: Read and organize subscriptions in your browser
+        # ...the other eight translations
+      changelog:
+        releases: # newest first, exact SPK versions
+          1.0.0-0002:
+            en:
+              - Improve sign-in reliability
+            # ...the other eight translated note lists
+          1.0.0-0001:
+            en:
+              - First package release
+            # ...the other eight translated note lists
+        unrecorded: # optional older history; never invent a version
+          - en:
+              - Earlier change without a recoverable release record
+            # ...the other eight translated note lists
+```
+
+The example is abbreviated, not a valid complete listing. Each language value
+in `releases` or `unrecorded` is a nonempty list of plain-text note items. Release
+keys are exact SPK versions without a `v` prefix; keep them newest first. Recover
+versions from catalog git history and corresponding package release records.
+Unrecoverable records retain their original notes in `unrecorded`. All existing
+history stays in this file; do not trim it when adding a new release.
+
+Before pinning a new version, add its nine-language note lists once under
+`metadata.changelog.releases.<version>`. The check rejects every pin without an
+exact version record, even if newer or unrecorded notes exist. DSM receives only
+that pin's notes and the localized long description. The public API retains the
+structured history and a generated compatibility text; the website shows the
+newest three records expanded and retains older records in native details.
+The website snapshot generator preserves the release map's authored order.
+
+Run `python3 scripts/check_locales.py` and `python3 -m unittest discover -s tests`.
+The generated `scripts/check-community.mjs` also enforces schema 4 using the same
+source validator as the Worker. Regenerate it from syno-package-land with
+`node scripts/catalog/build-community-check.mjs --catalog-dir <catalog-checkout>`;
+do not hand-edit the generated checker. Community submissions retain their
+separate schema and are not required to translate into nine languages.
+
+Deploy the schema-4 reader before merging a schema-4 catalog. The reader still
+accepts schemas 1–3 and legacy SPK metadata, so the two PRs can roll out in that
+order without rewriting historical artifacts.
+
+---
+
+## SDK metadata and pinned delivery contracts
 
 `catalog.yaml` is the approval and discovery source of truth. SPKs stay on the
 publisher's host. No SPK is uploaded into our repos, cache, D1 or R2.
@@ -91,9 +160,9 @@ The CLI writes standard INFO fields and `spk_land_metadata` (escaped single-line
 JSON for full multilingual/plain text). Standard changelog flattens newlines with
 ` · `; the website preserves full text. Existing description and i18n.info emit
 INFO description/description_<DSM-language>. INFO metadata is preferred; Release
-notes are the latest changelog fallback. Catalog metadata overrides are intended
-for website/editorial data and migration; update a manifest and re-release if
-metadata must also travel in the installed SPK. Catalog overrides can appear in
+notes are the latest changelog fallback. For schema 4, catalog entries own store-facing text; release-time injection
+into INFO is a separate integration. Existing installed INFO changes only after
+a rebuild/upgrade, not when catalog metadata changes. Catalog overrides can appear in
 the index immediately, without modifying the SPK. Missing fields are not rendered.
 
 ### App information
