@@ -2149,7 +2149,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-freshrss
-      release: v1.30.4-0019
+      release: v1.30.4-0020
       access: private
     metadata:
       maintainer: FreshRSS
@@ -2201,6 +2201,25 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgFreshRSS/01-feed-reader-upstream.png
       changelog:
         releases:
+          1.30.4-0020:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           1.30.4-0019:
             en:
               - Store temporary files on disk instead of memory
@@ -2270,7 +2289,7 @@ packages:
         it: Leggi e organizza i feed RSS e Atom in un unico posto
     pins:
       - package: SynoPkgFreshRSS
-        version: 1.30.4-0019
+        version: 1.30.4-0020
         arch:
           - apollolake
           - avoton
@@ -2299,8 +2318,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c5ba7c33157640e3b4fd7eebb8d5654d259943cd574045c006c50f839a9205cf
-        md5: b2239434fb0980f77db9c7df1b7c6547
+        sha256: 27ed111be40edd3185340f2dab166b1ae43ffcc482f7e38df44508c8cbeaf948
+        md5: a83a7fe8fbaaeb6318bee8aca3a58e3f
         size: 42681856
         facts:
           built_with: sdk
@@ -2318,8 +2337,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T14:53:39Z
-          source_ref: 2ab81d1869633e2b1e2ac35104b9deacb308c9a4
+          reviewed_at: 2026-11-12T09:41:07Z
+          source_ref: e9635326b4303675c6b97f9606a3edc61d6d82d3
           source_repo: synopackageland/syno-pkg-land-freshrss
   - listed: true
     recommended: false
