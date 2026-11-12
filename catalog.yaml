@@ -2787,7 +2787,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-convertx
-      release: v0.20.0-0009
+      release: v0.20.0-0010
       access: public
     metadata:
       maintainer: Emrik Östling
@@ -2856,6 +2856,25 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConvertX/01-file-conversion-upstream.png
       changelog:
         releases:
+          0.20.0-0010:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           0.20.0-0009:
             en:
               - Store temporary files on disk instead of memory
@@ -2915,7 +2934,7 @@ packages:
               - Correggere l'accesso a DSM quando l'app viene aperta tramite HTTP
     pins:
       - package: SynoPkgConvertX
-        version: 0.20.0-0009
+        version: 0.20.0-0010
         arch:
           - apollolake
           - avoton
@@ -2944,8 +2963,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c346d722b774a137fa4c58c64e2ec9a0738b23990bdb6c0570addfebbf65aa87
-        md5: 760be17c5112163a7f05a13e497f549f
+        sha256: e6661b30377ea25bc1a6ecc885f0a199a46a4c6aee3b5249e2e0a0dee26e72a8
+        md5: 085106ae89de7b21e9e47dd902675904
         size: 37844480
         facts:
           built_with: sdk
@@ -2963,8 +2982,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T14:53:17Z
-          source_ref: 87cc78f1fece2a8d17899aef784d56b050b0de45
+          reviewed_at: 2026-11-12T10:00:45Z
+          source_ref: 1a3ee9ee091a847ed77562fb8edb1e210d0ce728
           source_repo: synopackageland/syno-pkg-land-convertx
 
   - listed: true
