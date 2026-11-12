@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1636
+      release: v0.1.1-1638
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -85,6 +85,52 @@ packages:
           dipendono"
       changelog:
         releases:
+          0.1.1-1638:
+            en:
+              - The scan status now sits behind the info button at the start of the page bar, so on a phone it no longer covers the list
+              - When a cleanup cannot delete an item, Review says why and what to do next, and lets you remove that item to clean up the rest
+              - The "Temporary folder during cleanup" note is gone; Syno Reclaim creates and removes its hidden folders automatically
+              - Keep existing settings and saved scan reports
+            zh-TW:
+              - 掃描狀態改放在頁面列開頭的資訊按鈕中，手機上不再蓋住清單
+              - 清理無法刪除某個項目時，檢閱畫面會說明原因與下一步，並可移除該項目、繼續清理其餘項目
+              - 不再顯示「清理時的暫存資料夾」提示；Syno Reclaim 會自動建立並移除隱藏資料夾
+              - 保留現有設定與已儲存的掃描報告
+            zh-CN:
+              - 扫描状态改放在页面栏开头的信息按钮中，手机上不再遮住列表
+              - 清理无法删除某个项目时，检查界面会说明原因与下一步，并可移除该项目、继续清理其余项目
+              - 不再显示“清理时的临时文件夹”提示；Syno Reclaim 会自动创建并移除隐藏文件夹
+              - 保留现有设置与已保存的扫描报告
+            de:
+              - Der Scanstatus liegt jetzt hinter der Infotaste am Anfang der Seitenleiste und verdeckt auf dem Smartphone nicht mehr die Liste
+              - Kann eine Bereinigung ein Element nicht löschen, nennt die Überprüfung Grund und nächsten Schritt, und Sie können das Element entfernen, um den Rest zu bereinigen
+              - Der Hinweis „Temporärer Ordner während der Bereinigung“ entfällt; Syno Reclaim erstellt und entfernt seine versteckten Ordner automatisch
+              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
+            fr:
+              - L’état de l’analyse se trouve désormais derrière le bouton d’information au début de la barre de page et ne recouvre plus la liste sur un téléphone
+              - Lorsqu’un nettoyage ne peut pas supprimer un élément, la vérification indique pourquoi et quoi faire, et vous pouvez retirer cet élément pour nettoyer le reste
+              - La note « Dossier temporaire pendant le nettoyage » disparaît ; Syno Reclaim crée et supprime ses dossiers masqués automatiquement
+              - Conserver les réglages existants et les rapports d’analyse enregistrés
+            ja:
+              - スキャン状態をページバー先頭の情報ボタンに移し、スマートフォンで一覧を覆わないように変更
+              - クリーンアップで項目を削除できない場合、確認画面に理由と次の手順を表示し、その項目を外して残りをクリーンアップ可能に
+              - 「クリーンアップ中の一時フォルダ」の説明を削除。Syno Reclaim が非表示フォルダを自動で作成・削除します
+              - 既存の設定と保存済みスキャンレポートを保持
+            ko:
+              - 스캔 상태가 페이지 표시줄 시작 부분의 정보 버튼으로 옮겨져 휴대폰에서 더 이상 목록을 가리지 않음
+              - 정리 중 항목을 삭제할 수 없으면 검토 화면에 이유와 다음 단계가 표시되고, 해당 항목을 제거해 나머지를 정리할 수 있음
+              - 정리 중 임시 폴더에 대한 안내 삭제. Syno Reclaim이 숨겨진 폴더를 자동으로 만들고 제거함
+              - 기존 설정과 저장된 스캔 보고서 유지
+            es:
+              - El estado del análisis está ahora tras el botón de información al inicio de la barra de página y ya no tapa la lista en un teléfono
+              - Cuando una limpieza no puede eliminar un elemento, la revisión indica el motivo y el siguiente paso, y puede quitar ese elemento para limpiar el resto
+              - Desaparece la nota «Carpeta temporal durante la limpieza»; Syno Reclaim crea y elimina sus carpetas ocultas automáticamente
+              - Conservar los ajustes existentes y los informes de análisis guardados
+            it:
+              - Lo stato della scansione si trova ora dietro il pulsante informazioni all’inizio della barra di pagina e su un telefono non copre più l’elenco
+              - Quando una pulizia non può eliminare un elemento, la revisione indica il motivo e il passo successivo, e puoi rimuovere l’elemento per pulire il resto
+              - Scompare la nota «Cartella temporanea durante la pulizia»; Syno Reclaim crea e rimuove automaticamente le sue cartelle nascoste
+              - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
           0.1.1-1636:
             en:
               - Fix installs that ended with "The operation failed" and an app that would not open until DSM was reloaded
@@ -519,15 +565,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1636
+        version: 0.1.1-1638
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6e5520c9e03226531e6ce16a0eb11dc74f47d1d2c70f6dcd52a7975f9b3effa1
-        md5: 1863e138969d68d63c7cad28ca099756
-        size: 15307264
+        sha256: b79b83e3993905fcd64a1e4c69cf4187371e52c85ed988235b5861f960adf636
+        md5: 41c988169a5a7e25d26d2021bf52a6bf
+        size: 15317504
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -544,19 +590,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T07:53:34Z
-          source_ref: 3a86691eeb5ea9fe087822469f6bd0aef7e599e3
+          reviewed_at: 2026-11-12T11:13:41Z
+          source_ref: 8bece68726d46e07a9c165cbfb111c26e19b0f31
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1636
+        version: 0.1.1-1638
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 978e8577ea010074700fba3d4b97c373a136d10a11a72611d8425714c032800f
-        md5: dd360519f8155903180d786c846c0970
-        size: 16092672
+        sha256: e8289575d95208b71ac0679489c58d34ef945ce70b28003a1b84ccf603360a99
+        md5: d710b22b3b3eb022e1ab4d5dc139d8bf
+        size: 16101888
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -573,11 +619,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T07:53:34Z
-          source_ref: 3a86691eeb5ea9fe087822469f6bd0aef7e599e3
+          reviewed_at: 2026-11-12T11:13:41Z
+          source_ref: 8bece68726d46e07a9c165cbfb111c26e19b0f31
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1636
+        version: 0.1.1-1638
         arch:
           - apollolake
           - avoton
@@ -606,9 +652,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: bafca25d84d2145bdf9f4d76826bf3d4b3519a2eed86385b6cefeebfd0c89018
-        md5: 160daf86b4bcba448c90789177bd1e9f
-        size: 16472576
+        sha256: 4fb68b2af5e3d8455c06756d16adf92b2bbd31343fc75ae2427c8040a14b10ec
+        md5: 98c790c33999d3cd940d35b7b5c01bf7
+        size: 16482304
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -625,8 +671,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T07:53:34Z
-          source_ref: 3a86691eeb5ea9fe087822469f6bd0aef7e599e3
+          reviewed_at: 2026-11-12T11:13:41Z
+          source_ref: 8bece68726d46e07a9c165cbfb111c26e19b0f31
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
