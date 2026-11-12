@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1634
+      release: v0.1.1-1635
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -85,6 +85,34 @@ packages:
           dipendono"
       changelog:
         releases:
+          0.1.1-1635:
+            en:
+              - Confirm dialogs opened from a wizard cover only the app window
+              - Keep existing settings and saved scan reports
+            zh-TW:
+              - 從精靈開啟的確認對話框只會遮住 App 視窗
+              - 保留現有設定與已儲存的掃描報告
+            zh-CN:
+              - 从向导打开的确认对话框只会遮住应用窗口
+              - 保留现有设置与已保存的扫描报告
+            de:
+              - Bestätigungsdialoge aus einem Assistenten verdecken nur das App-Fenster
+              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
+            fr:
+              - Les boîtes de confirmation ouvertes depuis un assistant ne couvrent que la fenêtre de l’app
+              - Conserver les réglages existants et les rapports d’analyse enregistrés
+            ja:
+              - ウィザードから開いた確認ダイアログはアプリのウィンドウだけを覆うように変更
+              - 既存の設定と保存済みスキャンレポートを保持
+            ko:
+              - 마법사에서 연 확인 대화 상자가 앱 창만 가림
+              - 기존 설정과 저장된 스캔 보고서 유지
+            es:
+              - Los diálogos de confirmación abiertos desde un asistente solo cubren la ventana de la app
+              - Conservar los ajustes existentes y los informes de análisis guardados
+            it:
+              - Le finestre di conferma aperte da una procedura guidata coprono solo la finestra dell’app
+              - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
           0.1.1-1634:
             en:
               - Phone navigation moves to a bottom tab bar
@@ -463,14 +491,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1634
+        version: 0.1.1-1635
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: a81a5af3779590e9a085b37472ee3818d5d3fd2e7859d7d529a855b6e885e93c
-        md5: 47f26bec25eb92cff5b28e6d27442e14
+        sha256: 302a2aa83daa74652257f6291572d355cc901c7c1597a7de5526c7e172d5eb2a
+        md5: 654d188ba4f856d39ef672e017594ee6
         size: 15306752
         facts:
           built_with: sdk
@@ -488,18 +516,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T02:36:34Z
-          source_ref: d3d7d306a69fc9042f4f35dd2bd0538257b2faaa
+          reviewed_at: 2026-11-12T05:40:40Z
+          source_ref: 92b9a8e8f480b174868f88394d1ff3253dd9b8dc
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1634
+        version: 0.1.1-1635
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 48211b4beef7f76c7d4a280d2955cd57b6f98e8fb8c54f99ab8cbe80dd5669c0
-        md5: 009c9b77648eddb0491114540407c637
+        sha256: ddcb41475377f559ddc9a81b0b21f0fce3b98d471cb3fe07a58f712208300b30
+        md5: c111b29c0d9fb80a663770261c71fbae
         size: 16092160
         facts:
           built_with: sdk
@@ -517,11 +545,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T02:36:34Z
-          source_ref: d3d7d306a69fc9042f4f35dd2bd0538257b2faaa
+          reviewed_at: 2026-11-12T05:40:40Z
+          source_ref: 92b9a8e8f480b174868f88394d1ff3253dd9b8dc
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1634
+        version: 0.1.1-1635
         arch:
           - apollolake
           - avoton
@@ -550,8 +578,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 977714e76ddbe8327bf2f6ae9f7f07904e90e0b9960b7ecf600267e4ea82551c
-        md5: cf72f75c028ed7fca4a9416ef42bf451
+        sha256: 427ea1df96fb866d0d2dc8390c21c4a9a20494d57dea97df6be7058852db7323
+        md5: b1dc061d23f86676ed7689c6fddfa27c
         size: 16472064
         facts:
           built_with: sdk
@@ -569,8 +597,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T02:36:34Z
-          source_ref: d3d7d306a69fc9042f4f35dd2bd0538257b2faaa
+          reviewed_at: 2026-11-12T05:40:40Z
+          source_ref: 92b9a8e8f480b174868f88394d1ff3253dd9b8dc
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
