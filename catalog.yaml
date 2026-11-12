@@ -1464,7 +1464,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0099
+      release: v0.2.2-0100
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1553,6 +1553,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0100:
+            en:
+              - Confirm dialogs opened from a wizard cover only the app window
+            zh-TW:
+              - 從精靈開啟的確認對話框只會遮蓋 App 視窗
+            zh-CN:
+              - 从向导打开的确认对话框只会遮盖应用窗口
+            ja:
+              - ウィザードから開いた確認ダイアログがアプリのウィンドウだけを覆うように変更
+            ko:
+              - 마법사에서 연 확인 대화 상자가 앱 창만 가리도록 변경
+            de:
+              - Bestätigungsdialoge aus einem Assistenten verdecken nur noch das App-Fenster
+            fr:
+              - Les boîtes de confirmation ouvertes depuis un assistant ne couvrent que la fenêtre de l’application
+            es:
+              - Los diálogos de confirmación abiertos desde un asistente cubren solo la ventana de la aplicación
+            it:
+              - Le finestre di conferma aperte da una procedura guidata coprono solo la finestra dell’app
           0.2.2-0099:
             en:
               - Phone lists show all rows with a single page scroll
@@ -1800,15 +1819,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0099
+        version: 0.2.2-0100
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f4478a229049d2c66f332f4028c84a494b58a6efc748a909a57dc69e7573ac01
-        md5: 083f98a368326477741f5628c7f4a4e5
-        size: 67659264
+        sha256: 17eb330de35c24c13dba003d1584068eae75290855e7b1fa30cd153de4ade2c3
+        md5: ba80428b07a58d936c6e31b9e87acb77
+        size: 67659776
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1826,11 +1845,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T01:54:56Z
-          source_ref: 3f737b75591c14e3ebc90fd0e21b7bccbb79ce41
+          reviewed_at: 2026-11-12T05:50:07Z
+          source_ref: a4323e9bfaa71269c32c6312098f8d119df2a3db
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0099
+        version: 0.2.2-0100
         arch:
           - apollolake
           - avoton
@@ -1859,9 +1878,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 48693cfbc40b9067dea170e28191d0a812a57b771a79086fdbd1f64a1965765b
-        md5: 960ea6e4d249bc5ee773bc99a4087bdd
-        size: 71342592
+        sha256: 536703e8c57e0d9946f8d8dd481d9b11d97f7f4580ecaefda260b3bd7bae963b
+        md5: 13387690021aa772730d306167f2ce15
+        size: 71343104
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1879,8 +1898,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T01:54:56Z
-          source_ref: 3f737b75591c14e3ebc90fd0e21b7bccbb79ce41
+          reviewed_at: 2026-11-12T05:50:07Z
+          source_ref: a4323e9bfaa71269c32c6312098f8d119df2a3db
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
