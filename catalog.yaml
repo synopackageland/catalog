@@ -3583,7 +3583,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.4-0008
+      release: v2026.10.4-0009
       access: public
     metadata:
       maintainer: Home Assistant
@@ -3658,6 +3658,25 @@ packages:
           disinstallazione; richiede l'accesso come amministratore DSM e Container Manager
       changelog:
         releases:
+          2026.10.4-0009:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           2026.10.4-0008:
             en:
               - Store temporary files on disk instead of memory
@@ -3717,7 +3736,7 @@ packages:
               - Correggere l'accesso a DSM quando l'app viene aperta tramite HTTP
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.4-0008
+        version: 2026.10.4-0009
         arch:
           - apollolake
           - avoton
@@ -3746,8 +3765,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8647eb5167326e039603ae951903f449f009b2cac74933d69a8ec77dfa450f60
-        md5: 2126d7fbcb12cf09453626d05f8bea42
+        sha256: 002022650fab4b8de6b03700459937c3f3314d51b023bfa96925348ee29e5e59
+        md5: b5fb66c86ff70d7196b7ba5ee3413cce
         size: 29795328
         facts:
           built_with: sdk
@@ -3765,8 +3784,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T14:54:04Z
-          source_ref: d8f65a56bec7f1dcc0540e43c8a160f956ea1356
+          reviewed_at: 2026-11-12T09:53:14Z
+          source_ref: cc65eae4fa1b4aae4027e9b53d67d8222bddcbad
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
   - publisher: synopackageland
