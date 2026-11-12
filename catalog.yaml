@@ -4119,7 +4119,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-ovis
-      release: v0.5.1-0006
+      release: v0.5.1-0007
       access: public
     info:
       displayname: Ovis
@@ -4249,6 +4249,25 @@ packages:
           possono essere attivate nelle impostazioni"
       changelog:
         releases:
+          0.5.1-0007:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           0.5.1-0006:
             en:
               - Package Center description recommends running agents on another computer on
@@ -4467,7 +4486,7 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/03-phone-welcome.png
     pins:
       - package: Ovis
-        version: 0.5.1-0006
+        version: 0.5.1-0007
         arch:
           - apollolake
           - avoton
@@ -4496,30 +4515,30 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 06e6768ca87a49bc762041761ad9fd5718931abe65207ffa9d574b7f239619df
-        md5: 60c0924dee17446f13931de3c4b74514
-        size: 31265792
+        sha256: 06c8571025b931cc631ae307cb624e2c8165a74f5e3981ff71c64322363d1a5e
+        md5: d6f47e68dfef4e12814ee5ef84973ab4
+        size: 31228416
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-10T08:21:40Z
-          source_ref: 01a960ada5d8929cf21f8de0f44957d0faf6356d
+          reviewed_at: 2026-11-12T09:54:06Z
+          source_ref: ddb78024988e1abd2b929f23b322a0c705727c35
           source_repo: synopackageland/syno-pkg-land-ovis
       - package: Ovis
-        version: 0.5.1-0006
+        version: 0.5.1-0007
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 1535bc6e1c2bcfe74114b3c9d41cc0dd13351f31992f48eca297b76eda831478
-        md5: a954b87d7e34122653ce947db62f843c
-        size: 28530688
+        sha256: 642bf46924c43e8f0fcab16e7a64649e513514e2f88e62ddb2d55ddf65b17ba1
+        md5: ef0f52c343ce673be21c8389d6c799da
+        size: 28489728
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-10T08:21:40Z
-          source_ref: 01a960ada5d8929cf21f8de0f44957d0faf6356d
+          reviewed_at: 2026-11-12T09:54:06Z
+          source_ref: ddb78024988e1abd2b929f23b322a0c705727c35
           source_repo: synopackageland/syno-pkg-land-ovis
 
   - listed: true
