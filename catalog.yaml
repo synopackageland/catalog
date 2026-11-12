@@ -4550,7 +4550,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-t3code
-      release: v0.1.7-0010
+      release: v0.1.7-0011
       access: public
     info:
       displayname: T3 Code
@@ -4714,6 +4714,25 @@ packages:
           fuori della rete locale, connettiti tramite VPN"
       changelog:
         releases:
+          0.1.7-0011:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           0.1.7-0010:
             en:
               - Package Center description recommends running agents on another computer on
@@ -4874,7 +4893,7 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/T3Code/03-terminal.png
     pins:
       - package: T3Code
-        version: 0.1.7-0010
+        version: 0.1.7-0011
         arch:
           - apollolake
           - avoton
@@ -4903,30 +4922,30 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: a5345d03d124071b473bf71d21048811ae21240f10032f38a18d8f3faf940165
-        md5: bf012d27434925d3b88767dff621c213
+        sha256: 94d2a895dd62ea4126b44e2e5d0ad79e2d22544e8321b58bdfa1a6e7081de602
+        md5: ac72814bf94039b83b4bd72b0e308464
         size: 31181312
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-10T08:23:32Z
-          source_ref: b2b4dfa48795c7d5f40ddef98f91fc3bfb9603e7
+          reviewed_at: 2026-11-12T09:54:29Z
+          source_ref: 1fab1a87d2662dc3d1529a2ef23a539925c77efe
           source_repo: synopackageland/syno-pkg-land-t3code
       - package: T3Code
-        version: 0.1.7-0010
+        version: 0.1.7-0011
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: df543584d60c3b25b2d1eefedf582cbfc358b49127474c3009f3746b8f2e58af
-        md5: 2def8f23c58df49c2d72608b6dcb1c23
+        sha256: 2517aafbd520a495a524719916d0fe6be913e1d230f999a7d33a4ed4f2c7d5e1
+        md5: b1b81b2d6be4e39fa3cf86079df36ef5
         size: 28448256
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-10T08:23:32Z
-          source_ref: b2b4dfa48795c7d5f40ddef98f91fc3bfb9603e7
+          reviewed_at: 2026-11-12T09:54:29Z
+          source_ref: 1fab1a87d2662dc3d1529a2ef23a539925c77efe
           source_repo: synopackageland/syno-pkg-land-t3code
 
 publishers:
