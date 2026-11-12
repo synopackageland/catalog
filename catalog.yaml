@@ -579,7 +579,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0147
+      release: v0.1.0-0148
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -847,6 +847,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0148:
+            en:
+              - Confirm dialogs opened from a wizard cover only the app window
+            zh-TW:
+              - 從精靈開啟的確認對話框只會遮住 App 視窗
+            zh-CN:
+              - 从向导打开的确认对话框只遮住应用窗口
+            de:
+              - Aus einem Assistenten geöffnete Bestätigungsdialoge verdecken nur das App-Fenster
+            fr:
+              - Les boîtes de confirmation ouvertes depuis un assistant ne couvrent que la fenêtre de l'app
+            ja:
+              - ウィザードから開く確認ダイアログの覆う範囲をアプリのウィンドウのみに変更
+            ko:
+              - 마법사에서 연 확인 대화 상자가 앱 창만 가림
+            es:
+              - Los diálogos de confirmación abiertos desde un asistente cubren solo la ventana de la app
+            it:
+              - Le finestre di conferma aperte da una procedura guidata coprono solo la finestra dell'app
           0.1.0-0147:
             en:
               - Phone navigation moves to a bottom tab bar
@@ -1301,14 +1320,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0147
+        version: 0.1.0-0148
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: b55c5467d948d0c387ed9bb998c29c36ac5c2d14f10c3835d5386347336800dc
-        md5: 7d3d6c4f0d0349cdd6364fcae13602bd
+        sha256: d885633652197bc117120fcbf5f0cd6086b726890a8d067526a911f56d15c605
+        md5: 806be9c2c7d4fa6519c72a8ddbe8ac36
         size: 15646720
         facts:
           built_with: sdk
@@ -1326,18 +1345,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T02:22:55Z
-          source_ref: 071e4641756b4a1ba669dfa85ee7941bd944e339
+          reviewed_at: 2026-11-12T05:27:04Z
+          source_ref: 988bbec1ddf959431c706eabfd28ac8574fd09f6
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0147
+        version: 0.1.0-0148
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: f1dc7f757f10af7bbaeb0d63c6a0403bbc3568adaa9d3c15fede95dfcbc847b6
-        md5: 7a72f88f3a3b42b3311704c4c500d114
+        sha256: bca3ecbc1e7a39df87840838c79a8c6e15eca8e169e048a96c91cb991ce524b4
+        md5: 23124289edca0b475c1b78356a85a1da
         size: 16240640
         facts:
           built_with: sdk
@@ -1355,11 +1374,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T02:22:55Z
-          source_ref: 071e4641756b4a1ba669dfa85ee7941bd944e339
+          reviewed_at: 2026-11-12T05:27:04Z
+          source_ref: 988bbec1ddf959431c706eabfd28ac8574fd09f6
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0147
+        version: 0.1.0-0148
         arch:
           - apollolake
           - avoton
@@ -1388,8 +1407,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 96bcd57f74b34307a5a0f5660dc8cbd7be22000d53515a1911259de98a30417d
-        md5: 8f8415f2e7daeda5b4c7392a33fa112d
+        sha256: b4d8780e78d3d5f556d1b6dc7efdc02a3349f0957cf60ee029e570f577fbed08
+        md5: a80275f1137a575a39cf1654405b69ba
         size: 17029120
         facts:
           built_with: sdk
@@ -1407,8 +1426,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T02:22:55Z
-          source_ref: 071e4641756b4a1ba669dfa85ee7941bd944e339
+          reviewed_at: 2026-11-12T05:27:04Z
+          source_ref: 988bbec1ddf959431c706eabfd28ac8574fd09f6
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
