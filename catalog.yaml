@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1639
+      release: v0.1.1-1640
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -85,6 +85,43 @@ packages:
           dipendono"
       changelog:
         releases:
+          0.1.1-1640:
+            en:
+              - If a delete is interrupted, for example by a restart or power cut, Syno Reclaim shows where it stopped and lets you delete the rest or finish the interrupted cleanup
+              - After upgrading, an administrator needs to approve the system tasks once more
+              - Keep existing settings and saved scan reports
+            zh-TW:
+              - 刪除中途被中斷（例如重新開機或斷電）時，Syno Reclaim 會顯示停在哪裡，並可繼續刪除剩下的項目或完成上次中斷的清理
+              - 升級後，管理員需要再核准一次系統工作
+              - 保留現有設定與已儲存的掃描報告
+            zh-CN:
+              - 删除中途被中断（例如重新启动或断电）时，Syno Reclaim 会显示停在哪里，并可继续删除剩下的项目或完成上次中断的清理
+              - 升级后，管理员需要再批准一次系统任务
+              - 保留现有设置与已保存的扫描报告
+            ja:
+              - 再起動や停電などで削除が中断された場合、Syno Reclaim が停止した位置を表示し、残りの削除や中断したクリーンアップの完了が可能に
+              - アップグレード後、管理者がシステムタスクをもう一度承認する必要があります
+              - 既存の設定と保存済みスキャンレポートを保持
+            ko:
+              - 재시작이나 정전 등으로 삭제가 중단되면 Syno Reclaim이 멈춘 위치를 보여 주고, 남은 항목을 삭제하거나 중단된 정리를 완료할 수 있음
+              - 업그레이드 후 관리자가 시스템 작업을 한 번 더 승인해야 함
+              - 기존 설정과 저장된 스캔 보고서 유지
+            de:
+              - Wird ein Löschvorgang unterbrochen, etwa durch einen Neustart oder Stromausfall, zeigt Syno Reclaim, wo er stehen blieb, und Sie können den Rest löschen oder die unterbrochene Bereinigung abschließen
+              - Nach dem Upgrade muss ein Administrator die Systemaufgaben einmal erneut freigeben
+              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
+            fr:
+              - Si une suppression est interrompue, par exemple par un redémarrage ou une coupure de courant, Syno Reclaim indique où elle s’est arrêtée et vous permet de supprimer le reste ou de terminer le nettoyage interrompu
+              - Après la mise à jour, un administrateur doit approuver une nouvelle fois les tâches système
+              - Conserver les réglages existants et les rapports d’analyse enregistrés
+            es:
+              - Si una eliminación se interrumpe, por ejemplo por un reinicio o un corte de luz, Syno Reclaim muestra dónde se detuvo y permite eliminar el resto o terminar la limpieza interrumpida
+              - Tras actualizar, un administrador debe aprobar de nuevo las tareas del sistema
+              - Se conservan los ajustes existentes y los informes de análisis guardados
+            it:
+              - Se un'eliminazione viene interrotta, ad esempio da un riavvio o da un'interruzione di corrente, Syno Reclaim mostra dove si è fermata e permette di eliminare il resto o completare la pulizia interrotta
+              - Dopo l'aggiornamento, un amministratore deve approvare di nuovo le attività di sistema
+              - Conserva le impostazioni esistenti e i report di analisi salvati
           0.1.1-1639:
             en:
               - Deleting now shows shorter, clearer text, and every confirmation is still there
@@ -584,15 +621,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1639
+        version: 0.1.1-1640
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: ebb59190c41fd41d4ec7b1faa6d1e9eddf148ce6d765003da9438bacc824f1c2
-        md5: 29595e3068288b57abc062e5a2fa350a
-        size: 15307776
+        sha256: f94ac794898be959543e26a35a62b3358e690988a6b8759d1f420287e107636d
+        md5: f6d3282c07fcb17ac2ddd5460d3b5b57
+        size: 15391744
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -609,19 +646,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T11:50:08Z
-          source_ref: ead3f7abbf9347efc0e3918197923ba0b364c647
+          reviewed_at: 2026-11-12T15:25:59Z
+          source_ref: eda761b1c6a6a9b2f4b866aafbfb1639341b3665
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1639
+        version: 0.1.1-1640
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 8670f39a9b30b4125cfa63a4ad87021fe73aaa96fd09dd0b1e15122645f03f93
-        md5: 716962107ee37937d288d8dabc110770
-        size: 16093696
+        sha256: f378328e8227e012031faff3e36d578b1b5b9973a04f969c036d02c4332e7c55
+        md5: 447428a8b795c9bc2ea8caabec6fbe61
+        size: 16193024
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -638,11 +675,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T11:50:08Z
-          source_ref: ead3f7abbf9347efc0e3918197923ba0b364c647
+          reviewed_at: 2026-11-12T15:25:59Z
+          source_ref: eda761b1c6a6a9b2f4b866aafbfb1639341b3665
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1639
+        version: 0.1.1-1640
         arch:
           - apollolake
           - avoton
@@ -671,9 +708,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 51e35a172a670ed2342aa6f0cef5971bbebce5372f05851155610c8e53d00e38
-        md5: e3f39e90ddb038d1afb018024ce8b176
-        size: 16473088
+        sha256: 9928844e77dde9a61dbabc64a9d72d6de074c983830a05d3935b04b7b7773541
+        md5: 48cb356cf8eb90b1de8d21532f642fc4
+        size: 16568832
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -690,8 +727,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T11:50:08Z
-          source_ref: ead3f7abbf9347efc0e3918197923ba0b364c647
+          reviewed_at: 2026-11-12T15:25:59Z
+          source_ref: eda761b1c6a6a9b2f4b866aafbfb1639341b3665
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
