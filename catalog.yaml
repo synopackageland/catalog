@@ -2995,7 +2995,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.4.0-0012
+      release: v3.4.0-0013
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -3077,6 +3077,25 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgPaperlessNgx/02-workflow-upstream.png
       changelog:
         releases:
+          3.4.0-0013:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           3.4.0-0012:
             en:
               - Store temporary files on disk instead of memory
@@ -3141,7 +3160,7 @@ packages:
                 originali verificati
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.4.0-0012
+        version: 3.4.0-0013
         arch:
           - apollolake
           - avoton
@@ -3170,9 +3189,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 652cc3f508bf7184c0c9c28220191c1e830b71aa16ea9a6e2fc0ed8947dfc3d9
-        md5: 4fce98a5cf99679e714bab96a2630516
-        size: 43364352
+        sha256: fd76921cccd3c81febfbe281d7533042eafbcf25a10f3e1970997e429428a612
+        md5: e566f220b053e79c15b2767339003677
+        size: 43363840
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -3190,8 +3209,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T14:54:24Z
-          source_ref: 6f534603ef1588f59acb75443c3215610bfd028c
+          reviewed_at: 2026-11-12T10:01:08Z
+          source_ref: d747e95ad85bca8f81d659bd552613686a4ce4f9
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
