@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1640
+      release: v0.1.1-1641
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -85,6 +85,61 @@ packages:
           dipendono"
       changelog:
         releases:
+          0.1.1-1641:
+            en:
+              - System partition cleanup can now move files to a shared folder on an ext4 volume
+              - System partition cleanup no longer leaves an empty temporary folder in the destination shared folder
+              - Quota files at the root of an ext4 volume are now shown as DSM data and protected from cleanup
+              - After upgrading, an administrator needs to approve the system tasks once more
+              - Keep existing settings and saved scan reports
+            zh-TW:
+              - 系統分割區清理現在可以選擇 ext4 儲存空間上的共用資料夾作為目的地
+              - 系統分割區清理完成後，不再於目的地共用資料夾留下空的暫存資料夾
+              - ext4 儲存空間根目錄的配額檔案會標示為 DSM 資料並受到保護，不會被清理
+              - 升級後，管理員需要再核准一次系統工作
+              - 保留現有設定與已儲存的掃描報告
+            zh-CN:
+              - 系统分区清理现在可以选择 ext4 存储空间上的共享文件夹作为目标
+              - 系统分区清理完成后，不再在目标共享文件夹中留下空的临时文件夹
+              - ext4 存储空间根目录的配额文件会标记为 DSM 数据并受到保护，不会被清理
+              - 升级后，管理员需要再批准一次系统任务
+              - 保留现有设置与已保存的扫描报告
+            ja:
+              - システムパーティションのクリーンアップで、ext4 ボリューム上の共有フォルダを移動先に選択可能に
+              - システムパーティションのクリーンアップ後、移動先の共有フォルダに空の一時フォルダが残らないように
+              - ext4 ボリュームのルートにあるクォータファイルを DSM のデータとして表示し、クリーンアップから保護
+              - アップグレード後、管理者がシステムタスクをもう一度承認する必要があります
+              - 既存の設定と保存済みスキャンレポートを保持
+            ko:
+              - 시스템 파티션 정리에서 ext4 볼륨의 공유 폴더를 대상으로 선택할 수 있음
+              - 시스템 파티션 정리 후 대상 공유 폴더에 빈 임시 폴더가 남지 않음
+              - ext4 볼륨 루트의 할당량 파일을 DSM 데이터로 표시하고 정리되지 않도록 보호
+              - 업그레이드 후 관리자가 시스템 작업을 한 번 더 승인해야 함
+              - 기존 설정과 저장된 스캔 보고서 유지
+            de:
+              - Die Bereinigung der Systempartition kann jetzt einen freigegebenen Ordner auf einem ext4-Volume als Ziel verwenden
+              - Nach der Bereinigung der Systempartition bleibt im freigegebenen Zielordner kein leerer temporärer Ordner mehr zurück
+              - Kontingentdateien im Stammverzeichnis eines ext4-Volumes werden als DSM-Daten angezeigt und vor der Bereinigung geschützt
+              - Nach dem Upgrade muss ein Administrator die Systemaufgaben einmal erneut freigeben
+              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
+            fr:
+              - Le nettoyage de la partition système peut désormais utiliser un dossier partagé sur un volume ext4 comme destination
+              - Le nettoyage de la partition système ne laisse plus de dossier temporaire vide dans le dossier partagé de destination
+              - Les fichiers de quota à la racine d’un volume ext4 sont affichés comme données DSM et protégés contre le nettoyage
+              - Après la mise à jour, un administrateur doit approuver une nouvelle fois les tâches système
+              - Conserver les réglages existants et les rapports d’analyse enregistrés
+            es:
+              - La limpieza de la partición del sistema ahora puede usar como destino una carpeta compartida en un volumen ext4
+              - La limpieza de la partición del sistema ya no deja una carpeta temporal vacía en la carpeta compartida de destino
+              - Los archivos de cuota en la raíz de un volumen ext4 se muestran como datos de DSM y quedan protegidos frente a la limpieza
+              - Tras actualizar, un administrador debe aprobar de nuevo las tareas del sistema
+              - Se conservan los ajustes existentes y los informes de análisis guardados
+            it:
+              - La pulizia della partizione di sistema ora può usare come destinazione una cartella condivisa su un volume ext4
+              - La pulizia della partizione di sistema non lascia più una cartella temporanea vuota nella cartella condivisa di destinazione
+              - I file di quota nella radice di un volume ext4 vengono mostrati come dati DSM e protetti dalla pulizia
+              - Dopo l'aggiornamento, un amministratore deve approvare di nuovo le attività di sistema
+              - Conserva le impostazioni esistenti e i report di analisi salvati
           0.1.1-1640:
             en:
               - If a delete is interrupted, for example by a restart or power cut, Syno Reclaim shows where it stopped and lets you delete the rest or finish the interrupted cleanup
@@ -621,15 +676,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1640
+        version: 0.1.1-1641
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f94ac794898be959543e26a35a62b3358e690988a6b8759d1f420287e107636d
-        md5: f6d3282c07fcb17ac2ddd5460d3b5b57
-        size: 15391744
+        sha256: eff327e749d23629ac9ffccda14e82446f33b5236e9b65fbe1f0a6b30f2abe40
+        md5: 22cee47f50bebedf2fc49c9616a99f27
+        size: 15394816
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -646,19 +701,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T15:25:59Z
-          source_ref: eda761b1c6a6a9b2f4b866aafbfb1639341b3665
+          reviewed_at: 2026-11-12T18:03:39Z
+          source_ref: b9c2b193724881a8f4ffdb1cac55935500e2aa0a
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1640
+        version: 0.1.1-1641
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: f378328e8227e012031faff3e36d578b1b5b9973a04f969c036d02c4332e7c55
-        md5: 447428a8b795c9bc2ea8caabec6fbe61
-        size: 16193024
+        sha256: 045706d151cc19439527fb9247dea37c8ffad047aa7a0425c98d1dda048b5bf6
+        md5: 6cf91e2c61dc942ee24ff65d3ed18c68
+        size: 16196608
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -675,11 +730,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T15:25:59Z
-          source_ref: eda761b1c6a6a9b2f4b866aafbfb1639341b3665
+          reviewed_at: 2026-11-12T18:03:39Z
+          source_ref: b9c2b193724881a8f4ffdb1cac55935500e2aa0a
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1640
+        version: 0.1.1-1641
         arch:
           - apollolake
           - avoton
@@ -708,9 +763,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 9928844e77dde9a61dbabc64a9d72d6de074c983830a05d3935b04b7b7773541
-        md5: 48cb356cf8eb90b1de8d21532f642fc4
-        size: 16568832
+        sha256: cec52a1e9f3ad68eefc97642b7f8806f190b9d8402ee10f3229c0863bc0195af
+        md5: b6b00ff03075710d8e25ad72cd17b6d0
+        size: 16571392
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -727,8 +782,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T15:25:59Z
-          source_ref: eda761b1c6a6a9b2f4b866aafbfb1639341b3665
+          reviewed_at: 2026-11-12T18:03:39Z
+          source_ref: b9c2b193724881a8f4ffdb1cac55935500e2aa0a
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
