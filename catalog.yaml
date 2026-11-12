@@ -3794,7 +3794,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-magpie
-      release: v0.1.3093-0008
+      release: v0.1.3093-0009
       access: public
     metadata:
       maintainer: yetone
@@ -3915,6 +3915,25 @@ packages:
           versione del pacchetto SPK sostituisce il programma incluso
       changelog:
         releases:
+          0.1.3093-0009:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           0.1.3093-0008:
             en:
               - Improve page loading reliability when signing in
@@ -4013,14 +4032,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Magpie/04-masking.png
     pins:
       - package: Magpie
-        version: 0.1.3093-0008
+        version: 0.1.3093-0009
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e2d68517e5297d3743163302e6423b3dfa926afc916232093712d5090b26d70e
-        md5: 857f5027ea3c9e060167b739bf282183
+        sha256: b0e33e42096a6b8770ea3daddb58afaf662e4d1e48664fa370e69d20e2a5e0c4
+        md5: 92c13590732a4aee753f9ff79fbc9c18
         size: 52693504
         facts:
           built_with: sdk
@@ -4037,11 +4056,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T07:02:26Z
-          source_ref: ff528589311a67112479794e1695684c4d931ece
+          reviewed_at: 2026-11-12T09:53:45Z
+          source_ref: 621c4c1c372528980fffcfcf041e2245cd144b67
           source_repo: synopackageland/syno-pkg-magpie
       - package: Magpie
-        version: 0.1.3093-0008
+        version: 0.1.3093-0009
         arch:
           - apollolake
           - avoton
@@ -4070,8 +4089,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 25e93aca0c7a684287d8270da72afdda4f317e37b4a7c7944b09c094b53e9c0a
-        md5: c5e88730a2edf7d365ab8e95b6ab57d9
+        sha256: 75dafc2a698cc452687d4cabd61818f940b3eb6e4e92da2bb88b6aa1a9e99b72
+        md5: 2f35d4f32000911f2ad68ad2bd196d6d
         size: 57179136
         facts:
           built_with: sdk
@@ -4088,8 +4107,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T07:02:26Z
-          source_ref: ff528589311a67112479794e1695684c4d931ece
+          reviewed_at: 2026-11-12T09:53:45Z
+          source_ref: 621c4c1c372528980fffcfcf041e2245cd144b67
           source_repo: synopackageland/syno-pkg-magpie
   - listed: true
     recommended: false
