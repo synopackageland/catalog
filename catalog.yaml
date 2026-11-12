@@ -523,7 +523,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0145
+      release: v0.1.0-0146
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -791,6 +791,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0146:
+            en:
+              - Phone lists show all rows with a single page scroll
+            zh-TW:
+              - 手機上的清單顯示所有列，整頁一起捲動
+            zh-CN:
+              - 手机上的列表显示所有行，整页一起滚动
+            de:
+              - Listen auf dem Smartphone zeigen alle Zeilen und scrollen mit der ganzen Seite
+            fr:
+              - Sur téléphone, les listes affichent toutes les lignes et défilent avec la page
+            ja:
+              - スマートフォンのリストに全行を表示し、ページ全体で一度にスクロール
+            ko:
+              - 휴대폰에서 목록이 모든 행을 표시하고 페이지 전체가 함께 스크롤
+            es:
+              - Listas en el teléfono con todas las filas y desplazamiento de la página completa
+            it:
+              - Sul telefono gli elenchi mostrano tutte le righe e scorrono con l'intera pagina
           0.1.0-0145:
             en:
               - Resize table columns more smoothly
@@ -1207,15 +1226,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0145
+        version: 0.1.0-0146
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2324eb3d05056c203bc6b20db975a52518247c9f8bd57664df04b499ba07eda3
-        md5: 762a4519ffe1ac0ebe6bd5e582f56b2a
-        size: 15452160
+        sha256: d651899e7b46208389ee7d98f05ae303633417478fa8d0cf61de0cc358988247
+        md5: 1a63bf6da3af534671a74141eb6ab3d1
+        size: 15646720
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1232,19 +1251,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-11T07:32:36Z
-          source_ref: 810bc443415cdf9e9450598494ead48bd1fb7782
+          reviewed_at: 2026-11-12T01:32:01Z
+          source_ref: db93774036ab565a01bdaa309c9d769322773232
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0145
+        version: 0.1.0-0146
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 1db1a5217dd2804c370c747ab137f6acf5ed0afa861c074870198374eeb75278
-        md5: 5513a727c8fa0279ada214fa4584ea7e
-        size: 16046080
+        sha256: ae3c08e0ba29cf2dc53a02796492dd9912986c5e885a78d363e0449e8ec65746
+        md5: 031343b144a0d8b7bb8a03a9ea5e88ee
+        size: 16240640
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1261,11 +1280,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-11T07:32:36Z
-          source_ref: 810bc443415cdf9e9450598494ead48bd1fb7782
+          reviewed_at: 2026-11-12T01:32:01Z
+          source_ref: db93774036ab565a01bdaa309c9d769322773232
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0145
+        version: 0.1.0-0146
         arch:
           - apollolake
           - avoton
@@ -1294,9 +1313,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: aebd652744dcf7ffdcf8b03244003d5f3e851dc00ccfb8ba1826643668ae62fc
-        md5: d050c2e19127d76a4b0f776445ca2004
-        size: 16824320
+        sha256: c3ddd79b6611970435c6ccc1a2d9f3cdb701c55081d3482e838c395b001ac4e4
+        md5: 14acc977957770bf72d1e0e1df125b53
+        size: 17018880
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1313,8 +1332,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-11T07:32:36Z
-          source_ref: 810bc443415cdf9e9450598494ead48bd1fb7782
+          reviewed_at: 2026-11-12T01:32:01Z
+          source_ref: db93774036ab565a01bdaa309c9d769322773232
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
