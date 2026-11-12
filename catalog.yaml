@@ -1464,7 +1464,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0100
+      release: v0.2.2-0101
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1553,6 +1553,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0101:
+            en:
+              - Fix a Package Center error after installing in Safari
+            zh-TW:
+              - 修正在 Safari 安裝後套件中心出現錯誤的問題
+            zh-CN:
+              - 修复在 Safari 中安装后套件中心出现错误的问题
+            ja:
+              - Safari でインストールした後にパッケージセンターでエラーが表示される問題を修正
+            ko:
+              - Safari에서 설치한 후 패키지 센터에 오류가 표시되는 문제 수정
+            de:
+              - Behebt einen Fehler im Paket-Zentrum nach der Installation in Safari
+            fr:
+              - Corrige une erreur du Centre de paquets après l’installation dans Safari
+            es:
+              - Corrige un error del Centro de paquetes tras instalar en Safari
+            it:
+              - Corregge un errore del Centro pacchetti dopo l’installazione in Safari
           0.2.2-0100:
             en:
               - Confirm dialogs opened from a wizard cover only the app window
@@ -1819,14 +1838,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0100
+        version: 0.2.2-0101
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 17eb330de35c24c13dba003d1584068eae75290855e7b1fa30cd153de4ade2c3
-        md5: ba80428b07a58d936c6e31b9e87acb77
+        sha256: 7553f8e20de2eea23ee81540af9f28850bd4615b9ee03c50c5293996d094dcd1
+        md5: dd281dc037b29b8915c3a55e5d034233
         size: 67659776
         facts:
           built_with: sdk
@@ -1845,11 +1864,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T05:50:07Z
-          source_ref: a4323e9bfaa71269c32c6312098f8d119df2a3db
+          reviewed_at: 2026-11-12T07:53:13Z
+          source_ref: 3b815fd0977e6fc239dfbeb4864463c8074b05e3
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0100
+        version: 0.2.2-0101
         arch:
           - apollolake
           - avoton
@@ -1878,8 +1897,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 536703e8c57e0d9946f8d8dd481d9b11d97f7f4580ecaefda260b3bd7bae963b
-        md5: 13387690021aa772730d306167f2ce15
+        sha256: cf7cfe63adac734a20398abc5a284015f8bae113fce4c57d6c17d952ecc0408a
+        md5: 7ff32b5ddf7ffa08380d2110ccf2a1ad
         size: 71343104
         facts:
           built_with: sdk
@@ -1898,8 +1917,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T05:50:07Z
-          source_ref: a4323e9bfaa71269c32c6312098f8d119df2a3db
+          reviewed_at: 2026-11-12T07:53:13Z
+          source_ref: 3b815fd0977e6fc239dfbeb4864463c8074b05e3
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
