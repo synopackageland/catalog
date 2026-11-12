@@ -1557,7 +1557,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0101
+      release: v0.2.2-0102
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1646,6 +1646,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0102:
+            en:
+              - On Android phones, the keyboard no longer closes when you tap a text field
+            zh-TW:
+              - 在 Android 手機上點文字欄位時，鍵盤不再自動收起
+            zh-CN:
+              - 在 Android 手机上点按文本框时，键盘不再自动收起
+            ja:
+              - Android スマートフォンでテキスト欄をタップするとキーボードが閉じる問題を修正
+            ko:
+              - Android 휴대폰에서 텍스트 필드를 탭하면 키보드가 닫히던 문제 수정
+            de:
+              - Auf Android-Smartphones schließt sich die Tastatur beim Tippen auf ein Textfeld nicht mehr
+            fr:
+              - Sur les téléphones Android, le clavier ne se ferme plus quand vous touchez un champ de texte
+            es:
+              - En teléfonos Android, el teclado ya no se cierra al tocar un campo de texto
+            it:
+              - Sui telefoni Android la tastiera non si chiude più quando tocchi un campo di testo
           0.2.2-0101:
             en:
               - Fix a Package Center error after installing in Safari
@@ -1931,15 +1950,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0101
+        version: 0.2.2-0102
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 7553f8e20de2eea23ee81540af9f28850bd4615b9ee03c50c5293996d094dcd1
-        md5: dd281dc037b29b8915c3a55e5d034233
-        size: 67659776
+        sha256: 600846834f2c319a05497e4abc07ed29788ec12928e6ae4e053fc82647e4d8c4
+        md5: 03b0e1d38772594539b6a852747e7c0f
+        size: 67662336
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1957,11 +1976,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T07:53:13Z
-          source_ref: 3b815fd0977e6fc239dfbeb4864463c8074b05e3
+          reviewed_at: 2026-11-12T11:42:33Z
+          source_ref: f5e4b01a6e45ec71f30c123c0a974660a27d0b7f
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0101
+        version: 0.2.2-0102
         arch:
           - apollolake
           - avoton
@@ -1990,9 +2009,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: cf7cfe63adac734a20398abc5a284015f8bae113fce4c57d6c17d952ecc0408a
-        md5: 7ff32b5ddf7ffa08380d2110ccf2a1ad
-        size: 71343104
+        sha256: 6ede6036b8f77b1261e2720d88891e4e2d9687f18443cf88f7cba95601ebe428
+        md5: 6762f89b222b11c55d54af935f7e701d
+        size: 71346176
         facts:
           built_with: sdk
           sdk_backend: go
@@ -2010,8 +2029,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T07:53:13Z
-          source_ref: 3b815fd0977e6fc239dfbeb4864463c8074b05e3
+          reviewed_at: 2026-11-12T11:42:33Z
+          source_ref: f5e4b01a6e45ec71f30c123c0a974660a27d0b7f
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
