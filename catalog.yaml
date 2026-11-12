@@ -2566,7 +2566,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-jellyfin
-      release: v12.4-0011
+      release: v12.4-0012
       access: private
     metadata:
       maintainer: Jellyfin
@@ -2645,6 +2645,25 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgJellyfin/03-movie-details-upstream.jpg
       changelog:
         releases:
+          12.4-0012:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           12.4-0011:
             en:
               - Keep temporary files on disk instead of memory
@@ -2706,7 +2725,7 @@ packages:
                 richiesto
     pins:
       - package: SynoPkgJellyfin
-        version: 12.4-0011
+        version: 12.4-0012
         arch:
           - apollolake
           - avoton
@@ -2735,8 +2754,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: ccb1e6eaa0802a50ed5905ffa1b39c616309860f95acd19d4ddb6ffcc44974c7
-        md5: d8898ca9845077b899727e76fa17c0db
+        sha256: e764b1d33eca6a14eb13a34097ca0c758e0c963cd9e8265d3cb0755ee6eb07e5
+        md5: 7bc09ff0c8c5fc3b300c730708a088a2
         size: 41831424
         facts:
           built_with: sdk
@@ -2755,8 +2774,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T14:19:07Z
-          source_ref: dfa24bebead4a6b10ec78bf458dd106914399be2
+          reviewed_at: 2026-11-12T09:41:51Z
+          source_ref: 3cb2842a1a96027742c8adc8218cc35f5e2e2370
           source_repo: synopackageland/syno-pkg-land-jellyfin
 
   - listed: true
