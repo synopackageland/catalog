@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1632
+      release: v0.1.1-1633
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -85,6 +85,34 @@ packages:
           dipendono"
       changelog:
         releases:
+          0.1.1-1633:
+            en:
+              - Show every row of Explore and other tables on a phone, with the whole page scrolling
+              - Keep existing settings and saved scan reports
+            zh-TW:
+              - 在手機上，「探索」等頁面的表格會顯示所有列，整頁一起捲動
+              - 保留現有設定與已儲存的掃描報告
+            zh-CN:
+              - 在手机上，“探索”等页面的表格会显示所有行，整页一起滚动
+              - 保留现有设置与已保存的扫描报告
+            de:
+              - Tabellen wie unter „Erkunden“ zeigen auf dem Smartphone alle Zeilen, die ganze Seite scrollt
+              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
+            fr:
+              - Afficher toutes les lignes des tableaux, comme dans Explorer, sur un téléphone, en faisant défiler toute la page
+              - Conserver les réglages existants et les rapports d’analyse enregistrés
+            ja:
+              - スマートフォンで「探索」などの表にすべての行を表示し、ページ全体でスクロール
+              - 既存の設定と保存済みスキャンレポートを保持
+            ko:
+              - 휴대폰에서 탐색 등의 표에 모든 행을 표시하고 페이지 전체를 스크롤
+              - 기존 설정과 저장된 스캔 보고서 유지
+            es:
+              - Mostrar todas las filas de las tablas, como en Explorar, en el teléfono, desplazando toda la página
+              - Conservar los ajustes existentes y los informes de análisis guardados
+            it:
+              - Mostrare tutte le righe delle tabelle, come in Esplora, sul telefono, scorrendo l’intera pagina
+              - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
           0.1.1-1632:
             en:
               - Make dragging the Explore divider and resizing the window smoother
@@ -407,14 +435,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1632
+        version: 0.1.1-1633
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f58a4e33478d5f976a302064dc8f53187eff798df0ce8486a2fca6b5da3c7aed
-        md5: 8867ec241717cb359bfae890c8e58743
+        sha256: f4a5c63ba921a3c00b3b35cf0912688e0b88bb621f0dd2007d7e44d563d0c8e5
+        md5: 1ef21117c6ae1d3413aacab299a8f283
         size: 15305216
         facts:
           built_with: sdk
@@ -432,19 +460,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-11T08:00:00Z
-          source_ref: ae016800c34f29ab6da69e4e9661de3b197bc902
+          reviewed_at: 2026-11-12T01:40:55Z
+          source_ref: 09934b754650a299f2787eb2d88a69725ed004ed
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1632
+        version: 0.1.1-1633
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 6c2efc0828097ddad4d8feb98021f482d2612ac15a63052a8e45774f0e60117f
-        md5: 1ccef58924a8095d643db164820073ea
-        size: 16090624
+        sha256: bf8772f3727004c36b5d7f9a418d4f4d19f405dc12f7c53f22bcba9b1db38bb5
+        md5: 2f5254964bc7176b4f8724ce0eff3188
+        size: 16090112
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -461,11 +489,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-11T08:00:00Z
-          source_ref: ae016800c34f29ab6da69e4e9661de3b197bc902
+          reviewed_at: 2026-11-12T01:40:55Z
+          source_ref: 09934b754650a299f2787eb2d88a69725ed004ed
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1632
+        version: 0.1.1-1633
         arch:
           - apollolake
           - avoton
@@ -494,8 +522,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 1fca704ed5faa83b87e7161ee869e480ee2f94221b135b8180d9592040bc588d
-        md5: 0d6e293a8a3ef2c19de38e0c4e44d62f
+        sha256: 02872ca5a9b0466ce95839dde013a519e2bf73c11566e4926963e296fa319fa8
+        md5: e9707ac9bd6424c0bfdf47b7e412c83f
         size: 16470528
         facts:
           built_with: sdk
@@ -513,8 +541,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-11T08:00:00Z
-          source_ref: ae016800c34f29ab6da69e4e9661de3b197bc902
+          reviewed_at: 2026-11-12T01:40:55Z
+          source_ref: 09934b754650a299f2787eb2d88a69725ed004ed
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
