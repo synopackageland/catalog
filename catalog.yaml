@@ -2349,7 +2349,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.2-0012
+      release: v2.37.2-0013
       access: private
     metadata:
       maintainer: advplyr
@@ -2427,6 +2427,25 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgAudiobookshelf/02-library-player-upstream.png
       changelog:
         releases:
+          2.37.2-0013:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           2.37.2-0012:
             en:
               - Keep temporary files on disk instead of memory
@@ -2486,7 +2505,7 @@ packages:
               - Correggere l'accesso a DSM quando l'app viene aperta tramite HTTP
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.2-0012
+        version: 2.37.2-0013
         arch:
           - apollolake
           - avoton
@@ -2515,8 +2534,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 51a7c7d2f62b37d0d906410159a3091c4e5e6f6ba9205173b5b4e65dc8c9f271
-        md5: 33ca2c6f7c3e4805ece95c0aeb627ee4
+        sha256: 6bcc6719ce5bbff33862aa9c95900b856ef9de726bdd5a6dd1109a2b9fe1c791
+        md5: dfdf5e81f7cdd95f84d93410b6963910
         size: 38565888
         facts:
           built_with: sdk
@@ -2535,8 +2554,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T14:18:41Z
-          source_ref: 46f71021243242d857f71d3c7fea1d9da88e7581
+          reviewed_at: 2026-11-12T09:41:29Z
+          source_ref: c2974282f4fe2464974e8ef9a9c536ddf1e8f5a9
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - listed: true
     recommended: false
