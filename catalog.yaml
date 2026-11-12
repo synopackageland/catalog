@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1638
+      release: v0.1.1-1639
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -85,6 +85,25 @@ packages:
           dipendono"
       changelog:
         releases:
+          0.1.1-1639:
+            en:
+              - Deleting now shows shorter, clearer text, and every confirmation is still there
+            zh-TW:
+              - 刪除流程的文字更精簡，該確認的仍保留
+            zh-CN:
+              - 删除流程的文字更精简，该确认的仍保留
+            ja:
+              - 削除時の文言を簡潔にし、必要な確認はそのまま残しました
+            ko:
+              - 삭제 과정의 문구를 간결하게 다듬었고, 필요한 확인은 그대로 유지됩니다
+            de:
+              - Beim Löschen ist der Text kürzer und klarer, alle Bestätigungen bleiben erhalten
+            fr:
+              - Les textes de suppression sont plus courts et plus clairs, toutes les confirmations restent
+            es:
+              - Los textos al eliminar son más breves y claros, y se mantienen todas las confirmaciones
+            it:
+              - I testi dell'eliminazione sono più brevi e chiari, e tutte le conferme restano
           0.1.1-1638:
             en:
               - The scan status now sits behind the info button at the start of the page bar, so on a phone it no longer covers the list
@@ -565,15 +584,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1638
+        version: 0.1.1-1639
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: b79b83e3993905fcd64a1e4c69cf4187371e52c85ed988235b5861f960adf636
-        md5: 41c988169a5a7e25d26d2021bf52a6bf
-        size: 15317504
+        sha256: ebb59190c41fd41d4ec7b1faa6d1e9eddf148ce6d765003da9438bacc824f1c2
+        md5: 29595e3068288b57abc062e5a2fa350a
+        size: 15307776
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -590,19 +609,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T11:13:41Z
-          source_ref: 8bece68726d46e07a9c165cbfb111c26e19b0f31
+          reviewed_at: 2026-11-12T11:50:08Z
+          source_ref: ead3f7abbf9347efc0e3918197923ba0b364c647
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1638
+        version: 0.1.1-1639
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: e8289575d95208b71ac0679489c58d34ef945ce70b28003a1b84ccf603360a99
-        md5: d710b22b3b3eb022e1ab4d5dc139d8bf
-        size: 16101888
+        sha256: 8670f39a9b30b4125cfa63a4ad87021fe73aaa96fd09dd0b1e15122645f03f93
+        md5: 716962107ee37937d288d8dabc110770
+        size: 16093696
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -619,11 +638,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T11:13:41Z
-          source_ref: 8bece68726d46e07a9c165cbfb111c26e19b0f31
+          reviewed_at: 2026-11-12T11:50:08Z
+          source_ref: ead3f7abbf9347efc0e3918197923ba0b364c647
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1638
+        version: 0.1.1-1639
         arch:
           - apollolake
           - avoton
@@ -652,9 +671,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 4fb68b2af5e3d8455c06756d16adf92b2bbd31343fc75ae2427c8040a14b10ec
-        md5: 98c790c33999d3cd940d35b7b5c01bf7
-        size: 16482304
+        sha256: 51e35a172a670ed2342aa6f0cef5971bbebce5372f05851155610c8e53d00e38
+        md5: e3f39e90ddb038d1afb018024ce8b176
+        size: 16473088
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -671,8 +690,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T11:13:41Z
-          source_ref: 8bece68726d46e07a9c165cbfb111c26e19b0f31
+          reviewed_at: 2026-11-12T11:50:08Z
+          source_ref: ead3f7abbf9347efc0e3918197923ba0b364c647
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
