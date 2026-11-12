@@ -3221,7 +3221,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0021
+      release: v1.37.4-0022
       access: public
     metadata:
       maintainer: Daniel García
@@ -3301,6 +3301,25 @@ packages:
           richiede l'accesso come amministratore DSM e Container Manager
       changelog:
         releases:
+          1.37.4-0022:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           1.37.4-0021:
             en:
               - Keep temporary files on disk instead of memory
@@ -3362,7 +3381,7 @@ packages:
                 aperta tramite HTTP
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0021
+        version: 1.37.4-0022
         arch:
           - apollolake
           - avoton
@@ -3391,8 +3410,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: fcc1390d10b8ede723349f3d79f9ffc5502b087922ad5c83cd9fa08eca4bb358
-        md5: 4cfb82446bd30d647d60456fc7d72a4e
+        sha256: 3547ba228e41e7102eee14bcdc563bb34aaa3f7d631992431c06aecf532718c0
+        md5: b06ff855fb6bc5d6411187f926495f84
         size: 40058368
         facts:
           built_with: sdk
@@ -3410,8 +3429,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-09T14:19:59Z
-          source_ref: 3eade4a04661e5f97e68d10ce107e9a454b16adc
+          reviewed_at: 2026-11-12T10:01:29Z
+          source_ref: bc3746a7a3980946d441fba2614b86cdefbff7e4
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - listed: true
     recommended: false
