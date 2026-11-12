@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1635
+      release: v0.1.1-1636
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -85,6 +85,34 @@ packages:
           dipendono"
       changelog:
         releases:
+          0.1.1-1636:
+            en:
+              - Fix installs that ended with "The operation failed" and an app that would not open until DSM was reloaded
+              - Keep existing settings and saved scan reports
+            zh-TW:
+              - 修正安裝結束時顯示「操作失敗」、且需重新整理 DSM 才能開啟 App 的問題
+              - 保留現有設定與已儲存的掃描報告
+            zh-CN:
+              - 修复安装结束时显示“操作失败”、且需刷新 DSM 才能打开应用的问题
+              - 保留现有设置与已保存的扫描报告
+            de:
+              - Behebt Installationen, die mit „Der Vorgang ist fehlgeschlagen“ endeten und deren App sich erst nach dem Neuladen von DSM öffnete
+              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
+            fr:
+              - Corrige les installations qui se terminaient par « L’opération a échoué » et une app qui ne s’ouvrait qu’après avoir rechargé DSM
+              - Conserver les réglages existants et les rapports d’analyse enregistrés
+            ja:
+              - インストールが「操作に失敗しました」で終わり、DSM を再読み込みするまでアプリが開かない問題を修正
+              - 既存の設定と保存済みスキャンレポートを保持
+            ko:
+              - 설치가 "작업에 실패했습니다"로 끝나고 DSM을 새로 고칠 때까지 앱이 열리지 않던 문제 수정
+              - 기존 설정과 저장된 스캔 보고서 유지
+            es:
+              - Corrige instalaciones que terminaban con «Error en la operación» y una app que no se abría hasta recargar DSM
+              - Conservar los ajustes existentes y los informes de análisis guardados
+            it:
+              - Corregge le installazioni che terminavano con «Operazione non riuscita» e un’app che non si apriva finché DSM non veniva ricaricato
+              - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
           0.1.1-1635:
             en:
               - Confirm dialogs opened from a wizard cover only the app window
@@ -491,15 +519,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1635
+        version: 0.1.1-1636
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 302a2aa83daa74652257f6291572d355cc901c7c1597a7de5526c7e172d5eb2a
-        md5: 654d188ba4f856d39ef672e017594ee6
-        size: 15306752
+        sha256: 6e5520c9e03226531e6ce16a0eb11dc74f47d1d2c70f6dcd52a7975f9b3effa1
+        md5: 1863e138969d68d63c7cad28ca099756
+        size: 15307264
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -516,19 +544,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T05:40:40Z
-          source_ref: 92b9a8e8f480b174868f88394d1ff3253dd9b8dc
+          reviewed_at: 2026-11-12T07:53:34Z
+          source_ref: 3a86691eeb5ea9fe087822469f6bd0aef7e599e3
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1635
+        version: 0.1.1-1636
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: ddcb41475377f559ddc9a81b0b21f0fce3b98d471cb3fe07a58f712208300b30
-        md5: c111b29c0d9fb80a663770261c71fbae
-        size: 16092160
+        sha256: 978e8577ea010074700fba3d4b97c373a136d10a11a72611d8425714c032800f
+        md5: dd360519f8155903180d786c846c0970
+        size: 16092672
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -545,11 +573,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T05:40:40Z
-          source_ref: 92b9a8e8f480b174868f88394d1ff3253dd9b8dc
+          reviewed_at: 2026-11-12T07:53:34Z
+          source_ref: 3a86691eeb5ea9fe087822469f6bd0aef7e599e3
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1635
+        version: 0.1.1-1636
         arch:
           - apollolake
           - avoton
@@ -578,9 +606,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 427ea1df96fb866d0d2dc8390c21c4a9a20494d57dea97df6be7058852db7323
-        md5: b1dc061d23f86676ed7689c6fddfa27c
-        size: 16472064
+        sha256: bafca25d84d2145bdf9f4d76826bf3d4b3519a2eed86385b6cefeebfd0c89018
+        md5: 160daf86b4bcba448c90789177bd1e9f
+        size: 16472576
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -597,8 +625,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T05:40:40Z
-          source_ref: 92b9a8e8f480b174868f88394d1ff3253dd9b8dc
+          reviewed_at: 2026-11-12T07:53:34Z
+          source_ref: 3a86691eeb5ea9fe087822469f6bd0aef7e599e3
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
