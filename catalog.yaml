@@ -1957,7 +1957,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-openlist
-      release: v4.2.9-0010
+      release: v4.2.9-0011
       access: private
     metadata:
       maintainer: OpenList Team
@@ -2030,6 +2030,25 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgOpenList/02-storages-0018.png
       changelog:
         releases:
+          4.2.9-0011:
+            en:
+              - "Improve installation reliability in Package Center"
+            zh-TW:
+              - "提升在套件中心安裝的穩定性"
+            zh-CN:
+              - "提升在套件中心安装的稳定性"
+            ja:
+              - "パッケージセンターでのインストールの安定性を向上"
+            ko:
+              - "패키지 센터에서의 설치 안정성 향상"
+            de:
+              - "Zuverlässigkeit der Installation im Paket-Zentrum verbessern"
+            fr:
+              - "Améliorer la fiabilité de l’installation dans le Centre de paquets"
+            es:
+              - "Mejorar la fiabilidad de la instalación en el Centro de paquetes"
+            it:
+              - "Migliorare l’affidabilità dell’installazione nel Centro pacchetti"
           4.2.9-0010:
             en:
               - Choose a storage subfolder during installation
@@ -2070,7 +2089,7 @@ packages:
               - Correggere l'accesso a DSM quando l'app viene aperta tramite HTTP
     pins:
       - package: SynoPkgOpenList
-        version: 4.2.9-0010
+        version: 4.2.9-0011
         arch:
           - apollolake
           - avoton
@@ -2099,8 +2118,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: fffb19ed0c7c0a0d899ce0d6153e0a2df111ec7c1d3e304e83ace9f7327c44dd
-        md5: 8d23bcf5505a7d200b9f82b8477dcb41
+        sha256: e7676d18ea05649ee62917e15cf5c258b698197e8c43705b10dbfa96bc193e5b
+        md5: 76c08e5cee438a3a7a262af2279ffd77
         size: 94632448
         facts:
           built_with: sdk
@@ -2118,8 +2137,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-10T02:50:20Z
-          source_ref: 120817643fdec1395bf0f56fc002d96bef15533e
+          reviewed_at: 2026-11-12T09:40:47Z
+          source_ref: 266a915e7c64be56cf3f42c22a15143f3d2e6f52
           source_repo: synopackageland/syno-pkg-land-openlist
   - listed: true
     recommended: false
