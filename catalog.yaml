@@ -1370,7 +1370,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0098
+      release: v0.2.2-0099
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1459,6 +1459,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0099:
+            en:
+              - Phone lists show all rows with a single page scroll
+            zh-TW:
+              - 手機上的清單會顯示所有項目，整頁只需單一捲動
+            zh-CN:
+              - 手机上的列表会显示所有项目，整页只需单一滚动
+            ja:
+              - スマートフォンのリストにすべての行を表示し、ページ全体を 1 つのスクロールで操作
+            ko:
+              - 휴대폰 목록에 모든 행을 표시하고 페이지 전체를 한 번에 스크롤
+            de:
+              - Listen auf Smartphones zeigen alle Zeilen und die Seite scrollt als Ganzes
+            fr:
+              - Sur téléphone, les listes affichent toutes les lignes et la page défile d’un seul tenant
+            es:
+              - En el teléfono, las listas muestran todas las filas y la página se desplaza de una sola vez
+            it:
+              - Sul telefono gli elenchi mostrano tutte le righe e la pagina scorre in un’unica volta
           0.2.2-0098:
             en:
               - Make resizing table columns smoother and fix occasional errors when approving from a phone on older DSM versions
@@ -1687,15 +1706,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0098
+        version: 0.2.2-0099
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 30394055a8e2743cb7ad2551df3fab165b3f019fad08af530bc7c07aa82a3403
-        md5: d8d4132eea37bae4ba7940c3361b8a57
-        size: 67469824
+        sha256: f4478a229049d2c66f332f4028c84a494b58a6efc748a909a57dc69e7573ac01
+        md5: 083f98a368326477741f5628c7f4a4e5
+        size: 67659264
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1713,11 +1732,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-11T07:51:26Z
-          source_ref: dd823c2a8ecadd7b1fd7ed3c8c72c09d6f9d18fe
+          reviewed_at: 2026-11-12T01:54:56Z
+          source_ref: 3f737b75591c14e3ebc90fd0e21b7bccbb79ce41
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0098
+        version: 0.2.2-0099
         arch:
           - apollolake
           - avoton
@@ -1746,9 +1765,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: dd3dcd1120b4d98f1708362274f39e28936fb232024a6bfbd17ffc484fefcca1
-        md5: bffa8ca27d200ca28636bdb4d1ae71de
-        size: 71140352
+        sha256: 48693cfbc40b9067dea170e28191d0a812a57b771a79086fdbd1f64a1965765b
+        md5: 960ea6e4d249bc5ee773bc99a4087bdd
+        size: 71342592
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1766,8 +1785,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-11T07:51:26Z
-          source_ref: dd823c2a8ecadd7b1fd7ed3c8c72c09d6f9d18fe
+          reviewed_at: 2026-11-12T01:54:56Z
+          source_ref: 3f737b75591c14e3ebc90fd0e21b7bccbb79ce41
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
