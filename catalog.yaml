@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0149
+      release: v0.1.0-0150
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,34 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0150:
+            en:
+              - "Open this NAS in a phone browser: Connect your phone has a Phone browser tab with a code for a page that keeps its address after updates"
+              - "In the phone browser page, Back steps through Apps and pages, Home leaves an App, and DSM Apps open faster without a white flash"
+            zh-TW:
+              - "在手機瀏覽器開啟這台 NAS：「連接手機」新增「手機瀏覽器」分頁，掃碼即可開啟，網址在更新後也不會變"
+              - "在手機瀏覽器頁面中，返回會逐步退出 App 與頁面，「主畫面」可離開 App，DSM App 開啟更快且不再閃白"
+            zh-CN:
+              - "在手机浏览器打开这台 NAS：“连接手机”新增“手机浏览器”标签页，扫码即可打开，网址在更新后也不会变"
+              - "在手机浏览器页面中，返回会逐步退出应用与页面，“主屏幕”可离开应用，DSM 应用打开更快且不再闪白"
+            ja:
+              - "スマートフォンのブラウザでこの NAS を開けるように：「スマートフォンを接続」に「スマートフォンのブラウザ」タブを追加。コードを読み取るだけで開け、アドレスは更新後も変わりません"
+              - "スマートフォンのブラウザ用ページで、戻るでアプリやページを順に戻り、ホームでアプリを閉じ、DSM アプリが白い画面を挟まずより速く開きます"
+            ko:
+              - "휴대폰 브라우저에서 이 NAS 열기: 휴대폰 연결에 휴대폰 브라우저 탭이 추가되어 코드를 스캔하면 열리며, 주소는 업데이트 후에도 바뀌지 않음"
+              - "휴대폰 브라우저 페이지에서 뒤로 가기로 앱과 페이지를 차례로 나가고, 홈으로 앱을 닫으며, DSM 앱이 흰 화면 없이 더 빨리 열림"
+            de:
+              - "Dieses NAS im Smartphone-Browser öffnen: Smartphone verbinden hat einen Tab Smartphone-Browser mit einem Code für eine Seite, deren Adresse nach Updates gleich bleibt"
+              - "Auf der Seite im Smartphone-Browser geht Zurück Schritt für Schritt durch Apps und Seiten, Startseite verlässt eine App, und DSM-Apps öffnen schneller ohne weißes Aufblitzen"
+            fr:
+              - "Ouvrir ce NAS dans le navigateur du téléphone : Connecter votre téléphone a un onglet Navigateur du téléphone avec un code vers une page dont l’adresse reste la même après les mises à jour"
+              - "Sur la page du navigateur du téléphone, Retour revient pas à pas dans les apps et les pages, Accueil quitte une app, et les apps DSM s’ouvrent plus vite sans écran blanc"
+            es:
+              - "Abrir este NAS en el navegador del teléfono: Conectar el teléfono tiene una pestaña Navegador del teléfono con un código para una página cuya dirección no cambia tras las actualizaciones"
+              - "En la página del navegador del teléfono, Atrás retrocede paso a paso por apps y páginas, Inicio sale de una app y las apps de DSM se abren más rápido sin destello blanco"
+            it:
+              - "Apri questo NAS nel browser del telefono: Collega il telefono ha una scheda Browser del telefono con un codice per una pagina il cui indirizzo resta uguale dopo gli aggiornamenti"
+              - "Nella pagina del browser del telefono, Indietro torna passo passo tra app e pagine, Home esce da un’app e le app DSM si aprono più velocemente senza lampi bianchi"
           0.1.0-0149:
             en:
               - On Android phones, the keyboard no longer closes when you tap a text field
@@ -910,30 +938,6 @@ packages:
               - Aggiornati gli angoli delle finestre, il focus della tastiera e gli sfondi delle
                 finestre di dialogo
               - Migliorati l’aspetto su dispositivi mobili e il riscontro al tocco
-          0.1.0-0142:
-            en:
-              - Fixed phone pages freezing when scrolling back up after the header hides; improved
-                the phone top bar and Settings action footer
-            zh-TW:
-              - 修正手機頁面在頂部列隱藏後往上捲動會凍結的問題，改善手機頂部列與設定頁的操作列
-            zh-CN:
-              - 修复手机页面在顶部栏隐藏后向上滚动会冻结的问题，改善手机顶部栏与设置页的操作栏
-            de:
-              - Einfrieren der Mobilansicht beim Zurückscrollen nach dem Ausblenden der Kopfzeile
-                behoben; obere Leiste und Aktionsleiste der Einstellungen verbessert
-            fr:
-              - Correction du blocage sur mobile lors du défilement vers le haut après le masquage
-                de l’en-tête ; amélioration de la barre supérieure et des actions des paramètres
-            ja:
-              - ヘッダーが隠れた後に上へスクロールするとスマートフォンの画面が固まる問題を修正し、上部バーと設定画面の操作フッターを改善
-            ko:
-              - 헤더가 숨겨진 뒤 위로 스크롤할 때 휴대폰 화면이 멈추는 문제를 수정하고 상단 표시줄과 설정 화면의 작업 표시줄을 개선
-            es:
-              - Corregido el bloqueo de la vista móvil al desplazarse hacia arriba tras ocultarse la
-                cabecera; mejoradas la barra superior y las acciones de configuración
-            it:
-              - Risolto il blocco della vista mobile scorrendo verso l’alto dopo la scomparsa
-                dell’intestazione; migliorate la barra superiore e le azioni delle impostazioni
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -990,15 +994,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0149
+        version: 0.1.0-0150
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: a4564364fd6328a533fd70548c61ed43d06609ae3612d63c2c3aefec2292adf5
-        md5: 80904dbfcdc06eaeb206f9782ea0ecb1
-        size: 15656960
+        sha256: d43ee07dcc4046abfc741b7124db3fc8302ec67945c2e725c57f9416f04e564d
+        md5: 3c3522f44b30ba6874cbef54c8cc23a7
+        size: 17756160
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1015,19 +1019,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T11:26:01Z
-          source_ref: 11f531a22cf970f1284bebef17a97b3c71de0979
+          reviewed_at: 2026-11-13T18:59:43Z
+          source_ref: 4bd810f29cd69a9ced67ee95535c228dd4250609
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0149
+        version: 0.1.0-0150
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 1ebd4821dd851003c961bf0fc39c7420defdf0db5bf09f0b01bbd32d5005096a
-        md5: 01b9ab388dbc125505e02cccc2348165
-        size: 16250880
+        sha256: d5db3c026e371971952b261b3dc445eb33ea1ca668967b359ef04536409e9865
+        md5: fde5a21716cee5fd0baea75e52a07e67
+        size: 18360320
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1044,11 +1048,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T11:26:01Z
-          source_ref: 11f531a22cf970f1284bebef17a97b3c71de0979
+          reviewed_at: 2026-11-13T18:59:43Z
+          source_ref: 4bd810f29cd69a9ced67ee95535c228dd4250609
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0149
+        version: 0.1.0-0150
         arch:
           - apollolake
           - avoton
@@ -1077,9 +1081,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 236690995242aa1d63ebff7110871c6aae9c761a9671ae7244865d73502e074e
-        md5: 18cd740a660eff02c698b45fb4d242b7
-        size: 17029120
+        sha256: ba7dc20164fa83986c5c9b2a010cc2a57bcd4876eed57ab350fc7a06963e9717
+        md5: edd8f79e9a3b91e1430e487980fa90ba
+        size: 19138560
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1096,8 +1100,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T11:26:01Z
-          source_ref: 11f531a22cf970f1284bebef17a97b3c71de0979
+          reviewed_at: 2026-11-13T18:59:43Z
+          source_ref: 4bd810f29cd69a9ced67ee95535c228dd4250609
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
