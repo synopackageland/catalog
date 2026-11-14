@@ -1106,7 +1106,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0103
+      release: v0.2.2-0104
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1195,6 +1195,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0104:
+            en:
+              - Clicking a row number in a list opens that item
+            zh-TW:
+              - 點選清單中的列號即可開啟該項目
+            zh-CN:
+              - 点击列表中的行号即可打开该项目
+            ja:
+              - リストの行番号をクリックすると、その項目が開きます
+            ko:
+              - 목록에서 행 번호를 클릭하면 해당 항목이 열립니다
+            de:
+              - Ein Klick auf die Zeilennummer in einer Liste öffnet den Eintrag
+            fr:
+              - Cliquer sur le numéro de ligne d’une liste ouvre l’élément
+            es:
+              - Al hacer clic en el número de fila de una lista se abre el elemento
+            it:
+              - Facendo clic sul numero di riga in un elenco si apre l’elemento
           0.2.2-0103:
             en:
               - In the Package Land launcher, every page has Home, and Back steps through the App's pages
@@ -1333,30 +1352,6 @@ packages:
             it:
               - Migliora l’affidabilità dell’accesso e la risposta quando il NAS è occupato,
                 rendendo più chiari gli elementi selezionati sui telefoni
-          0.2.2-0096:
-            en:
-              - Improve startup and authorization feedback, refresh window and dialog styling, and
-                refine touch feedback on phones
-            zh-TW:
-              - 改善啟動與授權提示，更新視窗及對話框外觀，並優化手機觸控回饋
-            zh-CN:
-              - 改善启动与授权提示，更新窗口及对话框外观，并优化手机触控反馈
-            de:
-              - Verbesserte Rückmeldungen beim Start und bei der Autorisierung, überarbeitete
-                Fenster und Dialoge sowie optimierte Touch-Rückmeldungen auf Smartphones
-            fr:
-              - Amélioration des indications au démarrage et lors de l’autorisation, nouveau style
-                des fenêtres et des boîtes de dialogue et retour tactile affiné sur téléphone
-            ja:
-              - 起動と認証の案内を改善し、ウィンドウとダイアログの表示を更新、スマートフォンのタッチ操作時の反応を調整
-            ko:
-              - 시작 및 권한 승인 안내를 개선하고, 창과 대화 상자 디자인을 새롭게 다듬으며 휴대폰 터치 반응을 개선
-            es:
-              - Mejoras en los avisos de inicio y autorización, en el aspecto de ventanas y diálogos
-                y en la respuesta táctil en teléfonos
-            it:
-              - Miglioramenti alle indicazioni di avvio e autorizzazione, allo stile di finestre e
-                dialoghi e alla risposta al tocco sui telefoni
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -1365,15 +1360,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0103
+        version: 0.2.2-0104
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e16c700a92e9c85944cfca63d62919b7681ab0a3fa212d2df6a54ea0c396728f
-        md5: 5ac20daf565e7097c739b02e76f25043
-        size: 68585984
+        sha256: 4ca0bcc750b408fc41cbfc0489ee8459ba19aa58653710d14e3917c45a7d3114
+        md5: deac1aeee9fe557fa757f69a2e6feea1
+        size: 68592128
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1391,11 +1386,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-13T19:13:35Z
-          source_ref: 39efbeaa90d78964ed09cc67ee00fb8a712c9c97
+          reviewed_at: 2026-11-14T01:55:37Z
+          source_ref: 66cbcab020a7713a2a7daa5c57c13164e5029b99
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0103
+        version: 0.2.2-0104
         arch:
           - apollolake
           - avoton
@@ -1424,9 +1419,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: f8feb9a30bc2f9e94f54ba4fd29c9d614fc4306822dd47932d0a062cfe2af88e
-        md5: a3de245645822bbdb5e85051debbb570
-        size: 72268800
+        sha256: 4a7092d7c588c2ff47bf5b9445b173db2b56ded2788e2f310f778499bc056c42
+        md5: 495aa1a54b292f384c9a1defcc832419
+        size: 72277504
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1444,8 +1439,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-13T19:13:35Z
-          source_ref: 39efbeaa90d78964ed09cc67ee00fb8a712c9c97
+          reviewed_at: 2026-11-14T01:55:37Z
+          source_ref: 66cbcab020a7713a2a7daa5c57c13164e5029b99
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
