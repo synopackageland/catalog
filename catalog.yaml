@@ -1115,7 +1115,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0104
+      release: v0.2.2-0105
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1204,6 +1204,34 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0105:
+            en:
+              - Dialogs, side panels and controls use more consistent spacing and corners
+              - Dialogs and panels open faster on phones
+            zh-TW:
+              - 對話框、側邊面板與控制項的間距和圓角更一致
+              - 手機上開啟對話框與面板更快
+            zh-CN:
+              - 对话框、侧边面板和控件的间距与圆角更一致
+              - 手机上打开对话框和面板更快
+            ja:
+              - ダイアログ、サイドパネル、コントロールの余白と角の丸みを統一
+              - スマートフォンでダイアログとパネルがより速く開く
+            ko:
+              - 대화 상자, 사이드 패널, 컨트롤의 여백과 모서리를 더 일관되게 정리
+              - 휴대폰에서 대화 상자와 패널이 더 빠르게 열림
+            de:
+              - Dialoge, Seitenleisten und Bedienelemente haben einheitlichere Abstände und Ecken
+              - Dialoge und Leisten öffnen sich auf Smartphones schneller
+            fr:
+              - Les boîtes de dialogue, panneaux latéraux et contrôles ont des marges et des coins plus cohérents
+              - Les boîtes de dialogue et panneaux s’ouvrent plus vite sur téléphone
+            es:
+              - Los diálogos, paneles laterales y controles tienen márgenes y esquinas más coherentes
+              - Los diálogos y paneles se abren más rápido en el teléfono
+            it:
+              - Finestre di dialogo, pannelli laterali e controlli hanno spaziature e angoli più coerenti
+              - Finestre di dialogo e pannelli si aprono più velocemente sul telefono
           0.2.2-0104:
             en:
               - Clicking a row number in a list opens that item
@@ -1337,30 +1365,6 @@ packages:
               - Ajuste más fluido del ancho de las columnas de las tablas y corrección de errores ocasionales al aprobar desde un teléfono en versiones anteriores de DSM
             it:
               - Ridimensionamento più fluido delle colonne delle tabelle e correzione di errori occasionali durante l’approvazione da telefono nelle versioni meno recenti di DSM
-          0.2.2-0097:
-            en:
-              - Improve sign-in reliability and responsiveness when the NAS is busy, and make
-                selected items clearer on phones
-            zh-TW:
-              - 改善登入穩定性與 NAS 忙碌時的操作回應，讓手機上的已選項目更清楚
-            zh-CN:
-              - 改善登录稳定性与 NAS 忙碌时的操作响应，让手机上的已选项目更清楚
-            de:
-              - Zuverlässigere Anmeldung und bessere Reaktion bei ausgelastetem NAS sowie
-                deutlichere Markierung ausgewählter Elemente auf Smartphones
-            fr:
-              - Connexion plus fiable et meilleure réactivité lorsque le NAS est occupé, avec une
-                sélection plus visible sur téléphone
-            ja:
-              - サインインの安定性と NAS が混雑しているときの操作応答を改善し、スマートフォンで選択中の項目を見やすく表示
-            ko:
-              - 로그인 안정성과 NAS가 사용 중일 때의 응답성을 개선하고 휴대폰에서 선택한 항목을 더 명확하게 표시
-            es:
-              - Mejora la fiabilidad del inicio de sesión y la respuesta cuando el NAS está ocupado,
-                y muestra con más claridad los elementos seleccionados en teléfonos
-            it:
-              - Migliora l’affidabilità dell’accesso e la risposta quando il NAS è occupato,
-                rendendo più chiari gli elementi selezionati sui telefoni
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -1369,15 +1373,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0104
+        version: 0.2.2-0105
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 4ca0bcc750b408fc41cbfc0489ee8459ba19aa58653710d14e3917c45a7d3114
-        md5: deac1aeee9fe557fa757f69a2e6feea1
-        size: 68592128
+        sha256: e6dcf908ba8733196c356e34b27e0c3895da705f8045e5bad0a09eb81c49eaed
+        md5: 7b165a852daa9669dd2e8ab98c113f58
+        size: 68594176
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1395,11 +1399,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T01:55:37Z
-          source_ref: 66cbcab020a7713a2a7daa5c57c13164e5029b99
+          reviewed_at: 2026-11-14T11:20:16Z
+          source_ref: 2c90b799e9f1afc7aa6c49361c15b12cb7852319
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0104
+        version: 0.2.2-0105
         arch:
           - apollolake
           - avoton
@@ -1428,9 +1432,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 4a7092d7c588c2ff47bf5b9445b173db2b56ded2788e2f310f778499bc056c42
-        md5: 495aa1a54b292f384c9a1defcc832419
-        size: 72277504
+        sha256: 6bc24a9b5594d84453bbeaeff42ec75ff76e4ac07c525acec2fb1cc7cbda5010
+        md5: f3406ed15313a57a1cc240d413a70514
+        size: 72279552
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1448,8 +1452,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T01:55:37Z
-          source_ref: 66cbcab020a7713a2a7daa5c57c13164e5029b99
+          reviewed_at: 2026-11-14T11:20:16Z
+          source_ref: 2c90b799e9f1afc7aa6c49361c15b12cb7852319
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
