@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0167
+      release: v0.1.0-0168
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0168:
+            en:
+              - "Button labels wrap on narrow screens so the full text stays visible"
+            zh-TW:
+              - "按鈕文字會在窄畫面自動換行，完整內容不再被截斷"
+            zh-CN:
+              - "按钮文字会在窄屏幕上自动换行，完整内容不再被截断"
+            ja:
+              - "狭い画面ではボタンのラベルが折り返され、全文が表示されるようになりました"
+            ko:
+              - "좁은 화면에서 버튼 문구가 줄바꿈되어 전체 내용이 표시됩니다"
+            de:
+              - "Schaltflächenbeschriftungen werden auf schmalen Bildschirmen umgebrochen, damit der vollständige Text sichtbar bleibt"
+            fr:
+              - "Le texte des boutons passe à la ligne sur les écrans étroits afin de rester entièrement visible"
+            es:
+              - "El texto de los botones se ajusta en pantallas estrechas para que se vea completo"
+            it:
+              - "Il testo dei pulsanti va a capo sugli schermi stretti per restare interamente visibile"
           0.1.0-0167:
             en:
               - "Rounded corners and spacing are more consistent, and interface animations feel smoother"
@@ -924,25 +943,6 @@ packages:
               - "El teléfono del panel Teléfono es ahora una demostración en vivo vertical que se puede tocar: cambia entre Inicio y Apps y abre algunas apps"
             it:
               - "Il telefono nel pannello Telefono è ora una demo dal vivo verticale da toccare: passa tra Home e App e apri alcune app"
-          0.1.0-0157:
-            en:
-              - "Stability improvements"
-            zh-TW:
-              - "穩定性改善"
-            zh-CN:
-              - "稳定性改进"
-            ja:
-              - "安定性の向上"
-            ko:
-              - "안정성 개선"
-            de:
-              - "Verbesserte Stabilität"
-            fr:
-              - "Améliorations de la stabilité"
-            es:
-              - "Mejoras de estabilidad"
-            it:
-              - "Miglioramenti della stabilità"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -999,15 +999,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0167
+        version: 0.1.0-0168
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 4b638141f75c8e63be8d0e0c756778c27fcc56d5e77f872b97ea6fe54e2cdb3e
-        md5: fb81ba1ffbf8400238595ad6aee17209
-        size: 18094080
+        sha256: 398f4e013305de47c2f5d0a6d6c093650fdfc5a311eba131b2e4a37f605afffc
+        md5: 8e9504ee10caa60b07b69032aa635292
+        size: 18114560
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1024,19 +1024,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T11:08:54Z
-          source_ref: 3c99a5c5a31a20126df7787520ce6299d7943208
+          reviewed_at: 2026-11-14T11:56:52Z
+          source_ref: 68b0258307df9f1f0c2e0a8ab9ced990f7bd1c03
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0167
+        version: 0.1.0-0168
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 8dbc8b531d5242024c1a747e666e30a84db096c6965138bf7aed7043cdc5d614
-        md5: fb106f6e883db95d4324468c70b26333
-        size: 18688000
+        sha256: 031883123d9a4357ceb4e89caad60301e3559b422a571a86c10d3276048d096f
+        md5: 6de19f6612219c100bf7091c53095d2b
+        size: 18708480
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1053,11 +1053,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T11:08:54Z
-          source_ref: 3c99a5c5a31a20126df7787520ce6299d7943208
+          reviewed_at: 2026-11-14T11:56:52Z
+          source_ref: 68b0258307df9f1f0c2e0a8ab9ced990f7bd1c03
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0167
+        version: 0.1.0-0168
         arch:
           - apollolake
           - avoton
@@ -1086,9 +1086,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: fc27b2af21f9f6cc45d057780b017d3c4d5111ee06e599fb843f183c31187553
-        md5: 6af48429769c9614333a13db0b7b63d7
-        size: 19476480
+        sha256: edef5d762b04de7269d122473fba597888e20113c942afd135bc6eb3d4103096
+        md5: a682b767c299b47a25e1ad1f98ab3cf3
+        size: 19486720
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1105,8 +1105,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T11:08:54Z
-          source_ref: 3c99a5c5a31a20126df7787520ce6299d7943208
+          reviewed_at: 2026-11-14T11:56:52Z
+          source_ref: 68b0258307df9f1f0c2e0a8ab9ced990f7bd1c03
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
