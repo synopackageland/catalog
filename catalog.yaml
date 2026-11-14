@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0156
+      release: v0.1.0-0157
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0157:
+            en:
+              - "Stability improvements"
+            zh-TW:
+              - "穩定性改善"
+            zh-CN:
+              - "稳定性改进"
+            ja:
+              - "安定性の向上"
+            ko:
+              - "안정성 개선"
+            de:
+              - "Verbesserte Stabilität"
+            fr:
+              - "Améliorations de la stabilité"
+            es:
+              - "Mejoras de estabilidad"
+            it:
+              - "Miglioramenti della stabilità"
           0.1.0-0156:
             en:
               - "Every way's card on Connections has a Phone button with a QR code that opens this NAS's phone browser page on that address, and what the phone needs for it"
@@ -915,35 +934,6 @@ packages:
             it:
               - Ridimensionamento più fluido delle colonne delle tabelle
               - Aggiornati i componenti integrati
-          0.1.0-0144:
-            en:
-              - Keep the app open when a sign-in status check cannot complete
-              - Improve the visibility of selected items on mobile
-            zh-TW:
-              - 登入狀態暫時無法確認時，保持應用程式畫面開啟
-              - 讓手機版已選取的項目更清楚可見
-            zh-CN:
-              - 暂时无法确认登录状态时，保持应用程序界面打开
-              - 让手机版已选中的项目更清晰可见
-            de:
-              - Die App bleibt geöffnet, wenn der Anmeldestatus vorübergehend nicht geprüft werden
-                kann
-              - Ausgewählte Elemente auf Mobilgeräten deutlicher hervorheben
-            fr:
-              - Garder l’application ouverte si la vérification de la connexion ne peut pas aboutir
-              - Rendre les éléments sélectionnés plus visibles sur mobile
-            ja:
-              - サインイン状態を一時的に確認できない場合もアプリ画面を維持
-              - モバイルで選択済みの項目をより見やすく表示
-            ko:
-              - 로그인 상태를 일시적으로 확인할 수 없어도 앱 화면 유지
-              - 모바일에서 선택한 항목을 더 쉽게 확인
-            es:
-              - Mantener la aplicación abierta si no se puede comprobar el estado de la sesión
-              - Mejorar la visibilidad de los elementos seleccionados en el móvil
-            it:
-              - Mantenere aperta l’app se non è possibile verificare lo stato di accesso
-              - Rendere più visibili gli elementi selezionati sui dispositivi mobili
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -1000,14 +990,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0156
+        version: 0.1.0-0157
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 3ab2c60cdfc7c984c4b7c9576272aeb01b21df964917b7085f2ad546e9b46e06
-        md5: 4596c70f734505c41adedd04fae1c2f4
+        sha256: 9e30737ad9e32b9b8c57267608ddd10ef9edbe16a4fd117f7d36d7b8d8d4881b
+        md5: f22b0035d794e04f9d56802196d30938
         size: 17807360
         facts:
           built_with: sdk
@@ -1025,18 +1015,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T01:28:55Z
-          source_ref: c72e460bb76c752b0a3aed70ed109c5373c57c3b
+          reviewed_at: 2026-11-14T01:50:42Z
+          source_ref: 1cb4383016fc8c98a2c9e71ee5d0036cc719788d
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0156
+        version: 0.1.0-0157
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: bc5291c76a5433a45437d1b69ed9c7890c7ea168b3783a2b739420fd0305ca68
-        md5: 3856ea8314c7bb5f131fcdfdd14dbda6
+        sha256: 8a340594549f167ad41b3ab7a2650b84e7ba06f60880da84cbda5eeda20b85b7
+        md5: 0271a8095fcfe3fa112468e61827f884
         size: 18401280
         facts:
           built_with: sdk
@@ -1054,11 +1044,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T01:28:55Z
-          source_ref: c72e460bb76c752b0a3aed70ed109c5373c57c3b
+          reviewed_at: 2026-11-14T01:50:42Z
+          source_ref: 1cb4383016fc8c98a2c9e71ee5d0036cc719788d
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0156
+        version: 0.1.0-0157
         arch:
           - apollolake
           - avoton
@@ -1087,8 +1077,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 66f89ca87dab48ee1e963ae79b2aa32cb52df1cc6382c1dd982e2518bbd136ab
-        md5: d65b213920b5be897ce4ef3c6bb25581
+        sha256: 4fcf5d06da8ed826f8c76147820b68a07c450b8a05ab6afe496819a7221ac19d
+        md5: 694fb778eb9c977c0c4470d7124f3eeb
         size: 19179520
         facts:
           built_with: sdk
@@ -1106,8 +1096,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T01:28:55Z
-          source_ref: c72e460bb76c752b0a3aed70ed109c5373c57c3b
+          reviewed_at: 2026-11-14T01:50:42Z
+          source_ref: 1cb4383016fc8c98a2c9e71ee5d0036cc719788d
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
