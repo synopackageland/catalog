@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0158
+      release: v0.1.0-0159
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,34 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0159:
+            en:
+              - "On the phone page's Home, the resource charts are one continuous line that scrolls smoothly and updates every 5 seconds"
+              - "The icon on the Phone button lines up with its label"
+            zh-TW:
+              - "手機頁首頁的資源圖改為連續、平滑捲動的線條，每 5 秒更新"
+              - "「手機」按鈕的圖示與文字對齊"
+            zh-CN:
+              - "手机页首页的资源图改为连续、平滑滚动的线条，每 5 秒更新"
+              - "“手机”按钮的图标与文字对齐"
+            ja:
+              - "スマートフォンページのホームのリソースグラフが、なめらかにスクロールする途切れない線になり、5 秒ごとに更新されます"
+              - "「スマートフォン」ボタンのアイコンがラベルと揃いました"
+            ko:
+              - "휴대폰 페이지 홈의 리소스 그래프가 끊김 없이 부드럽게 흐르는 선으로 바뀌고 5초마다 업데이트됩니다"
+              - "휴대폰 버튼의 아이콘이 레이블과 나란히 정렬됩니다"
+            de:
+              - "Auf der Startseite der Handy-Seite sind die Ressourcendiagramme eine durchgehende, gleichmäßig scrollende Linie, die alle 5 Sekunden aktualisiert wird"
+              - "Das Symbol der Handy-Schaltfläche ist an ihrer Beschriftung ausgerichtet"
+            fr:
+              - "Sur l’accueil de la page téléphone, les graphiques de ressources forment une ligne continue qui défile en douceur et se met à jour toutes les 5 secondes"
+              - "L’icône du bouton Téléphone est alignée sur son libellé"
+            es:
+              - "En el inicio de la página del teléfono, los gráficos de recursos son una línea continua que se desplaza con suavidad y se actualiza cada 5 segundos"
+              - "El icono del botón Teléfono queda alineado con su texto"
+            it:
+              - "Nella home della pagina telefono, i grafici delle risorse sono una linea continua che scorre in modo fluido e si aggiorna ogni 5 secondi"
+              - "L’icona del pulsante Telefono è allineata alla sua etichetta"
           0.1.0-0158:
             en:
               - "The phone in the Phone panel is now an upright live demo you can tap: switch between Home and Apps and open a few Apps"
@@ -906,25 +934,6 @@ packages:
               - La navegación en el teléfono pasa a una barra de pestañas inferior
             it:
               - Sul telefono la navigazione passa a una barra di schede in basso
-          0.1.0-0146:
-            en:
-              - Phone lists show all rows with a single page scroll
-            zh-TW:
-              - 手機上的清單顯示所有列，整頁一起捲動
-            zh-CN:
-              - 手机上的列表显示所有行，整页一起滚动
-            de:
-              - Listen auf dem Smartphone zeigen alle Zeilen und scrollen mit der ganzen Seite
-            fr:
-              - Sur téléphone, les listes affichent toutes les lignes et défilent avec la page
-            ja:
-              - スマートフォンのリストに全行を表示し、ページ全体で一度にスクロール
-            ko:
-              - 휴대폰에서 목록이 모든 행을 표시하고 페이지 전체가 함께 스크롤
-            es:
-              - Listas en el teléfono con todas las filas y desplazamiento de la página completa
-            it:
-              - Sul telefono gli elenchi mostrano tutte le righe e scorrono con l'intera pagina
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -981,15 +990,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0158
+        version: 0.1.0-0159
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: da473d9229cd18b97780a37ba56ada55372f198594168f8ae4274c5161c246d6
-        md5: 59fe2c22c857144d7d5cbc83f4af90ae
-        size: 18001920
+        sha256: e55341179b727e2ba3682c74474509939960cba85f65453747de54857bdf6c86
+        md5: 3c9fe07547a15297cb5972fd3b4c900f
+        size: 18012160
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1006,18 +1015,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T02:09:08Z
-          source_ref: 5f060b09bd9335c9b96dfe1e726eed4533104c05
+          reviewed_at: 2026-11-14T02:36:26Z
+          source_ref: 4e294604e58e70d7607f788f8bfab98eb6acdca2
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0158
+        version: 0.1.0-0159
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: d357de5b81f0738e198503175bd400db89d5c85cac883182b58517e4f794e7b2
-        md5: f6132b8e5e9fa013b55b30da135083f2
+        sha256: 75ef3521aba4a6e62b8f41311f9f63ae097ff1572037403d2088f5a1dadbee89
+        md5: 4f092aa79337474c4c8b978502a79a39
         size: 18606080
         facts:
           built_with: sdk
@@ -1035,11 +1044,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T02:09:08Z
-          source_ref: 5f060b09bd9335c9b96dfe1e726eed4533104c05
+          reviewed_at: 2026-11-14T02:36:26Z
+          source_ref: 4e294604e58e70d7607f788f8bfab98eb6acdca2
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0158
+        version: 0.1.0-0159
         arch:
           - apollolake
           - avoton
@@ -1068,8 +1077,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 3ccb5afec8994a2b4a6758fd628e537d5b86d0c659ed05ad5359ea8d1cfe8df8
-        md5: fdc2e9050365d9874511af57e84721a5
+        sha256: fb20c137cf1dff472b4dc0613e055121f89ca99d89269f388d87117655fab0b8
+        md5: 5b46cb538acfd3726f2fe7415173df41
         size: 19384320
         facts:
           built_with: sdk
@@ -1087,8 +1096,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T02:09:08Z
-          source_ref: 5f060b09bd9335c9b96dfe1e726eed4533104c05
+          reviewed_at: 2026-11-14T02:36:26Z
+          source_ref: 4e294604e58e70d7607f788f8bfab98eb6acdca2
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
