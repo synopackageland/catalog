@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0162
+      release: v0.1.0-0166
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,61 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0166:
+            en:
+              - "The Overview shows your NAS's QuickConnect and DDNS addresses"
+              - "A new “Use DSM on your phone” section lets you pick a connection, scan its QR code, and add DSM to the Home Screen on iPhone or Android"
+              - "On the phone page, Add NAS checks every address at once and explains why a NAS can't be reached"
+              - "Numbers on the phone page's home screen now update smoothly"
+              - "Typing on an iPhone no longer zooms in the page"
+            zh-TW:
+              - "總覽會顯示 NAS 的 QuickConnect 與 DDNS 網址"
+              - "新增「用手機操作 DSM」區塊：可選擇連線方式、掃 QR 碼，並在 iPhone 或 Android 上加到主畫面"
+              - "手機頁面的「加入 NAS」會同時檢查每個位址，連不上時會說明原因"
+              - "手機頁面首頁的數字更新時不再跳動"
+              - "在 iPhone 上輸入時，頁面不再自動放大"
+            zh-CN:
+              - "概览会显示 NAS 的 QuickConnect 和 DDNS 地址"
+              - "新增“用手机操作 DSM”区块：可选择连接方式、扫描二维码，并在 iPhone 或 Android 上添加到主屏幕"
+              - "手机页面的“添加 NAS”会同时检查每个地址，连接不上时会说明原因"
+              - "手机页面首页的数字更新时不再跳动"
+              - "在 iPhone 上输入时，页面不再自动放大"
+            ja:
+              - "概要に NAS の QuickConnect と DDNS のアドレスが表示されるようになりました"
+              - "新しい「スマホで DSM を使う」セクションで、接続方法を選び、QR コードを読み取り、iPhone や Android のホーム画面に DSM を追加できます"
+              - "スマートフォン用ページで NAS を追加するとき、すべてのアドレスを同時に確認し、接続できない場合はその理由が表示されます"
+              - "スマートフォン用ページのホーム画面の数値が滑らかに更新されるようになりました"
+              - "iPhone で入力しても画面が拡大されなくなりました"
+            ko:
+              - "개요에 NAS의 QuickConnect 및 DDNS 주소가 표시됩니다"
+              - "새로운 \"휴대폰으로 DSM 사용\" 섹션에서 연결을 선택하고 QR 코드를 스캔해 iPhone 또는 Android의 홈 화면에 DSM을 추가할 수 있습니다"
+              - "휴대폰 페이지에서 NAS를 추가할 때 모든 주소를 한꺼번에 확인하고, NAS에 연결할 수 없으면 그 이유를 알려 줍니다"
+              - "휴대폰 페이지 홈 화면의 숫자가 부드럽게 업데이트됩니다"
+              - "iPhone에서 입력할 때 페이지가 더 이상 확대되지 않습니다"
+            de:
+              - "Die Übersicht zeigt die QuickConnect- und DDNS-Adressen Ihres NAS"
+              - "Im neuen Bereich „DSM auf dem Smartphone nutzen“ wählen Sie eine Verbindung, scannen ihren QR-Code und fügen DSM auf dem iPhone oder Android-Gerät zum Home-Bildschirm hinzu"
+              - "Beim Hinzufügen eines NAS prüft die Handy-Seite alle Adressen gleichzeitig und erklärt, warum ein NAS nicht erreichbar ist"
+              - "Die Zahlen auf der Startseite der Handy-Seite werden jetzt ruhig aktualisiert"
+              - "Beim Tippen auf dem iPhone wird die Seite nicht mehr vergrößert"
+            fr:
+              - "L’aperçu affiche les adresses QuickConnect et DDNS de votre NAS"
+              - "Une nouvelle section « Utiliser DSM sur votre téléphone » permet de choisir une connexion, de scanner son code QR et d’ajouter DSM à l’écran d’accueil sur iPhone ou Android"
+              - "Lors de l’ajout d’un NAS, la page pour téléphone vérifie toutes les adresses en même temps et explique pourquoi un NAS est injoignable"
+              - "Les chiffres de l’écran d’accueil de la page pour téléphone se mettent désormais à jour en douceur"
+              - "La saisie sur iPhone n’agrandit plus la page"
+            es:
+              - "El resumen muestra las direcciones QuickConnect y DDNS de tu NAS"
+              - "Una nueva sección «Usa DSM en tu teléfono» permite elegir una conexión, escanear su código QR y añadir DSM a la pantalla de inicio en iPhone o Android"
+              - "Al añadir un NAS, la página para el teléfono comprueba todas las direcciones a la vez y explica por qué no se puede acceder a un NAS"
+              - "Los números de la pantalla de inicio de la página para el teléfono ahora se actualizan sin saltos"
+              - "Escribir en un iPhone ya no amplía la página"
+            it:
+              - "La panoramica mostra gli indirizzi QuickConnect e DDNS del NAS"
+              - "Una nuova sezione “Usa DSM sul telefono” consente di scegliere una connessione, scansionarne il codice QR e aggiungere DSM alla schermata Home su iPhone o Android"
+              - "Quando si aggiunge un NAS, la pagina per il telefono controlla tutti gli indirizzi contemporaneamente e spiega perché un NAS non è raggiungibile"
+              - "I numeri nella schermata iniziale della pagina per il telefono ora si aggiornano in modo fluido"
+              - "Digitando su iPhone la pagina non viene più ingrandita"
           0.1.0-0162:
             en:
               - "On phones, tapping an App icon now opens it reliably, DSM overview pages such as Drive fit the screen, switching screens no longer makes the page wobble sideways, and the keyboard no longer covers form buttons"
@@ -906,34 +961,6 @@ packages:
               - "Ogni scheda di connessione della Panoramica delle connessioni ha un pulsante Telefono con un codice QR che apre la pagina del browser del telefono di questo NAS su quell’indirizzo, e indica ciò che serve al telefono"
               - "La pagina del browser del telefono passa da un NAS all’altro: tocca il nome del NAS per sceglierne o aggiungerne un altro"
               - "Correzioni della pagina del browser del telefono: l’anello di caricamento gira, le schermate di caricamento di DSM restano nascoste finché l’app non è pronta, le icone delle app sono corrette e su iPhone il menu apre una pagina con un solo tocco, i campi di testo mostrano la tastiera e le finestre di dialogo si adattano allo schermo"
-          0.1.0-0150:
-            en:
-              - "Open this NAS in a phone browser: Connect your phone has a Phone browser tab with a code for a page that keeps its address after updates"
-              - "In the phone browser page, Back steps through Apps and pages, Home leaves an App, and DSM Apps open faster without a white flash"
-            zh-TW:
-              - "在手機瀏覽器開啟這台 NAS：「連接手機」新增「手機瀏覽器」分頁，掃碼即可開啟，網址在更新後也不會變"
-              - "在手機瀏覽器頁面中，返回會逐步退出 App 與頁面，「主畫面」可離開 App，DSM App 開啟更快且不再閃白"
-            zh-CN:
-              - "在手机浏览器打开这台 NAS：“连接手机”新增“手机浏览器”标签页，扫码即可打开，网址在更新后也不会变"
-              - "在手机浏览器页面中，返回会逐步退出应用与页面，“主屏幕”可离开应用，DSM 应用打开更快且不再闪白"
-            ja:
-              - "スマートフォンのブラウザでこの NAS を開けるように：「スマートフォンを接続」に「スマートフォンのブラウザ」タブを追加。コードを読み取るだけで開け、アドレスは更新後も変わりません"
-              - "スマートフォンのブラウザ用ページで、戻るでアプリやページを順に戻り、ホームでアプリを閉じ、DSM アプリが白い画面を挟まずより速く開きます"
-            ko:
-              - "휴대폰 브라우저에서 이 NAS 열기: 휴대폰 연결에 휴대폰 브라우저 탭이 추가되어 코드를 스캔하면 열리며, 주소는 업데이트 후에도 바뀌지 않음"
-              - "휴대폰 브라우저 페이지에서 뒤로 가기로 앱과 페이지를 차례로 나가고, 홈으로 앱을 닫으며, DSM 앱이 흰 화면 없이 더 빨리 열림"
-            de:
-              - "Dieses NAS im Smartphone-Browser öffnen: Smartphone verbinden hat einen Tab Smartphone-Browser mit einem Code für eine Seite, deren Adresse nach Updates gleich bleibt"
-              - "Auf der Seite im Smartphone-Browser geht Zurück Schritt für Schritt durch Apps und Seiten, Startseite verlässt eine App, und DSM-Apps öffnen schneller ohne weißes Aufblitzen"
-            fr:
-              - "Ouvrir ce NAS dans le navigateur du téléphone : Connecter votre téléphone a un onglet Navigateur du téléphone avec un code vers une page dont l’adresse reste la même après les mises à jour"
-              - "Sur la page du navigateur du téléphone, Retour revient pas à pas dans les apps et les pages, Accueil quitte une app, et les apps DSM s’ouvrent plus vite sans écran blanc"
-            es:
-              - "Abrir este NAS en el navegador del teléfono: Conectar el teléfono tiene una pestaña Navegador del teléfono con un código para una página cuya dirección no cambia tras las actualizaciones"
-              - "En la página del navegador del teléfono, Atrás retrocede paso a paso por apps y páginas, Inicio sale de una app y las apps de DSM se abren más rápido sin destello blanco"
-            it:
-              - "Apri questo NAS nel browser del telefono: Collega il telefono ha una scheda Browser del telefono con un codice per una pagina il cui indirizzo resta uguale dopo gli aggiornamenti"
-              - "Nella pagina del browser del telefono, Indietro torna passo passo tra app e pagine, Home esce da un’app e le app DSM si aprono più velocemente senza lampi bianchi"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -990,15 +1017,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0162
+        version: 0.1.0-0166
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 7f6b899b408c7115b305099406b519460e842e5abed74d12b658d33d4c032040
-        md5: 80424a2f8bc0ff0fbde4f6817165bc0c
-        size: 18022400
+        sha256: 2856bb23d9e6cc28b064abe937cd5803c6205eaf1ba49027b3bb957d68247cde
+        md5: 3b1d5a88442457020c94ba684369360f
+        size: 18114560
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1015,19 +1042,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T06:35:07Z
-          source_ref: 1bdb8eeb03bdb6e8f8cc721fe4f90e75386d5d07
+          reviewed_at: 2026-11-14T09:47:02Z
+          source_ref: 6d14455e35b996b12d0afedbd2401d03d16ceff8
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0162
+        version: 0.1.0-0166
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: bf7e68310c4c0ed4d6fb2d2b40305d7b69e98e59c49d041913014693b611862d
-        md5: 701885b421d48be6e29abb31df65c270
-        size: 18616320
+        sha256: c19c8813347562878826d9eae815820667be06031e080ad2c9c4a1f63e1384b4
+        md5: 6eafb74494ee9497f39992c36af24c14
+        size: 18708480
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1044,11 +1071,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T06:35:07Z
-          source_ref: 1bdb8eeb03bdb6e8f8cc721fe4f90e75386d5d07
+          reviewed_at: 2026-11-14T09:47:02Z
+          source_ref: 6d14455e35b996b12d0afedbd2401d03d16ceff8
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0162
+        version: 0.1.0-0166
         arch:
           - apollolake
           - avoton
@@ -1077,9 +1104,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c8a3a00a8b15c0a474d3b8d9b9f4e651e3acb370c798de7e6cfcec28a4a08e4d
-        md5: 3b90006ee2d5d6505adcb45cdc3ac833
-        size: 19394560
+        sha256: 6d0c942fdadc387874b0cf2315f083c4ee4aeb45194f1d30f48d2be6e8984f73
+        md5: 0786caef64f08822304db7ba2561c7f8
+        size: 19486720
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1096,8 +1123,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T06:35:07Z
-          source_ref: 1bdb8eeb03bdb6e8f8cc721fe4f90e75386d5d07
+          reviewed_at: 2026-11-14T09:47:02Z
+          source_ref: 6d14455e35b996b12d0afedbd2401d03d16ceff8
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
