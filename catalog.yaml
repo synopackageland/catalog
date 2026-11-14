@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0161
+      release: v0.1.0-0162
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0162:
+            en:
+              - "On phones, tapping an App icon now opens it reliably, DSM overview pages such as Drive fit the screen, switching screens no longer makes the page wobble sideways, and the keyboard no longer covers form buttons"
+            zh-TW:
+              - "手機上點 App 圖示現在每次都能開啟，Drive 等 DSM 總覽頁不再超出螢幕，切換畫面時頁面不再左右晃動，輸入時鍵盤也不再蓋住表單按鈕"
+            zh-CN:
+              - "手机上点击 App 图标现在每次都能打开，Drive 等 DSM 概览页不再超出屏幕，切换画面时页面不再左右晃动，输入时键盘也不再遮住表单按钮"
+            ja:
+              - "スマートフォンでアプリのアイコンをタップすると確実に開くようになりました。Drive などの DSM 概要ページが画面内に収まり、画面切り替え時の左右の揺れがなくなり、入力中もキーボードがフォームのボタンを隠さなくなりました"
+            ko:
+              - "휴대폰에서 앱 아이콘을 누르면 안정적으로 열립니다. Drive 등의 DSM 개요 페이지가 화면 안에 맞게 표시되고, 화면 전환 시 페이지가 좌우로 흔들리지 않으며, 입력 중 키보드가 양식 버튼을 가리지 않습니다"
+            de:
+              - "Auf dem Handy öffnen sich Apps beim Tippen auf ihr Symbol jetzt zuverlässig. DSM-Übersichtsseiten wie Drive passen auf den Bildschirm, Seiten wackeln beim Wechseln nicht mehr seitlich, und die Tastatur verdeckt keine Formularschaltflächen mehr"
+            fr:
+              - "Sur téléphone, toucher une icône ouvre désormais l’application de façon fiable. Les pages d’aperçu DSM comme Drive tiennent dans l’écran, les pages ne bougent plus latéralement lors des transitions et le clavier ne masque plus les boutons des formulaires"
+            es:
+              - "En el teléfono, tocar el icono de una app ahora la abre de forma fiable. Las páginas de resumen de DSM, como Drive, caben en la pantalla, las páginas ya no se mueven lateralmente al cambiar de pantalla y el teclado no tapa los botones de los formularios"
+            it:
+              - "Sul telefono, toccare l’icona di un’app ora la apre in modo affidabile. Le pagine di panoramica DSM, come Drive, rientrano nello schermo, le pagine non oscillano più lateralmente durante le transizioni e la tastiera non copre i pulsanti dei moduli"
           0.1.0-0161:
             en:
               - "When opening DSM Apps on a phone, wrapped titles no longer overlap the text below, and the right borders of two-column cards remain fully visible"
@@ -915,25 +934,6 @@ packages:
             it:
               - "Apri questo NAS nel browser del telefono: Collega il telefono ha una scheda Browser del telefono con un codice per una pagina il cui indirizzo resta uguale dopo gli aggiornamenti"
               - "Nella pagina del browser del telefono, Indietro torna passo passo tra app e pagine, Home esce da un’app e le app DSM si aprono più velocemente senza lampi bianchi"
-          0.1.0-0149:
-            en:
-              - On Android phones, the keyboard no longer closes when you tap a text field
-            zh-TW:
-              - 在 Android 手機上點文字欄位時，鍵盤不再自動收起
-            zh-CN:
-              - 在 Android 手机上点按文本框时，键盘不再自动收起
-            de:
-              - Auf Android-Smartphones schließt sich die Tastatur beim Tippen auf ein Textfeld nicht mehr
-            fr:
-              - Sur les téléphones Android, le clavier ne se ferme plus quand vous touchez un champ de texte
-            ja:
-              - Android スマートフォンでテキスト欄をタップするとキーボードが閉じる問題を修正
-            ko:
-              - Android 휴대폰에서 텍스트 필드를 탭하면 키보드가 닫히던 문제 수정
-            es:
-              - En teléfonos Android, el teclado ya no se cierra al tocar un campo de texto
-            it:
-              - Sui telefoni Android la tastiera non si chiude più quando tocchi un campo di testo
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -990,14 +990,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0161
+        version: 0.1.0-0162
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: bf3bd9c985e2b051c0b77805a3166c9892f6c00e93fe9c5d379977bf9a7e9a75
-        md5: 4e6b534ea1b3dead8c5202a398e64372
+        sha256: 7f6b899b408c7115b305099406b519460e842e5abed74d12b658d33d4c032040
+        md5: 80424a2f8bc0ff0fbde4f6817165bc0c
         size: 18022400
         facts:
           built_with: sdk
@@ -1015,18 +1015,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T04:53:09Z
-          source_ref: 493b5d54aa3b6b66a119927323212653388efdb5
+          reviewed_at: 2026-11-14T06:35:07Z
+          source_ref: 1bdb8eeb03bdb6e8f8cc721fe4f90e75386d5d07
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0161
+        version: 0.1.0-0162
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: fa5ebb2900576cef8d45d41a0e1b3d5576c58b2743470da2456c6b4dd55b8cbf
-        md5: aa9ffece2086acff827b90bda3381dec
+        sha256: bf7e68310c4c0ed4d6fb2d2b40305d7b69e98e59c49d041913014693b611862d
+        md5: 701885b421d48be6e29abb31df65c270
         size: 18616320
         facts:
           built_with: sdk
@@ -1044,11 +1044,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T04:53:09Z
-          source_ref: 493b5d54aa3b6b66a119927323212653388efdb5
+          reviewed_at: 2026-11-14T06:35:07Z
+          source_ref: 1bdb8eeb03bdb6e8f8cc721fe4f90e75386d5d07
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0161
+        version: 0.1.0-0162
         arch:
           - apollolake
           - avoton
@@ -1077,8 +1077,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: b7ee29977662e8ab16d59ea9ffc443e298401a9d2183f9c6aca482312ca8ce37
-        md5: a8eb55e596616155fba5249322fe9abf
+        sha256: c8a3a00a8b15c0a474d3b8d9b9f4e651e3acb370c798de7e6cfcec28a4a08e4d
+        md5: 3b90006ee2d5d6505adcb45cdc3ac833
         size: 19394560
         facts:
           built_with: sdk
@@ -1096,8 +1096,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T04:53:09Z
-          source_ref: 493b5d54aa3b6b66a119927323212653388efdb5
+          reviewed_at: 2026-11-14T06:35:07Z
+          source_ref: 1bdb8eeb03bdb6e8f8cc721fe4f90e75386d5d07
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
