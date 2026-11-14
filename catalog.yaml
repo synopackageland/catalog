@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0159
+      release: v0.1.0-0160
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0160:
+            en:
+              - "When opening DSM Apps on a phone, card rows and expandable lists rearrange to fit the screen without being cut off. Side-by-side values no longer overlap on narrow screens"
+            zh-TW:
+              - "手機開啟 DSM App 時，卡片列與可展開清單會依螢幕重新排列，不再被截斷；並列的數值在窄螢幕不再重疊"
+            zh-CN:
+              - "手机打开 DSM App 时，卡片行与可展开列表会根据屏幕重新排列，不再被截断；并列的数值在窄屏幕上不再重叠"
+            ja:
+              - "スマートフォンで DSM アプリを開くと、カードの行と展開可能なリストが画面に合わせて並び替えられ、見切れなくなります。横に並ぶ数値も狭い画面で重ならなくなります"
+            ko:
+              - "휴대폰에서 DSM 앱을 열면 카드 행과 펼칠 수 있는 목록이 화면에 맞게 재배치되어 잘리지 않습니다. 나란히 표시되는 값도 좁은 화면에서 겹치지 않습니다"
+            de:
+              - "Beim Öffnen von DSM-Apps auf dem Handy passen sich Kartenreihen und aufklappbare Listen dem Bildschirm an, ohne abgeschnitten zu werden. Nebeneinander angezeigte Werte überlappen sich auf schmalen Bildschirmen nicht mehr"
+            fr:
+              - "Lorsque vous ouvrez des applications DSM sur un téléphone, les rangées de cartes et les listes dépliables se réorganisent pour tenir à l’écran sans être tronquées. Les valeurs côte à côte ne se chevauchent plus sur les écrans étroits"
+            es:
+              - "Al abrir aplicaciones de DSM en un teléfono, las filas de tarjetas y las listas desplegables se reorganizan para ajustarse a la pantalla sin quedar recortadas. Los valores en paralelo ya no se superponen en pantallas estrechas"
+            it:
+              - "Quando si aprono le app DSM su un telefono, le righe di schede e gli elenchi espandibili si riorganizzano per adattarsi allo schermo senza essere tagliati. I valori affiancati non si sovrappongono più sugli schermi stretti"
           0.1.0-0159:
             en:
               - "On the phone page's Home, the resource charts are one continuous line that scrolls smoothly and updates every 5 seconds"
@@ -915,25 +934,6 @@ packages:
               - Los diálogos de confirmación abiertos desde un asistente cubren solo la ventana de la app
             it:
               - Le finestre di conferma aperte da una procedura guidata coprono solo la finestra dell'app
-          0.1.0-0147:
-            en:
-              - Phone navigation moves to a bottom tab bar
-            zh-TW:
-              - 手機上的頁面導覽移到底部分頁列
-            zh-CN:
-              - 手机上的页面导航移到底部标签栏
-            de:
-              - Die Navigation auf dem Smartphone wechselt in eine untere Tab-Leiste
-            fr:
-              - Sur téléphone, la navigation passe dans une barre d'onglets en bas
-            ja:
-              - スマートフォンのページナビゲーションを画面下部のタブバーに移動
-            ko:
-              - 휴대폰의 페이지 탐색이 하단 탭 막대로 이동
-            es:
-              - La navegación en el teléfono pasa a una barra de pestañas inferior
-            it:
-              - Sul telefono la navigazione passa a una barra di schede in basso
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -990,14 +990,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0159
+        version: 0.1.0-0160
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e55341179b727e2ba3682c74474509939960cba85f65453747de54857bdf6c86
-        md5: 3c9fe07547a15297cb5972fd3b4c900f
+        sha256: 9070d390f271584461b319ec82cd28c4ed72bfe91a097f6034fb3b916096f1ea
+        md5: 6123e18ce879a40eceb160784294c977
         size: 18012160
         facts:
           built_with: sdk
@@ -1015,19 +1015,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T02:36:26Z
-          source_ref: 4e294604e58e70d7607f788f8bfab98eb6acdca2
+          reviewed_at: 2026-11-14T03:48:53Z
+          source_ref: ffad35dae4f119f68d4b3d4f62de18f321032367
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0159
+        version: 0.1.0-0160
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 75ef3521aba4a6e62b8f41311f9f63ae097ff1572037403d2088f5a1dadbee89
-        md5: 4f092aa79337474c4c8b978502a79a39
-        size: 18606080
+        sha256: 7c89b59f9605a0560d95bfaae5d898ab4b18f32ceae97beacb2fc5eb554439ed
+        md5: 8e279eba1dcf5bfd207f6842ac52126c
+        size: 18616320
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1044,11 +1044,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T02:36:26Z
-          source_ref: 4e294604e58e70d7607f788f8bfab98eb6acdca2
+          reviewed_at: 2026-11-14T03:48:53Z
+          source_ref: ffad35dae4f119f68d4b3d4f62de18f321032367
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0159
+        version: 0.1.0-0160
         arch:
           - apollolake
           - avoton
@@ -1077,9 +1077,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: fb20c137cf1dff472b4dc0613e055121f89ca99d89269f388d87117655fab0b8
-        md5: 5b46cb538acfd3726f2fe7415173df41
-        size: 19384320
+        sha256: 3f217bf5b31c1c3b59eeba567814798002c513bceffda76f9a481cad5cc5d231
+        md5: 49a18f92e61eb16cfcfa7a997838f01f
+        size: 19394560
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1096,8 +1096,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T02:36:26Z
-          source_ref: 4e294604e58e70d7607f788f8bfab98eb6acdca2
+          reviewed_at: 2026-11-14T03:48:53Z
+          source_ref: ffad35dae4f119f68d4b3d4f62de18f321032367
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
