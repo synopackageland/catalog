@@ -1115,7 +1115,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0106
+      release: v0.2.2-0107
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1204,6 +1204,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0107:
+            en:
+              - Panels and menus look and respond better on phones
+            zh-TW:
+              - 手機上的面板與選單顯示更順
+            zh-CN:
+              - 手机上的面板与菜单显示更顺畅
+            ja:
+              - スマートフォンでパネルとメニューの表示がより自然に
+            ko:
+              - 휴대폰에서 패널과 메뉴가 더 매끄럽게 표시됨
+            de:
+              - Bereiche und Menüs werden auf Smartphones sauberer angezeigt
+            fr:
+              - Les panneaux et menus s’affichent mieux sur téléphone
+            es:
+              - Los paneles y menús se ven mejor en el teléfono
+            it:
+              - Pannelli e menu si vedono meglio sullo smartphone
           0.2.2-0106:
             en:
               - Long button labels wrap instead of being cut off
@@ -1346,25 +1365,6 @@ packages:
               - Los diálogos de confirmación abiertos desde un asistente cubren solo la ventana de la aplicación
             it:
               - Le finestre di conferma aperte da una procedura guidata coprono solo la finestra dell’app
-          0.2.2-0099:
-            en:
-              - Phone lists show all rows with a single page scroll
-            zh-TW:
-              - 手機上的清單會顯示所有項目，整頁只需單一捲動
-            zh-CN:
-              - 手机上的列表会显示所有项目，整页只需单一滚动
-            ja:
-              - スマートフォンのリストにすべての行を表示し、ページ全体を 1 つのスクロールで操作
-            ko:
-              - 휴대폰 목록에 모든 행을 표시하고 페이지 전체를 한 번에 스크롤
-            de:
-              - Listen auf Smartphones zeigen alle Zeilen und die Seite scrollt als Ganzes
-            fr:
-              - Sur téléphone, les listes affichent toutes les lignes et la page défile d’un seul tenant
-            es:
-              - En el teléfono, las listas muestran todas las filas y la página se desplaza de una sola vez
-            it:
-              - Sul telefono gli elenchi mostrano tutte le righe e la pagina scorre in un’unica volta
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -1373,15 +1373,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0106
+        version: 0.2.2-0107
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: cb0f0ca71a92a1591b3a2314a11c8c66bce823a6f4e9590c6511fb1daabcacab
-        md5: 2259c598d77af3ca60c9d63a84d98789
-        size: 68594176
+        sha256: 6ce45ccb72d179a2f1e84c963dd74113f04d2ad5aaf08e144416313dcf7f616c
+        md5: 21386b8190612f80a45c0e2d5335aad4
+        size: 68594688
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1399,11 +1399,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T12:18:09Z
-          source_ref: 006bcb06b22c1238370fe10f57726d01408cdba7
+          reviewed_at: 2026-11-14T16:17:03Z
+          source_ref: 794e42c943aa22bded3807c6a0954458da8800fa
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0106
+        version: 0.2.2-0107
         arch:
           - apollolake
           - avoton
@@ -1432,9 +1432,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 75ea8d4376f0c360e4d3bd71292c263951684c519541763f249ed9590ba31378
-        md5: 0cb26def5d1a995ffadbf4caacbc0796
-        size: 72278528
+        sha256: 19c22691aa86d312390e8b3665c0674f75e3dbe901b536c5b616c1538ae7b437
+        md5: d526c855b283e49e0a74b9b4660e8edf
+        size: 72280064
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1452,8 +1452,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T12:18:09Z
-          source_ref: 006bcb06b22c1238370fe10f57726d01408cdba7
+          reviewed_at: 2026-11-14T16:17:03Z
+          source_ref: 794e42c943aa22bded3807c6a0954458da8800fa
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
