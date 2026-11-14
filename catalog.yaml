@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0166
+      release: v0.1.0-0167
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0167:
+            en:
+              - "Rounded corners and spacing are more consistent, and interface animations feel smoother"
+            zh-TW:
+              - "介面圓角與間距更一致，動畫也更流暢"
+            zh-CN:
+              - "界面圆角和间距更一致，动画也更流畅"
+            ja:
+              - "画面の角丸と間隔がより統一され、アニメーションも滑らかになりました"
+            ko:
+              - "화면의 둥근 모서리와 간격이 더 일관되고 애니메이션도 더 부드러워졌습니다"
+            de:
+              - "Abgerundete Ecken und Abstände sind einheitlicher, und Animationen wirken flüssiger"
+            fr:
+              - "Les coins arrondis et les espacements sont plus cohérents, et les animations sont plus fluides"
+            es:
+              - "Las esquinas redondeadas y el espaciado son más coherentes, y las animaciones se ven más fluidas"
+            it:
+              - "Gli angoli arrotondati e le spaziature sono più coerenti e le animazioni risultano più fluide"
           0.1.0-0166:
             en:
               - "The Overview shows your NAS's QuickConnect and DDNS addresses"
@@ -924,43 +943,6 @@ packages:
               - "Mejoras de estabilidad"
             it:
               - "Miglioramenti della stabilità"
-          0.1.0-0156:
-            en:
-              - "Every way's card on Connections has a Phone button with a QR code that opens this NAS's phone browser page on that address, and what the phone needs for it"
-              - "The phone browser page can switch between several NAS: tap the NAS name to pick another one or add one"
-              - "Phone browser page fixes: the loading ring spins, DSM's loading screens stay hidden until an App is ready, App icons are right, and on iPhone the menu opens a page with one tap, text fields bring up the keyboard and dialogs fit the screen"
-            zh-TW:
-              - "「連線總覽」的每個連線方式卡片都有「手機」按鈕，提供在該位址開啟這台 NAS 手機瀏覽器頁面的 QR 碼，並說明手機需要的條件"
-              - "手機瀏覽器頁面可在多台 NAS 之間切換：點選 NAS 名稱即可選擇或新增其他 NAS"
-              - "手機瀏覽器頁面修正：載入圈會轉動、App 準備好之前不再露出 DSM 的載入畫面、App 圖示正確，且在 iPhone 上選單點一下就換頁、文字欄位會叫出鍵盤、對話框符合螢幕大小"
-            zh-CN:
-              - "“连接总览”的每个连接方式卡片都有“手机”按钮，提供在该地址打开这台 NAS 手机浏览器页面的二维码，并说明手机需要的条件"
-              - "手机浏览器页面可在多台 NAS 之间切换：点击 NAS 名称即可选择或添加其他 NAS"
-              - "手机浏览器页面修正：加载圈会转动、应用准备好之前不再露出 DSM 的加载画面、应用图标正确，且在 iPhone 上菜单点一下即可换页、文本框会弹出键盘、对话框适应屏幕大小"
-            ja:
-              - "「接続の概要」の各接続方法のカードに「スマートフォン」ボタンを追加。そのアドレスでこの NAS のスマートフォンのブラウザ用ページを開く QR コードと、スマートフォンに必要な条件を表示します"
-              - "スマートフォンのブラウザ用ページで複数の NAS を切り替えられるように：NAS 名をタップして別の NAS を選ぶか追加できます"
-              - "スマートフォンのブラウザ用ページの修正：読み込みリングが回転し、アプリの準備ができるまで DSM の読み込み画面が見えず、アプリのアイコンが正しく表示され、iPhone ではメニューが 1 回のタップでページを開き、テキスト欄でキーボードが表示され、ダイアログが画面に収まります"
-            ko:
-              - "연결 개요의 각 연결 방식 카드에 휴대폰 버튼이 추가되어, 해당 주소에서 이 NAS의 휴대폰 브라우저 페이지를 여는 QR 코드와 휴대폰에 필요한 조건을 보여 줌"
-              - "휴대폰 브라우저 페이지에서 여러 NAS 간 전환: NAS 이름을 눌러 다른 NAS를 선택하거나 추가"
-              - "휴대폰 브라우저 페이지 수정: 로딩 링이 회전하고, 앱이 준비될 때까지 DSM 로딩 화면이 보이지 않으며, 앱 아이콘이 올바르게 표시되고, iPhone에서 메뉴를 한 번 눌러 페이지가 열리고 텍스트 필드에서 키보드가 나타나며 대화 상자가 화면에 맞음"
-            de:
-              - "Jede Verbindungskarte in der Verbindungsübersicht hat eine Schaltfläche Handy mit einem QR-Code, der die Smartphone-Browser-Seite dieses NAS über diese Adresse öffnet, und zeigt, was das Smartphone dafür braucht"
-              - "Die Seite im Smartphone-Browser wechselt zwischen mehreren NAS: auf den NAS-Namen tippen, um ein anderes NAS zu wählen oder hinzuzufügen"
-              - "Korrekturen der Seite im Smartphone-Browser: Der Ladekreis dreht sich, DSM-Ladebildschirme bleiben verborgen, bis eine App bereit ist, App-Symbole stimmen, und auf dem iPhone öffnet das Menü eine Seite mit einem Tippen, Textfelder zeigen die Tastatur und Dialoge passen auf den Bildschirm"
-            fr:
-              - "Chaque carte de connexion de la Vue d'ensemble des connexions a un bouton Téléphone avec un code QR qui ouvre la page du navigateur du téléphone de ce NAS sur cette adresse, et indique ce dont le téléphone a besoin"
-              - "La page du navigateur du téléphone passe d’un NAS à l’autre : touchez le nom du NAS pour en choisir ou en ajouter un autre"
-              - "Corrections de la page du navigateur du téléphone : l’anneau de chargement tourne, les écrans de chargement de DSM restent masqués jusqu’à ce que l’app soit prête, les icônes des apps sont correctes, et sur iPhone le menu ouvre une page en un seul toucher, les champs de texte affichent le clavier et les boîtes de dialogue tiennent dans l’écran"
-            es:
-              - "Cada tarjeta de conexión del Resumen de conexiones tiene un botón Teléfono con un código QR que abre la página del navegador del teléfono de este NAS en esa dirección, e indica lo que necesita el teléfono"
-              - "La página del navegador del teléfono cambia entre varios NAS: toque el nombre del NAS para elegir o añadir otro"
-              - "Correcciones de la página del navegador del teléfono: el anillo de carga gira, las pantallas de carga de DSM quedan ocultas hasta que la app está lista, los iconos de las apps son correctos y, en iPhone, el menú abre una página con un solo toque, los campos de texto muestran el teclado y los cuadros de diálogo caben en la pantalla"
-            it:
-              - "Ogni scheda di connessione della Panoramica delle connessioni ha un pulsante Telefono con un codice QR che apre la pagina del browser del telefono di questo NAS su quell’indirizzo, e indica ciò che serve al telefono"
-              - "La pagina del browser del telefono passa da un NAS all’altro: tocca il nome del NAS per sceglierne o aggiungerne un altro"
-              - "Correzioni della pagina del browser del telefono: l’anello di caricamento gira, le schermate di caricamento di DSM restano nascoste finché l’app non è pronta, le icone delle app sono corrette e su iPhone il menu apre una pagina con un solo tocco, i campi di testo mostrano la tastiera e le finestre di dialogo si adattano allo schermo"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -1017,15 +999,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0166
+        version: 0.1.0-0167
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2856bb23d9e6cc28b064abe937cd5803c6205eaf1ba49027b3bb957d68247cde
-        md5: 3b1d5a88442457020c94ba684369360f
-        size: 18114560
+        sha256: 4b638141f75c8e63be8d0e0c756778c27fcc56d5e77f872b97ea6fe54e2cdb3e
+        md5: fb81ba1ffbf8400238595ad6aee17209
+        size: 18094080
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1042,19 +1024,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T09:47:02Z
-          source_ref: 6d14455e35b996b12d0afedbd2401d03d16ceff8
+          reviewed_at: 2026-11-14T11:08:54Z
+          source_ref: 3c99a5c5a31a20126df7787520ce6299d7943208
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0166
+        version: 0.1.0-0167
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: c19c8813347562878826d9eae815820667be06031e080ad2c9c4a1f63e1384b4
-        md5: 6eafb74494ee9497f39992c36af24c14
-        size: 18708480
+        sha256: 8dbc8b531d5242024c1a747e666e30a84db096c6965138bf7aed7043cdc5d614
+        md5: fb106f6e883db95d4324468c70b26333
+        size: 18688000
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1071,11 +1053,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T09:47:02Z
-          source_ref: 6d14455e35b996b12d0afedbd2401d03d16ceff8
+          reviewed_at: 2026-11-14T11:08:54Z
+          source_ref: 3c99a5c5a31a20126df7787520ce6299d7943208
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0166
+        version: 0.1.0-0167
         arch:
           - apollolake
           - avoton
@@ -1104,9 +1086,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 6d0c942fdadc387874b0cf2315f083c4ee4aeb45194f1d30f48d2be6e8984f73
-        md5: 0786caef64f08822304db7ba2561c7f8
-        size: 19486720
+        sha256: fc27b2af21f9f6cc45d057780b017d3c4d5111ee06e599fb843f183c31187553
+        md5: 6af48429769c9614333a13db0b7b63d7
+        size: 19476480
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1123,8 +1105,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T09:47:02Z
-          source_ref: 6d14455e35b996b12d0afedbd2401d03d16ceff8
+          reviewed_at: 2026-11-14T11:08:54Z
+          source_ref: 3c99a5c5a31a20126df7787520ce6299d7943208
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
