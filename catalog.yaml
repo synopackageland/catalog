@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0157
+      release: v0.1.0-0158
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0158:
+            en:
+              - "The phone in the Phone panel is now an upright live demo you can tap: switch between Home and Apps and open a few Apps"
+            zh-TW:
+              - "「手機」面板中的手機改為直立、可點按的即時示範：可切換首頁與 App 分頁，並開啟幾個 App"
+            zh-CN:
+              - "“手机”面板中的手机改为竖直、可点按的实时演示：可切换首页与应用标签页，并打开几个应用"
+            ja:
+              - "「スマートフォン」パネルの端末が、タップできる縦向きのライブデモになりました：ホームとアプリのタブを切り替え、いくつかのアプリを開けます"
+            ko:
+              - "휴대폰 패널의 휴대폰이 탭할 수 있는 세로형 실시간 데모로 바뀌었습니다: 홈과 앱 탭을 전환하고 몇 가지 앱을 열 수 있습니다"
+            de:
+              - "Das Handy im Handy-Bereich ist jetzt eine aufrechte Live-Demo zum Antippen: zwischen Startseite und Apps wechseln und einige Apps öffnen"
+            fr:
+              - "Le téléphone du panneau Téléphone devient une démo en direct verticale et interactive : passez de l’accueil aux apps et ouvrez quelques apps"
+            es:
+              - "El teléfono del panel Teléfono es ahora una demostración en vivo vertical que se puede tocar: cambia entre Inicio y Apps y abre algunas apps"
+            it:
+              - "Il telefono nel pannello Telefono è ora una demo dal vivo verticale da toccare: passa tra Home e App e apri alcune app"
           0.1.0-0157:
             en:
               - "Stability improvements"
@@ -906,34 +925,6 @@ packages:
               - Listas en el teléfono con todas las filas y desplazamiento de la página completa
             it:
               - Sul telefono gli elenchi mostrano tutte le righe e scorrono con l'intera pagina
-          0.1.0-0145:
-            en:
-              - Resize table columns more smoothly
-              - Update built-in components
-            zh-TW:
-              - 調整表格欄寬時操作更順暢
-              - 更新內建元件
-            zh-CN:
-              - 调整表格列宽时操作更流畅
-              - 更新内置组件
-            de:
-              - Tabellenspalten lassen sich flüssiger in der Breite anpassen
-              - Integrierte Komponenten aktualisiert
-            fr:
-              - Redimensionnement plus fluide des colonnes des tableaux
-              - Mise à jour des composants intégrés
-            ja:
-              - 表の列幅をよりスムーズに調整
-              - 内蔵コンポーネントを更新
-            ko:
-              - 표 열 너비를 더 부드럽게 조정
-              - 내장 구성 요소 업데이트
-            es:
-              - Ajuste más fluido del ancho de las columnas de las tablas
-              - Actualización de los componentes integrados
-            it:
-              - Ridimensionamento più fluido delle colonne delle tabelle
-              - Aggiornati i componenti integrati
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -990,15 +981,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0157
+        version: 0.1.0-0158
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 9e30737ad9e32b9b8c57267608ddd10ef9edbe16a4fd117f7d36d7b8d8d4881b
-        md5: f22b0035d794e04f9d56802196d30938
-        size: 17807360
+        sha256: da473d9229cd18b97780a37ba56ada55372f198594168f8ae4274c5161c246d6
+        md5: 59fe2c22c857144d7d5cbc83f4af90ae
+        size: 18001920
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1015,19 +1006,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T01:50:42Z
-          source_ref: 1cb4383016fc8c98a2c9e71ee5d0036cc719788d
+          reviewed_at: 2026-11-14T02:09:08Z
+          source_ref: 5f060b09bd9335c9b96dfe1e726eed4533104c05
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0157
+        version: 0.1.0-0158
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 8a340594549f167ad41b3ab7a2650b84e7ba06f60880da84cbda5eeda20b85b7
-        md5: 0271a8095fcfe3fa112468e61827f884
-        size: 18401280
+        sha256: d357de5b81f0738e198503175bd400db89d5c85cac883182b58517e4f794e7b2
+        md5: f6132b8e5e9fa013b55b30da135083f2
+        size: 18606080
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1044,11 +1035,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T01:50:42Z
-          source_ref: 1cb4383016fc8c98a2c9e71ee5d0036cc719788d
+          reviewed_at: 2026-11-14T02:09:08Z
+          source_ref: 5f060b09bd9335c9b96dfe1e726eed4533104c05
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0157
+        version: 0.1.0-0158
         arch:
           - apollolake
           - avoton
@@ -1077,9 +1068,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 4fcf5d06da8ed826f8c76147820b68a07c450b8a05ab6afe496819a7221ac19d
-        md5: 694fb778eb9c977c0c4470d7124f3eeb
-        size: 19179520
+        sha256: 3ccb5afec8994a2b4a6758fd628e537d5b86d0c659ed05ad5359ea8d1cfe8df8
+        md5: fdc2e9050365d9874511af57e84721a5
+        size: 19384320
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1096,8 +1087,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T01:50:42Z
-          source_ref: 1cb4383016fc8c98a2c9e71ee5d0036cc719788d
+          reviewed_at: 2026-11-14T02:09:08Z
+          source_ref: 5f060b09bd9335c9b96dfe1e726eed4533104c05
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
