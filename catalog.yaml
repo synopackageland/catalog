@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0168
+      release: v0.1.0-0169
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0169:
+            en:
+              - "Deleting an App now also removes its domain and route, and panels display more smoothly on phones"
+            zh-TW:
+              - "刪除 App 時現在也會一併移除其網域與路由，手機上的面板顯示也更流暢"
+            zh-CN:
+              - "删除 App 时现在也会一并移除其域名和路由，手机上的面板显示也更流畅"
+            ja:
+              - "App を削除すると、そのドメインとルートも削除され、スマートフォンではパネルがより滑らかに表示されるようになりました"
+            ko:
+              - "App을 삭제하면 해당 도메인과 경로도 함께 제거되며 휴대폰에서 패널이 더 부드럽게 표시됩니다"
+            de:
+              - "Beim Löschen einer App werden jetzt auch ihre Domain und Route entfernt, und Panels werden auf Smartphones flüssiger dargestellt"
+            fr:
+              - "La suppression d’une App supprime désormais aussi son domaine et sa route, et les panneaux s’affichent plus fluidement sur mobile"
+            es:
+              - "Al eliminar una App ahora también se eliminan su dominio y su ruta, y los paneles se muestran con más fluidez en el móvil"
+            it:
+              - "L’eliminazione di un’App ora rimuove anche il relativo dominio e percorso, mentre i pannelli vengono visualizzati più fluidamente sui telefoni"
           0.1.0-0168:
             en:
               - "Button labels wrap on narrow screens so the full text stays visible"
@@ -924,25 +943,6 @@ packages:
             it:
               - "Nella home della pagina telefono, i grafici delle risorse sono una linea continua che scorre in modo fluido e si aggiorna ogni 5 secondi"
               - "L’icona del pulsante Telefono è allineata alla sua etichetta"
-          0.1.0-0158:
-            en:
-              - "The phone in the Phone panel is now an upright live demo you can tap: switch between Home and Apps and open a few Apps"
-            zh-TW:
-              - "「手機」面板中的手機改為直立、可點按的即時示範：可切換首頁與 App 分頁，並開啟幾個 App"
-            zh-CN:
-              - "“手机”面板中的手机改为竖直、可点按的实时演示：可切换首页与应用标签页，并打开几个应用"
-            ja:
-              - "「スマートフォン」パネルの端末が、タップできる縦向きのライブデモになりました：ホームとアプリのタブを切り替え、いくつかのアプリを開けます"
-            ko:
-              - "휴대폰 패널의 휴대폰이 탭할 수 있는 세로형 실시간 데모로 바뀌었습니다: 홈과 앱 탭을 전환하고 몇 가지 앱을 열 수 있습니다"
-            de:
-              - "Das Handy im Handy-Bereich ist jetzt eine aufrechte Live-Demo zum Antippen: zwischen Startseite und Apps wechseln und einige Apps öffnen"
-            fr:
-              - "Le téléphone du panneau Téléphone devient une démo en direct verticale et interactive : passez de l’accueil aux apps et ouvrez quelques apps"
-            es:
-              - "El teléfono del panel Teléfono es ahora una demostración en vivo vertical que se puede tocar: cambia entre Inicio y Apps y abre algunas apps"
-            it:
-              - "Il telefono nel pannello Telefono è ora una demo dal vivo verticale da toccare: passa tra Home e App e apri alcune app"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -999,14 +999,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0168
+        version: 0.1.0-0169
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 398f4e013305de47c2f5d0a6d6c093650fdfc5a311eba131b2e4a37f605afffc
-        md5: 8e9504ee10caa60b07b69032aa635292
+        sha256: 290fdfa3706ec827646e96438a974810eec2ff91eb188cd03b184e11c9026620
+        md5: 7a3ea4deb2beb2825c927420ffcca210
         size: 18114560
         facts:
           built_with: sdk
@@ -1024,18 +1024,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T11:56:52Z
-          source_ref: 68b0258307df9f1f0c2e0a8ab9ced990f7bd1c03
+          reviewed_at: 2026-11-14T16:00:48Z
+          source_ref: 562a83c0d1c9b3b1533d6f68d5bca4d84c2ea078
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0168
+        version: 0.1.0-0169
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 031883123d9a4357ceb4e89caad60301e3559b422a571a86c10d3276048d096f
-        md5: 6de19f6612219c100bf7091c53095d2b
+        sha256: 02e1f23f87b8aac8e7750fa82bcc5e22dd53197d80248f7e0a840ea2f1e53c30
+        md5: c2d2585bb413238ae681949e2b0ca2bf
         size: 18708480
         facts:
           built_with: sdk
@@ -1053,11 +1053,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T11:56:52Z
-          source_ref: 68b0258307df9f1f0c2e0a8ab9ced990f7bd1c03
+          reviewed_at: 2026-11-14T16:00:48Z
+          source_ref: 562a83c0d1c9b3b1533d6f68d5bca4d84c2ea078
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0168
+        version: 0.1.0-0169
         arch:
           - apollolake
           - avoton
@@ -1086,9 +1086,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: edef5d762b04de7269d122473fba597888e20113c942afd135bc6eb3d4103096
-        md5: a682b767c299b47a25e1ad1f98ab3cf3
-        size: 19486720
+        sha256: cce2eec66fd5babc00a42f5c41346a8ab34d6a570e04b4ccfe8a2485e989bf62
+        md5: 2482346b89fcbca6d016862000c630a5
+        size: 19496960
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1105,8 +1105,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T11:56:52Z
-          source_ref: 68b0258307df9f1f0c2e0a8ab9ced990f7bd1c03
+          reviewed_at: 2026-11-14T16:00:48Z
+          source_ref: 562a83c0d1c9b3b1533d6f68d5bca4d84c2ea078
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
