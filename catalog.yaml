@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0160
+      release: v0.1.0-0161
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0161:
+            en:
+              - "When opening DSM Apps on a phone, wrapped titles no longer overlap the text below, and the right borders of two-column cards remain fully visible"
+            zh-TW:
+              - "手機開啟 DSM App 時，折行的標題不再壓到下方文字，兩欄卡片的右框完整顯示"
+            zh-CN:
+              - "手机打开 DSM App 时，换行的标题不再压住下方文字，双列卡片的右边框完整显示"
+            ja:
+              - "スマートフォンで DSM アプリを開くと、折り返されたタイトルが下のテキストに重ならなくなり、2 列のカードの右枠も欠けずに表示されます"
+            ko:
+              - "휴대폰에서 DSM 앱을 열면 줄바꿈된 제목이 아래 텍스트와 겹치지 않고, 두 열 카드의 오른쪽 테두리가 온전히 표시됩니다"
+            de:
+              - "Beim Öffnen von DSM-Apps auf dem Handy überlappen umgebrochene Titel den darunterliegenden Text nicht mehr, und die rechten Ränder zweispaltiger Karten bleiben vollständig sichtbar"
+            fr:
+              - "Lorsque vous ouvrez des applications DSM sur un téléphone, les titres sur plusieurs lignes ne chevauchent plus le texte en dessous et les bordures droites des cartes sur deux colonnes restent entièrement visibles"
+            es:
+              - "Al abrir aplicaciones de DSM en un teléfono, los títulos en varias líneas ya no se superponen al texto inferior y los bordes derechos de las tarjetas en dos columnas se muestran completos"
+            it:
+              - "Quando si aprono le app DSM su un telefono, i titoli su più righe non si sovrappongono più al testo sottostante e i bordi destri delle schede su due colonne restano completamente visibili"
           0.1.0-0160:
             en:
               - "When opening DSM Apps on a phone, card rows and expandable lists rearrange to fit the screen without being cut off. Side-by-side values no longer overlap on narrow screens"
@@ -915,25 +934,6 @@ packages:
               - En teléfonos Android, el teclado ya no se cierra al tocar un campo de texto
             it:
               - Sui telefoni Android la tastiera non si chiude più quando tocchi un campo di testo
-          0.1.0-0148:
-            en:
-              - Confirm dialogs opened from a wizard cover only the app window
-            zh-TW:
-              - 從精靈開啟的確認對話框只會遮住 App 視窗
-            zh-CN:
-              - 从向导打开的确认对话框只遮住应用窗口
-            de:
-              - Aus einem Assistenten geöffnete Bestätigungsdialoge verdecken nur das App-Fenster
-            fr:
-              - Les boîtes de confirmation ouvertes depuis un assistant ne couvrent que la fenêtre de l'app
-            ja:
-              - ウィザードから開く確認ダイアログの覆う範囲をアプリのウィンドウのみに変更
-            ko:
-              - 마법사에서 연 확인 대화 상자가 앱 창만 가림
-            es:
-              - Los diálogos de confirmación abiertos desde un asistente cubren solo la ventana de la app
-            it:
-              - Le finestre di conferma aperte da una procedura guidata coprono solo la finestra dell'app
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -990,15 +990,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0160
+        version: 0.1.0-0161
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 9070d390f271584461b319ec82cd28c4ed72bfe91a097f6034fb3b916096f1ea
-        md5: 6123e18ce879a40eceb160784294c977
-        size: 18012160
+        sha256: bf3bd9c985e2b051c0b77805a3166c9892f6c00e93fe9c5d379977bf9a7e9a75
+        md5: 4e6b534ea1b3dead8c5202a398e64372
+        size: 18022400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1015,18 +1015,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T03:48:53Z
-          source_ref: ffad35dae4f119f68d4b3d4f62de18f321032367
+          reviewed_at: 2026-11-14T04:53:09Z
+          source_ref: 493b5d54aa3b6b66a119927323212653388efdb5
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0160
+        version: 0.1.0-0161
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 7c89b59f9605a0560d95bfaae5d898ab4b18f32ceae97beacb2fc5eb554439ed
-        md5: 8e279eba1dcf5bfd207f6842ac52126c
+        sha256: fa5ebb2900576cef8d45d41a0e1b3d5576c58b2743470da2456c6b4dd55b8cbf
+        md5: aa9ffece2086acff827b90bda3381dec
         size: 18616320
         facts:
           built_with: sdk
@@ -1044,11 +1044,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T03:48:53Z
-          source_ref: ffad35dae4f119f68d4b3d4f62de18f321032367
+          reviewed_at: 2026-11-14T04:53:09Z
+          source_ref: 493b5d54aa3b6b66a119927323212653388efdb5
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0160
+        version: 0.1.0-0161
         arch:
           - apollolake
           - avoton
@@ -1077,8 +1077,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 3f217bf5b31c1c3b59eeba567814798002c513bceffda76f9a481cad5cc5d231
-        md5: 49a18f92e61eb16cfcfa7a997838f01f
+        sha256: b7ee29977662e8ab16d59ea9ffc443e298401a9d2183f9c6aca482312ca8ce37
+        md5: a8eb55e596616155fba5249322fe9abf
         size: 19394560
         facts:
           built_with: sdk
@@ -1096,8 +1096,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T03:48:53Z
-          source_ref: ffad35dae4f119f68d4b3d4f62de18f321032367
+          reviewed_at: 2026-11-14T04:53:09Z
+          source_ref: 493b5d54aa3b6b66a119927323212653388efdb5
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
