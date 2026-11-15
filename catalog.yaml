@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1669
+      release: v0.1.1-1670
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,6 +40,25 @@ packages:
         it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. Sui volumi Btrfs, la pagina Duplicati trova cartelle identiche e file grandi duplicati, conserva una copia di ciascuno, spiega quale resta e mostra quanto spazio libera rimuovere il resto. La pulizia segue un piano verificato, controllato di nuovo subito prima dell'esecuzione, e sposta gli elementi nel Cestino della cartella condivisa così da poterli ripristinare. È richiesto l’accesso come amministratore DSM; approva le attività di sistema prima di usare le funzioni che ne dipendono"
       changelog:
         releases:
+          0.1.1-1670:
+            en:
+              - "The Snapshot page no longer shows a stray “·” after “Shared folder”"
+            zh-TW:
+              - "「快照」頁的「共用資料夾」後面不再多出「·」"
+            zh-CN:
+              - "“快照”页的“共享文件夹”后面不再多出“·”"
+            ja:
+              - "「スナップショット」ページで「共有フォルダ」の後に余分な「·」が表示されなくなりました"
+            ko:
+              - "스냅샷 페이지에서 '공유 폴더' 뒤에 불필요한 '·'가 더 이상 표시되지 않음"
+            de:
+              - "Die Seite „Schnappschuss“ zeigt nach „Freigegebener Ordner“ kein überflüssiges „·“ mehr"
+            fr:
+              - "La page Instantané n’affiche plus de « · » superflu après « Dossier partagé »"
+            es:
+              - "La página Instantánea ya no muestra un «·» de más después de «Carpeta compartida»"
+            it:
+              - "La pagina Snapshot non mostra più un «·» superfluo dopo «Cartella condivisa»"
           0.1.1-1669:
             en:
               - "New Duplicates page finds identical folders and big duplicate files on Btrfs volumes from the scan, without reading file contents"
@@ -352,26 +371,26 @@ packages:
               - Scompare la nota «Cartella temporanea durante la pulizia»; Syno Reclaim crea e rimuove automaticamente le sue cartelle nascoste
               - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1669-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-duplicates-folders-1669-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-duplicates-group-1669-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-duplicates-files-1669-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-duplicates-review-1669-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-packages-details-1669-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-recycle-details-1669-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/08-snapshots-1669-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1669-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1670-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-duplicates-folders-1670-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-duplicates-group-1670-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-duplicates-files-1670-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-duplicates-review-1670-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-packages-details-1670-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-recycle-details-1670-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/08-snapshots-1670-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1670-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1669
+        version: 0.1.1-1670
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: c00b8317bad5a182d5d4330efc6eddd359209117038260fd2558116e41d801a8
-        md5: 46043caaa18c7db55ec83d481e515456
-        size: 16073728
+        sha256: 5f1c3fc5172db9311794582c3e9c45e13b69c2e22a968f85faf68465040327d9
+        md5: d7c642ee6cebca9e92c1d4e8ca573b30
+        size: 16064512
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -388,19 +407,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T11:00:31Z
-          source_ref: b7078a2b5aa7f14cbddd7bc9ffc6f7f819ff82e9
+          reviewed_at: 2026-11-15T13:21:32Z
+          source_ref: 4bf1c0bf37f805d7f242dedf19bbd9d77260bbfe
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1669
+        version: 0.1.1-1670
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: fc6e6a02c4bbd94c0c7295d28398c12e46812d7635f583a343ac8ef196a8f7c3
-        md5: f4e396361c6b0834def522521f7da802
-        size: 16955392
+        sha256: 4d4580aedfa4e4362470e1d656769aad390397698951d9550b4bac6e311c6b04
+        md5: 3861206877e3569dee4e8318da7f3aa4
+        size: 16949760
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -417,11 +436,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T11:00:31Z
-          source_ref: b7078a2b5aa7f14cbddd7bc9ffc6f7f819ff82e9
+          reviewed_at: 2026-11-15T13:21:32Z
+          source_ref: 4bf1c0bf37f805d7f242dedf19bbd9d77260bbfe
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1669
+        version: 0.1.1-1670
         arch:
           - apollolake
           - avoton
@@ -450,9 +469,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: d9eff202917e53ca0d5b9f2e8da2de653e98a5f3b02458c647ea0c8f81953117
-        md5: ddb8f5e252981aaeac334f32ed62745f
-        size: 17332224
+        sha256: 127c23992cbf77b33f66a7b7db7a5368d0204da68743201e2ff4a216254de723
+        md5: 7eb8124c7df27b26a1263dd99f9b3aac
+        size: 17323008
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -469,8 +488,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T11:00:31Z
-          source_ref: b7078a2b5aa7f14cbddd7bc9ffc6f7f819ff82e9
+          reviewed_at: 2026-11-15T13:21:32Z
+          source_ref: 4bf1c0bf37f805d7f242dedf19bbd9d77260bbfe
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
