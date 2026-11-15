@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0170
+      release: v0.1.0-0171
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,34 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0171:
+            en:
+              - "The phone page has a short address: add /m to your DSM address. QR codes and links now use it"
+              - "Requires DSM 7.2 or later"
+            zh-TW:
+              - "手機頁有了短網址：在 DSM 網址後加上 /m 即可開啟，QR code 與連結都改用它"
+              - "需要 DSM 7.2 以上"
+            zh-CN:
+              - "手机页有了短网址：在 DSM 网址后加上 /m 即可打开，二维码与链接都改用它"
+              - "需要 DSM 7.2 及以上版本"
+            ja:
+              - "スマートフォン用ページに短いアドレスが追加され、DSM のアドレスの後に /m を付けるだけで開けるように。QR コードとリンクもこのアドレスを使用"
+              - "DSM 7.2 以降が必要"
+            ko:
+              - "휴대폰 페이지에 짧은 주소가 생겨 DSM 주소 뒤에 /m만 붙이면 열 수 있음. QR 코드와 링크도 이 주소를 사용함"
+              - "DSM 7.2 이상 필요"
+            de:
+              - "Die Handyseite hat eine kurze Adresse: /m an die DSM-Adresse anhängen. QR-Codes und Links verwenden sie jetzt"
+              - "Erfordert DSM 7.2 oder höher"
+            fr:
+              - "La page pour téléphone a une adresse courte : ajoutez /m à l’adresse de DSM. Les codes QR et les liens l’utilisent désormais"
+              - "Nécessite DSM 7.2 ou version ultérieure"
+            es:
+              - "La página para el teléfono tiene una dirección corta: añada /m a la dirección de DSM. Los códigos QR y los enlaces ya la usan"
+              - "Requiere DSM 7.2 o posterior"
+            it:
+              - "La pagina per il telefono ha un indirizzo breve: aggiungi /m all’indirizzo di DSM. Codici QR e link ora lo usano"
+              - "Richiede DSM 7.2 o versioni successive"
           0.1.0-0170:
             en:
               - "Drop-down lists show the selected name correctly"
@@ -915,25 +943,6 @@ packages:
               - "Al abrir aplicaciones de DSM en un teléfono, los títulos en varias líneas ya no se superponen al texto inferior y los bordes derechos de las tarjetas en dos columnas se muestran completos"
             it:
               - "Quando si aprono le app DSM su un telefono, i titoli su più righe non si sovrappongono più al testo sottostante e i bordi destri delle schede su due colonne restano completamente visibili"
-          0.1.0-0160:
-            en:
-              - "When opening DSM Apps on a phone, card rows and expandable lists rearrange to fit the screen without being cut off. Side-by-side values no longer overlap on narrow screens"
-            zh-TW:
-              - "手機開啟 DSM App 時，卡片列與可展開清單會依螢幕重新排列，不再被截斷；並列的數值在窄螢幕不再重疊"
-            zh-CN:
-              - "手机打开 DSM App 时，卡片行与可展开列表会根据屏幕重新排列，不再被截断；并列的数值在窄屏幕上不再重叠"
-            ja:
-              - "スマートフォンで DSM アプリを開くと、カードの行と展開可能なリストが画面に合わせて並び替えられ、見切れなくなります。横に並ぶ数値も狭い画面で重ならなくなります"
-            ko:
-              - "휴대폰에서 DSM 앱을 열면 카드 행과 펼칠 수 있는 목록이 화면에 맞게 재배치되어 잘리지 않습니다. 나란히 표시되는 값도 좁은 화면에서 겹치지 않습니다"
-            de:
-              - "Beim Öffnen von DSM-Apps auf dem Handy passen sich Kartenreihen und aufklappbare Listen dem Bildschirm an, ohne abgeschnitten zu werden. Nebeneinander angezeigte Werte überlappen sich auf schmalen Bildschirmen nicht mehr"
-            fr:
-              - "Lorsque vous ouvrez des applications DSM sur un téléphone, les rangées de cartes et les listes dépliables se réorganisent pour tenir à l’écran sans être tronquées. Les valeurs côte à côte ne se chevauchent plus sur les écrans étroits"
-            es:
-              - "Al abrir aplicaciones de DSM en un teléfono, las filas de tarjetas y las listas desplegables se reorganizan para ajustarse a la pantalla sin quedar recortadas. Los valores en paralelo ya no se superponen en pantallas estrechas"
-            it:
-              - "Quando si aprono le app DSM su un telefono, le righe di schede e gli elenchi espandibili si riorganizzano per adattarsi allo schermo senza essere tagliati. I valori affiancati non si sovrappongono più sugli schermi stretti"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -990,15 +999,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0170
+        version: 0.1.0-0171
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 05295d55bef7d84b2d3f290566a123000a17ad77b521af4d40e753f9a83608c8
-        md5: f1255946a088acc87e53fa353fb05dba
-        size: 18124800
+        sha256: 3ecefb7f3aedc6a5fe5ca68ee92e373d692a051b89293ad01b6f870489b60940
+        md5: 90bf406174c9e6a945921edc82674662
+        size: 18145280
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1015,19 +1024,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T01:40:18Z
-          source_ref: ef422be28c92639b6320f8e9b15ccb57b77e3105
+          reviewed_at: 2026-11-15T05:42:05Z
+          source_ref: 526e76f9efcf58e86ed019b8cc4f7bfc94003c1f
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0170
+        version: 0.1.0-0171
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 84698318d843a6a436da8c323c84afc3f92ef38e581df7147af4e799d187a148
-        md5: 981a1929a705e2b976a8f5771114fe51
-        size: 18718720
+        sha256: c45e0941097248e3b8f42d7d5a97eecc75b960457743d5bd92b83cc48d5babe8
+        md5: 2642258187959c23b678140f0ce3feed
+        size: 18739200
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1044,11 +1053,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T01:40:18Z
-          source_ref: ef422be28c92639b6320f8e9b15ccb57b77e3105
+          reviewed_at: 2026-11-15T05:42:05Z
+          source_ref: 526e76f9efcf58e86ed019b8cc4f7bfc94003c1f
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0170
+        version: 0.1.0-0171
         arch:
           - apollolake
           - avoton
@@ -1077,9 +1086,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 9cd0713f72d4a65ba968a5fc4616a57e8fe192fe7787752fc3330046f213d0d7
-        md5: 7f95df1ed503be0bd2533bcd26a54789
-        size: 19507200
+        sha256: 94c10e5c215c16b9e14429ef78386d8a8dce619e08484814b8df1e1be11d3a93
+        md5: 65ce85a9c705add7de2c4640b717eecf
+        size: 19527680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1096,8 +1105,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T01:40:18Z
-          source_ref: ef422be28c92639b6320f8e9b15ccb57b77e3105
+          reviewed_at: 2026-11-15T05:42:05Z
+          source_ref: 526e76f9efcf58e86ed019b8cc4f7bfc94003c1f
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
