@@ -478,7 +478,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0169
+      release: v0.1.0-0170
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -746,6 +746,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0170:
+            en:
+              - "Drop-down lists show the selected name correctly"
+            zh-TW:
+              - "下拉選單選取後名稱正確顯示"
+            zh-CN:
+              - "下拉菜单选取后名称正确显示"
+            ja:
+              - "ドロップダウンリストで選択した名前が正しく表示されるように"
+            ko:
+              - "드롭다운 목록에서 선택한 이름이 올바르게 표시됨"
+            de:
+              - "Dropdown-Listen zeigen den ausgewählten Namen korrekt an"
+            fr:
+              - "Les listes déroulantes affichent correctement le nom sélectionné"
+            es:
+              - "Las listas desplegables muestran correctamente el nombre seleccionado"
+            it:
+              - "Gli elenchi a discesa mostrano correttamente il nome selezionato"
           0.1.0-0169:
             en:
               - "Deleting an App now also removes its domain and route, and panels display more smoothly on phones"
@@ -915,34 +934,6 @@ packages:
               - "Al abrir aplicaciones de DSM en un teléfono, las filas de tarjetas y las listas desplegables se reorganizan para ajustarse a la pantalla sin quedar recortadas. Los valores en paralelo ya no se superponen en pantallas estrechas"
             it:
               - "Quando si aprono le app DSM su un telefono, le righe di schede e gli elenchi espandibili si riorganizzano per adattarsi allo schermo senza essere tagliati. I valori affiancati non si sovrappongono più sugli schermi stretti"
-          0.1.0-0159:
-            en:
-              - "On the phone page's Home, the resource charts are one continuous line that scrolls smoothly and updates every 5 seconds"
-              - "The icon on the Phone button lines up with its label"
-            zh-TW:
-              - "手機頁首頁的資源圖改為連續、平滑捲動的線條，每 5 秒更新"
-              - "「手機」按鈕的圖示與文字對齊"
-            zh-CN:
-              - "手机页首页的资源图改为连续、平滑滚动的线条，每 5 秒更新"
-              - "“手机”按钮的图标与文字对齐"
-            ja:
-              - "スマートフォンページのホームのリソースグラフが、なめらかにスクロールする途切れない線になり、5 秒ごとに更新されます"
-              - "「スマートフォン」ボタンのアイコンがラベルと揃いました"
-            ko:
-              - "휴대폰 페이지 홈의 리소스 그래프가 끊김 없이 부드럽게 흐르는 선으로 바뀌고 5초마다 업데이트됩니다"
-              - "휴대폰 버튼의 아이콘이 레이블과 나란히 정렬됩니다"
-            de:
-              - "Auf der Startseite der Handy-Seite sind die Ressourcendiagramme eine durchgehende, gleichmäßig scrollende Linie, die alle 5 Sekunden aktualisiert wird"
-              - "Das Symbol der Handy-Schaltfläche ist an ihrer Beschriftung ausgerichtet"
-            fr:
-              - "Sur l’accueil de la page téléphone, les graphiques de ressources forment une ligne continue qui défile en douceur et se met à jour toutes les 5 secondes"
-              - "L’icône du bouton Téléphone est alignée sur son libellé"
-            es:
-              - "En el inicio de la página del teléfono, los gráficos de recursos son una línea continua que se desplaza con suavidad y se actualiza cada 5 segundos"
-              - "El icono del botón Teléfono queda alineado con su texto"
-            it:
-              - "Nella home della pagina telefono, i grafici delle risorse sono una linea continua che scorre in modo fluido e si aggiorna ogni 5 secondi"
-              - "L’icona del pulsante Telefono è allineata alla sua etichetta"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -999,15 +990,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0169
+        version: 0.1.0-0170
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 290fdfa3706ec827646e96438a974810eec2ff91eb188cd03b184e11c9026620
-        md5: 7a3ea4deb2beb2825c927420ffcca210
-        size: 18114560
+        sha256: 05295d55bef7d84b2d3f290566a123000a17ad77b521af4d40e753f9a83608c8
+        md5: f1255946a088acc87e53fa353fb05dba
+        size: 18124800
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1024,19 +1015,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T16:00:48Z
-          source_ref: 562a83c0d1c9b3b1533d6f68d5bca4d84c2ea078
+          reviewed_at: 2026-11-15T01:40:18Z
+          source_ref: ef422be28c92639b6320f8e9b15ccb57b77e3105
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0169
+        version: 0.1.0-0170
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 02e1f23f87b8aac8e7750fa82bcc5e22dd53197d80248f7e0a840ea2f1e53c30
-        md5: c2d2585bb413238ae681949e2b0ca2bf
-        size: 18708480
+        sha256: 84698318d843a6a436da8c323c84afc3f92ef38e581df7147af4e799d187a148
+        md5: 981a1929a705e2b976a8f5771114fe51
+        size: 18718720
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1053,11 +1044,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T16:00:48Z
-          source_ref: 562a83c0d1c9b3b1533d6f68d5bca4d84c2ea078
+          reviewed_at: 2026-11-15T01:40:18Z
+          source_ref: ef422be28c92639b6320f8e9b15ccb57b77e3105
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0169
+        version: 0.1.0-0170
         arch:
           - apollolake
           - avoton
@@ -1086,9 +1077,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: cce2eec66fd5babc00a42f5c41346a8ab34d6a570e04b4ccfe8a2485e989bf62
-        md5: 2482346b89fcbca6d016862000c630a5
-        size: 19496960
+        sha256: 9cd0713f72d4a65ba968a5fc4616a57e8fe192fe7787752fc3330046f213d0d7
+        md5: 7f95df1ed503be0bd2533bcd26a54789
+        size: 19507200
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1105,8 +1096,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T16:00:48Z
-          source_ref: 562a83c0d1c9b3b1533d6f68d5bca4d84c2ea078
+          reviewed_at: 2026-11-15T01:40:18Z
+          source_ref: ef422be28c92639b6320f8e9b15ccb57b77e3105
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
@@ -1115,7 +1106,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0107
+      release: v0.2.2-0108
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1204,6 +1195,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0108:
+            en:
+              - Drop-down lists show the selected name correctly
+            zh-TW:
+              - 下拉選單選取後名稱正確顯示
+            zh-CN:
+              - 下拉菜单选取后名称正确显示
+            ja:
+              - ドロップダウンリストで選択した名前が正しく表示されるように
+            ko:
+              - 드롭다운 목록에서 선택한 이름이 올바르게 표시됨
+            de:
+              - Dropdown-Listen zeigen den ausgewählten Namen korrekt an
+            fr:
+              - Les listes déroulantes affichent correctement le nom sélectionné
+            es:
+              - Las listas desplegables muestran correctamente el nombre seleccionado
+            it:
+              - Gli elenchi a discesa mostrano correttamente il nome selezionato
           0.2.2-0107:
             en:
               - Panels and menus look and respond better on phones
@@ -1346,25 +1356,6 @@ packages:
               - Corrige un error del Centro de paquetes tras instalar en Safari
             it:
               - Corregge un errore del Centro pacchetti dopo l’installazione in Safari
-          0.2.2-0100:
-            en:
-              - Confirm dialogs opened from a wizard cover only the app window
-            zh-TW:
-              - 從精靈開啟的確認對話框只會遮蓋 App 視窗
-            zh-CN:
-              - 从向导打开的确认对话框只会遮盖应用窗口
-            ja:
-              - ウィザードから開いた確認ダイアログがアプリのウィンドウだけを覆うように変更
-            ko:
-              - 마법사에서 연 확인 대화 상자가 앱 창만 가리도록 변경
-            de:
-              - Bestätigungsdialoge aus einem Assistenten verdecken nur noch das App-Fenster
-            fr:
-              - Les boîtes de confirmation ouvertes depuis un assistant ne couvrent que la fenêtre de l’application
-            es:
-              - Los diálogos de confirmación abiertos desde un asistente cubren solo la ventana de la aplicación
-            it:
-              - Le finestre di conferma aperte da una procedura guidata coprono solo la finestra dell’app
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -1373,14 +1364,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0107
+        version: 0.2.2-0108
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6ce45ccb72d179a2f1e84c963dd74113f04d2ad5aaf08e144416313dcf7f616c
-        md5: 21386b8190612f80a45c0e2d5335aad4
+        sha256: 6faade0ac8a2d7ebf14e00f74f5195ae0d6605618e52b33f9c5f6a82087773f2
+        md5: 2551f5cafb6b4154d82dd06dccf800b3
         size: 68594688
         facts:
           built_with: sdk
@@ -1399,11 +1390,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T16:17:03Z
-          source_ref: 794e42c943aa22bded3807c6a0954458da8800fa
+          reviewed_at: 2026-11-15T01:40:18Z
+          source_ref: 2573b46373b7463cbd609329ae32513b5162bf67
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0107
+        version: 0.2.2-0108
         arch:
           - apollolake
           - avoton
@@ -1432,9 +1423,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 19c22691aa86d312390e8b3665c0674f75e3dbe901b536c5b616c1538ae7b437
-        md5: d526c855b283e49e0a74b9b4660e8edf
-        size: 72280064
+        sha256: 574ecfc4b02676fe93f2c357ab08ecc70d4fa11d4c8533b369216e3c7c871838
+        md5: dd00cc146e17c3a0ea496ef49b31efce
+        size: 72280576
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1452,8 +1443,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-14T16:17:03Z
-          source_ref: 794e42c943aa22bded3807c6a0954458da8800fa
+          reviewed_at: 2026-11-15T01:40:18Z
+          source_ref: 2573b46373b7463cbd609329ae32513b5162bf67
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
