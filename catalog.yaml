@@ -479,7 +479,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0171
+      release: v0.1.0-0172
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -747,6 +747,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0172:
+            en:
+              - "The interface loads slightly faster"
+            zh-TW:
+              - "介面載入稍快"
+            zh-CN:
+              - "界面加载稍快"
+            ja:
+              - "画面の読み込みが少し速く"
+            ko:
+              - "화면 로딩이 조금 빨라짐"
+            de:
+              - "Die Oberfläche lädt etwas schneller"
+            fr:
+              - "L’interface se charge un peu plus vite"
+            es:
+              - "La interfaz carga un poco más rápido"
+            it:
+              - "L’interfaccia si carica un po’ più velocemente"
           0.1.0-0171:
             en:
               - "The phone page has a short address: add /m to your DSM address. QR codes and links now use it"
@@ -925,25 +944,6 @@ packages:
               - "En el teléfono, tocar el icono de una app ahora la abre de forma fiable. Las páginas de resumen de DSM, como Drive, caben en la pantalla, las páginas ya no se mueven lateralmente al cambiar de pantalla y el teclado no tapa los botones de los formularios"
             it:
               - "Sul telefono, toccare l’icona di un’app ora la apre in modo affidabile. Le pagine di panoramica DSM, come Drive, rientrano nello schermo, le pagine non oscillano più lateralmente durante le transizioni e la tastiera non copre i pulsanti dei moduli"
-          0.1.0-0161:
-            en:
-              - "When opening DSM Apps on a phone, wrapped titles no longer overlap the text below, and the right borders of two-column cards remain fully visible"
-            zh-TW:
-              - "手機開啟 DSM App 時，折行的標題不再壓到下方文字，兩欄卡片的右框完整顯示"
-            zh-CN:
-              - "手机打开 DSM App 时，换行的标题不再压住下方文字，双列卡片的右边框完整显示"
-            ja:
-              - "スマートフォンで DSM アプリを開くと、折り返されたタイトルが下のテキストに重ならなくなり、2 列のカードの右枠も欠けずに表示されます"
-            ko:
-              - "휴대폰에서 DSM 앱을 열면 줄바꿈된 제목이 아래 텍스트와 겹치지 않고, 두 열 카드의 오른쪽 테두리가 온전히 표시됩니다"
-            de:
-              - "Beim Öffnen von DSM-Apps auf dem Handy überlappen umgebrochene Titel den darunterliegenden Text nicht mehr, und die rechten Ränder zweispaltiger Karten bleiben vollständig sichtbar"
-            fr:
-              - "Lorsque vous ouvrez des applications DSM sur un téléphone, les titres sur plusieurs lignes ne chevauchent plus le texte en dessous et les bordures droites des cartes sur deux colonnes restent entièrement visibles"
-            es:
-              - "Al abrir aplicaciones de DSM en un teléfono, los títulos en varias líneas ya no se superponen al texto inferior y los bordes derechos de las tarjetas en dos columnas se muestran completos"
-            it:
-              - "Quando si aprono le app DSM su un telefono, i titoli su più righe non si sovrappongono più al testo sottostante e i bordi destri delle schede su due colonne restano completamente visibili"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -1000,15 +1000,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0171
+        version: 0.1.0-0172
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 3ecefb7f3aedc6a5fe5ca68ee92e373d692a051b89293ad01b6f870489b60940
-        md5: 90bf406174c9e6a945921edc82674662
-        size: 18145280
+        sha256: 4087825150c425e5f9b3806d06fed27c53c2a74330a2a14942509d0bd74a10a7
+        md5: 7a369e264a2f6aaa2682c7db1f7b63ed
+        size: 18155520
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1025,19 +1025,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T05:42:05Z
-          source_ref: 526e76f9efcf58e86ed019b8cc4f7bfc94003c1f
+          reviewed_at: 2026-11-15T13:13:49Z
+          source_ref: 3f3ee4e92fe8ad43664889e4350bc776df48d972
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0171
+        version: 0.1.0-0172
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: c45e0941097248e3b8f42d7d5a97eecc75b960457743d5bd92b83cc48d5babe8
-        md5: 2642258187959c23b678140f0ce3feed
-        size: 18739200
+        sha256: 86aae8c78b2f5330cb29fb9e73b95ea9635b2e94795497f4b11f42a43e982c8d
+        md5: 42b481946fcd5a972f3dec76b5e5ec1a
+        size: 18749440
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1054,11 +1054,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T05:42:05Z
-          source_ref: 526e76f9efcf58e86ed019b8cc4f7bfc94003c1f
+          reviewed_at: 2026-11-15T13:13:49Z
+          source_ref: 3f3ee4e92fe8ad43664889e4350bc776df48d972
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0171
+        version: 0.1.0-0172
         arch:
           - apollolake
           - avoton
@@ -1087,9 +1087,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 94c10e5c215c16b9e14429ef78386d8a8dce619e08484814b8df1e1be11d3a93
-        md5: 65ce85a9c705add7de2c4640b717eecf
-        size: 19527680
+        sha256: 47ac8181de0f7d54e9f719f40c2f07c5f111ec01d9e99dc8bffd719b20397e23
+        md5: 3450d86f96636bfa6cf5d1282128b42a
+        size: 19537920
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1106,8 +1106,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T05:42:05Z
-          source_ref: 526e76f9efcf58e86ed019b8cc4f7bfc94003c1f
+          reviewed_at: 2026-11-15T13:13:49Z
+          source_ref: 3f3ee4e92fe8ad43664889e4350bc776df48d972
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
@@ -1116,7 +1116,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0108
+      release: v0.2.2-0109
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1205,6 +1205,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0109:
+            en:
+              - "The interface loads slightly faster"
+            zh-TW:
+              - "介面載入稍快"
+            zh-CN:
+              - "界面加载稍快"
+            ja:
+              - "画面の読み込みが少し速く"
+            ko:
+              - "화면 로딩이 조금 빨라짐"
+            de:
+              - "Die Oberfläche lädt etwas schneller"
+            fr:
+              - "L’interface se charge un peu plus vite"
+            es:
+              - "La interfaz carga un poco más rápido"
+            it:
+              - "L’interfaccia si carica un po’ più velocemente"
           0.2.2-0108:
             en:
               - Drop-down lists show the selected name correctly
@@ -1347,25 +1366,6 @@ packages:
               - En teléfonos Android, el teclado ya no se cierra al tocar un campo de texto
             it:
               - Sui telefoni Android la tastiera non si chiude più quando tocchi un campo di testo
-          0.2.2-0101:
-            en:
-              - Fix a Package Center error after installing in Safari
-            zh-TW:
-              - 修正在 Safari 安裝後套件中心出現錯誤的問題
-            zh-CN:
-              - 修复在 Safari 中安装后套件中心出现错误的问题
-            ja:
-              - Safari でインストールした後にパッケージセンターでエラーが表示される問題を修正
-            ko:
-              - Safari에서 설치한 후 패키지 센터에 오류가 표시되는 문제 수정
-            de:
-              - Behebt einen Fehler im Paket-Zentrum nach der Installation in Safari
-            fr:
-              - Corrige une erreur du Centre de paquets après l’installation dans Safari
-            es:
-              - Corrige un error del Centro de paquetes tras instalar en Safari
-            it:
-              - Corregge un errore del Centro pacchetti dopo l’installazione in Safari
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -1374,15 +1374,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0108
+        version: 0.2.2-0109
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6faade0ac8a2d7ebf14e00f74f5195ae0d6605618e52b33f9c5f6a82087773f2
-        md5: 2551f5cafb6b4154d82dd06dccf800b3
-        size: 68594688
+        sha256: 6a809f13894236f27e6c7fdbdf494d66828fbdf281a7641ab065f640e8c1c18a
+        md5: 211c520d5797c615d5af6e15a7cb8ae9
+        size: 68611584
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1400,11 +1400,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T01:40:18Z
-          source_ref: 2573b46373b7463cbd609329ae32513b5162bf67
+          reviewed_at: 2026-11-15T13:16:24Z
+          source_ref: 422af49f7a02d92c703bf043eb5af55ba0426f3c
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0108
+        version: 0.2.2-0109
         arch:
           - apollolake
           - avoton
@@ -1433,9 +1433,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 574ecfc4b02676fe93f2c357ab08ecc70d4fa11d4c8533b369216e3c7c871838
-        md5: dd00cc146e17c3a0ea496ef49b31efce
-        size: 72280576
+        sha256: 016fb3833d5f71c2142c5a81012bd67442ff070159b3ca6fe7bcadfde3610867
+        md5: 7add29189ab12dcf1da965a8d2e14da1
+        size: 72301056
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1453,8 +1453,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T01:40:18Z
-          source_ref: 2573b46373b7463cbd609329ae32513b5162bf67
+          reviewed_at: 2026-11-15T13:16:24Z
+          source_ref: 422af49f7a02d92c703bf043eb5af55ba0426f3c
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
