@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1641
+      release: v0.1.1-1669
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -19,72 +19,181 @@ packages:
       internet: none
       telemetry: none
       description:
-        en: See what is filling your Synology NAS and safely free up space
-        zh-TW: 看清 Synology NAS 的空間被什麼佔用，安全清出空間
-        zh-CN: 看清 Synology NAS 的空间被什么占用，安全清出空间
-        ja: Synology NAS の容量を何が使っているかを把握し、安全に空き容量を確保
-        ko: Synology NAS 공간을 무엇이 차지하는지 확인하고 안전하게 공간 확보
-        de: Sieh, was den Speicher deiner Synology NAS belegt, und gib sicher Platz frei
-        fr: Voyez ce qui remplit votre NAS Synology et libérez de l'espace en toute sécurité
-        es: Descubre qué ocupa el espacio de tu NAS Synology y libéralo de forma segura
-        it: Scopri cosa occupa lo spazio del tuo NAS Synology e liberalo in sicurezza
+        en: "See what is filling your Synology NAS, find duplicates and safely free up space"
+        zh-TW: "看清 Synology NAS 的空間被什麼佔用，找出重複內容，安全清出空間"
+        zh-CN: "看清 Synology NAS 的空间被什么占用，找出重复内容，安全清出空间"
+        ja: "Synology NAS の容量を何が使っているかを把握し、重複を見つけて、安全に空き容量を確保"
+        ko: "Synology NAS 공간을 무엇이 차지하는지 확인하고 중복 항목을 찾아 안전하게 공간 확보"
+        de: "Sieh, was den Speicher deiner Synology NAS belegt, finde Duplikate und gib sicher Platz frei"
+        fr: "Voyez ce qui remplit votre NAS Synology, trouvez les doublons et libérez de l'espace en toute sécurité"
+        es: "Descubre qué ocupa el espacio de tu NAS Synology, encuentra duplicados y libéralo de forma segura"
+        it: "Scopri cosa occupa lo spazio del tuo NAS Synology, trova i duplicati e liberalo in sicurezza"
       long_description:
-        en: "Space cleanup for Synology NAS, for Btrfs and ext4 volumes. Scan a volume or chosen folders to
-          see what really uses space: shared folders, package data, recycle bins, snapshots and the
-          system partition. Reclaim shows how much deleting something would actually free, including
-          space still held by snapshots or shared copies, and tracks how usage changes over time.
-          Cleanup uses a reviewed plan that is checked again right before anything is deleted. DSM
-          administrator sign-in is required; approve the system tasks before using features that
-          need them"
-        zh-TW: Synology NAS 的空間整理工具，支援 Btrfs 與 ext4
-          儲存空間。掃描整個儲存空間或指定資料夾，看清共用資料夾、套件資料、資源回收筒、快照與系統分割區實際佔用多少空間。Reclaim
-          會算出刪除後真正能釋放的空間，包含仍被快照或共用副本佔住的部分，並追蹤用量變化。清理前會先列出計畫供確認，實際刪除前再重新檢查一次。需以 DSM
-          管理員登入；使用需要系統工作的功能前，須先核准系統工作
-        zh-CN: Synology NAS 的空间整理工具，支持 Btrfs 与 ext4
-          存储空间。扫描整个存储空间或指定文件夹，看清共享文件夹、套件数据、回收站、快照与系统分区实际占用多少空间。Reclaim
-          会算出删除后真正能释放的空间，包含仍被快照或共享副本占用的部分，并追踪用量变化。清理前会先列出计划供确认，实际删除前再重新检查一次。需以 DSM
-          管理员登录；使用需要系统任务的功能前，须先批准系统任务
-        ja: Synology NAS の容量整理ツール。Btrfs と ext4
-          のボリュームに対応。ボリューム全体または指定したフォルダーをスキャンし、共有フォルダー、パッケージデータ、ごみ箱、スナップショット、システムパーティションが実際に使っている容量を確認できます。削除で本当に解放される容量を、スナップショットや共有コピーが保持している分も含めて算出し、使用量の変化も追跡します。クリーンアップは確認済みの計画に沿って行い、削除の直前にもう一度検証します。DSM
-          管理者としてのサインインが必要です。システムタスクを必要とする機能を使う前に、タスクを承認してください
-        ko: Synology NAS용 공간 정리 도구로 Btrfs와 ext4 볼륨을 지원합니다. 볼륨 전체 또는 선택한 폴더를 스캔해 공유 폴더, 패키지 데이터, 휴지통, 스냅샷,
-          시스템 파티션이 실제로 차지하는 공간을 확인합니다. 스냅샷이나 공유 사본이 아직 붙잡고 있는 공간까지 포함해 삭제 시 실제로 확보되는 공간을 계산하고 사용량
-          변화도 추적합니다. 정리는 검토한 계획대로 진행하며 삭제 직전에 다시 확인합니다. DSM 관리자 로그인이 필요하며 시스템 작업이 필요한 기능을 사용하기 전에 해당
-          작업을 승인해야 해요
-        de: "Speicherbereinigung für Synology NAS mit Btrfs- und ext4-Volumes. Scanne ein Volume oder
-          ausgewählte Ordner und sieh, was wirklich Platz belegt: freigegebene Ordner, Paketdaten,
-          Papierkörbe, Snapshots und die Systempartition. Reclaim zeigt, wie viel das Löschen
-          tatsächlich freigibt, auch Platz, den Snapshots oder geteilte Kopien noch halten, und
-          verfolgt die Belegung über die Zeit. Bereinigt wird nach einem geprüften Plan, der direkt
-          vor dem Löschen erneut kontrolliert wird. Die Anmeldung als DSM-Administrator ist
-          erforderlich; Systemaufgaben müssen vor der Nutzung entsprechender Funktionen freigegeben
-          werden"
-        fr: "Nettoyage de l'espace pour NAS Synology, avec volumes Btrfs et ext4. Analysez un volume ou des
-          dossiers choisis pour voir ce qui occupe vraiment l'espace : dossiers partagés, données
-          des paquets, corbeilles, instantanés et partition système. Reclaim indique combien une
-          suppression libérerait réellement, y compris l'espace encore retenu par des instantanés ou
-          des copies partagées, et suit l'évolution de l'utilisation. Le nettoyage suit un plan
-          validé, vérifié de nouveau juste avant toute suppression. Une connexion administrateur DSM
-          est requise ; approuvez les tâches système avant d’utiliser les fonctions qui en
-          dépendent"
-        es: "Limpieza de espacio para NAS Synology con volúmenes Btrfs y ext4. Analiza un volumen o carpetas
-          elegidas para ver qué ocupa realmente el espacio: carpetas compartidas, datos de paquetes,
-          papeleras, instantáneas y la partición del sistema. Reclaim muestra cuánto liberaría de
-          verdad una eliminación, incluido el espacio que aún retienen instantáneas o copias
-          compartidas, y sigue la evolución del uso. La limpieza sigue un plan revisado que se
-          vuelve a comprobar justo antes de borrar nada. Se requiere iniciar sesión como
-          administrador de DSM y aprobar las tareas del sistema antes de usar las funciones que
-          dependen de ellas"
-        it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le
-          cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei
-          pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe
-          davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie
-          condivise, e segue l'andamento dell'utilizzo. La pulizia segue un piano verificato,
-          controllato di nuovo subito prima di eliminare qualsiasi cosa. È richiesto l’accesso come
-          amministratore DSM; approva le attività di sistema prima di usare le funzioni che ne
-          dipendono"
+        en: "Space cleanup for Synology NAS, for Btrfs and ext4 volumes. Scan a volume or chosen folders to see what really uses space: shared folders, package data, recycle bins, snapshots and the system partition. Reclaim shows how much deleting something would actually free, including space still held by snapshots or shared copies, and tracks how usage changes over time. On Btrfs volumes, the Duplicates page finds identical folders and big duplicate files, keeps one copy of each, explains which copy stays and shows how much space removing the rest frees. Cleanup uses a reviewed plan that is checked again right before it runs, and moves items to the shared folder's Recycle Bin so they can be restored. DSM administrator sign-in is required; approve the system tasks before using features that need them"
+        zh-TW: "Synology NAS 的空間整理工具，支援 Btrfs 與 ext4 儲存空間。掃描整個儲存空間或指定資料夾，看清共用資料夾、套件資料、資源回收筒、快照與系統分割區實際佔用多少空間。Reclaim 會算出刪除後真正能釋放的空間，包含仍被快照或共用副本佔住的部分，並追蹤用量變化。在 Btrfs 儲存空間上，「重複內容」頁會找出相同的資料夾與重複的大檔案，每組保留一份並說明保留哪一份，同時算出移除其餘副本可釋放的空間。清理前會先列出計畫供確認，執行前再重新檢查一次，並把項目移到共用資料夾的資源回收筒，需要時可以還原。需以 DSM 管理員登入；使用需要系統工作的功能前，須先核准系統工作"
+        zh-CN: "Synology NAS 的空间整理工具，支持 Btrfs 与 ext4 存储空间。扫描整个存储空间或指定文件夹，看清共享文件夹、套件数据、回收站、快照与系统分区实际占用多少空间。Reclaim 会算出删除后真正能释放的空间，包含仍被快照或共享副本占用的部分，并追踪用量变化。在 Btrfs 存储空间上，“重复内容”页会找出相同的文件夹与重复的大文件，每组保留一份并说明保留哪一份，同时算出移除其余副本可释放的空间。清理前会先列出计划供确认，执行前再重新检查一次，并把项目移到共享文件夹的回收站，需要时可以还原。需以 DSM 管理员登录；使用需要系统任务的功能前，须先批准系统任务"
+        ja: "Synology NAS の容量整理ツール。Btrfs と ext4 のボリュームに対応。ボリューム全体または指定したフォルダーをスキャンし、共有フォルダー、パッケージデータ、ごみ箱、スナップショット、システムパーティションが実際に使っている容量を確認できます。削除で本当に解放される容量を、スナップショットや共有コピーが保持している分も含めて算出し、使用量の変化も追跡します。Btrfs ボリュームでは「重複」ページが同じフォルダーと重複した大きなファイルを見つけ、それぞれ 1 つのコピーを残してどれを残すかを示し、残りを削除すると解放される容量を表示します。クリーンアップは確認済みの計画に沿って行い、実行直前にもう一度検証したうえで、項目を共有フォルダーのごみ箱へ移動するので復元もできます。DSM 管理者としてのサインインが必要です。システムタスクを必要とする機能を使う前に、タスクを承認してください"
+        ko: "Synology NAS용 공간 정리 도구로 Btrfs와 ext4 볼륨을 지원합니다. 볼륨 전체 또는 선택한 폴더를 스캔해 공유 폴더, 패키지 데이터, 휴지통, 스냅샷, 시스템 파티션이 실제로 차지하는 공간을 확인합니다. 스냅샷이나 공유 사본이 아직 붙잡고 있는 공간까지 포함해 삭제 시 실제로 확보되는 공간을 계산하고 사용량 변화도 추적합니다. Btrfs 볼륨에서는 중복 항목 페이지가 동일한 폴더와 중복된 큰 파일을 찾아 각각 사본 하나를 남기고, 어떤 사본을 남기는지 설명하며, 나머지를 제거하면 확보되는 공간을 보여 줍니다. 정리는 검토한 계획대로 진행하며 실행 직전에 다시 확인하고, 항목을 공유 폴더의 휴지통으로 옮기므로 복원할 수 있습니다. DSM 관리자 로그인이 필요하며 시스템 작업이 필요한 기능을 사용하기 전에 해당 작업을 승인해야 해요"
+        de: "Speicherbereinigung für Synology NAS mit Btrfs- und ext4-Volumes. Scanne ein Volume oder ausgewählte Ordner und sieh, was wirklich Platz belegt: freigegebene Ordner, Paketdaten, Papierkörbe, Snapshots und die Systempartition. Reclaim zeigt, wie viel das Löschen tatsächlich freigibt, auch Platz, den Snapshots oder geteilte Kopien noch halten, und verfolgt die Belegung über die Zeit. Auf Btrfs-Volumes findet die Seite „Duplikate“ gleiche Ordner und große doppelte Dateien, behält jeweils eine Kopie, erklärt, welche bleibt, und zeigt, wie viel Platz das Entfernen der übrigen freigibt. Bereinigt wird nach einem geprüften Plan, der direkt vor der Ausführung erneut kontrolliert wird; die Elemente werden in den Papierkorb des freigegebenen Ordners verschoben und lassen sich wiederherstellen. Die Anmeldung als DSM-Administrator ist erforderlich; Systemaufgaben müssen vor der Nutzung entsprechender Funktionen freigegeben werden"
+        fr: "Nettoyage de l'espace pour NAS Synology, avec volumes Btrfs et ext4. Analysez un volume ou des dossiers choisis pour voir ce qui occupe vraiment l'espace : dossiers partagés, données des paquets, corbeilles, instantanés et partition système. Reclaim indique combien une suppression libérerait réellement, y compris l'espace encore retenu par des instantanés ou des copies partagées, et suit l'évolution de l'utilisation. Sur les volumes Btrfs, la page Doublons trouve les dossiers identiques et les gros fichiers en double, garde une copie de chacun, explique laquelle est gardée et montre l'espace libéré en supprimant les autres. Le nettoyage suit un plan validé, vérifié de nouveau juste avant son exécution, et déplace les éléments dans la corbeille du dossier partagé pour pouvoir les restaurer. Une connexion administrateur DSM est requise ; approuvez les tâches système avant d’utiliser les fonctions qui en dépendent"
+        es: "Limpieza de espacio para NAS Synology con volúmenes Btrfs y ext4. Analiza un volumen o carpetas elegidas para ver qué ocupa realmente el espacio: carpetas compartidas, datos de paquetes, papeleras, instantáneas y la partición del sistema. Reclaim muestra cuánto liberaría de verdad una eliminación, incluido el espacio que aún retienen instantáneas o copias compartidas, y sigue la evolución del uso. En volúmenes Btrfs, la página Duplicados encuentra carpetas idénticas y archivos grandes duplicados, conserva una copia de cada uno, explica cuál se queda y muestra cuánto espacio libera quitar el resto. La limpieza sigue un plan revisado que se vuelve a comprobar justo antes de ejecutarse y mueve los elementos a la papelera de reciclaje de la carpeta compartida para poder restaurarlos. Se requiere iniciar sesión como administrador de DSM y aprobar las tareas del sistema antes de usar las funciones que dependen de ellas"
+        it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. Sui volumi Btrfs, la pagina Duplicati trova cartelle identiche e file grandi duplicati, conserva una copia di ciascuno, spiega quale resta e mostra quanto spazio libera rimuovere il resto. La pulizia segue un piano verificato, controllato di nuovo subito prima dell'esecuzione, e sposta gli elementi nel Cestino della cartella condivisa così da poterli ripristinare. È richiesto l’accesso come amministratore DSM; approva le attività di sistema prima di usare le funzioni che ne dipendono"
       changelog:
         releases:
+          0.1.1-1669:
+            en:
+              - "New Duplicates page finds identical folders and big duplicate files on Btrfs volumes from the scan, without reading file contents"
+              - "Each duplicate group keeps one copy and says why it stays — your choice, a preferred shared folder, it stays with its folder, the oldest copy or the shortest path; you can pick another copy to keep at any time"
+              - "Choose preferred shared folders for kept copies in Settings"
+              - "See how much space each group frees and every copy in it, with the kept copy marked"
+              - "Partly identical folders are shown as one row that removes only their identical items, and a row that covers several groups says how many it includes"
+              - "Select all duplicates on a volume or in a shared folder, with progress, a Stop button and the reason for anything that could not be selected"
+              - "Add duplicates to the cleanup list and review every item before cleanup; kept copies are checked again right before anything is removed"
+              - "A cleanup that would remove a copy another group keeps is refused, and Syno Reclaim names that copy and both groups"
+              - "Cleanup now moves items to the shared folder’s Recycle Bin, so you can restore them in File Station; items in a shared folder without a Recycle Bin are deleted for good only after you confirm it"
+              - "The Recycle Bin page shows what Syno Reclaim moved since the scan; Syno Reclaim never empties a Recycle Bin"
+              - "Cleanup has no item limit, shows what it is doing and can be cancelled"
+              - "Clearer reasons when an item cannot be cleaned up, with a way to take it out of the cleanup list"
+              - "Choose the volume in Explore’s page bar; button labels wrap instead of being cut off"
+              - "Volumes scanned with an earlier version need a new scan before the Duplicates page can list them"
+              - "After upgrading, an administrator needs to approve the system tasks once more"
+              - "Keep existing settings and saved scan reports"
+            zh-TW:
+              - "新增「重複內容」頁：依掃描結果找出 Btrfs 儲存空間上相同的資料夾與重複的大檔案，不需讀取檔案內容"
+              - "每組重複內容都保留一份副本並說明原因：你指定的、偏好保留的共用資料夾、隨所在資料夾保留、最舊的副本或路徑最短；也可以隨時改選要保留的副本"
+              - "可在「設定」中指定偏好保留副本的共用資料夾"
+              - "顯示每組可釋放的空間與組內每份副本，並標示保留的副本"
+              - "部分相同的資料夾會合併成一列，只移除其中相同的項目；涵蓋多組的列會標示包含幾組"
+              - "可全選整個儲存空間或某個共用資料夾的重複內容，顯示進度、可隨時停止，並說明未能選取的原因"
+              - "將重複內容加入清理清單，清理前逐項檢視；實際移除前會再次確認保留的副本"
+              - "若清理會移除另一組保留的副本，會拒絕執行，並指出該副本與相關的兩組"
+              - "清理現在會把項目移到共用資料夾的資源回收筒，可在 File Station 還原；未啟用資源回收筒的共用資料夾，須經你確認後才會永久刪除"
+              - "「資源回收筒」頁會列出掃描後 Syno Reclaim 移入的項目；Syno Reclaim 不會清空資源回收筒"
+              - "清理不再限制項目數量，會顯示目前進行的步驟，也可以取消"
+              - "項目無法清理時說明更清楚的原因，並可將其從清理清單移除"
+              - "可在「探索」頁的頁面列選擇儲存空間；按鈕文字過長時改為換行，不再被截斷"
+              - "以舊版掃描的儲存空間需要重新掃描，才能在「重複內容」頁列出"
+              - "升級後，管理員需要再核准一次系統工作"
+              - "保留現有設定與已儲存的掃描報告"
+            zh-CN:
+              - "新增“重复内容”页：根据扫描结果找出 Btrfs 存储空间上相同的文件夹与重复的大文件，无需读取文件内容"
+              - "每组重复内容都保留一份副本并说明原因：你指定的、偏好保留的共享文件夹、随所在文件夹保留、最旧的副本或路径最短；也可以随时改选要保留的副本"
+              - "可在“设置”中指定偏好保留副本的共享文件夹"
+              - "显示每组可释放的空间与组内每份副本，并标示保留的副本"
+              - "部分相同的文件夹会合并成一行，只移除其中相同的项目；涵盖多组的行会标示包含几组"
+              - "可全选整个存储空间或某个共享文件夹的重复内容，显示进度、可随时停止，并说明未能选择的原因"
+              - "将重复内容加入清理清单，清理前逐项查看；实际移除前会再次确认保留的副本"
+              - "如果清理会移除另一组保留的副本，会拒绝执行，并指出该副本与相关的两组"
+              - "清理现在会把项目移到共享文件夹的回收站，可在 File Station 还原；未启用回收站的共享文件夹，须经你确认后才会永久删除"
+              - "“回收站”页会列出扫描后 Syno Reclaim 移入的项目；Syno Reclaim 不会清空回收站"
+              - "清理不再限制项目数量，会显示当前进行的步骤，也可以取消"
+              - "项目无法清理时说明更清楚的原因，并可将其从清理清单移除"
+              - "可在“探索”页的页面栏选择存储空间；按钮文字过长时改为换行，不再被截断"
+              - "用旧版扫描的存储空间需要重新扫描，才能在“重复内容”页列出"
+              - "升级后，管理员需要再批准一次系统任务"
+              - "保留现有设置与已保存的扫描报告"
+            ja:
+              - "新しい「重複」ページで、スキャン結果から Btrfs ボリューム上の同じフォルダーと重複した大きなファイルを検出（ファイルの内容は読み取りません）"
+              - "重複グループごとに 1 つのコピーを残し、その理由を表示（あなたの選択、優先する共有フォルダー、フォルダーごと残る、最も古いコピー、最短のパス）。残すコピーはいつでも変更可能"
+              - "残すコピーの優先共有フォルダーを「設定」で指定可能に"
+              - "グループごとに解放できる容量とすべてのコピーを表示し、残すコピーを明示"
+              - "一部が同じフォルダーは 1 行にまとめ、同じ項目だけを削除。複数のグループを含む行には含まれるグループ数を表示"
+              - "ボリュームまたは共有フォルダーの重複をすべて選択可能に。進行状況を表示し、途中で停止でき、選択できなかった理由も表示"
+              - "重複をクリーンアップリストに追加し、クリーンアップ前にすべての項目を確認。削除の直前に残すコピーを再確認"
+              - "別のグループで残すコピーを削除することになるクリーンアップは拒否し、そのコピーと両方のグループを表示"
+              - "クリーンアップは項目を共有フォルダーのごみ箱へ移動するようになり、File Station で復元可能に。ごみ箱が無効な共有フォルダーの項目は、確認後にのみ完全に削除"
+              - "「ごみ箱」ページに、スキャン後に Syno Reclaim が移動した項目を表示。Syno Reclaim がごみ箱を空にすることはありません"
+              - "クリーンアップの項目数の上限を撤廃し、実行中の処理を表示、キャンセルも可能に"
+              - "項目をクリーンアップできない場合の理由をより分かりやすく表示し、クリーンアップリストから外せるように"
+              - "「探索」のページバーでボリュームを選択可能に。ボタンのラベルは省略されず折り返して表示"
+              - "以前のバージョンでスキャンしたボリュームは、「重複」ページに表示するために再スキャンが必要"
+              - "アップグレード後、管理者がシステムタスクをもう一度承認する必要があります"
+              - "既存の設定と保存済みスキャンレポートを保持"
+            ko:
+              - "새 중복 항목 페이지에서 스캔 결과로 Btrfs 볼륨의 동일한 폴더와 중복된 큰 파일을 찾음(파일 내용은 읽지 않음)"
+              - "중복 그룹마다 사본 하나를 남기고 그 이유를 표시(내가 선택함, 우선 공유 폴더, 폴더와 함께 유지, 가장 오래된 사본, 가장 짧은 경로). 남길 사본은 언제든 바꿀 수 있음"
+              - "설정에서 남길 사본의 우선 공유 폴더를 지정할 수 있음"
+              - "그룹마다 확보되는 공간과 모든 사본을 표시하고 남길 사본을 표시"
+              - "일부만 동일한 폴더는 한 행으로 묶어 동일한 항목만 제거하고, 여러 그룹을 포함한 행에는 포함된 그룹 수를 표시"
+              - "볼륨이나 공유 폴더의 중복 항목을 모두 선택할 수 있으며 진행 상황, 중지 버튼, 선택하지 못한 이유를 표시"
+              - "중복 항목을 정리 목록에 추가하고 정리 전에 모든 항목을 확인. 제거 직전에 남길 사본을 다시 확인"
+              - "다른 그룹에서 남기는 사본을 제거하게 되는 정리는 거부하고 해당 사본과 두 그룹을 알려 줌"
+              - "정리 시 항목을 공유 폴더의 휴지통으로 옮겨 File Station에서 복원할 수 있음. 휴지통이 꺼진 공유 폴더의 항목은 확인한 뒤에만 영구 삭제"
+              - "휴지통 페이지에 스캔 이후 Syno Reclaim이 옮긴 항목을 표시. Syno Reclaim은 휴지통을 비우지 않음"
+              - "정리 항목 수 제한이 없어지고, 진행 중인 작업을 표시하며 취소할 수 있음"
+              - "항목을 정리할 수 없을 때 이유를 더 명확하게 알려 주고 정리 목록에서 뺄 수 있음"
+              - "탐색의 페이지 막대에서 볼륨을 선택할 수 있음. 버튼 레이블은 잘리지 않고 줄바꿈됨"
+              - "이전 버전으로 스캔한 볼륨은 중복 항목 페이지에 표시하려면 다시 스캔해야 함"
+              - "업그레이드 후 관리자가 시스템 작업을 한 번 더 승인해야 함"
+              - "기존 설정과 저장된 스캔 보고서 유지"
+            de:
+              - "Neue Seite „Duplikate“ findet gleiche Ordner und große doppelte Dateien auf Btrfs-Volumes anhand des Scans, ohne Dateiinhalte zu lesen"
+              - "Jede Duplikatgruppe behält eine Kopie und nennt den Grund – Ihre Wahl, ein bevorzugter freigegebener Ordner, sie bleibt mit ihrem Ordner, die älteste Kopie oder der kürzeste Pfad; eine andere zu behaltende Kopie lässt sich jederzeit wählen"
+              - "Bevorzugte freigegebene Ordner für behaltene Kopien in den Einstellungen festlegen"
+              - "Für jede Gruppe wird angezeigt, wie viel Platz sie freigibt, mit allen Kopien und markierter behaltener Kopie"
+              - "Teilweise gleiche Ordner erscheinen als eine Zeile, die nur ihre gleichen Elemente entfernt; eine Zeile, die mehrere Gruppen umfasst, nennt deren Anzahl"
+              - "Alle Duplikate eines Volumes oder freigegebenen Ordners auswählen, mit Fortschritt, Stopp-Schaltfläche und dem Grund für alles, was nicht ausgewählt werden konnte"
+              - "Duplikate zur Bereinigungsliste hinzufügen und vor der Bereinigung jedes Element prüfen; behaltene Kopien werden direkt vor dem Entfernen erneut kontrolliert"
+              - "Eine Bereinigung, die eine von einer anderen Gruppe behaltene Kopie entfernen würde, wird abgelehnt; Syno Reclaim nennt diese Kopie und beide Gruppen"
+              - "Die Bereinigung verschiebt Elemente jetzt in den Papierkorb des freigegebenen Ordners, sodass sie sich in File Station wiederherstellen lassen; in freigegebenen Ordnern ohne Papierkorb wird erst nach Ihrer Bestätigung endgültig gelöscht"
+              - "Die Seite „Papierkorb“ zeigt, was Syno Reclaim seit dem Scan verschoben hat; Syno Reclaim leert nie einen Papierkorb"
+              - "Die Bereinigung hat keine Elementgrenze mehr, zeigt, was sie gerade tut, und lässt sich abbrechen"
+              - "Klarere Gründe, wenn ein Element nicht bereinigt werden kann, mit der Möglichkeit, es aus der Bereinigungsliste zu nehmen"
+              - "Volume in der Seitenleiste von „Erkunden“ wählen; Schaltflächenbeschriftungen werden umbrochen statt abgeschnitten"
+              - "Mit einer früheren Version gescannte Volumes müssen neu gescannt werden, bevor die Seite „Duplikate“ sie auflisten kann"
+              - "Nach dem Upgrade muss ein Administrator die Systemaufgaben einmal erneut freigeben"
+              - "Bestehende Einstellungen und gespeicherte Scanberichte beibehalten"
+            fr:
+              - "Nouvelle page Doublons qui trouve, à partir de l’analyse, les dossiers identiques et les gros fichiers en double sur les volumes Btrfs, sans lire le contenu des fichiers"
+              - "Chaque groupe de doublons garde une copie et indique pourquoi : votre choix, un dossier partagé préféré, elle reste avec son dossier, la copie la plus ancienne ou le chemin le plus court ; vous pouvez choisir une autre copie à garder à tout moment"
+              - "Choisir dans les Paramètres les dossiers partagés préférés pour les copies gardées"
+              - "Voir l’espace libéré par chaque groupe et toutes ses copies, avec la copie gardée signalée"
+              - "Les dossiers en partie identiques apparaissent sur une seule ligne qui ne supprime que leurs éléments identiques, et une ligne qui couvre plusieurs groupes indique combien elle en contient"
+              - "Tout sélectionner dans un volume ou un dossier partagé, avec la progression, un bouton Arrêter et la raison de chaque élément non sélectionné"
+              - "Ajouter des doublons à la liste de nettoyage et vérifier chaque élément avant le nettoyage ; les copies gardées sont revérifiées juste avant toute suppression"
+              - "Un nettoyage qui supprimerait une copie gardée par un autre groupe est refusé, et Syno Reclaim nomme cette copie et les deux groupes"
+              - "Le nettoyage déplace désormais les éléments dans la corbeille du dossier partagé, pour pouvoir les restaurer dans File Station ; dans un dossier partagé sans corbeille, ils ne sont supprimés définitivement qu’après votre confirmation"
+              - "La page Corbeille montre ce que Syno Reclaim a déplacé depuis l’analyse ; Syno Reclaim ne vide jamais une corbeille"
+              - "Le nettoyage n’a plus de limite d’éléments, indique ce qu’il fait et peut être annulé"
+              - "Des raisons plus claires quand un élément ne peut pas être nettoyé, avec la possibilité de le retirer de la liste de nettoyage"
+              - "Choisir le volume dans la barre de page d’Explorer ; les libellés des boutons passent à la ligne au lieu d’être coupés"
+              - "Les volumes analysés avec une version précédente doivent être analysés de nouveau pour apparaître sur la page Doublons"
+              - "Après la mise à jour, un administrateur doit approuver une nouvelle fois les tâches système"
+              - "Conserver les réglages existants et les rapports d’analyse enregistrés"
+            es:
+              - "Nueva página Duplicados que encuentra, a partir del análisis, carpetas idénticas y archivos grandes duplicados en volúmenes Btrfs, sin leer el contenido de los archivos"
+              - "Cada grupo de duplicados conserva una copia e indica por qué: su elección, una carpeta compartida preferida, se queda con su carpeta, la copia más antigua o la ruta más corta; puede elegir otra copia para conservar en cualquier momento"
+              - "Elegir en Configuración las carpetas compartidas preferidas para las copias conservadas"
+              - "Ver cuánto espacio libera cada grupo y todas sus copias, con la copia conservada marcada"
+              - "Las carpetas idénticas en parte se muestran en una sola fila que elimina solo sus elementos idénticos, y una fila que abarca varios grupos indica cuántos incluye"
+              - "Seleccionar todos los duplicados de un volumen o una carpeta compartida, con progreso, un botón Detener y el motivo de lo que no se pudo seleccionar"
+              - "Añadir duplicados a la lista de limpieza y revisar cada elemento antes de limpiar; las copias conservadas se vuelven a comprobar justo antes de quitar nada"
+              - "Se rechaza una limpieza que quitaría una copia que conserva otro grupo, y Syno Reclaim indica esa copia y ambos grupos"
+              - "La limpieza ahora mueve los elementos a la papelera de reciclaje de la carpeta compartida, para poder restaurarlos en File Station; en una carpeta compartida sin papelera se eliminan para siempre solo después de que lo confirme"
+              - "La página Papelera de reciclaje muestra lo que Syno Reclaim ha movido desde el análisis; Syno Reclaim nunca vacía una papelera"
+              - "La limpieza ya no tiene límite de elementos, muestra lo que está haciendo y se puede cancelar"
+              - "Motivos más claros cuando un elemento no se puede limpiar, con la opción de quitarlo de la lista de limpieza"
+              - "Elegir el volumen en la barra de página de Explorar; las etiquetas de los botones pasan a la línea siguiente en lugar de cortarse"
+              - "Los volúmenes analizados con una versión anterior deben analizarse de nuevo para aparecer en la página Duplicados"
+              - "Tras actualizar, un administrador debe aprobar de nuevo las tareas del sistema"
+              - "Se conservan los ajustes existentes y los informes de análisis guardados"
+            it:
+              - "Nuova pagina Duplicati che trova, in base alla scansione, cartelle identiche e file grandi duplicati sui volumi Btrfs, senza leggere il contenuto dei file"
+              - "Ogni gruppo di duplicati conserva una copia e ne indica il motivo: tua scelta, una cartella condivisa preferita, resta con la sua cartella, la copia più vecchia o il percorso più breve; puoi scegliere un’altra copia da conservare in qualsiasi momento"
+              - "Scegliere nelle Impostazioni le cartelle condivise preferite per le copie conservate"
+              - "Vedere quanto spazio libera ogni gruppo e tutte le sue copie, con la copia conservata evidenziata"
+              - "Le cartelle identiche solo in parte appaiono come un’unica riga che rimuove solo gli elementi identici, e una riga che copre più gruppi indica quanti ne include"
+              - "Selezionare tutti i duplicati di un volume o di una cartella condivisa, con avanzamento, un pulsante Interrompi e il motivo di ciò che non è stato possibile selezionare"
+              - "Aggiungere i duplicati alla lista di pulizia e controllare ogni elemento prima della pulizia; le copie conservate vengono ricontrollate subito prima di rimuovere qualsiasi cosa"
+              - "Una pulizia che rimuoverebbe una copia conservata da un altro gruppo viene rifiutata, e Syno Reclaim indica quella copia ed entrambi i gruppi"
+              - "La pulizia ora sposta gli elementi nel Cestino della cartella condivisa, così puoi ripristinarli in File Station; in una cartella condivisa senza Cestino vengono eliminati definitivamente solo dopo la tua conferma"
+              - "La pagina Cestino mostra cosa ha spostato Syno Reclaim dalla scansione; Syno Reclaim non svuota mai un Cestino"
+              - "La pulizia non ha più un limite di elementi, mostra cosa sta facendo e può essere annullata"
+              - "Motivi più chiari quando un elemento non può essere pulito, con la possibilità di toglierlo dalla lista di pulizia"
+              - "Scegliere il volume nella barra della pagina Esplora; le etichette dei pulsanti vanno a capo invece di essere troncate"
+              - "I volumi analizzati con una versione precedente devono essere analizzati di nuovo per comparire nella pagina Duplicati"
+              - "Dopo l’aggiornamento, un amministratore deve approvare di nuovo le attività di sistema"
+              - "Mantenere le impostazioni esistenti e i rapporti di scansione salvati"
           0.1.1-1641:
             en:
               - System partition cleanup can now move files to a shared folder on an ext4 volume
@@ -242,135 +351,27 @@ packages:
               - Quando una pulizia non può eliminare un elemento, la revisione indica il motivo e il passo successivo, e puoi rimuovere l’elemento per pulire il resto
               - Scompare la nota «Cartella temporanea durante la pulizia»; Syno Reclaim crea e rimuove automaticamente le sue cartelle nascoste
               - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
-          0.1.1-1636:
-            en:
-              - Fix installs that ended with "The operation failed" and an app that would not open until DSM was reloaded
-              - Keep existing settings and saved scan reports
-            zh-TW:
-              - 修正安裝結束時顯示「操作失敗」、且需重新整理 DSM 才能開啟 App 的問題
-              - 保留現有設定與已儲存的掃描報告
-            zh-CN:
-              - 修复安装结束时显示“操作失败”、且需刷新 DSM 才能打开应用的问题
-              - 保留现有设置与已保存的扫描报告
-            de:
-              - Behebt Installationen, die mit „Der Vorgang ist fehlgeschlagen“ endeten und deren App sich erst nach dem Neuladen von DSM öffnete
-              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
-            fr:
-              - Corrige les installations qui se terminaient par « L’opération a échoué » et une app qui ne s’ouvrait qu’après avoir rechargé DSM
-              - Conserver les réglages existants et les rapports d’analyse enregistrés
-            ja:
-              - インストールが「操作に失敗しました」で終わり、DSM を再読み込みするまでアプリが開かない問題を修正
-              - 既存の設定と保存済みスキャンレポートを保持
-            ko:
-              - 설치가 "작업에 실패했습니다"로 끝나고 DSM을 새로 고칠 때까지 앱이 열리지 않던 문제 수정
-              - 기존 설정과 저장된 스캔 보고서 유지
-            es:
-              - Corrige instalaciones que terminaban con «Error en la operación» y una app que no se abría hasta recargar DSM
-              - Conservar los ajustes existentes y los informes de análisis guardados
-            it:
-              - Corregge le installazioni che terminavano con «Operazione non riuscita» e un’app che non si apriva finché DSM non veniva ricaricato
-              - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
-          0.1.1-1635:
-            en:
-              - Confirm dialogs opened from a wizard cover only the app window
-              - Keep existing settings and saved scan reports
-            zh-TW:
-              - 從精靈開啟的確認對話框只會遮住 App 視窗
-              - 保留現有設定與已儲存的掃描報告
-            zh-CN:
-              - 从向导打开的确认对话框只会遮住应用窗口
-              - 保留现有设置与已保存的扫描报告
-            de:
-              - Bestätigungsdialoge aus einem Assistenten verdecken nur das App-Fenster
-              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
-            fr:
-              - Les boîtes de confirmation ouvertes depuis un assistant ne couvrent que la fenêtre de l’app
-              - Conserver les réglages existants et les rapports d’analyse enregistrés
-            ja:
-              - ウィザードから開いた確認ダイアログはアプリのウィンドウだけを覆うように変更
-              - 既存の設定と保存済みスキャンレポートを保持
-            ko:
-              - 마법사에서 연 확인 대화 상자가 앱 창만 가림
-              - 기존 설정과 저장된 스캔 보고서 유지
-            es:
-              - Los diálogos de confirmación abiertos desde un asistente solo cubren la ventana de la app
-              - Conservar los ajustes existentes y los informes de análisis guardados
-            it:
-              - Le finestre di conferma aperte da una procedura guidata coprono solo la finestra dell’app
-              - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
-          0.1.1-1634:
-            en:
-              - Phone navigation moves to a bottom tab bar
-              - Keep existing settings and saved scan reports
-            zh-TW:
-              - 手機上的頁面導覽改為底部分頁列
-              - 保留現有設定與已儲存的掃描報告
-            zh-CN:
-              - 手机上的页面导航改为底部标签栏
-              - 保留现有设置与已保存的扫描报告
-            de:
-              - Die Navigation auf dem Smartphone wechselt in eine untere Tab-Leiste
-              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
-            fr:
-              - Sur un téléphone, la navigation passe dans une barre d’onglets en bas
-              - Conserver les réglages existants et les rapports d’analyse enregistrés
-            ja:
-              - スマートフォンのナビゲーションを画面下部のタブバーに変更
-              - 既存の設定と保存済みスキャンレポートを保持
-            ko:
-              - 휴대폰 탐색이 하단 탭 막대로 바뀜
-              - 기존 설정과 저장된 스캔 보고서 유지
-            es:
-              - En el teléfono, la navegación pasa a una barra de pestañas inferior
-              - Conservar los ajustes existentes y los informes de análisis guardados
-            it:
-              - Sul telefono la navigazione passa a una barra di schede in basso
-              - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
-          0.1.1-1633:
-            en:
-              - Show every row of Explore and other tables on a phone, with the whole page scrolling
-              - Keep existing settings and saved scan reports
-            zh-TW:
-              - 在手機上，「探索」等頁面的表格會顯示所有列，整頁一起捲動
-              - 保留現有設定與已儲存的掃描報告
-            zh-CN:
-              - 在手机上，“探索”等页面的表格会显示所有行，整页一起滚动
-              - 保留现有设置与已保存的扫描报告
-            de:
-              - Tabellen wie unter „Erkunden“ zeigen auf dem Smartphone alle Zeilen, die ganze Seite scrollt
-              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
-            fr:
-              - Afficher toutes les lignes des tableaux, comme dans Explorer, sur un téléphone, en faisant défiler toute la page
-              - Conserver les réglages existants et les rapports d’analyse enregistrés
-            ja:
-              - スマートフォンで「探索」などの表にすべての行を表示し、ページ全体でスクロール
-              - 既存の設定と保存済みスキャンレポートを保持
-            ko:
-              - 휴대폰에서 탐색 등의 표에 모든 행을 표시하고 페이지 전체를 스크롤
-              - 기존 설정과 저장된 스캔 보고서 유지
-            es:
-              - Mostrar todas las filas de las tablas, como en Explorar, en el teléfono, desplazando toda la página
-              - Conservar los ajustes existentes y los informes de análisis guardados
-            it:
-              - Mostrare tutte le righe delle tabelle, come in Esplora, sul telefono, scorrendo l’intera pagina
-              - Mantenere le impostazioni esistenti e i rapporti di scansione salvati
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1630-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-packages-details-1619-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-recycle-details-1619-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-snapshots-1616-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-settings-1622-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1669-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-duplicates-folders-1669-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-duplicates-group-1669-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-duplicates-files-1669-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-duplicates-review-1669-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-packages-details-1669-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-recycle-details-1669-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/08-snapshots-1669-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1669-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1641
+        version: 0.1.1-1669
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: eff327e749d23629ac9ffccda14e82446f33b5236e9b65fbe1f0a6b30f2abe40
-        md5: 22cee47f50bebedf2fc49c9616a99f27
-        size: 15394816
+        sha256: c00b8317bad5a182d5d4330efc6eddd359209117038260fd2558116e41d801a8
+        md5: 46043caaa18c7db55ec83d481e515456
+        size: 16073728
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -387,19 +388,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T18:03:39Z
-          source_ref: b9c2b193724881a8f4ffdb1cac55935500e2aa0a
+          reviewed_at: 2026-11-15T11:00:31Z
+          source_ref: b7078a2b5aa7f14cbddd7bc9ffc6f7f819ff82e9
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1641
+        version: 0.1.1-1669
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 045706d151cc19439527fb9247dea37c8ffad047aa7a0425c98d1dda048b5bf6
-        md5: 6cf91e2c61dc942ee24ff65d3ed18c68
-        size: 16196608
+        sha256: fc6e6a02c4bbd94c0c7295d28398c12e46812d7635f583a343ac8ef196a8f7c3
+        md5: f4e396361c6b0834def522521f7da802
+        size: 16955392
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -416,11 +417,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T18:03:39Z
-          source_ref: b9c2b193724881a8f4ffdb1cac55935500e2aa0a
+          reviewed_at: 2026-11-15T11:00:31Z
+          source_ref: b7078a2b5aa7f14cbddd7bc9ffc6f7f819ff82e9
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1641
+        version: 0.1.1-1669
         arch:
           - apollolake
           - avoton
@@ -449,9 +450,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: cec52a1e9f3ad68eefc97642b7f8806f190b9d8402ee10f3229c0863bc0195af
-        md5: b6b00ff03075710d8e25ad72cd17b6d0
-        size: 16571392
+        sha256: d9eff202917e53ca0d5b9f2e8da2de653e98a5f3b02458c647ea0c8f81953117
+        md5: ddb8f5e252981aaeac334f32ed62745f
+        size: 17332224
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -468,8 +469,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T18:03:39Z
-          source_ref: b9c2b193724881a8f4ffdb1cac55935500e2aa0a
+          reviewed_at: 2026-11-15T11:00:31Z
+          source_ref: b7078a2b5aa7f14cbddd7bc9ffc6f7f819ff82e9
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
