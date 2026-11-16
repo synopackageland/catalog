@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1671
+      release: v0.1.1-1672
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -40,6 +40,25 @@ packages:
         it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. Sui volumi Btrfs, la pagina Duplicati trova cartelle identiche e file grandi duplicati, conserva una copia di ciascuno, spiega quale resta e mostra quanto spazio libera rimuovere il resto. La pulizia segue un piano verificato, controllato di nuovo subito prima dell'esecuzione, e sposta gli elementi nel Cestino della cartella condivisa così da poterli ripristinare. È richiesto l’accesso come amministratore DSM; approva le attività di sistema prima di usare le funzioni che ne dipendono"
       changelog:
         releases:
+          0.1.1-1672:
+            en:
+            - "Internal interface component update; pages look and work the same"
+            zh-TW:
+            - "內部介面元件更新，頁面外觀與操作不變"
+            zh-CN:
+            - "内部界面组件更新，页面外观与操作不变"
+            ja:
+            - "内部の画面コンポーネントを更新（画面の見た目と操作は変わりません）"
+            ko:
+            - "내부 화면 구성 요소 업데이트, 페이지 모양과 동작은 같음"
+            de:
+            - "Interne Aktualisierung der Oberflächenkomponenten; Seiten sehen gleich aus und funktionieren gleich"
+            fr:
+            - "Mise à jour interne des composants de l’interface ; les pages restent identiques"
+            es:
+            - "Actualización interna de los componentes de la interfaz; las páginas se ven y funcionan igual"
+            it:
+            - "Aggiornamento interno dei componenti dell’interfaccia; le pagine restano uguali"
           0.1.1-1671:
             en:
             - Opens in your DSM display language
@@ -324,46 +343,27 @@ packages:
               - Se un'eliminazione viene interrotta, ad esempio da un riavvio o da un'interruzione di corrente, Syno Reclaim mostra dove si è fermata e permette di eliminare il resto o completare la pulizia interrotta
               - Dopo l'aggiornamento, un amministratore deve approvare di nuovo le attività di sistema
               - Conserva le impostazioni esistenti e i report di analisi salvati
-          0.1.1-1639:
-            en:
-              - Deleting now shows shorter, clearer text, and every confirmation is still there
-            zh-TW:
-              - 刪除流程的文字更精簡，該確認的仍保留
-            zh-CN:
-              - 删除流程的文字更精简，该确认的仍保留
-            ja:
-              - 削除時の文言を簡潔にし、必要な確認はそのまま残しました
-            ko:
-              - 삭제 과정의 문구를 간결하게 다듬었고, 필요한 확인은 그대로 유지됩니다
-            de:
-              - Beim Löschen ist der Text kürzer und klarer, alle Bestätigungen bleiben erhalten
-            fr:
-              - Les textes de suppression sont plus courts et plus clairs, toutes les confirmations restent
-            es:
-              - Los textos al eliminar son más breves y claros, y se mantienen todas las confirmaciones
-            it:
-              - I testi dell'eliminazione sono più brevi e chiari, e tutte le conferme restano
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1671-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-duplicates-folders-1671-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-duplicates-group-1671-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-duplicates-files-1671-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-duplicates-review-1671-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-packages-details-1671-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-recycle-details-1671-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/08-snapshots-1671-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1671-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1672-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-duplicates-folders-1672-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-duplicates-group-1672-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-duplicates-files-1672-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-duplicates-review-1672-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-packages-details-1672-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-recycle-details-1672-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/08-snapshots-1672-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1672-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1671
+        version: 0.1.1-1672
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6d278d1e1978b51e5d4517dc94e31fc27999dff7f730718d9f7a56db8626a4f4
-        md5: 5cd7592a2e836ebf0af99031aa7e5b25
-        size: 16959488
+        sha256: 3a75656ddf4b6d389456ffd4eba83baed06a11f7ed5a36fe34a2cfa901c708a1
+        md5: bffcce639fb5fc92926095aab997561d
+        size: 16960000
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -380,19 +380,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T08:02:12Z
-          source_ref: b8784327ffb1741f76d0e81be71d017d2a92bbd9
+          reviewed_at: 2026-11-16T21:51:21Z
+          source_ref: fd41ff66e32d92cdd4e3ffa88906e4022f942a1f
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1671
+        version: 0.1.1-1672
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 1284eabc2d8590e7437772a8a284d34c0ee72d6f4c02cf7dc6af1d930e35e3d7
-        md5: 626cb4382a2884770dc6956ea1d50ccd
-        size: 17848320
+        sha256: ffc44267f479a41aa3286fe35fb5e23db335a200d96fb149873affd6b0035efe
+        md5: 007d3d8bcf4ad7a6b73369872fb8316b
+        size: 17849344
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -409,11 +409,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T08:02:12Z
-          source_ref: b8784327ffb1741f76d0e81be71d017d2a92bbd9
+          reviewed_at: 2026-11-16T21:51:21Z
+          source_ref: fd41ff66e32d92cdd4e3ffa88906e4022f942a1f
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1671
+        version: 0.1.1-1672
         arch:
           - apollolake
           - avoton
@@ -442,8 +442,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 2945a5cdee8ec763bf7315277b318c2629bb5451ea8c1d015313bd446754beae
-        md5: 3a0cbb4ebb7ca0472fce01b688742d36
+        sha256: a24d5b074371264d06800ab2f98f0611be7a319b3ebab081caa3e386f4490c41
+        md5: f77bf5b806585c58794a07665ba194f9
         size: 18217984
         facts:
           built_with: sdk
@@ -461,8 +461,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T08:02:12Z
-          source_ref: b8784327ffb1741f76d0e81be71d017d2a92bbd9
+          reviewed_at: 2026-11-16T21:51:21Z
+          source_ref: fd41ff66e32d92cdd4e3ffa88906e4022f942a1f
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
@@ -471,7 +471,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0173
+      release: v0.1.0-0174
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -739,6 +739,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0174:
+            en:
+            - "Interface polish: hover over shortened text to see all of it"
+            zh-TW:
+            - "介面細節改進：截斷的文字可看到完整內容"
+            zh-CN:
+            - "界面细节改进：截断的文字可查看完整内容"
+            ja:
+            - "画面の細部を改善：省略された文字を全文表示できるように"
+            ko:
+            - "화면 세부 개선: 잘린 텍스트의 전체 내용을 볼 수 있음"
+            de:
+            - "Feinschliff der Oberfläche: gekürzte Texte lassen sich vollständig anzeigen"
+            fr:
+            - "Interface peaufinée : le texte tronqué peut s’afficher en entier"
+            es:
+            - "Mejoras en la interfaz: el texto recortado se puede ver completo"
+            it:
+            - "Interfaccia rifinita: il testo troncato si può leggere per intero"
           0.1.0-0173:
             en:
             - Opens in your DSM display language
@@ -881,61 +900,6 @@ packages:
               - "Las esquinas redondeadas y el espaciado son más coherentes, y las animaciones se ven más fluidas"
             it:
               - "Gli angoli arrotondati e le spaziature sono più coerenti e le animazioni risultano più fluide"
-          0.1.0-0166:
-            en:
-              - "The Overview shows your NAS's QuickConnect and DDNS addresses"
-              - "A new “Use DSM on your phone” section lets you pick a connection, scan its QR code, and add DSM to the Home Screen on iPhone or Android"
-              - "On the phone page, Add NAS checks every address at once and explains why a NAS can't be reached"
-              - "Numbers on the phone page's home screen now update smoothly"
-              - "Typing on an iPhone no longer zooms in the page"
-            zh-TW:
-              - "總覽會顯示 NAS 的 QuickConnect 與 DDNS 網址"
-              - "新增「用手機操作 DSM」區塊：可選擇連線方式、掃 QR 碼，並在 iPhone 或 Android 上加到主畫面"
-              - "手機頁面的「加入 NAS」會同時檢查每個位址，連不上時會說明原因"
-              - "手機頁面首頁的數字更新時不再跳動"
-              - "在 iPhone 上輸入時，頁面不再自動放大"
-            zh-CN:
-              - "概览会显示 NAS 的 QuickConnect 和 DDNS 地址"
-              - "新增“用手机操作 DSM”区块：可选择连接方式、扫描二维码，并在 iPhone 或 Android 上添加到主屏幕"
-              - "手机页面的“添加 NAS”会同时检查每个地址，连接不上时会说明原因"
-              - "手机页面首页的数字更新时不再跳动"
-              - "在 iPhone 上输入时，页面不再自动放大"
-            ja:
-              - "概要に NAS の QuickConnect と DDNS のアドレスが表示されるようになりました"
-              - "新しい「スマホで DSM を使う」セクションで、接続方法を選び、QR コードを読み取り、iPhone や Android のホーム画面に DSM を追加できます"
-              - "スマートフォン用ページで NAS を追加するとき、すべてのアドレスを同時に確認し、接続できない場合はその理由が表示されます"
-              - "スマートフォン用ページのホーム画面の数値が滑らかに更新されるようになりました"
-              - "iPhone で入力しても画面が拡大されなくなりました"
-            ko:
-              - "개요에 NAS의 QuickConnect 및 DDNS 주소가 표시됩니다"
-              - "새로운 \"휴대폰으로 DSM 사용\" 섹션에서 연결을 선택하고 QR 코드를 스캔해 iPhone 또는 Android의 홈 화면에 DSM을 추가할 수 있습니다"
-              - "휴대폰 페이지에서 NAS를 추가할 때 모든 주소를 한꺼번에 확인하고, NAS에 연결할 수 없으면 그 이유를 알려 줍니다"
-              - "휴대폰 페이지 홈 화면의 숫자가 부드럽게 업데이트됩니다"
-              - "iPhone에서 입력할 때 페이지가 더 이상 확대되지 않습니다"
-            de:
-              - "Die Übersicht zeigt die QuickConnect- und DDNS-Adressen Ihres NAS"
-              - "Im neuen Bereich „DSM auf dem Smartphone nutzen“ wählen Sie eine Verbindung, scannen ihren QR-Code und fügen DSM auf dem iPhone oder Android-Gerät zum Home-Bildschirm hinzu"
-              - "Beim Hinzufügen eines NAS prüft die Handy-Seite alle Adressen gleichzeitig und erklärt, warum ein NAS nicht erreichbar ist"
-              - "Die Zahlen auf der Startseite der Handy-Seite werden jetzt ruhig aktualisiert"
-              - "Beim Tippen auf dem iPhone wird die Seite nicht mehr vergrößert"
-            fr:
-              - "L’aperçu affiche les adresses QuickConnect et DDNS de votre NAS"
-              - "Une nouvelle section « Utiliser DSM sur votre téléphone » permet de choisir une connexion, de scanner son code QR et d’ajouter DSM à l’écran d’accueil sur iPhone ou Android"
-              - "Lors de l’ajout d’un NAS, la page pour téléphone vérifie toutes les adresses en même temps et explique pourquoi un NAS est injoignable"
-              - "Les chiffres de l’écran d’accueil de la page pour téléphone se mettent désormais à jour en douceur"
-              - "La saisie sur iPhone n’agrandit plus la page"
-            es:
-              - "El resumen muestra las direcciones QuickConnect y DDNS de tu NAS"
-              - "Una nueva sección «Usa DSM en tu teléfono» permite elegir una conexión, escanear su código QR y añadir DSM a la pantalla de inicio en iPhone o Android"
-              - "Al añadir un NAS, la página para el teléfono comprueba todas las direcciones a la vez y explica por qué no se puede acceder a un NAS"
-              - "Los números de la pantalla de inicio de la página para el teléfono ahora se actualizan sin saltos"
-              - "Escribir en un iPhone ya no amplía la página"
-            it:
-              - "La panoramica mostra gli indirizzi QuickConnect e DDNS del NAS"
-              - "Una nuova sezione “Usa DSM sul telefono” consente di scegliere una connessione, scansionarne il codice QR e aggiungere DSM alla schermata Home su iPhone o Android"
-              - "Quando si aggiunge un NAS, la pagina per il telefono controlla tutti gli indirizzi contemporaneamente e spiega perché un NAS non è raggiungibile"
-              - "I numeri nella schermata iniziale della pagina per il telefono ora si aggiornano in modo fluido"
-              - "Digitando su iPhone la pagina non viene più ingrandita"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -992,15 +956,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0173
+        version: 0.1.0-0174
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6c4ba22b67b69a79d73278702b8db12c96f6c09fc5fe1059eb17f487655d25b6
-        md5: 7cf9a5898516098cb5ddf325471ff6f3
-        size: 18155520
+        sha256: c96684f5592ab6fa011b6583457259659f87fbaec82b1d0b1ac40b721e948fbb
+        md5: 14e3f6a28acf1f23d6fbaea0cb4ccfa3
+        size: 18165760
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1017,18 +981,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T06:10:18Z
-          source_ref: bdb806bd9084dc7ee0c552918dce7d534f37089f
+          reviewed_at: 2026-11-16T21:51:21Z
+          source_ref: 3d8921985e27dc38f074bef1771d5788bc90e238
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0173
+        version: 0.1.0-0174
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 19adb182f14769ebd34f3b1fb0dd8afb06d971eb61212616e1c345ebc2e3eb9b
-        md5: 799f1c4c4b21a8e9ccb3a515747260ac
+        sha256: 7218d593c8eb0948d90bee9a887193df4d924afaa70d0060f24ea52c88b06475
+        md5: 5d85af1a253bc3fb7557d105383306c9
         size: 18759680
         facts:
           built_with: sdk
@@ -1046,11 +1010,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T06:10:18Z
-          source_ref: bdb806bd9084dc7ee0c552918dce7d534f37089f
+          reviewed_at: 2026-11-16T21:51:21Z
+          source_ref: 3d8921985e27dc38f074bef1771d5788bc90e238
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0173
+        version: 0.1.0-0174
         arch:
           - apollolake
           - avoton
@@ -1079,8 +1043,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 1bf49d0388aca5a24c88e3a12b9694572369f1a2529781faeaa44bda178f34ac
-        md5: 8ff648c8b13b5b2f91cd2d7825654ff8
+        sha256: 19394c39f89e2c55f0f2c132f5db450f1b405fc9290fabf8236b5c39d96a8d11
+        md5: 1b7c3cbff47771ca71ca53a2a0c17ada
         size: 19537920
         facts:
           built_with: sdk
@@ -1098,8 +1062,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T06:10:18Z
-          source_ref: bdb806bd9084dc7ee0c552918dce7d534f37089f
+          reviewed_at: 2026-11-16T21:51:21Z
+          source_ref: 3d8921985e27dc38f074bef1771d5788bc90e238
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
@@ -1108,7 +1072,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0110
+      release: v0.2.2-0111
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1197,6 +1161,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0111:
+            en:
+            - "Interface polish: hover over shortened text to see all of it"
+            zh-TW:
+            - "介面細節改進：截斷的文字可看到完整內容"
+            zh-CN:
+            - "界面细节改进：截断的文字可查看完整内容"
+            ja:
+            - "画面の細部を改善：省略された文字を全文表示できるように"
+            ko:
+            - "화면 세부 개선: 잘린 텍스트의 전체 내용을 볼 수 있음"
+            de:
+            - "Feinschliff der Oberfläche: gekürzte Texte lassen sich vollständig anzeigen"
+            fr:
+            - "Interface peaufinée : le texte tronqué peut s’afficher en entier"
+            es:
+            - "Mejoras en la interfaz: el texto recortado se puede ver completo"
+            it:
+            - "Interfaccia rifinita: il testo troncato si può leggere per intero"
           0.2.2-0110:
             en:
             - Opens in your DSM display language instead of the browser's
@@ -1339,25 +1322,6 @@ packages:
               - Al hacer clic en el número de fila de una lista se abre el elemento
             it:
               - Facendo clic sul numero di riga in un elenco si apre l’elemento
-          0.2.2-0103:
-            en:
-              - In the Package Land launcher, every page has Home, and Back steps through the App's pages
-            zh-TW:
-              - 在 Package Land 啟動器中，每一頁都有「首頁」，按返回會逐頁回到上一頁
-            zh-CN:
-              - 在 Package Land 启动器中，每一页都有“首页”，按返回会逐页回到上一页
-            ja:
-              - Package Land ランチャーでは、すべてのページにホームが表示され、戻るで前のページへ順に戻れます
-            ko:
-              - Package Land 런처에서 모든 페이지에 홈이 표시되고, 뒤로 가기로 앱의 이전 페이지로 차례로 돌아갑니다
-            de:
-              - Im Package Land Launcher hat jede Seite „Startseite“, und Zurück führt Schritt für Schritt durch die Seiten der App
-            fr:
-              - Dans le lanceur Package Land, chaque page affiche Accueil, et Retour revient page par page dans l'App
-            es:
-              - En el lanzador de Package Land, cada página muestra Inicio y Atrás recorre las páginas de la App
-            it:
-              - Nel launcher di Package Land ogni pagina mostra Home e Indietro torna pagina per pagina nell'App
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -1366,14 +1330,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0110
+        version: 0.2.2-0111
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 58b6e2353fb9dae97f174f42bb57183d8f8d2b5b0461f6ac8bcb0261d5dc3490
-        md5: e3c843d0ac37ae5f2b464cdfd8cf3367
+        sha256: f6f312ac8d4830adf781b790a6f4364d9fb0fcaf3e6adec74f978a32c3ebf935
+        md5: 684b0797db669c30411e9eeda5b48c16
         size: 68614656
         facts:
           built_with: sdk
@@ -1392,11 +1356,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T06:10:18Z
-          source_ref: c43a8873f0231ac27efbdaac9df81f6bde3ba5b7
+          reviewed_at: 2026-11-16T21:52:39Z
+          source_ref: ac422256f12d0d3a63d2158a12de0a7291207f61
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0110
+        version: 0.2.2-0111
         arch:
           - apollolake
           - avoton
@@ -1425,9 +1389,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 75634917e0558587162dd6c619acd70816f3014b8f635f9fceea80223333c7f2
-        md5: 1dc0f09314e2ffe2a479a16d70c3db20
-        size: 72303616
+        sha256: 46ed5127974cb562276be9f075edbdde7f3c71f8e3c3c6e2329fa368d57d9f72
+        md5: 6d1891e2ebd985469ba3ae4283be8a84
+        size: 72305152
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1445,8 +1409,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T06:10:18Z
-          source_ref: c43a8873f0231ac27efbdaac9df81f6bde3ba5b7
+          reviewed_at: 2026-11-16T21:52:39Z
+          source_ref: ac422256f12d0d3a63d2158a12de0a7291207f61
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
