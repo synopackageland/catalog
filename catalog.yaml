@@ -498,7 +498,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0172
+      release: v0.1.0-0173
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -766,6 +766,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0173:
+            en:
+            - Opens in your DSM display language
+            zh-TW:
+            - 開啟時跟隨 DSM 顯示語言
+            zh-CN:
+            - 打开时跟随 DSM 显示语言
+            ja:
+            - DSM の表示言語で開くように
+            ko:
+            - DSM 표시 언어로 열림
+            de:
+            - Öffnet sich in Ihrer DSM-Anzeigesprache
+            fr:
+            - S’ouvre dans la langue d’affichage de DSM
+            es:
+            - Se abre en el idioma de visualización de DSM
+            it:
+            - Si apre nella lingua di visualizzazione di DSM
           0.1.0-0172:
             en:
               - "The interface loads slightly faster"
@@ -944,25 +963,6 @@ packages:
               - "Quando si aggiunge un NAS, la pagina per il telefono controlla tutti gli indirizzi contemporaneamente e spiega perché un NAS non è raggiungibile"
               - "I numeri nella schermata iniziale della pagina per il telefono ora si aggiornano in modo fluido"
               - "Digitando su iPhone la pagina non viene più ingrandita"
-          0.1.0-0162:
-            en:
-              - "On phones, tapping an App icon now opens it reliably, DSM overview pages such as Drive fit the screen, switching screens no longer makes the page wobble sideways, and the keyboard no longer covers form buttons"
-            zh-TW:
-              - "手機上點 App 圖示現在每次都能開啟，Drive 等 DSM 總覽頁不再超出螢幕，切換畫面時頁面不再左右晃動，輸入時鍵盤也不再蓋住表單按鈕"
-            zh-CN:
-              - "手机上点击 App 图标现在每次都能打开，Drive 等 DSM 概览页不再超出屏幕，切换画面时页面不再左右晃动，输入时键盘也不再遮住表单按钮"
-            ja:
-              - "スマートフォンでアプリのアイコンをタップすると確実に開くようになりました。Drive などの DSM 概要ページが画面内に収まり、画面切り替え時の左右の揺れがなくなり、入力中もキーボードがフォームのボタンを隠さなくなりました"
-            ko:
-              - "휴대폰에서 앱 아이콘을 누르면 안정적으로 열립니다. Drive 등의 DSM 개요 페이지가 화면 안에 맞게 표시되고, 화면 전환 시 페이지가 좌우로 흔들리지 않으며, 입력 중 키보드가 양식 버튼을 가리지 않습니다"
-            de:
-              - "Auf dem Handy öffnen sich Apps beim Tippen auf ihr Symbol jetzt zuverlässig. DSM-Übersichtsseiten wie Drive passen auf den Bildschirm, Seiten wackeln beim Wechseln nicht mehr seitlich, und die Tastatur verdeckt keine Formularschaltflächen mehr"
-            fr:
-              - "Sur téléphone, toucher une icône ouvre désormais l’application de façon fiable. Les pages d’aperçu DSM comme Drive tiennent dans l’écran, les pages ne bougent plus latéralement lors des transitions et le clavier ne masque plus les boutons des formulaires"
-            es:
-              - "En el teléfono, tocar el icono de una app ahora la abre de forma fiable. Las páginas de resumen de DSM, como Drive, caben en la pantalla, las páginas ya no se mueven lateralmente al cambiar de pantalla y el teclado no tapa los botones de los formularios"
-            it:
-              - "Sul telefono, toccare l’icona di un’app ora la apre in modo affidabile. Le pagine di panoramica DSM, come Drive, rientrano nello schermo, le pagine non oscillano più lateralmente durante le transizioni e la tastiera non copre i pulsanti dei moduli"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -1019,14 +1019,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0172
+        version: 0.1.0-0173
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 4087825150c425e5f9b3806d06fed27c53c2a74330a2a14942509d0bd74a10a7
-        md5: 7a369e264a2f6aaa2682c7db1f7b63ed
+        sha256: 6c4ba22b67b69a79d73278702b8db12c96f6c09fc5fe1059eb17f487655d25b6
+        md5: 7cf9a5898516098cb5ddf325471ff6f3
         size: 18155520
         facts:
           built_with: sdk
@@ -1044,19 +1044,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T13:13:49Z
-          source_ref: 3f3ee4e92fe8ad43664889e4350bc776df48d972
+          reviewed_at: 2026-11-16T06:10:18Z
+          source_ref: bdb806bd9084dc7ee0c552918dce7d534f37089f
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0172
+        version: 0.1.0-0173
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 86aae8c78b2f5330cb29fb9e73b95ea9635b2e94795497f4b11f42a43e982c8d
-        md5: 42b481946fcd5a972f3dec76b5e5ec1a
-        size: 18749440
+        sha256: 19adb182f14769ebd34f3b1fb0dd8afb06d971eb61212616e1c345ebc2e3eb9b
+        md5: 799f1c4c4b21a8e9ccb3a515747260ac
+        size: 18759680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1073,11 +1073,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T13:13:49Z
-          source_ref: 3f3ee4e92fe8ad43664889e4350bc776df48d972
+          reviewed_at: 2026-11-16T06:10:18Z
+          source_ref: bdb806bd9084dc7ee0c552918dce7d534f37089f
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0172
+        version: 0.1.0-0173
         arch:
           - apollolake
           - avoton
@@ -1106,8 +1106,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 47ac8181de0f7d54e9f719f40c2f07c5f111ec01d9e99dc8bffd719b20397e23
-        md5: 3450d86f96636bfa6cf5d1282128b42a
+        sha256: 1bf49d0388aca5a24c88e3a12b9694572369f1a2529781faeaa44bda178f34ac
+        md5: 8ff648c8b13b5b2f91cd2d7825654ff8
         size: 19537920
         facts:
           built_with: sdk
@@ -1125,8 +1125,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T13:13:49Z
-          source_ref: 3f3ee4e92fe8ad43664889e4350bc776df48d972
+          reviewed_at: 2026-11-16T06:10:18Z
+          source_ref: bdb806bd9084dc7ee0c552918dce7d534f37089f
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
@@ -1135,7 +1135,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0109
+      release: v0.2.2-0110
       access: private
     metadata:
       maintainer: Syno Package Land
@@ -1224,6 +1224,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0110:
+            en:
+            - Opens in your DSM display language instead of the browser's
+            zh-TW:
+            - 改以 DSM 的顯示語言開啟，不再跟隨瀏覽器語言
+            zh-CN:
+            - 改以 DSM 的显示语言打开，不再跟随浏览器语言
+            ja:
+            - ブラウザーの言語ではなく DSM の表示言語で開くように
+            ko:
+            - 브라우저 언어 대신 DSM 표시 언어로 열림
+            de:
+            - Öffnet sich in Ihrer DSM-Anzeigesprache statt in der Browsersprache
+            fr:
+            - S’ouvre dans la langue d’affichage de DSM plutôt que celle du navigateur
+            es:
+            - Se abre en el idioma de visualización de DSM en lugar del idioma del navegador
+            it:
+            - Si apre nella lingua di visualizzazione di DSM invece che in quella del browser
           0.2.2-0109:
             en:
               - "The interface loads slightly faster"
@@ -1366,25 +1385,6 @@ packages:
               - En el lanzador de Package Land, cada página muestra Inicio y Atrás recorre las páginas de la App
             it:
               - Nel launcher di Package Land ogni pagina mostra Home e Indietro torna pagina per pagina nell'App
-          0.2.2-0102:
-            en:
-              - On Android phones, the keyboard no longer closes when you tap a text field
-            zh-TW:
-              - 在 Android 手機上點文字欄位時，鍵盤不再自動收起
-            zh-CN:
-              - 在 Android 手机上点按文本框时，键盘不再自动收起
-            ja:
-              - Android スマートフォンでテキスト欄をタップするとキーボードが閉じる問題を修正
-            ko:
-              - Android 휴대폰에서 텍스트 필드를 탭하면 키보드가 닫히던 문제 수정
-            de:
-              - Auf Android-Smartphones schließt sich die Tastatur beim Tippen auf ein Textfeld nicht mehr
-            fr:
-              - Sur les téléphones Android, le clavier ne se ferme plus quand vous touchez un champ de texte
-            es:
-              - En teléfonos Android, el teclado ya no se cierra al tocar un campo de texto
-            it:
-              - Sui telefoni Android la tastiera non si chiude più quando tocchi un campo di testo
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -1393,15 +1393,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0109
+        version: 0.2.2-0110
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 6a809f13894236f27e6c7fdbdf494d66828fbdf281a7641ab065f640e8c1c18a
-        md5: 211c520d5797c615d5af6e15a7cb8ae9
-        size: 68611584
+        sha256: 58b6e2353fb9dae97f174f42bb57183d8f8d2b5b0461f6ac8bcb0261d5dc3490
+        md5: e3c843d0ac37ae5f2b464cdfd8cf3367
+        size: 68614656
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1419,11 +1419,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T13:16:24Z
-          source_ref: 422af49f7a02d92c703bf043eb5af55ba0426f3c
+          reviewed_at: 2026-11-16T06:10:18Z
+          source_ref: c43a8873f0231ac27efbdaac9df81f6bde3ba5b7
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0109
+        version: 0.2.2-0110
         arch:
           - apollolake
           - avoton
@@ -1452,9 +1452,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 016fb3833d5f71c2142c5a81012bd67442ff070159b3ca6fe7bcadfde3610867
-        md5: 7add29189ab12dcf1da965a8d2e14da1
-        size: 72301056
+        sha256: 75634917e0558587162dd6c619acd70816f3014b8f635f9fceea80223333c7f2
+        md5: 1dc0f09314e2ffe2a479a16d70c3db20
+        size: 72303616
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1472,8 +1472,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-15T13:16:24Z
-          source_ref: 422af49f7a02d92c703bf043eb5af55ba0426f3c
+          reviewed_at: 2026-11-16T06:10:18Z
+          source_ref: c43a8873f0231ac27efbdaac9df81f6bde3ba5b7
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
