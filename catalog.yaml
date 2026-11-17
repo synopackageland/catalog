@@ -4023,6 +4023,7 @@ packages:
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/01-welcome.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/02-agent-setup.png
+      screenshots_mobile:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/03-phone-welcome.png
     pins:
       - package: Ovis

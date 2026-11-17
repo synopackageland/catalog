@@ -138,11 +138,26 @@ Run `python3 scripts/check_attribution.py` and
 
 ### Screenshots
 
-`screenshots` is a list of at most **5** `https://` image URLs, each up to 2,048
-characters. `http://` is rejected. The App page shows them in order as a
-horizontally scrolling gallery (16:10 frames, lazy loaded, no referrer sent);
-a click opens the full image in a new tab. There is no per-image caption: the
-page labels them "App screenshot 1…5" in the visitor's language.
+`metadata.screenshots` lists desktop screenshots and `metadata.screenshots_mobile`
+lists phone screenshots. Each list accepts at most **10** `https://` image URLs in
+the catalog and **5** in embedded SPK metadata, each up to 2,048 characters.
+`http://` and URLs with credentials are rejected. A plain `screenshots` list keeps
+meaning desktop, so existing entries need no change.
+
+The App page shows up to eight of each in order as a horizontally scrolling gallery
+(desktop in 16:10 frames, phone in 390:844 frames, lazy loaded, no referrer sent);
+a click opens the in-page viewer. When an entry has both lists, a Desktop | Mobile
+choice above the gallery switches between them; with only one list there is no
+choice. There is no per-image caption: the page labels them "App screenshot 1…8"
+in the visitor's language. The DSM Package Center feed sends only `screenshots`.
+
+```yaml
+metadata:
+  screenshots:
+    - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/YourPackage/01-main.png
+  screenshots_mobile:
+    - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/YourPackage/01-phone-main.png
+```
 
 Where to host them:
 
@@ -155,6 +170,33 @@ Where to host them:
   It serves WebP as `application/octet-stream`, so use PNG or JPEG there.
 - **Your own host:** any `https://` image URL works. You keep it available and
   unchanged; a broken link only leaves an empty frame.
+
+### Related guides
+
+`metadata.guides` is catalog.yaml only; SPK metadata and community files refuse it.
+It lists at most **12** articles about the App, usually on
+https://community.synopkgland.com/ article pages (`/d/<number>`). The App page shows them under its long
+description as a horizontal shelf of cards (lead image, title on one line, summary
+on two lines), with arrows when they overflow.
+
+```yaml
+metadata:
+  guides:
+    - url: https://community.synopkgland.com/d/42
+      title: # one line, at most 120 characters; plain or per language
+        en: Set up remote access
+        zh-TW: 設定遠端存取
+      summary: From install to the first remote sign-in # optional; at most 280 characters per language
+      image: https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/YourPackage/guide-remote.png # optional
+```
+
+- `url` (required) and `image` are `https://` URLs; each `url` appears once.
+- `title` (required) and `summary` are one line of text, or a map of language tags
+  like `description`. The page shows the visitor's language, else `zh-TW` for
+  Chinese, else `en`; translations are optional.
+- Without `image` the card shows a neutral placeholder. The website reads these
+  fields from the catalog; it never fetches the article.
+- Guides do not count toward the 32,000-character metadata limit.
 
 The CLI writes standard INFO fields and `spk_land_metadata` (escaped single-line
 JSON for full multilingual/plain text). Standard changelog flattens newlines with
