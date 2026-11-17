@@ -1009,7 +1009,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-17T05:07:48Z
-          source_ref: v0.1.0-0175
+          source_ref: c166e4ef781fa4c517651a0c004622a475828c74
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
         version: 0.1.0-0175
@@ -1038,7 +1038,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-17T05:07:48Z
-          source_ref: v0.1.0-0175
+          source_ref: c166e4ef781fa4c517651a0c004622a475828c74
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
         version: 0.1.0-0175
@@ -1090,7 +1090,7 @@ packages:
           type: reviewed
           reviewer: synopackageland
           reviewed_at: 2026-11-17T05:07:48Z
-          source_ref: v0.1.0-0175
+          source_ref: c166e4ef781fa4c517651a0c004622a475828c74
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
