@@ -253,7 +253,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0178
+      release: v0.1.0-0180
       access: private
     metadata:
       guides:
@@ -530,6 +530,43 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0180:
+            en:
+            - "Phone page: the Active Backup for Business calendar and the Synology Drive welcome screen are no longer cut off"
+            - "In the Scan with your phone section, the left and right columns are centred vertically beside the phone"
+            - "On a phone, the page background, cards and nested panels now match the desktop look"
+            zh-TW:
+            - "手機版 Active Backup for Business 日曆和 Synology Drive 歡迎畫面不再被切掉"
+            - "「用手機掃描」區的左右兩欄改為對齊中間手機示意圖上下置中"
+            - "手機版的頁面底色、卡片與巢狀面板現在與桌面版一致"
+            zh-CN:
+            - "手机版 Active Backup for Business 日历和 Synology Drive 欢迎画面不再被截断"
+            - "“用手机扫描”区的左右两栏改为对齐中间手机示意图上下居中"
+            - "手机版的页面底色、卡片与嵌套面板现在与桌面版一致"
+            ja:
+            - "スマホ版で Active Backup for Business のカレンダーと Synology Drive のようこそ画面が切れなくなりました"
+            - "「スマホでスキャン」の左右の列が、中央のスマホの図に合わせて上下中央に揃うようになりました"
+            - "スマホ版のページ背景、カード、入れ子のパネルがデスクトップ版と同じ見た目になりました"
+            ko:
+            - "모바일 버전에서 Active Backup for Business 달력과 Synology Drive 시작 화면이 잘리지 않음"
+            - "휴대폰으로 스캔 영역의 왼쪽과 오른쪽 열이 가운데 휴대폰 그림에 맞춰 세로 가운데 정렬됨"
+            - "휴대폰에서 페이지 배경, 카드, 중첩 패널이 데스크톱과 같은 모양으로 표시됨"
+            de:
+            - "Smartphone-Seite: der Kalender von Active Backup for Business und der Willkommensbildschirm von Synology Drive werden nicht mehr abgeschnitten"
+            - "Im Bereich Mit dem Smartphone scannen stehen die linke und rechte Spalte vertikal mittig neben dem Smartphone"
+            - "Auf dem Smartphone sehen Seitenhintergrund, Karten und verschachtelte Bereiche jetzt wie am Desktop aus"
+            fr:
+            - "Page mobile : le calendrier d’Active Backup for Business et l’écran d’accueil de Synology Drive ne sont plus coupés"
+            - "Dans la section Scanner avec le téléphone, les colonnes de gauche et de droite sont centrées verticalement à côté du téléphone"
+            - "Sur téléphone, le fond de page, les cartes et les panneaux imbriqués ont désormais le même aspect que sur ordinateur"
+            es:
+            - "Página móvil: el calendario de Active Backup for Business y la pantalla de bienvenida de Synology Drive ya no se cortan"
+            - "En la sección Escanear con el teléfono, las columnas izquierda y derecha quedan centradas verticalmente junto al teléfono"
+            - "En el teléfono, el fondo de la página, las tarjetas y los paneles anidados ahora se ven igual que en el escritorio"
+            it:
+            - "Pagina mobile: il calendario di Active Backup for Business e la schermata di benvenuto di Synology Drive non vengono più tagliati"
+            - "Nella sezione Scansiona con il telefono, le colonne sinistra e destra sono centrate verticalmente accanto al telefono"
+            - "Sul telefono, lo sfondo della pagina, le schede e i pannelli annidati ora hanno lo stesso aspetto del desktop"
           0.1.0-0178:
             en:
               - "Phone page: Synology Drive, Active Backup for Business and its Portal fit the screen, and the Portal opens sooner"
@@ -699,34 +736,6 @@ packages:
               - "La interfaz carga un poco más rápido"
             it:
               - "L’interfaccia si carica un po’ più velocemente"
-          0.1.0-0171:
-            en:
-              - "The phone page has a short address: add /m to your DSM address. QR codes and links now use it"
-              - "Requires DSM 7.2 or later"
-            zh-TW:
-              - "手機頁有了短網址：在 DSM 網址後加上 /m 即可開啟，QR code 與連結都改用它"
-              - "需要 DSM 7.2 以上"
-            zh-CN:
-              - "手机页有了短网址：在 DSM 网址后加上 /m 即可打开，二维码与链接都改用它"
-              - "需要 DSM 7.2 及以上版本"
-            ja:
-              - "スマートフォン用ページに短いアドレスが追加され、DSM のアドレスの後に /m を付けるだけで開けるように。QR コードとリンクもこのアドレスを使用"
-              - "DSM 7.2 以降が必要"
-            ko:
-              - "휴대폰 페이지에 짧은 주소가 생겨 DSM 주소 뒤에 /m만 붙이면 열 수 있음. QR 코드와 링크도 이 주소를 사용함"
-              - "DSM 7.2 이상 필요"
-            de:
-              - "Die Handyseite hat eine kurze Adresse: /m an die DSM-Adresse anhängen. QR-Codes und Links verwenden sie jetzt"
-              - "Erfordert DSM 7.2 oder höher"
-            fr:
-              - "La page pour téléphone a une adresse courte : ajoutez /m à l’adresse de DSM. Les codes QR et les liens l’utilisent désormais"
-              - "Nécessite DSM 7.2 ou version ultérieure"
-            es:
-              - "La página para el teléfono tiene una dirección corta: añada /m a la dirección de DSM. Los códigos QR y los enlaces ya la usan"
-              - "Requiere DSM 7.2 o posterior"
-            it:
-              - "La pagina per il telefono ha un indirizzo breve: aggiungi /m all’indirizzo di DSM. Codici QR e link ora lo usano"
-              - "Richiede DSM 7.2 o versioni successive"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -783,14 +792,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0175-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0178
+        version: 0.1.0-0180
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: e6f72594d4bba3d578a2764d4f7e092b2eff186aedd99763ebf5ffba95bea69c
-        md5: 9c8f126b1974b98eff8abb06965b00b4
+        sha256: 84091956d507b5d8a82862bd3ecc5a9e6edc206729e4b69aa35d9291fb3759fd
+        md5: 96c2f0903ccaac970a37df9bc8c3515c
         size: 18247680
         facts:
           built_with: sdk
@@ -808,19 +817,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T10:01:54Z
-          source_ref: d4867d1a70e359583166e58c5e1070c4224db6f1
+          reviewed_at: 2026-11-17T11:03:07Z
+          source_ref: 1e1d5469d2053813f5b93897a88d7d2e030268d6
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0178
+        version: 0.1.0-0180
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 58f4562c9e5f647f59e2e315e54a28d1d3ddb9a5006360c478d1863e541a060a
-        md5: b96388e31f4aae2e31d9ef45c76e3efd
-        size: 18841600
+        sha256: f47d073e06c7b7ccd41ff0d044092ae5c036fcd2dc7dbafc72bdbef19435fbe7
+        md5: 7bc5ee23defec61b892e06b9d60ee24a
+        size: 18851840
         facts:
           built_with: sdk
           sdk_backend: go
@@ -837,11 +846,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T10:01:54Z
-          source_ref: d4867d1a70e359583166e58c5e1070c4224db6f1
+          reviewed_at: 2026-11-17T11:03:07Z
+          source_ref: 1e1d5469d2053813f5b93897a88d7d2e030268d6
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0178
+        version: 0.1.0-0180
         arch:
           - apollolake
           - avoton
@@ -870,8 +879,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: a1006d60249effa53d56feff01973e88b788b4f674e1f3a35fcad0601ea6d3c7
-        md5: afce35aa5d8728724b9d34639c982f2e
+        sha256: 321466d10c16b0477500df7352bd871ec823d504ecb9cb14dbabd9653db6da20
+        md5: 3053e35f225d80b5f5e796d8da29b530
         size: 19630080
         facts:
           built_with: sdk
@@ -889,8 +898,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T10:01:54Z
-          source_ref: d4867d1a70e359583166e58c5e1070c4224db6f1
+          reviewed_at: 2026-11-17T11:03:07Z
+          source_ref: 1e1d5469d2053813f5b93897a88d7d2e030268d6
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
