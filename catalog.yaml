@@ -480,7 +480,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0175
+      release: v0.1.0-0176
       access: private
     metadata:
       guides:
@@ -757,6 +757,34 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0176:
+            en:
+              - "Phone page: Apps such as Connect and Reclaim open instead of loading forever"
+              - "Phone page: Package Center, Log Center and tables fit the screen, and wide tables scroll sideways with the first column pinned"
+            zh-TW:
+              - "手機版開 Connect、Reclaim 等 App 不再一直卡在載入中"
+              - "手機版套件中心、日誌中心與表格版面修正，寬表格可左右捲動且第一欄固定"
+            zh-CN:
+              - "手机版打开 Connect、Reclaim 等 App 不再一直卡在加载中"
+              - "手机版套件中心、日志中心与表格版面修正，宽表格可左右滚动且第一列固定"
+            ja:
+              - "スマホ版で Connect や Reclaim などの App が読み込み中のまま止まらなくなりました"
+              - "スマホ版のパッケージセンター、ログセンター、表のレイアウトを修正。幅の広い表は横にスクロールでき、先頭列は固定"
+            ko:
+              - "모바일 버전에서 Connect, Reclaim 등 App이 로딩 중에 멈추지 않음"
+              - "모바일 버전의 패키지 센터, 로그 센터, 표 레이아웃 수정. 넓은 표는 첫 열을 고정한 채 가로로 스크롤"
+            de:
+              - "Smartphone-Seite: Apps wie Connect und Reclaim öffnen sich, statt endlos zu laden"
+              - "Smartphone-Seite: Paket-Zentrum, Protokoll-Center und Tabellen passen auf den Bildschirm, breite Tabellen scrollen seitlich mit fixierter erster Spalte"
+            fr:
+              - "Page mobile : les applications comme Connect et Reclaim s’ouvrent au lieu de charger sans fin"
+              - "Page mobile : Centre de paquets, Centre des journaux et tableaux adaptés à l’écran, les tableaux larges défilent horizontalement avec la première colonne fixe"
+            es:
+              - "Página móvil: las aplicaciones como Connect y Reclaim se abren en lugar de quedarse cargando"
+              - "Página móvil: Centro de paquetes, Centro de registros y tablas se ajustan a la pantalla, y las tablas anchas se desplazan en horizontal con la primera columna fija"
+            it:
+              - "Pagina mobile: le app come Connect e Reclaim si aprono invece di restare in caricamento"
+              - "Pagina mobile: Centro pacchetti, Centro registri e tabelle si adattano allo schermo, le tabelle larghe scorrono in orizzontale con la prima colonna fissa"
           0.1.0-0175:
             en:
               - "Phone section on the Overview in three columns, with a larger QR code and phone preview"
@@ -908,25 +936,6 @@ packages:
               - "Al eliminar una App ahora también se eliminan su dominio y su ruta, y los paneles se muestran con más fluidez en el móvil"
             it:
               - "L’eliminazione di un’App ora rimuove anche il relativo dominio e percorso, mentre i pannelli vengono visualizzati più fluidamente sui telefoni"
-          0.1.0-0168:
-            en:
-              - "Button labels wrap on narrow screens so the full text stays visible"
-            zh-TW:
-              - "按鈕文字會在窄畫面自動換行，完整內容不再被截斷"
-            zh-CN:
-              - "按钮文字会在窄屏幕上自动换行，完整内容不再被截断"
-            ja:
-              - "狭い画面ではボタンのラベルが折り返され、全文が表示されるようになりました"
-            ko:
-              - "좁은 화면에서 버튼 문구가 줄바꿈되어 전체 내용이 표시됩니다"
-            de:
-              - "Schaltflächenbeschriftungen werden auf schmalen Bildschirmen umgebrochen, damit der vollständige Text sichtbar bleibt"
-            fr:
-              - "Le texte des boutons passe à la ligne sur les écrans étroits afin de rester entièrement visible"
-            es:
-              - "El texto de los botones se ajusta en pantallas estrechas para que se vea completo"
-            it:
-              - "Il testo dei pulsanti va a capo sugli schermi stretti per restare interamente visibile"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -983,15 +992,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0175-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0175
+        version: 0.1.0-0176
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 1add9f31b603e3d2be7c7d2394f4f42823e51513bd45ee809337d2908480b11d
-        md5: 90a291495b1090bbd10d091b98ed54ce
-        size: 18216960
+        sha256: d384ca44e661e8c92513fc8700894c073274544c466de3d23d92797911fe81ea
+        md5: c2a2071b7b308665852349ac50b929e8
+        size: 18237440
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1008,19 +1017,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T05:07:48Z
-          source_ref: c166e4ef781fa4c517651a0c004622a475828c74
+          reviewed_at: 2026-11-17T06:21:00Z
+          source_ref: f650fc0113c112cd9b109a54dffedc01fd6445f5
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0175
+        version: 0.1.0-0176
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 8276295c3d831c39d70daeb3486d735f1e3866883394d99033f686fc539d041c
-        md5: e57ee6c1a31b07a4a8faa22818b06196
-        size: 18810880
+        sha256: 4df016b0d3ddf910df4eb26464de03648d677d75bfd74cd982fb022d82f47ecd
+        md5: aad1d223dc066cd67ba338bd71451ea2
+        size: 18831360
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1037,11 +1046,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T05:07:48Z
-          source_ref: c166e4ef781fa4c517651a0c004622a475828c74
+          reviewed_at: 2026-11-17T06:21:00Z
+          source_ref: f650fc0113c112cd9b109a54dffedc01fd6445f5
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0175
+        version: 0.1.0-0176
         arch:
           - apollolake
           - avoton
@@ -1070,9 +1079,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 79eeb068c0acc83e9a116ad10313c2f905d73f3b05bed96c6545ed4d377fe6b9
-        md5: a4446e8a5e43aaede9c2ed06ff620b15
-        size: 19599360
+        sha256: 8ace38d8c5c2bdcc0e92d69aebc531d4d5d5a1351458efd793f1689349378cbb
+        md5: 7e0a2820649fea766a0d0876320037b5
+        size: 19619840
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1089,8 +1098,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T05:07:48Z
-          source_ref: c166e4ef781fa4c517651a0c004622a475828c74
+          reviewed_at: 2026-11-17T06:21:00Z
+          source_ref: f650fc0113c112cd9b109a54dffedc01fd6445f5
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
