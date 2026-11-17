@@ -480,7 +480,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0174
+      release: v0.1.0-0175
       access: private
     metadata:
       guides:
@@ -757,6 +757,34 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0175:
+            en:
+              - "Phone section on the Overview in three columns, with a larger QR code and phone preview"
+              - "Tap the phone preview to try Security Advisor, resources and notifications"
+            zh-TW:
+              - "總覽的手機區改為三欄，QR 碼與手機示意圖放大"
+              - "點手機示意圖即可試看 Security Advisor、資源與通知畫面"
+            zh-CN:
+              - "总览的手机区改为三栏，二维码与手机示意图放大"
+              - "点手机示意图即可试看 Security Advisor、资源与通知画面"
+            ja:
+              - "概要のスマホ欄を 3 列に。QR コードとスマホのプレビューを拡大"
+              - "スマホのプレビューをタップして Security Advisor、リソース、通知を試せるように"
+            ko:
+              - "개요의 휴대폰 영역을 3열로 바꾸고 QR 코드와 휴대폰 미리보기를 확대"
+              - "휴대폰 미리보기를 눌러 Security Advisor, 리소스, 알림 화면을 체험 가능"
+            de:
+              - "Smartphone-Bereich der Übersicht in drei Spalten, mit größerem QR-Code und größerer Smartphone-Vorschau"
+              - "Smartphone-Vorschau antippen, um Security Advisor, Ressourcen und Benachrichtigungen auszuprobieren"
+            fr:
+              - "Section téléphone de la vue d’ensemble sur trois colonnes, QR code et aperçu du téléphone agrandis"
+              - "Touchez l’aperçu du téléphone pour essayer Security Advisor, les ressources et les notifications"
+            es:
+              - "Sección del teléfono del Resumen en tres columnas, con código QR y vista del teléfono más grandes"
+              - "Toca la vista del teléfono para probar Security Advisor, los recursos y las notificaciones"
+            it:
+              - "Sezione telefono della Panoramica su tre colonne, con codice QR e anteprima del telefono più grandi"
+              - "Tocca l’anteprima del telefono per provare Security Advisor, le risorse e le notifiche"
           0.1.0-0174:
             en:
             - "Interface polish: hover over shortened text to see all of it"
@@ -899,25 +927,6 @@ packages:
               - "El texto de los botones se ajusta en pantallas estrechas para que se vea completo"
             it:
               - "Il testo dei pulsanti va a capo sugli schermi stretti per restare interamente visibile"
-          0.1.0-0167:
-            en:
-              - "Rounded corners and spacing are more consistent, and interface animations feel smoother"
-            zh-TW:
-              - "介面圓角與間距更一致，動畫也更流暢"
-            zh-CN:
-              - "界面圆角和间距更一致，动画也更流畅"
-            ja:
-              - "画面の角丸と間隔がより統一され、アニメーションも滑らかになりました"
-            ko:
-              - "화면의 둥근 모서리와 간격이 더 일관되고 애니메이션도 더 부드러워졌습니다"
-            de:
-              - "Abgerundete Ecken und Abstände sind einheitlicher, und Animationen wirken flüssiger"
-            fr:
-              - "Les coins arrondis et les espacements sont plus cohérents, et les animations sont plus fluides"
-            es:
-              - "Las esquinas redondeadas y el espaciado son más coherentes, y las animaciones se ven más fluidas"
-            it:
-              - "Gli angoli arrotondati e le spaziature sono più coerenti e le animazioni risultano più fluide"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -967,22 +976,22 @@ packages:
                 attendibili includono le impronte dei certificati, mentre gli indirizzi temporanei
                 Cloudflare e le credenziali sono esclusi
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0143-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-compare-0134-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-app-urls-0134-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-cloudflare-0134-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0134-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0175-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-compare-0175-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-app-urls-0175-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-cloudflare-0175-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0175-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0174
+        version: 0.1.0-0175
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: c96684f5592ab6fa011b6583457259659f87fbaec82b1d0b1ac40b721e948fbb
-        md5: 14e3f6a28acf1f23d6fbaea0cb4ccfa3
-        size: 18165760
+        sha256: 1add9f31b603e3d2be7c7d2394f4f42823e51513bd45ee809337d2908480b11d
+        md5: 90a291495b1090bbd10d091b98ed54ce
+        size: 18216960
         facts:
           built_with: sdk
           sdk_backend: go
@@ -999,19 +1008,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T21:51:21Z
-          source_ref: 3d8921985e27dc38f074bef1771d5788bc90e238
+          reviewed_at: 2026-11-17T05:07:48Z
+          source_ref: v0.1.0-0175
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0174
+        version: 0.1.0-0175
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 7218d593c8eb0948d90bee9a887193df4d924afaa70d0060f24ea52c88b06475
-        md5: 5d85af1a253bc3fb7557d105383306c9
-        size: 18759680
+        sha256: 8276295c3d831c39d70daeb3486d735f1e3866883394d99033f686fc539d041c
+        md5: e57ee6c1a31b07a4a8faa22818b06196
+        size: 18810880
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1028,11 +1037,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T21:51:21Z
-          source_ref: 3d8921985e27dc38f074bef1771d5788bc90e238
+          reviewed_at: 2026-11-17T05:07:48Z
+          source_ref: v0.1.0-0175
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0174
+        version: 0.1.0-0175
         arch:
           - apollolake
           - avoton
@@ -1061,9 +1070,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 19394c39f89e2c55f0f2c132f5db450f1b405fc9290fabf8236b5c39d96a8d11
-        md5: 1b7c3cbff47771ca71ca53a2a0c17ada
-        size: 19537920
+        sha256: 79eeb068c0acc83e9a116ad10313c2f905d73f3b05bed96c6545ed4d377fe6b9
+        md5: a4446e8a5e43aaede9c2ed06ff620b15
+        size: 19599360
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1080,8 +1089,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T21:51:21Z
-          source_ref: 3d8921985e27dc38f074bef1771d5788bc90e238
+          reviewed_at: 2026-11-17T05:07:48Z
+          source_ref: v0.1.0-0175
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
