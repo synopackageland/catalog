@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1673
+      release: v0.1.1-1674
       access: private
     metadata:
       guides:
@@ -49,6 +49,25 @@ packages:
         it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. Sui volumi Btrfs, la pagina Duplicati trova cartelle identiche e file grandi duplicati, conserva una copia di ciascuno, spiega quale resta e mostra quanto spazio libera rimuovere il resto. La pulizia segue un piano verificato, controllato di nuovo subito prima dell'esecuzione, e sposta gli elementi nel Cestino della cartella condivisa così da poterli ripristinare. È richiesto l’accesso come amministratore DSM; approva le attività di sistema prima di usare le funzioni che ne dipendono"
       changelog:
         releases:
+          0.1.1-1674:
+            en:
+            - "On a phone, the page background, cards and nested panels now match the desktop look"
+            zh-TW:
+            - "手機版的頁面底色、卡片與巢狀面板現在與桌面版一致"
+            zh-CN:
+            - "手机版的页面底色、卡片与嵌套面板现在与桌面版一致"
+            ja:
+            - "スマホ版のページ背景、カード、入れ子のパネルがデスクトップ版と同じ見た目になりました"
+            ko:
+            - "휴대폰에서 페이지 배경, 카드, 중첩 패널이 데스크톱과 같은 모양으로 표시됨"
+            de:
+            - "Auf dem Smartphone sehen Seitenhintergrund, Karten und verschachtelte Bereiche jetzt wie am Desktop aus"
+            fr:
+            - "Sur téléphone, le fond de page, les cartes et les panneaux imbriqués ont désormais le même aspect que sur ordinateur"
+            es:
+            - "En el teléfono, el fondo de la página, las tarjetas y los paneles anidados ahora se ven igual que en el escritorio"
+            it:
+            - "Sul telefono, lo sfondo della pagina, le schede e i pannelli annidati ora hanno lo stesso aspetto del desktop"
           0.1.1-1673:
             en:
             - "Fits phone screens better: tabs scroll instead of getting cut off, chart amounts are never cut, lists line up, the duplicates summary keeps its width with its button below, and the status button sits in the top bar"
@@ -106,25 +125,6 @@ packages:
             - Se abre en el idioma de visualización de DSM
             it:
             - Si apre nella lingua di visualizzazione di DSM
-          0.1.1-1670:
-            en:
-              - "The Snapshot page no longer shows a stray “·” after “Shared folder”"
-            zh-TW:
-              - "「快照」頁的「共用資料夾」後面不再多出「·」"
-            zh-CN:
-              - "“快照”页的“共享文件夹”后面不再多出“·”"
-            ja:
-              - "「スナップショット」ページで「共有フォルダ」の後に余分な「·」が表示されなくなりました"
-            ko:
-              - "스냅샷 페이지에서 '공유 폴더' 뒤에 불필요한 '·'가 더 이상 표시되지 않음"
-            de:
-              - "Die Seite „Schnappschuss“ zeigt nach „Freigegebener Ordner“ kein überflüssiges „·“ mehr"
-            fr:
-              - "La page Instantané n’affiche plus de « · » superflu après « Dossier partagé »"
-            es:
-              - "La página Instantánea ya no muestra un «·» de más después de «Carpeta compartida»"
-            it:
-              - "La pagina Snapshot non mostra più un «·» superfluo dopo «Cartella condivisa»"
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1672-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-duplicates-folders-1672-en.png
@@ -137,15 +137,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1672-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1673
+        version: 0.1.1-1674
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 27f40a1513fedb9c70bfc2dadc36ad098e17c74d33886b93894966d0b74de9f7
-        md5: 7482800a8a7609d5377af8a13d379d13
-        size: 16967168
+        sha256: 8eb2fb7cbfe396bccb4a7cc52c912cb121c04ba7a9c36d6b11db3b99a1c0ca15
+        md5: ab80bc1cbbbef6af9259a2037f0a215e
+        size: 16965120
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -162,19 +162,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T08:28:51Z
-          source_ref: a386db526feff42eb67bd923fceba536638fc2f7
+          reviewed_at: 2026-11-17T11:01:01Z
+          source_ref: 314cf84a5076f8949879ec23a99bb14e1abd5e69
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1673
+        version: 0.1.1-1674
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 62ced040dcd6465925d1a5f27b726759fb8482a121c8194ab6c6de67fb541f66
-        md5: 6957e57b4bf8fbc1c1f054d7e2ca3bc7
-        size: 17857536
+        sha256: c09ce5218672a9b9041f4c3a27639aecd3667b198990ce670110ebe194f441a9
+        md5: ba07bf33ae8ec5e1ab3ac3e698f6cceb
+        size: 17856000
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -191,11 +191,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T08:28:51Z
-          source_ref: a386db526feff42eb67bd923fceba536638fc2f7
+          reviewed_at: 2026-11-17T11:01:01Z
+          source_ref: 314cf84a5076f8949879ec23a99bb14e1abd5e69
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1673
+        version: 0.1.1-1674
         arch:
           - apollolake
           - avoton
@@ -224,9 +224,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: c0adc00d9b8e28428fa5f09521aaae48fd90456c9c78b7f501abf7fe676def43
-        md5: 2ef86318c9e731944ca7103b644df216
-        size: 18221568
+        sha256: 49d28826ade007aee32b4562608470b79016b3ac60ea4916d985850b2330e849
+        md5: 7e911d66e66096d5b87df16a2625eecc
+        size: 18220032
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -243,8 +243,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T08:28:51Z
-          source_ref: a386db526feff42eb67bd923fceba536638fc2f7
+          reviewed_at: 2026-11-17T11:01:01Z
+          source_ref: 314cf84a5076f8949879ec23a99bb14e1abd5e69
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
@@ -899,7 +899,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0111
+      release: v0.2.2-0112
       access: private
     metadata:
       guides:
@@ -997,6 +997,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0112:
+            en:
+            - "Phone layout: the background, cards and panels now match the desktop look"
+            zh-TW:
+            - "手機版的背景、卡片與面板層次改為與桌面版一致"
+            zh-CN:
+            - "手机版的背景、卡片与面板层次改为与桌面版一致"
+            ja:
+            - "スマホ版の背景、カード、パネルの見た目をパソコン版と同じに"
+            ko:
+            - "모바일 화면의 배경, 카드, 패널이 데스크톱과 같은 모양으로 표시됨"
+            de:
+            - "Smartphone-Ansicht: Hintergrund, Karten und Bereiche sehen jetzt aus wie am Computer"
+            fr:
+            - "Affichage mobile : le fond, les cartes et les panneaux ont le même aspect que sur ordinateur"
+            es:
+            - "Vista móvil: el fondo, las tarjetas y los paneles se ven igual que en el ordenador"
+            it:
+            - "Vista mobile: sfondo, schede e pannelli hanno lo stesso aspetto che sul computer"
           0.2.2-0111:
             en:
             - "Interface polish: hover over shortened text to see all of it"
@@ -1139,25 +1158,6 @@ packages:
             it:
               - Finestre di dialogo, pannelli laterali e controlli hanno spaziature e angoli più coerenti
               - Finestre di dialogo e pannelli si aprono più velocemente sul telefono
-          0.2.2-0104:
-            en:
-              - Clicking a row number in a list opens that item
-            zh-TW:
-              - 點選清單中的列號即可開啟該項目
-            zh-CN:
-              - 点击列表中的行号即可打开该项目
-            ja:
-              - リストの行番号をクリックすると、その項目が開きます
-            ko:
-              - 목록에서 행 번호를 클릭하면 해당 항목이 열립니다
-            de:
-              - Ein Klick auf die Zeilennummer in einer Liste öffnet den Eintrag
-            fr:
-              - Cliquer sur le numéro de ligne d’une liste ouvre l’élément
-            es:
-              - Al hacer clic en el número de fila de una lista se abre el elemento
-            it:
-              - Facendo clic sul numero di riga in un elenco si apre l’elemento
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -1166,14 +1166,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0111
+        version: 0.2.2-0112
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f6f312ac8d4830adf781b790a6f4364d9fb0fcaf3e6adec74f978a32c3ebf935
-        md5: 684b0797db669c30411e9eeda5b48c16
+        sha256: d1d9c65fd5849a1b5127be1590af9386d9eaa49816cccdd1b34b865cf2b0d891
+        md5: 327be76aa7b3ee29b39f352aca26a296
         size: 68614656
         facts:
           built_with: sdk
@@ -1192,11 +1192,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T21:52:39Z
-          source_ref: ac422256f12d0d3a63d2158a12de0a7291207f61
+          reviewed_at: 2026-11-17T11:01:01Z
+          source_ref: d9fd2483e5f7c161ef3737e30a9ef036c605c3bc
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0111
+        version: 0.2.2-0112
         arch:
           - apollolake
           - avoton
@@ -1225,9 +1225,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 46ed5127974cb562276be9f075edbdde7f3c71f8e3c3c6e2329fa368d57d9f72
-        md5: 6d1891e2ebd985469ba3ae4283be8a84
-        size: 72305152
+        sha256: 8741e0fa0dd0e66a8596eb847e55e1ee125912ad060a369e9fc95bc6ffd34e46
+        md5: 175620775b58c936779eace711837008
+        size: 72307712
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1245,8 +1245,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T21:52:39Z
-          source_ref: ac422256f12d0d3a63d2158a12de0a7291207f61
+          reviewed_at: 2026-11-17T11:01:01Z
+          source_ref: d9fd2483e5f7c161ef3737e30a9ef036c605c3bc
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
