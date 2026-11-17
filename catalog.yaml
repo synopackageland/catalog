@@ -253,7 +253,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0176
+      release: v0.1.0-0177
       access: private
     metadata:
       guides:
@@ -530,6 +530,34 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0177:
+            en:
+              - "Phone page: charts, host menus and chart time labels fit the screen"
+              - "On a phone, App URLs, App details and Connect's settings sections fit the screen, and an opened section no longer shows the list behind it"
+            zh-TW:
+              - "手機版圖表、主機選單與圖表時間標籤不再被切掉"
+              - "手機上的 App 網址、App 詳細資料與 Connect 設定分頁版面修正，開啟的分頁不再露出後面的清單"
+            zh-CN:
+              - "手机版图表、主机菜单与图表时间标签不再被截断"
+              - "手机上的 App 网址、App 详细信息与 Connect 设置分页版面修正，打开的分页不再露出后面的列表"
+            ja:
+              - "スマホ版でグラフ、ホストメニュー、グラフの時刻ラベルが切れなくなりました"
+              - "スマホで App の URL、App の詳細、Connect の設定セクションのレイアウトを修正。開いたセクションの後ろに一覧が見えなくなりました"
+            ko:
+              - "모바일 버전에서 차트, 호스트 메뉴, 차트 시간 레이블이 잘리지 않음"
+              - "휴대폰에서 App URL, App 세부 정보, Connect 설정 섹션 레이아웃 수정. 연 섹션 뒤로 목록이 보이지 않음"
+            de:
+              - "Smartphone-Seite: Diagramme, Host-Menüs und Zeitbeschriftungen passen auf den Bildschirm"
+              - "Auf dem Smartphone passen App-URLs, App-Details und Connect-Einstellungen auf den Bildschirm, und hinter einem geöffneten Abschnitt ist die Liste nicht mehr zu sehen"
+            fr:
+              - "Page mobile : graphiques, menus d’hôte et libellés horaires adaptés à l’écran"
+              - "Sur téléphone, URL des applications, détails d’une application et sections de réglages de Connect adaptés à l’écran, et la liste n’apparaît plus derrière une section ouverte"
+            es:
+              - "Página móvil: los gráficos, los menús de host y las etiquetas de hora se ajustan a la pantalla"
+              - "En el teléfono, las URL de las aplicaciones, sus detalles y las secciones de ajustes de Connect se ajustan a la pantalla, y la lista ya no se ve detrás de una sección abierta"
+            it:
+              - "Pagina mobile: grafici, menu degli host ed etichette orarie si adattano allo schermo"
+              - "Sul telefono, URL delle app, dettagli dell’app e sezioni delle impostazioni di Connect si adattano allo schermo, e l’elenco non si vede più dietro una sezione aperta"
           0.1.0-0176:
             en:
               - "Phone page: Apps such as Connect and Reclaim open instead of loading forever"
@@ -690,25 +718,6 @@ packages:
               - "Las listas desplegables muestran correctamente el nombre seleccionado"
             it:
               - "Gli elenchi a discesa mostrano correttamente il nome selezionato"
-          0.1.0-0169:
-            en:
-              - "Deleting an App now also removes its domain and route, and panels display more smoothly on phones"
-            zh-TW:
-              - "刪除 App 時現在也會一併移除其網域與路由，手機上的面板顯示也更流暢"
-            zh-CN:
-              - "删除 App 时现在也会一并移除其域名和路由，手机上的面板显示也更流畅"
-            ja:
-              - "App を削除すると、そのドメインとルートも削除され、スマートフォンではパネルがより滑らかに表示されるようになりました"
-            ko:
-              - "App을 삭제하면 해당 도메인과 경로도 함께 제거되며 휴대폰에서 패널이 더 부드럽게 표시됩니다"
-            de:
-              - "Beim Löschen einer App werden jetzt auch ihre Domain und Route entfernt, und Panels werden auf Smartphones flüssiger dargestellt"
-            fr:
-              - "La suppression d’une App supprime désormais aussi son domaine et sa route, et les panneaux s’affichent plus fluidement sur mobile"
-            es:
-              - "Al eliminar una App ahora también se eliminan su dominio y su ruta, y los paneles se muestran con más fluidez en el móvil"
-            it:
-              - "L’eliminazione di un’App ora rimuove anche il relativo dominio e percorso, mentre i pannelli vengono visualizzati più fluidamente sui telefoni"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -765,15 +774,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0175-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0176
+        version: 0.1.0-0177
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: d384ca44e661e8c92513fc8700894c073274544c466de3d23d92797911fe81ea
-        md5: c2a2071b7b308665852349ac50b929e8
-        size: 18237440
+        sha256: aa56dfbff59b5ee61cf1feb2e2828bc03514db96bd0eb291c6ac7430cfb0a7e2
+        md5: 23d3151b02c241e1d6fe51cbc65c95f3
+        size: 18247680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -790,19 +799,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T06:21:00Z
-          source_ref: f650fc0113c112cd9b109a54dffedc01fd6445f5
+          reviewed_at: 2026-11-17T08:37:24Z
+          source_ref: 233c2a0dcbc3a050eb0ebec489bfdbe64beaecd6
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0176
+        version: 0.1.0-0177
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 4df016b0d3ddf910df4eb26464de03648d677d75bfd74cd982fb022d82f47ecd
-        md5: aad1d223dc066cd67ba338bd71451ea2
-        size: 18831360
+        sha256: 084b8c44b96e781899b76e0f8e08e4cc6d1188e01dfc707d6366b053b39db83e
+        md5: 0eb8fa42134be682f5ccb4c3557f07b8
+        size: 18841600
         facts:
           built_with: sdk
           sdk_backend: go
@@ -819,11 +828,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T06:21:00Z
-          source_ref: f650fc0113c112cd9b109a54dffedc01fd6445f5
+          reviewed_at: 2026-11-17T08:37:24Z
+          source_ref: 233c2a0dcbc3a050eb0ebec489bfdbe64beaecd6
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0176
+        version: 0.1.0-0177
         arch:
           - apollolake
           - avoton
@@ -852,9 +861,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8ace38d8c5c2bdcc0e92d69aebc531d4d5d5a1351458efd793f1689349378cbb
-        md5: 7e0a2820649fea766a0d0876320037b5
-        size: 19619840
+        sha256: e8a07c2b9bb5f88e540094e018bf7c773aa398ec9b12068f90a78d6d1e128442
+        md5: b13d3edef450149f13082689dc370e4b
+        size: 19630080
         facts:
           built_with: sdk
           sdk_backend: go
@@ -871,8 +880,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T06:21:00Z
-          source_ref: f650fc0113c112cd9b109a54dffedc01fd6445f5
+          reviewed_at: 2026-11-17T08:37:24Z
+          source_ref: 233c2a0dcbc3a050eb0ebec489bfdbe64beaecd6
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
