@@ -193,11 +193,35 @@ function safeMetadataUrl(value, mail = false) {
 }
 var MAX_SCREENSHOTS = 5;
 var MAX_CATALOG_SCREENSHOTS = 10;
+var MAX_GUIDES = 12;
 var safeScreenshotUrl = (value) => safeMetadataUrl(value) && value.startsWith("https:");
 var maxLength = (key) => key === "description" ? 1e3 : key === "privacy_note" ? 280 : 16e3;
 var HTTPS_ONLY = ["privacy_url"];
 var httpsUrl = (v) => safeMetadataUrl(v) && v.startsWith("https:");
 var oneLine = (v, max) => typeof v === "string" && !!v.trim() && v.length <= max && !/[\x00-\x1f\x7f]/.test(v);
+function localizedLine(v, max) {
+  const texts = typeof v === "string" ? [["en", v]] : v && typeof v === "object" && !Array.isArray(v) ? Object.entries(v) : [];
+  return texts.length > 0 && texts.length <= 32 && texts.every(([lang, value]) => /^[a-z]{2}(?:-[A-Za-z]{2})?$/.test(lang) && oneLine(value, max));
+}
+function validateGuides(v) {
+  if (!Array.isArray(v) || v.length > MAX_GUIDES)
+    throw new Error(`metadata.guides must be a list of at most ${MAX_GUIDES} guides`);
+  const urls = /* @__PURE__ */ new Set();
+  v.forEach((g, i2) => {
+    const at = `metadata.guides[${i2}]`;
+    if (!g || typeof g !== "object" || Array.isArray(g)) throw new Error(`${at} must be an object with url and title`);
+    for (const k of Object.keys(g))
+      if (!["url", "title", "summary", "image"].includes(k)) throw new Error(`${at}.${k} is not a known field`);
+    const guide = g;
+    if (!httpsUrl(guide.url)) throw new Error(`${at}.url must be an https:// URL`);
+    if (urls.has(guide.url)) throw new Error(`${at}.url is listed twice`);
+    urls.add(guide.url);
+    if (!localizedLine(guide.title, 120)) throw new Error(`${at}.title must be one line of at most 120 characters per language`);
+    if (guide.summary !== void 0 && !localizedLine(guide.summary, 280))
+      throw new Error(`${at}.summary must be one line of at most 280 characters per language`);
+    if (guide.image !== void 0 && !httpsUrl(guide.image)) throw new Error(`${at}.image must be an https:// URL`);
+  });
+}
 function validateUpstream(v) {
   if (!v || typeof v !== "object" || Array.isArray(v))
     throw new Error("metadata.upstream must be an object with name and url");
@@ -211,7 +235,8 @@ function validateUpstream(v) {
   if (u.license !== void 0 && !oneLine(u.license, 80))
     throw new Error("metadata.upstream.license must be one line of at most 80 characters");
 }
-function validateMetadata(raw, maxScreenshots = MAX_SCREENSHOTS) {
+function validateMetadata(raw, source = "spk") {
+  const maxScreenshots = source === "catalog" ? MAX_CATALOG_SCREENSHOTS : MAX_SCREENSHOTS;
   if (!raw || typeof raw !== "object" || Array.isArray(raw))
     throw new Error("invalid metadata");
   const allowed = [
@@ -231,6 +256,8 @@ function validateMetadata(raw, maxScreenshots = MAX_SCREENSHOTS) {
     "support_url",
     "helpurl",
     "screenshots",
+    "screenshots_mobile",
+    ...source === "catalog" ? ["guides"] : [],
     ...HTTPS_ONLY,
     "upstream",
     "privacy_note"
@@ -255,16 +282,16 @@ function validateMetadata(raw, maxScreenshots = MAX_SCREENSHOTS) {
         throw new Error(`metadata.${k} must be an https:// URL`);
       continue;
     }
+    if (k === "guides") {
+      validateGuides(v);
+      continue;
+    }
     if (k === "privacy_note") {
-      const texts = typeof v === "string" ? [v] : v && typeof v === "object" && !Array.isArray(v) ? Object.entries(v) : [];
-      if (!texts.length || Object.keys(texts).length > 32 || !texts.every((t) => {
-        const [lang, value] = typeof t === "string" ? ["en", t] : t;
-        return /^[a-z]{2}(?:-[A-Za-z]{2})?$/.test(lang) && typeof value === "string" && !!value.trim() && value.length <= 280 && !/[\x00-\x1f\x7f]/.test(value);
-      }))
+      if (!localizedLine(v, 280))
         throw new Error("metadata.privacy_note must be one line of at most 280 characters per language");
       continue;
     }
-    if (k === "screenshots") {
+    if (k === "screenshots" || k === "screenshots_mobile") {
       if (!Array.isArray(v) || v.length > maxScreenshots || !v.every(safeScreenshotUrl))
         throw new Error("invalid screenshots");
     } else if ((k === "description" || k === "long_description" || k === "changelog") && typeof v === "object" && v && !Array.isArray(v)) {
@@ -287,7 +314,8 @@ function validateMetadata(raw, maxScreenshots = MAX_SCREENSHOTS) {
     ].includes(k) && !safeMetadataUrl(v, k === "support_url"))
       throw new Error("invalid metadata URL");
   }
-  if (JSON.stringify(raw).length > 32e3) throw new Error("metadata too large");
+  const { guides: _guides, ...bounded } = raw;
+  if (JSON.stringify(bounded).length > 32e3) throw new Error("metadata too large");
   return raw;
 }
 
@@ -587,7 +615,7 @@ function parseCatalogYaml(text2) {
       if (keys.has(key)) throw new Error("duplicate pin");
       keys.add(key);
     }
-    const metadata = v.metadata ? validateMetadata(v.metadata, MAX_CATALOG_SCREENSHOTS) : {};
+    const metadata = v.metadata ? validateMetadata(v.metadata, "catalog") : {};
     if (raw.schema >= 4) validateCatalogText(metadata, pins.map((pin) => pin.version));
     const ownApp = pins.length > 0 && pins.every((p) => ["SynoReclaim", "SynoPkgConnect", "SynoPkgGopeed"].includes(p.package));
     if (publisher.id === "synopackageland" && metadata.upstream && !ownApp) {

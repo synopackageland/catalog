@@ -11,6 +11,15 @@ packages:
       release: v0.1.1-1672
       access: private
     metadata:
+      guides:
+        - url: https://community.synopkgland.com/d/41
+          title:
+            en: Find what is eating your NAS space and free it safely
+            zh-TW: 找出 NAS 空間被誰吃掉，安全地清出來
+          summary:
+            en: Real Btrfs numbers, duplicates, Recycle Bin and snapshots in a few steps
+            zh-TW: Btrfs 真實可回收空間、重複內容、回收筒與快照，幾步搞定
+          image: https://github.com/user-attachments/assets/b5c76320-12d7-4abe-a5d9-3b2e44f71b80
       maintainer: Syno Package Land
       maintainer_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
@@ -474,6 +483,15 @@ packages:
       release: v0.1.0-0174
       access: private
     metadata:
+      guides:
+        - url: https://community.synopkgland.com/d/42
+          title:
+            en: Reach your NAS from anywhere and use DSM on your phone
+            zh-TW: 從任何地方連回 NAS，用手機操作 DSM
+          summary:
+            en: See every way your NAS is reachable and set up remote access in a few taps
+            zh-TW: 一次看清 NAS 對外連線方式，動動手指設好遠端存取
+          image: https://github.com/user-attachments/assets/2fa28baf-40d9-440c-95a5-e1d167fd63cc
       maintainer: Syno Package Land
       maintainer_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
@@ -1075,6 +1093,15 @@ packages:
       release: v0.2.2-0111
       access: private
     metadata:
+      guides:
+        - url: https://community.synopkgland.com/d/43
+          title:
+            en: Let your NAS do the downloading
+            zh-TW: 讓 NAS 幫你下載
+          summary:
+            en: Paste a link for files, torrents and videos, and sign in to sites through a real browser
+            zh-TW: 貼上連結就能下載檔案、種子和影片，還能用瀏覽器登入網站
+          image: https://github.com/user-attachments/assets/55995e0f-5042-40de-b7a3-4ed1cbe00402
       maintainer: Syno Package Land
       maintainer_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
@@ -4023,6 +4050,7 @@ packages:
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/01-welcome.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/02-agent-setup.png
+      screenshots_mobile:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/03-phone-welcome.png
     pins:
       - package: Ovis
