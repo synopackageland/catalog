@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1672
+      release: v0.1.1-1673
       access: private
     metadata:
       guides:
@@ -49,6 +49,25 @@ packages:
         it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. Sui volumi Btrfs, la pagina Duplicati trova cartelle identiche e file grandi duplicati, conserva una copia di ciascuno, spiega quale resta e mostra quanto spazio libera rimuovere il resto. La pulizia segue un piano verificato, controllato di nuovo subito prima dell'esecuzione, e sposta gli elementi nel Cestino della cartella condivisa così da poterli ripristinare. È richiesto l’accesso come amministratore DSM; approva le attività di sistema prima di usare le funzioni che ne dipendono"
       changelog:
         releases:
+          0.1.1-1673:
+            en:
+            - "Fits phone screens better: tabs scroll instead of getting cut off, chart amounts are never cut, lists line up, the duplicates summary keeps its width with its button below, and the status button sits in the top bar"
+            zh-TW:
+            - "手機畫面更合身：分頁改為橫向捲動、不再被切掉，圖例數值不再被截斷，清單各列對齊，重複內容摘要維持寬度、按鈕移到下一行，狀態按鈕移到頂端列"
+            zh-CN:
+            - "手机画面更合身：标签页改为横向滚动、不再被切掉，图例数值不再被截断，列表各行对齐，重复内容摘要保持宽度、按钮移到下一行，状态按钮移到顶端栏"
+            ja:
+            - "スマホ画面に合わせて調整：タブは横スクロールになり切れず、凡例の数値は省略されず、リストの行がそろい、重複の概要は幅を保ってボタンを次の行へ、状態ボタンは上部バーに表示"
+            ko:
+            - "휴대폰 화면에 더 잘 맞춤: 탭은 잘리지 않고 가로로 스크롤되며, 범례 값은 잘리지 않고, 목록 행이 정렬되며, 중복 요약은 너비를 유지하고 버튼은 다음 줄로, 상태 버튼은 상단 바에 표시"
+            de:
+            - "Passt besser auf Smartphones: Tabs scrollen statt abgeschnitten zu werden, Werte in der Legende werden nie gekürzt, Listenzeilen sind bündig, die Duplikat-Übersicht behält ihre Breite mit der Schaltfläche darunter, und die Status-Schaltfläche sitzt in der oberen Leiste"
+            fr:
+            - "Mieux adapté aux téléphones : les onglets défilent au lieu d’être coupés, les valeurs de la légende ne sont plus tronquées, les lignes des listes sont alignées, le résumé des doublons garde sa largeur avec son bouton en dessous, et le bouton d’état se place dans la barre du haut"
+            es:
+            - "Se adapta mejor al teléfono: las pestañas se desplazan en lugar de cortarse, los valores de la leyenda ya no se recortan, las filas de las listas se alinean, el resumen de duplicados mantiene su ancho con el botón debajo y el botón de estado va en la barra superior"
+            it:
+            - "Si adatta meglio al telefono: le schede scorrono invece di essere tagliate, i valori della legenda non vengono più troncati, le righe degli elenchi sono allineate, il riepilogo dei duplicati mantiene la larghezza con il pulsante sotto e il pulsante di stato è nella barra in alto"
           0.1.1-1672:
             en:
             - "Internal interface component update; pages look and work the same"
@@ -106,252 +125,6 @@ packages:
               - "La página Instantánea ya no muestra un «·» de más después de «Carpeta compartida»"
             it:
               - "La pagina Snapshot non mostra più un «·» superfluo dopo «Cartella condivisa»"
-          0.1.1-1669:
-            en:
-              - "New Duplicates page finds identical folders and big duplicate files on Btrfs volumes from the scan, without reading file contents"
-              - "Each duplicate group keeps one copy and says why it stays — your choice, a preferred shared folder, it stays with its folder, the oldest copy or the shortest path; you can pick another copy to keep at any time"
-              - "Choose preferred shared folders for kept copies in Settings"
-              - "See how much space each group frees and every copy in it, with the kept copy marked"
-              - "Partly identical folders are shown as one row that removes only their identical items, and a row that covers several groups says how many it includes"
-              - "Select all duplicates on a volume or in a shared folder, with progress, a Stop button and the reason for anything that could not be selected"
-              - "Add duplicates to the cleanup list and review every item before cleanup; kept copies are checked again right before anything is removed"
-              - "A cleanup that would remove a copy another group keeps is refused, and Syno Reclaim names that copy and both groups"
-              - "Cleanup now moves items to the shared folder’s Recycle Bin, so you can restore them in File Station; items in a shared folder without a Recycle Bin are deleted for good only after you confirm it"
-              - "The Recycle Bin page shows what Syno Reclaim moved since the scan; Syno Reclaim never empties a Recycle Bin"
-              - "Cleanup has no item limit, shows what it is doing and can be cancelled"
-              - "Clearer reasons when an item cannot be cleaned up, with a way to take it out of the cleanup list"
-              - "Choose the volume in Explore’s page bar; button labels wrap instead of being cut off"
-              - "Volumes scanned with an earlier version need a new scan before the Duplicates page can list them"
-              - "After upgrading, an administrator needs to approve the system tasks once more"
-              - "Keep existing settings and saved scan reports"
-            zh-TW:
-              - "新增「重複內容」頁：依掃描結果找出 Btrfs 儲存空間上相同的資料夾與重複的大檔案，不需讀取檔案內容"
-              - "每組重複內容都保留一份副本並說明原因：你指定的、偏好保留的共用資料夾、隨所在資料夾保留、最舊的副本或路徑最短；也可以隨時改選要保留的副本"
-              - "可在「設定」中指定偏好保留副本的共用資料夾"
-              - "顯示每組可釋放的空間與組內每份副本，並標示保留的副本"
-              - "部分相同的資料夾會合併成一列，只移除其中相同的項目；涵蓋多組的列會標示包含幾組"
-              - "可全選整個儲存空間或某個共用資料夾的重複內容，顯示進度、可隨時停止，並說明未能選取的原因"
-              - "將重複內容加入清理清單，清理前逐項檢視；實際移除前會再次確認保留的副本"
-              - "若清理會移除另一組保留的副本，會拒絕執行，並指出該副本與相關的兩組"
-              - "清理現在會把項目移到共用資料夾的資源回收筒，可在 File Station 還原；未啟用資源回收筒的共用資料夾，須經你確認後才會永久刪除"
-              - "「資源回收筒」頁會列出掃描後 Syno Reclaim 移入的項目；Syno Reclaim 不會清空資源回收筒"
-              - "清理不再限制項目數量，會顯示目前進行的步驟，也可以取消"
-              - "項目無法清理時說明更清楚的原因，並可將其從清理清單移除"
-              - "可在「探索」頁的頁面列選擇儲存空間；按鈕文字過長時改為換行，不再被截斷"
-              - "以舊版掃描的儲存空間需要重新掃描，才能在「重複內容」頁列出"
-              - "升級後，管理員需要再核准一次系統工作"
-              - "保留現有設定與已儲存的掃描報告"
-            zh-CN:
-              - "新增“重复内容”页：根据扫描结果找出 Btrfs 存储空间上相同的文件夹与重复的大文件，无需读取文件内容"
-              - "每组重复内容都保留一份副本并说明原因：你指定的、偏好保留的共享文件夹、随所在文件夹保留、最旧的副本或路径最短；也可以随时改选要保留的副本"
-              - "可在“设置”中指定偏好保留副本的共享文件夹"
-              - "显示每组可释放的空间与组内每份副本，并标示保留的副本"
-              - "部分相同的文件夹会合并成一行，只移除其中相同的项目；涵盖多组的行会标示包含几组"
-              - "可全选整个存储空间或某个共享文件夹的重复内容，显示进度、可随时停止，并说明未能选择的原因"
-              - "将重复内容加入清理清单，清理前逐项查看；实际移除前会再次确认保留的副本"
-              - "如果清理会移除另一组保留的副本，会拒绝执行，并指出该副本与相关的两组"
-              - "清理现在会把项目移到共享文件夹的回收站，可在 File Station 还原；未启用回收站的共享文件夹，须经你确认后才会永久删除"
-              - "“回收站”页会列出扫描后 Syno Reclaim 移入的项目；Syno Reclaim 不会清空回收站"
-              - "清理不再限制项目数量，会显示当前进行的步骤，也可以取消"
-              - "项目无法清理时说明更清楚的原因，并可将其从清理清单移除"
-              - "可在“探索”页的页面栏选择存储空间；按钮文字过长时改为换行，不再被截断"
-              - "用旧版扫描的存储空间需要重新扫描，才能在“重复内容”页列出"
-              - "升级后，管理员需要再批准一次系统任务"
-              - "保留现有设置与已保存的扫描报告"
-            ja:
-              - "新しい「重複」ページで、スキャン結果から Btrfs ボリューム上の同じフォルダーと重複した大きなファイルを検出（ファイルの内容は読み取りません）"
-              - "重複グループごとに 1 つのコピーを残し、その理由を表示（あなたの選択、優先する共有フォルダー、フォルダーごと残る、最も古いコピー、最短のパス）。残すコピーはいつでも変更可能"
-              - "残すコピーの優先共有フォルダーを「設定」で指定可能に"
-              - "グループごとに解放できる容量とすべてのコピーを表示し、残すコピーを明示"
-              - "一部が同じフォルダーは 1 行にまとめ、同じ項目だけを削除。複数のグループを含む行には含まれるグループ数を表示"
-              - "ボリュームまたは共有フォルダーの重複をすべて選択可能に。進行状況を表示し、途中で停止でき、選択できなかった理由も表示"
-              - "重複をクリーンアップリストに追加し、クリーンアップ前にすべての項目を確認。削除の直前に残すコピーを再確認"
-              - "別のグループで残すコピーを削除することになるクリーンアップは拒否し、そのコピーと両方のグループを表示"
-              - "クリーンアップは項目を共有フォルダーのごみ箱へ移動するようになり、File Station で復元可能に。ごみ箱が無効な共有フォルダーの項目は、確認後にのみ完全に削除"
-              - "「ごみ箱」ページに、スキャン後に Syno Reclaim が移動した項目を表示。Syno Reclaim がごみ箱を空にすることはありません"
-              - "クリーンアップの項目数の上限を撤廃し、実行中の処理を表示、キャンセルも可能に"
-              - "項目をクリーンアップできない場合の理由をより分かりやすく表示し、クリーンアップリストから外せるように"
-              - "「探索」のページバーでボリュームを選択可能に。ボタンのラベルは省略されず折り返して表示"
-              - "以前のバージョンでスキャンしたボリュームは、「重複」ページに表示するために再スキャンが必要"
-              - "アップグレード後、管理者がシステムタスクをもう一度承認する必要があります"
-              - "既存の設定と保存済みスキャンレポートを保持"
-            ko:
-              - "새 중복 항목 페이지에서 스캔 결과로 Btrfs 볼륨의 동일한 폴더와 중복된 큰 파일을 찾음(파일 내용은 읽지 않음)"
-              - "중복 그룹마다 사본 하나를 남기고 그 이유를 표시(내가 선택함, 우선 공유 폴더, 폴더와 함께 유지, 가장 오래된 사본, 가장 짧은 경로). 남길 사본은 언제든 바꿀 수 있음"
-              - "설정에서 남길 사본의 우선 공유 폴더를 지정할 수 있음"
-              - "그룹마다 확보되는 공간과 모든 사본을 표시하고 남길 사본을 표시"
-              - "일부만 동일한 폴더는 한 행으로 묶어 동일한 항목만 제거하고, 여러 그룹을 포함한 행에는 포함된 그룹 수를 표시"
-              - "볼륨이나 공유 폴더의 중복 항목을 모두 선택할 수 있으며 진행 상황, 중지 버튼, 선택하지 못한 이유를 표시"
-              - "중복 항목을 정리 목록에 추가하고 정리 전에 모든 항목을 확인. 제거 직전에 남길 사본을 다시 확인"
-              - "다른 그룹에서 남기는 사본을 제거하게 되는 정리는 거부하고 해당 사본과 두 그룹을 알려 줌"
-              - "정리 시 항목을 공유 폴더의 휴지통으로 옮겨 File Station에서 복원할 수 있음. 휴지통이 꺼진 공유 폴더의 항목은 확인한 뒤에만 영구 삭제"
-              - "휴지통 페이지에 스캔 이후 Syno Reclaim이 옮긴 항목을 표시. Syno Reclaim은 휴지통을 비우지 않음"
-              - "정리 항목 수 제한이 없어지고, 진행 중인 작업을 표시하며 취소할 수 있음"
-              - "항목을 정리할 수 없을 때 이유를 더 명확하게 알려 주고 정리 목록에서 뺄 수 있음"
-              - "탐색의 페이지 막대에서 볼륨을 선택할 수 있음. 버튼 레이블은 잘리지 않고 줄바꿈됨"
-              - "이전 버전으로 스캔한 볼륨은 중복 항목 페이지에 표시하려면 다시 스캔해야 함"
-              - "업그레이드 후 관리자가 시스템 작업을 한 번 더 승인해야 함"
-              - "기존 설정과 저장된 스캔 보고서 유지"
-            de:
-              - "Neue Seite „Duplikate“ findet gleiche Ordner und große doppelte Dateien auf Btrfs-Volumes anhand des Scans, ohne Dateiinhalte zu lesen"
-              - "Jede Duplikatgruppe behält eine Kopie und nennt den Grund – Ihre Wahl, ein bevorzugter freigegebener Ordner, sie bleibt mit ihrem Ordner, die älteste Kopie oder der kürzeste Pfad; eine andere zu behaltende Kopie lässt sich jederzeit wählen"
-              - "Bevorzugte freigegebene Ordner für behaltene Kopien in den Einstellungen festlegen"
-              - "Für jede Gruppe wird angezeigt, wie viel Platz sie freigibt, mit allen Kopien und markierter behaltener Kopie"
-              - "Teilweise gleiche Ordner erscheinen als eine Zeile, die nur ihre gleichen Elemente entfernt; eine Zeile, die mehrere Gruppen umfasst, nennt deren Anzahl"
-              - "Alle Duplikate eines Volumes oder freigegebenen Ordners auswählen, mit Fortschritt, Stopp-Schaltfläche und dem Grund für alles, was nicht ausgewählt werden konnte"
-              - "Duplikate zur Bereinigungsliste hinzufügen und vor der Bereinigung jedes Element prüfen; behaltene Kopien werden direkt vor dem Entfernen erneut kontrolliert"
-              - "Eine Bereinigung, die eine von einer anderen Gruppe behaltene Kopie entfernen würde, wird abgelehnt; Syno Reclaim nennt diese Kopie und beide Gruppen"
-              - "Die Bereinigung verschiebt Elemente jetzt in den Papierkorb des freigegebenen Ordners, sodass sie sich in File Station wiederherstellen lassen; in freigegebenen Ordnern ohne Papierkorb wird erst nach Ihrer Bestätigung endgültig gelöscht"
-              - "Die Seite „Papierkorb“ zeigt, was Syno Reclaim seit dem Scan verschoben hat; Syno Reclaim leert nie einen Papierkorb"
-              - "Die Bereinigung hat keine Elementgrenze mehr, zeigt, was sie gerade tut, und lässt sich abbrechen"
-              - "Klarere Gründe, wenn ein Element nicht bereinigt werden kann, mit der Möglichkeit, es aus der Bereinigungsliste zu nehmen"
-              - "Volume in der Seitenleiste von „Erkunden“ wählen; Schaltflächenbeschriftungen werden umbrochen statt abgeschnitten"
-              - "Mit einer früheren Version gescannte Volumes müssen neu gescannt werden, bevor die Seite „Duplikate“ sie auflisten kann"
-              - "Nach dem Upgrade muss ein Administrator die Systemaufgaben einmal erneut freigeben"
-              - "Bestehende Einstellungen und gespeicherte Scanberichte beibehalten"
-            fr:
-              - "Nouvelle page Doublons qui trouve, à partir de l’analyse, les dossiers identiques et les gros fichiers en double sur les volumes Btrfs, sans lire le contenu des fichiers"
-              - "Chaque groupe de doublons garde une copie et indique pourquoi : votre choix, un dossier partagé préféré, elle reste avec son dossier, la copie la plus ancienne ou le chemin le plus court ; vous pouvez choisir une autre copie à garder à tout moment"
-              - "Choisir dans les Paramètres les dossiers partagés préférés pour les copies gardées"
-              - "Voir l’espace libéré par chaque groupe et toutes ses copies, avec la copie gardée signalée"
-              - "Les dossiers en partie identiques apparaissent sur une seule ligne qui ne supprime que leurs éléments identiques, et une ligne qui couvre plusieurs groupes indique combien elle en contient"
-              - "Tout sélectionner dans un volume ou un dossier partagé, avec la progression, un bouton Arrêter et la raison de chaque élément non sélectionné"
-              - "Ajouter des doublons à la liste de nettoyage et vérifier chaque élément avant le nettoyage ; les copies gardées sont revérifiées juste avant toute suppression"
-              - "Un nettoyage qui supprimerait une copie gardée par un autre groupe est refusé, et Syno Reclaim nomme cette copie et les deux groupes"
-              - "Le nettoyage déplace désormais les éléments dans la corbeille du dossier partagé, pour pouvoir les restaurer dans File Station ; dans un dossier partagé sans corbeille, ils ne sont supprimés définitivement qu’après votre confirmation"
-              - "La page Corbeille montre ce que Syno Reclaim a déplacé depuis l’analyse ; Syno Reclaim ne vide jamais une corbeille"
-              - "Le nettoyage n’a plus de limite d’éléments, indique ce qu’il fait et peut être annulé"
-              - "Des raisons plus claires quand un élément ne peut pas être nettoyé, avec la possibilité de le retirer de la liste de nettoyage"
-              - "Choisir le volume dans la barre de page d’Explorer ; les libellés des boutons passent à la ligne au lieu d’être coupés"
-              - "Les volumes analysés avec une version précédente doivent être analysés de nouveau pour apparaître sur la page Doublons"
-              - "Après la mise à jour, un administrateur doit approuver une nouvelle fois les tâches système"
-              - "Conserver les réglages existants et les rapports d’analyse enregistrés"
-            es:
-              - "Nueva página Duplicados que encuentra, a partir del análisis, carpetas idénticas y archivos grandes duplicados en volúmenes Btrfs, sin leer el contenido de los archivos"
-              - "Cada grupo de duplicados conserva una copia e indica por qué: su elección, una carpeta compartida preferida, se queda con su carpeta, la copia más antigua o la ruta más corta; puede elegir otra copia para conservar en cualquier momento"
-              - "Elegir en Configuración las carpetas compartidas preferidas para las copias conservadas"
-              - "Ver cuánto espacio libera cada grupo y todas sus copias, con la copia conservada marcada"
-              - "Las carpetas idénticas en parte se muestran en una sola fila que elimina solo sus elementos idénticos, y una fila que abarca varios grupos indica cuántos incluye"
-              - "Seleccionar todos los duplicados de un volumen o una carpeta compartida, con progreso, un botón Detener y el motivo de lo que no se pudo seleccionar"
-              - "Añadir duplicados a la lista de limpieza y revisar cada elemento antes de limpiar; las copias conservadas se vuelven a comprobar justo antes de quitar nada"
-              - "Se rechaza una limpieza que quitaría una copia que conserva otro grupo, y Syno Reclaim indica esa copia y ambos grupos"
-              - "La limpieza ahora mueve los elementos a la papelera de reciclaje de la carpeta compartida, para poder restaurarlos en File Station; en una carpeta compartida sin papelera se eliminan para siempre solo después de que lo confirme"
-              - "La página Papelera de reciclaje muestra lo que Syno Reclaim ha movido desde el análisis; Syno Reclaim nunca vacía una papelera"
-              - "La limpieza ya no tiene límite de elementos, muestra lo que está haciendo y se puede cancelar"
-              - "Motivos más claros cuando un elemento no se puede limpiar, con la opción de quitarlo de la lista de limpieza"
-              - "Elegir el volumen en la barra de página de Explorar; las etiquetas de los botones pasan a la línea siguiente en lugar de cortarse"
-              - "Los volúmenes analizados con una versión anterior deben analizarse de nuevo para aparecer en la página Duplicados"
-              - "Tras actualizar, un administrador debe aprobar de nuevo las tareas del sistema"
-              - "Se conservan los ajustes existentes y los informes de análisis guardados"
-            it:
-              - "Nuova pagina Duplicati che trova, in base alla scansione, cartelle identiche e file grandi duplicati sui volumi Btrfs, senza leggere il contenuto dei file"
-              - "Ogni gruppo di duplicati conserva una copia e ne indica il motivo: tua scelta, una cartella condivisa preferita, resta con la sua cartella, la copia più vecchia o il percorso più breve; puoi scegliere un’altra copia da conservare in qualsiasi momento"
-              - "Scegliere nelle Impostazioni le cartelle condivise preferite per le copie conservate"
-              - "Vedere quanto spazio libera ogni gruppo e tutte le sue copie, con la copia conservata evidenziata"
-              - "Le cartelle identiche solo in parte appaiono come un’unica riga che rimuove solo gli elementi identici, e una riga che copre più gruppi indica quanti ne include"
-              - "Selezionare tutti i duplicati di un volume o di una cartella condivisa, con avanzamento, un pulsante Interrompi e il motivo di ciò che non è stato possibile selezionare"
-              - "Aggiungere i duplicati alla lista di pulizia e controllare ogni elemento prima della pulizia; le copie conservate vengono ricontrollate subito prima di rimuovere qualsiasi cosa"
-              - "Una pulizia che rimuoverebbe una copia conservata da un altro gruppo viene rifiutata, e Syno Reclaim indica quella copia ed entrambi i gruppi"
-              - "La pulizia ora sposta gli elementi nel Cestino della cartella condivisa, così puoi ripristinarli in File Station; in una cartella condivisa senza Cestino vengono eliminati definitivamente solo dopo la tua conferma"
-              - "La pagina Cestino mostra cosa ha spostato Syno Reclaim dalla scansione; Syno Reclaim non svuota mai un Cestino"
-              - "La pulizia non ha più un limite di elementi, mostra cosa sta facendo e può essere annullata"
-              - "Motivi più chiari quando un elemento non può essere pulito, con la possibilità di toglierlo dalla lista di pulizia"
-              - "Scegliere il volume nella barra della pagina Esplora; le etichette dei pulsanti vanno a capo invece di essere troncate"
-              - "I volumi analizzati con una versione precedente devono essere analizzati di nuovo per comparire nella pagina Duplicati"
-              - "Dopo l’aggiornamento, un amministratore deve approvare di nuovo le attività di sistema"
-              - "Mantenere le impostazioni esistenti e i rapporti di scansione salvati"
-          0.1.1-1641:
-            en:
-              - System partition cleanup can now move files to a shared folder on an ext4 volume
-              - System partition cleanup no longer leaves an empty temporary folder in the destination shared folder
-              - Quota files at the root of an ext4 volume are now shown as DSM data and protected from cleanup
-              - After upgrading, an administrator needs to approve the system tasks once more
-              - Keep existing settings and saved scan reports
-            zh-TW:
-              - 系統分割區清理現在可以選擇 ext4 儲存空間上的共用資料夾作為目的地
-              - 系統分割區清理完成後，不再於目的地共用資料夾留下空的暫存資料夾
-              - ext4 儲存空間根目錄的配額檔案會標示為 DSM 資料並受到保護，不會被清理
-              - 升級後，管理員需要再核准一次系統工作
-              - 保留現有設定與已儲存的掃描報告
-            zh-CN:
-              - 系统分区清理现在可以选择 ext4 存储空间上的共享文件夹作为目标
-              - 系统分区清理完成后，不再在目标共享文件夹中留下空的临时文件夹
-              - ext4 存储空间根目录的配额文件会标记为 DSM 数据并受到保护，不会被清理
-              - 升级后，管理员需要再批准一次系统任务
-              - 保留现有设置与已保存的扫描报告
-            ja:
-              - システムパーティションのクリーンアップで、ext4 ボリューム上の共有フォルダを移動先に選択可能に
-              - システムパーティションのクリーンアップ後、移動先の共有フォルダに空の一時フォルダが残らないように
-              - ext4 ボリュームのルートにあるクォータファイルを DSM のデータとして表示し、クリーンアップから保護
-              - アップグレード後、管理者がシステムタスクをもう一度承認する必要があります
-              - 既存の設定と保存済みスキャンレポートを保持
-            ko:
-              - 시스템 파티션 정리에서 ext4 볼륨의 공유 폴더를 대상으로 선택할 수 있음
-              - 시스템 파티션 정리 후 대상 공유 폴더에 빈 임시 폴더가 남지 않음
-              - ext4 볼륨 루트의 할당량 파일을 DSM 데이터로 표시하고 정리되지 않도록 보호
-              - 업그레이드 후 관리자가 시스템 작업을 한 번 더 승인해야 함
-              - 기존 설정과 저장된 스캔 보고서 유지
-            de:
-              - Die Bereinigung der Systempartition kann jetzt einen freigegebenen Ordner auf einem ext4-Volume als Ziel verwenden
-              - Nach der Bereinigung der Systempartition bleibt im freigegebenen Zielordner kein leerer temporärer Ordner mehr zurück
-              - Kontingentdateien im Stammverzeichnis eines ext4-Volumes werden als DSM-Daten angezeigt und vor der Bereinigung geschützt
-              - Nach dem Upgrade muss ein Administrator die Systemaufgaben einmal erneut freigeben
-              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
-            fr:
-              - Le nettoyage de la partition système peut désormais utiliser un dossier partagé sur un volume ext4 comme destination
-              - Le nettoyage de la partition système ne laisse plus de dossier temporaire vide dans le dossier partagé de destination
-              - Les fichiers de quota à la racine d’un volume ext4 sont affichés comme données DSM et protégés contre le nettoyage
-              - Après la mise à jour, un administrateur doit approuver une nouvelle fois les tâches système
-              - Conserver les réglages existants et les rapports d’analyse enregistrés
-            es:
-              - La limpieza de la partición del sistema ahora puede usar como destino una carpeta compartida en un volumen ext4
-              - La limpieza de la partición del sistema ya no deja una carpeta temporal vacía en la carpeta compartida de destino
-              - Los archivos de cuota en la raíz de un volumen ext4 se muestran como datos de DSM y quedan protegidos frente a la limpieza
-              - Tras actualizar, un administrador debe aprobar de nuevo las tareas del sistema
-              - Se conservan los ajustes existentes y los informes de análisis guardados
-            it:
-              - La pulizia della partizione di sistema ora può usare come destinazione una cartella condivisa su un volume ext4
-              - La pulizia della partizione di sistema non lascia più una cartella temporanea vuota nella cartella condivisa di destinazione
-              - I file di quota nella radice di un volume ext4 vengono mostrati come dati DSM e protetti dalla pulizia
-              - Dopo l'aggiornamento, un amministratore deve approvare di nuovo le attività di sistema
-              - Conserva le impostazioni esistenti e i report di analisi salvati
-          0.1.1-1640:
-            en:
-              - If a delete is interrupted, for example by a restart or power cut, Syno Reclaim shows where it stopped and lets you delete the rest or finish the interrupted cleanup
-              - After upgrading, an administrator needs to approve the system tasks once more
-              - Keep existing settings and saved scan reports
-            zh-TW:
-              - 刪除中途被中斷（例如重新開機或斷電）時，Syno Reclaim 會顯示停在哪裡，並可繼續刪除剩下的項目或完成上次中斷的清理
-              - 升級後，管理員需要再核准一次系統工作
-              - 保留現有設定與已儲存的掃描報告
-            zh-CN:
-              - 删除中途被中断（例如重新启动或断电）时，Syno Reclaim 会显示停在哪里，并可继续删除剩下的项目或完成上次中断的清理
-              - 升级后，管理员需要再批准一次系统任务
-              - 保留现有设置与已保存的扫描报告
-            ja:
-              - 再起動や停電などで削除が中断された場合、Syno Reclaim が停止した位置を表示し、残りの削除や中断したクリーンアップの完了が可能に
-              - アップグレード後、管理者がシステムタスクをもう一度承認する必要があります
-              - 既存の設定と保存済みスキャンレポートを保持
-            ko:
-              - 재시작이나 정전 등으로 삭제가 중단되면 Syno Reclaim이 멈춘 위치를 보여 주고, 남은 항목을 삭제하거나 중단된 정리를 완료할 수 있음
-              - 업그레이드 후 관리자가 시스템 작업을 한 번 더 승인해야 함
-              - 기존 설정과 저장된 스캔 보고서 유지
-            de:
-              - Wird ein Löschvorgang unterbrochen, etwa durch einen Neustart oder Stromausfall, zeigt Syno Reclaim, wo er stehen blieb, und Sie können den Rest löschen oder die unterbrochene Bereinigung abschließen
-              - Nach dem Upgrade muss ein Administrator die Systemaufgaben einmal erneut freigeben
-              - Bestehende Einstellungen und gespeicherte Scanberichte beibehalten
-            fr:
-              - Si une suppression est interrompue, par exemple par un redémarrage ou une coupure de courant, Syno Reclaim indique où elle s’est arrêtée et vous permet de supprimer le reste ou de terminer le nettoyage interrompu
-              - Après la mise à jour, un administrateur doit approuver une nouvelle fois les tâches système
-              - Conserver les réglages existants et les rapports d’analyse enregistrés
-            es:
-              - Si una eliminación se interrumpe, por ejemplo por un reinicio o un corte de luz, Syno Reclaim muestra dónde se detuvo y permite eliminar el resto o terminar la limpieza interrumpida
-              - Tras actualizar, un administrador debe aprobar de nuevo las tareas del sistema
-              - Se conservan los ajustes existentes y los informes de análisis guardados
-            it:
-              - Se un'eliminazione viene interrotta, ad esempio da un riavvio o da un'interruzione di corrente, Syno Reclaim mostra dove si è fermata e permette di eliminare il resto o completare la pulizia interrotta
-              - Dopo l'aggiornamento, un amministratore deve approvare di nuovo le attività di sistema
-              - Conserva le impostazioni esistenti e i report di analisi salvati
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1672-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-duplicates-folders-1672-en.png
@@ -364,15 +137,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1672-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1672
+        version: 0.1.1-1673
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 3a75656ddf4b6d389456ffd4eba83baed06a11f7ed5a36fe34a2cfa901c708a1
-        md5: bffcce639fb5fc92926095aab997561d
-        size: 16960000
+        sha256: 27f40a1513fedb9c70bfc2dadc36ad098e17c74d33886b93894966d0b74de9f7
+        md5: 7482800a8a7609d5377af8a13d379d13
+        size: 16967168
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -389,19 +162,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T21:51:21Z
-          source_ref: fd41ff66e32d92cdd4e3ffa88906e4022f942a1f
+          reviewed_at: 2026-11-17T08:28:51Z
+          source_ref: a386db526feff42eb67bd923fceba536638fc2f7
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1672
+        version: 0.1.1-1673
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: ffc44267f479a41aa3286fe35fb5e23db335a200d96fb149873affd6b0035efe
-        md5: 007d3d8bcf4ad7a6b73369872fb8316b
-        size: 17849344
+        sha256: 62ced040dcd6465925d1a5f27b726759fb8482a121c8194ab6c6de67fb541f66
+        md5: 6957e57b4bf8fbc1c1f054d7e2ca3bc7
+        size: 17857536
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -418,11 +191,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T21:51:21Z
-          source_ref: fd41ff66e32d92cdd4e3ffa88906e4022f942a1f
+          reviewed_at: 2026-11-17T08:28:51Z
+          source_ref: a386db526feff42eb67bd923fceba536638fc2f7
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1672
+        version: 0.1.1-1673
         arch:
           - apollolake
           - avoton
@@ -451,9 +224,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: a24d5b074371264d06800ab2f98f0611be7a319b3ebab081caa3e386f4490c41
-        md5: f77bf5b806585c58794a07665ba194f9
-        size: 18217984
+        sha256: c0adc00d9b8e28428fa5f09521aaae48fd90456c9c78b7f501abf7fe676def43
+        md5: 2ef86318c9e731944ca7103b644df216
+        size: 18221568
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -470,8 +243,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-16T21:51:21Z
-          source_ref: fd41ff66e32d92cdd4e3ffa88906e4022f942a1f
+          reviewed_at: 2026-11-17T08:28:51Z
+          source_ref: a386db526feff42eb67bd923fceba536638fc2f7
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
