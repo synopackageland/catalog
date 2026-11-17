@@ -253,7 +253,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0177
+      release: v0.1.0-0178
       access: private
     metadata:
       guides:
@@ -530,6 +530,34 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0178:
+            en:
+              - "Phone page: Synology Drive, Active Backup for Business and its Portal fit the screen, and the Portal opens sooner"
+              - "Phone page: short Chinese and Japanese column headers no longer break between characters"
+            zh-TW:
+              - "手機版 Synology Drive、Active Backup for Business 與其 Portal 版面修正，Portal 開啟更快"
+              - "手機版中文、日文欄位標題不再被逐字斷行"
+            zh-CN:
+              - "手机版 Synology Drive、Active Backup for Business 及其 Portal 版面修正，Portal 打开更快"
+              - "手机版中文、日文栏位标题不再被逐字断行"
+            ja:
+              - "スマホ版で Synology Drive、Active Backup for Business とそのポータルが画面に収まり、ポータルが速く開くようになりました"
+              - "スマホ版で中国語・日本語の短い列見出しが 1 文字ずつ改行されなくなりました"
+            ko:
+              - "모바일 버전에서 Synology Drive, Active Backup for Business 및 포털이 화면에 맞게 표시되고 포털이 더 빨리 열림"
+              - "모바일 버전에서 짧은 중국어·일본어 열 머리글이 글자 단위로 줄바꿈되지 않음"
+            de:
+              - "Smartphone-Seite: Synology Drive, Active Backup for Business und sein Portal passen auf den Bildschirm, und das Portal öffnet sich schneller"
+              - "Smartphone-Seite: kurze chinesische und japanische Spaltenüberschriften werden nicht mehr zwischen einzelnen Zeichen umbrochen"
+            fr:
+              - "Page mobile : Synology Drive, Active Backup for Business et son portail adaptés à l’écran, et le portail s’ouvre plus vite"
+              - "Page mobile : les en-têtes de colonne courts en chinois et en japonais ne sont plus coupés entre les caractères"
+            es:
+              - "Página móvil: Synology Drive, Active Backup for Business y su portal se ajustan a la pantalla, y el portal se abre antes"
+              - "Página móvil: los encabezados de columna cortos en chino y japonés ya no se cortan entre caracteres"
+            it:
+              - "Pagina mobile: Synology Drive, Active Backup for Business e il suo portale si adattano allo schermo, e il portale si apre prima"
+              - "Pagina mobile: le intestazioni di colonna brevi in cinese e giapponese non vanno più a capo tra un carattere e l’altro"
           0.1.0-0177:
             en:
               - "Phone page: charts, host menus and chart time labels fit the screen"
@@ -699,25 +727,6 @@ packages:
             it:
               - "La pagina per il telefono ha un indirizzo breve: aggiungi /m all’indirizzo di DSM. Codici QR e link ora lo usano"
               - "Richiede DSM 7.2 o versioni successive"
-          0.1.0-0170:
-            en:
-              - "Drop-down lists show the selected name correctly"
-            zh-TW:
-              - "下拉選單選取後名稱正確顯示"
-            zh-CN:
-              - "下拉菜单选取后名称正确显示"
-            ja:
-              - "ドロップダウンリストで選択した名前が正しく表示されるように"
-            ko:
-              - "드롭다운 목록에서 선택한 이름이 올바르게 표시됨"
-            de:
-              - "Dropdown-Listen zeigen den ausgewählten Namen korrekt an"
-            fr:
-              - "Les listes déroulantes affichent correctement le nom sélectionné"
-            es:
-              - "Las listas desplegables muestran correctamente el nombre seleccionado"
-            it:
-              - "Gli elenchi a discesa mostrano correttamente il nome selezionato"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -774,14 +783,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0175-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0177
+        version: 0.1.0-0178
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: aa56dfbff59b5ee61cf1feb2e2828bc03514db96bd0eb291c6ac7430cfb0a7e2
-        md5: 23d3151b02c241e1d6fe51cbc65c95f3
+        sha256: e6f72594d4bba3d578a2764d4f7e092b2eff186aedd99763ebf5ffba95bea69c
+        md5: 9c8f126b1974b98eff8abb06965b00b4
         size: 18247680
         facts:
           built_with: sdk
@@ -799,18 +808,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T08:37:24Z
-          source_ref: 233c2a0dcbc3a050eb0ebec489bfdbe64beaecd6
+          reviewed_at: 2026-11-17T10:01:54Z
+          source_ref: d4867d1a70e359583166e58c5e1070c4224db6f1
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0177
+        version: 0.1.0-0178
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 084b8c44b96e781899b76e0f8e08e4cc6d1188e01dfc707d6366b053b39db83e
-        md5: 0eb8fa42134be682f5ccb4c3557f07b8
+        sha256: 58f4562c9e5f647f59e2e315e54a28d1d3ddb9a5006360c478d1863e541a060a
+        md5: b96388e31f4aae2e31d9ef45c76e3efd
         size: 18841600
         facts:
           built_with: sdk
@@ -828,11 +837,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T08:37:24Z
-          source_ref: 233c2a0dcbc3a050eb0ebec489bfdbe64beaecd6
+          reviewed_at: 2026-11-17T10:01:54Z
+          source_ref: d4867d1a70e359583166e58c5e1070c4224db6f1
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0177
+        version: 0.1.0-0178
         arch:
           - apollolake
           - avoton
@@ -861,8 +870,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: e8a07c2b9bb5f88e540094e018bf7c773aa398ec9b12068f90a78d6d1e128442
-        md5: b13d3edef450149f13082689dc370e4b
+        sha256: a1006d60249effa53d56feff01973e88b788b4f674e1f3a35fcad0601ea6d3c7
+        md5: afce35aa5d8728724b9d34639c982f2e
         size: 19630080
         facts:
           built_with: sdk
@@ -880,8 +889,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T08:37:24Z
-          source_ref: 233c2a0dcbc3a050eb0ebec489bfdbe64beaecd6
+          reviewed_at: 2026-11-17T10:01:54Z
+          source_ref: d4867d1a70e359583166e58c5e1070c4224db6f1
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
