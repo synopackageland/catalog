@@ -963,7 +963,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0113
+      release: v0.2.2-0114
       access: private
     metadata:
       guides:
@@ -1061,6 +1061,34 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0114:
+            de:
+              - "Auf dem Smartphone verdeckt die Statuszeile der Suche nicht mehr das Feld „Ergebnisse filtern“"
+              - "Kernupdates zeigt ein installiertes Medienwerkzeug nicht mehr als „Nicht installiert“ an, wenn sein Status nicht gelesen werden kann"
+            en:
+              - "On a phone, the search status line no longer covers the Filter results field"
+              - "Core updates no longer shows an installed media tool as Not installed when its status cannot be read"
+            es:
+              - "En el teléfono, la línea de estado de la búsqueda ya no tapa el campo «Filtrar resultados»"
+              - "Actualizaciones del motor ya no muestra una herramienta multimedia instalada como «No instalado» cuando no puede leer su estado"
+            fr:
+              - "Sur téléphone, la ligne d'état de la recherche ne recouvre plus le champ « Filtrer les résultats »"
+              - "Mises à jour du moteur n'affiche plus un outil multimédia installé comme « Non installé » lorsque son état ne peut pas être lu"
+            it:
+              - "Sul telefono, la riga di stato della ricerca non copre più il campo «Filtra risultati»"
+              - "Aggiornamenti del motore non mostra più uno strumento multimediale installato come «Non installato» quando non riesce a leggerne lo stato"
+            ja:
+              - "スマホ版の検索ページで、状態の行が「結果を絞り込む」欄に重ならなくなりました"
+              - "コアの更新で、メディアツールの状態を読み取れないときに、インストール済みのツールを「未インストール」と表示しなくなりました"
+            ko:
+              - "휴대폰 검색 페이지에서 상태 줄이 '결과 필터링' 입력란을 가리지 않음"
+              - "코어 업데이트에서 미디어 도구 상태를 읽지 못할 때 설치된 도구를 '설치되지 않음'으로 표시하지 않음"
+            zh-CN:
+              - "手机版搜索页的状态行不再遮住“筛选结果”栏"
+              - "核心更新在无法读取视频工具状态时，不再把已安装的工具显示为“尚未安装”"
+            zh-TW:
+              - "手機版搜尋頁的狀態列不再蓋住「篩選結果」欄位"
+              - "核心更新在讀不到影音工具狀態時，不再把已安裝的工具顯示為「尚未安裝」"
           0.2.2-0113:
             en:
             - "On a phone, the page toolbar takes fewer rows and sits at the top edge"
@@ -1194,25 +1222,6 @@ packages:
               - Los paneles y menús se ven mejor en el teléfono
             it:
               - Pannelli e menu si vedono meglio sullo smartphone
-          0.2.2-0106:
-            en:
-              - Long button labels wrap instead of being cut off
-            zh-TW:
-              - 較長的按鈕文字會換行顯示，不再被截斷
-            zh-CN:
-              - 较长的按钮文字会换行显示，不再被截断
-            ja:
-              - 長いボタンの文字を省略せず折り返して表示
-            ko:
-              - 긴 버튼 문구가 잘리지 않고 줄바꿈되어 표시됨
-            de:
-              - Lange Schaltflächentexte werden umbrochen statt abgeschnitten
-            fr:
-              - Les libellés de bouton longs passent à la ligne au lieu d’être tronqués
-            es:
-              - Los textos largos de los botones pasan a la línea siguiente en lugar de recortarse
-            it:
-              - I testi lunghi dei pulsanti vanno a capo invece di essere troncati
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0113-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download-0113-en.png
@@ -1225,15 +1234,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-phone-settings-0113-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0113
+        version: 0.2.2-0114
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 3f3192021d188dde762c69a946337941cd33ac3cc283f6061c9e925a23775d04
-        md5: f390c4b0b431e7a633f316f6325cd228
-        size: 68615680
+        sha256: ffe05078ad91ee9a9a257af1798de26a357b46e47ee77df790361a6b9eca8b04
+        md5: 0d01811703202ea6725d9115d838175b
+        size: 68616704
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1251,11 +1260,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T02:05:34Z
-          source_ref: 13e36bfd864b4b7c2708362c962acddd4d6f8770
+          reviewed_at: 2026-11-18T06:39:53Z
+          source_ref: a902718c956bf2877a33b6b5b9e8514a440c15a6
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0113
+        version: 0.2.2-0114
         arch:
           - apollolake
           - avoton
@@ -1284,9 +1293,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 1dc5aa5b8ed3c24f4f8848ff0355132b3134b5e015477ffe25b22e8c445e7e77
-        md5: 663ecf8821300beb0a59f51d5586d993
-        size: 72308736
+        sha256: 40a258d5cb4e527b08afb69343075c8f24423a4e1d77f02d86e0a394f896c132
+        md5: 0ab60b9ebad33515891e7a91e28bd3ca
+        size: 72309760
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1304,8 +1313,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T02:05:34Z
-          source_ref: 13e36bfd864b4b7c2708362c962acddd4d6f8770
+          reviewed_at: 2026-11-18T06:39:53Z
+          source_ref: a902718c956bf2877a33b6b5b9e8514a440c15a6
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
