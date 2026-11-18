@@ -296,7 +296,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-connect
-      release: v0.1.0-0184
+      release: v0.1.0-0185
       access: public
     metadata:
       guides:
@@ -573,6 +573,34 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0185:
+            de:
+              - "Smartphone-Seite: beim Hinzufügen eines NAS fragt die Seite nach, wenn dem Zertifikat vertraut werden muss; Apps öffnen sich sofort mit einem Startbildschirm, und die Unter-Apps von Surveillance Station passen auf das Smartphone"
+              - "Der Assistent zum Hinzufügen einer Verbindung zeigt alle Wege auf einmal"
+            en:
+              - "Phone page: adding a NAS asks you to trust its certificate when needed; Apps open at once with a launch screen, and Surveillance Station sub-Apps fit the phone"
+              - "The Add connection wizard shows every way at once"
+            es:
+              - "Página móvil: al añadir un NAS, la página pide confiar en su certificado cuando hace falta; las aplicaciones se abren al instante con una pantalla de inicio y las subaplicaciones de Surveillance Station se ajustan al teléfono"
+              - "El asistente para añadir una conexión muestra todas las formas a la vez"
+            fr:
+              - "Page mobile : lors de l’ajout d’un NAS, la page propose de faire confiance à son certificat si nécessaire ; les applications s’ouvrent immédiatement avec un écran de lancement et les sous-applications de Surveillance Station s’adaptent au téléphone"
+              - "L’assistant d’ajout de connexion affiche toutes les méthodes d’un coup"
+            it:
+              - "Pagina mobile: quando aggiungi un NAS, la pagina chiede di considerare attendibile il suo certificato se necessario; le app si aprono subito con una schermata di avvio e le sotto-app di Surveillance Station si adattano al telefono"
+              - "La procedura guidata per aggiungere una connessione mostra tutti i modi insieme"
+            ja:
+              - "スマホ版で NAS を追加するとき、必要に応じて証明書を信頼するよう案内するようになりました。アプリは起動画面とともにすぐに開き、Surveillance Station のサブアプリがスマホの画面に収まります"
+              - "接続の追加ウィザードで、すべての方法を一度に表示するようになりました"
+            ko:
+              - "모바일 버전에서 NAS를 추가할 때 필요하면 인증서를 신뢰하도록 안내함. 앱이 시작 화면과 함께 바로 열리고, Surveillance Station 하위 앱이 휴대폰 화면에 맞게 표시됨"
+              - "연결 추가 마법사에서 모든 방법을 한 번에 표시함"
+            zh-CN:
+              - "手机版添加 NAS 时，需要时会提示信任其证书；App 会立即打开并显示启动画面，Surveillance Station 的子 App 适配手机屏幕"
+              - "添加连接向导一次显示所有方式"
+            zh-TW:
+              - "手機版加入 NAS 時，需要時會提示信任其憑證；App 會立即開啟並顯示啟動畫面，Surveillance Station 的子 App 符合手機畫面"
+              - "新增連線精靈一次顯示所有方式"
           0.1.0-0184:
             de:
               - "Auf das neueste UI-Kit und SDK aktualisiert"
@@ -787,34 +815,6 @@ packages:
             it:
               - "Pagina mobile: grafici, menu degli host ed etichette orarie si adattano allo schermo"
               - "Sul telefono, URL delle app, dettagli dell’app e sezioni delle impostazioni di Connect si adattano allo schermo, e l’elenco non si vede più dietro una sezione aperta"
-          0.1.0-0176:
-            en:
-              - "Phone page: Apps such as Connect and Reclaim open instead of loading forever"
-              - "Phone page: Package Center, Log Center and tables fit the screen, and wide tables scroll sideways with the first column pinned"
-            zh-TW:
-              - "手機版開 Connect、Reclaim 等 App 不再一直卡在載入中"
-              - "手機版套件中心、日誌中心與表格版面修正，寬表格可左右捲動且第一欄固定"
-            zh-CN:
-              - "手机版打开 Connect、Reclaim 等 App 不再一直卡在加载中"
-              - "手机版套件中心、日志中心与表格版面修正，宽表格可左右滚动且第一列固定"
-            ja:
-              - "スマホ版で Connect や Reclaim などの App が読み込み中のまま止まらなくなりました"
-              - "スマホ版のパッケージセンター、ログセンター、表のレイアウトを修正。幅の広い表は横にスクロールでき、先頭列は固定"
-            ko:
-              - "모바일 버전에서 Connect, Reclaim 등 App이 로딩 중에 멈추지 않음"
-              - "모바일 버전의 패키지 센터, 로그 센터, 표 레이아웃 수정. 넓은 표는 첫 열을 고정한 채 가로로 스크롤"
-            de:
-              - "Smartphone-Seite: Apps wie Connect und Reclaim öffnen sich, statt endlos zu laden"
-              - "Smartphone-Seite: Paket-Zentrum, Protokoll-Center und Tabellen passen auf den Bildschirm, breite Tabellen scrollen seitlich mit fixierter erster Spalte"
-            fr:
-              - "Page mobile : les applications comme Connect et Reclaim s’ouvrent au lieu de charger sans fin"
-              - "Page mobile : Centre de paquets, Centre des journaux et tableaux adaptés à l’écran, les tableaux larges défilent horizontalement avec la première colonne fixe"
-            es:
-              - "Página móvil: las aplicaciones como Connect y Reclaim se abren en lugar de quedarse cargando"
-              - "Página móvil: Centro de paquetes, Centro de registros y tablas se ajustan a la pantalla, y las tablas anchas se desplazan en horizontal con la primera columna fija"
-            it:
-              - "Pagina mobile: le app come Connect e Reclaim si aprono invece di restare in caricamento"
-              - "Pagina mobile: Centro pacchetti, Centro registri e tabelle si adattano allo schermo, le tabelle larghe scorrono in orizzontale con la prima colonna fissa"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -876,15 +876,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-phone-nas-status-0182-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0184
+        version: 0.1.0-0185
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f2e7fa313f226fce3340e28ba5c00d479860bfeebddf38f291258dc5cc356901
-        md5: b5ee221e4c5c555580bcd23068c37855
-        size: 18278400
+        sha256: 2e87e08babebca0938dd183c33589f865e188378656e15b568cf62a67510420e
+        md5: 35dc2a9f7c82f0ed9b81a61f05c79d25
+        size: 18298880
         facts:
           built_with: sdk
           sdk_backend: go
@@ -901,19 +901,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T09:20:16Z
-          source_ref: 8ff3591cb5de04414ae45ed91198102a127ea04d
+          reviewed_at: 2026-11-18T12:34:06Z
+          source_ref: 656c6be1a44e53bdf6f17bcfe055cf1fe0721a91
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0184
+        version: 0.1.0-0185
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 81689ce9620b8007a30e2ae69e9d74e9e3766974950446dee8b2d89f39c753c2
-        md5: 6081434a9ac10ed9fd2d9ddfe3be89b0
-        size: 18872320
+        sha256: 9a964c04f0c734e52b14a3ada135675baa82f4a6fd0232ab68a774756669a184
+        md5: 74263e0e7f669b2d9c37e076af29095c
+        size: 18892800
         facts:
           built_with: sdk
           sdk_backend: go
@@ -930,11 +930,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T09:20:16Z
-          source_ref: 8ff3591cb5de04414ae45ed91198102a127ea04d
+          reviewed_at: 2026-11-18T12:34:06Z
+          source_ref: 656c6be1a44e53bdf6f17bcfe055cf1fe0721a91
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0184
+        version: 0.1.0-0185
         arch:
           - apollolake
           - avoton
@@ -963,9 +963,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: fe1ea9742c8c108567e6ab00382478ae31b761e7cadbdf3815e5593bf87c662a
-        md5: 9a2a6836cd02c371e63d86d49e35a5a8
-        size: 19660800
+        sha256: 7448685001befc64be342c657b288eddcc7536282f23f127b9516a77efd949f0
+        md5: 5e4332b96a14beafd3131a996f56e830
+        size: 19681280
         facts:
           built_with: sdk
           sdk_backend: go
@@ -982,8 +982,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T09:20:16Z
-          source_ref: 8ff3591cb5de04414ae45ed91198102a127ea04d
+          reviewed_at: 2026-11-18T12:34:06Z
+          source_ref: 656c6be1a44e53bdf6f17bcfe055cf1fe0721a91
           source_repo: synopackageland/syno-pkg-land-connect
   - recommended: true
     category: files
