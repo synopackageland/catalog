@@ -126,15 +126,20 @@ packages:
             it:
             - "Aggiornamento interno dei componenti dell’interfaccia; le pagine restano uguali"
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1672-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-duplicates-folders-1672-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-duplicates-group-1672-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-duplicates-files-1672-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-duplicates-review-1672-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-packages-details-1672-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-recycle-details-1672-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/08-snapshots-1672-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1672-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-explore-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-duplicates-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-duplicates-folders-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/05-duplicates-group-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/06-packages-details-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/07-recycle-details-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/08-history-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1675-en.png
+      screenshots_mobile:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-phone-overview-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-phone-explore-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/03-phone-duplicates-1675-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-phone-duplicates-folders-1675-en.png
     pins:
       - package: SynoReclaim
         version: 0.1.1-1675
@@ -812,11 +817,16 @@ packages:
                 attendibili includono le impronte dei certificati, mentre gli indirizzi temporanei
                 Cloudflare e le credenziali sono esclusi
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0175-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-compare-0175-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-app-urls-0175-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-cloudflare-0175-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0175-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-overview-0182-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-compare-0182-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-app-urls-0182-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0182-en.png
+      screenshots_mobile:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-phone-overview-0182-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-dsm-on-your-phone-0182-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-phone-apps-0182-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-phone-storage-manager-0182-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-phone-nas-status-0182-en.png
     pins:
       - package: SynoPkgConnect
         version: 0.1.0-0182
@@ -1186,11 +1196,15 @@ packages:
             it:
               - I testi lunghi dei pulsanti vanno a capo invece di essere troncati
       screenshots:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-extensions-0081-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0087-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0113-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download-0113-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-search-0113-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/04-core-updates-0113-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0113-en.png
+      screenshots_mobile:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-phone-downloads-0113-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-phone-menu-0113-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-phone-settings-0113-en.png
     pins:
       - package: SynoPkgGopeed
         version: 0.2.2-0113
