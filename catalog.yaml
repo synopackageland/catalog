@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-reclaim
-      release: v0.1.1-1675
+      release: v0.1.1-1676
       access: public
     metadata:
       guides:
@@ -49,6 +49,25 @@ packages:
         it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. Sui volumi Btrfs, la pagina Duplicati trova cartelle identiche e file grandi duplicati, conserva una copia di ciascuno, spiega quale resta e mostra quanto spazio libera rimuovere il resto. La pulizia segue un piano verificato, controllato di nuovo subito prima dell'esecuzione, e sposta gli elementi nel Cestino della cartella condivisa così da poterli ripristinare. È richiesto l’accesso come amministratore DSM; approva le attività di sistema prima di usare le funzioni che ne dipendono"
       changelog:
         releases:
+          0.1.1-1676:
+            de:
+              - "Auf das neueste UI-Kit und SDK aktualisiert"
+            en:
+              - "Updated to the latest UI kit and SDK"
+            es:
+              - "Actualizado al kit de interfaz y SDK más recientes"
+            fr:
+              - "Mise à jour vers les derniers kit d'interface et SDK"
+            it:
+              - "Aggiornato all'ultimo kit di interfaccia e SDK"
+            ja:
+              - "最新の UI キットと SDK に更新しました"
+            ko:
+              - "최신 UI 키트와 SDK로 업데이트됨"
+            zh-CN:
+              - "更新至最新的 UI 组件库与 SDK"
+            zh-TW:
+              - "更新至最新的 UI 元件庫與 SDK"
           0.1.1-1675:
             en:
             - "On a phone, the page toolbar takes fewer rows and sits at the top edge"
@@ -142,15 +161,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-phone-duplicates-folders-1675-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1675
+        version: 0.1.1-1676
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f5e299b3491aae37901ddd9264fee1538a3355c7d7df5657ce53604a655a5847
-        md5: 88538662afed8e20eac599d727680395
-        size: 16966656
+        sha256: 2ffbf9f29aa54953620af4ff8592837c2d2964d91cc0532927a135a5bf752d0f
+        md5: 54e0e1e4905c85ac3e16a3990775df3f
+        size: 16977408
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -167,19 +186,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T08:27:57Z
-          source_ref: d30a460281be352f36010c0723d9568c78fe2133
+          reviewed_at: 2026-11-18T09:37:30Z
+          source_ref: 54f8391e9329c234181e62f4ef38c4bd7592ea67
           source_repo: synopackageland/syno-pkg-land-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1675
+        version: 0.1.1-1676
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: ad7c9d245fee08d33d7c2629b24a45b25cd47703e8fa2450079723499b3609ab
-        md5: 56ba0f0beca2932468e78977a7f979a7
-        size: 17857024
+        sha256: 234eb92dc37a3f4820d47a6bda28b3ecbefa19581b977bd226328ec8d1731d54
+        md5: 6f3e62227b00d10fcbbda6280ce67d6a
+        size: 17859584
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -196,11 +215,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T08:27:57Z
-          source_ref: d30a460281be352f36010c0723d9568c78fe2133
+          reviewed_at: 2026-11-18T09:37:30Z
+          source_ref: 54f8391e9329c234181e62f4ef38c4bd7592ea67
           source_repo: synopackageland/syno-pkg-land-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1675
+        version: 0.1.1-1676
         arch:
           - apollolake
           - avoton
@@ -229,9 +248,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 38b23654485189a9eadc29a7068ba4bf67018ffda939ec4d279e6ce01c9b5fbb
-        md5: 4bca5e88f1fc8d97b9b3ffd78552adce
-        size: 18220032
+        sha256: bf60d40421a5fb87e52cfb4ab575f31ab2ae1ef753d18b2ccaae5858c0bfd6c3
+        md5: 5ed450e3f20d84f8cbf6dcb5b46f4b29
+        size: 18235904
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -248,8 +267,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T08:27:57Z
-          source_ref: d30a460281be352f36010c0723d9568c78fe2133
+          reviewed_at: 2026-11-18T09:37:30Z
+          source_ref: 54f8391e9329c234181e62f4ef38c4bd7592ea67
           source_repo: synopackageland/syno-pkg-land-reclaim
   - recommended: true
     category: network
