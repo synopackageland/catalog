@@ -258,7 +258,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0182
+      release: v0.1.0-0183
       access: private
     metadata:
       guides:
@@ -535,6 +535,43 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0183:
+            de:
+              - "Smartphone-Seite: Start, Apps und Benachrichtigungen lassen sich durch Herunterziehen aktualisieren"
+              - "Smartphone-Seite: in Paket-Apps mit seitlichen Registerkarten öffnen sich die Registerkarten über die Menütaste; Seitenleisten stehen über oder unter dem Inhalt, und Listen füllen den Bildschirm"
+              - "Smartphone-Seite: „NAS hinzufügen“ nimmt auch ein NAS ohne Syno Connect Center auf und öffnet dessen DSM in einem neuen Tab; vertraut der Browser dem Zertifikat des NAS nicht, öffnen Sie DSM, akzeptieren es dort, und die Seite prüft nach der Rückkehr erneut"
+            en:
+              - "Phone page: pull down on Home, Apps and Notifications to refresh"
+              - "Phone page: in package Apps with side tabs, the tabs open from the menu button; side panels sit above or below the content and lists fill the screen"
+              - "Phone page: Add NAS also adds a NAS without Syno Connect Center and opens its DSM in a new tab; when the browser does not trust the NAS certificate, open DSM to accept it and the page checks again when you come back"
+            es:
+              - "Página móvil: desliza hacia abajo en Inicio, Aplicaciones y Notificaciones para actualizar"
+              - "Página móvil: en las aplicaciones de paquete con pestañas laterales, las pestañas se abren desde el botón de menú; los paneles laterales se colocan encima o debajo del contenido y las listas ocupan la pantalla"
+              - "Página móvil: Añadir NAS también añade un NAS sin Syno Connect Center y abre su DSM en una pestaña nueva; si el navegador no confía en el certificado del NAS, abre DSM para aceptarlo y la página vuelve a comprobarlo al regresar"
+            fr:
+              - "Page mobile : tirez vers le bas sur Accueil, Applications et Notifications pour actualiser"
+              - "Page mobile : dans les applications de paquet à onglets latéraux, les onglets s’ouvrent depuis le bouton de menu ; les panneaux latéraux se placent au-dessus ou au-dessous du contenu et les listes remplissent l’écran"
+              - "Page mobile : Ajouter un NAS accepte aussi un NAS sans Syno Connect Center et ouvre son DSM dans un nouvel onglet ; si le navigateur ne fait pas confiance au certificat du NAS, ouvrez DSM pour l’accepter, et la page vérifie de nouveau à votre retour"
+            it:
+              - "Pagina mobile: trascina verso il basso su Home, App e Notifiche per aggiornare"
+              - "Pagina mobile: nelle app dei pacchetti con schede laterali, le schede si aprono dal pulsante del menu; i pannelli laterali stanno sopra o sotto il contenuto e gli elenchi riempiono lo schermo"
+              - "Pagina mobile: Aggiungi NAS aggiunge anche un NAS senza Syno Connect Center e ne apre DSM in una nuova scheda; se il browser non considera attendibile il certificato del NAS, apri DSM per accettarlo e la pagina ricontrolla al tuo ritorno"
+            ja:
+              - "スマホ版のホーム、アプリ、通知で、下に引いて更新できるようになりました"
+              - "スマホ版で、サイドタブのあるパッケージアプリのタブがメニューボタンから開くようになりました。サイドパネルは内容の上または下に表示され、一覧が画面いっぱいに表示されます"
+              - "スマホ版の「NAS を追加」で、Syno Connect Center のない NAS も追加でき、その DSM を新しいタブで開けるようになりました。ブラウザーが NAS の証明書を信頼していない場合は、DSM を開いて証明書を受け入れると、戻ったときにページが自動で再確認します"
+            ko:
+              - "모바일 버전 홈, 앱, 알림에서 아래로 당겨 새로 고칠 수 있음"
+              - "모바일 버전에서 사이드 탭이 있는 패키지 앱의 탭을 메뉴 버튼으로 열 수 있음. 사이드 패널은 내용 위나 아래에 표시되고 목록이 화면을 채움"
+              - "모바일 버전 NAS 추가에서 Syno Connect Center가 없는 NAS도 추가할 수 있으며 해당 DSM이 새 탭에서 열림. 브라우저가 NAS 인증서를 신뢰하지 않으면 DSM을 열어 인증서를 수락할 수 있고, 돌아오면 페이지가 자동으로 다시 확인함"
+            zh-CN:
+              - "手机版首页、App 与通知页可下拉刷新"
+              - "手机版中，有侧边标签页的套件 App 改由菜单按钮打开标签页；侧栏改放在内容上方或下方，列表填满屏幕"
+              - "手机版“添加 NAS”可添加未安装 Syno Connect Center 的 NAS，并在新标签页打开其 DSM；浏览器不信任 NAS 证书时，可打开 DSM 接受证书，回到页面后会自动重新检查"
+            zh-TW:
+              - "手機版首頁、App 與通知頁可下拉重新整理"
+              - "手機版中，有側邊分頁的套件 App 改由選單按鈕開啟分頁；側欄改放在內容上方或下方，清單填滿畫面"
+              - "手機版「加入 NAS」可加入未安裝 Syno Connect Center 的 NAS，並在新分頁開啟其 DSM；瀏覽器不信任 NAS 憑證時，可開啟 DSM 接受憑證，回到頁面後會自動重新檢查"
           0.1.0-0182:
             en:
             - "Phone page: the address bar keeps showing /m after signing in and after a reload"
@@ -749,25 +786,6 @@ packages:
             it:
               - "Sezione telefono della Panoramica su tre colonne, con codice QR e anteprima del telefono più grandi"
               - "Tocca l’anteprima del telefono per provare Security Advisor, le risorse e le notifiche"
-          0.1.0-0174:
-            en:
-            - "Interface polish: hover over shortened text to see all of it"
-            zh-TW:
-            - "介面細節改進：截斷的文字可看到完整內容"
-            zh-CN:
-            - "界面细节改进：截断的文字可查看完整内容"
-            ja:
-            - "画面の細部を改善：省略された文字を全文表示できるように"
-            ko:
-            - "화면 세부 개선: 잘린 텍스트의 전체 내용을 볼 수 있음"
-            de:
-            - "Feinschliff der Oberfläche: gekürzte Texte lassen sich vollständig anzeigen"
-            fr:
-            - "Interface peaufinée : le texte tronqué peut s’afficher en entier"
-            es:
-            - "Mejoras en la interfaz: el texto recortado se puede ver completo"
-            it:
-            - "Interfaccia rifinita: il testo troncato si può leggere per intero"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -829,15 +847,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-phone-nas-status-0182-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0182
+        version: 0.1.0-0183
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: eb6b4f7043143ed1a40bf3a007f0193a6130c1279e587f10608c66156cf646e4
-        md5: f94c0df4b45e77c2c371533a04774725
-        size: 18268160
+        sha256: 4e2b1e7534524a6e668308fe95412d5de898bba1fb0c5f59a220bb20aab4b867
+        md5: fff5a0d275b2722bd332718eb6a2338c
+        size: 18278400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -854,19 +872,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T02:27:35Z
-          source_ref: cdc4026b85bf32c5afc2e1121f5549bc78cc8872
+          reviewed_at: 2026-11-18T04:50:09Z
+          source_ref: 218c320b17297dd92313f6396fcf0fefb2b44b08
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0182
+        version: 0.1.0-0183
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: d83fde99ade9e728b1b1f31832fce28ae4652b7e1fece80f038a639ed545ceb4
-        md5: 974b523c2de41ecb5b8266af0c808d60
-        size: 18862080
+        sha256: 8d3b47559d369af11744a1999613a2b175ca510342fe4a64ca21723e8e3737f1
+        md5: dd279e6827d0f3d013d469bb7a456469
+        size: 18872320
         facts:
           built_with: sdk
           sdk_backend: go
@@ -883,11 +901,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T02:27:35Z
-          source_ref: cdc4026b85bf32c5afc2e1121f5549bc78cc8872
+          reviewed_at: 2026-11-18T04:50:09Z
+          source_ref: 218c320b17297dd92313f6396fcf0fefb2b44b08
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0182
+        version: 0.1.0-0183
         arch:
           - apollolake
           - avoton
@@ -916,9 +934,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 6d5871eb3880236cec9591cd32dcc45d3d710bd7975ae2794fdc5a116f3a4b2d
-        md5: 81c31276634a378230e2db5e8fb188c1
-        size: 19650560
+        sha256: a6bd66e0f8fe9aa80681150340a9ebcf3b180daf7ce7821139f7397555af090c
+        md5: 8d70d0f674f768e465765832022a49b2
+        size: 19660800
         facts:
           built_with: sdk
           sdk_backend: go
@@ -935,8 +953,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T02:27:35Z
-          source_ref: cdc4026b85bf32c5afc2e1121f5549bc78cc8872
+          reviewed_at: 2026-11-18T04:50:09Z
+          source_ref: 218c320b17297dd92313f6396fcf0fefb2b44b08
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
