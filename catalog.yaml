@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-reclaim
-      release: v0.1.1-1676
+      release: v0.1.1-1677
       access: public
     metadata:
       guides:
@@ -49,6 +49,25 @@ packages:
         it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. Sui volumi Btrfs, la pagina Duplicati trova cartelle identiche e file grandi duplicati, conserva una copia di ciascuno, spiega quale resta e mostra quanto spazio libera rimuovere il resto. La pulizia segue un piano verificato, controllato di nuovo subito prima dell'esecuzione, e sposta gli elementi nel Cestino della cartella condivisa così da poterli ripristinare. È richiesto l’accesso come amministratore DSM; approva le attività di sistema prima di usare le funzioni che ne dipendono"
       changelog:
         releases:
+          0.1.1-1677:
+            de:
+              - "Im Dialog „Kann nicht starten“ entfernt ein Klick nur die Gruppen aus der Liste, die eine behaltene Kopie entfernen würden, prüft erneut und lässt die Bereinigungsliste offen"
+            en:
+              - "In the “Unable to start” dialog, one click now removes only the groups that would remove a copy you chose to keep, checks again and keeps the cleanup list open"
+            es:
+              - "En el cuadro «No se puede iniciar», un clic quita solo los grupos que quitarían una copia que elegiste conservar, vuelve a comprobar y mantiene abierta la lista de limpieza"
+            fr:
+              - "Dans la boîte « Impossible de démarrer », un clic retire seulement les groupes qui supprimeraient une copie à conserver, revérifie et garde la liste de nettoyage ouverte"
+            it:
+              - "Nella finestra «Impossibile avviare», un clic rimuove solo i gruppi che eliminerebbero una copia da conservare, ricontrolla e lascia aperta la lista di pulizia"
+            ja:
+              - "「開始できません」ダイアログで、残すように指定したコピーを削除してしまうグループだけをワンクリックでリストから外し、再確認してクリーンアップリストを開いたままにします"
+            ko:
+              - "“시작할 수 없음” 대화 상자에서 한 번의 클릭으로 유지하도록 지정한 사본을 삭제하는 그룹만 목록에서 빼고 다시 확인한 뒤 정리 목록을 열어 둠"
+            zh-CN:
+              - "“无法开始”对话框现在可一键只移除会删除你指定保留副本的组，自动重新检查并保持清理清单打开"
+            zh-TW:
+              - "「無法開始」對話框現在可一鍵只移除會刪掉你指定保留副本的組，自動重新檢查並維持清理清單開啟"
           0.1.1-1676:
             de:
               - "Auf das neueste UI-Kit und SDK aktualisiert"
@@ -161,15 +180,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/04-phone-duplicates-folders-1675-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1676
+        version: 0.1.1-1677
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2ffbf9f29aa54953620af4ff8592837c2d2964d91cc0532927a135a5bf752d0f
-        md5: 54e0e1e4905c85ac3e16a3990775df3f
-        size: 16977408
+        sha256: 1b1d942d29fe7ad0c6db8bfb5dbe97ccb74c24d39eefdbb34be1188098133a7a
+        md5: 093da1294c97ef1690c324cf64baa5b9
+        size: 16984064
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -186,19 +205,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T09:37:30Z
-          source_ref: 54f8391e9329c234181e62f4ef38c4bd7592ea67
+          reviewed_at: 2026-11-18T11:03:50Z
+          source_ref: 0d9e527905a2ec97aedf8865d35f8c3bca344622
           source_repo: synopackageland/syno-pkg-land-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1676
+        version: 0.1.1-1677
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 234eb92dc37a3f4820d47a6bda28b3ecbefa19581b977bd226328ec8d1731d54
-        md5: 6f3e62227b00d10fcbbda6280ce67d6a
-        size: 17859584
+        sha256: f395f341aff70ce109a89ad2b39ebf14e202b2dfa0c5f15e87b8d7081fbceb49
+        md5: 157d768ac4a69f334076724fad86d159
+        size: 17865216
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -215,11 +234,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T09:37:30Z
-          source_ref: 54f8391e9329c234181e62f4ef38c4bd7592ea67
+          reviewed_at: 2026-11-18T11:03:50Z
+          source_ref: 0d9e527905a2ec97aedf8865d35f8c3bca344622
           source_repo: synopackageland/syno-pkg-land-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1676
+        version: 0.1.1-1677
         arch:
           - apollolake
           - avoton
@@ -248,9 +267,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: bf60d40421a5fb87e52cfb4ab575f31ab2ae1ef753d18b2ccaae5858c0bfd6c3
-        md5: 5ed450e3f20d84f8cbf6dcb5b46f4b29
-        size: 18235904
+        sha256: d40c00aeef448fcadd2a56f566127b5cfbb738fcd96c7737b28fa62ad85f7a11
+        md5: e7b959784fb453d57b3ebb0853335cbc
+        size: 18241536
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -267,8 +286,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T09:37:30Z
-          source_ref: 54f8391e9329c234181e62f4ef38c4bd7592ea67
+          reviewed_at: 2026-11-18T11:03:50Z
+          source_ref: 0d9e527905a2ec97aedf8865d35f8c3bca344622
           source_repo: synopackageland/syno-pkg-land-reclaim
   - recommended: true
     category: network
