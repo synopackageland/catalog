@@ -258,7 +258,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-connect
-      release: v0.1.0-0183
+      release: v0.1.0-0184
       access: public
     metadata:
       guides:
@@ -535,6 +535,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0184:
+            de:
+              - "Auf das neueste UI-Kit und SDK aktualisiert"
+            en:
+              - "Updated to the latest UI kit and SDK"
+            es:
+              - "Actualizado al kit de interfaz y SDK más recientes"
+            fr:
+              - "Mise à jour vers les dernières versions du kit d’interface et du SDK"
+            it:
+              - "Aggiornato all’ultima versione del kit UI e dell’SDK"
+            ja:
+              - "最新の UI キットと SDK に更新しました"
+            ko:
+              - "최신 UI 키트와 SDK로 업데이트함"
+            zh-CN:
+              - "更新至最新的 UI 套件与 SDK"
+            zh-TW:
+              - "更新至最新的 UI 套件與 SDK"
           0.1.0-0183:
             de:
               - "Smartphone-Seite: Start, Apps und Benachrichtigungen lassen sich durch Herunterziehen aktualisieren"
@@ -758,34 +777,6 @@ packages:
             it:
               - "Pagina mobile: le app come Connect e Reclaim si aprono invece di restare in caricamento"
               - "Pagina mobile: Centro pacchetti, Centro registri e tabelle si adattano allo schermo, le tabelle larghe scorrono in orizzontale con la prima colonna fissa"
-          0.1.0-0175:
-            en:
-              - "Phone section on the Overview in three columns, with a larger QR code and phone preview"
-              - "Tap the phone preview to try Security Advisor, resources and notifications"
-            zh-TW:
-              - "總覽的手機區改為三欄，QR 碼與手機示意圖放大"
-              - "點手機示意圖即可試看 Security Advisor、資源與通知畫面"
-            zh-CN:
-              - "总览的手机区改为三栏，二维码与手机示意图放大"
-              - "点手机示意图即可试看 Security Advisor、资源与通知画面"
-            ja:
-              - "概要のスマホ欄を 3 列に。QR コードとスマホのプレビューを拡大"
-              - "スマホのプレビューをタップして Security Advisor、リソース、通知を試せるように"
-            ko:
-              - "개요의 휴대폰 영역을 3열로 바꾸고 QR 코드와 휴대폰 미리보기를 확대"
-              - "휴대폰 미리보기를 눌러 Security Advisor, 리소스, 알림 화면을 체험 가능"
-            de:
-              - "Smartphone-Bereich der Übersicht in drei Spalten, mit größerem QR-Code und größerer Smartphone-Vorschau"
-              - "Smartphone-Vorschau antippen, um Security Advisor, Ressourcen und Benachrichtigungen auszuprobieren"
-            fr:
-              - "Section téléphone de la vue d’ensemble sur trois colonnes, QR code et aperçu du téléphone agrandis"
-              - "Touchez l’aperçu du téléphone pour essayer Security Advisor, les ressources et les notifications"
-            es:
-              - "Sección del teléfono del Resumen en tres columnas, con código QR y vista del teléfono más grandes"
-              - "Toca la vista del teléfono para probar Security Advisor, los recursos y las notificaciones"
-            it:
-              - "Sezione telefono della Panoramica su tre colonne, con codice QR e anteprima del telefono più grandi"
-              - "Tocca l’anteprima del telefono per provare Security Advisor, le risorse e le notifiche"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -847,14 +838,14 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-phone-nas-status-0182-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0183
+        version: 0.1.0-0184
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 4e2b1e7534524a6e668308fe95412d5de898bba1fb0c5f59a220bb20aab4b867
-        md5: fff5a0d275b2722bd332718eb6a2338c
+        sha256: f2e7fa313f226fce3340e28ba5c00d479860bfeebddf38f291258dc5cc356901
+        md5: b5ee221e4c5c555580bcd23068c37855
         size: 18278400
         facts:
           built_with: sdk
@@ -872,18 +863,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T08:27:58Z
-          source_ref: d706b19d70929b729ce2daac1f330d81e81aa9e6
+          reviewed_at: 2026-11-18T09:20:16Z
+          source_ref: 8ff3591cb5de04414ae45ed91198102a127ea04d
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0183
+        version: 0.1.0-0184
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 8d3b47559d369af11744a1999613a2b175ca510342fe4a64ca21723e8e3737f1
-        md5: dd279e6827d0f3d013d469bb7a456469
+        sha256: 81689ce9620b8007a30e2ae69e9d74e9e3766974950446dee8b2d89f39c753c2
+        md5: 6081434a9ac10ed9fd2d9ddfe3be89b0
         size: 18872320
         facts:
           built_with: sdk
@@ -901,11 +892,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T08:27:58Z
-          source_ref: d706b19d70929b729ce2daac1f330d81e81aa9e6
+          reviewed_at: 2026-11-18T09:20:16Z
+          source_ref: 8ff3591cb5de04414ae45ed91198102a127ea04d
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0183
+        version: 0.1.0-0184
         arch:
           - apollolake
           - avoton
@@ -934,8 +925,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: a6bd66e0f8fe9aa80681150340a9ebcf3b180daf7ce7821139f7397555af090c
-        md5: 8d70d0f674f768e465765832022a49b2
+        sha256: fe1ea9742c8c108567e6ab00382478ae31b761e7cadbdf3815e5593bf87c662a
+        md5: 9a2a6836cd02c371e63d86d49e35a5a8
         size: 19660800
         facts:
           built_with: sdk
@@ -953,8 +944,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T08:27:58Z
-          source_ref: d706b19d70929b729ce2daac1f330d81e81aa9e6
+          reviewed_at: 2026-11-18T09:20:16Z
+          source_ref: 8ff3591cb5de04414ae45ed91198102a127ea04d
           source_repo: synopackageland/syno-pkg-land-connect
   - recommended: true
     category: files
@@ -963,7 +954,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-download-hub
-      release: v0.2.2-0115
+      release: v0.2.2-0116
       access: public
     metadata:
       guides:
@@ -1061,6 +1052,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0116:
+            de:
+              - "Auf die neueste Version des UI-Kits und SDKs aktualisiert; keine Änderungen an den Funktionen"
+            en:
+              - "Updated to the latest UI kit and SDK; features are unchanged"
+            es:
+              - "Actualizado a la última versión del kit de interfaz y del SDK; las funciones no cambian"
+            fr:
+              - "Mise à jour vers la dernière version du kit d'interface et du SDK ; les fonctionnalités sont inchangées"
+            it:
+              - "Aggiornato all'ultima versione del kit di interfaccia e dell'SDK; le funzioni sono invariate"
+            ja:
+              - "UI キットと SDK を最新版に更新しました。機能に変更はありません"
+            ko:
+              - "UI 키트와 SDK를 최신 버전으로 업데이트했어요. 기능은 바뀌지 않았어요"
+            zh-CN:
+              - "更新到最新的界面组件库与 SDK，功能没有变化"
+            zh-TW:
+              - "更新到最新的介面元件庫與 SDK，功能沒有變化"
           0.2.2-0115:
             de:
               - "Aus dem öffentlichen Quellcode-Repository erstellt; keine Änderungen an den Funktionen"
@@ -1203,25 +1213,6 @@ packages:
               - "La interfaz carga un poco más rápido"
             it:
               - "L’interfaccia si carica un po’ più velocemente"
-          0.2.2-0108:
-            en:
-              - Drop-down lists show the selected name correctly
-            zh-TW:
-              - 下拉選單選取後名稱正確顯示
-            zh-CN:
-              - 下拉菜单选取后名称正确显示
-            ja:
-              - ドロップダウンリストで選択した名前が正しく表示されるように
-            ko:
-              - 드롭다운 목록에서 선택한 이름이 올바르게 표시됨
-            de:
-              - Dropdown-Listen zeigen den ausgewählten Namen korrekt an
-            fr:
-              - Les listes déroulantes affichent correctement le nom sélectionné
-            es:
-              - Las listas desplegables muestran correctamente el nombre seleccionado
-            it:
-              - Gli elenchi a discesa mostrano correttamente il nome selezionato
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0113-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download-0113-en.png
@@ -1234,15 +1225,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-phone-settings-0113-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0115
+        version: 0.2.2-0116
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: f56e007c7b5edb75bb86f2c5daacce6be070dde3eb4c4ea799eb8cfdc41c6b93
-        md5: 95b384a4e26d411ba58b2e728e7430ff
-        size: 69309440
+        sha256: 40bc2d825050bf0170bc92667daea3987574de881458eeb30e3f2d9b4f35f8e9
+        md5: 42bf00f5af35b450ab6f96757bf3b04a
+        size: 68624896
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1260,11 +1251,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T08:27:56Z
-          source_ref: e1212fc1927b54c0ba4c37aabe8827acfb08c609
+          reviewed_at: 2026-11-18T09:20:16Z
+          source_ref: 449380fcd82ac1a589234b0d91fc29032f4990d7
           source_repo: synopackageland/syno-pkg-land-download-hub
       - package: SynoPkgGopeed
-        version: 0.2.2-0115
+        version: 0.2.2-0116
         arch:
           - apollolake
           - avoton
@@ -1293,9 +1284,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7b9e2b7804f62b04f79609d37963ba4ed20ff40659a35981274d5d81e3267844
-        md5: ca8009190b52b6dcc11e9c3f6d28c94e
-        size: 73079808
+        sha256: bab36374a8ddfa6be7376e72ab496351cfb0bb2e5bb596332ed3d4601265c60b
+        md5: b5a9e55d6db3e7cdcb4145769877b4ae
+        size: 72314368
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1313,8 +1304,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T08:27:56Z
-          source_ref: e1212fc1927b54c0ba4c37aabe8827acfb08c609
+          reviewed_at: 2026-11-18T09:20:16Z
+          source_ref: 449380fcd82ac1a589234b0d91fc29032f4990d7
           source_repo: synopackageland/syno-pkg-land-download-hub
   - listed: true
     recommended: false
