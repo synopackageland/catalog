@@ -2373,7 +2373,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-paperless-ngx
-      release: v3.4.0-0013
+      release: v3.5.0-0001
       access: public
     metadata:
       maintainer: Paperless-ngx
@@ -2383,7 +2383,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-paperless-ngx
-      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.4.0-0010
+      source_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/tree/v3.5.0-0001
       issues_url: https://github.com/synopackageland/syno-pkg-land-paperless-ngx/issues
       license: GPL-3.0-only; dependencies retain their respective licenses
       internet: required
@@ -2455,6 +2455,25 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgPaperlessNgx/02-workflow-upstream.png
       changelog:
         releases:
+          3.5.0-0001:
+            de:
+              - "Paperless-ngx auf 3.5.0 aktualisieren mit manuell auslösbaren Workflows, Markdown-Notizen und Massenbearbeitung im Hintergrund"
+            en:
+              - "Update Paperless-ngx to 3.5.0 with manual workflow triggers, Markdown notes and background bulk edits"
+            es:
+              - "Actualizar Paperless-ngx a 3.5.0 con activación manual de flujos de trabajo, notas en Markdown y ediciones masivas en segundo plano"
+            fr:
+              - "Mettre à jour Paperless-ngx vers 3.5.0 avec déclenchement manuel des workflows, notes Markdown et modifications groupées en arrière-plan"
+            it:
+              - "Aggiornare Paperless-ngx alla 3.5.0 con attivazione manuale dei flussi di lavoro, note in Markdown e modifiche di massa in background"
+            ja:
+              - "Paperless-ngx を 3.5.0 に更新し、ワークフローの手動実行、Markdown メモ、バックグラウンド一括編集に対応"
+            ko:
+              - "Paperless-ngx 3.5.0으로 업데이트하여 워크플로 수동 실행, Markdown 메모, 백그라운드 일괄 편집 지원"
+            zh-CN:
+              - "Paperless-ngx 更新至 3.5.0，新增手动触发工作流、Markdown 备注与后台批量编辑"
+            zh-TW:
+              - "Paperless-ngx 更新至 3.5.0，新增手動觸發工作流程、Markdown 備註與背景批次編輯"
           3.4.0-0013:
             en:
               - "Improve installation reliability in Package Center"
@@ -2538,7 +2557,7 @@ packages:
                 originali verificati
     pins:
       - package: SynoPkgPaperlessNgx
-        version: 3.4.0-0013
+        version: 3.5.0-0001
         arch:
           - apollolake
           - avoton
@@ -2567,9 +2586,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: fd76921cccd3c81febfbe281d7533042eafbcf25a10f3e1970997e429428a612
-        md5: e566f220b053e79c15b2767339003677
-        size: 43363840
+        sha256: 7949b92c3bbd47a5956f901060118344d30342b3e6774335c077c50a8dc4c489
+        md5: f5e907abd5ce681a4a38f4f7ea44c383
+        size: 43364864
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2587,8 +2606,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T10:01:08Z
-          source_ref: d747e95ad85bca8f81d659bd552613686a4ce4f9
+          reviewed_at: 2026-11-18T05:37:54Z
+          source_ref: 57b8f352462be96659f22be3894dd8da08f028fa
           source_repo: synopackageland/syno-pkg-land-paperless-ngx
   - listed: true
     recommended: false
@@ -3056,7 +3075,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-home-assistant
-      release: v2026.10.4-0009
+      release: v2026.11.2-0001
       access: public
     metadata:
       maintainer: Home Assistant
@@ -3066,7 +3085,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-home-assistant
-      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.10.4-0006
+      source_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/tree/v2026.11.2-0001
       issues_url: https://github.com/synopackageland/syno-pkg-land-home-assistant/issues
       license: Apache-2.0; hass-oidc-auth and packaging MIT; dependencies retain their respective licenses
       internet: required
@@ -3131,6 +3150,25 @@ packages:
           disinstallazione; richiede l'accesso come amministratore DSM e Container Manager
       changelog:
         releases:
+          2026.11.2-0001:
+            de:
+              - "Home Assistant auf 2026.11.2 aktualisieren mit 38 neuen Integrationen und Gerätekorrekturen"
+            en:
+              - "Update Home Assistant to 2026.11.2 with 38 new integrations and device fixes"
+            es:
+              - "Actualizar Home Assistant a 2026.11.2 con 38 integraciones nuevas y correcciones de dispositivos"
+            fr:
+              - "Mettre à jour Home Assistant vers 2026.11.2 avec 38 nouvelles intégrations et des correctifs d’appareils"
+            it:
+              - "Aggiornare Home Assistant alla 2026.11.2 con 38 nuove integrazioni e correzioni per i dispositivi"
+            ja:
+              - "Home Assistant を 2026.11.2 に更新し、38 個の新しい統合とデバイス修正を追加"
+            ko:
+              - "Home Assistant 2026.11.2로 업데이트하여 38개의 새 통합과 기기 수정 사항 추가"
+            zh-CN:
+              - "Home Assistant 更新至 2026.11.2，新增 38 个集成并修复多项设备问题"
+            zh-TW:
+              - "Home Assistant 更新至 2026.11.2，新增 38 個整合並修正多項裝置問題"
           2026.10.4-0009:
             en:
               - "Improve installation reliability in Package Center"
@@ -3209,7 +3247,7 @@ packages:
               - Correggere l'accesso a DSM quando l'app viene aperta tramite HTTP
     pins:
       - package: SynoPkgHomeAssistant
-        version: 2026.10.4-0009
+        version: 2026.11.2-0001
         arch:
           - apollolake
           - avoton
@@ -3238,8 +3276,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 002022650fab4b8de6b03700459937c3f3314d51b023bfa96925348ee29e5e59
-        md5: b5fb66c86ff70d7196b7ba5ee3413cce
+        sha256: 60ea48f7dd91372496b2a8b5439de6391d04ecd9952482c45481b8e034d897c0
+        md5: 8d848304e3371c6e4bde07269c6845dd
         size: 29795328
         facts:
           built_with: sdk
@@ -3257,8 +3295,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T09:53:14Z
-          source_ref: cc65eae4fa1b4aae4027e9b53d67d8222bddcbad
+          reviewed_at: 2026-11-18T05:38:31Z
+          source_ref: 3bcb71bae9b4ae596c773f81116a41c57559bb3e
           source_repo: synopackageland/syno-pkg-land-home-assistant
 
   - publisher: synopackageland
@@ -3267,7 +3305,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-magpie
-      release: v0.1.3093-0009
+      release: v0.1.4404-0001
       access: public
     metadata:
       maintainer: yetone
@@ -3388,6 +3426,25 @@ packages:
           versione del pacchetto SPK sostituisce il programma incluso
       changelog:
         releases:
+          0.1.4404-0001:
+            de:
+              - "Auf Upstream-magpie 0.1.4404 aktualisieren, mit Verbesserungen an Gateway, Routing und Nutzungserfassung; Antigravity läuft jetzt über die lokale agy-CLI"
+            en:
+              - "Update to upstream magpie 0.1.4404 with gateway, routing and usage improvements; Antigravity now runs through the local agy CLI"
+            es:
+              - "Actualizar a magpie 0.1.4404 de origen, con mejoras en la pasarela, el enrutamiento y el registro de uso; Antigravity funciona ahora mediante la CLI local de agy"
+            fr:
+              - "Mettre à jour vers magpie 0.1.4404 en amont, avec des améliorations de la passerelle, du routage et du suivi d’utilisation ; Antigravity passe désormais par la CLI agy locale"
+            it:
+              - "Aggiornare a magpie 0.1.4404 upstream, con miglioramenti a gateway, instradamento e registrazione dell’utilizzo; Antigravity ora funziona tramite la CLI agy locale"
+            ja:
+              - "上流の magpie 0.1.4404 に更新し、ゲートウェイ、ルーティング、使用量の集計を改善。Antigravity はローカルの agy CLI 経由で動作"
+            ko:
+              - "업스트림 magpie 0.1.4404로 업데이트해 게이트웨이, 라우팅, 사용량 집계를 개선하고 Antigravity는 로컬 agy CLI로 실행"
+            zh-CN:
+              - "更新至上游 magpie 0.1.4404，改进网关、路由与用量统计；Antigravity 改由本地 agy CLI 提供"
+            zh-TW:
+              - "更新至上游 magpie 0.1.4404，改善閘道、路由與用量統計；Antigravity 改由本機 agy CLI 提供"
           0.1.3093-0009:
             en:
               - "Improve installation reliability in Package Center"
@@ -3505,15 +3562,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Magpie/04-masking.png
     pins:
       - package: Magpie
-        version: 0.1.3093-0009
+        version: 0.1.4404-0001
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: b0e33e42096a6b8770ea3daddb58afaf662e4d1e48664fa370e69d20e2a5e0c4
-        md5: 92c13590732a4aee753f9ff79fbc9c18
-        size: 52693504
+        sha256: a95c50d682517826b46bcf64968b751e8f7435dfd2853eb9fec94fc8f1eb5928
+        md5: 7ce20668c8dd906443b55e8ada881589
+        size: 63319040
         facts:
           built_with: sdk
           sdk_backend: go
@@ -3529,11 +3586,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T09:53:45Z
-          source_ref: 621c4c1c372528980fffcfcf041e2245cd144b67
+          reviewed_at: 2026-11-18T05:38:50Z
+          source_ref: cc06958ea2a49f0b1586b5621566c26967fc9f94
           source_repo: synopackageland/syno-pkg-magpie
       - package: Magpie
-        version: 0.1.3093-0009
+        version: 0.1.4404-0001
         arch:
           - apollolake
           - avoton
@@ -3562,9 +3619,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 75dafc2a698cc452687d4cabd61818f940b3eb6e4e92da2bb88b6aa1a9e99b72
-        md5: 2f35d4f32000911f2ad68ad2bd196d6d
-        size: 57179136
+        sha256: d428810e05d1d0ef6cca6de076b67fc5f366e9541b1949073a935ca8f3721f57
+        md5: 1b53e19c1f35ac8f11ca14f32c26232c
+        size: 68493824
         facts:
           built_with: sdk
           sdk_backend: go
@@ -3580,8 +3637,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T09:53:45Z
-          source_ref: 621c4c1c372528980fffcfcf041e2245cd144b67
+          reviewed_at: 2026-11-18T05:38:50Z
+          source_ref: cc06958ea2a49f0b1586b5621566c26967fc9f94
           source_repo: synopackageland/syno-pkg-magpie
   - listed: true
     recommended: false
@@ -3592,7 +3649,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-ovis
-      release: v0.5.1-0007
+      release: v0.5.4-0001
       access: public
     info:
       displayname: Ovis
@@ -3606,7 +3663,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://ovis.sh/
-      source_url: https://github.com/synopackageland/syno-pkg-land-ovis/tree/v0.5.1-0001
+      source_url: https://github.com/synopackageland/syno-pkg-land-ovis/tree/v0.5.4-0001
       issues_url: https://github.com/synopackageland/syno-pkg-land-ovis/issues
       license: MIT
       upstream:
@@ -3722,6 +3779,25 @@ packages:
           possono essere attivate nelle impostazioni"
       changelog:
         releases:
+          0.5.4-0001:
+            de:
+              - "Update auf Upstream-Ovis 0.5.4: Agenten-Posteingang, erklärte Einstellungen und ein kompilierter Server für Remote-PCs"
+            en:
+              - "Update to upstream Ovis 0.5.4: agent inbox, explained settings and a compiled server for remote PCs"
+            es:
+              - "Actualización a Ovis 0.5.4 de origen: bandeja de agentes, ajustes explicados y servidor compilado para PC remotos"
+            fr:
+              - "Mise à jour vers Ovis 0.5.4 en amont : boîte de réception des agents, réglages expliqués et serveur compilé pour les PC distants"
+            it:
+              - "Aggiornamento a Ovis 0.5.4 upstream: posta in arrivo degli agenti, impostazioni spiegate e server compilato per i PC remoti"
+            ja:
+              - "上流の Ovis 0.5.4 に更新：エージェントの受信トレイ、設定の説明、リモート PC 向けのコンパイル済みサーバー"
+            ko:
+              - "업스트림 Ovis 0.5.4로 업데이트: 에이전트 받은편지함, 설정 설명, 원격 PC용 컴파일된 서버"
+            zh-CN:
+              - "更新至上游 Ovis 0.5.4：智能体收件箱、设置说明与远程电脑的编译版服务器"
+            zh-TW:
+              - "更新至上游 Ovis 0.5.4：代理程式收件匣、設定說明與遠端電腦的編譯版伺服器"
           0.5.1-0007:
             en:
               - "Improve installation reliability in Package Center"
@@ -3922,37 +3998,6 @@ packages:
                 SSH, alias e spazi di lavoro
               - Ricostruire entrambe le architetture con SDK 0.53.9 e CLI 0.52.6 mantenendo
                 l’accesso amministratore DSM
-          0.4.22-0006:
-            en:
-              - First public DSM release of Ovis 0.4.22 with administrator sign-in, an isolated
-                container runtime, bundled herdr, common shell tools and Python, and persistent
-                workspace data
-            zh-TW:
-              - 首次公開發佈 Ovis 0.4.22 DSM 套件，提供管理員登入、獨立容器執行環境、內附 herdr、常用 shell 工具與 Python，並保留工作區資料
-            zh-CN:
-              - 首次公开发布 Ovis 0.4.22 DSM 套件，提供管理员登录、独立容器运行环境、内含 herdr、常用 shell 工具和 Python，并保留工作区数据
-            de:
-              - Erste öffentliche DSM-Version von Ovis 0.4.22 mit Administratoranmeldung, isolierter
-                Container-Laufzeit, herdr, gängigen Shell-Werkzeugen, Python und dauerhaft
-                gespeicherten Arbeitsbereichsdaten
-            fr:
-              - Première version publique DSM d'Ovis 0.4.22 avec connexion administrateur,
-                environnement conteneurisé isolé, herdr, outils shell courants, Python et données
-                d'espace de travail persistantes
-            ja:
-              - Ovis 0.4.22 の DSM
-                向け初公開版。管理者サインイン、分離されたコンテナー環境、herdr、一般的なシェルツール、Python、ワークスペースデータの保持に対応
-            ko:
-              - "Ovis 0.4.22의 첫 공개 DSM 릴리스: 관리자 로그인, 격리된 컨테이너 환경, herdr, 일반 셸 도구, Python 및 작업 공간 데이터
-                유지 지원"
-            es:
-              - Primera versión pública para DSM de Ovis 0.4.22 con inicio de sesión de
-                administrador, entorno de contenedor aislado, herdr, herramientas shell habituales,
-                Python y datos de trabajo persistentes
-            it:
-              - Prima versione pubblica DSM di Ovis 0.4.22 con accesso amministratore, ambiente
-                contenitore isolato, herdr, strumenti shell comuni, Python e dati di lavoro
-                persistenti
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/01-welcome.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/02-agent-setup.png
@@ -3960,7 +4005,7 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/Ovis/03-phone-welcome.png
     pins:
       - package: Ovis
-        version: 0.5.1-0007
+        version: 0.5.4-0001
         arch:
           - apollolake
           - avoton
@@ -3989,30 +4034,30 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 06c8571025b931cc631ae307cb624e2c8165a74f5e3981ff71c64322363d1a5e
-        md5: d6f47e68dfef4e12814ee5ef84973ab4
+        sha256: 244a442d84fb91a12c69e60fd1a304f7194dd38b7b1b08213b5030f40cb5c8ba
+        md5: 18a01b5d59bbb7ff1bac02d347ad48a6
         size: 31228416
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T09:54:06Z
-          source_ref: ddb78024988e1abd2b929f23b322a0c705727c35
+          reviewed_at: 2026-11-18T05:39:49Z
+          source_ref: 70f45797809f39ce72afe227a3192397fe21d297
           source_repo: synopackageland/syno-pkg-land-ovis
       - package: Ovis
-        version: 0.5.1-0007
+        version: 0.5.4-0001
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 642bf46924c43e8f0fcab16e7a64649e513514e2f88e62ddb2d55ddf65b17ba1
-        md5: ef0f52c343ce673be21c8389d6c799da
-        size: 28489728
+        sha256: e6b44d2de17e4c36ff221754cc970cf0984d00b3aaf3e4a4e5a42d5a4c8a5c8a
+        md5: 5591651760c6d17b5bd4cb9de06baa80
+        size: 28490240
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T09:54:06Z
-          source_ref: ddb78024988e1abd2b929f23b322a0c705727c35
+          reviewed_at: 2026-11-18T05:39:49Z
+          source_ref: 70f45797809f39ce72afe227a3192397fe21d297
           source_repo: synopackageland/syno-pkg-land-ovis
 
   - listed: true
@@ -4024,7 +4069,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-t3code
-      release: v0.1.7-0011
+      release: v0.1.10-0002
       access: public
     info:
       displayname: T3 Code
@@ -4039,7 +4084,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://t3.codes/
-      source_url: https://github.com/synopackageland/syno-pkg-land-t3code/tree/v0.1.7-0001
+      source_url: https://github.com/synopackageland/syno-pkg-land-t3code/tree/v0.1.10-0002
       issues_url: https://github.com/synopackageland/syno-pkg-land-t3code/issues
       license: MIT
       upstream:
@@ -4188,6 +4233,25 @@ packages:
           fuori della rete locale, connettiti tramite VPN"
       changelog:
         releases:
+          0.1.10-0002:
+            de:
+              - "Update auf Upstream T3 Code 0.1.10: Auf Antworten antworten, eigene Designs, native Wiederaufnahme von Threads"
+            en:
+              - "Update to upstream T3 Code 0.1.10: reply to responses, custom themes, native thread resume"
+            es:
+              - "Actualización a T3 Code 0.1.10 de upstream: responder a respuestas, temas personalizados, reanudación nativa de hilos"
+            fr:
+              - "Mise à jour vers T3 Code 0.1.10 en amont : répondre aux réponses, thèmes personnalisés, reprise native des fils"
+            it:
+              - "Aggiornamento a T3 Code 0.1.10 upstream: rispondere alle risposte, temi personalizzati, ripresa nativa dei thread"
+            ja:
+              - "上流の T3 Code 0.1.10 に更新：アシスタントの応答への返信、カスタムテーマ、ネイティブなスレッド再開"
+            ko:
+              - "업스트림 T3 Code 0.1.10으로 업데이트: 응답에 답장, 사용자 지정 테마, 기본 스레드 재개"
+            zh-CN:
+              - "更新至上游 T3 Code 0.1.10：回复指定的助手响应、自定义主题、原生恢复对话"
+            zh-TW:
+              - "更新至上游 T3 Code 0.1.10：回覆指定的助理回應、自訂佈景主題、原生恢復對話"
           0.1.7-0011:
             en:
               - "Improve installation reliability in Package Center"
@@ -4367,7 +4431,7 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/T3Code/03-terminal.png
     pins:
       - package: T3Code
-        version: 0.1.7-0011
+        version: 0.1.10-0002
         arch:
           - apollolake
           - avoton
@@ -4396,30 +4460,30 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 94d2a895dd62ea4126b44e2e5d0ad79e2d22544e8321b58bdfa1a6e7081de602
-        md5: ac72814bf94039b83b4bd72b0e308464
-        size: 31181312
+        sha256: 812cddd4842794902283bbfb7b956042e01e29fa46e15e272888e0c7bf6e24e5
+        md5: 012e7b4186a59af2638affd2cbda3e50
+        size: 31180800
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T09:54:29Z
-          source_ref: 1fab1a87d2662dc3d1529a2ef23a539925c77efe
+          reviewed_at: 2026-11-18T05:40:51Z
+          source_ref: b458f852dad05c1c56987a09c2ccca8ee137fe3f
           source_repo: synopackageland/syno-pkg-land-t3code
       - package: T3Code
-        version: 0.1.7-0011
+        version: 0.1.10-0002
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2517aafbd520a495a524719916d0fe6be913e1d230f999a7d33a4ed4f2c7d5e1
-        md5: b1b81b2d6be4e39fa3cf86079df36ef5
+        sha256: dba18e5628b184e33b3e5959d560f5bf29446ce9bfdb41a3df9b4aa70608679b
+        md5: d257631052a38687fc78a81eb5cd240b
         size: 28448256
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T09:54:29Z
-          source_ref: 1fab1a87d2662dc3d1529a2ef23a539925c77efe
+          reviewed_at: 2026-11-18T05:40:51Z
+          source_ref: b458f852dad05c1c56987a09c2ccca8ee137fe3f
           source_repo: synopackageland/syno-pkg-land-t3code
 
 publishers:
