@@ -8,7 +8,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-reclaim
-      release: v0.1.1-1674
+      release: v0.1.1-1675
       access: private
     metadata:
       guides:
@@ -49,6 +49,25 @@ packages:
         it: "Pulizia dello spazio per NAS Synology con volumi Btrfs ed ext4. Analizza un volume o le cartelle scelte per vedere cosa occupa davvero spazio: cartelle condivise, dati dei pacchetti, cestini, snapshot e partizione di sistema. Reclaim mostra quanto libererebbe davvero un'eliminazione, compreso lo spazio ancora trattenuto da snapshot o copie condivise, e segue l'andamento dell'utilizzo. Sui volumi Btrfs, la pagina Duplicati trova cartelle identiche e file grandi duplicati, conserva una copia di ciascuno, spiega quale resta e mostra quanto spazio libera rimuovere il resto. La pulizia segue un piano verificato, controllato di nuovo subito prima dell'esecuzione, e sposta gli elementi nel Cestino della cartella condivisa così da poterli ripristinare. È richiesto l’accesso come amministratore DSM; approva le attività di sistema prima di usare le funzioni che ne dipendono"
       changelog:
         releases:
+          0.1.1-1675:
+            en:
+            - "On a phone, the page toolbar takes fewer rows and sits at the top edge"
+            zh-TW:
+            - "手機版的頁面工具列更精簡：列數更少，並緊貼頂端"
+            zh-CN:
+            - "手机版的页面工具栏更精简：行数更少，并紧贴顶端"
+            ja:
+            - "スマホ版のページツールバーがよりコンパクトになり、行数が減って上端に寄るようになりました"
+            ko:
+            - "휴대폰에서 페이지 도구 모음이 더 간결해져 줄 수가 줄고 화면 위쪽에 붙어 표시됨"
+            de:
+            - "Auf dem Smartphone ist die Symbolleiste einer Seite kompakter: weniger Zeilen, direkt am oberen Rand"
+            fr:
+            - "Sur téléphone, la barre d'outils de la page est plus compacte : moins de lignes, collée en haut de l'écran"
+            es:
+            - "En el teléfono, la barra de herramientas de la página es más compacta: ocupa menos filas y queda pegada al borde superior"
+            it:
+            - "Sul telefono, la barra degli strumenti della pagina è più compatta: occupa meno righe ed è allineata al bordo superiore"
           0.1.1-1674:
             en:
             - "On a phone, the page background, cards and nested panels now match the desktop look"
@@ -106,25 +125,6 @@ packages:
             - "Actualización interna de los componentes de la interfaz; las páginas se ven y funcionan igual"
             it:
             - "Aggiornamento interno dei componenti dell’interfaccia; le pagine restano uguali"
-          0.1.1-1671:
-            en:
-            - Opens in your DSM display language
-            zh-TW:
-            - 開啟時跟隨 DSM 顯示語言
-            zh-CN:
-            - 打开时跟随 DSM 显示语言
-            ja:
-            - DSM の表示言語で開くように
-            ko:
-            - DSM 표시 언어로 열림
-            de:
-            - Öffnet sich in Ihrer DSM-Anzeigesprache
-            fr:
-            - S’ouvre dans la langue d’affichage de DSM
-            es:
-            - Se abre en el idioma de visualización de DSM
-            it:
-            - Si apre nella lingua di visualizzazione di DSM
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/01-overview-1672-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/02-duplicates-folders-1672-en.png
@@ -137,15 +137,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoReclaim/09-settings-1672-en.png
     pins:
       - package: SynoReclaim
-        version: 0.1.1-1674
+        version: 0.1.1-1675
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 8eb2fb7cbfe396bccb4a7cc52c912cb121c04ba7a9c36d6b11db3b99a1c0ca15
-        md5: ab80bc1cbbbef6af9259a2037f0a215e
-        size: 16965120
+        sha256: f5e299b3491aae37901ddd9264fee1538a3355c7d7df5657ce53604a655a5847
+        md5: 88538662afed8e20eac599d727680395
+        size: 16966656
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -162,19 +162,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T11:01:01Z
-          source_ref: 314cf84a5076f8949879ec23a99bb14e1abd5e69
+          reviewed_at: 2026-11-18T02:05:47Z
+          source_ref: 1a4e7f7386fff1f692113279d47427f08b58ed1b
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1674
+        version: 0.1.1-1675
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: c09ce5218672a9b9041f4c3a27639aecd3667b198990ce670110ebe194f441a9
-        md5: ba07bf33ae8ec5e1ab3ac3e698f6cceb
-        size: 17856000
+        sha256: ad7c9d245fee08d33d7c2629b24a45b25cd47703e8fa2450079723499b3609ab
+        md5: 56ba0f0beca2932468e78977a7f979a7
+        size: 17857024
         facts:
           built_with: sdk
           sdk_backend: rust
@@ -191,11 +191,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T11:01:01Z
-          source_ref: 314cf84a5076f8949879ec23a99bb14e1abd5e69
+          reviewed_at: 2026-11-18T02:05:47Z
+          source_ref: 1a4e7f7386fff1f692113279d47427f08b58ed1b
           source_repo: synopackageland/syno-reclaim
       - package: SynoReclaim
-        version: 0.1.1-1674
+        version: 0.1.1-1675
         arch:
           - apollolake
           - avoton
@@ -224,8 +224,8 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 49d28826ade007aee32b4562608470b79016b3ac60ea4916d985850b2330e849
-        md5: 7e911d66e66096d5b87df16a2625eecc
+        sha256: 38b23654485189a9eadc29a7068ba4bf67018ffda939ec4d279e6ce01c9b5fbb
+        md5: 4bca5e88f1fc8d97b9b3ffd78552adce
         size: 18220032
         facts:
           built_with: sdk
@@ -243,8 +243,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T11:01:01Z
-          source_ref: 314cf84a5076f8949879ec23a99bb14e1abd5e69
+          reviewed_at: 2026-11-18T02:05:47Z
+          source_ref: 1a4e7f7386fff1f692113279d47427f08b58ed1b
           source_repo: synopackageland/syno-reclaim
   - recommended: true
     category: network
@@ -253,7 +253,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-connect
-      release: v0.1.0-0180
+      release: v0.1.0-0181
       access: private
     metadata:
       guides:
@@ -530,6 +530,43 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0181:
+            en:
+            - "Phone page: in Container Manager lists, each label and its value stay on one line"
+            - "Phone page: Virtual Machine Manager, Tiering, Synology Chat and the Active Backup for Business Portal fit the screen"
+            - "Phone page: the top bar of Synology apps is more compact"
+            zh-TW:
+            - "手機版 Container Manager 清單中，標籤與值顯示在同一行"
+            - "手機版 Virtual Machine Manager、Tiering、Synology Chat 與 Active Backup for Business Portal 的版面符合螢幕寬度"
+            - "手機版 Synology App 的頂部列更緊湊"
+            zh-CN:
+            - "手机版 Container Manager 列表中，标签与值显示在同一行"
+            - "手机版 Virtual Machine Manager、Tiering、Synology Chat 与 Active Backup for Business Portal 的布局适配屏幕宽度"
+            - "手机版 Synology App 的顶部栏更紧凑"
+            ja:
+            - "スマホ版の Container Manager の一覧で、ラベルと値が同じ行に表示されるようになりました"
+            - "スマホ版で Virtual Machine Manager、Tiering、Synology Chat、Active Backup for Business Portal が画面に収まるようになりました"
+            - "スマホ版で Synology アプリの上部バーがよりコンパクトになりました"
+            ko:
+            - "모바일 버전 Container Manager 목록에서 레이블과 값이 한 줄에 표시됨"
+            - "모바일 버전에서 Virtual Machine Manager, Tiering, Synology Chat, Active Backup for Business Portal이 화면에 맞게 표시됨"
+            - "모바일 버전에서 Synology 앱의 상단 표시줄이 더 간결해짐"
+            de:
+            - "Smartphone-Seite: in den Listen von Container Manager stehen Bezeichnung und Wert in einer Zeile"
+            - "Smartphone-Seite: Virtual Machine Manager, Tiering, Synology Chat und das Active Backup for Business Portal passen auf den Bildschirm"
+            - "Smartphone-Seite: die obere Leiste der Synology-Apps ist kompakter"
+            fr:
+            - "Page mobile : dans les listes de Container Manager, chaque libellé et sa valeur restent sur une seule ligne"
+            - "Page mobile : Virtual Machine Manager, Tiering, Synology Chat et le portail Active Backup for Business s’adaptent à l’écran"
+            - "Page mobile : la barre supérieure des applications Synology est plus compacte"
+            es:
+            - "Página móvil: en las listas de Container Manager, cada etiqueta y su valor quedan en una sola línea"
+            - "Página móvil: Virtual Machine Manager, Tiering, Synology Chat y el portal de Active Backup for Business se ajustan a la pantalla"
+            - "Página móvil: la barra superior de las aplicaciones de Synology es más compacta"
+            it:
+            - "Pagina mobile: negli elenchi di Container Manager, ogni etichetta e il suo valore restano su una sola riga"
+            - "Pagina mobile: Virtual Machine Manager, Tiering, Synology Chat e il portale di Active Backup for Business si adattano allo schermo"
+            - "Pagina mobile: la barra superiore delle app Synology è più compatta"
           0.1.0-0180:
             en:
             - "Phone page: the Active Backup for Business calendar and the Synology Drive welcome screen are no longer cut off"
@@ -717,25 +754,6 @@ packages:
             - Se abre en el idioma de visualización de DSM
             it:
             - Si apre nella lingua di visualizzazione di DSM
-          0.1.0-0172:
-            en:
-              - "The interface loads slightly faster"
-            zh-TW:
-              - "介面載入稍快"
-            zh-CN:
-              - "界面加载稍快"
-            ja:
-              - "画面の読み込みが少し速く"
-            ko:
-              - "화면 로딩이 조금 빨라짐"
-            de:
-              - "Die Oberfläche lädt etwas schneller"
-            fr:
-              - "L’interface se charge un peu plus vite"
-            es:
-              - "La interfaz carga un poco más rápido"
-            it:
-              - "L’interfaccia si carica un po’ più velocemente"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -792,15 +810,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-tailscale-0175-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0180
+        version: 0.1.0-0181
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 84091956d507b5d8a82862bd3ecc5a9e6edc206729e4b69aa35d9291fb3759fd
-        md5: 96c2f0903ccaac970a37df9bc8c3515c
-        size: 18247680
+        sha256: e753f26c490c426bec5a7173c2002aaf9a7fd09c8dcba419df4303e2b0de4dcd
+        md5: 737af29cda535f48110675feb39bcded
+        size: 18257920
         facts:
           built_with: sdk
           sdk_backend: go
@@ -817,18 +835,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T11:03:07Z
-          source_ref: 1e1d5469d2053813f5b93897a88d7d2e030268d6
+          reviewed_at: 2026-11-18T02:05:33Z
+          source_ref: 1ad532137c31fb00912ca6f0083c374c5de3e0f7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0180
+        version: 0.1.0-0181
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: f47d073e06c7b7ccd41ff0d044092ae5c036fcd2dc7dbafc72bdbef19435fbe7
-        md5: 7bc5ee23defec61b892e06b9d60ee24a
+        sha256: 872ff7c551ea93fe727a4536b885a8ac96bee95519fcd276ebd396d8a4d129d5
+        md5: ee921c455ec6c1c8642d58b0c921e83e
         size: 18851840
         facts:
           built_with: sdk
@@ -846,11 +864,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T11:03:07Z
-          source_ref: 1e1d5469d2053813f5b93897a88d7d2e030268d6
+          reviewed_at: 2026-11-18T02:05:33Z
+          source_ref: 1ad532137c31fb00912ca6f0083c374c5de3e0f7
           source_repo: synopackageland/syno-pkg-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0180
+        version: 0.1.0-0181
         arch:
           - apollolake
           - avoton
@@ -879,9 +897,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 321466d10c16b0477500df7352bd871ec823d504ecb9cb14dbabd9653db6da20
-        md5: 3053e35f225d80b5f5e796d8da29b530
-        size: 19630080
+        sha256: 946d449c5cbf08ba862f6b2b4f9bdb0d7940b500473edae17dba4affbda2a2c7
+        md5: f63a4a5c23b05cc5793197651955e222
+        size: 19640320
         facts:
           built_with: sdk
           sdk_backend: go
@@ -898,8 +916,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T11:03:07Z
-          source_ref: 1e1d5469d2053813f5b93897a88d7d2e030268d6
+          reviewed_at: 2026-11-18T02:05:33Z
+          source_ref: 1ad532137c31fb00912ca6f0083c374c5de3e0f7
           source_repo: synopackageland/syno-pkg-connect
   - recommended: true
     category: files
@@ -908,7 +926,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0112
+      release: v0.2.2-0113
       access: private
     metadata:
       guides:
@@ -1006,6 +1024,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0113:
+            en:
+            - "On a phone, the page toolbar takes fewer rows and sits at the top edge"
+            zh-TW:
+            - "手機版的頁面工具列更精簡：列數更少，並緊貼頂端"
+            zh-CN:
+            - "手机版的页面工具栏更精简：行数更少，并紧贴顶端"
+            ja:
+            - "スマホ版のページツールバーがよりコンパクトになり、行数が減って上端に寄るようになりました"
+            ko:
+            - "휴대폰에서 페이지 도구 모음이 더 간결해져 줄 수가 줄고 화면 위쪽에 붙어 표시됨"
+            de:
+            - "Auf dem Smartphone ist die Symbolleiste einer Seite kompakter: weniger Zeilen, direkt am oberen Rand"
+            fr:
+            - "Sur téléphone, la barre d'outils de la page est plus compacte : moins de lignes, collée en haut de l'écran"
+            es:
+            - "En el teléfono, la barra de herramientas de la página es más compacta: ocupa menos filas y queda pegada al borde superior"
+            it:
+            - "Sul telefono, la barra degli strumenti della pagina è più compatta: occupa meno righe ed è allineata al bordo superiore"
           0.2.2-0112:
             en:
             - "Phone layout: the background, cards and panels now match the desktop look"
@@ -1139,34 +1176,6 @@ packages:
               - Los textos largos de los botones pasan a la línea siguiente en lugar de recortarse
             it:
               - I testi lunghi dei pulsanti vanno a capo invece di essere troncati
-          0.2.2-0105:
-            en:
-              - Dialogs, side panels and controls use more consistent spacing and corners
-              - Dialogs and panels open faster on phones
-            zh-TW:
-              - 對話框、側邊面板與控制項的間距和圓角更一致
-              - 手機上開啟對話框與面板更快
-            zh-CN:
-              - 对话框、侧边面板和控件的间距与圆角更一致
-              - 手机上打开对话框和面板更快
-            ja:
-              - ダイアログ、サイドパネル、コントロールの余白と角の丸みを統一
-              - スマートフォンでダイアログとパネルがより速く開く
-            ko:
-              - 대화 상자, 사이드 패널, 컨트롤의 여백과 모서리를 더 일관되게 정리
-              - 휴대폰에서 대화 상자와 패널이 더 빠르게 열림
-            de:
-              - Dialoge, Seitenleisten und Bedienelemente haben einheitlichere Abstände und Ecken
-              - Dialoge und Leisten öffnen sich auf Smartphones schneller
-            fr:
-              - Les boîtes de dialogue, panneaux latéraux et contrôles ont des marges et des coins plus cohérents
-              - Les boîtes de dialogue et panneaux s’ouvrent plus vite sur téléphone
-            es:
-              - Los diálogos, paneles laterales y controles tienen márgenes y esquinas más coherentes
-              - Los diálogos y paneles se abren más rápido en el teléfono
-            it:
-              - Finestre di dialogo, pannelli laterali e controlli hanno spaziature e angoli più coerenti
-              - Finestre di dialogo e pannelli si aprono più velocemente sul telefono
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0096-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-search-0081-en.png
@@ -1175,15 +1184,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/05-settings-0096-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0112
+        version: 0.2.2-0113
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: d1d9c65fd5849a1b5127be1590af9386d9eaa49816cccdd1b34b865cf2b0d891
-        md5: 327be76aa7b3ee29b39f352aca26a296
-        size: 68614656
+        sha256: 3f3192021d188dde762c69a946337941cd33ac3cc283f6061c9e925a23775d04
+        md5: f390c4b0b431e7a633f316f6325cd228
+        size: 68615680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1201,11 +1210,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T11:01:01Z
-          source_ref: d9fd2483e5f7c161ef3737e30a9ef036c605c3bc
+          reviewed_at: 2026-11-18T02:05:34Z
+          source_ref: 13e36bfd864b4b7c2708362c962acddd4d6f8770
           source_repo: synopackageland/syno-pkg-gopeed
       - package: SynoPkgGopeed
-        version: 0.2.2-0112
+        version: 0.2.2-0113
         arch:
           - apollolake
           - avoton
@@ -1234,9 +1243,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 8741e0fa0dd0e66a8596eb847e55e1ee125912ad060a369e9fc95bc6ffd34e46
-        md5: 175620775b58c936779eace711837008
-        size: 72307712
+        sha256: 1dc5aa5b8ed3c24f4f8848ff0355132b3134b5e015477ffe25b22e8c445e7e77
+        md5: 663ecf8821300beb0a59f51d5586d993
+        size: 72308736
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1254,8 +1263,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-17T11:01:01Z
-          source_ref: d9fd2483e5f7c161ef3737e30a9ef036c605c3bc
+          reviewed_at: 2026-11-18T02:05:34Z
+          source_ref: 13e36bfd864b4b7c2708362c962acddd4d6f8770
           source_repo: synopackageland/syno-pkg-gopeed
   - listed: true
     recommended: false
