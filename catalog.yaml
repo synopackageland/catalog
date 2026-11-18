@@ -1676,7 +1676,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-audiobookshelf
-      release: v2.37.2-0013
+      release: v2.38.0-0001
       access: private
     metadata:
       maintainer: advplyr
@@ -1686,7 +1686,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-audiobookshelf
-      source_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/tree/v2.37.2-0010
+      source_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/tree/v2.38.0-0001
       issues_url: https://github.com/synopackageland/syno-pkg-land-audiobookshelf/issues
       license: GPL-3.0; dependencies retain their own licenses
       internet: required
@@ -1754,6 +1754,25 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgAudiobookshelf/02-library-player-upstream.png
       changelog:
         releases:
+          2.38.0-0001:
+            en:
+              - "Update to Audiobookshelf 2.38.0 with library scan and access control fixes"
+            zh-TW:
+              - "更新至 Audiobookshelf 2.38.0，修正媒體庫掃描與存取控制問題"
+            zh-CN:
+              - "更新至 Audiobookshelf 2.38.0，修复媒体库扫描与访问控制问题"
+            ja:
+              - "Audiobookshelf 2.38.0 に更新（ライブラリースキャンとアクセス制御の問題を修正）"
+            ko:
+              - "Audiobookshelf 2.38.0으로 업데이트(라이브러리 스캔 및 액세스 제어 문제 수정)"
+            de:
+              - "Auf Audiobookshelf 2.38.0 mit Korrekturen für Bibliotheksscan und Zugriffskontrolle aktualisieren"
+            fr:
+              - "Mise à jour vers Audiobookshelf 2.38.0 avec corrections de l’analyse de bibliothèque et du contrôle d’accès"
+            es:
+              - "Actualización a Audiobookshelf 2.38.0 con correcciones del análisis de la biblioteca y del control de acceso"
+            it:
+              - "Aggiornamento a Audiobookshelf 2.38.0 con correzioni alla scansione della libreria e al controllo degli accessi"
           2.37.2-0013:
             en:
               - "Improve installation reliability in Package Center"
@@ -1832,7 +1851,7 @@ packages:
               - Correggere l'accesso a DSM quando l'app viene aperta tramite HTTP
     pins:
       - package: SynoPkgAudiobookshelf
-        version: 2.37.2-0013
+        version: 2.38.0-0001
         arch:
           - apollolake
           - avoton
@@ -1861,9 +1880,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 6bcc6719ce5bbff33862aa9c95900b856ef9de726bdd5a6dd1109a2b9fe1c791
-        md5: dfdf5e81f7cdd95f84d93410b6963910
-        size: 38565888
+        sha256: 1ec19dce5bcde67af912d020d03fca16a5a9f09b36ba3c5b22a8402197c2992e
+        md5: 191ea71de3ac24ffc9656ac0d61ec13e
+        size: 38566400
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -1881,8 +1900,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T09:41:29Z
-          source_ref: c2974282f4fe2464974e8ef9a9c536ddf1e8f5a9
+          reviewed_at: 2026-11-18T03:19:46Z
+          source_ref: 9e056c672796fa0533cdf2175ae778355c9eb2ba
           source_repo: synopackageland/syno-pkg-land-audiobookshelf
   - listed: true
     recommended: false
@@ -2548,7 +2567,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-vaultwarden
-      release: v1.37.4-0022
+      release: v1.37.5-0001
       access: public
     metadata:
       maintainer: Daniel García
@@ -2558,7 +2577,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://github.com/synopackageland/syno-pkg-land-vaultwarden
-      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.4-0019
+      source_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/tree/v1.37.5-0001
       issues_url: https://github.com/synopackageland/syno-pkg-land-vaultwarden/issues
       license: AGPL-3.0-only; packaging MIT; Web Vault and dependencies retain their respective licenses
       internet: required
@@ -2628,6 +2647,25 @@ packages:
           richiede l'accesso come amministratore DSM e Container Manager
       changelog:
         releases:
+          1.37.5-0001:
+            en:
+              - "Update to Vaultwarden 1.37.5 with security fixes and web vault 2026.10.1"
+            zh-TW:
+              - "更新至 Vaultwarden 1.37.5，包含安全性修正與網頁保險庫 2026.10.1"
+            zh-CN:
+              - "更新至 Vaultwarden 1.37.5，包含安全修复与网页密码库 2026.10.1"
+            ja:
+              - "Vaultwarden 1.37.5 に更新（セキュリティ修正とウェブ保管庫 2026.10.1 を含む）"
+            ko:
+              - "Vaultwarden 1.37.5로 업데이트(보안 수정 및 웹 보관함 2026.10.1 포함)"
+            de:
+              - "Auf Vaultwarden 1.37.5 mit Sicherheitskorrekturen und Web-Tresor 2026.10.1 aktualisieren"
+            fr:
+              - "Mise à jour vers Vaultwarden 1.37.5 avec correctifs de sécurité et coffre web 2026.10.1"
+            es:
+              - "Actualización a Vaultwarden 1.37.5 con correcciones de seguridad y la caja fuerte web 2026.10.1"
+            it:
+              - "Aggiornamento a Vaultwarden 1.37.5 con correzioni di sicurezza e cassaforte web 2026.10.1"
           1.37.4-0022:
             en:
               - "Improve installation reliability in Package Center"
@@ -2708,7 +2746,7 @@ packages:
                 aperta tramite HTTP
     pins:
       - package: SynoPkgVaultwarden
-        version: 1.37.4-0022
+        version: 1.37.5-0001
         arch:
           - apollolake
           - avoton
@@ -2737,9 +2775,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 3547ba228e41e7102eee14bcdc563bb34aaa3f7d631992431c06aecf532718c0
-        md5: b06ff855fb6bc5d6411187f926495f84
-        size: 40058368
+        sha256: 48d3330cbf06cf3a17df7d83363dd1275733110370dfd138aa8e26a7e7cc6924
+        md5: fac5e253d4edeb5dd403a4ff75f300ad
+        size: 40058880
         facts:
           built_with: sdk
           sdk_backend: binary
@@ -2756,8 +2794,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-12T10:01:29Z
-          source_ref: bc3746a7a3980946d441fba2614b86cdefbff7e4
+          reviewed_at: 2026-11-18T03:19:00Z
+          source_ref: a51a57dbe467e81771c49d8fbf70f54542535e44
           source_repo: synopackageland/syno-pkg-land-vaultwarden
   - listed: true
     recommended: false
