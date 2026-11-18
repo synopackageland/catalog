@@ -7,9 +7,9 @@ packages:
     publisher: synopackageland
     source:
       kind: github-release
-      repo: synopackageland/syno-reclaim
+      repo: synopackageland/syno-pkg-land-reclaim
       release: v0.1.1-1675
-      access: private
+      access: public
     metadata:
       guides:
         - url: https://community.synopkgland.com/d/41
@@ -167,9 +167,9 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T02:05:47Z
-          source_ref: 1a4e7f7386fff1f692113279d47427f08b58ed1b
-          source_repo: synopackageland/syno-reclaim
+          reviewed_at: 2026-11-18T08:27:57Z
+          source_ref: d30a460281be352f36010c0723d9568c78fe2133
+          source_repo: synopackageland/syno-pkg-land-reclaim
       - package: SynoReclaim
         version: 0.1.1-1675
         arch:
@@ -196,9 +196,9 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T02:05:47Z
-          source_ref: 1a4e7f7386fff1f692113279d47427f08b58ed1b
-          source_repo: synopackageland/syno-reclaim
+          reviewed_at: 2026-11-18T08:27:57Z
+          source_ref: d30a460281be352f36010c0723d9568c78fe2133
+          source_repo: synopackageland/syno-pkg-land-reclaim
       - package: SynoReclaim
         version: 0.1.1-1675
         arch:
@@ -248,18 +248,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T02:05:47Z
-          source_ref: 1a4e7f7386fff1f692113279d47427f08b58ed1b
-          source_repo: synopackageland/syno-reclaim
+          reviewed_at: 2026-11-18T08:27:57Z
+          source_ref: d30a460281be352f36010c0723d9568c78fe2133
+          source_repo: synopackageland/syno-pkg-land-reclaim
   - recommended: true
     category: network
     order: 20
     publisher: synopackageland
     source:
       kind: github-release
-      repo: synopackageland/syno-pkg-connect
+      repo: synopackageland/syno-pkg-land-connect
       release: v0.1.0-0183
-      access: private
+      access: public
     metadata:
       guides:
         - url: https://community.synopkgland.com/d/42
@@ -872,9 +872,9 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T04:50:09Z
-          source_ref: 218c320b17297dd92313f6396fcf0fefb2b44b08
-          source_repo: synopackageland/syno-pkg-connect
+          reviewed_at: 2026-11-18T08:27:58Z
+          source_ref: d706b19d70929b729ce2daac1f330d81e81aa9e6
+          source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
         version: 0.1.0-0183
         arch:
@@ -901,9 +901,9 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T04:50:09Z
-          source_ref: 218c320b17297dd92313f6396fcf0fefb2b44b08
-          source_repo: synopackageland/syno-pkg-connect
+          reviewed_at: 2026-11-18T08:27:58Z
+          source_ref: d706b19d70929b729ce2daac1f330d81e81aa9e6
+          source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
         version: 0.1.0-0183
         arch:
@@ -953,18 +953,18 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T04:50:09Z
-          source_ref: 218c320b17297dd92313f6396fcf0fefb2b44b08
-          source_repo: synopackageland/syno-pkg-connect
+          reviewed_at: 2026-11-18T08:27:58Z
+          source_ref: d706b19d70929b729ce2daac1f330d81e81aa9e6
+          source_repo: synopackageland/syno-pkg-land-connect
   - recommended: true
     category: files
     order: 30
     publisher: synopackageland
     source:
       kind: github-release
-      repo: synopackageland/syno-pkg-gopeed
-      release: v0.2.2-0114
-      access: private
+      repo: synopackageland/syno-pkg-land-download-hub
+      release: v0.2.2-0115
+      access: public
     metadata:
       guides:
         - url: https://community.synopkgland.com/d/43
@@ -980,7 +980,7 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
-      source_url: https://packages.synopkgland.com/src/synopackageland/syno-pkg-gopeed/
+      source_url: https://packages.synopkgland.com/src/synopackageland/syno-pkg-land-download-hub/
       upstream:
         name: Gopeed
         url: https://github.com/GopeedLab/gopeed
@@ -1061,6 +1061,25 @@ packages:
           aggiornamenti del motore. Basato su Gopeed; richiede l'accesso a DSM
       changelog:
         releases:
+          0.2.2-0115:
+            de:
+              - "Aus dem öffentlichen Quellcode-Repository erstellt; keine Änderungen an den Funktionen"
+            en:
+              - "Built from the public source repository; features are unchanged"
+            es:
+              - "Compilado desde el repositorio de código fuente público; las funciones no cambian"
+            fr:
+              - "Compilé à partir du dépôt de code source public ; les fonctionnalités sont inchangées"
+            it:
+              - "Compilato dal repository pubblico del codice sorgente; le funzioni sono invariate"
+            ja:
+              - "公開ソースリポジトリからビルドしました。機能に変更はありません"
+            ko:
+              - "공개 소스 저장소에서 빌드했어요. 기능은 바뀌지 않았어요"
+            zh-CN:
+              - "改为从公开的源代码仓库构建，功能没有变化"
+            zh-TW:
+              - "改為從公開的原始碼儲存庫建置，功能沒有變化"
           0.2.2-0114:
             de:
               - "Auf dem Smartphone verdeckt die Statuszeile der Suche nicht mehr das Feld „Ergebnisse filtern“"
@@ -1203,25 +1222,6 @@ packages:
               - Las listas desplegables muestran correctamente el nombre seleccionado
             it:
               - Gli elenchi a discesa mostrano correttamente il nome selezionato
-          0.2.2-0107:
-            en:
-              - Panels and menus look and respond better on phones
-            zh-TW:
-              - 手機上的面板與選單顯示更順
-            zh-CN:
-              - 手机上的面板与菜单显示更顺畅
-            ja:
-              - スマートフォンでパネルとメニューの表示がより自然に
-            ko:
-              - 휴대폰에서 패널과 메뉴가 더 매끄럽게 표시됨
-            de:
-              - Bereiche und Menüs werden auf Smartphones sauberer angezeigt
-            fr:
-              - Les panneaux et menus s’affichent mieux sur téléphone
-            es:
-              - Los paneles y menús se ven mejor en el teléfono
-            it:
-              - Pannelli e menu si vedono meglio sullo smartphone
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/01-downloads-0113-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/02-new-download-0113-en.png
@@ -1234,15 +1234,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgGopeed/03-phone-settings-0113-en.png
     pins:
       - package: SynoPkgGopeed
-        version: 0.2.2-0114
+        version: 0.2.2-0115
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: ffe05078ad91ee9a9a257af1798de26a357b46e47ee77df790361a6b9eca8b04
-        md5: 0d01811703202ea6725d9115d838175b
-        size: 68616704
+        sha256: f56e007c7b5edb75bb86f2c5daacce6be070dde3eb4c4ea799eb8cfdc41c6b93
+        md5: 95b384a4e26d411ba58b2e728e7430ff
+        size: 69309440
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1260,11 +1260,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T06:39:53Z
-          source_ref: a902718c956bf2877a33b6b5b9e8514a440c15a6
-          source_repo: synopackageland/syno-pkg-gopeed
+          reviewed_at: 2026-11-18T08:27:56Z
+          source_ref: e1212fc1927b54c0ba4c37aabe8827acfb08c609
+          source_repo: synopackageland/syno-pkg-land-download-hub
       - package: SynoPkgGopeed
-        version: 0.2.2-0114
+        version: 0.2.2-0115
         arch:
           - apollolake
           - avoton
@@ -1293,9 +1293,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 40a258d5cb4e527b08afb69343075c8f24423a4e1d77f02d86e0a394f896c132
-        md5: 0ab60b9ebad33515891e7a91e28bd3ca
-        size: 72309760
+        sha256: 7b9e2b7804f62b04f79609d37963ba4ed20ff40659a35981274d5d81e3267844
+        md5: ca8009190b52b6dcc11e9c3f6d28c94e
+        size: 73079808
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1313,9 +1313,9 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T06:39:53Z
-          source_ref: a902718c956bf2877a33b6b5b9e8514a440c15a6
-          source_repo: synopackageland/syno-pkg-gopeed
+          reviewed_at: 2026-11-18T08:27:56Z
+          source_ref: e1212fc1927b54c0ba4c37aabe8827acfb08c609
+          source_repo: synopackageland/syno-pkg-land-download-hub
   - listed: true
     recommended: false
     featured: false
