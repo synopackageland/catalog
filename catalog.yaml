@@ -296,7 +296,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-connect
-      release: v0.1.0-0185
+      release: v0.1.0-0186
       access: public
     metadata:
       guides:
@@ -573,6 +573,25 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0186:
+            de:
+              - "Smartphone-Seite: Textfelder heben beim Fokus das ganze abgerundete Feld hervor, und Dashboard-Karten, Kartenköpfe und Symbolleisten in DSM-Apps passen auf das Smartphone"
+            en:
+              - "Phone page: text fields highlight their whole rounded field on focus, and dashboard cards, card headers and toolbars in DSM Apps fit the phone"
+            es:
+              - "Página móvil: los campos de texto resaltan todo su contorno redondeado al enfocarlos, y las tarjetas del panel, los encabezados de tarjeta y las barras de herramientas de las aplicaciones de DSM se ajustan al teléfono"
+            fr:
+              - "Page mobile : les champs de texte mettent en évidence tout leur contour arrondi lorsqu’ils ont le focus, et les cartes du tableau de bord, les en-têtes de carte et les barres d’outils des applications DSM s’adaptent au téléphone"
+            it:
+              - "Pagina mobile: i campi di testo evidenziano tutto il bordo arrotondato quando sono attivi, e le schede della dashboard, le intestazioni delle schede e le barre degli strumenti delle app DSM si adattano al telefono"
+            ja:
+              - "スマホ版で、入力欄にフォーカスすると角の丸い欄全体が強調表示されるようになりました。DSM アプリのダッシュボードカード、カードの見出し、ツールバーがスマホの画面に収まります"
+            ko:
+              - "모바일 버전에서 입력란에 포커스하면 둥근 입력란 전체가 강조 표시됨. DSM 앱의 대시보드 카드, 카드 머리글, 도구 모음이 휴대폰 화면에 맞게 표시됨"
+            zh-CN:
+              - "手机版输入框获得焦点时，整个圆角输入框以主色突出显示；DSM App 的仪表板卡片、卡片标题栏与工具栏适配手机屏幕"
+            zh-TW:
+              - "手機版輸入欄位聚焦時，整個圓角欄位以主色標示；DSM App 的儀表板卡片、卡片標題列與工具列在手機上正確排版"
           0.1.0-0185:
             de:
               - "Smartphone-Seite: beim Hinzufügen eines NAS fragt die Seite nach, wenn dem Zertifikat vertraut werden muss; Apps öffnen sich sofort mit einem Startbildschirm, und die Unter-Apps von Surveillance Station passen auf das Smartphone"
@@ -787,34 +806,6 @@ packages:
             it:
               - "Pagina mobile: Synology Drive, Active Backup for Business e il suo portale si adattano allo schermo, e il portale si apre prima"
               - "Pagina mobile: le intestazioni di colonna brevi in cinese e giapponese non vanno più a capo tra un carattere e l’altro"
-          0.1.0-0177:
-            en:
-              - "Phone page: charts, host menus and chart time labels fit the screen"
-              - "On a phone, App URLs, App details and Connect's settings sections fit the screen, and an opened section no longer shows the list behind it"
-            zh-TW:
-              - "手機版圖表、主機選單與圖表時間標籤不再被切掉"
-              - "手機上的 App 網址、App 詳細資料與 Connect 設定分頁版面修正，開啟的分頁不再露出後面的清單"
-            zh-CN:
-              - "手机版图表、主机菜单与图表时间标签不再被截断"
-              - "手机上的 App 网址、App 详细信息与 Connect 设置分页版面修正，打开的分页不再露出后面的列表"
-            ja:
-              - "スマホ版でグラフ、ホストメニュー、グラフの時刻ラベルが切れなくなりました"
-              - "スマホで App の URL、App の詳細、Connect の設定セクションのレイアウトを修正。開いたセクションの後ろに一覧が見えなくなりました"
-            ko:
-              - "모바일 버전에서 차트, 호스트 메뉴, 차트 시간 레이블이 잘리지 않음"
-              - "휴대폰에서 App URL, App 세부 정보, Connect 설정 섹션 레이아웃 수정. 연 섹션 뒤로 목록이 보이지 않음"
-            de:
-              - "Smartphone-Seite: Diagramme, Host-Menüs und Zeitbeschriftungen passen auf den Bildschirm"
-              - "Auf dem Smartphone passen App-URLs, App-Details und Connect-Einstellungen auf den Bildschirm, und hinter einem geöffneten Abschnitt ist die Liste nicht mehr zu sehen"
-            fr:
-              - "Page mobile : graphiques, menus d’hôte et libellés horaires adaptés à l’écran"
-              - "Sur téléphone, URL des applications, détails d’une application et sections de réglages de Connect adaptés à l’écran, et la liste n’apparaît plus derrière une section ouverte"
-            es:
-              - "Página móvil: los gráficos, los menús de host y las etiquetas de hora se ajustan a la pantalla"
-              - "En el teléfono, las URL de las aplicaciones, sus detalles y las secciones de ajustes de Connect se ajustan a la pantalla, y la lista ya no se ve detrás de una sección abierta"
-            it:
-              - "Pagina mobile: grafici, menu degli host ed etichette orarie si adattano allo schermo"
-              - "Sul telefono, URL delle app, dettagli dell’app e sezioni delle impostazioni di Connect si adattano allo schermo, e l’elenco non si vede più dietro una sezione aperta"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -876,15 +867,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-phone-nas-status-0182-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0185
+        version: 0.1.0-0186
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2e87e08babebca0938dd183c33589f865e188378656e15b568cf62a67510420e
-        md5: 35dc2a9f7c82f0ed9b81a61f05c79d25
-        size: 18298880
+        sha256: abccc49425e52b44a419764960de781de13e9d5e3930091ae67538a4f5023a1d
+        md5: 8a1dedb25b64f55b6b77f1d877ab64a9
+        size: 18309120
         facts:
           built_with: sdk
           sdk_backend: go
@@ -901,19 +892,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T12:34:06Z
-          source_ref: 656c6be1a44e53bdf6f17bcfe055cf1fe0721a91
+          reviewed_at: 2026-11-18T14:20:00Z
+          source_ref: 837933c887086ec6fcd7d759d68d832ca68a575f
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0185
+        version: 0.1.0-0186
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 9a964c04f0c734e52b14a3ada135675baa82f4a6fd0232ab68a774756669a184
-        md5: 74263e0e7f669b2d9c37e076af29095c
-        size: 18892800
+        sha256: 40eeacbe4bb223f1b53fc6a191ade540d97170e5347b384a84be7f4dac5a4eb5
+        md5: 9b210d321869cdbe41c45c9d4a887455
+        size: 18903040
         facts:
           built_with: sdk
           sdk_backend: go
@@ -930,11 +921,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T12:34:06Z
-          source_ref: 656c6be1a44e53bdf6f17bcfe055cf1fe0721a91
+          reviewed_at: 2026-11-18T14:20:00Z
+          source_ref: 837933c887086ec6fcd7d759d68d832ca68a575f
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0185
+        version: 0.1.0-0186
         arch:
           - apollolake
           - avoton
@@ -963,9 +954,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 7448685001befc64be342c657b288eddcc7536282f23f127b9516a77efd949f0
-        md5: 5e4332b96a14beafd3131a996f56e830
-        size: 19681280
+        sha256: efbb8e2f1ac019df07f840b2b4cea77d20a998b9f8c4d6223b100b3e9f931403
+        md5: 3bef1edc5b11412583df19e184cd85b4
+        size: 19691520
         facts:
           built_with: sdk
           sdk_backend: go
@@ -982,8 +973,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T12:34:06Z
-          source_ref: 656c6be1a44e53bdf6f17bcfe055cf1fe0721a91
+          reviewed_at: 2026-11-18T14:20:00Z
+          source_ref: 837933c887086ec6fcd7d759d68d832ca68a575f
           source_repo: synopackageland/syno-pkg-land-connect
   - recommended: true
     category: files
