@@ -315,7 +315,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-connect
-      release: v0.1.0-0190
+      release: v0.1.0-0191
       access: public
     metadata:
       guides:
@@ -592,6 +592,61 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0191:
+            en:
+              - "Cloudflare: a new Local network option (off by default) offers DSM's local address when your browser is confirmed to reach it on your local network; it switches only when you click"
+              - "Cloudflare: after switching, sign in again; with HTTPS the browser first warns about DSM's own certificate; if the DSM firewall is on, allow TCP port 45001"
+              - "Phone page: Home shows Switch to local network in the same case"
+              - "Cloudflare: the temporary address now says each upload must finish within 100 seconds, so large files may fail"
+              - "Cloudflare: on narrow screens the upload limit line no longer starts a line with a stray dot"
+            zh-TW:
+              - "Cloudflare 新增「區域網路」選項（預設關閉）：確認你的瀏覽器連得到區域網路上的 DSM 時，會提供 DSM 的區域網路位址，點了才會切換"
+              - "Cloudflare 切換後需要再登入一次；使用 HTTPS 時瀏覽器會先對 DSM 自己的憑證顯示警告；若有開啟 DSM 防火牆，請放行 TCP 45001"
+              - "手機版首頁在同樣情況下會顯示「切換到區域網路」"
+              - "Cloudflare 臨時網址的上傳提示改為單一上傳需在 100 秒內完成，大檔可能失敗"
+              - "Cloudflare 上傳限制那一行在窄螢幕上不再把分隔點換到下一行開頭"
+            zh-CN:
+              - "Cloudflare 新增“局域网”选项（默认关闭）：确认你的浏览器能连到局域网上的 DSM 时，会提供 DSM 的局域网地址，点击后才会切换"
+              - "Cloudflare 切换后需要重新登录；使用 HTTPS 时浏览器会先对 DSM 自己的证书显示警告；如果开启了 DSM 防火墙，请放行 TCP 45001"
+              - "手机版首页在同样情况下会显示“切换到局域网”"
+              - "Cloudflare 临时地址的上传提示改为单次上传需在 100 秒内完成，大文件可能失败"
+              - "Cloudflare 上传限制那一行在窄屏幕上不再把分隔点换到下一行开头"
+            ja:
+              - "Cloudflare に「ローカルネットワーク」オプション（既定はオフ）を追加しました。ブラウザーがローカルネットワーク上の DSM に届くと確認できたときに DSM のローカルアドレスを案内し、クリックしたときだけ切り替えます"
+              - "Cloudflare で切り替えた後はもう一度サインインが必要です。HTTPS ではブラウザーが先に DSM 自身の証明書について警告します。DSM のファイアウォールが有効な場合は TCP 45001 を許可してください"
+              - "スマホ版のホームにも同じ場合に「ローカルネットワークに切り替え」が表示されます"
+              - "Cloudflare の一時アドレスのアップロード表示を、1 回のアップロードは 100 秒以内に完了する必要があり、大きなファイルは失敗することがある、に改めました"
+              - "Cloudflare のアップロード上限の行で、狭い画面のとき区切りの点が次の行の先頭に来なくなりました"
+            ko:
+              - "Cloudflare에 로컬 네트워크 옵션(기본값 꺼짐)이 추가됨. 브라우저가 로컬 네트워크의 DSM에 닿는 것이 확인되면 DSM의 로컬 주소를 안내하며, 클릭할 때만 전환됨"
+              - "Cloudflare에서 전환한 뒤에는 다시 로그인해야 함. HTTPS에서는 브라우저가 먼저 DSM 자체 인증서에 대해 경고함. DSM 방화벽을 켰다면 TCP 45001을 허용해야 함"
+              - "모바일 버전 홈에도 같은 경우에 로컬 네트워크로 전환이 표시됨"
+              - "Cloudflare 임시 주소의 업로드 안내가 한 번의 업로드는 100초 안에 끝나야 하며 큰 파일은 실패할 수 있다로 바뀜"
+              - "Cloudflare 업로드 한도 줄에서 좁은 화면일 때 구분 점이 다음 줄 맨 앞에 오지 않음"
+            de:
+              - "Cloudflare: neue Option Lokales Netzwerk (standardmäßig aus) bietet die lokale DSM-Adresse an, wenn bestätigt ist, dass Ihr Browser DSM im lokalen Netzwerk erreicht; gewechselt wird erst per Klick"
+              - "Cloudflare: nach dem Wechsel erneut anmelden; bei HTTPS warnt der Browser zuerst vor dem DSM-eigenen Zertifikat; ist die DSM-Firewall aktiv, TCP-Port 45001 freigeben"
+              - "Smartphone-Seite: Start zeigt im selben Fall Zum lokalen Netzwerk wechseln"
+              - "Cloudflare: die temporäre Adresse sagt jetzt, dass jeder Upload in 100 Sekunden fertig sein muss und große Dateien scheitern können"
+              - "Cloudflare: auf schmalen Bildschirmen beginnt die Zeile zur Upload-Grenze nicht mehr mit einem einzelnen Punkt"
+            fr:
+              - "Cloudflare : nouvelle option Réseau local (désactivée par défaut) qui propose l’adresse locale de DSM quand il est confirmé que votre navigateur atteint DSM sur le réseau local ; le changement ne se fait que sur un clic"
+              - "Cloudflare : après le changement, reconnectez-vous ; en HTTPS, le navigateur avertit d’abord au sujet du certificat propre à DSM ; si le pare-feu de DSM est activé, autorisez le port TCP 45001"
+              - "Page mobile : l’accueil affiche Passer au réseau local dans le même cas"
+              - "Cloudflare : l’adresse temporaire indique désormais que chaque envoi doit se terminer en 100 secondes, les gros fichiers peuvent échouer"
+              - "Cloudflare : sur les écrans étroits, la ligne de limite d’envoi ne commence plus par un point isolé"
+            es:
+              - "Cloudflare: nueva opción Red local (desactivada de forma predeterminada) que ofrece la dirección local de DSM cuando se confirma que tu navegador llega a DSM en la red local; solo cambia cuando haces clic"
+              - "Cloudflare: después de cambiar, inicia sesión de nuevo; con HTTPS el navegador avisa primero sobre el certificado propio de DSM; si el cortafuegos de DSM está activado, permite el puerto TCP 45001"
+              - "Página móvil: Inicio muestra Cambiar a la red local en el mismo caso"
+              - "Cloudflare: la dirección temporal ahora indica que cada subida debe terminar en 100 segundos, así que los archivos grandes pueden fallar"
+              - "Cloudflare: en pantallas estrechas, la línea del límite de subida ya no empieza con un punto suelto"
+            it:
+              - "Cloudflare: nuova opzione Rete locale (disattivata per impostazione predefinita) che propone l’indirizzo locale di DSM quando è confermato che il browser raggiunge DSM sulla rete locale; il passaggio avviene solo con un clic"
+              - "Cloudflare: dopo il passaggio accedi di nuovo; con HTTPS il browser avvisa prima sul certificato proprio di DSM; se il firewall di DSM è attivo, consenti la porta TCP 45001"
+              - "Pagina mobile: la Home mostra Passa alla rete locale nello stesso caso"
+              - "Cloudflare: l’indirizzo temporaneo ora indica che ogni caricamento deve finire entro 100 secondi, quindi i file grandi possono non riuscire"
+              - "Cloudflare: sugli schermi stretti la riga del limite di caricamento non inizia più con un punto isolato"
           0.1.0-0190:
             en:
               - "Phone page: Photos, Drive, Chat, Calendar and other Apps that open in a page of their own open directly and much faster; Reopen shows only when loading failed"
@@ -722,71 +777,6 @@ packages:
               - "更新至最新的 UI 套件与 SDK"
             zh-TW:
               - "更新至最新的 UI 套件與 SDK"
-          0.1.0-0183:
-            de:
-              - "Smartphone-Seite: Start, Apps und Benachrichtigungen lassen sich durch Herunterziehen aktualisieren"
-              - "Smartphone-Seite: in Paket-Apps mit seitlichen Registerkarten öffnen sich die Registerkarten über die Menütaste; Seitenleisten stehen über oder unter dem Inhalt, und Listen füllen den Bildschirm"
-              - "Smartphone-Seite: „NAS hinzufügen“ nimmt auch ein NAS ohne Syno Connect Center auf und öffnet dessen DSM in einem neuen Tab; vertraut der Browser dem Zertifikat des NAS nicht, öffnen Sie DSM, akzeptieren es dort, und die Seite prüft nach der Rückkehr erneut"
-            en:
-              - "Phone page: pull down on Home, Apps and Notifications to refresh"
-              - "Phone page: in package Apps with side tabs, the tabs open from the menu button; side panels sit above or below the content and lists fill the screen"
-              - "Phone page: Add NAS also adds a NAS without Syno Connect Center and opens its DSM in a new tab; when the browser does not trust the NAS certificate, open DSM to accept it and the page checks again when you come back"
-            es:
-              - "Página móvil: desliza hacia abajo en Inicio, Aplicaciones y Notificaciones para actualizar"
-              - "Página móvil: en las aplicaciones de paquete con pestañas laterales, las pestañas se abren desde el botón de menú; los paneles laterales se colocan encima o debajo del contenido y las listas ocupan la pantalla"
-              - "Página móvil: Añadir NAS también añade un NAS sin Syno Connect Center y abre su DSM en una pestaña nueva; si el navegador no confía en el certificado del NAS, abre DSM para aceptarlo y la página vuelve a comprobarlo al regresar"
-            fr:
-              - "Page mobile : tirez vers le bas sur Accueil, Applications et Notifications pour actualiser"
-              - "Page mobile : dans les applications de paquet à onglets latéraux, les onglets s’ouvrent depuis le bouton de menu ; les panneaux latéraux se placent au-dessus ou au-dessous du contenu et les listes remplissent l’écran"
-              - "Page mobile : Ajouter un NAS accepte aussi un NAS sans Syno Connect Center et ouvre son DSM dans un nouvel onglet ; si le navigateur ne fait pas confiance au certificat du NAS, ouvrez DSM pour l’accepter, et la page vérifie de nouveau à votre retour"
-            it:
-              - "Pagina mobile: trascina verso il basso su Home, App e Notifiche per aggiornare"
-              - "Pagina mobile: nelle app dei pacchetti con schede laterali, le schede si aprono dal pulsante del menu; i pannelli laterali stanno sopra o sotto il contenuto e gli elenchi riempiono lo schermo"
-              - "Pagina mobile: Aggiungi NAS aggiunge anche un NAS senza Syno Connect Center e ne apre DSM in una nuova scheda; se il browser non considera attendibile il certificato del NAS, apri DSM per accettarlo e la pagina ricontrolla al tuo ritorno"
-            ja:
-              - "スマホ版のホーム、アプリ、通知で、下に引いて更新できるようになりました"
-              - "スマホ版で、サイドタブのあるパッケージアプリのタブがメニューボタンから開くようになりました。サイドパネルは内容の上または下に表示され、一覧が画面いっぱいに表示されます"
-              - "スマホ版の「NAS を追加」で、Syno Connect Center のない NAS も追加でき、その DSM を新しいタブで開けるようになりました。ブラウザーが NAS の証明書を信頼していない場合は、DSM を開いて証明書を受け入れると、戻ったときにページが自動で再確認します"
-            ko:
-              - "모바일 버전 홈, 앱, 알림에서 아래로 당겨 새로 고칠 수 있음"
-              - "모바일 버전에서 사이드 탭이 있는 패키지 앱의 탭을 메뉴 버튼으로 열 수 있음. 사이드 패널은 내용 위나 아래에 표시되고 목록이 화면을 채움"
-              - "모바일 버전 NAS 추가에서 Syno Connect Center가 없는 NAS도 추가할 수 있으며 해당 DSM이 새 탭에서 열림. 브라우저가 NAS 인증서를 신뢰하지 않으면 DSM을 열어 인증서를 수락할 수 있고, 돌아오면 페이지가 자동으로 다시 확인함"
-            zh-CN:
-              - "手机版首页、App 与通知页可下拉刷新"
-              - "手机版中，有侧边标签页的套件 App 改由菜单按钮打开标签页；侧栏改放在内容上方或下方，列表填满屏幕"
-              - "手机版“添加 NAS”可添加未安装 Syno Connect Center 的 NAS，并在新标签页打开其 DSM；浏览器不信任 NAS 证书时，可打开 DSM 接受证书，回到页面后会自动重新检查"
-            zh-TW:
-              - "手機版首頁、App 與通知頁可下拉重新整理"
-              - "手機版中，有側邊分頁的套件 App 改由選單按鈕開啟分頁；側欄改放在內容上方或下方，清單填滿畫面"
-              - "手機版「加入 NAS」可加入未安裝 Syno Connect Center 的 NAS，並在新分頁開啟其 DSM；瀏覽器不信任 NAS 憑證時，可開啟 DSM 接受憑證，回到頁面後會自動重新檢查"
-          0.1.0-0182:
-            en:
-            - "Phone page: the address bar keeps showing /m after signing in and after a reload"
-            - "Phone page: Apps with their own desktop, such as Surveillance Station, open as a list that leads straight to each feature; Virtual Machine Manager statistics show in full on a narrow screen"
-            zh-TW:
-            - "手機版網址 /m 在登入與重新整理後維持不變"
-            - "手機版 Surveillance Station 這類自帶桌面的 App 改為清單，可直接開啟各功能；Virtual Machine Manager 的統計格在窄螢幕上完整顯示"
-            zh-CN:
-            - "手机版网址 /m 在登录与刷新后保持不变"
-            - "手机版 Surveillance Station 这类自带桌面的 App 改为列表，可直接打开各功能；Virtual Machine Manager 的统计格在窄屏上完整显示"
-            ja:
-            - "スマホ版のアドレス /m が、サインイン後や再読み込み後もそのまま表示されるようになりました"
-            - "スマホ版で Surveillance Station など独自のデスクトップを持つアプリが一覧で表示され、各機能を直接開けるようになりました。Virtual Machine Manager の統計が狭い画面でもすべて表示されるようになりました"
-            ko:
-            - "모바일 버전 주소 /m가 로그인 후와 새로 고침 후에도 그대로 유지됨"
-            - "모바일 버전에서 Surveillance Station처럼 자체 데스크톱이 있는 앱이 목록으로 표시되어 각 기능을 바로 열 수 있음. Virtual Machine Manager 통계가 좁은 화면에서도 모두 표시됨"
-            de:
-            - "Smartphone-Seite: die Adressleiste zeigt nach der Anmeldung und nach dem Neuladen weiterhin /m"
-            - "Smartphone-Seite: Apps mit eigenem Desktop wie Surveillance Station öffnen sich als Liste, aus der jede Funktion direkt erreichbar ist; die Statistiken von Virtual Machine Manager werden auf schmalen Bildschirmen vollständig angezeigt"
-            fr:
-            - "Page mobile : la barre d’adresse affiche toujours /m après la connexion et après un rechargement"
-            - "Page mobile : les applications dotées de leur propre bureau, comme Surveillance Station, s’ouvrent sous forme de liste qui mène directement à chaque fonction ; les statistiques de Virtual Machine Manager s’affichent entièrement sur un écran étroit"
-            es:
-            - "Página móvil: la barra de direcciones sigue mostrando /m tras iniciar sesión y tras recargar"
-            - "Página móvil: las aplicaciones con escritorio propio, como Surveillance Station, se abren como una lista que lleva directamente a cada función; las estadísticas de Virtual Machine Manager se muestran completas en pantallas estrechas"
-            it:
-            - "Pagina mobile: la barra degli indirizzi continua a mostrare /m dopo l’accesso e dopo un ricaricamento"
-            - "Pagina mobile: le app con un proprio desktop, come Surveillance Station, si aprono come elenco che porta direttamente a ogni funzione; le statistiche di Virtual Machine Manager si vedono per intero su uno schermo stretto"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -848,15 +838,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-phone-nas-status-0182-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0190
+        version: 0.1.0-0191
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 2f1ff86fe822520c137332a9dcfdc6c2ea223515f640b58fce29072f291d574e
-        md5: ab71dc65dde159bb905153d5cb4e59e7
-        size: 18083840
+        sha256: cb61293e291f37939e0320d2459552eda064abc4de27438628a031c97f8692c2
+        md5: 21a6584c05c51895ef7ac301f283f357
+        size: 18145280
         facts:
           built_with: sdk
           sdk_backend: go
@@ -873,19 +863,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-20T17:50:00Z
-          source_ref: 47b1a9034171db422ef6c6e38a75ea74846eca10
+          reviewed_at: 2026-11-20T23:50:00Z
+          source_ref: 7fa57ce339303ba8a7778328872204652a19b502
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0190
+        version: 0.1.0-0191
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 7a67dedf9d6fd5ed552488bf6b20da1539a8f2f8df45cdab5d40b12564c35f87
-        md5: eff3a28887f8b166fade2f57c805ba84
-        size: 18677760
+        sha256: f742b15182a3487c0fa3eae6e97cfe19af42be1c8a4abd02c6a9423f809ae1d0
+        md5: a017c013778a6372aa5106310525a504
+        size: 18739200
         facts:
           built_with: sdk
           sdk_backend: go
@@ -902,11 +892,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-20T17:50:00Z
-          source_ref: 47b1a9034171db422ef6c6e38a75ea74846eca10
+          reviewed_at: 2026-11-20T23:50:00Z
+          source_ref: 7fa57ce339303ba8a7778328872204652a19b502
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0190
+        version: 0.1.0-0191
         arch:
           - apollolake
           - avoton
@@ -935,9 +925,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: dc74e12c90a1d376ebf0d754648d4da3a31d264ccb997bee71a481ed0f242427
-        md5: 86fb13357f440e77860ef2ec62a20998
-        size: 19466240
+        sha256: f57311cba31322ede38ac596060907c5e1dc21fbab898ec0ce2a3062483d338f
+        md5: 54452c23d267869ebf8519f945b8b08a
+        size: 19527680
         facts:
           built_with: sdk
           sdk_backend: go
@@ -954,8 +944,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-20T17:50:00Z
-          source_ref: 47b1a9034171db422ef6c6e38a75ea74846eca10
+          reviewed_at: 2026-11-20T23:50:00Z
+          source_ref: 7fa57ce339303ba8a7778328872204652a19b502
           source_repo: synopackageland/syno-pkg-land-connect
   - recommended: true
     category: files
