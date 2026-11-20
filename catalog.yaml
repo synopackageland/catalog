@@ -315,7 +315,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-connect
-      release: v0.1.0-0186
+      release: v0.1.0-0190
       access: public
     metadata:
       guides:
@@ -592,6 +592,70 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0190:
+            en:
+              - "Phone page: Photos, Drive, Chat, Calendar and other Apps that open in a page of their own open directly and much faster; Reopen shows only when loading failed"
+              - "Phone page: Home shows the DSM version on its own line, with an Update available tag that opens Update & Restore (administrators)"
+              - "Phone page: Security Advisor and its Security Baseline, Hyper Backup's task page and DSM grids fit the phone; grids scroll sideways as a whole"
+              - "Phone page: the browser tab, the home screen icon and the Add to Home Screen card show DSM's own icon"
+              - "Cloudflare: own domain, Free link and temporary address show that uploads are limited to 100 MB per file and downloads have no limit"
+              - "Cloudflare: an App address removed before the tunnel was recreated is now cleaned up, so later App address changes no longer fail"
+            zh-TW:
+              - "手機版的 Photos、Drive、Chat、Calendar 等在自己頁面開啟的 App 改為直接開啟，速度快很多；只有載入失敗時才顯示「重新開啟」"
+              - "手機版首頁將 DSM 版本獨立一行顯示，有更新時顯示「有可用更新」標籤，點一下開啟「更新與還原」（管理員）"
+              - "手機版的安全諮詢中心與安全基準、Hyper Backup 任務頁面與 DSM 表格在手機上正確排版；表格整張一起橫向捲動"
+              - "手機版的瀏覽器分頁、主畫面圖示與「加入主畫面」卡片改為顯示 DSM 本身的圖示"
+              - "Cloudflare 的自有網域、免費連結與臨時網址會標示上傳每個檔案最多 100 MB、下載無限制"
+              - "Cloudflare 通道重建前已移除的 App 網址現在會正確清除，之後變更 App 網址不再失敗"
+            zh-CN:
+              - "手机版的 Photos、Drive、Chat、Calendar 等在自己页面打开的 App 改为直接打开，速度快很多；只有加载失败时才显示“重新打开”"
+              - "手机版首页将 DSM 版本单独一行显示，有更新时显示“有可用更新”标签，点一下打开“更新和还原”（管理员）"
+              - "手机版的安全顾问与安全基准、Hyper Backup 任务页面与 DSM 表格适配手机屏幕；表格整张一起横向滚动"
+              - "手机版的浏览器标签页、主屏幕图标与“添加到主屏幕”卡片改为显示 DSM 自己的图标"
+              - "Cloudflare 的自有域名、免费链接与临时地址会标示上传每个文件最多 100 MB、下载无限制"
+              - "Cloudflare 隧道重建前已移除的 App 地址现在会正确清除，之后更改 App 地址不再失败"
+            ja:
+              - "スマホ版で、Photos、Drive、Chat、Calendar など専用ページで開くアプリが直接開き、ずっと速くなりました。「再度開く」は読み込みに失敗したときだけ表示されます"
+              - "スマホ版のホームで DSM のバージョンが独立した行に表示され、更新があるときは「更新があります」タグから「更新と復元」を開けます（管理者）"
+              - "スマホ版で、セキュリティ アドバイザーとセキュリティ ベースライン、Hyper Backup のタスクページ、DSM の表がスマホの画面に収まります。表は全体が横にスクロールします"
+              - "スマホ版で、ブラウザのタブ、ホーム画面のアイコン、「ホーム画面に追加」カードに DSM 本来のアイコンが表示されるようになりました"
+              - "Cloudflare の独自ドメイン、無料リンク、一時アドレスに、アップロードは 1 ファイル最大 100 MB、ダウンロードは制限なしと表示されるようになりました"
+              - "Cloudflare で、トンネルの再作成前に削除したアプリのアドレスが正しく片付けられ、その後のアプリのアドレス変更が失敗しなくなりました"
+            ko:
+              - "모바일 버전에서 Photos, Drive, Chat, Calendar 등 자체 페이지에서 열리는 앱이 바로 열리고 훨씬 빨라짐. 다시 열기는 로드에 실패했을 때만 표시됨"
+              - "모바일 버전 홈에서 DSM 버전이 별도 줄에 표시되고, 업데이트가 있으면 업데이트 있음 태그로 업데이트 및 복원을 열 수 있음(관리자)"
+              - "모바일 버전에서 보안 어드바이저와 보안 기준, Hyper Backup 작업 페이지, DSM 표가 휴대폰 화면에 맞게 표시됨. 표는 전체가 가로로 스크롤됨"
+              - "모바일 버전에서 브라우저 탭, 홈 화면 아이콘, 홈 화면에 추가 카드에 DSM 고유 아이콘이 표시됨"
+              - "Cloudflare의 내 도메인, 무료 링크, 임시 주소에 업로드는 파일당 최대 100 MB, 다운로드는 제한 없음이 표시됨"
+              - "Cloudflare에서 터널을 다시 만들기 전에 제거한 앱 주소가 정리되어 이후 앱 주소 변경이 더 이상 실패하지 않음"
+            de:
+              - "Smartphone-Seite: Photos, Drive, Chat, Calendar und andere Apps mit eigener Seite öffnen sich direkt und viel schneller; Erneut öffnen erscheint nur, wenn das Laden fehlschlägt"
+              - "Smartphone-Seite: Start zeigt die DSM-Version in einer eigenen Zeile, mit dem Hinweis Update verfügbar, der Aktualisieren und Wiederherstellen öffnet (Administratoren)"
+              - "Smartphone-Seite: Sicherheitsberatung mit Sicherheits-Baseline, die Aufgabenseite von Hyper Backup und DSM-Tabellen passen auf das Smartphone; Tabellen scrollen als Ganzes seitwärts"
+              - "Smartphone-Seite: Browser-Tab, Startbildschirm-Symbol und die Karte „Zum Startbildschirm hinzufügen“ zeigen das DSM-eigene Symbol"
+              - "Cloudflare: eigene Domain, kostenloser Link und temporäre Adresse zeigen, dass Uploads auf 100 MB pro Datei begrenzt sind und Downloads keine Grenze haben"
+              - "Cloudflare: eine vor dem Neuanlegen des Tunnels entfernte App-Adresse wird jetzt bereinigt, sodass spätere Änderungen an App-Adressen nicht mehr fehlschlagen"
+            fr:
+              - "Page mobile : Photos, Drive, Chat, Calendar et les autres applications qui s’ouvrent dans leur propre page s’ouvrent directement et bien plus vite ; Rouvrir n’apparaît qu’en cas d’échec du chargement"
+              - "Page mobile : l’accueil affiche la version de DSM sur sa propre ligne, avec une étiquette Mise à jour disponible qui ouvre Mise à jour et restauration (administrateurs)"
+              - "Page mobile : Security Advisor et sa base de sécurité, la page de tâche d’Hyper Backup et les tableaux DSM s’adaptent au téléphone ; les tableaux défilent latéralement en entier"
+              - "Page mobile : l’onglet du navigateur, l’icône de l’écran d’accueil et la carte Ajouter à l’écran d’accueil affichent l’icône de DSM"
+              - "Cloudflare : le domaine personnel, le lien gratuit et l’adresse temporaire indiquent que les envois sont limités à 100 Mo par fichier et que les téléchargements sont illimités"
+              - "Cloudflare : une adresse d’application supprimée avant la recréation du tunnel est désormais nettoyée, et les modifications d’adresses d’application suivantes n’échouent plus"
+            es:
+              - "Página móvil: Photos, Drive, Chat, Calendar y otras aplicaciones que se abren en su propia página se abren directamente y mucho más rápido; Volver a abrir solo aparece si falla la carga"
+              - "Página móvil: Inicio muestra la versión de DSM en su propia línea, con una etiqueta Actualización disponible que abre Actualizar y restaurar (administradores)"
+              - "Página móvil: Security Advisor y su base de seguridad, la página de tareas de Hyper Backup y las tablas de DSM se ajustan al teléfono; las tablas se desplazan de lado completas"
+              - "Página móvil: la pestaña del navegador, el icono de la pantalla de inicio y la tarjeta Añadir a pantalla de inicio muestran el icono propio de DSM"
+              - "Cloudflare: el dominio propio, el enlace gratuito y la dirección temporal indican que las subidas tienen un límite de 100 MB por archivo y las descargas no tienen límite"
+              - "Cloudflare: una dirección de aplicación eliminada antes de recrear el túnel ahora se limpia, y los cambios posteriores de direcciones de aplicación ya no fallan"
+            it:
+              - "Pagina mobile: Photos, Drive, Chat, Calendar e le altre app che si aprono in una propria pagina si aprono direttamente e molto più velocemente; Riapri compare solo se il caricamento non riesce"
+              - "Pagina mobile: la Home mostra la versione di DSM su una riga a sé, con un’etichetta Aggiornamento disponibile che apre Aggiorna e ripristina (amministratori)"
+              - "Pagina mobile: Security Advisor con la sua baseline di sicurezza, la pagina delle attività di Hyper Backup e le tabelle DSM si adattano al telefono; le tabelle scorrono di lato per intero"
+              - "Pagina mobile: la scheda del browser, l’icona nella schermata Home e la scheda Aggiungi alla schermata Home mostrano l’icona di DSM"
+              - "Cloudflare: dominio personale, link gratuito e indirizzo temporaneo indicano che i caricamenti sono limitati a 100 MB per file e i download non hanno limiti"
+              - "Cloudflare: un indirizzo di app rimosso prima di ricreare il tunnel ora viene ripulito, e le modifiche successive agli indirizzi delle app non falliscono più"
           0.1.0-0186:
             de:
               - "Smartphone-Seite: Textfelder heben beim Fokus das ganze abgerundete Feld hervor, und Dashboard-Karten, Kartenköpfe und Symbolleisten in DSM-Apps passen auf das Smartphone"
@@ -723,108 +787,6 @@ packages:
             it:
             - "Pagina mobile: la barra degli indirizzi continua a mostrare /m dopo l’accesso e dopo un ricaricamento"
             - "Pagina mobile: le app con un proprio desktop, come Surveillance Station, si aprono come elenco che porta direttamente a ogni funzione; le statistiche di Virtual Machine Manager si vedono per intero su uno schermo stretto"
-          0.1.0-0181:
-            en:
-            - "Phone page: in Container Manager lists, each label and its value stay on one line"
-            - "Phone page: Virtual Machine Manager, Tiering, Synology Chat and the Active Backup for Business Portal fit the screen"
-            - "Phone page: the top bar of Synology apps is more compact"
-            zh-TW:
-            - "手機版 Container Manager 清單中，標籤與值顯示在同一行"
-            - "手機版 Virtual Machine Manager、Tiering、Synology Chat 與 Active Backup for Business Portal 的版面符合螢幕寬度"
-            - "手機版 Synology App 的頂部列更緊湊"
-            zh-CN:
-            - "手机版 Container Manager 列表中，标签与值显示在同一行"
-            - "手机版 Virtual Machine Manager、Tiering、Synology Chat 与 Active Backup for Business Portal 的布局适配屏幕宽度"
-            - "手机版 Synology App 的顶部栏更紧凑"
-            ja:
-            - "スマホ版の Container Manager の一覧で、ラベルと値が同じ行に表示されるようになりました"
-            - "スマホ版で Virtual Machine Manager、Tiering、Synology Chat、Active Backup for Business Portal が画面に収まるようになりました"
-            - "スマホ版で Synology アプリの上部バーがよりコンパクトになりました"
-            ko:
-            - "모바일 버전 Container Manager 목록에서 레이블과 값이 한 줄에 표시됨"
-            - "모바일 버전에서 Virtual Machine Manager, Tiering, Synology Chat, Active Backup for Business Portal이 화면에 맞게 표시됨"
-            - "모바일 버전에서 Synology 앱의 상단 표시줄이 더 간결해짐"
-            de:
-            - "Smartphone-Seite: in den Listen von Container Manager stehen Bezeichnung und Wert in einer Zeile"
-            - "Smartphone-Seite: Virtual Machine Manager, Tiering, Synology Chat und das Active Backup for Business Portal passen auf den Bildschirm"
-            - "Smartphone-Seite: die obere Leiste der Synology-Apps ist kompakter"
-            fr:
-            - "Page mobile : dans les listes de Container Manager, chaque libellé et sa valeur restent sur une seule ligne"
-            - "Page mobile : Virtual Machine Manager, Tiering, Synology Chat et le portail Active Backup for Business s’adaptent à l’écran"
-            - "Page mobile : la barre supérieure des applications Synology est plus compacte"
-            es:
-            - "Página móvil: en las listas de Container Manager, cada etiqueta y su valor quedan en una sola línea"
-            - "Página móvil: Virtual Machine Manager, Tiering, Synology Chat y el portal de Active Backup for Business se ajustan a la pantalla"
-            - "Página móvil: la barra superior de las aplicaciones de Synology es más compacta"
-            it:
-            - "Pagina mobile: negli elenchi di Container Manager, ogni etichetta e il suo valore restano su una sola riga"
-            - "Pagina mobile: Virtual Machine Manager, Tiering, Synology Chat e il portale di Active Backup for Business si adattano allo schermo"
-            - "Pagina mobile: la barra superiore delle app Synology è più compatta"
-          0.1.0-0180:
-            en:
-            - "Phone page: the Active Backup for Business calendar and the Synology Drive welcome screen are no longer cut off"
-            - "In the Scan with your phone section, the left and right columns are centred vertically beside the phone"
-            - "On a phone, the page background, cards and nested panels now match the desktop look"
-            zh-TW:
-            - "手機版 Active Backup for Business 日曆和 Synology Drive 歡迎畫面不再被切掉"
-            - "「用手機掃描」區的左右兩欄改為對齊中間手機示意圖上下置中"
-            - "手機版的頁面底色、卡片與巢狀面板現在與桌面版一致"
-            zh-CN:
-            - "手机版 Active Backup for Business 日历和 Synology Drive 欢迎画面不再被截断"
-            - "“用手机扫描”区的左右两栏改为对齐中间手机示意图上下居中"
-            - "手机版的页面底色、卡片与嵌套面板现在与桌面版一致"
-            ja:
-            - "スマホ版で Active Backup for Business のカレンダーと Synology Drive のようこそ画面が切れなくなりました"
-            - "「スマホでスキャン」の左右の列が、中央のスマホの図に合わせて上下中央に揃うようになりました"
-            - "スマホ版のページ背景、カード、入れ子のパネルがデスクトップ版と同じ見た目になりました"
-            ko:
-            - "모바일 버전에서 Active Backup for Business 달력과 Synology Drive 시작 화면이 잘리지 않음"
-            - "휴대폰으로 스캔 영역의 왼쪽과 오른쪽 열이 가운데 휴대폰 그림에 맞춰 세로 가운데 정렬됨"
-            - "휴대폰에서 페이지 배경, 카드, 중첩 패널이 데스크톱과 같은 모양으로 표시됨"
-            de:
-            - "Smartphone-Seite: der Kalender von Active Backup for Business und der Willkommensbildschirm von Synology Drive werden nicht mehr abgeschnitten"
-            - "Im Bereich Mit dem Smartphone scannen stehen die linke und rechte Spalte vertikal mittig neben dem Smartphone"
-            - "Auf dem Smartphone sehen Seitenhintergrund, Karten und verschachtelte Bereiche jetzt wie am Desktop aus"
-            fr:
-            - "Page mobile : le calendrier d’Active Backup for Business et l’écran d’accueil de Synology Drive ne sont plus coupés"
-            - "Dans la section Scanner avec le téléphone, les colonnes de gauche et de droite sont centrées verticalement à côté du téléphone"
-            - "Sur téléphone, le fond de page, les cartes et les panneaux imbriqués ont désormais le même aspect que sur ordinateur"
-            es:
-            - "Página móvil: el calendario de Active Backup for Business y la pantalla de bienvenida de Synology Drive ya no se cortan"
-            - "En la sección Escanear con el teléfono, las columnas izquierda y derecha quedan centradas verticalmente junto al teléfono"
-            - "En el teléfono, el fondo de la página, las tarjetas y los paneles anidados ahora se ven igual que en el escritorio"
-            it:
-            - "Pagina mobile: il calendario di Active Backup for Business e la schermata di benvenuto di Synology Drive non vengono più tagliati"
-            - "Nella sezione Scansiona con il telefono, le colonne sinistra e destra sono centrate verticalmente accanto al telefono"
-            - "Sul telefono, lo sfondo della pagina, le schede e i pannelli annidati ora hanno lo stesso aspetto del desktop"
-          0.1.0-0178:
-            en:
-              - "Phone page: Synology Drive, Active Backup for Business and its Portal fit the screen, and the Portal opens sooner"
-              - "Phone page: short Chinese and Japanese column headers no longer break between characters"
-            zh-TW:
-              - "手機版 Synology Drive、Active Backup for Business 與其 Portal 版面修正，Portal 開啟更快"
-              - "手機版中文、日文欄位標題不再被逐字斷行"
-            zh-CN:
-              - "手机版 Synology Drive、Active Backup for Business 及其 Portal 版面修正，Portal 打开更快"
-              - "手机版中文、日文栏位标题不再被逐字断行"
-            ja:
-              - "スマホ版で Synology Drive、Active Backup for Business とそのポータルが画面に収まり、ポータルが速く開くようになりました"
-              - "スマホ版で中国語・日本語の短い列見出しが 1 文字ずつ改行されなくなりました"
-            ko:
-              - "모바일 버전에서 Synology Drive, Active Backup for Business 및 포털이 화면에 맞게 표시되고 포털이 더 빨리 열림"
-              - "모바일 버전에서 짧은 중국어·일본어 열 머리글이 글자 단위로 줄바꿈되지 않음"
-            de:
-              - "Smartphone-Seite: Synology Drive, Active Backup for Business und sein Portal passen auf den Bildschirm, und das Portal öffnet sich schneller"
-              - "Smartphone-Seite: kurze chinesische und japanische Spaltenüberschriften werden nicht mehr zwischen einzelnen Zeichen umbrochen"
-            fr:
-              - "Page mobile : Synology Drive, Active Backup for Business et son portail adaptés à l’écran, et le portail s’ouvre plus vite"
-              - "Page mobile : les en-têtes de colonne courts en chinois et en japonais ne sont plus coupés entre les caractères"
-            es:
-              - "Página móvil: Synology Drive, Active Backup for Business y su portal se ajustan a la pantalla, y el portal se abre antes"
-              - "Página móvil: los encabezados de columna cortos en chino y japonés ya no se cortan entre caracteres"
-            it:
-              - "Pagina mobile: Synology Drive, Active Backup for Business e il suo portale si adattano allo schermo, e il portale si apre prima"
-              - "Pagina mobile: le intestazioni di colonna brevi in cinese e giapponese non vanno più a capo tra un carattere e l’altro"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -880,21 +842,21 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-app-urls-0182-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0182-en.png
       screenshots_mobile:
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-phone-overview-0182-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-phone-overview-0190-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-phone-apps-0182-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-phone-storage-manager-0182-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-phone-nas-status-0182-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0186
+        version: 0.1.0-0190
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: abccc49425e52b44a419764960de781de13e9d5e3930091ae67538a4f5023a1d
-        md5: 8a1dedb25b64f55b6b77f1d877ab64a9
-        size: 18309120
+        sha256: 2f1ff86fe822520c137332a9dcfdc6c2ea223515f640b58fce29072f291d574e
+        md5: ab71dc65dde159bb905153d5cb4e59e7
+        size: 18083840
         facts:
           built_with: sdk
           sdk_backend: go
@@ -911,19 +873,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T14:20:00Z
-          source_ref: 837933c887086ec6fcd7d759d68d832ca68a575f
+          reviewed_at: 2026-11-20T17:50:00Z
+          source_ref: 47b1a9034171db422ef6c6e38a75ea74846eca10
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0186
+        version: 0.1.0-0190
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 40eeacbe4bb223f1b53fc6a191ade540d97170e5347b384a84be7f4dac5a4eb5
-        md5: 9b210d321869cdbe41c45c9d4a887455
-        size: 18903040
+        sha256: 7a67dedf9d6fd5ed552488bf6b20da1539a8f2f8df45cdab5d40b12564c35f87
+        md5: eff3a28887f8b166fade2f57c805ba84
+        size: 18677760
         facts:
           built_with: sdk
           sdk_backend: go
@@ -940,11 +902,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T14:20:00Z
-          source_ref: 837933c887086ec6fcd7d759d68d832ca68a575f
+          reviewed_at: 2026-11-20T17:50:00Z
+          source_ref: 47b1a9034171db422ef6c6e38a75ea74846eca10
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0186
+        version: 0.1.0-0190
         arch:
           - apollolake
           - avoton
@@ -973,9 +935,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: efbb8e2f1ac019df07f840b2b4cea77d20a998b9f8c4d6223b100b3e9f931403
-        md5: 3bef1edc5b11412583df19e184cd85b4
-        size: 19691520
+        sha256: dc74e12c90a1d376ebf0d754648d4da3a31d264ccb997bee71a481ed0f242427
+        md5: 86fb13357f440e77860ef2ec62a20998
+        size: 19466240
         facts:
           built_with: sdk
           sdk_backend: go
@@ -992,8 +954,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-18T14:20:00Z
-          source_ref: 837933c887086ec6fcd7d759d68d832ca68a575f
+          reviewed_at: 2026-11-20T17:50:00Z
+          source_ref: 47b1a9034171db422ef6c6e38a75ea74846eca10
           source_repo: synopackageland/syno-pkg-land-connect
   - recommended: true
     category: files
