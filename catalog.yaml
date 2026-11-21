@@ -315,7 +315,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-connect
-      release: v0.1.0-0192
+      release: v0.1.0-0193
       access: public
     metadata:
       guides:
@@ -592,43 +592,53 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0193:
+            en:
+              - "Cloudflare: the own domain, Free link and temporary address no longer show an upload limit"
+            zh-TW:
+              - "Cloudflare 的自有網域、免費連結與臨時網址不再顯示上傳限制"
+            zh-CN:
+              - "Cloudflare 的自有域名、免费链接与临时地址不再显示上传限制"
+            ja:
+              - "Cloudflare の独自ドメイン、無料リンク、一時アドレスにアップロード制限が表示されなくなりました"
+            ko:
+              - "Cloudflare의 내 도메인, 무료 링크, 임시 주소에 업로드 한도가 더 이상 표시되지 않음"
+            de:
+              - "Cloudflare: eigene Domain, kostenloser Link und temporäre Adresse zeigen keine Upload-Grenze mehr"
+            fr:
+              - "Cloudflare : le domaine personnel, le lien gratuit et l’adresse temporaire n’affichent plus de limite d’envoi"
+            es:
+              - "Cloudflare: el dominio propio, el enlace gratuito y la dirección temporal ya no muestran un límite de subida"
+            it:
+              - "Cloudflare: dominio personale, link gratuito e indirizzo temporaneo non mostrano più un limite di caricamento"
           0.1.0-0192:
             en:
               - "Cloudflare: large files now upload in a web browser through the own domain, Free link and temporary address, in File Station, Synology Drive and Synology Photos"
               - "Cloudflare: the upload progress bar starts moving right away"
-              - "Cloudflare: desktop and mobile apps and WebDAV keep Cloudflare's upload limit"
             zh-TW:
               - "Cloudflare 的自有網域、免費連結與臨時網址現在可以在網頁瀏覽器中上傳大檔案，適用 File Station、Synology Drive 與 Synology Photos"
               - "Cloudflare 上傳時進度條會立即開始前進"
-              - "Cloudflare 的桌面與行動 App 及 WebDAV 仍受 Cloudflare 上傳限制"
             zh-CN:
               - "Cloudflare 的自有域名、免费链接与临时地址现在可以在网页浏览器中上传大文件，适用 File Station、Synology Drive 与 Synology Photos"
               - "Cloudflare 上传时进度条会立即开始前进"
-              - "Cloudflare 的桌面与移动 App 及 WebDAV 仍受 Cloudflare 上传限制"
             ja:
               - "Cloudflare の独自ドメイン、無料リンク、一時アドレスで、Web ブラウザーから大きなファイルをアップロードできるようになりました（File Station、Synology Drive、Synology Photos）"
               - "Cloudflare でアップロードの進行状況バーがすぐに動き始めるようになりました"
-              - "Cloudflare のデスクトップアプリ、モバイルアプリ、WebDAV には引き続き Cloudflare のアップロード制限があります"
             ko:
               - "Cloudflare의 내 도메인, 무료 링크, 임시 주소에서 이제 웹 브라우저로 큰 파일을 업로드할 수 있음(File Station, Synology Drive, Synology Photos)"
               - "Cloudflare에서 업로드 진행률 표시줄이 바로 움직이기 시작함"
-              - "Cloudflare의 데스크톱·모바일 앱과 WebDAV는 Cloudflare 업로드 한도가 그대로 적용됨"
             de:
               - "Cloudflare: große Dateien lassen sich jetzt im Webbrowser über eigene Domain, kostenlosen Link und temporäre Adresse hochladen, in File Station, Synology Drive und Synology Photos"
               - "Cloudflare: der Upload-Fortschrittsbalken bewegt sich sofort"
-              - "Cloudflare: Desktop- und Mobil-Apps sowie WebDAV behalten Cloudflares Upload-Grenze"
             fr:
               - "Cloudflare : les gros fichiers s’envoient désormais depuis un navigateur web via le domaine personnel, le lien gratuit et l’adresse temporaire, dans File Station, Synology Drive et Synology Photos"
               - "Cloudflare : la barre de progression de l’envoi avance tout de suite"
-              - "Cloudflare : les applications de bureau et mobiles et WebDAV gardent la limite d’envoi de Cloudflare"
             es:
               - "Cloudflare: los archivos grandes ahora se suben desde un navegador web a través del dominio propio, el enlace gratuito y la dirección temporal, en File Station, Synology Drive y Synology Photos"
               - "Cloudflare: la barra de progreso de la subida avanza de inmediato"
-              - "Cloudflare: las apps de escritorio y móviles y WebDAV mantienen el límite de subida de Cloudflare"
             it:
               - "Cloudflare: i file grandi ora si caricano da un browser web tramite dominio personale, link gratuito e indirizzo temporaneo, in File Station, Synology Drive e Synology Photos"
               - "Cloudflare: la barra di avanzamento del caricamento si muove subito"
-              - "Cloudflare: le app desktop e mobili e WebDAV mantengono il limite di caricamento di Cloudflare"
           0.1.0-0191:
             en:
               - "Cloudflare: a new Local network option (off by default) offers DSM's local address when your browser is confirmed to reach it on your local network; it switches only when you click"
@@ -748,25 +758,6 @@ packages:
               - "Pagina mobile: la scheda del browser, l’icona nella schermata Home e la scheda Aggiungi alla schermata Home mostrano l’icona di DSM"
               - "Cloudflare: dominio personale, link gratuito e indirizzo temporaneo indicano che i caricamenti sono limitati a 100 MB per file e i download non hanno limiti"
               - "Cloudflare: un indirizzo di app rimosso prima di ricreare il tunnel ora viene ripulito, e le modifiche successive agli indirizzi delle app non falliscono più"
-          0.1.0-0186:
-            de:
-              - "Smartphone-Seite: Textfelder heben beim Fokus das ganze abgerundete Feld hervor, und Dashboard-Karten, Kartenköpfe und Symbolleisten in DSM-Apps passen auf das Smartphone"
-            en:
-              - "Phone page: text fields highlight their whole rounded field on focus, and dashboard cards, card headers and toolbars in DSM Apps fit the phone"
-            es:
-              - "Página móvil: los campos de texto resaltan todo su contorno redondeado al enfocarlos, y las tarjetas del panel, los encabezados de tarjeta y las barras de herramientas de las aplicaciones de DSM se ajustan al teléfono"
-            fr:
-              - "Page mobile : les champs de texte mettent en évidence tout leur contour arrondi lorsqu’ils ont le focus, et les cartes du tableau de bord, les en-têtes de carte et les barres d’outils des applications DSM s’adaptent au téléphone"
-            it:
-              - "Pagina mobile: i campi di testo evidenziano tutto il bordo arrotondato quando sono attivi, e le schede della dashboard, le intestazioni delle schede e le barre degli strumenti delle app DSM si adattano al telefono"
-            ja:
-              - "スマホ版で、入力欄にフォーカスすると角の丸い欄全体が強調表示されるようになりました。DSM アプリのダッシュボードカード、カードの見出し、ツールバーがスマホの画面に収まります"
-            ko:
-              - "모바일 버전에서 입력란에 포커스하면 둥근 입력란 전체가 강조 표시됨. DSM 앱의 대시보드 카드, 카드 머리글, 도구 모음이 휴대폰 화면에 맞게 표시됨"
-            zh-CN:
-              - "手机版输入框获得焦点时，整个圆角输入框以主色突出显示；DSM App 的仪表板卡片、卡片标题栏与工具栏适配手机屏幕"
-            zh-TW:
-              - "手機版輸入欄位聚焦時，整個圓角欄位以主色標示；DSM App 的儀表板卡片、卡片標題列與工具列在手機上正確排版"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -821,7 +812,7 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-compare-0182-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-app-urls-0182-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0182-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/06-cloudflare-large-uploads-0192-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/06-cloudflare-temporary-0193-en.png
       screenshots_mobile:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-phone-overview-0190-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-phone-apps-0182-en.png
@@ -829,15 +820,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-phone-nas-status-0182-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0192
+        version: 0.1.0-0193
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 15f8722240945c246ec5f8b4397e2785a347c7e25ba208025d6ec6ef5cc3118e
-        md5: 4c3edc22f9390183ba3c9f2198b41108
-        size: 18206720
+        sha256: 5f356d35913d4e725b0a3acf0e2ebee202bde4e8ba3bb4f0034f3fa4946add94
+        md5: 33b69276ec162f3b55747d915f17aa17
+        size: 18176000
         facts:
           built_with: sdk
           sdk_backend: go
@@ -854,19 +845,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-21T07:44:02Z
-          source_ref: d06f455d09dfe60b8ce55f6587c4799ad76ba91a
+          reviewed_at: 2026-11-21T08:39:34Z
+          source_ref: e2fa3b5aae3fd30034ab0acc04a99bf730e9ed3f
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0192
+        version: 0.1.0-0193
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: 826b19d876b2f231fa0ff6d59022a789a9eda40d019c7639404f417d4c087d0b
-        md5: 520f90e57cf5a1d2bf884ecaca5906a0
-        size: 18800640
+        sha256: 47b17b284eae12efcd400a019304a587ba0a03d4c6ee5fd1462a2d4848db5d82
+        md5: 399e1e46449e6d3eb75c96375e656ebb
+        size: 18769920
         facts:
           built_with: sdk
           sdk_backend: go
@@ -883,11 +874,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-21T07:44:02Z
-          source_ref: d06f455d09dfe60b8ce55f6587c4799ad76ba91a
+          reviewed_at: 2026-11-21T08:39:34Z
+          source_ref: e2fa3b5aae3fd30034ab0acc04a99bf730e9ed3f
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0192
+        version: 0.1.0-0193
         arch:
           - apollolake
           - avoton
@@ -916,9 +907,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 217132c05adeace9726f89580e509210b628eed9c88b4a31c53384b40dec0b38
-        md5: 8a4266f4834deeceb312c9a04731dc20
-        size: 19589120
+        sha256: 09e87a2a5ed9e4a3090c0da6bc44a74e4a40c08257853f1371122c585aba333f
+        md5: 79be4cd6517f42c7e5923115741dedcd
+        size: 19558400
         facts:
           built_with: sdk
           sdk_backend: go
@@ -935,8 +926,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-21T07:44:02Z
-          source_ref: d06f455d09dfe60b8ce55f6587c4799ad76ba91a
+          reviewed_at: 2026-11-21T08:39:34Z
+          source_ref: e2fa3b5aae3fd30034ab0acc04a99bf730e9ed3f
           source_repo: synopackageland/syno-pkg-land-connect
   - recommended: true
     category: files
