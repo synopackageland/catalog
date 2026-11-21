@@ -315,7 +315,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-connect
-      release: v0.1.0-0191
+      release: v0.1.0-0192
       access: public
     metadata:
       guides:
@@ -592,6 +592,43 @@ packages:
           Accedi con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0192:
+            en:
+              - "Cloudflare: large files now upload in a web browser through the own domain, Free link and temporary address, in File Station, Synology Drive and Synology Photos"
+              - "Cloudflare: the upload progress bar starts moving right away"
+              - "Cloudflare: desktop and mobile apps and WebDAV keep Cloudflare's upload limit"
+            zh-TW:
+              - "Cloudflare 的自有網域、免費連結與臨時網址現在可以在網頁瀏覽器中上傳大檔案，適用 File Station、Synology Drive 與 Synology Photos"
+              - "Cloudflare 上傳時進度條會立即開始前進"
+              - "Cloudflare 的桌面與行動 App 及 WebDAV 仍受 Cloudflare 上傳限制"
+            zh-CN:
+              - "Cloudflare 的自有域名、免费链接与临时地址现在可以在网页浏览器中上传大文件，适用 File Station、Synology Drive 与 Synology Photos"
+              - "Cloudflare 上传时进度条会立即开始前进"
+              - "Cloudflare 的桌面与移动 App 及 WebDAV 仍受 Cloudflare 上传限制"
+            ja:
+              - "Cloudflare の独自ドメイン、無料リンク、一時アドレスで、Web ブラウザーから大きなファイルをアップロードできるようになりました（File Station、Synology Drive、Synology Photos）"
+              - "Cloudflare でアップロードの進行状況バーがすぐに動き始めるようになりました"
+              - "Cloudflare のデスクトップアプリ、モバイルアプリ、WebDAV には引き続き Cloudflare のアップロード制限があります"
+            ko:
+              - "Cloudflare의 내 도메인, 무료 링크, 임시 주소에서 이제 웹 브라우저로 큰 파일을 업로드할 수 있음(File Station, Synology Drive, Synology Photos)"
+              - "Cloudflare에서 업로드 진행률 표시줄이 바로 움직이기 시작함"
+              - "Cloudflare의 데스크톱·모바일 앱과 WebDAV는 Cloudflare 업로드 한도가 그대로 적용됨"
+            de:
+              - "Cloudflare: große Dateien lassen sich jetzt im Webbrowser über eigene Domain, kostenlosen Link und temporäre Adresse hochladen, in File Station, Synology Drive und Synology Photos"
+              - "Cloudflare: der Upload-Fortschrittsbalken bewegt sich sofort"
+              - "Cloudflare: Desktop- und Mobil-Apps sowie WebDAV behalten Cloudflares Upload-Grenze"
+            fr:
+              - "Cloudflare : les gros fichiers s’envoient désormais depuis un navigateur web via le domaine personnel, le lien gratuit et l’adresse temporaire, dans File Station, Synology Drive et Synology Photos"
+              - "Cloudflare : la barre de progression de l’envoi avance tout de suite"
+              - "Cloudflare : les applications de bureau et mobiles et WebDAV gardent la limite d’envoi de Cloudflare"
+            es:
+              - "Cloudflare: los archivos grandes ahora se suben desde un navegador web a través del dominio propio, el enlace gratuito y la dirección temporal, en File Station, Synology Drive y Synology Photos"
+              - "Cloudflare: la barra de progreso de la subida avanza de inmediato"
+              - "Cloudflare: las apps de escritorio y móviles y WebDAV mantienen el límite de subida de Cloudflare"
+            it:
+              - "Cloudflare: i file grandi ora si caricano da un browser web tramite dominio personale, link gratuito e indirizzo temporaneo, in File Station, Synology Drive e Synology Photos"
+              - "Cloudflare: la barra di avanzamento del caricamento si muove subito"
+              - "Cloudflare: le app desktop e mobili e WebDAV mantengono il limite di caricamento di Cloudflare"
           0.1.0-0191:
             en:
               - "Cloudflare: a new Local network option (off by default) offers DSM's local address when your browser is confirmed to reach it on your local network; it switches only when you click"
@@ -730,53 +767,6 @@ packages:
               - "手机版输入框获得焦点时，整个圆角输入框以主色突出显示；DSM App 的仪表板卡片、卡片标题栏与工具栏适配手机屏幕"
             zh-TW:
               - "手機版輸入欄位聚焦時，整個圓角欄位以主色標示；DSM App 的儀表板卡片、卡片標題列與工具列在手機上正確排版"
-          0.1.0-0185:
-            de:
-              - "Smartphone-Seite: beim Hinzufügen eines NAS fragt die Seite nach, wenn dem Zertifikat vertraut werden muss; Apps öffnen sich sofort mit einem Startbildschirm, und die Unter-Apps von Surveillance Station passen auf das Smartphone"
-              - "Der Assistent zum Hinzufügen einer Verbindung zeigt alle Wege auf einmal"
-            en:
-              - "Phone page: adding a NAS asks you to trust its certificate when needed; Apps open at once with a launch screen, and Surveillance Station sub-Apps fit the phone"
-              - "The Add connection wizard shows every way at once"
-            es:
-              - "Página móvil: al añadir un NAS, la página pide confiar en su certificado cuando hace falta; las aplicaciones se abren al instante con una pantalla de inicio y las subaplicaciones de Surveillance Station se ajustan al teléfono"
-              - "El asistente para añadir una conexión muestra todas las formas a la vez"
-            fr:
-              - "Page mobile : lors de l’ajout d’un NAS, la page propose de faire confiance à son certificat si nécessaire ; les applications s’ouvrent immédiatement avec un écran de lancement et les sous-applications de Surveillance Station s’adaptent au téléphone"
-              - "L’assistant d’ajout de connexion affiche toutes les méthodes d’un coup"
-            it:
-              - "Pagina mobile: quando aggiungi un NAS, la pagina chiede di considerare attendibile il suo certificato se necessario; le app si aprono subito con una schermata di avvio e le sotto-app di Surveillance Station si adattano al telefono"
-              - "La procedura guidata per aggiungere una connessione mostra tutti i modi insieme"
-            ja:
-              - "スマホ版で NAS を追加するとき、必要に応じて証明書を信頼するよう案内するようになりました。アプリは起動画面とともにすぐに開き、Surveillance Station のサブアプリがスマホの画面に収まります"
-              - "接続の追加ウィザードで、すべての方法を一度に表示するようになりました"
-            ko:
-              - "모바일 버전에서 NAS를 추가할 때 필요하면 인증서를 신뢰하도록 안내함. 앱이 시작 화면과 함께 바로 열리고, Surveillance Station 하위 앱이 휴대폰 화면에 맞게 표시됨"
-              - "연결 추가 마법사에서 모든 방법을 한 번에 표시함"
-            zh-CN:
-              - "手机版添加 NAS 时，需要时会提示信任其证书；App 会立即打开并显示启动画面，Surveillance Station 的子 App 适配手机屏幕"
-              - "添加连接向导一次显示所有方式"
-            zh-TW:
-              - "手機版加入 NAS 時，需要時會提示信任其憑證；App 會立即開啟並顯示啟動畫面，Surveillance Station 的子 App 符合手機畫面"
-              - "新增連線精靈一次顯示所有方式"
-          0.1.0-0184:
-            de:
-              - "Auf das neueste UI-Kit und SDK aktualisiert"
-            en:
-              - "Updated to the latest UI kit and SDK"
-            es:
-              - "Actualizado al kit de interfaz y SDK más recientes"
-            fr:
-              - "Mise à jour vers les dernières versions du kit d’interface et du SDK"
-            it:
-              - "Aggiornato all’ultima versione del kit UI e dell’SDK"
-            ja:
-              - "最新の UI キットと SDK に更新しました"
-            ko:
-              - "최신 UI 키트와 SDK로 업데이트함"
-            zh-CN:
-              - "更新至最新的 UI 套件与 SDK"
-            zh-TW:
-              - "更新至最新的 UI 套件與 SDK"
         unrecorded:
           - en:
               - Add this NAS to the Syno Package Land mobile app by scanning the new Connect your
@@ -831,6 +821,7 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/03-compare-0182-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-app-urls-0182-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/05-settings-0182-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/06-cloudflare-large-uploads-0192-en.png
       screenshots_mobile:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/01-phone-overview-0190-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/02-phone-apps-0182-en.png
@@ -838,15 +829,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoPkgConnect/04-phone-nas-status-0182-en.png
     pins:
       - package: SynoPkgConnect
-        version: 0.1.0-0191
+        version: 0.1.0-0192
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: cb61293e291f37939e0320d2459552eda064abc4de27438628a031c97f8692c2
-        md5: 21a6584c05c51895ef7ac301f283f357
-        size: 18145280
+        sha256: 15f8722240945c246ec5f8b4397e2785a347c7e25ba208025d6ec6ef5cc3118e
+        md5: 4c3edc22f9390183ba3c9f2198b41108
+        size: 18206720
         facts:
           built_with: sdk
           sdk_backend: go
@@ -863,19 +854,19 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-20T23:50:00Z
-          source_ref: 7fa57ce339303ba8a7778328872204652a19b502
+          reviewed_at: 2026-11-21T07:44:02Z
+          source_ref: d06f455d09dfe60b8ce55f6587c4799ad76ba91a
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0191
+        version: 0.1.0-0192
         arch:
           - alpine
           - alpine4k
           - armada38x
           - monaco
-        sha256: f742b15182a3487c0fa3eae6e97cfe19af42be1c8a4abd02c6a9423f809ae1d0
-        md5: a017c013778a6372aa5106310525a504
-        size: 18739200
+        sha256: 826b19d876b2f231fa0ff6d59022a789a9eda40d019c7639404f417d4c087d0b
+        md5: 520f90e57cf5a1d2bf884ecaca5906a0
+        size: 18800640
         facts:
           built_with: sdk
           sdk_backend: go
@@ -892,11 +883,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-20T23:50:00Z
-          source_ref: 7fa57ce339303ba8a7778328872204652a19b502
+          reviewed_at: 2026-11-21T07:44:02Z
+          source_ref: d06f455d09dfe60b8ce55f6587c4799ad76ba91a
           source_repo: synopackageland/syno-pkg-land-connect
       - package: SynoPkgConnect
-        version: 0.1.0-0191
+        version: 0.1.0-0192
         arch:
           - apollolake
           - avoton
@@ -925,9 +916,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: f57311cba31322ede38ac596060907c5e1dc21fbab898ec0ce2a3062483d338f
-        md5: 54452c23d267869ebf8519f945b8b08a
-        size: 19527680
+        sha256: 217132c05adeace9726f89580e509210b628eed9c88b4a31c53384b40dec0b38
+        md5: 8a4266f4834deeceb312c9a04731dc20
+        size: 19589120
         facts:
           built_with: sdk
           sdk_backend: go
@@ -944,8 +935,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-20T23:50:00Z
-          source_ref: 7fa57ce339303ba8a7778328872204652a19b502
+          reviewed_at: 2026-11-21T07:44:02Z
+          source_ref: d06f455d09dfe60b8ce55f6587c4799ad76ba91a
           source_repo: synopackageland/syno-pkg-land-connect
   - recommended: true
     category: files
