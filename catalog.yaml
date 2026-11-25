@@ -1297,7 +1297,7 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-mailplus-setup-assistant
-      release: v0.1.0-0057
+      release: v0.1.0-0058
       access: public
     metadata:
       guides:
@@ -1511,6 +1511,25 @@ packages:
           Richiede Synology MailPlus Server in esecuzione; accesso con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0058:
+            en:
+              - "Cloudflare Workers Free can now send only to verified addresses; the assistant explains this at setup and the relay reports it clearly"
+            zh-TW:
+              - "Cloudflare Workers Free 現在只能寄到已驗證的地址；助理會在設定時說明，轉寄服務也會清楚回報"
+            zh-CN:
+              - "Cloudflare Workers Free 现在只能发送到已验证的地址；助手会在设置时说明，中继也会清楚报告"
+            ja:
+              - "Cloudflare Workers Free は確認済みアドレスにしか送信できなくなりました。アシスタントが設定時に説明し、リレーもわかりやすく報告します"
+            ko:
+              - "이제 Cloudflare Workers Free는 인증된 주소로만 보낼 수 있어요. 설정 중에 안내하고 릴레이도 명확하게 알려 줘요"
+            de:
+              - "Cloudflare Workers Free sendet jetzt nur noch an bestätigte Adressen; der Assistent erklärt das bei der Einrichtung und das Relay meldet es klar"
+            fr:
+              - "Cloudflare Workers Free n’envoie désormais qu’aux adresses vérifiées ; l’assistant l’explique lors de la configuration et le relais le signale clairement"
+            es:
+              - "Cloudflare Workers Free ahora solo envía a direcciones verificadas; el asistente lo explica durante la configuración y el relé lo indica con claridad"
+            it:
+              - "Cloudflare Workers Free ora invia solo a indirizzi verificati; l’assistente lo spiega durante la configurazione e il relay lo segnala chiaramente"
           0.1.0-0057:
             en:
               - "The setup check now waits calmly for your test message, the configuration step is easier to read, and Sync mailboxes explains what it does"
@@ -1552,20 +1571,20 @@ packages:
       screenshots:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/01-overview-0054-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/02-cloudflare-flow-0056-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/03-setup-route-0054-en.png
-        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/04-setup-preview-0054-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/03-setup-route-0058-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/04-setup-preview-0058-en.png
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/05-diagnose-result-0054-en.png
     pins:
       - package: SynoMailPlusSetupAssistant
-        version: 0.1.0-0057
+        version: 0.1.0-0058
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: ebf5f366c26ad56f837307274e11701bee67ac478403fe71a1199579733d2dfd
-        md5: 2ed05f832c1c013fdbde2ce8b479ad0e
-        size: 14326272
+        sha256: f343bc41bf45ca402d437a01e669f86091b4993031afb97cf94fd30f5e633404
+        md5: 01e3e5dab50e8b82c888a68df20204a9
+        size: 14334464
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1583,11 +1602,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-25T08:53:44Z
-          source_ref: 4aa3468ab05a9768130e2f8d035a0a092e3c7a51
+          reviewed_at: 2026-11-25T14:31:16Z
+          source_ref: d43caa116590cd60c54dd7f074cf9080319b5823
           source_repo: synopackageland/syno-pkg-land-mailplus-setup-assistant
       - package: SynoMailPlusSetupAssistant
-        version: 0.1.0-0057
+        version: 0.1.0-0058
         arch:
           - apollolake
           - avoton
@@ -1616,9 +1635,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: 17f1b60e2a6b3d97a08695fce1fb5bc5e66089b05ff58b675c5ec07617258b5c
-        md5: c525e1e50e7843ac3db4163e1e75dce5
-        size: 15499776
+        sha256: b7b85aa163847609982824de437103b3d78606ec31352037c5176d51fb06463a
+        md5: f2b94e161568a3627204c6c578e33929
+        size: 15509504
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1636,8 +1655,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-25T08:53:46Z
-          source_ref: 4aa3468ab05a9768130e2f8d035a0a092e3c7a51
+          reviewed_at: 2026-11-25T14:31:55Z
+          source_ref: d43caa116590cd60c54dd7f074cf9080319b5823
           source_repo: synopackageland/syno-pkg-land-mailplus-setup-assistant
   - listed: true
     recommended: false
