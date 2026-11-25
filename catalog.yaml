@@ -332,10 +332,11 @@ packages:
       contact_email: support@synopkgland.com
       support_email: support@synopkgland.com
       homepage: https://synopkgland.com/
+      source_url: https://github.com/synopackageland/syno-pkg-land-connect
       internet: required
       license: MIT. Bundled Go and npm dependencies keep their own licenses; the full notices ship in the
         package's LICENSES/ folder. The cloudflared, Tailscale and NetBird clients are downloaded
-        from their vendors under their own licenses. Source code is not public at this time.
+        from their vendors under their own licenses.
       description:
         en: Reach the NAS and its Apps from anywhere without opening router ports, with DSM sign-in on by
           default. Connect through a free workers.dev link, your own Cloudflare domain, a private
@@ -1289,6 +1290,327 @@ packages:
           reviewed_at: 2026-11-18T09:20:16Z
           source_ref: 449380fcd82ac1a589234b0d91fc29032f4990d7
           source_repo: synopackageland/syno-pkg-land-download-hub
+  - recommended: true
+    category: network
+    order: 35
+    publisher: synopackageland
+    source:
+      kind: github-release
+      repo: synopackageland/syno-pkg-land-mailplus-setup-assistant
+      release: v0.1.0-0056
+      access: public
+    metadata:
+      maintainer: Syno Package Land
+      maintainer_url: https://synopkgland.com/
+      contact_email: support@synopkgland.com
+      support_email: support@synopkgland.com
+      homepage: https://synopkgland.com/
+      source_url: https://github.com/synopackageland/syno-pkg-land-mailplus-setup-assistant
+      license: Apache-2.0
+      internet: required
+      telemetry: none
+      description:
+        en: "Set up Synology MailPlus Server without a fixed IP and keep using the MailPlus interface you know. Skip port 25 blocks, IP reputation worries and reverse DNS — receive mail free through Cloudflare and send on Cloudflare’s low-cost plan, or use direct delivery with a fixed IP"
+        zh-TW: "免固定 IP 就能輕鬆設好 Synology MailPlus Server，並繼續使用熟悉的 MailPlus 介面收發信。不必操心 25 埠封鎖、IP 信譽與反解設定——透過 Cloudflare 免費收信，搭配 Cloudflare 低價方案即可穩定寄信，也支援固定 IP 直接收發與郵件問題診斷"
+        zh-CN: "无需固定 IP 即可轻松配好 Synology MailPlus Server，并继续使用熟悉的 MailPlus 界面收发邮件。不必操心 25 端口封锁、IP 信誉与反向解析——通过 Cloudflare 免费收件，搭配 Cloudflare 低价方案即可稳定发件，也支持固定 IP 直接收发与邮件问题诊断"
+        ja: "固定 IP なしで Synology MailPlus Server を簡単に設定でき、いつもの MailPlus 画面のまま送受信できます。25 番ポート制限や IP 評価・逆引きの悩みは不要。Cloudflare 経由で受信は無料、送信も Cloudflare の低価格プランで利用でき、固定 IP での直接送受信や診断にも対応します"
+        ko: "고정 IP 없이도 Synology MailPlus Server를 간편하게 설정하고 익숙한 MailPlus 화면에서 그대로 메일을 주고받으세요. 25번 포트 차단, IP 평판, 역방향 DNS 걱정 없이 Cloudflare로 무료 수신하고 Cloudflare의 저렴한 요금제로 발송할 수 있으며, 고정 IP 직접 송수신과 메일 진단도 지원해요"
+        de: "Richte Synology MailPlus Server ohne feste IP ein und nutze weiter die gewohnte MailPlus-Oberfläche. Spare dir Port-25-Sperren, IP-Reputation und Reverse-DNS – empfange Mails kostenlos über Cloudflare, versende über Cloudflares günstigen Tarif oder nutze direkten Versand mit fester IP"
+        fr: "Configurez Synology MailPlus Server sans IP fixe et conservez votre interface MailPlus habituelle. Oubliez le blocage du port 25, la réputation IP et le DNS inversé : recevez vos e-mails gratuitement via Cloudflare et envoyez-les avec l’offre abordable de Cloudflare, ou choisissez l’envoi direct avec IP fixe"
+        es: "Configura Synology MailPlus Server sin IP fija y sigue usando la interfaz habitual de MailPlus. Olvídate de bloqueos del puerto 25, reputación IP y DNS inverso: recibe correo gratis con Cloudflare y envía con el plan económico de Cloudflare, o usa entrega directa con IP fija"
+        it: "Configura Synology MailPlus Server senza IP fisso e continua a usare l’interfaccia MailPlus che conosci. Evita blocchi della porta 25, problemi di reputazione IP e DNS inverso: ricevi email gratis tramite Cloudflare e invia con il piano economico di Cloudflare, oppure usa l’invio diretto con IP fisso"
+      long_description:
+        en: >-
+          Set up MailPlus Server without a fixed IP
+
+
+          - Run Synology MailPlus Server with or without a fixed IP, behind a home router, without opening port 25
+
+          - Keep using the MailPlus web, mobile and email apps you already know
+
+          - Let Cloudflare deliver mail and skip IP reputation, reverse DNS and port 25 blocks, or use direct delivery with a fixed IP
+
+          - Free App and free inbound mail via Cloudflare; sending to external addresses needs Cloudflare Workers Paid (US$5/month, 3,000 emails included)
+
+          - Cloudflare needs a domain on Cloudflare; to receive, connect that domain in Syno Connect Center (not a temporary address), which also publishes DSM on it, or use an existing Tunnel in the same account; sending needs no Tunnel
+
+          - Preview every change, roll back safely and remove only what this App created
+
+          - Built-in diagnostics explain bounces, spam and missing mail with next steps
+
+
+          Requires Synology MailPlus Server running; sign in with a DSM administrator account
+        zh-TW: >-
+          免固定 IP，輕鬆架好 MailPlus 郵件伺服器
+
+
+          - 有沒有固定 IP 都能架設 Synology MailPlus Server，家用路由器後方也行，不必開放 25 埠
+
+          - 照樣使用熟悉的 MailPlus 網頁版、行動 App 與郵件用戶端
+
+          - 交給 Cloudflare 收發信，不必操心 IP 信譽、反解或 25 埠封鎖；有固定 IP 也能直接收發
+
+          - App 與透過 Cloudflare 收信皆免費；寄信到外部地址需 Cloudflare Workers Paid 方案（US$5／月，含 3,000 封）
+
+          - Cloudflare 模式需網域託管在 Cloudflare；收信需在 Syno Connect Center 以同一網域連線（不能用臨時網址），DSM 也會公開在該網域下，或沿用同帳號現有的 Tunnel；寄信不需 Tunnel
+
+          - 寫入前預覽每項變更，可安全復原，並只移除本 App 建立的項目
+
+          - 內建郵件診斷，找出退信、進垃圾信或收不到信的原因與處理方式
+
+
+          需先安裝並啟動 Synology MailPlus Server；需使用 DSM 管理員帳號登入
+        zh-CN: >-
+          免固定 IP，轻松搭建 MailPlus 邮件服务器
+
+
+          - 有没有固定 IP 都能搭建 Synology MailPlus Server，家庭路由器后面也行，无需开放 25 端口
+
+          - 继续使用熟悉的 MailPlus 网页版、手机 App 与邮件客户端
+
+          - 交给 Cloudflare 收发邮件，不必操心 IP 信誉、反向解析或 25 端口被封；有固定 IP 也可直接收发
+
+          - App 与通过 Cloudflare 收件均免费；向外部地址发件需 Cloudflare Workers Paid 方案（US$5／月，含 3,000 封）
+
+          - Cloudflare 模式需域名托管在 Cloudflare；收件需在 Syno Connect Center 以同一域名连接（不能用临时网址），DSM 也会公开在该域名下，或沿用同账号现有的 Tunnel；发件无需 Tunnel
+
+          - 写入前预览每项更改，可安全回滚，并仅移除本 App 创建的项目
+
+          - 内置邮件诊断，排查退信、进垃圾箱或收不到邮件的原因与解决方法
+
+
+          需先安装并运行 Synology MailPlus Server；需使用 DSM 管理员账号登录
+        ja: >-
+          固定 IP なしで MailPlus サーバーをかんたん構築
+
+
+          - 固定 IP の有無を問わず、自宅ルーター配下で Synology MailPlus Server を運用でき、25 番ポートの開放も不要です
+
+          - いつもの MailPlus Web、モバイルアプリ、メールクライアントをそのまま使えます
+
+          - 送受信を Cloudflare に任せて IP 評価・逆引き・25 番ポート制限の手間を省けます。固定 IP があれば直接送受信も可能です
+
+          - アプリと Cloudflare 経由の受信は無料。外部宛ての送信には Cloudflare Workers Paid（月額 US$5、3,000 通込み）が必要です
+
+          - Cloudflare 利用には Cloudflare 管理のドメインが必要です。受信には Syno Connect Center で同じドメインに接続し（一時アドレス不可）、DSM もそのドメインで公開されます。同じアカウントの既存 Tunnel も使え、送信のみなら Tunnel は不要です
+
+          - 適用前にすべての変更をプレビューし、安全に元へ戻せて、このアプリが作成した設定だけを削除できます
+
+          - 内蔵の診断機能が、バウンス・迷惑メール・未着の原因と対処法を案内します
+
+
+          Synology MailPlus Server の起動と DSM 管理者アカウントでのサインインが必要です
+        ko: >-
+          고정 IP 없이도 간편하게 MailPlus 메일 서버 구축
+
+
+          - 고정 IP가 없어도 가정용 공유기 환경에서 Synology MailPlus Server를 운영할 수 있고 25번 포트를 열 필요가 없어요
+
+          - 원래 쓰던 MailPlus 웹, 모바일 앱, 메일 클라이언트를 그대로 사용해요
+
+          - Cloudflare에 송수신을 맡겨 IP 평판, 역방향 DNS, 25번 포트 차단 걱정을 덜고, 고정 IP가 있다면 직접 송수신도 할 수 있어요
+
+          - 앱과 Cloudflare를 통한 수신은 무료예요. 외부 주소로 발송하려면 Cloudflare Workers Paid(월 US$5, 3,000통 포함)가 필요해요
+
+          - Cloudflare 방식에는 Cloudflare에 호스팅된 도메인이 필요해요. 수신하려면 Syno Connect Center에서 같은 도메인으로 연결하고(임시 주소 불가) 이때 DSM도 그 도메인에 공개돼요. 같은 계정의 기존 Tunnel도 쓸 수 있고, 발송만 할 때는 Tunnel이 필요 없어요
+
+          - 적용 전에 모든 변경을 미리 보고 안전하게 되돌릴 수 있으며, 이 앱이 만든 설정만 제거해요
+
+          - 내장 진단으로 반송, 스팸 분류, 수신 불가 원인과 해결 방법을 알려 줘요
+
+
+          Synology MailPlus Server가 실행 중이어야 하며 DSM 관리자 계정으로 로그인해야 해요
+        de: >-
+          MailPlus Server auch ohne feste IP einfach einrichten
+
+
+          - Betreibe Synology MailPlus Server mit oder ohne feste IP hinter dem Heimrouter, ohne Port 25 zu öffnen
+
+          - Nutze weiter die vertraute MailPlus-Weboberfläche, mobile Apps und Mailprogramme
+
+          - Lass Cloudflare die Mails zustellen und spare dir IP-Reputation, Reverse-DNS und Port-25-Sperren, oder stelle mit fester IP direkt zu
+
+          - App und Mailempfang über Cloudflare sind kostenlos; der Versand an externe Adressen braucht Cloudflare Workers Paid (5 US$/Monat, 3.000 Mails inklusive)
+
+          - Cloudflare setzt eine bei Cloudflare verwaltete Domain voraus; für den Empfang verbinde diese Domain in Syno Connect Center (keine temporäre Adresse), womit auch DSM darunter erreichbar wird, oder nutze einen bestehenden Tunnel im selben Konto; der Versand braucht keinen Tunnel
+
+          - Jede Änderung vorab ansehen, sicher zurücksetzen und nur Einträge dieser App entfernen
+
+          - Die Mail-Diagnose erklärt Rückläufer, Spam und fehlende Mails mit nächsten Schritten
+
+
+          Erfordert laufenden Synology MailPlus Server; Anmeldung mit einem DSM-Administratorkonto
+        fr: >-
+          Configurez MailPlus Server sans IP fixe en toute simplicité
+
+
+          - Faites tourner Synology MailPlus Server avec ou sans IP fixe, derrière une box domestique, sans ouvrir le port 25
+
+          - Gardez l’interface MailPlus habituelle : web, applications mobiles et clients de messagerie
+
+          - Confiez le courrier à Cloudflare pour éviter réputation IP, DNS inversé et blocage du port 25, ou envoyez en direct avec une IP fixe
+
+          - App et réception via Cloudflare gratuites ; l’envoi vers l’extérieur nécessite Cloudflare Workers Paid (5 $ US/mois, 3 000 e-mails inclus)
+
+          - Cloudflare exige un domaine hébergé sur Cloudflare ; pour recevoir, connectez ce domaine dans Syno Connect Center (pas d’adresse temporaire), ce qui publie aussi DSM sur ce domaine, ou utilisez un Tunnel existant du même compte ; l’envoi seul ne demande aucun Tunnel
+
+          - Aperçu de chaque modification, retour arrière sûr et suppression des seuls éléments créés par cette App
+
+          - Le diagnostic intégré explique rejets, spam et messages manquants, avec les étapes à suivre
+
+
+          Nécessite Synology MailPlus Server en cours d’exécution ; connexion avec un compte administrateur DSM
+        es: >-
+          Configura MailPlus Server sin IP fija de forma sencilla
+
+
+          - Usa Synology MailPlus Server con o sin IP fija, detrás de un router doméstico y sin abrir el puerto 25
+
+          - Sigue usando la interfaz habitual de MailPlus: web, apps móviles y clientes de correo
+
+          - Deja el correo a Cloudflare y olvídate de reputación IP, DNS inverso y bloqueos del puerto 25, o usa entrega directa con IP fija
+
+          - App y recepción con Cloudflare gratis; enviar a direcciones externas requiere Cloudflare Workers Paid (US$5/mes, 3.000 correos incluidos)
+
+          - Cloudflare requiere un dominio alojado en Cloudflare; para recibir, conecta ese dominio en Syno Connect Center (no una dirección temporal), que también publica DSM en él, o usa un Tunnel existente de la misma cuenta; solo enviar no necesita Tunnel
+
+          - Vista previa de cada cambio, reversión segura y eliminación solo de lo que creó esta App
+
+          - El diagnóstico integrado explica rebotes, spam y correos que no llegan, con pasos a seguir
+
+
+          Requiere Synology MailPlus Server en ejecución; inicia sesión con una cuenta de administrador de DSM
+        it: >-
+          Configura MailPlus Server senza IP fisso in pochi passaggi
+
+
+          - Gestisci Synology MailPlus Server con o senza IP fisso, dietro il router di casa e senza aprire la porta 25
+
+          - Continua a usare l’interfaccia MailPlus di sempre: web, app mobili e client di posta
+
+          - Affida la posta a Cloudflare ed evita reputazione IP, DNS inverso e blocchi della porta 25, oppure usa l’invio diretto con IP fisso
+
+          - App e ricezione tramite Cloudflare gratuite; per inviare a indirizzi esterni serve Cloudflare Workers Paid (5 US$/mese, 3.000 email incluse)
+
+          - Cloudflare richiede un dominio gestito su Cloudflare; per ricevere, collega quel dominio in Syno Connect Center (non l’indirizzo temporaneo), che pubblica anche DSM su di esso, oppure usa un Tunnel esistente dello stesso account; il solo invio non richiede Tunnel
+
+          - Anteprima di ogni modifica, ripristino sicuro e rimozione solo di ciò che ha creato questa App
+
+          - La diagnostica integrata spiega rimbalzi, spam e messaggi mancanti, con i passi da seguire
+
+
+          Richiede Synology MailPlus Server in esecuzione; accesso con un account amministratore DSM
+      changelog:
+        releases:
+          0.1.0-0056:
+            en:
+              - "First catalog release: guided setup for Synology MailPlus Server with Cloudflare or a fixed IP, plus built-in mail diagnostics"
+            zh-TW:
+              - "首次上架：提供 Synology MailPlus Server 搭配 Cloudflare 或固定 IP 的精靈引導設定，以及內建郵件診斷工具"
+            zh-CN:
+              - "首次上架：提供 Synology MailPlus Server 搭配 Cloudflare 或固定 IP 的向导式配置，以及内置邮件诊断工具"
+            ja:
+              - "初回リリース：Cloudflare または固定 IP を使った Synology MailPlus Server のガイド付き設定とメール診断機能を搭載"
+            ko:
+              - "첫 출시: Cloudflare 또는 고정 IP로 Synology MailPlus Server를 설정하는 마법사와 내장 메일 진단 기능 제공"
+            de:
+              - "Erste Katalog-Version: geführte Einrichtung für Synology MailPlus Server mit Cloudflare oder fester IP sowie integrierte Mail-Diagnose"
+            fr:
+              - "Première version du catalogue : configuration guidée de Synology MailPlus Server avec Cloudflare ou IP fixe, et diagnostic de messagerie intégré"
+            es:
+              - "Primera versión en el catálogo: configuración guiada de Synology MailPlus Server con Cloudflare o IP fija y diagnóstico de correo integrado"
+            it:
+              - "Prima versione nel catalogo: configurazione guidata di Synology MailPlus Server con Cloudflare o IP fisso e diagnostica posta integrata"
+      screenshots:
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/01-overview-0054-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/02-cloudflare-flow-0056-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/03-setup-route-0054-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/04-setup-preview-0054-en.png
+        - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/05-diagnose-result-0054-en.png
+    pins:
+      - package: SynoMailPlusSetupAssistant
+        version: 0.1.0-0056
+        arch:
+          - armada37xx
+          - rtd1296
+          - rtd1619
+          - rtd1619b
+        sha256: 480853beef8ae5b74c3a4559f5935ac9c8f6bc55309d6456a3a448ff7f4f4ed7
+        md5: 6201b1e24ce8dcfa3b264f938d2662e6
+        size: 14318080
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: approval
+          runs: native
+          access: admins
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-11-25T08:07:49Z
+          source_ref: 923fd0e73ae940db28580c57bc2bb3e3735c98c1
+          source_repo: synopackageland/syno-pkg-land-mailplus-setup-assistant
+      - package: SynoMailPlusSetupAssistant
+        version: 0.1.0-0056
+        arch:
+          - apollolake
+          - avoton
+          - braswell
+          - broadwell
+          - broadwellnk
+          - broadwellnkv2
+          - broadwellntb
+          - broadwellntbap
+          - bromolow
+          - cedarview
+          - coffeelake
+          - denverton
+          - epyc7002
+          - epyc7003
+          - epyc7003ntb
+          - geminilake
+          - geminilakenk
+          - grantley
+          - icelaked
+          - kvmcloud
+          - kvmx64
+          - purley
+          - r1000
+          - r1000nk
+          - skylaked
+          - v1000
+          - v1000nk
+        sha256: b6d2e269bf89f51457d6e9f91f147acbd2d7d018e122bbcac84a3eee4d2d4d22
+        md5: cf26fd38f9c9446e303e3fe86db746d2
+        size: 15490048
+        facts:
+          built_with: sdk
+          sdk_backend: go
+          root_access: approval
+          runs: native
+          access: admins
+          account: dsm
+          background: yes
+          opens: dsm
+          requires: []
+          conflicts: []
+          shared_folders: []
+          signed: false
+          ctl: true
+        review:
+          type: reviewed
+          reviewer: synopackageland
+          reviewed_at: 2026-11-25T08:07:52Z
+          source_ref: 923fd0e73ae940db28580c57bc2bb3e3735c98c1
+          source_repo: synopackageland/syno-pkg-land-mailplus-setup-assistant
   - listed: true
     recommended: false
     featured: false
