@@ -1297,9 +1297,18 @@ packages:
     source:
       kind: github-release
       repo: synopackageland/syno-pkg-land-mailplus-setup-assistant
-      release: v0.1.0-0056
+      release: v0.1.0-0057
       access: public
     metadata:
+      guides:
+        - url: https://community.synopkgland.com/d/45
+          title:
+            en: Run Synology MailPlus Server without a fixed IP using Cloudflare
+            zh-TW: 不用固定 IP，用 Cloudflare 架 Synology MailPlus Server
+          summary:
+            en: No static IP, no open port 25, free inbound mail through Cloudflare
+            zh-TW: 免固定 IP、免開 25 埠，透過 Cloudflare 免費收信
+          image: https://github.com/user-attachments/assets/f37883b8-d4cb-4ca8-bfc0-7690aec21cfa
       maintainer: Syno Package Land
       maintainer_url: https://synopkgland.com/
       contact_email: support@synopkgland.com
@@ -1502,6 +1511,25 @@ packages:
           Richiede Synology MailPlus Server in esecuzione; accesso con un account amministratore DSM
       changelog:
         releases:
+          0.1.0-0057:
+            en:
+              - "The setup check now waits calmly for your test message, the configuration step is easier to read, and Sync mailboxes explains what it does"
+            zh-TW:
+              - "設定驗證改為平穩等待您的測試郵件，設定步驟版面更易讀，並說明「同步信箱」的作用"
+            zh-CN:
+              - "设置验证改为平稳等待您的测试邮件，配置步骤版面更易读，并说明“同步邮箱”的作用"
+            ja:
+              - "設定の確認はテストメールの到着を落ち着いて待つようになり、構成ステップが読みやすくなり、メールボックス同期の説明を追加"
+            ko:
+              - "설정 확인이 테스트 메일 도착을 차분히 기다리도록 바뀌고, 구성 단계를 읽기 쉽게 정리했으며, 메일함 동기화 설명 추가"
+            de:
+              - "Die Einrichtungsprüfung wartet ruhig auf Ihre Testnachricht, der Konfigurationsschritt ist übersichtlicher und die Postfach-Synchronisierung wird erklärt"
+            fr:
+              - "La vérification attend sereinement votre message de test, l’étape de configuration est plus lisible et la synchronisation des boîtes aux lettres est expliquée"
+            es:
+              - "La verificación espera con calma tu mensaje de prueba, el paso de configuración es más legible y se explica la sincronización de buzones"
+            it:
+              - "La verifica attende con calma il messaggio di prova, il passaggio di configurazione è più leggibile e viene spiegata la sincronizzazione delle caselle"
           0.1.0-0056:
             en:
               - "First catalog release: guided setup for Synology MailPlus Server with Cloudflare or a fixed IP, plus built-in mail diagnostics"
@@ -1529,15 +1557,15 @@ packages:
         - https://raw.githubusercontent.com/synopackageland/catalog/main/screenshots/SynoMailPlusSetupAssistant/05-diagnose-result-0054-en.png
     pins:
       - package: SynoMailPlusSetupAssistant
-        version: 0.1.0-0056
+        version: 0.1.0-0057
         arch:
           - armada37xx
           - rtd1296
           - rtd1619
           - rtd1619b
-        sha256: 480853beef8ae5b74c3a4559f5935ac9c8f6bc55309d6456a3a448ff7f4f4ed7
-        md5: 6201b1e24ce8dcfa3b264f938d2662e6
-        size: 14318080
+        sha256: ebf5f366c26ad56f837307274e11701bee67ac478403fe71a1199579733d2dfd
+        md5: 2ed05f832c1c013fdbde2ce8b479ad0e
+        size: 14326272
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1555,11 +1583,11 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-25T08:07:49Z
-          source_ref: 923fd0e73ae940db28580c57bc2bb3e3735c98c1
+          reviewed_at: 2026-11-25T08:53:44Z
+          source_ref: 4aa3468ab05a9768130e2f8d035a0a092e3c7a51
           source_repo: synopackageland/syno-pkg-land-mailplus-setup-assistant
       - package: SynoMailPlusSetupAssistant
-        version: 0.1.0-0056
+        version: 0.1.0-0057
         arch:
           - apollolake
           - avoton
@@ -1588,9 +1616,9 @@ packages:
           - skylaked
           - v1000
           - v1000nk
-        sha256: b6d2e269bf89f51457d6e9f91f147acbd2d7d018e122bbcac84a3eee4d2d4d22
-        md5: cf26fd38f9c9446e303e3fe86db746d2
-        size: 15490048
+        sha256: 17f1b60e2a6b3d97a08695fce1fb5bc5e66089b05ff58b675c5ec07617258b5c
+        md5: c525e1e50e7843ac3db4163e1e75dce5
+        size: 15499776
         facts:
           built_with: sdk
           sdk_backend: go
@@ -1608,8 +1636,8 @@ packages:
         review:
           type: reviewed
           reviewer: synopackageland
-          reviewed_at: 2026-11-25T08:07:52Z
-          source_ref: 923fd0e73ae940db28580c57bc2bb3e3735c98c1
+          reviewed_at: 2026-11-25T08:53:46Z
+          source_ref: 4aa3468ab05a9768130e2f8d035a0a092e3c7a51
           source_repo: synopackageland/syno-pkg-land-mailplus-setup-assistant
   - listed: true
     recommended: false
